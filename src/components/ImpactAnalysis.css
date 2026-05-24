@@ -1,0 +1,226 @@
+.impact-analysis {
+  padding: 32px;
+}
+
+.impact-search-container {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.search-results-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 10;
+  margin-top: 4px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.search-result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 14px;
+  border: none;
+  background: none;
+  color: var(--color-text);
+  cursor: pointer;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 13px;
+}
+
+.search-result-item:hover {
+  background: var(--color-surface-hover);
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-name {
+  font-weight: 500;
+}
+
+.search-result-meta {
+  color: var(--color-text-secondary);
+  font-size: 12px;
+}
+
+.impact-results {
+  margin-top: 16px;
+}
+
+.impact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  margin-bottom: 20px;
+}
+
+.impact-token-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.color-swatch.large {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid var(--color-border);
+}
+
+.impact-token-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.impact-token-meta {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.blast-radius {
+  text-align: center;
+  padding: 12px 20px;
+  background: var(--color-accent-subtle);
+  border-radius: var(--radius);
+}
+
+.blast-radius-number {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.blast-radius-label {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.alias-chain {
+  padding: 16px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+}
+
+.alias-chain h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin-bottom: 8px;
+}
+
+.alias-chain-visual {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.alias-chain-token {
+  padding: 4px 10px;
+  background: var(--color-accent-subtle);
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-accent);
+}
+
+.alias-chain-arrow {
+  color: var(--color-text-secondary);
+  font-size: 16px;
+}
+
+.alias-chain-collection {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.impact-groups {
+  margin-top: 16px;
+}
+
+.impact-groups-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.impact-group {
+  padding: 14px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+}
+
+.impact-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.impact-group-property {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-accent);
+  background: var(--color-accent-subtle);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.impact-group-count {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.impact-group-components {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.impact-component-chip {
+  padding: 4px 10px;
+  background: var(--color-surface-hover);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--color-text);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--color-text-secondary);
+}
+
+.empty-state .empty-icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.empty-state p {
+  font-size: 14px;
+}

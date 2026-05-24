@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+*.local
+tmp-cache
+.DS_Store
+*.zip
+figma-plugin/node_modules
+figma-plugin/dist
+figma-plugin/tmp-cache

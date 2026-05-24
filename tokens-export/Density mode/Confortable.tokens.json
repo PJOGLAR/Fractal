@@ -1,0 +1,21 @@
+{
+  "vertical-padding": {
+    "$type": "number",
+    "$value": 12,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:2751:8",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/-1:-1",
+        "targetVariableName": "padding/padding-300",
+        "targetVariableSetId": "VariableCollectionId:a0f47a7976300bc0308b629ae1f003bf20366b5d/-1:-1",
+        "targetVariableSetName": "Spacing"
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Confortable"
+  }
+}
