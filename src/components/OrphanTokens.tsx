@@ -10,7 +10,7 @@ export function OrphanTokens({ data }: OrphanTokensProps) {
   const [typeFilter, setTypeFilter] = useState<string | null>(null)
   const [collectionFilter, setCollectionFilter] = useState<string | null>(null)
 
-  // Calculate orphan tokens dynamically: tokens whose name doesn't appear in any binding's tokenName
+  // Calculate orphan tokens: combine dynamically calculated + pre-calculated from library cross-reference
   const orphanTokens = useMemo(() => {
     const usedTokenNames = new Set<string>()
     for (const comp of data.components) {
@@ -18,8 +18,23 @@ export function OrphanTokens({ data }: OrphanTokensProps) {
         if (binding.tokenName) usedTokenNames.add(binding.tokenName)
       }
     }
+    // Tokens in foundations not used
     const allTokens = [...data.foundations.primitiveTokens, ...data.foundations.semanticTokens]
-    return allTokens.filter(t => !usedTokenNames.has(t.name))
+    const fromFoundations = allTokens.filter(t => !usedTokenNames.has(t.name))
+    
+    // Tokens from orphanTokens array (library cross-reference)
+    const fromLibrary = (data.orphanTokens || []).filter(t => !usedTokenNames.has(t.name))
+    
+    // Merge, deduplicate by name
+    const seen = new Set<string>()
+    const merged = []
+    for (const t of [...fromFoundations, ...fromLibrary]) {
+      if (!seen.has(t.name)) {
+        seen.add(t.name)
+        merged.push(t)
+      }
+    }
+    return merged
   }, [data])
 
   const tokenTypes = useMemo(
