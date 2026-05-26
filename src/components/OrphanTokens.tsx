@@ -9,6 +9,7 @@ interface OrphanTokensProps {
 export function OrphanTokens({ data }: OrphanTokensProps) {
   const [typeFilter, setTypeFilter] = useState<string | null>(null)
   const [collectionFilter, setCollectionFilter] = useState<string | null>(null)
+  const [groupFilter, setGroupFilter] = useState<string | null>(null)
 
   // Calculate orphan tokens: combine dynamically calculated + pre-calculated from library cross-reference
   const orphanTokens = useMemo(() => {
@@ -47,12 +48,27 @@ export function OrphanTokens({ data }: OrphanTokensProps) {
     [orphanTokens]
   )
 
+  // Groups based on first segment of token name (static, interactive, expressive, etc.)
+  // Only show groups relevant to current collection filter
+  const tokenGroups = useMemo(() => {
+    const base = collectionFilter 
+      ? orphanTokens.filter(t => t.collection === collectionFilter)
+      : orphanTokens
+    const map: Record<string, number> = {}
+    for (const t of base) {
+      const group = t.name.split('/')[0]
+      map[group] = (map[group] || 0) + 1
+    }
+    return Object.entries(map).sort((a, b) => b[1] - a[1])
+  }, [orphanTokens, collectionFilter])
+
   const filteredOrphans = useMemo(() => {
     let tokens = orphanTokens
     if (typeFilter) tokens = tokens.filter(t => t.type === typeFilter)
     if (collectionFilter) tokens = tokens.filter(t => t.collection === collectionFilter)
+    if (groupFilter) tokens = tokens.filter(t => t.name.split('/')[0] === groupFilter)
     return tokens
-  }, [orphanTokens, typeFilter, collectionFilter])
+  }, [orphanTokens, typeFilter, collectionFilter, groupFilter])
 
   const allTokensCount = data.foundations.primitiveTokens.length + data.foundations.semanticTokens.length
 
@@ -101,7 +117,7 @@ export function OrphanTokens({ data }: OrphanTokensProps) {
             <div className="token-type-filters">
               <button
                 className={`filter-chip ${collectionFilter === null ? 'active' : ''}`}
-                onClick={() => setCollectionFilter(null)}
+                onClick={() => { setCollectionFilter(null); setGroupFilter(null) }}
               >
                 Todas las colecciones
               </button>
@@ -109,9 +125,29 @@ export function OrphanTokens({ data }: OrphanTokensProps) {
                 <button
                   key={col}
                   className={`filter-chip ${collectionFilter === col ? 'active' : ''}`}
-                  onClick={() => setCollectionFilter(col)}
+                  onClick={() => { setCollectionFilter(col); setGroupFilter(null) }}
                 >
                   {col}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {tokenGroups.length > 1 && (
+            <div className="token-type-filters">
+              <button
+                className={`filter-chip ${groupFilter === null ? 'active' : ''}`}
+                onClick={() => setGroupFilter(null)}
+              >
+                Todas las categorías
+              </button>
+              {tokenGroups.map(([group, count]) => (
+                <button
+                  key={group}
+                  className={`filter-chip ${groupFilter === group ? 'active' : ''}`}
+                  onClick={() => setGroupFilter(group)}
+                >
+                  {group} ({count})
                 </button>
               ))}
             </div>
