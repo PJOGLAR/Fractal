@@ -20,9 +20,6 @@ export function Sidebar({ currentView, onViewChange, data }: SidebarProps) {
       }
     }
     const orphanCount = (() => {
-      const fromFoundations = allTokens.filter(t => !usedTokenNames.has(t.name)).length
-      const fromLibrary = (data.orphanTokens || []).filter(t => !usedTokenNames.has(t.name)).length
-      // Deduplicate by counting unique names
       const orphanNames = new Set<string>()
       for (const t of allTokens) { if (!usedTokenNames.has(t.name)) orphanNames.add(t.name) }
       for (const t of (data.orphanTokens || [])) { if (!usedTokenNames.has(t.name)) orphanNames.add(t.name) }
