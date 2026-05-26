@@ -7,7 +7,7 @@ interface ComponentIndexProps {
 }
 
 function normalizeProperty(property: string): string {
-  if (property === 'fills' || property === 'textRangeFills') return 'background'
+  if (property === 'fills' || property === 'textRangeFills') return 'color'
   if (property === 'strokes' || property.startsWith('stroke')) return 'border'
   if (property.startsWith('padding')) return 'padding'
   if (property === 'itemSpacing') return 'spacing'
@@ -17,11 +17,25 @@ function normalizeProperty(property: string): string {
   return property
 }
 
-function getPropertyGroups(bindings: TokenBinding[]): { group: string; count: number }[] {
+function getTokenCategory(tokenName: string): string {
+  const parts = tokenName.split('/')
+  if (parts.length >= 2 && (parts[0] === 'static' || parts[0] === 'interactive' || parts[0] === 'expressive')) {
+    return parts[1] // foreground, background, border, opacity
+  }
+  if (parts[0] === 'gap' || parts[0] === 'padding' || parts[0] === 'vertical-padding') return 'spacing'
+  if (parts[0] === 'border') return 'border'
+  if (parts[0] === 'body' || parts[0] === 'heading' || parts[0] === 'display' || parts[0] === 'caption') return 'typography'
+  if (parts[0] === 'icon' || parts[0] === 'pictogram' || parts[0] === 'illustration' || parts[0] === 'asset') return 'asset'
+  return parts[0]
+}
+
+function getTokenCategoryGroups(bindings: TokenBinding[]): { group: string; count: number }[] {
   const map: Record<string, number> = {}
   for (const b of bindings) {
-    const group = normalizeProperty(b.property)
-    map[group] = (map[group] || 0) + 1
+    if (b.tokenName) {
+      const cat = getTokenCategory(b.tokenName)
+      map[cat] = (map[cat] || 0) + 1
+    }
   }
   return Object.entries(map)
     .map(([group, count]) => ({ group, count }))
@@ -91,9 +105,9 @@ export function ComponentIndex({ data }: ComponentIndexProps) {
       <div className="component-list">
         {filteredComponents.map(comp => {
           const isExpanded = expandedComponent === comp.componentId
-          const propGroups = isExpanded ? getPropertyGroups(comp.bindings) : []
+          const propGroups = isExpanded ? getTokenCategoryGroups(comp.bindings) : []
           const filteredBindings = propertyFilter
-            ? comp.bindings.filter(b => normalizeProperty(b.property) === propertyFilter)
+            ? comp.bindings.filter(b => b.tokenName && getTokenCategory(b.tokenName) === propertyFilter)
             : comp.bindings
 
           return (
