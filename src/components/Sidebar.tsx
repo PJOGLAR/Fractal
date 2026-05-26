@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import { DashboardData } from '../types'
 import './Sidebar.css'
 
-type View = 'overview' | 'components' | 'tokens' | 'orphans' | 'impact'
+type View = 'overview' | 'components' | 'tokens' | 'orphans'
 
 interface SidebarProps {
   currentView: View
@@ -36,7 +36,6 @@ export function Sidebar({ currentView, onViewChange, data }: SidebarProps) {
     { id: 'components', label: 'Componentes', count: data.components.filter(c => !c.componentName.includes('⛔')).length },
     { id: 'tokens', label: 'Tokens', count: counts.tokens },
     { id: 'orphans', label: 'Huérfanos', count: counts.orphans },
-    { id: 'impact', label: 'Impacto' },
   ]
 
   return (

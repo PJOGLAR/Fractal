@@ -1,5 +1,5 @@
-import { useMemo } from 'react'
-import { DashboardData } from '../types'
+import { useState, useMemo } from 'react'
+import { DashboardData, TokenData } from '../types'
 import './Overview.css'
 
 interface OverviewProps {
@@ -7,18 +7,19 @@ interface OverviewProps {
 }
 
 export function Overview({ data }: OverviewProps) {
+  const [showAllTokens, setShowAllTokens] = useState(false)
+  const [impactSearch, setImpactSearch] = useState('')
+  const [selectedToken, setSelectedToken] = useState<TokenData | null>(null)
+
   const stats = useMemo(() => {
     const allTokens = [...data.foundations.primitiveTokens, ...data.foundations.semanticTokens]
     const totalTokens = allTokens.length
 
-    // Classify: tokens with aliasOf are semantic, without are primitive
     const semanticTokens = allTokens.filter(t => t.aliasOf)
     const primitiveTokens = allTokens.filter(t => !t.aliasOf)
 
-    // Filter out building blocks (⛔) from component count
     const mainComponents = data.components.filter(c => !c.componentName.includes('⛔'))
 
-    // Unique tokenNames used across all bindings
     const usedTokenNames = new Set<string>()
     for (const comp of data.components) {
       for (const binding of comp.bindings) {
@@ -27,13 +28,11 @@ export function Overview({ data }: OverviewProps) {
     }
     const usedCount = usedTokenNames.size
 
-    // Tokens defined in foundations whose name doesn't appear in any binding
     const unusedTokens = allTokens.filter(t => !usedTokenNames.has(t.name))
     const unusedCount = unusedTokens.length
 
     const coverage = totalTokens > 0 ? Math.round((usedCount / totalTokens) * 100) : 0
 
-    // Group bindings by property type
     const bindingsPerType: Record<string, number> = {}
     for (const comp of data.components) {
       for (const binding of comp.bindings) {
@@ -42,7 +41,7 @@ export function Overview({ data }: OverviewProps) {
       }
     }
 
-    // Top 10 tokens used in most components
+    // ALL tokens sorted by usage (not just top 10)
     const tokenComponentCount: Record<string, Set<string>> = {}
     for (const comp of data.components) {
       for (const binding of comp.bindings) {
@@ -54,15 +53,55 @@ export function Overview({ data }: OverviewProps) {
         }
       }
     }
-    const topTokens = Object.entries(tokenComponentCount)
+    const allTokensSorted = Object.entries(tokenComponentCount)
       .map(([name, comps]) => ({ name, componentCount: comps.size }))
       .sort((a, b) => b.componentCount - a.componentCount)
-      .slice(0, 10)
 
     const categories = [...new Set(mainComponents.map(c => c.category))]
 
-    return { totalTokens, semanticCount: semanticTokens.length, primitiveCount: primitiveTokens.length, usedCount, unusedCount, coverage, bindingsPerType, topTokens, categories, mainComponentCount: mainComponents.length }
+    return { totalTokens, semanticCount: semanticTokens.length, primitiveCount: primitiveTokens.length, usedCount, unusedCount, coverage, bindingsPerType, allTokensSorted, categories, mainComponentCount: mainComponents.length }
   }, [data])
+
+  // Impact analysis
+  const allTokens = useMemo(
+    () => [...data.foundations.primitiveTokens, ...data.foundations.semanticTokens],
+    [data]
+  )
+
+  const usageMap = useMemo(() => {
+    const map: Record<string, { componentName: string; property: string }[]> = {}
+    for (const comp of data.components) {
+      for (const binding of comp.bindings) {
+        if (binding.tokenName) {
+          if (!map[binding.tokenName]) map[binding.tokenName] = []
+          map[binding.tokenName].push({ componentName: comp.componentName, property: binding.property })
+        }
+      }
+    }
+    return map
+  }, [data])
+
+  const impactResults = useMemo(() => {
+    if (!impactSearch || impactSearch.length < 2) return []
+    const q = impactSearch.toLowerCase()
+    return allTokens.filter(t => t.name.toLowerCase().includes(q)).slice(0, 15)
+  }, [allTokens, impactSearch])
+
+  const impactData = useMemo(() => {
+    if (!selectedToken) return null
+    const usages = usageMap[selectedToken.name] || []
+    const uniqueComponents = [...new Set(usages.map(u => u.componentName))]
+    const byProperty: Record<string, string[]> = {}
+    for (const u of usages) {
+      if (!byProperty[u.property]) byProperty[u.property] = []
+      if (!byProperty[u.property].includes(u.componentName)) {
+        byProperty[u.property].push(u.componentName)
+      }
+    }
+    return { blastRadius: uniqueComponents.length, uniqueComponents, byProperty }
+  }, [selectedToken, usageMap])
+
+  const displayedTokens = showAllTokens ? stats.allTokensSorted : stats.allTokensSorted.slice(0, 10)
 
   return (
     <div className="overview">
@@ -97,6 +136,92 @@ export function Overview({ data }: OverviewProps) {
       </div>
 
       <div className="overview-sections">
+        {/* Impact Analysis */}
+        <section className="overview-section">
+          <h3>🎯 Análisis de impacto</h3>
+          <p className="section-description">Buscá un token para ver qué componentes se afectan si lo cambiás</p>
+          <div className="impact-search-wrapper">
+            <input
+              type="text"
+              className="search-input"
+              placeholder="Buscar token por nombre..."
+              value={impactSearch}
+              onChange={e => {
+                setImpactSearch(e.target.value)
+                if (e.target.value.length < 2) setSelectedToken(null)
+              }}
+            />
+            {impactResults.length > 0 && !selectedToken && (
+              <div className="impact-dropdown">
+                {impactResults.map(token => (
+                  <button
+                    key={token.id}
+                    className="impact-dropdown-item"
+                    onClick={() => { setSelectedToken(token); setImpactSearch(token.name) }}
+                  >
+                    {token.hex && <span className="color-dot" style={{ background: token.hex }} />}
+                    <span className="impact-dropdown-name">{token.name}</span>
+                    <span className="impact-dropdown-meta">{token.collection}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {selectedToken && impactData && (
+            <div className="impact-result-card">
+              <div className="impact-result-header">
+                <div className="impact-result-token">
+                  {selectedToken.hex && <span className="color-dot large" style={{ background: selectedToken.hex }} />}
+                  <div>
+                    <strong>{selectedToken.name}</strong>
+                    {selectedToken.aliasName && (
+                      <span className="impact-alias">→ {selectedToken.aliasName}</span>
+                    )}
+                  </div>
+                </div>
+                <div className="blast-radius-badge">
+                  <span className="blast-number">{impactData.blastRadius}</span>
+                  <span className="blast-label">componentes</span>
+                </div>
+              </div>
+              {impactData.blastRadius > 0 && (
+                <div className="impact-components">
+                  {impactData.uniqueComponents.map(comp => (
+                    <span key={comp} className="impact-chip">{comp}</span>
+                  ))}
+                </div>
+              )}
+              {impactData.blastRadius === 0 && (
+                <p className="impact-empty">Este token no se usa en ningún componente.</p>
+              )}
+            </div>
+          )}
+        </section>
+
+        {/* Top tokens */}
+        <section className="overview-section">
+          <h3>Top tokens más usados</h3>
+          <div className="top-tokens-list">
+            {displayedTokens.map((token, i) => (
+              <div key={token.name} className="top-token-row">
+                <span className="top-token-rank">#{i + 1}</span>
+                <span className="top-token-name">{token.name}</span>
+                <span className="top-token-count">{token.componentCount} componentes</span>
+              </div>
+            ))}
+          </div>
+          {stats.allTokensSorted.length > 10 && (
+            <button
+              className="show-more-btn"
+              onClick={() => setShowAllTokens(!showAllTokens)}
+            >
+              {showAllTokens ? 'Ver menos' : `Ver más (${stats.allTokensSorted.length - 10} tokens más)`}
+            </button>
+          )}
+        </section>
+
+        {/* Usage by property */}
         <section className="overview-section">
           <h3>Uso por tipo de propiedad</h3>
           <div className="type-bars">
@@ -117,19 +242,6 @@ export function Overview({ data }: OverviewProps) {
                   </div>
                 )
               })}
-          </div>
-        </section>
-
-        <section className="overview-section">
-          <h3>Top tokens más usados</h3>
-          <div className="top-tokens-list">
-            {stats.topTokens.map((token, i) => (
-              <div key={token.name} className="top-token-row">
-                <span className="top-token-rank">#{i + 1}</span>
-                <span className="top-token-name">{token.name}</span>
-                <span className="top-token-count">{token.componentCount} componentes</span>
-              </div>
-            ))}
           </div>
         </section>
 
