@@ -3,10 +3,10 @@
   --color-surface: #1a1d27;
   --color-surface-hover: #22262f;
   --color-border: #2a2e3a;
-  --color-text: #f0f2f5;
-  --color-text-secondary: #a8b0bd;
-  --color-accent: #6366f1;
-  --color-accent-subtle: rgba(99, 102, 241, 0.12);
+  --color-text: #ffffff;
+  --color-text-secondary: #c0c7d4;
+  --color-accent: #818cf8;
+  --color-accent-subtle: rgba(129, 140, 248, 0.12);
   --color-success: #22c55e;
   --color-warning: #f59e0b;
   --color-error: #ef4444;

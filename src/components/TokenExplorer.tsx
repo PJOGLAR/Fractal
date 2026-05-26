@@ -70,14 +70,14 @@ export function TokenExplorer({ data }: TokenExplorerProps) {
     return entries.length > 1 ? entries : []
   }, [allTokens, collectionFilter, subGroupFilter])
 
-  // Build usage map by tokenName
+  // Build usage map by tokenName - include property for grouping
   const usageMap = useMemo(() => {
-    const map: Record<string, Set<string>> = {}
+    const map: Record<string, { componentName: string; property: string }[]> = {}
     for (const comp of data.components) {
       for (const binding of comp.bindings) {
         if (binding.tokenName) {
-          if (!map[binding.tokenName]) map[binding.tokenName] = new Set()
-          map[binding.tokenName].add(comp.componentName)
+          if (!map[binding.tokenName]) map[binding.tokenName] = []
+          map[binding.tokenName].push({ componentName: comp.componentName, property: binding.property })
         }
       }
     }
@@ -187,8 +187,20 @@ export function TokenExplorer({ data }: TokenExplorerProps) {
 
       <div className="token-list">
         {filteredTokens.map(token => {
-          const components = usageMap[token.name]
-          const componentCount = components ? components.size : 0
+          const usages = usageMap[token.name] || []
+          const uniqueComponents = [...new Set(usages.map(u => u.componentName))]
+          const componentCount = uniqueComponents.length
+
+          // Group usages by property type
+          const byProperty: Record<string, string[]> = {}
+          for (const u of usages) {
+            const prop = u.property
+            if (!byProperty[prop]) byProperty[prop] = []
+            if (!byProperty[prop].includes(u.componentName)) {
+              byProperty[prop].push(u.componentName)
+            }
+          }
+
           return (
             <div key={token.id} className="token-row">
               <button
@@ -224,12 +236,12 @@ export function TokenExplorer({ data }: TokenExplorerProps) {
 
               {expandedToken === token.id && (
                 <div className="token-detail">
-                  <div className="token-detail-section">
-                    <h4>Valor</h4>
-                    <p className="token-value-display">
-                      {token.hex || String(token.value && typeof token.value === 'object' ? JSON.stringify(token.value) : token.value)}
-                    </p>
-                  </div>
+                  {token.hex && (
+                    <div className="token-detail-section">
+                      <h4>Valor</h4>
+                      <p className="token-value-display">{token.hex}</p>
+                    </div>
+                  )}
 
                   {token.aliasName && (
                     <div className="token-detail-section">
@@ -246,10 +258,22 @@ export function TokenExplorer({ data }: TokenExplorerProps) {
                   <div className="token-detail-section">
                     <h4>Impacto — {componentCount} componentes afectados</h4>
                     {componentCount > 0 ? (
-                      <div className="usage-list">
-                        {[...(components || [])].map(comp => (
-                          <span key={comp} className="usage-component-chip">{comp}</span>
-                        ))}
+                      <div className="usage-by-property">
+                        {Object.entries(byProperty)
+                          .sort((a, b) => b[1].length - a[1].length)
+                          .map(([property, comps]) => (
+                            <details key={property} className="property-group">
+                              <summary className="property-group-header">
+                                <code className="property-group-name">{property}</code>
+                                <span className="property-group-count">{comps.length} componentes</span>
+                              </summary>
+                              <div className="property-group-components">
+                                {comps.map(comp => (
+                                  <span key={comp} className="usage-component-chip">{comp}</span>
+                                ))}
+                              </div>
+                            </details>
+                          ))}
                       </div>
                     ) : (
                       <p className="no-usage">No se usa en ningún componente</p>
