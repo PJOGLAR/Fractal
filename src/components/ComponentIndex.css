@@ -216,3 +216,13 @@
   background: transparent;
   border: 1px dashed var(--color-border);
 }
+
+.variant-row {
+  opacity: 0.6;
+}
+
+.variant-name {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}

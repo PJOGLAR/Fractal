@@ -162,36 +162,45 @@ export function ComponentIndex({ data }: ComponentIndexProps) {
                       </tr>
                     </thead>
                     <tbody>
-                      {filteredBindings.map((binding, i) => (
-                        <tr key={i}>
-                          <td>
-                            <div className="token-cell">
-                              {binding.tokenName && tokenHexMap[binding.tokenName] ? (
-                                <span
-                                  className="color-swatch-inline"
-                                  style={{ background: tokenHexMap[binding.tokenName] }}
-                                />
-                              ) : (
-                                <span className="color-swatch-inline empty" />
-                              )}
-                              <div className="token-cell-text">
-                                <span className="token-badge">
-                                  {binding.tokenName || binding.tokenId}
-                                </span>
-                                {binding.tokenName && tokenAliasMap[binding.tokenName] && (
-                                  <span className="token-alias-inline">
-                                    → {tokenAliasMap[binding.tokenName]}
-                                  </span>
+                      {filteredBindings.map((binding, i) => {
+                        const isVariant = binding.layerName.includes('=')
+                        return (
+                          <tr key={i} className={isVariant ? 'variant-row' : ''}>
+                            <td>
+                              <div className="token-cell">
+                                {binding.tokenName && tokenHexMap[binding.tokenName] ? (
+                                  <span
+                                    className="color-swatch-inline"
+                                    style={{ background: tokenHexMap[binding.tokenName] }}
+                                  />
+                                ) : (
+                                  <span className="color-swatch-inline empty" />
                                 )}
+                                <div className="token-cell-text">
+                                  <span className="token-badge">
+                                    {binding.tokenName || binding.tokenId}
+                                  </span>
+                                  {binding.tokenName && tokenAliasMap[binding.tokenName] && (
+                                    <span className="token-alias-inline">
+                                      → {tokenAliasMap[binding.tokenName]}
+                                    </span>
+                                  )}
+                                </div>
                               </div>
-                            </div>
-                          </td>
-                          <td>
-                            <code className="property-name">{binding.property}</code>
-                          </td>
-                          <td className="layer-name">{binding.layerName}</td>
-                        </tr>
-                      ))}
+                            </td>
+                            <td>
+                              <code className="property-name">{binding.property}</code>
+                            </td>
+                            <td className="layer-name">
+                              {isVariant ? (
+                                <span className="variant-name">{binding.layerName}</span>
+                              ) : (
+                                binding.layerName
+                              )}
+                            </td>
+                          </tr>
+                        )
+                      })}
                     </tbody>
                   </table>
                 </div>
