@@ -226,3 +226,9 @@
   color: var(--color-text-secondary);
   font-style: italic;
 }
+
+.binding-filters.sub-level {
+  padding-left: 24px;
+  border-left: 2px solid var(--color-accent);
+  margin-top: -4px;
+}
