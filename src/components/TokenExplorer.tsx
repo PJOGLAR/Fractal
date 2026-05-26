@@ -13,6 +13,7 @@ export function TokenExplorer({ data }: TokenExplorerProps) {
   const [search, setSearch] = useState('')
   const [collectionFilter, setCollectionFilter] = useState<string | null>(null)
   const [subGroupFilter, setSubGroupFilter] = useState<string | null>(null)
+  const [thirdLevelFilter, setThirdLevelFilter] = useState<string | null>(null)
   const [expandedToken, setExpandedToken] = useState<string | null>(null)
 
   // Combine all tokens
@@ -49,10 +50,25 @@ export function TokenExplorer({ data }: TokenExplorerProps) {
         subMap[sub] = (subMap[sub] || 0) + 1
       }
     }
-    // Only show sub-groups if there's more than one
     const entries = Object.entries(subMap).sort((a, b) => b[1] - a[1])
     return entries.length > 1 ? entries : []
   }, [allTokens, collectionFilter])
+
+  // Third level: second segment of token name (foreground, background, border, opacity)
+  const thirdLevelGroups = useMemo(() => {
+    if (!collectionFilter || !subGroupFilter) return []
+    const map: Record<string, number> = {}
+    for (const t of allTokens) {
+      if (t.collection === collectionFilter) {
+        const parts = t.name.split('/')
+        if (parts[0] === subGroupFilter && parts.length >= 2) {
+          map[parts[1]] = (map[parts[1]] || 0) + 1
+        }
+      }
+    }
+    const entries = Object.entries(map).sort((a, b) => b[1] - a[1])
+    return entries.length > 1 ? entries : []
+  }, [allTokens, collectionFilter, subGroupFilter])
 
   // Build usage map by tokenName
   const usageMap = useMemo(() => {
@@ -79,13 +95,17 @@ export function TokenExplorer({ data }: TokenExplorerProps) {
       tokens = tokens.filter(t => t.name.split('/')[0] === subGroupFilter)
     }
 
+    if (thirdLevelFilter && subGroupFilter) {
+      tokens = tokens.filter(t => t.name.split('/')[1] === thirdLevelFilter)
+    }
+
     if (search) {
       const q = search.toLowerCase()
       tokens = tokens.filter(t => t.name.toLowerCase().includes(q))
     }
 
     return tokens
-  }, [allTokens, collectionFilter, subGroupFilter, search])
+  }, [allTokens, collectionFilter, subGroupFilter, thirdLevelFilter, search])
 
   return (
     <div className="token-explorer">
@@ -106,7 +126,7 @@ export function TokenExplorer({ data }: TokenExplorerProps) {
       <div className="token-type-filters">
         <button
           className={`filter-chip ${collectionFilter === null ? 'active' : ''}`}
-          onClick={() => { setCollectionFilter(null); setSubGroupFilter(null) }}
+          onClick={() => { setCollectionFilter(null); setSubGroupFilter(null); setThirdLevelFilter(null) }}
         >
           Todos ({allTokens.length})
         </button>
@@ -114,7 +134,7 @@ export function TokenExplorer({ data }: TokenExplorerProps) {
           <button
             key={col}
             className={`filter-chip ${collectionFilter === col ? 'active' : ''}`}
-            onClick={() => { setCollectionFilter(col); setSubGroupFilter(null) }}
+            onClick={() => { setCollectionFilter(col); setSubGroupFilter(null); setThirdLevelFilter(null) }}
           >
             {col} ({count})
           </button>
@@ -126,7 +146,7 @@ export function TokenExplorer({ data }: TokenExplorerProps) {
         <div className="token-type-filters sub-filters">
           <button
             className={`filter-chip ${subGroupFilter === null ? 'active' : ''}`}
-            onClick={() => setSubGroupFilter(null)}
+            onClick={() => { setSubGroupFilter(null); setThirdLevelFilter(null) }}
           >
             Todos
           </button>
@@ -134,9 +154,30 @@ export function TokenExplorer({ data }: TokenExplorerProps) {
             <button
               key={sub}
               className={`filter-chip ${subGroupFilter === sub ? 'active' : ''}`}
-              onClick={() => setSubGroupFilter(sub)}
+              onClick={() => { setSubGroupFilter(sub); setThirdLevelFilter(null) }}
             >
               {sub} ({count})
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* Third level filter (foreground, background, border, etc.) */}
+      {thirdLevelGroups.length > 0 && (
+        <div className="token-type-filters sub-filters">
+          <button
+            className={`filter-chip ${thirdLevelFilter === null ? 'active' : ''}`}
+            onClick={() => setThirdLevelFilter(null)}
+          >
+            Todos
+          </button>
+          {thirdLevelGroups.map(([level, count]) => (
+            <button
+              key={level}
+              className={`filter-chip ${thirdLevelFilter === level ? 'active' : ''}`}
+              onClick={() => setThirdLevelFilter(level)}
+            >
+              {level} ({count})
             </button>
           ))}
         </div>
