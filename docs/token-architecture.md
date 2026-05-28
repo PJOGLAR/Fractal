@@ -130,8 +130,6 @@ Específicos de cada componente. Referencian a un semántico via alias.
 │   │       ├── line-height
 │   │       ├── letter-spacing
 │   │       └── color
-│   ├── color/
-│   │   └── [tokens de color de texto/iconos]
 │   └── asset/
 │       └── icon/
 │           ├── color
@@ -181,19 +179,14 @@ Pill/
 │       ├── feedback-error-subtle
 │       └── neutral-primary-bold
 └── foreground/
-    ├── typography/
-    │   └── label/
-    │       ├── font-size
-    │       ├── font-family
-    │       ├── font-weight
-    │       ├── line-height
-    │       └── letter-spacing
-    └── color/
-        ├── feedback-info
-        ├── feedback-error
-        ├── feedback-success
-        ├── feedback-warning
-        └── neutral-tertiary-medium
+    └── typography/
+        └── label/
+            ├── font-size
+            ├── font-family
+            ├── font-weight
+            ├── line-height
+            ├── letter-spacing
+            └── color
 ```
 
 ---
