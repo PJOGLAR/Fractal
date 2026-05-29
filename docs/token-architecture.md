@@ -9,7 +9,7 @@ Primitivo → Semántico → Componente
 | Nivel | Ejemplo | Responde a |
 |---|---|---|
 | Primitivo | `core/purple/500` | ¿Qué valor tiene? |
-| Semántico | `interactive/background/brand/main/default` | ¿Para qué se usa? |
+| Semántico | `interactive/background/brand/main/medium` | ¿Para qué se usa? |
 | Componente | `button-card/background/default` | ¿Dónde se aplica? |
 
 ---
@@ -43,15 +43,88 @@ Definen el **propósito** del valor. Referencian a un primitivo via alias.
 [contexto]/[elemento]/[marca]/[variante]/[intensidad]
 ```
 
-### Contextos:
-- **static** — Valores que no cambian con interacción (textos, fondos estáticos, bordes decorativos)
-- **interactive** — Valores que responden a estados de interacción (hover, pressed, focus, disabled)
+---
+
+### Contextos
+
+#### ◆ Static tokens
+
+**¿Qué es un static token?**
+Un static token representa un color **estable**, que **no cambia** cuando el usuario interactúa.
+Su función es comunicar **estructura, jerarquía o información**, no acción.
+
+**Cuándo usar static tokens:**
+- Cuando el elemento **no es interactivo** (no tiene estados)
+- Cuando el color **no cambia** en hover / focus / pressed
+- Cuando el elemento **informa o estructura**, pero no responde
+- Cuando el componente **no recibe foco**
+
+#### ◆ Interactive tokens
+
+**¿Qué es un interactive token?**
+Un interactive token representa un color que **responde a la interacción del usuario**.
+Su función es comunicar **estado, acción o disponibilidad**.
+
+**Cuándo usar interactive tokens:**
+- Cuando el usuario **puede interactuar** (tiene estados)
+- Cuando hay estados: hover, focus, pressed, disabled
+- Cuando el elemento **recibe foco**
+- Cuando el color indica **acción o feedback inmediato**
+
+#### ◆ Expressive tokens
+
+**¿Qué es un expressive token?**
+Un expressive token representa colores **decorativos o ilustrativos** que no comunican estado ni jerarquía funcional.
+Su función es aportar **personalidad visual, identidad de marca o diferenciación**.
+
+**Cuándo usar expressive tokens:**
+- Elementos decorativos en cards, banners o secciones destacadas
+- Ilustraciones e iconografía expresiva
+- Fondos de categorías o secciones temáticas
+- Elementos que aportan identidad visual sin función interactiva
+
+**Nomenclatura:**
+```
+expressive/[paleta]/[intensidad]
+expressive/illustration/[paleta]/[intensidad]
+```
+
+**Ejemplos:**
+```
+expressive/amber/medium              → color decorativo amber
+expressive/lavender/subtle           → color decorativo lavender suave
+expressive/illustration/purple/medium → ilustración en purple
+expressive/illustration/sapphire/bold → ilustración en sapphire intenso
+```
+
+---
+
+### Regla simple para decidir rápido
+
+> **Si el usuario puede interactuar con el elemento → usa un interactive token.**
+> **Si no puede interactuar → usa un static token.**
+> **Si es decorativo o ilustrativo → usa un expressive token.**
+
+### Tabla de usos
+
+| Caso | Visualmente | Token correcto |
+|---|---|---|
+| Texto informativo | Texto plano | Static |
+| Icono decorativo | No responde | Static |
+| Ilustración en card | Decorativo | Expressive |
+| Fondo de categoría | Decorativo | Expressive |
+| Button | Cambia al interactuar | Interactive |
+| Link | Hover / focus | Interactive |
+| Alert informativa | No accionable | Static |
+| Toggle | Cambia estado | Interactive |
+
+---
 
 ### Elementos:
 - **background** — Fondos de contenedores, cards, botones
 - **foreground** — Color de texto e iconos
 - **border** — Color de bordes
-- **opacity** — Capas de opacidad para estados
+- **opacity** — Capas de opacidad para estados (evita proliferación de variantes)
 
 ### Marcas:
 - **brand/main** — Marca principal (purple)
@@ -59,33 +132,70 @@ Definen el **propósito** del valor. Referencian a un primitivo via alias.
 - **neutral** — Grises y neutros
 - **feedback** — Estados de feedback (error, warning, success, info)
 
-### Intensidades:
-| Intensidad | Uso | Rango típico |
+### Intensidades
+
+Las intensidades son **contextuales** — describen la prominencia visual dentro de su contexto, no un valor absoluto en la escala cromática.
+
+| Intensidad | Significado | Ejemplo |
 |---|---|---|
-| `strong` (bold) | El más intenso/prominente | 700-950 |
-| `default` (medium) | Valor principal del contexto | Varía por contexto |
-| `subtle` | Versión suave/secundaria | 100-300 |
-| `muted` (quiet) | Apenas visible | 25-50 |
+| `bold` | El más prominente/intenso del contexto | Fondo destacado, texto principal |
+| `medium` | El valor principal del contexto | El "default" de ese uso |
+| `subtle` | Versión suave/secundaria | Fondos tenues, bordes suaves |
+| `quiet` | Apenas visible | Fondos casi transparentes |
 
-### Ejemplos completos:
+**Importante:** `medium` en foreground puede ser 950 (oscuro) y en background puede ser 25 (claro). Ambos son "el valor principal" de su contexto. Esto es correcto y necesario para tematización (dark mode).
+
+**Regla de orden:** Dentro del mismo grupo, siempre se cumple:
 ```
-static/background/brand/main/default        → core/purple/500
-static/background/brand/main/subtle         → core/purple/100
-static/background/brand/main/muted          → core/purple/50
-static/background/feedback/error/strong     → core/red/700
-static/background/feedback/error/subtle     → core/red/50
-
-interactive/background/brand/main/hover     → core/purple/700
-interactive/background/brand/main/pressed   → core/purple/900
-interactive/background/neutral/disabled     → core/neutral/100
-
-static/foreground/neutral/primary/default   → core/neutral/950
-static/foreground/neutral/secondary/default → core/neutral/800
-static/foreground/neutral/tertiary/default  → core/neutral/600
-
-interactive/border/brand/main/focus         → core/purple/500
-interactive/border/neutral/disabled         → core/neutral/400
+bold > medium > subtle > quiet (en prominencia visual)
 ```
+
+---
+
+### Ejemplos de aplicación
+
+#### Texto en un input:
+```
+Label y supporting text son estáticos porque no cambian con la interacción.
+El fondo del input es interactivo porque tiene hover/focus/disabled.
+```
+```
+Label         → static/foreground/neutral/primary/medium
+Placeholder   → static/foreground/neutral/tertiary/medium
+Supporting    → static/foreground/neutral/secondary/medium
+Input fondo   → interactive/background/neutral/default/medium
+Input borde   → interactive/border/neutral/default/medium
+Input focus   → interactive/border/brand/main/focus/medium
+```
+
+#### Accordion con estados:
+```
+Title es estático porque no cambia de color.
+El fondo del row es interactivo porque tiene hover/pressed.
+Se aplica un overlay con el token de opacidad para el estado.
+```
+```
+Title         → static/foreground/neutral/primary/medium
+Fondo default → (sin color / transparente)
+Fondo hover   → interactive/opacity/brand/hover
+Fondo pressed → interactive/opacity/brand/pressed
+Borde         → static/border/neutral/primary/subtle
+```
+
+#### Card con elementos expresivos:
+```
+El fondo decorativo de la card usa expressive.
+Los textos usan static. Los botones usan interactive.
+```
+```
+Fondo decorativo → expressive/illustration/sapphire/subtle
+Título           → static/foreground/neutral/primary/medium
+Descripción      → static/foreground/neutral/secondary/medium
+Botón fondo      → interactive/background/brand/main/medium
+Botón hover      → interactive/background/brand/main/hover
+```
+
+---
 
 ### Otras colecciones semánticas:
 ```
@@ -147,47 +257,14 @@ Específicos de cada componente. Referencian a un semántico via alias.
 ```
 
 ### Reglas de nomenclatura:
-1. **Nombre de colección** = nombre del componente (ej: `Pill`, `Button-card`)
-2. **Sin subcarpeta** cuando hay 1 solo valor del tipo (ej: `border/corner`, `border/width`)
-3. **Con subcarpeta** cuando hay 2+ valores del tipo (ej: `border/color/info`, `border/color/error`)
-4. **Tipografía** usa el nombre del layer como rol (ej: `typography/title/font-size`)
-5. **No incluye** tokens de instancias anidadas (building blocks)
-6. **No repite** tokens con el mismo valor (4 paddings iguales = 1 token)
-
-### Ejemplo: Pill
-```
-Pill/
-├── spacing/
-│   ├── gap
-│   └── padding/
-│       ├── padding-0
-│       └── padding-200
-├── border/
-│   ├── corner
-│   ├── width
-│   └── color/
-│       ├── feedback-info
-│       ├── feedback-success
-│       ├── feedback-warning
-│       ├── feedback-error
-│       └── neutral-primary-medium
-├── background/
-│   └── static/
-│       ├── brand-main-subtle
-│       ├── feedback-info-bold
-│       ├── feedback-error-bold
-│       ├── feedback-error-subtle
-│       └── neutral-primary-bold
-└── foreground/
-    └── typography/
-        └── label/
-            ├── font-size
-            ├── font-family
-            ├── font-weight
-            ├── line-height
-            ├── letter-spacing
-            └── color
-```
+1. **Nombre de colección** = nombre del componente
+2. **Sin subcarpeta** cuando hay 1 solo valor del tipo
+3. **Con subcarpeta** cuando hay 2+ valores del tipo
+4. **Tipografía** usa el nombre del layer como rol (title, description, label)
+5. **Tipografía por tamaño** usa sm/md/lg cuando el mismo rol tiene variantes de tamaño
+6. **No incluye** tokens de instancias anidadas (building blocks)
+7. **No repite** tokens con el mismo valor (4 paddings iguales = 1 token)
+8. **Orden de carpetas:** background → foreground → border → spacing → asset
 
 ---
 
