@@ -6,9 +6,10 @@ import { ComponentIndex } from './components/ComponentIndex'
 import { TokenExplorer } from './components/TokenExplorer'
 import { OrphanTokens } from './components/OrphanTokens'
 import { Overview } from './components/Overview'
+import { PropExplorer } from './components/PropExplorer'
 import './App.css'
 
-type View = 'overview' | 'components' | 'tokens' | 'orphans'
+type View = 'overview' | 'components' | 'tokens' | 'orphans' | 'props'
 
 function App() {
   const [view, setView] = useState<View>('overview')
@@ -22,6 +23,7 @@ function App() {
         {view === 'components' && <ComponentIndex data={dashboardData} />}
         {view === 'tokens' && <TokenExplorer data={dashboardData} />}
         {view === 'orphans' && <OrphanTokens data={dashboardData} />}
+        {view === 'props' && <PropExplorer data={dashboardData} />}
       </main>
     </div>
   )
