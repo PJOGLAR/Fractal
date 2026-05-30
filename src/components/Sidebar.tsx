@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import { DashboardData } from '../types'
 import './Sidebar.css'
 
-type View = 'overview' | 'components' | 'tokens' | 'orphans' | 'props'
+type View = 'overview' | 'components' | 'tokens' | 'orphans' | 'props' | 'docs'
 
 interface SidebarProps {
   currentView: View
@@ -37,6 +37,7 @@ export function Sidebar({ currentView, onViewChange, data }: SidebarProps) {
     { id: 'tokens', label: 'Tokens', count: counts.tokens },
     { id: 'orphans', label: 'Huérfanos', count: counts.orphans },
     { id: 'props', label: 'Props' },
+    { id: 'docs', label: 'Documentación' },
   ]
 
   return (
