@@ -11,3 +11,6 @@ figma-plugin/tmp-cache
 figma-plugin-generator/node_modules
 figma-plugin-generator/dist
 figma-plugin-generator/tmp-cache
+figma-plugin-sync/node_modules
+figma-plugin-sync/dist
+figma-plugin-sync/tmp-cache
