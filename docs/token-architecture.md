@@ -40,7 +40,23 @@ Definen el **propósito** del valor. Referencian a un primitivo via alias.
 
 ### Estructura:
 ```
-[contexto]/[elemento]/[marca]/[variante]/[intensidad]
+[contexto]/[elemento]/[familia]/[sub-familia?]/[variante]/[intensidad]
+```
+
+`[sub-familia]` es opcional. Solo aparece cuando la familia se subdivide.
+
+| Familia | Sub-familia | Ejemplo |
+|---|---|---|
+| `brand` | `main` / `accent` | `brand/main` |
+| `feedback` | `info` / `success` / `warning` / `error` | `feedback/error` |
+| `neutral` | — (es cross) | `neutral` |
+| `expressive` | `purple` / `sapphire` / `magenta` / etc. | `expressive/sapphire` |
+
+**Ejemplos:**
+```
+static/foreground/brand/main/primary/medium      ← contexto/elem/familia/sub-fam/variante/intensidad
+static/foreground/neutral/primary/medium         ← contexto/elem/familia/         variante/intensidad
+static/background/feedback/info/bold             ← contexto/elem/familia/sub-fam/         intensidad
 ```
 
 ---
@@ -126,11 +142,11 @@ expressive/illustration/sapphire/bold → ilustración en sapphire intenso
 - **border** — Color de bordes
 - **opacity** — Capas de opacidad para estados (evita proliferación de variantes)
 
-### Marcas:
-- **brand/main** — Marca principal (purple)
-- **brand/accent** — Marca madre/secundaria (cyan)
-- **neutral** — Grises y neutros
-- **feedback** — Estados de feedback (error, warning, success, info)
+### Familias:
+- **brand** — Familia compuesta. Se subdivide en `brand/main` (purple, marca principal) y `brand/accent` (cyan, marca madre/secundaria)
+- **neutral** — Familia simple, sin sub-familia. Cross a todo el sistema (grises y neutros)
+- **feedback** — Familia compuesta. Se subdivide en `info`, `success`, `warning`, `error`
+- **expressive** — Familia compuesta para decorativos. Se subdivide por paleta (`purple`, `sapphire`, `magenta`, etc.)
 
 ### Intensidades
 
@@ -265,6 +281,129 @@ Específicos de cada componente. Referencian a un semántico via alias.
 6. **No incluye** tokens de instancias anidadas (building blocks)
 7. **No repite** tokens con el mismo valor (4 paddings iguales = 1 token)
 8. **Orden de carpetas:** background → foreground → border → spacing → asset
+
+---
+
+## Modos de color (tematización)
+
+La tematización (dark mode, alto contraste, etc.) se resuelve con **modes nativos de Figma en la capa de primitivos**. Los semánticos y los componentes no se enteran del cambio de mode.
+
+### Principio
+
+```
+Primitivos → tienen modes (Light, Dark, ...)
+Semánticos → sin modes (un solo alias al primitivo)
+Componentes → sin modes (alias al semántico)
+```
+
+Cuando un frame cambia de mode, Figma resuelve la cadena de alias usando el valor del primitivo en el mode activo. Los semánticos y componentes no se modifican.
+
+### Cómo se resuelve un token
+
+```
+Frame en Light:
+  button-card/foreground/regular
+    → static/foreground/brand/primary/regular
+      → core/purple/500 (Light) = #8B5CF6
+
+Frame en Dark:
+  button-card/foreground/regular
+    → static/foreground/brand/primary/regular
+      → core/purple/500 (Dark) = #B89BFF
+```
+
+Una sola cadena de alias. El mode solo afecta el valor final del primitivo.
+
+### Estructura de la colección de primitivos
+
+```
+core (collection)
+├── Mode: Light
+├── Mode: Dark
+│
+├── core/purple/500
+│   ├── Light → #8B5CF6
+│   └── Dark  → valor para dark
+│
+├── core/neutral/950
+│   ├── Light → #0A0A0A
+│   └── Dark  → valor para dark
+```
+
+### Tres formas de definir el valor Dark
+
+#### 1. Mismo valor (caso más común)
+
+Si el primitivo funciona en ambos modes, repetís el valor.
+
+```
+core/purple/500
+  Light → #8B5CF6
+  Dark  → #8B5CF6
+```
+
+#### 2. Valor ajustado (cuando no da contraste)
+
+Si el primitivo en dark no contrasta bien sobre fondos oscuros, le asignás un valor distinto solo en el mode Dark. **El nombre del primitivo no cambia.**
+
+```
+core/purple/500
+  Light → #8B5CF6
+  Dark  → #B89BFF   ← más claro/saturado para destacar sobre fondos oscuros
+```
+
+Esta es la forma de **alterar valores primitivos individuales** sin tocar el resto del sistema.
+
+#### 3. Primitivo nuevo (último recurso)
+
+Cuando ninguno de los valores existentes en la escala (5–950) sirve para dark, se agrega un primitivo nuevo.
+
+**Forma simple — escala extendida:**
+```
+core/neutral/15           ← primitivo nuevo, útil para dark
+  Light → #F8F8F8         (placeholder; si no se usa en light, repetir el más cercano)
+  Dark  → #1A1A1A
+```
+
+**Forma dedicada — rama `core/dark/` para casos cromáticamente distintos:**
+```
+core/dark/purple/extra-bright
+  Light → #B89BFF (placeholder)
+  Dark  → #C9B0FF
+```
+
+Solo usar la rama `core/dark/` si necesitás muchos valores especiales y querés tenerlos visualmente separados en el árbol de Figma.
+
+### Flujo de decisión
+
+```
+¿El primitivo existente funciona en dark?
+├── Sí → mismo valor en ambos modes
+└── No → ¿Puedo ajustar el valor del mode Dark del primitivo existente?
+         ├── Sí → ajusto solo el valor Dark (Forma 2)
+         └── No → ¿El valor que necesito encaja en la escala normal?
+                  ├── Sí → agrego primitivo nuevo en core/[color]/[nivel] (Forma 3 simple)
+                  └── No → agrego en core/dark/[color]/[nombre] (Forma 3 dedicada)
+```
+
+### Por qué esto y no `core` + `core-dark` separados
+
+| Enfoque | Pro | Contra |
+|---|---|---|
+| Modes en primitivos | Una sola colección, semánticos y componentes no cambian | Requiere configurar modes en Figma |
+| Colección `core-dark` separada | Visualmente explícito qué es dark | Doble mantenimiento, los semánticos terminan con lógica de modo, nombres duplicados |
+
+La estrategia de modes es estándar en Material 3, IBM Carbon, Polaris.
+
+### Aplicable a otros modes
+
+El mismo principio sirve para cualquier mode futuro:
+- High contrast
+- Print
+- Marca alterna (white-label)
+- Modo accesibilidad
+
+Cada mode nuevo se configura en la colección de primitivos. Semánticos y componentes no cambian.
 
 ---
 

@@ -125,6 +125,76 @@ function TokenArchitectureDoc() {
         </tbody>
       </table>
 
+      <h3>Modos de color (tematización)</h3>
+      <p className="doc-note">La tematización (dark mode, alto contraste, etc.) se resuelve con <strong>modes nativos de Figma en la capa de primitivos</strong>. Los semánticos y los componentes no se enteran del cambio de mode.</p>
+
+      <div className="doc-card">
+        <h4>Principio</h4>
+        <pre className="doc-code">{`Primitivos → tienen modes (Light, Dark, ...)
+Semánticos → sin modes (un solo alias al primitivo)
+Componentes → sin modes (alias al semántico)`}</pre>
+        <p>Cuando un frame cambia de mode, Figma resuelve la cadena de alias usando el valor del primitivo en el mode activo. Semánticos y componentes no se modifican.</p>
+      </div>
+
+      <div className="doc-card">
+        <h4>Cómo se resuelve un token</h4>
+        <pre className="doc-code">{`Frame en Light:
+  button-card/foreground/regular
+    → static/foreground/brand/primary/regular
+      → core/purple/500 (Light) = #8B5CF6
+
+Frame en Dark:
+  button-card/foreground/regular
+    → static/foreground/brand/primary/regular
+      → core/purple/500 (Dark) = #B89BFF`}</pre>
+      </div>
+
+      <h4>Tres formas de definir el valor Dark</h4>
+
+      <div className="doc-card">
+        <h4>1. Mismo valor (caso más común)</h4>
+        <p>Si el primitivo funciona en ambos modes, repetís el valor.</p>
+        <pre className="doc-code">{`core/purple/500
+  Light → #8B5CF6
+  Dark  → #8B5CF6`}</pre>
+      </div>
+
+      <div className="doc-card">
+        <h4>2. Valor ajustado (cuando no da contraste)</h4>
+        <p>Si el primitivo en dark no contrasta bien sobre fondos oscuros, asignás un valor distinto solo en el mode Dark. <strong>El nombre del primitivo no cambia.</strong></p>
+        <pre className="doc-code">{`core/purple/500
+  Light → #8B5CF6
+  Dark  → #B89BFF   ← más claro/saturado para dark`}</pre>
+        <p>Esta es la forma de alterar valores primitivos individuales sin tocar el resto del sistema.</p>
+      </div>
+
+      <div className="doc-card">
+        <h4>3. Primitivo nuevo (último recurso)</h4>
+        <p>Cuando ningún valor de la escala (5–950) sirve para dark, agregás un primitivo nuevo.</p>
+        <p><strong>Forma simple — escala extendida:</strong></p>
+        <pre className="doc-code">{`core/neutral/15           ← primitivo nuevo
+  Light → #F8F8F8         (placeholder si no se usa)
+  Dark  → #1A1A1A`}</pre>
+        <p><strong>Forma dedicada — rama core/dark/:</strong></p>
+        <pre className="doc-code">{`core/dark/purple/extra-bright
+  Light → #B89BFF (placeholder)
+  Dark  → #C9B0FF`}</pre>
+        <p>Solo usar la rama <code>core/dark/</code> si necesitás muchos valores especiales y querés tenerlos visualmente separados.</p>
+      </div>
+
+      <div className="doc-card">
+        <h4>Flujo de decisión</h4>
+        <pre className="doc-code">{`¿El primitivo existente funciona en dark?
+├── Sí → mismo valor en ambos modes
+└── No → ¿Puedo ajustar el valor del mode Dark?
+         ├── Sí → ajusto solo el valor Dark
+         └── No → ¿Encaja en la escala normal?
+                  ├── Sí → core/[color]/[nivel-nuevo]
+                  └── No → core/dark/[color]/[nombre]`}</pre>
+      </div>
+
+      <p className="doc-note">El mismo principio sirve para cualquier mode futuro: high contrast, print, marca alterna, modo accesibilidad. Cada mode nuevo se configura en la colección de primitivos. Semánticos y componentes no cambian.</p>
+
       <h3>Flujo de cambio sin release</h3>
       <div className="doc-card">
         <h4>Cambio global de marca</h4>
