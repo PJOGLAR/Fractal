@@ -57,6 +57,23 @@ El cuarto camino requiere documentar bien que `bold` no significa "font-weight b
 
 ---
 
+## Alcance de este cambio
+
+**Este plan incluye solo renames de tokens existentes.** No se modifican valores, no se auditan primitivos, no se crean tokens nuevos.
+
+| Sí incluye | No incluye |
+|---|---|
+| Renombrar tokens existentes | Cambiar el primitivo al que apunta un semántico |
+| Eliminar slots vacíos del path | Crear tokens en slots que hoy no existen |
+| Agregar slots al path de tokens existentes (ej. `error` → `error/medium`) | Auditoría visual de tokens que estén fuera de rango |
+| Mergear duplicados (mismo concepto, distinto nombre) | Configurar dark mode |
+
+**Resultado esperado:** **cero cambio visual en componentes consumidores.** El `id` de cada token se mantiene durante el rename, los componentes siguen apuntando al mismo color, los overrides se respetan.
+
+**Si en el futuro se identifican tokens fuera del rango ideal**, eso será un trabajo aparte (con su propio plan, comunicación y validación visual). No forma parte de esta migración.
+
+---
+
 ## Decisiones tomadas
 
 1. **Unificar todo static bajo escala** (`bold > medium > subtle > quiet`). Eliminar el slot de jerarquía (`primary/secondary/tertiary`) donde no representa capas reales.
@@ -469,9 +486,12 @@ Los valores absolutos cambian. **Pero el rol es el mismo en cada escala**: "el d
 
 ---
 
-## Tablas de rango por (elemento × familia)
+## Tablas de rango por (elemento × familia) — referencia futura
 
-Cada combinación tiene su rango de primitivo predecible.
+> Estas tablas son **referencia para crear tokens nuevos**, no parte de la migración actual.
+> No se va a modificar ningún valor de los tokens existentes, aunque hoy estén fuera del rango sugerido.
+
+Cada combinación tiene su rango de primitivo predecible para tokens **nuevos**.
 
 ### Neutral
 
@@ -534,37 +554,31 @@ Cada combinación tiene su rango de primitivo predecible.
 | `bold` | core/[color]/600 |
 | `subtle` | core/[color]/100 |
 
-> **Nota:** estos rangos son sugerencias iniciales. La auditoría va a confirmar exactamente qué primitivo apunta cada token y ajustar donde haga falta.
-
 ---
 
-## Dark mode con modes en primitivos
+## Dark mode
 
-(Detalle completo en `token-architecture.md` → sección "Modos de color")
+**No forma parte de esta migración.** Se planificará por separado en otro momento.
 
-**Resumen:**
-- Una sola colección `core` con modes `Light` y `Dark`
-- Semánticos sin modes (un solo alias)
-- Componentes sin modes (alias al semántico)
-- Tres formas de definir el valor Dark: mismo valor / valor ajustado / primitivo nuevo
-- `core/dark/` solo como rama de excepción
+La capa semántica queda preparada para soportar dark mode más adelante con modes nativos de Figma en primitivos (detalle en `token-architecture.md` → sección "Modos de color").
 
 ---
 
 ## Plan de migración
 
-> **Estrategia general:** trabajar siempre en una librería borrador. Validar con un archivo de componentes copia. Solo después aplicar en producción. Comparar JSONs antes y después para detectar cualquier referencia rota.
+> **Estrategia general:** trabajar siempre en una librería borrador. Validar con un archivo de componentes copia. Solo después aplicar en producción. Comparar JSONs antes y después para confirmar que no hay referencias rotas.
+>
+> **Riesgo visual de esta migración: cero.** Solo renames, sin tocar valores ni primitivos. El `id` de cada token se mantiene durante el rename, los componentes consumidores siguen apuntando al mismo color.
 
 ### Paso 1 — Foundations borrador
 
 1. **Duplicar la librería real** en Figma → renombrar a "Foundations Borrador".
-2. **Eliminar slots de jerarquía** donde no aplica (foreground neutral pasa a usar solo escala, backgrounds y borders neutral pierden el slot `primary`).
-3. **Renombrar las marcas** (`brand/main` → `brand/primary`, `brand/accent` → `brand/secondary`).
-4. **Agregar el slot de escala** donde falta (feedbacks que hoy son un solo nivel pasan a `/medium`).
-5. **Construir tablas de rango por (elemento × familia)** con los primitivos exactos de la paleta.
-6. **Auditar tokens** y ajustar primitivos si están fuera del rango definido.
-7. **Configurar mode `Dark`** en los primitivos (puede hacerse después).
-8. **Publicar Foundations Borrador** como librería separada.
+2. **Aplicar los renames** según las tablas de "Cambios principales":
+   - Eliminar slots de jerarquía donde no aplica.
+   - Renombrar las marcas (`brand/main` → `brand/primary`, `brand/accent` → `brand/secondary`).
+   - Agregar `/medium` donde falta el slot de escala.
+   - Borrar duplicados con guión.
+3. **Publicar Foundations Borrador** como librería separada.
 
 ### Paso 2 — Validación con componentes copia
 
@@ -577,6 +591,7 @@ Cada combinación tiene su rango de primitivo predecible.
 - Ningún componente con tokens en rojo (referencia rota).
 - Los colores se ven igual que antes.
 - Los estados (hover, focus, pressed) se ven correctos.
+- Los overrides se mantienen.
 
 ### Paso 3 — Validación con diff de JSONs
 
@@ -605,8 +620,8 @@ Cada combinación tiene su rango de primitivo predecible.
    - Verificar:
      ✓ Renombrados visibles y esperados
      ✓ 0 tokens en "Conflicto de ID"
+     ✓ 0 tokens en "Valor cambiado"  ← importante: no debería haber ninguno
      ✓ 0 tokens en "Solo en A" inesperados
-     ✓ Valores cambiados solo donde se hizo auditoría
 ```
 
 ### Paso 4 — Rename en producción
@@ -642,8 +657,8 @@ Solo después de validar borrador + componentes copia + diff JSON.
 | `brand/accent` → `brand/secondary` | 7 | Rename |
 | Agregar slot `/medium` en feedbacks sin escala | ~8 | Rename |
 | Borrar duplicados con guión | 2 | Cleanup |
-| Tablas de rango por (elemento × familia) | Todo el sistema | Auditoría |
-| Modes Light/Dark en primitivos | Toda la paleta core | Configuración |
 
 **Total estimado de tokens renombrados:** ~50.
+**Cambio visual esperado:** cero. Solo se modifican nombres, no valores ni primitivos.
 **La escala de 4 niveles se mantiene.**
+**Dark mode queda fuera de este scope.**
