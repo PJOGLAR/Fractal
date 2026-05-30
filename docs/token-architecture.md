@@ -40,23 +40,47 @@ Definen el **propósito** del valor. Referencian a un primitivo via alias.
 
 ### Estructura:
 ```
-[contexto]/[elemento]/[familia]/[sub-familia?]/[variante]/[intensidad]
+[contexto]/[elemento]/[familia]/[sub-familia?]/[variante?]/[escala]
 ```
 
-`[sub-familia]` es opcional. Solo aparece cuando la familia se subdivide.
+Cada slot es opcional según el caso:
+
+| Slot | Cuándo aparece |
+|---|---|
+| `[contexto]` | Siempre (`static`, `interactive`, `expressive`) |
+| `[elemento]` | Siempre (`background`, `foreground`, `border`, `opacity`) |
+| `[familia]` | Siempre (`neutral`, `brand`, `feedback`, `expressive`) |
+| `[sub-familia]` | Solo cuando la familia se subdivide (`brand/primary`, `feedback/error`) |
+| `[variante]` | Solo en `interactive` (estado: `hover`, `pressed`, etc.) |
+| `[escala]` | Casi siempre (`bold`, `medium`, `subtle`, `quiet`) |
+
+### Asimetría intencional entre contextos
+
+Cada contexto usa los slots que tienen sentido para su uso, no más:
+
+| Contexto | Slot de variante | Por qué |
+|---|---|---|
+| `static` | — (sin variante) | Los static no responden a interacción. La prominencia se expresa solo con la escala (`bold/medium/subtle/quiet`) |
+| `interactive` | Estado (`default`, `hover`, `pressed`, `focus`, `active`, `disabled`, `selected`) | El componente reacciona al usuario y necesita expresar estado |
+| `expressive` | — (sin variante) | Solo decorativo, no comunica jerarquía ni interacción |
+
+> **No forzamos un mismo vocabulario en todos los contextos.** Lo que funciona en interactive (estado) no aplica en static. La asimetría es diseño intencional: cada contexto usa lo que necesita.
+
+### Familias y sub-familias
 
 | Familia | Sub-familia | Ejemplo |
 |---|---|---|
-| `brand` | `main` / `accent` | `brand/main` |
+| `brand` | `primary` / `secondary` | `brand/primary` |
 | `feedback` | `info` / `success` / `warning` / `error` | `feedback/error` |
 | `neutral` | — (es cross) | `neutral` |
 | `expressive` | `purple` / `sapphire` / `magenta` / etc. | `expressive/sapphire` |
 
 **Ejemplos:**
 ```
-static/foreground/brand/main/primary/medium      ← contexto/elem/familia/sub-fam/variante/intensidad
-static/foreground/neutral/primary/medium         ← contexto/elem/familia/         variante/intensidad
-static/background/feedback/info/bold             ← contexto/elem/familia/sub-fam/         intensidad
+static/foreground/neutral/medium                ← contexto/elem/familia/escala
+static/foreground/brand/primary/medium          ← contexto/elem/familia/sub-fam/escala
+static/background/feedback/error/bold           ← contexto/elem/familia/sub-fam/escala
+interactive/background/brand/primary/hover/medium ← contexto/elem/familia/sub-fam/variante/escala
 ```
 
 ---
