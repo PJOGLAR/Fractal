@@ -44,7 +44,7 @@ Esto garantiza que si mañana el componente crece (nuevo tamaño, nuevo estado, 
 
 ---
 
-## Ejemplo: Chip-filter
+## Ejemplo: Chip-filtert
 
 ```
 chip-filter/
@@ -258,3 +258,257 @@ pill/
 3. border
 4. spacing
 5. asset
+
+
+---
+
+## Patrones de variación
+
+Cuando un componente tiene variantes (props), los tokens pueden cambiar de valor según la variante activa. Cada patrón genera subcarpetas diferentes en la estructura de tokens.
+
+### Patrones detectados en el sistema
+
+| Patrón | Componentes | Qué cambia | Subcarpeta por |
+|---|---|---|---|
+| **State** | 16 | fills, strokes, opacity | estado: `default`, `hover`, `pressed`, `focus`, `disabled` |
+| **Size** | 9 | padding, gap, radius, asset size | tamaño: `xs`, `sm`, `md`, `lg`, `xl` |
+| **Type** | 9 | fills, strokes | variante semántica: `info`, `error`, `success`, `warning` |
+| **Style** | 5 | fills, strokes, padding, radius | estilo visual: `solid`, `ghost`, `outline`, `link`, `neutral` |
+| **Selected** | 4 | fills, strokes | selección: `selected`, `unselected` |
+| **Appearance** | 2 | fills (foreground invierte) | apariencia: `default`, `inverse` |
+| **Hierarchy** | 2 | fills, strokes | jerarquía: `high`, `medium`, `low` |
+| **Behavior** | 1 | padding, radius | comportamiento: `expanded`, `collapsed` |
+
+---
+
+### Patrón 1: State (estados de interacción)
+
+El más común. Los colores de background, border y opacity cambian según el estado.
+
+```
+[componente]/
+├── background/
+│   ├── default/
+│   ├── hover/
+│   ├── pressed/
+│   ├── focus/
+│   └── disabled/
+└── border/
+    └── color/
+        ├── default/
+        ├── hover/
+        ├── focus/
+        └── disabled/
+```
+
+**Aplica a:** Button, Button-icon, Chip-filter, Chip-input, Accordion, Button-card, Row-item, Text-field, Select, Search, etc.
+
+---
+
+### Patrón 2: Size (tamaños)
+
+Spacing, border-radius y asset sizes cambian por tamaño. Los colores NO cambian.
+
+```
+[componente]/
+├── spacing/
+│   ├── padding/
+│   │   ├── sm/
+│   │   ├── md/
+│   │   └── lg/
+│   └── gap/
+│       ├── sm/
+│       ├── md/
+│       └── lg/
+├── border/
+│   └── corner/
+│       ├── sm/
+│       ├── md/
+│       └── lg/
+└── foreground/
+    └── typography/
+        ├── sm/
+        ├── md/
+        └── lg/
+```
+
+**Aplica a:** Button, Button-icon, Chip-filter, Chip-input, Asset-container, Avatar, Skeleton-asset.
+
+---
+
+### Patrón 3: Type / Variant (variantes semánticas)
+
+Los colores cambian según el tipo de contenido o feedback. La estructura y spacing NO cambian.
+
+```
+[componente]/
+├── background/
+│   ├── info/
+│   ├── success/
+│   ├── warning/
+│   ├── error/
+│   └── neutral/
+├── foreground/
+│   └── color/
+│       ├── info/
+│       ├── success/
+│       ├── warning/
+│       ├── error/
+│       └── neutral/
+└── border/
+    └── color/
+        ├── info/
+        ├── success/
+        ├── warning/
+        ├── error/
+        └── neutral/
+```
+
+**Aplica a:** Pill, Alert, Snackbar, Push-notification, Badge.
+
+---
+
+### Patrón 4: Style (estilos visuales)
+
+Cambia la apariencia visual completa — fills, strokes, y a veces spacing.
+
+```
+[componente]/
+├── background/
+│   ├── solid/
+│   │   ├── default/
+│   │   └── hover/
+│   ├── ghost/
+│   │   ├── default/
+│   │   └── hover/
+│   └── outline/
+│       ├── default/
+│       └── hover/
+└── border/
+    └── color/
+        ├── solid/
+        │   └── default/
+        ├── ghost/
+        │   └── default/
+        └── outline/
+            └── default/
+```
+
+**Aplica a:** Button, Button-icon, Label, Tabs, Asset-container.
+
+---
+
+### Patrón 5: Appearance (default vs inverse)
+
+Los colores de foreground se invierten para mantener contraste. El background cambia de claro a oscuro.
+
+```
+[componente]/
+├── background/
+│   ├── default/             → fondo claro
+│   └── inverse/             → fondo oscuro
+└── foreground/
+    └── color/
+        ├── default/         → texto/icono oscuro (sobre fondo claro)
+        └── inverse/         → texto/icono claro (sobre fondo oscuro)
+```
+
+**Aplica a:** Button, Button-icon, Tabs.
+
+---
+
+### Patrón 6: Selected (selección)
+
+El estado de selección cambia background y border. Similar a State pero es un toggle persistente.
+
+```
+[componente]/
+├── background/
+│   ├── unselected/
+│   └── selected/
+└── border/
+    └── color/
+        ├── unselected/
+        └── selected/
+```
+
+**Aplica a:** Chip-filter, Chip-input, Accordion, Row-item.
+
+---
+
+### Patrón 7: Hierarchy (jerarquía visual)
+
+Diferentes niveles de prominencia del mismo componente.
+
+```
+[componente]/
+├── background/
+│   ├── high/                → el más prominente
+│   ├── medium/              → intermedio
+│   └── low/                 → el más sutil
+└── border/
+    └── color/
+        ├── high/
+        ├── medium/
+        └── low/
+```
+
+**Aplica a:** Alert, Pill.
+
+---
+
+## Combinación de patrones
+
+Un componente puede combinar múltiples patrones. Ejemplo: **Button** combina State + Size + Style + Appearance.
+
+La estructura se anida:
+
+```
+button/
+├── background/
+│   ├── solid/                    ← Style
+│   │   ├── default/             ← State
+│   │   │   ├── default/         ← Appearance
+│   │   │   └── inverse/
+│   │   ├── hover/
+│   │   │   ├── default/
+│   │   │   └── inverse/
+│   │   └── pressed/
+│   │       ├── default/
+│   │       └── inverse/
+│   └── ghost/
+│       └── ...
+├── spacing/
+│   └── padding/
+│       ├── lg/                   ← Size
+│       ├── md/
+│       ├── sm/
+│       └── xs/
+└── border/
+    └── corner/
+        ├── lg/                   ← Size
+        ├── md/
+        ├── sm/
+        └── xs/
+```
+
+**Regla para combinaciones:** El orden de anidamiento es:
+1. Style (si aplica)
+2. State
+3. Appearance (si aplica)
+
+Size siempre va en su propia rama (spacing, corner) porque no afecta colores.
+
+---
+
+## Resumen: ¿Qué genera subcarpeta?
+
+| Pregunta | Si la respuesta es SÍ → subcarpeta por |
+|---|---|
+| ¿El token cambia por tamaño del componente? | `sm`, `md`, `lg` |
+| ¿El token cambia por estado de interacción? | `default`, `hover`, `pressed`, `focus`, `disabled` |
+| ¿El token cambia por variante semántica? | `info`, `success`, `error`, `warning`, `neutral` |
+| ¿El token cambia por estilo visual? | `solid`, `ghost`, `outline`, `link` |
+| ¿El token cambia por selección? | `selected`, `unselected` |
+| ¿El token cambia por apariencia? | `default`, `inverse` |
+| ¿El token cambia por jerarquía? | `high`, `medium`, `low` |
