@@ -263,6 +263,51 @@ pictogram/lg                → asset/200
 
 Específicos de cada componente. Referencian a un semántico via alias.
 
+### Componentes públicos vs building blocks
+
+El sistema distingue dos tipos de componentes:
+
+| Tipo | Convención de nombre | Disponibilidad | Ejemplo |
+|---|---|---|---|
+| **Componente público** | Nombre limpio (Button, Card, Pill) | Disponible en la librería para todos los equipos | `Button`, `Card`, `Pill` |
+| **Building block** | Prefijo `⛔️` o `.⛔️` + nombre del componente padre + `_` + parte | Privado del componente que lo usa, **no se disponibiliza** en la librería | `.⛔️ Card_header`, `⛔️ Button-toggle` |
+
+#### Convenciones de nomenclatura para building blocks
+
+```
+.⛔️ [Componente-padre]_[parte]
+.⛔️ [Componente-padre]_[parte]_[sub-parte]
+⛔️ [Componente-padre]_[parte]
+```
+
+**Ejemplos:**
+- `.⛔️ Card_header` — el header dentro del componente Card
+- `.⛔️ Card_content_banner-mini` — un mini banner dentro del content del Card
+- `.⛔️ Row-item_leading-content_item` — sub-elemento del leading content de un Row-item
+- `⛔️ Button-toggle` — building block que usa el componente Button
+- `.⛔️ Tabs_option` — la opción individual dentro del componente Tabs
+
+#### Por qué tienen el prefijo
+
+- Indican que **no son consumibles directamente** por equipos externos.
+- Solo existen para **componer** otros componentes públicos.
+- Empiezan con `.` para que aparezcan al principio del listado en Figma.
+- El `⛔️` es un signo visual claro de "no usar suelto".
+
+#### Building blocks NO se incluyen en
+
+- Listados de componentes públicos del DS.
+- Análisis de patrones de variación (un building block no es un componente, es una pieza).
+- Tokens de componente en colecciones de generador (heredan los tokens del padre).
+
+#### Cómo cuenta el sistema
+
+Cuando se reportan métricas como "componentes con prop X":
+- Se cuentan **solo componentes públicos**.
+- Si un building block aparece en el conteo, su prop generalmente proviene del componente padre que lo usa.
+
+---
+
 ### Estructura de la colección:
 ```
 [componente]/
