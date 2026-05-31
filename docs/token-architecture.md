@@ -355,114 +355,101 @@ Cuando se reportan métricas como "componentes con prop X":
 
 ## Modos de color (tematización)
 
-La tematización (dark mode, alto contraste, etc.) se resuelve con **modes nativos de Figma en la capa de primitivos**. Los semánticos y los componentes no se enteran del cambio de mode.
+> **Estrategia confirmada:** los modes (Light / Dark / etc.) viven en la **capa semántica**, no en primitivos. Esta sección documenta la decisión y el razonamiento para cuando se implemente dark mode más adelante.
 
 ### Principio
 
 ```
-Primitivos → tienen modes (Light, Dark, ...)
-Semánticos → sin modes (un solo alias al primitivo)
-Componentes → sin modes (alias al semántico)
+Primitivos     → sin modes (valores fijos)
+Semánticos     → CON modes (Light, Dark, ...)
+Componentes    → sin modes (alias al semántico)
 ```
 
-Cuando un frame cambia de mode, Figma resuelve la cadena de alias usando el valor del primitivo en el mode activo. Los semánticos y componentes no se modifican.
+Cuando un frame cambia de mode, **el alias del semántico cambia** y apunta a otro primitivo. El valor del primitivo en sí no cambia.
 
 ### Cómo se resuelve un token
 
 ```
 Frame en Light:
-  button-card/foreground/regular
-    → static/foreground/brand/primary/regular
-      → core/purple/500 (Light) = #8B5CF6
+  button-card/foreground/medium
+    → static/foreground/brand/primary/medium
+      → (Light) core/purple/500 = #5A50F9
 
 Frame en Dark:
-  button-card/foreground/regular
-    → static/foreground/brand/primary/regular
-      → core/purple/500 (Dark) = #B89BFF
+  button-card/foreground/medium
+    → static/foreground/brand/primary/medium
+      → (Dark) core/purple/300 = #A5B4FC   ← apunta a otro primitivo
 ```
 
-Una sola cadena de alias. El mode solo afecta el valor final del primitivo.
+El componente no sabe del mode. El semántico sí. El primitivo no cambia su valor.
 
-### Estructura de la colección de primitivos
+### Por qué los modes están en semánticos y no en primitivos
+
+#### Razón 1 — Flexibilidad por uso
+
+Cada uso del sistema puede decidir su propio dark sin afectar a otros usos.
 
 ```
-core (collection)
+Light:
+  static/foreground/brand/primary/medium  → core/purple/500
+  static/background/brand/primary/medium  → core/purple/500
+
+Dark:
+  static/foreground/brand/primary/medium  → core/purple/300  (más claro para contraste)
+  static/background/brand/primary/medium  → core/purple/700  (más saturado para destacar)
+```
+
+Si los modes vivieran en primitivos, no se podría hacer esto sin duplicar primitivos.
+
+#### Razón 2 — Acceder a paletas distintas en dark
+
+Si un primitivo no sirve para dark, el semántico simplemente apunta a otro primitivo (de la misma paleta o de otra). No hay que crear primitivos nuevos ni alterar los existentes.
+
+```
+static/foreground/feedback/error/medium
+  Light → core/red/700
+  Dark  → core/red/400   ← más claro porque sobre fondo oscuro red/700 no contrasta
+```
+
+#### Razón 3 — Coincide con cómo se piensa la tematización
+
+Cuando se diseña dark mode, las decisiones se toman a nivel de **uso** ("el foreground brand en dark se ve así"), no a nivel de **valor crudo** ("el purple cambia"). Que los modes vivan donde está el uso refleja mejor esa lógica.
+
+#### Razón 4 — Es lo que hace la industria
+
+Material 3, IBM Carbon y Shopify Polaris ponen los modes en semánticos. La práctica está validada.
+
+### Cómo se ven los semánticos con modes
+
+```
+Collection: Semantic color
 ├── Mode: Light
 ├── Mode: Dark
 │
-├── core/purple/500
-│   ├── Light → #8B5CF6
-│   └── Dark  → valor para dark
+├── static/foreground/neutral/default/medium
+│   ├── Light → core/neutral/700
+│   └── Dark  → core/neutral/300
 │
-├── core/neutral/950
-│   ├── Light → #0A0A0A
-│   └── Dark  → valor para dark
+├── static/foreground/neutral/inverse/medium
+│   ├── Light → core/neutral/25
+│   └── Dark  → core/neutral/950
+│
+├── static/foreground/brand/primary/medium
+│   ├── Light → core/purple/500
+│   └── Dark  → core/purple/300
 ```
 
-### Tres formas de definir el valor Dark
+Los primitivos (`core/...`) se mantienen con sus valores fijos. Solo los alias cambian según el mode.
 
-#### 1. Mismo valor (caso más común)
+### Costos de esta estrategia
 
-Si el primitivo funciona en ambos modes, repetís el valor.
+Esta flexibilidad tiene su costo:
 
-```
-core/purple/500
-  Light → #8B5CF6
-  Dark  → #8B5CF6
-```
-
-#### 2. Valor ajustado (cuando no da contraste)
-
-Si el primitivo en dark no contrasta bien sobre fondos oscuros, le asignás un valor distinto solo en el mode Dark. **El nombre del primitivo no cambia.**
-
-```
-core/purple/500
-  Light → #8B5CF6
-  Dark  → #B89BFF   ← más claro/saturado para destacar sobre fondos oscuros
-```
-
-Esta es la forma de **alterar valores primitivos individuales** sin tocar el resto del sistema.
-
-#### 3. Primitivo nuevo (último recurso)
-
-Cuando ninguno de los valores existentes en la escala (5–950) sirve para dark, se agrega un primitivo nuevo.
-
-**Forma simple — escala extendida:**
-```
-core/neutral/15           ← primitivo nuevo, útil para dark
-  Light → #F8F8F8         (placeholder; si no se usa en light, repetir el más cercano)
-  Dark  → #1A1A1A
-```
-
-**Forma dedicada — rama `core/dark/` para casos cromáticamente distintos:**
-```
-core/dark/purple/extra-bright
-  Light → #B89BFF (placeholder)
-  Dark  → #C9B0FF
-```
-
-Solo usar la rama `core/dark/` si necesitás muchos valores especiales y querés tenerlos visualmente separados en el árbol de Figma.
-
-### Flujo de decisión
-
-```
-¿El primitivo existente funciona en dark?
-├── Sí → mismo valor en ambos modes
-└── No → ¿Puedo ajustar el valor del mode Dark del primitivo existente?
-         ├── Sí → ajusto solo el valor Dark (Forma 2)
-         └── No → ¿El valor que necesito encaja en la escala normal?
-                  ├── Sí → agrego primitivo nuevo en core/[color]/[nivel] (Forma 3 simple)
-                  └── No → agrego en core/dark/[color]/[nombre] (Forma 3 dedicada)
-```
-
-### Por qué esto y no `core` + `core-dark` separados
-
-| Enfoque | Pro | Contra |
-|---|---|---|
-| Modes en primitivos | Una sola colección, semánticos y componentes no cambian | Requiere configurar modes en Figma |
-| Colección `core-dark` separada | Visualmente explícito qué es dark | Doble mantenimiento, los semánticos terminan con lógica de modo, nombres duplicados |
-
-La estrategia de modes es estándar en Material 3, IBM Carbon, Polaris.
+| Costo | Mitigación |
+|---|---|
+| Cada semántico declara su valor en cada mode (más configuración inicial) | Configuración una sola vez, después es estable |
+| Pierde propagación automática (un cambio global toca varios semánticos) | Documentar las relaciones entre semánticos similares |
+| Riesgo de inconsistencia entre semánticos parecidos | Tabla de rangos por (elemento × familia) ayuda a mantener coherencia |
 
 ### Aplicable a otros modes
 
@@ -472,7 +459,11 @@ El mismo principio sirve para cualquier mode futuro:
 - Marca alterna (white-label)
 - Modo accesibilidad
 
-Cada mode nuevo se configura en la colección de primitivos. Semánticos y componentes no cambian.
+Cada mode nuevo se configura en la colección de semánticos. Primitivos y componentes no cambian.
+
+### Cuándo se va a implementar
+
+**Fuera del scope del rename actual.** Se planificará por separado cuando se decida activar dark mode. La capa semántica reorganizada queda preparada para soportarlo.
 
 ---
 
