@@ -5,18 +5,6 @@ dist
 tmp-cache
 .DS_Store
 *.zip
-figma-plugin/node_modules
-figma-plugin/dist
-figma-plugin/tmp-cache
-figma-plugin-generator/node_modules
-figma-plugin-generator/dist
-figma-plugin-generator/tmp-cache
-figma-plugin-sync/node_modules
-figma-plugin-sync/dist
-figma-plugin-sync/tmp-cache
-figma-plugin-foundations-export/node_modules
-figma-plugin-foundations-export/dist
-figma-plugin-foundations-export/tmp-cache
 
-# Personal — never push
+# Personal — never push (plugins, internal tooling, scripts, learning docs)
 personal/
