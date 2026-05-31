@@ -17,3 +17,6 @@ figma-plugin-sync/tmp-cache
 figma-plugin-foundations-export/node_modules
 figma-plugin-foundations-export/dist
 figma-plugin-foundations-export/tmp-cache
+
+# Personal — never push
+personal/
