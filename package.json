@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "extract": "tsx personal/scripts/extract-figma-data.ts"
+    "extract": "tsx personal/scripts/extract-figma-data.ts",
+    "changelog": "tsx personal/scripts/changelog.ts"
   },
   "dependencies": {
     "react": "^18.3.1",
