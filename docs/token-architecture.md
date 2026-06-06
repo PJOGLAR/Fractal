@@ -9,8 +9,8 @@ Primitivo → Semántico → Componente
 | Nivel | Ejemplo | Responde a |
 |---|---|---|
 | Primitivo | `core/purple/500` | ¿Qué valor tiene? |
-| Semántico | `interactive/background/brand/main/medium` | ¿Para qué se usa? |
-| Componente | `button-card/background/default` | ¿Dónde se aplica? |
+| Semántico | `interactive/background/brand/primary/default/medium` | ¿Para qué se usa? |
+| Componente | `button/background/solid/default` | ¿Dónde se aplica? |
 
 ---
 
@@ -19,7 +19,7 @@ Primitivo → Semántico → Componente
 Son los valores crudos. No se aplican directamente a componentes.
 
 ### Colecciones primitivas:
-- **Global color** — Paleta completa (purple, cyan, neutral, red, orange, green, blue, pink + expresivos)
+- **Global color** — Paleta completa (purple, cyan, neutral, red, orange, green, blue + expresivos)
 - **Global dimension** — Spacing, corner radius, widths, asset sizes
 - **Global typography** — Font families, sizes, weights, line-heights
 
@@ -43,201 +43,111 @@ Definen el **propósito** del valor. Referencian a un primitivo via alias.
 [contexto]/[elemento]/[familia]/[sub-familia?]/[variante?]/[escala]
 ```
 
-Cada slot es opcional según el caso:
-
 | Slot | Cuándo aparece |
 |---|---|
 | `[contexto]` | Siempre (`static`, `interactive`, `expressive`) |
 | `[elemento]` | Siempre (`background`, `foreground`, `border`, `opacity`) |
-| `[familia]` | Siempre (`neutral`, `brand`, `feedback`, `expressive`) |
+| `[familia]` | Siempre (`neutral`, `brand`, `feedback`) |
 | `[sub-familia]` | Solo cuando la familia se subdivide (`brand/primary`, `feedback/error`) |
-| `[variante]` | Solo en `interactive` (estado: `hover`, `pressed`, etc.) |
-| `[escala]` | Casi siempre (`bold`, `medium`, `subtle`, `quiet`) |
-
-### Asimetría intencional entre contextos
-
-Cada contexto usa los slots que tienen sentido para su uso, no más:
-
-| Contexto | Slot de variante | Por qué |
-|---|---|---|
-| `static` | — (sin variante) | Los static no responden a interacción. La prominencia se expresa solo con la escala (`bold/medium/subtle/quiet`) |
-| `interactive` | Estado (`default`, `hover`, `pressed`, `focus`, `active`, `disabled`, `selected`) | El componente reacciona al usuario y necesita expresar estado |
-| `expressive` | — (sin variante) | Solo decorativo, no comunica jerarquía ni interacción |
-
-> **No forzamos un mismo vocabulario en todos los contextos.** Lo que funciona en interactive (estado) no aplica en static. La asimetría es diseño intencional: cada contexto usa lo que necesita.
-
-### Familias y sub-familias
-
-| Familia | Sub-familia | Ejemplo |
-|---|---|---|
-| `brand` | `primary` / `secondary` | `brand/primary` |
-| `feedback` | `info` / `success` / `warning` / `error` | `feedback/error` |
-| `neutral` | — (es cross) | `neutral` |
-| `expressive` | `purple` / `sapphire` / `magenta` / etc. | `expressive/sapphire` |
-
-**Ejemplos:**
-```
-static/foreground/neutral/medium                ← contexto/elem/familia/escala
-static/foreground/brand/primary/medium          ← contexto/elem/familia/sub-fam/escala
-static/background/feedback/error/bold           ← contexto/elem/familia/sub-fam/escala
-interactive/background/brand/primary/hover/medium ← contexto/elem/familia/sub-fam/variante/escala
-```
+| `[variante]` | Solo en `interactive` (estado: `default`, `hover`, `pressed`, `focus`, `active`, `disabled`, `selected`) |
+| `[escala]` | Casi siempre (`strong`, `bold`, `medium`, `subtle`, `quiet`) |
 
 ---
 
 ### Contextos
 
-#### ◆ Static tokens
+#### ◆ Static
+Color **estable** que **no cambia** con la interacción. Comunica estructura, jerarquía o información.
 
-**¿Qué es un static token?**
-Un static token representa un color **estable**, que **no cambia** cuando el usuario interactúa.
-Su función es comunicar **estructura, jerarquía o información**, no acción.
+#### ◆ Interactive
+Color que **responde a la interacción** del usuario. Comunica estado, acción o disponibilidad.
 
-**Cuándo usar static tokens:**
-- Cuando el elemento **no es interactivo** (no tiene estados)
-- Cuando el color **no cambia** en hover / focus / pressed
-- Cuando el elemento **informa o estructura**, pero no responde
-- Cuando el componente **no recibe foco**
+#### ◆ Expressive
+Colores **decorativos o ilustrativos** que no comunican estado ni jerarquía funcional.
 
-#### ◆ Interactive tokens
+### Regla rápida
 
-**¿Qué es un interactive token?**
-Un interactive token representa un color que **responde a la interacción del usuario**.
-Su función es comunicar **estado, acción o disponibilidad**.
-
-**Cuándo usar interactive tokens:**
-- Cuando el usuario **puede interactuar** (tiene estados)
-- Cuando hay estados: hover, focus, pressed, disabled
-- Cuando el elemento **recibe foco**
-- Cuando el color indica **acción o feedback inmediato**
-
-#### ◆ Expressive tokens
-
-**¿Qué es un expressive token?**
-Un expressive token representa colores **decorativos o ilustrativos** que no comunican estado ni jerarquía funcional.
-Su función es aportar **personalidad visual, identidad de marca o diferenciación**.
-
-**Cuándo usar expressive tokens:**
-- Elementos decorativos en cards, banners o secciones destacadas
-- Ilustraciones e iconografía expresiva
-- Fondos de categorías o secciones temáticas
-- Elementos que aportan identidad visual sin función interactiva
-
-**Nomenclatura:**
-```
-expressive/[paleta]/[intensidad]
-expressive/illustration/[paleta]/[intensidad]
-```
-
-**Ejemplos:**
-```
-expressive/amber/medium              → color decorativo amber
-expressive/lavender/subtle           → color decorativo lavender suave
-expressive/illustration/purple/medium → ilustración en purple
-expressive/illustration/sapphire/bold → ilustración en sapphire intenso
-```
+> **Si el usuario puede interactuar → interactive.**
+> **Si no puede → static.**
+> **Si es decorativo → expressive.**
 
 ---
 
-### Regla simple para decidir rápido
+### Asimetría intencional entre contextos
 
-> **Si el usuario puede interactuar con el elemento → usa un interactive token.**
-> **Si no puede interactuar → usa un static token.**
-> **Si es decorativo o ilustrativo → usa un expressive token.**
-
-### Tabla de usos
-
-| Caso | Visualmente | Token correcto |
+| Contexto | Slot de variante | Por qué |
 |---|---|---|
-| Texto informativo | Texto plano | Static |
-| Icono decorativo | No responde | Static |
-| Ilustración en card | Decorativo | Expressive |
-| Fondo de categoría | Decorativo | Expressive |
-| Button | Cambia al interactuar | Interactive |
-| Link | Hover / focus | Interactive |
-| Alert informativa | No accionable | Static |
-| Toggle | Cambia estado | Interactive |
+| `static` | — (sin variante) | No responde a interacción. La prominencia se expresa solo con la escala |
+| `interactive` | Estado (`default`, `hover`, `pressed`, `focus`, `active`, `disabled`, `selected`) | Reacciona al usuario |
+| `expressive` | — (sin variante) | Solo decorativo |
 
 ---
 
-### Elementos:
-- **background** — Fondos de contenedores, cards, botones
-- **foreground** — Color de texto e iconos
-- **border** — Color de bordes
-- **opacity** — Capas de opacidad para estados (evita proliferación de variantes)
+### Familias y sub-familias
 
-### Familias:
-- **brand** — Familia compuesta. Se subdivide en `brand/main` (purple, marca principal) y `brand/accent` (cyan, marca madre/secundaria)
-- **neutral** — Familia simple, sin sub-familia. Cross a todo el sistema (grises y neutros)
-- **feedback** — Familia compuesta. Se subdivide en `info`, `success`, `warning`, `error`
-- **expressive** — Familia compuesta para decorativos. Se subdivide por paleta (`purple`, `sapphire`, `magenta`, etc.)
-
-### Intensidades
-
-Las intensidades son **contextuales** — describen la prominencia visual dentro de su contexto, no un valor absoluto en la escala cromática.
-
-| Intensidad | Significado | Ejemplo |
+| Familia | Sub-familia | Ejemplo |
 |---|---|---|
-| `bold` | El más prominente/intenso del contexto | Fondo destacado, texto principal |
-| `medium` | El valor principal del contexto | El "default" de ese uso |
-| `subtle` | Versión suave/secundaria | Fondos tenues, bordes suaves |
-| `quiet` | Apenas visible | Fondos casi transparentes |
+| `brand` | `primary` / `secondary` | `brand/primary` (purple), `brand/secondary` (cyan) |
+| `feedback` | `info` / `success` / `warning` / `error` | `feedback/error` |
+| `neutral` | — (es cross) | `neutral` |
 
-**Importante:** `medium` en foreground puede ser 950 (oscuro) y en background puede ser 25 (claro). Ambos son "el valor principal" de su contexto. Esto es correcto y necesario para tematización (dark mode).
+---
 
-**Regla de orden:** Dentro del mismo grupo, siempre se cumple:
+### Escala de intensidades
+
+Las intensidades describen **prominencia visual relativa al contexto**, no un valor absoluto.
+
+| Intensidad | Rango primitivo | Aplica a | Cuándo usar |
+|---|---|---|---|
+| `strong` | 950 | Solo neutral | Máxima prominencia. Texto principal en foreground. |
+| `bold` | 700-900 (neutral) / 700-950 (otros) | Todos | Muy prominente. Fondos de feedback, CTAs, borders fuertes. |
+| `medium` | 500-600 | Todos | Valor principal del contexto (default). |
+| `subtle` | 100-400 | Todos | Versión suave. Fondos tenues, bordes decorativos, texto secundario. |
+| `quiet` | 25-50 | Todos | Apenas visible. Overlays, separadores, fondos casi transparentes. |
+
+**Regla de orden:**
 ```
-bold > medium > subtle > quiet (en prominencia visual)
+strong > bold > medium > subtle > quiet
+```
+
+**Las escalas son contextuales.** `medium` en foreground apunta a un primitivo oscuro (para que se lea sobre fondo claro) y `medium` en background apunta a un primitivo claro. El rol es el mismo en cada uno: "el valor principal del contexto".
+
+---
+
+### Ejemplos de tokens semánticos
+
+```
+static/foreground/neutral/strong                  ← texto principal (950)
+static/foreground/neutral/bold                    ← texto enfatizado (700-900)
+static/foreground/neutral/medium                  ← texto secundario (500-600)
+static/foreground/neutral/subtle                  ← texto auxiliar (100-400)
+static/foreground/neutral/quiet                   ← texto inverse / disabled (25-50)
+
+static/foreground/brand/primary/medium            ← texto en marca primary
+static/foreground/brand/primary/bold              ← texto marca enfatizado
+static/foreground/feedback/info/bold              ← texto de feedback info
+static/foreground/feedback/error/bold             ← texto de error
+
+static/background/neutral/bold                    ← fondo prominente
+static/background/neutral/quiet                   ← fondo principal (blanco/claro)
+static/background/brand/primary/medium            ← fondo de marca
+static/background/brand/primary/subtle            ← fondo suave de marca
+static/background/feedback/error/bold             ← fondo de alerta error
+static/background/feedback/error/subtle           ← fondo suave de error
+
+interactive/background/brand/primary/default/medium  ← fondo botón primary
+interactive/background/brand/primary/hover/bold      ← fondo botón hover
+interactive/background/neutral/default/quiet         ← fondo componente neutral
+interactive/foreground/neutral/default/bold          ← texto botón sobre fondo lleno
+interactive/foreground/neutral/disabled/medium       ← texto disabled
+interactive/border/brand/primary/focus/medium        ← borde focus
+interactive/border/neutral/default/medium            ← borde default
 ```
 
 ---
 
-### Ejemplos de aplicación
+### Otras colecciones semánticas
 
-#### Texto en un input:
-```
-Label y supporting text son estáticos porque no cambian con la interacción.
-El fondo del input es interactivo porque tiene hover/focus/disabled.
-```
-```
-Label         → static/foreground/neutral/primary/medium
-Placeholder   → static/foreground/neutral/tertiary/medium
-Supporting    → static/foreground/neutral/secondary/medium
-Input fondo   → interactive/background/neutral/default/medium
-Input borde   → interactive/border/neutral/default/medium
-Input focus   → interactive/border/brand/main/focus/medium
-```
-
-#### Accordion con estados:
-```
-Title es estático porque no cambia de color.
-El fondo del row es interactivo porque tiene hover/pressed.
-Se aplica un overlay con el token de opacidad para el estado.
-```
-```
-Title         → static/foreground/neutral/primary/medium
-Fondo default → (sin color / transparente)
-Fondo hover   → interactive/opacity/brand/hover
-Fondo pressed → interactive/opacity/brand/pressed
-Borde         → static/border/neutral/primary/subtle
-```
-
-#### Card con elementos expresivos:
-```
-El fondo decorativo de la card usa expressive.
-Los textos usan static. Los botones usan interactive.
-```
-```
-Fondo decorativo → expressive/illustration/sapphire/subtle
-Título           → static/foreground/neutral/primary/medium
-Descripción      → static/foreground/neutral/secondary/medium
-Botón fondo      → interactive/background/brand/main/medium
-Botón hover      → interactive/background/brand/main/hover
-```
-
----
-
-### Otras colecciones semánticas:
 ```
 # Spacing
 padding/padding-[valor]     → spacing/[valor]
@@ -265,97 +175,182 @@ Específicos de cada componente. Referencian a un semántico via alias.
 
 ### Componentes públicos vs building blocks
 
-El sistema distingue dos tipos de componentes:
+| Tipo | Convención | Disponibilidad |
+|---|---|---|
+| **Componente público** | Nombre limpio (`Button`, `Card`, `Pill`) | Disponible en la librería |
+| **Building block** | Prefijo `⛔️` o `.⛔️` + nombre del padre + `_` + parte | Privado, no se disponibiliza |
 
-| Tipo | Convención de nombre | Disponibilidad | Ejemplo |
-|---|---|---|---|
-| **Componente público** | Nombre limpio (Button, Card, Pill) | Disponible en la librería para todos los equipos | `Button`, `Card`, `Pill` |
-| **Building block** | Prefijo `⛔️` o `.⛔️` + nombre del componente padre + `_` + parte | Privado del componente que lo usa, **no se disponibiliza** en la librería | `.⛔️ Card_header`, `⛔️ Button-toggle` |
-
-#### Convenciones de nomenclatura para building blocks
-
-```
-.⛔️ [Componente-padre]_[parte]
-.⛔️ [Componente-padre]_[parte]_[sub-parte]
-⛔️ [Componente-padre]_[parte]
-```
-
-**Ejemplos:**
-- `.⛔️ Card_header` — el header dentro del componente Card
-- `.⛔️ Card_content_banner-mini` — un mini banner dentro del content del Card
-- `.⛔️ Row-item_leading-content_item` — sub-elemento del leading content de un Row-item
-- `⛔️ Button-toggle` — building block que usa el componente Button
-- `.⛔️ Tabs_option` — la opción individual dentro del componente Tabs
-
-#### Por qué tienen el prefijo
-
-- Indican que **no son consumibles directamente** por equipos externos.
-- Solo existen para **componer** otros componentes públicos.
-- Empiezan con `.` para que aparezcan al principio del listado en Figma.
-- El `⛔️` es un signo visual claro de "no usar suelto".
-
-#### Building blocks NO se incluyen en
-
-- Listados de componentes públicos del DS.
-- Análisis de patrones de variación (un building block no es un componente, es una pieza).
-- Tokens de componente en colecciones de generador (heredan los tokens del padre).
-
-#### Cómo cuenta el sistema
-
-Cuando se reportan métricas como "componentes con prop X":
-- Se cuentan **solo componentes públicos**.
-- Si un building block aparece en el conteo, su prop generalmente proviene del componente padre que lo usa.
+Building blocks **no se incluyen** en tokens de componente ni en el generador. Heredan del padre.
 
 ---
 
-### Estructura de la colección:
+### Estructura de tokens de componente
+
 ```
 [componente]/
 ├── background/
-│   ├── default
-│   ├── hover
-│   ├── pressed
-│   └── ...
+│   └── [división principal] o directo si es cross
 ├── foreground/
 │   ├── typography/
-│   │   └── [rol]/          ← nombre del layer (title, description, label)
-│   │       ├── font-size
-│   │       ├── font-weight
-│   │       ├── font-family
-│   │       ├── line-height
-│   │       ├── letter-spacing
-│   │       └── color
-│   └── asset/
-│       └── icon/
-│           ├── color
-│           └── size
-├── spacing/
-│   ├── padding (o padding/[valores] si hay múltiples)
-│   └── gap
-└── border/
-    ├── corner (o corner/[valores] si hay múltiples)
-    ├── width
-    └── color/
-        ├── default
-        ├── hover
-        └── ...
+│   │   └── [rol o size]/
+│   │       ├── font-size, font-family, font-weight, letter-spacing, line-height
+│   │       └── color/ (si hay múltiples)
+│   └── icon/
+│       ├── color
+│       └── size
+├── border/
+│   ├── corner
+│   ├── width
+│   └── color/
+│       └── [estado o división]
+└── spacing/
+    ├── padding/ (si hay múltiples)
+    └── gap
 ```
 
-### Reglas de nomenclatura:
-1. **Nombre de colección** = nombre del componente
-2. **Sin subcarpeta** cuando hay 1 solo valor del tipo
-3. **Con subcarpeta** cuando hay 2+ valores del tipo
-4. **Tipografía** usa el nombre del layer como rol (title, description, label)
-5. **Tipografía por tamaño** usa sm/md/lg cuando el mismo rol tiene variantes de tamaño
-6. **No incluye** tokens de instancias anidadas (building blocks)
-7. **No repite** tokens con el mismo valor (4 paddings iguales = 1 token)
-8. **Orden de carpetas:** background → foreground → border → spacing → asset
+---
+
+### Regla de carpetas y subcarpetas
+
+> **Si hay UN solo valor → va directo en la carpeta padre (sin subcarpeta).**
+> **Si hay MÁS DE UNO → se crean subcarpetas para diferenciar.**
+
+```
+UN solo corner:        comp/border/corner
+MÚLTIPLES corners:     comp/border/corner/top-left
+                       comp/border/corner/bottom-right
+
+UN solo width:         comp/border/width
+DOS distintos:         comp/border/width/primary
+                       comp/border/width/emphasis
+
+UN solo padding:       comp/spacing/padding
+DOS distintos:         comp/spacing/padding/vertical
+                       comp/spacing/padding/horizontal
+
+UN solo gap:           comp/spacing/gap
+MÚLTIPLES:             comp/spacing/gap/content
+                       comp/spacing/gap/items
+```
+
+**Escalabilidad:** si mañana un componente pasa de 1 valor a 2, se renombra el existente agregando subcarpeta. Es un rename acotado y localizado.
+
+---
+
+### División principal (background y border color)
+
+La **primera subdivisión** bajo `background/` y `border/color/` es la **prop que genera el cambio más estructural de color** en el componente:
+
+| Prop principal | Valores | Ejemplo |
+|---|---|---|
+| Style | solid, ghost, outline, gradient, neutral, link | `pill/background/solid/info` |
+| Selected | selected, unselected | `chip-filter/background/selected/default` |
+| Type | info, success, warning, error, neutral | `alert/background/info/bold` |
+| State (sin otra prop) | default, hover, pressed, focus, disabled | `avatar/background/hover` |
+
+**Dentro de la división principal** se subdivide por estado o escala:
+
+```
+pill/background/solid/info           ← style + type
+chip-filter/background/selected/hover ← selected + state
+text-field/background/default        ← solo estado (cross)
+```
+
+---
+
+### Typography: roles y colores
+
+#### Cuando la tipografía es la misma en todas las variantes (cross)
+
+Props de typografía van **directo** sin carpeta de rol:
+
+```
+badge/foreground/typography/font-family
+badge/foreground/typography/font-size
+badge/foreground/typography/font-weight
+badge/foreground/typography/letter-spacing
+badge/foreground/typography/line-height
+badge/foreground/typography/color         ← un solo color, directo
+```
+
+#### Cuando hay roles distintos (label, placeholder, supporting-text)
+
+Carpeta por rol. El color va **dentro** del rol:
+
+```
+text-field/foreground/typography/label/font-family
+text-field/foreground/typography/label/font-size
+text-field/foreground/typography/label/color/default
+text-field/foreground/typography/label/color/disabled
+text-field/foreground/typography/placeholder/font-family
+text-field/foreground/typography/placeholder/color/default
+text-field/foreground/typography/placeholder/color/disabled
+text-field/foreground/typography/supporting-text/color/default
+text-field/foreground/typography/supporting-text/color/error
+```
+
+#### Cuando varía por tamaño (sm, md, lg)
+
+Carpeta por size:
+
+```
+chip-filter/foreground/typography/sm/font-family
+chip-filter/foreground/typography/sm/font-size
+chip-filter/foreground/typography/md/font-family
+chip-filter/foreground/typography/md/font-size
+chip-filter/foreground/typography/lg/font-family
+chip-filter/foreground/typography/lg/font-size
+chip-filter/foreground/typography/color/selected    ← color cross al size, separado
+chip-filter/foreground/typography/color/unselected
+```
+
+---
+
+### Naming de estados en tokens de componente
+
+Los tokens de componente usan **nombres de estado** (`default`, `hover`, `pressed`, `focus`, `disabled`, `error`, `selected`) para diferenciar colores que cambian según la condición del componente.
+
+> **Esto aplica aunque el token semántico al que apuntan sea `static`.** La capa de componente describe **cuándo/dónde** se aplica el color, no su naturaleza. Son niveles distintos con reglas distintas.
+
+```
+Semántico:    define si el color responde a interacción o no (static vs interactive)
+Componente:   define CUÁNDO se aplica ese color dentro del componente
+```
+
+Ejemplo:
+```
+text-field/foreground/typography/placeholder/color/disabled
+  → apunta a: interactive/foreground/neutral/disabled/medium
+  
+  El token de componente se llama "disabled" porque es la condición de aplicación.
+  El semántico se llama "interactive/disabled" porque es un color que existe en contexto interactivo.
+  Ambos están alineados.
+```
+
+---
+
+### Reglas de nomenclatura (resumen)
+
+| Regla | Descripción |
+|---|---|
+| **Sin subcarpeta** | Cuando hay 1 solo valor del tipo |
+| **Con subcarpeta** | Cuando hay 2+ valores del tipo |
+| **Nombre por rol** | Typography: label, placeholder, supporting-text, title, description |
+| **Nombre por tamaño** | Cuando el mismo rol varía por size: sm, md, lg |
+| **Nombre por estado** | Background/border: default, hover, pressed, focus, disabled, selected |
+| **Nombre por tipo** | Cuando hay variantes semánticas: info, success, error, warning |
+| **Nombre por estilo** | Cuando la prop Style diferencia: solid, ghost, outline, gradient |
+| **Nombre por dirección** | Padding: vertical, horizontal |
+| **Nombre por posición** | Corner: top-left, top-right, bottom-left, bottom-right |
+| **No incluye instancias** | No toma tokens de building blocks anidados |
+| **Dedup** | 4 paddings iguales = 1 token, 4 corners iguales = 1 token |
+| **Orden de carpetas** | background → foreground → border → spacing |
 
 ---
 
 ## Modos de color (tematización)
 
-> **Estrategia confirmada:** los modes (Light / Dark / etc.) viven en la **capa semántica**, no en primitivos. Esta sección documenta la decisión y el razonamiento para cuando se implemente dark mode más adelante.
+> Los modes (Light / Dark / etc.) viven en la **capa semántica**, no en primitivos.
 
 ### Principio
 
@@ -365,105 +360,33 @@ Semánticos     → CON modes (Light, Dark, ...)
 Componentes    → sin modes (alias al semántico)
 ```
 
-Cuando un frame cambia de mode, **el alias del semántico cambia** y apunta a otro primitivo. El valor del primitivo en sí no cambia.
+Cuando un frame cambia de mode, **el alias del semántico cambia** y apunta a otro primitivo.
 
-### Cómo se resuelve un token
+### Cómo se resuelve
 
 ```
 Frame en Light:
-  button-card/foreground/medium
-    → static/foreground/brand/primary/medium
+  button/background/solid/default
+    → interactive/background/brand/primary/default/medium
       → (Light) core/purple/500 = #5A50F9
 
 Frame en Dark:
-  button-card/foreground/medium
-    → static/foreground/brand/primary/medium
-      → (Dark) core/purple/300 = #A5B4FC   ← apunta a otro primitivo
+  button/background/solid/default
+    → interactive/background/brand/primary/default/medium
+      → (Dark) core/purple/400 = #818CF8
 ```
 
-El componente no sabe del mode. El semántico sí. El primitivo no cambia su valor.
-
-### Por qué los modes están en semánticos y no en primitivos
-
-#### Razón 1 — Flexibilidad por uso
-
-Cada uso del sistema puede decidir su propio dark sin afectar a otros usos.
-
-```
-Light:
-  static/foreground/brand/primary/medium  → core/purple/500
-  static/background/brand/primary/medium  → core/purple/500
-
-Dark:
-  static/foreground/brand/primary/medium  → core/purple/300  (más claro para contraste)
-  static/background/brand/primary/medium  → core/purple/700  (más saturado para destacar)
-```
-
-Si los modes vivieran en primitivos, no se podría hacer esto sin duplicar primitivos.
-
-#### Razón 2 — Acceder a paletas distintas en dark
-
-Si un primitivo no sirve para dark, el semántico simplemente apunta a otro primitivo (de la misma paleta o de otra). No hay que crear primitivos nuevos ni alterar los existentes.
-
-```
-static/foreground/feedback/error/medium
-  Light → core/red/700
-  Dark  → core/red/400   ← más claro porque sobre fondo oscuro red/700 no contrasta
-```
-
-#### Razón 3 — Coincide con cómo se piensa la tematización
-
-Cuando se diseña dark mode, las decisiones se toman a nivel de **uso** ("el foreground brand en dark se ve así"), no a nivel de **valor crudo** ("el purple cambia"). Que los modes vivan donde está el uso refleja mejor esa lógica.
-
-#### Razón 4 — Es lo que hace la industria
-
-Material 3, IBM Carbon y Shopify Polaris ponen los modes en semánticos. La práctica está validada.
-
-### Cómo se ven los semánticos con modes
-
-```
-Collection: Semantic color
-├── Mode: Light
-├── Mode: Dark
-│
-├── static/foreground/neutral/default/medium
-│   ├── Light → core/neutral/700
-│   └── Dark  → core/neutral/300
-│
-├── static/foreground/neutral/inverse/medium
-│   ├── Light → core/neutral/25
-│   └── Dark  → core/neutral/950
-│
-├── static/foreground/brand/primary/medium
-│   ├── Light → core/purple/500
-│   └── Dark  → core/purple/300
-```
-
-Los primitivos (`core/...`) se mantienen con sus valores fijos. Solo los alias cambian según el mode.
-
-### Costos de esta estrategia
-
-Esta flexibilidad tiene su costo:
-
-| Costo | Mitigación |
-|---|---|
-| Cada semántico declara su valor en cada mode (más configuración inicial) | Configuración una sola vez, después es estable |
-| Pierde propagación automática (un cambio global toca varios semánticos) | Documentar las relaciones entre semánticos similares |
-| Riesgo de inconsistencia entre semánticos parecidos | Tabla de rangos por (elemento × familia) ayuda a mantener coherencia |
+El componente no sabe del mode. El semántico sí. El primitivo no cambia.
 
 ### Aplicable a otros modes
 
-El mismo principio sirve para cualquier mode futuro:
+- Dark mode
 - High contrast
 - Print
 - Marca alterna (white-label)
 - Modo accesibilidad
 
 Cada mode nuevo se configura en la colección de semánticos. Primitivos y componentes no cambian.
-
-### Cuándo se va a implementar
-
-**Fuera del scope del rename actual.** Se planificará por separado cuando se decida activar dark mode. La capa semántica reorganizada queda preparada para soportarlo.
 
 ---
 
@@ -477,14 +400,14 @@ Resultado: se propaga a todos los semánticos y componentes automáticamente
 
 ### Cambio de decisión de diseño
 ```
-Editás: interactive/background/brand/main/hover → ahora apunta a core/purple/800
+Editás: interactive/background/brand/primary/hover → ahora apunta a core/purple/800
 Resultado: todos los componentes que usan ese semántico cambian
 ```
 
 ### Cambio específico de un componente
 ```
-Editás: button-card/background/hover → ahora apunta a otro semántico
-Resultado: solo Button-card cambia, el resto queda igual
+Editás: button/background/solid/hover → ahora apunta a otro semántico
+Resultado: solo Button cambia, el resto queda igual
 ```
 
 ---
@@ -493,17 +416,22 @@ Resultado: solo Button-card cambia, el resto queda igual
 
 ### Plugin-tokens (extractor)
 - Extrae todos los tokens aplicados en el documento
-- Genera JSON para el dashboard de salud
+- Genera JSON para el dashboard
 
-### Token Component Generator
+### Token Component Generator V2
 - Escanea un componente seleccionado
 - Genera la colección de tokens específicos como alias de los semánticos
-- Vincula los tokens generados al componente
+- Detecta patrones (Style, Selected, Size, Type, State)
+- Aplica las reglas de subcarpetas automáticamente
 
 ### Dashboard (Vercel)
 - Visualiza la salud del DS
 - Muestra cobertura, tokens huérfanos, impacto de cambios
 - Filtros por categoría, colección y tipo
+
+### Snapshot + Diff (local)
+- `npm run snapshot` — toma un snapshot de las variables actuales via API
+- `npm run diff` — compara con el snapshot anterior y genera changelog
 
 ---
 

@@ -1,11 +1,10 @@
 # Estructura de Tokens de Componente
 
-## Regla principal de escalabilidad
+## Regla principal
 
-> **Siempre usar subcarpeta con nombre de valor, incluso si hoy es 1 solo.**
-> Agregar es solo agregar, nunca renombrar.
-
-Esto garantiza que si mañana el componente crece (nuevo tamaño, nuevo estado, nuevo elemento), solo se agrega un token nuevo sin tocar los existentes.
+> **Si hay UN solo valor → va directo en la carpeta padre.**
+> **Si hay MÁS DE UNO → se crean subcarpetas.**
+> **Si mañana entra un valor nuevo, se agrega subcarpeta sin romper lo anterior.**
 
 ---
 
@@ -14,501 +13,381 @@ Esto garantiza que si mañana el componente crece (nuevo tamaño, nuevo estado, 
 ```
 [componente]/
 ├── background/
-│   └── [estado o variante]/     ← siempre subcarpeta
+│   └── [división principal o directo]
 ├── foreground/
 │   ├── typography/
-│   │   └── [rol o tamaño]/      ← siempre subcarpeta
-│   │       ├── font-size
-│   │       ├── font-weight
-│   │       ├── font-family
-│   │       ├── line-height
-│   │       ├── letter-spacing
-│   │       └── color
-│   └── asset/
-│       └── [tipo]/              ← icon, pictogram, illustration
-│           ├── color
-│           └── size
+│   │   └── [rol o size o directo]/
+│   │       ├── font-size, font-family, font-weight, letter-spacing, line-height
+│   │       └── color/ (si múltiples) o color (si uno solo)
+│   └── icon/
+│       ├── color (o color/[diferenciador] si múltiples)
+│       └── size (o size/[diferenciador] si múltiples)
 ├── border/
-│   ├── corner/
-│   │   └── [parte]/            ← container, image, indicator
-│   ├── width/
-│   │   └── [nombre]/           ← default, thick, etc.
-│   └── color/
-│       └── [estado]/           ← default, hover, focus, etc.
+│   ├── corner (o corner/[posición] si múltiples)
+│   ├── width (o width/[nombre] si múltiples)
+│   └── color/ (o color si uno solo)
 └── spacing/
-    ├── padding/
-    │   └── [dirección o tamaño]/ ← horizontal, vertical, sm, md, lg
-    └── gap/
-        └── [nombre]/            ← default, items, sections
+    ├── padding (o padding/[dirección o size] si múltiples)
+    └── gap (o gap/[nombre] si múltiples)
 ```
 
 ---
 
-## Ejemplo: Chip-filtert
+## Regla de subcarpetas
 
-```
-chip-filter/
-│
-├── background/
-│   ├── default/             → interactive/background/neutral/default/medium
-│   ├── hover/               → interactive/background/neutral/hover/medium
-│   ├── pressed/             → interactive/opacity/brand/pressed
-│   ├── selected/            → interactive/background/brand/default/medium
-│   └── disabled/            → interactive/background/neutral/disabled
-│
-├── foreground/
-│   ├── typography/
-│   │   ├── sm/
-│   │   │   ├── font-size        → caption/sm/semibold/font-size
-│   │   │   ├── font-weight      → caption/sm/semibold/font-weight
-│   │   │   ├── font-family      → caption/sm/semibold/font-family
-│   │   │   ├── line-height      → caption/sm/semibold/line-height
-│   │   │   ├── letter-spacing   → caption/sm/semibold/letter-spacing
-│   │   │   └── color            → static/foreground/neutral/primary/medium
-│   │   ├── md/
-│   │   │   ├── font-size        → body/sm/semibold/font-size
-│   │   │   ├── font-weight      → body/sm/semibold/font-weight
-│   │   │   ├── font-family      → body/sm/semibold/font-family
-│   │   │   ├── line-height      → body/sm/semibold/line-height
-│   │   │   ├── letter-spacing   → body/sm/semibold/letter-spacing
-│   │   │   └── color            → static/foreground/neutral/primary/medium
-│   │   └── lg/
-│   │       ├── font-size        → body/md/semibold/font-size
-│   │       ├── font-weight      → body/md/semibold/font-weight
-│   │       ├── font-family      → body/md/semibold/font-family
-│   │       ├── line-height      → body/md/semibold/line-height
-│   │       ├── letter-spacing   → body/md/semibold/letter-spacing
-│   │       └── color            → static/foreground/neutral/primary/medium
-│   │
-│   └── asset/
-│       └── icon/
-│           ├── size             → icon/sm
-│           └── color            → static/foreground/neutral/primary/medium
-│
-├── border/
-│   ├── corner/
-│   │   └── container/           → border/corner/corner-2000
-│   ├── width/
-│   │   └── default/             → border/width/thin
-│   └── color/
-│       ├── default/             → interactive/border/neutral/default/medium
-│       ├── hover/               → interactive/border/neutral/hover/medium
-│       ├── focus/               → interactive/border/brand/main/focus/medium
-│       ├── selected/            → interactive/border/brand/main/default/medium
-│       └── disabled/            → interactive/border/neutral/disabled/medium
-│
-└── spacing/
-    ├── padding/
-    │   ├── sm/                  → padding/padding-200
-    │   ├── md/                  → padding/padding-300
-    │   └── lg/                  → padding/padding-400
-    └── gap/
-        └── default/             → gap/gap-100
-```
-
-**Si mañana se agrega un tamaño xl:**
-```
-chip-filter/foreground/typography/xl/font-size   ← solo se agrega
-chip-filter/spacing/padding/xl/                  ← solo se agrega
-```
-No se toca nada existente.
+| Caso | Resultado |
+|---|---|
+| 1 solo corner | `border/corner` |
+| 2+ corners distintos | `border/corner/top-left`, `border/corner/bottom-right` |
+| 1 solo width | `border/width` |
+| 2 distintos | `border/width/primary`, `border/width/emphasis` |
+| 1 solo padding | `spacing/padding` |
+| 2 paddings (H ≠ V) | `spacing/padding/vertical`, `spacing/padding/horizontal` |
+| Padding por size | `spacing/padding/sm`, `spacing/padding/md`, `spacing/padding/lg` |
+| 1 solo gap | `spacing/gap` |
+| 2+ gaps | `spacing/gap/content`, `spacing/gap/items` |
+| 1 solo color de texto | `foreground/typography/color` |
+| Múltiples colores | `foreground/typography/color/default`, `/error`, `/disabled` |
 
 ---
 
-## Ejemplo: Button-card
+## División principal (background y border color)
 
-```
-button-card/
-│
-├── background/
-│   ├── default/             → interactive/background/neutral/default/medium
-│   ├── hover/               → interactive/background/brand/hover/subtle
-│   ├── pressed/             → interactive/opacity/brand/pressed
-│   ├── focus/               → interactive/background/neutral/default/medium
-│   └── disabled/            → interactive/background/neutral/default/medium
-│
-├── foreground/
-│   ├── typography/
-│   │   ├── title/
-│   │   │   ├── font-size        → body/md/semibold/font-size
-│   │   │   ├── font-weight      → body/md/semibold/font-weight
-│   │   │   ├── font-family      → body/md/semibold/font-family
-│   │   │   ├── line-height      → body/md/semibold/line-height
-│   │   │   ├── letter-spacing   → body/md/semibold/letter-spacing
-│   │   │   └── color            → static/foreground/neutral/primary/medium
-│   │   └── description/
-│   │       ├── font-size        → caption/md/medium/font-size
-│   │       ├── font-weight      → caption/md/medium/font-weight
-│   │       ├── font-family      → caption/md/medium/font-family
-│   │       ├── line-height      → caption/md/medium/line-height
-│   │       ├── letter-spacing   → caption/md/medium/letter-spacing
-│   │       └── color            → static/foreground/neutral/secondary/medium
-│   │
-│   └── asset/
-│       └── pictogram/
-│           ├── size             → pictogram/lg
-│           └── color            → static/foreground/brand/main/primary/medium
-│
-├── border/
-│   ├── corner/
-│   │   ├── container/           → border/corner/corner-300
-│   │   └── image/               → border/corner/corner-250
-│   ├── width/
-│   │   └── default/             → border/width/thin
-│   └── color/
-│       ├── default/             → interactive/border/neutral/default/medium
-│       ├── hover/               → interactive/border/brand/main/hover/subtle
-│       ├── focus/               → interactive/border/brand/main/focus/medium
-│       └── disabled/            → interactive/border/neutral/disabled/medium
-│
-└── spacing/
-    ├── padding/
-    │   ├── horizontal/          → padding/padding-300
-    │   └── vertical/            → padding/padding-400
-    └── gap/
-        └── default/             → gap/gap-200
-```
+La **prop que genera el cambio más estructural** define la primera carpeta:
+
+| Componente | Prop principal | Subcarpetas | Luego |
+|---|---|---|---|
+| Pill | Style | solid, outline | type (info, success, error...) |
+| Chip-filter | Selected | selected, unselected | state (default, hover, pressed) |
+| Label | Style | solid, gradient | color (orange, green, magenta) |
+| Button | Style | solid, ghost, outline, neutral, link | state + appearance |
+| Text-field | — (cross) | — | state en border/color |
+| Badge | Type | info, error, neutral... | — |
+| Alert | Type + Hierarchy | info/bold, info/subtle... | — |
+| Avatar | State | default, hover, pressed, disabled | — |
 
 ---
 
-## Ejemplo: Pill
+## Typography
+
+### Cross (misma tipografía en todas las variantes)
+
+```
+badge/foreground/typography/font-family
+badge/foreground/typography/font-size
+badge/foreground/typography/font-weight
+badge/foreground/typography/letter-spacing
+badge/foreground/typography/line-height
+badge/foreground/typography/color
+```
+
+### Con roles distintos
+
+```
+text-field/foreground/typography/label/font-family
+text-field/foreground/typography/label/font-size
+text-field/foreground/typography/label/font-weight
+text-field/foreground/typography/label/letter-spacing
+text-field/foreground/typography/label/line-height
+text-field/foreground/typography/label/color/default
+text-field/foreground/typography/label/color/disabled
+text-field/foreground/typography/placeholder/font-family
+text-field/foreground/typography/placeholder/font-size
+text-field/foreground/typography/placeholder/color/default
+text-field/foreground/typography/placeholder/color/disabled
+text-field/foreground/typography/supporting-text/font-family
+text-field/foreground/typography/supporting-text/color/default
+text-field/foreground/typography/supporting-text/color/error
+```
+
+### Por tamaño (varía con prop Size)
+
+```
+chip-filter/foreground/typography/sm/font-family
+chip-filter/foreground/typography/sm/font-size
+chip-filter/foreground/typography/sm/font-weight
+chip-filter/foreground/typography/md/font-family
+chip-filter/foreground/typography/md/font-size
+chip-filter/foreground/typography/lg/font-family
+chip-filter/foreground/typography/lg/font-size
+chip-filter/foreground/typography/color/selected
+chip-filter/foreground/typography/color/unselected
+```
+
+### Color de texto con subcarpetas
+
+El color de texto se subdivide por la **categoría que genera el cambio**:
+
+| Caso | Subcarpeta |
+|---|---|
+| Cambia por estado del componente | `color/default`, `color/disabled`, `color/error` |
+| Cambia por tipo de feedback | `color/info`, `color/success`, `color/error` |
+| Cambia por estilo | `color/solid`, `color/outline` |
+| Cambia por selección | `color/selected`, `color/unselected` |
+
+---
+
+## Ejemplos completos
+
+### Badge (todo cross)
+
+```
+badge/
+├── background/info
+├── background/error
+├── border/corner
+├── border/width
+├── border/color
+├── foreground/typography/font-family
+├── foreground/typography/font-size
+├── foreground/typography/font-weight
+├── foreground/typography/letter-spacing
+├── foreground/typography/line-height
+├── foreground/typography/color
+└── spacing/
+    ├── padding/horizontal
+    └── padding/vertical
+```
+
+### Pill (Style + Type)
 
 ```
 pill/
-│
 ├── background/
-│   ├── info/                → static/background/feedback/info/bold
-│   ├── success/             → static/background/feedback/success/bold
-│   ├── warning/             → static/background/feedback/warning/bold
-│   ├── error/               → static/background/feedback/error/bold
-│   ├── error-subtle/        → static/background/feedback/error/subtle
-│   ├── success-subtle/      → static/background/feedback/success/subtle
-│   ├── warning-subtle/      → static/background/feedback/warning/subtle
-│   ├── brand/               → static/background/brand/main/subtle
-│   └── neutral/             → static/background/neutral/primary/bold
-│
+│   ├── solid/
+│   │   ├── info
+│   │   ├── success
+│   │   ├── warning
+│   │   ├── error
+│   │   └── neutral
+│   └── outline/
+│       ├── info
+│       ├── success
+│       ├── warning
+│       ├── error
+│       └── brand
+├── foreground/
+│   └── typography/
+│       ├── font-family
+│       ├── font-size
+│       ├── font-weight
+│       ├── letter-spacing
+│       ├── line-height
+│       └── color/
+│           ├── solid/quiet
+│           └── outline/
+│               ├── info
+│               ├── success
+│               ├── warning
+│               ├── error
+│               └── neutral
+├── border/
+│   ├── corner
+│   ├── width
+│   └── color/
+│       ├── info
+│       ├── success
+│       ├── warning
+│       ├── error
+│       └── medium
+└── spacing/
+    ├── padding/horizontal
+    ├── padding/vertical
+    └── gap
+```
+
+### Chip-filter (Selected + Size + State)
+
+```
+chip-filter/
+├── background/
+│   ├── selected/
+│   │   ├── default (o medium)
+│   │   └── hover
+│   ├── unselected/
+│   │   ├── quiet
+│   │   └── hover
+│   ├── pressed
+│   └── disabled
 ├── foreground/
 │   ├── typography/
-│   │   └── label/
-│   │       ├── font-size        → caption/md/medium/font-size
-│   │       ├── font-weight      → caption/md/medium/font-weight
-│   │       ├── font-family      → caption/md/medium/font-family
-│   │       ├── line-height      → caption/md/medium/line-height
-│   │       ├── letter-spacing   → caption/md/medium/letter-spacing
-│   │       └── color/
-│   │           ├── info         → static/foreground/feedback/info
-│   │           ├── success      → static/foreground/feedback/success
-│   │           ├── warning      → static/foreground/feedback/warning
-│   │           ├── error        → static/foreground/feedback/error
-│   │           ├── neutral      → static/foreground/neutral/tertiary/medium
-│   │           └── on-bold      → static/foreground/neutral/primary/subtle
-│   │
-│   └── asset/
-│       └── icon/
-│           └── size             → icon/sm
-│
+│   │   ├── sm/ (font-family, font-size, font-weight, letter-spacing, line-height)
+│   │   ├── md/ (idem)
+│   │   ├── lg/ (idem)
+│   │   └── color/
+│   │       ├── selected
+│   │       ├── unselected
+│   │       └── disabled
+│   └── icon/
+│       ├── color/
+│       │   ├── selected
+│       │   └── unselected
+│       └── size
 ├── border/
-│   ├── corner/
-│   │   └── default/             → border/corner/corner-150
-│   ├── width/
-│   │   └── default/             → border/width/thin
+│   ├── corner
+│   ├── width
 │   └── color/
-│       ├── info/                → static/border/feedback/info
-│       ├── success/             → static/border/feedback/success
-│       ├── warning/             → static/border/feedback/warning
-│       ├── error/               → static/border/feedback/error
-│       └── neutral/             → static/border/neutral/primary/medium
-│
+│       ├── focus
+│       └── unselected/
+│           ├── default
+│           └── hover
 └── spacing/
     ├── padding/
-    │   └── default/             → padding/padding-200
+    │   ├── sm/horizontal
+    │   ├── sm/vertical
+    │   ├── md/horizontal
+    │   ├── md/vertical
+    │   ├── lg/horizontal
+    │   └── lg/vertical
+    └── gap
+```
+
+### Text-field (State + Roles)
+
+```
+text-field/
+├── background/default
+├── foreground/
+│   ├── typography/
+│   │   ├── label/
+│   │   │   ├── font-family, font-size, font-weight, letter-spacing, line-height
+│   │   │   └── color/
+│   │   │       ├── default
+│   │   │       └── disabled
+│   │   ├── placeholder/
+│   │   │   ├── font-family, font-size, font-weight, letter-spacing, line-height
+│   │   │   └── color/
+│   │   │       ├── default
+│   │   │       └── disabled
+│   │   └── supporting-text/
+│   │       ├── font-family, font-size, font-weight, letter-spacing, line-height
+│   │       └── color/
+│   │           ├── default
+│   │           └── error
+│   └── icon/
+│       ├── color
+│       └── size
+├── border/
+│   ├── corner
+│   ├── width/primary
+│   ├── width/emphasis
+│   └── color/
+│       ├── default
+│       ├── hover
+│       ├── focus
+│       ├── disabled
+│       └── error
+└── spacing/
+    ├── padding/horizontal
+    ├── padding/vertical
     └── gap/
-        └── default/             → gap/gap-150
+        ├── horizontal
+        └── supporting-text
+```
+
+### Button-row (Size en padding)
+
+```
+button-row/
+├── background/
+│   ├── hover
+│   └── disabled
+├── foreground/
+│   └── typography/
+│       ├── font-family
+│       ├── font-size
+│       ├── font-weight
+│       ├── letter-spacing
+│       ├── line-height
+│       └── color/
+│           ├── brand
+│           └── neutral
+├── border/
+│   ├── corner/top
+│   ├── corner/bottom
+│   ├── width
+│   └── color/pressed
+└── spacing/
+    ├── padding/
+    │   ├── vertical
+    │   └── horizontal/
+    │       ├── xs
+    │       ├── sm
+    │       ├── md
+    │       └── lg
+    └── gap
+```
+
+### Avatar (Typography por size)
+
+```
+avatar/
+├── background/
+│   ├── default
+│   ├── hover
+│   ├── pressed
+│   └── disabled
+├── foreground/
+│   ├── typography/
+│   │   ├── label/sm/ (font-family, font-size, font-weight, letter-spacing, line-height)
+│   │   ├── label/md/ (idem)
+│   │   └── color/
+│   │       ├── primary
+│   │       └── secondary
+│   └── overlay/
+│       ├── hover
+│       ├── pressed
+│       └── disabled
+├── border/
+│   ├── corner
+│   └── width
+└── spacing/padding
 ```
 
 ---
 
-## Reglas de naming
+## Naming de estados en componentes
 
-| Regla | Descripción |
-|---|---|
-| **Siempre subcarpeta** | Incluso con 1 solo valor, usar subcarpeta con nombre descriptivo |
-| **Nombre por rol** | typography: title, description, label, counter |
-| **Nombre por tamaño** | Cuando el mismo rol varía por size: sm, md, lg |
-| **Nombre por estado** | background/border: default, hover, pressed, focus, disabled |
-| **Nombre por variante** | Cuando hay variantes semánticas: info, success, error, brand |
-| **Nombre por parte** | corner: container, image, indicator |
-| **Nombre por dirección** | padding: horizontal, vertical |
-| **`default` como fallback** | Cuando hay 1 solo valor y no hay nombre más descriptivo |
+Los tokens de componente usan **nombres de estado** aunque el semántico al que apunten sea `static`.
 
-### ¿Por qué siempre subcarpeta?
+La capa de componente describe **cuándo/dónde** se aplica el color, no su naturaleza:
 
 ```
-❌ Antes (no escalable):
-  border/corner              ← si mañana agrego otro, tengo que renombrar
-
-✅ Ahora (escalable):
-  border/corner/container    ← si mañana agrego otro, solo agrego
-  border/corner/image        ← nuevo, sin tocar el anterior
+Semántico:    "¿Este color ES interactivo o estático?"
+Componente:   "¿CUÁNDO se aplica este color?"
 ```
 
-### Orden de carpetas:
-1. background
-2. foreground
-3. border
-4. spacing
-5. asset
+Ejemplo:
+```
+text-field/foreground/typography/placeholder/color/disabled
+  → apunta a: interactive/foreground/neutral/disabled/medium
 
+  "disabled" en el componente = la condición de aplicación.
+  "interactive/disabled" en el semántico = el contexto al que pertenece.
+  Ambos están alineados.
+```
 
 ---
 
 ## Patrones de variación
 
-Cuando un componente tiene variantes (props), los tokens pueden cambiar de valor según la variante activa. Cada patrón genera subcarpetas diferentes en la estructura de tokens.
-
-### Patrones detectados en el sistema
-
 | Patrón | Componentes | Qué cambia | Subcarpeta por |
 |---|---|---|---|
-| **State** | 16 | fills, strokes, opacity | estado: `default`, `hover`, `pressed`, `focus`, `disabled` |
-| **Size** | 9 | padding, gap, radius, asset size | tamaño: `xs`, `sm`, `md`, `lg`, `xl` |
-| **Type** | 9 | fills, strokes | variante semántica: `info`, `error`, `success`, `warning` |
-| **Style** | 5 | fills, strokes, padding, radius | estilo visual: `solid`, `ghost`, `outline`, `link`, `neutral` |
-| **Selected** | 4 | fills, strokes | selección: `selected`, `unselected` |
-| **Appearance** | 2 | fills (foreground invierte) | apariencia: `default`, `inverse` |
-| **Hierarchy** | 2 | fills, strokes | jerarquía: `high`, `medium`, `low` |
-| **Behavior** | 1 | padding, radius | comportamiento: `expanded`, `collapsed` |
+| **State** | Button, Chip-filter, Text-field, Avatar... | fills, strokes, opacity | default, hover, pressed, focus, disabled |
+| **Size** | Button, Chip-filter, Avatar, Button-row... | padding, gap, radius, typography | xs, sm, md, lg, xl |
+| **Type** | Pill, Alert, Badge, Snackbar... | fills, strokes | info, error, success, warning, neutral |
+| **Style** | Button, Pill, Label, Tabs... | fills, strokes, padding | solid, ghost, outline, gradient, neutral, link |
+| **Selected** | Chip-filter, Chip-input, Accordion, Row-item | fills, strokes | selected, unselected |
+| **Appearance** | Button, Button-icon, Status-bar | fills invierte | default, inverse |
+| **Hierarchy** | Alert, Pill | fills | bold, subtle |
 
----
+### Combinación de patrones
 
-### Patrón 1: State (estados de interacción)
+Cuando un componente combina múltiples patrones, el orden de prioridad para la primera carpeta es:
 
-El más común. Los colores de background, border y opacity cambian según el estado.
+1. **Style** (si aplica)
+2. **Selected** (si aplica)
+3. **Type/Hierarchy** (si aplica)
+4. **State** (siempre aplica como última capa)
 
-```
-[componente]/
-├── background/
-│   ├── default/
-│   ├── hover/
-│   ├── pressed/
-│   ├── focus/
-│   └── disabled/
-└── border/
-    └── color/
-        ├── default/
-        ├── hover/
-        ├── focus/
-        └── disabled/
-```
-
-**Aplica a:** Button, Button-icon, Chip-filter, Chip-input, Accordion, Button-card, Row-item, Text-field, Select, Search, etc.
-
----
-
-### Patrón 2: Size (tamaños)
-
-Spacing, border-radius y asset sizes cambian por tamaño. Los colores NO cambian.
-
-```
-[componente]/
-├── spacing/
-│   ├── padding/
-│   │   ├── sm/
-│   │   ├── md/
-│   │   └── lg/
-│   └── gap/
-│       ├── sm/
-│       ├── md/
-│       └── lg/
-├── border/
-│   └── corner/
-│       ├── sm/
-│       ├── md/
-│       └── lg/
-└── foreground/
-    └── typography/
-        ├── sm/
-        ├── md/
-        └── lg/
-```
-
-**Aplica a:** Button, Button-icon, Chip-filter, Chip-input, Asset-container, Avatar, Skeleton-asset.
-
----
-
-### Patrón 3: Type / Variant (variantes semánticas)
-
-Los colores cambian según el tipo de contenido o feedback. La estructura y spacing NO cambian.
-
-```
-[componente]/
-├── background/
-│   ├── info/
-│   ├── success/
-│   ├── warning/
-│   ├── error/
-│   └── neutral/
-├── foreground/
-│   └── color/
-│       ├── info/
-│       ├── success/
-│       ├── warning/
-│       ├── error/
-│       └── neutral/
-└── border/
-    └── color/
-        ├── info/
-        ├── success/
-        ├── warning/
-        ├── error/
-        └── neutral/
-```
-
-**Aplica a:** Pill, Alert, Snackbar, Push-notification, Badge.
-
----
-
-### Patrón 4: Style (estilos visuales)
-
-Cambia la apariencia visual completa — fills, strokes, y a veces spacing.
-
-```
-[componente]/
-├── background/
-│   ├── solid/
-│   │   ├── default/
-│   │   └── hover/
-│   ├── ghost/
-│   │   ├── default/
-│   │   └── hover/
-│   └── outline/
-│       ├── default/
-│       └── hover/
-└── border/
-    └── color/
-        ├── solid/
-        │   └── default/
-        ├── ghost/
-        │   └── default/
-        └── outline/
-            └── default/
-```
-
-**Aplica a:** Button, Button-icon, Label, Tabs, Asset-container.
-
----
-
-### Patrón 5: Appearance (default vs inverse)
-
-Los colores de foreground se invierten para mantener contraste. El background cambia de claro a oscuro.
-
-```
-[componente]/
-├── background/
-│   ├── default/             → fondo claro
-│   └── inverse/             → fondo oscuro
-└── foreground/
-    └── color/
-        ├── default/         → texto/icono oscuro (sobre fondo claro)
-        └── inverse/         → texto/icono claro (sobre fondo oscuro)
-```
-
-**Aplica a:** Button, Button-icon, Tabs.
-
----
-
-### Patrón 6: Selected (selección)
-
-El estado de selección cambia background y border. Similar a State pero es un toggle persistente.
-
-```
-[componente]/
-├── background/
-│   ├── unselected/
-│   └── selected/
-└── border/
-    └── color/
-        ├── unselected/
-        └── selected/
-```
-
-**Aplica a:** Chip-filter, Chip-input, Accordion, Row-item.
-
----
-
-### Patrón 7: Hierarchy (jerarquía visual)
-
-Diferentes niveles de prominencia del mismo componente.
-
-```
-[componente]/
-├── background/
-│   ├── high/                → el más prominente
-│   ├── medium/              → intermedio
-│   └── low/                 → el más sutil
-└── border/
-    └── color/
-        ├── high/
-        ├── medium/
-        └── low/
-```
-
-**Aplica a:** Alert, Pill.
-
----
-
-## Combinación de patrones
-
-Un componente puede combinar múltiples patrones. Ejemplo: **Button** combina State + Size + Style + Appearance.
-
-La estructura se anida:
-
-```
-button/
-├── background/
-│   ├── solid/                    ← Style
-│   │   ├── default/             ← State
-│   │   │   ├── default/         ← Appearance
-│   │   │   └── inverse/
-│   │   ├── hover/
-│   │   │   ├── default/
-│   │   │   └── inverse/
-│   │   └── pressed/
-│   │       ├── default/
-│   │       └── inverse/
-│   └── ghost/
-│       └── ...
-├── spacing/
-│   └── padding/
-│       ├── lg/                   ← Size
-│       ├── md/
-│       ├── sm/
-│       └── xs/
-└── border/
-    └── corner/
-        ├── lg/                   ← Size
-        ├── md/
-        ├── sm/
-        └── xs/
-```
-
-**Regla para combinaciones:** El orden de anidamiento es:
-1. Style (si aplica)
-2. State
-3. Appearance (si aplica)
-
-Size siempre va en su propia rama (spacing, corner) porque no afecta colores.
-
----
-
-## Resumen: ¿Qué genera subcarpeta?
-
-| Pregunta | Si la respuesta es SÍ → subcarpeta por |
-|---|---|
-| ¿El token cambia por tamaño del componente? | `sm`, `md`, `lg` |
-| ¿El token cambia por estado de interacción? | `default`, `hover`, `pressed`, `focus`, `disabled` |
-| ¿El token cambia por variante semántica? | `info`, `success`, `error`, `warning`, `neutral` |
-| ¿El token cambia por estilo visual? | `solid`, `ghost`, `outline`, `link` |
-| ¿El token cambia por selección? | `selected`, `unselected` |
-| ¿El token cambia por apariencia? | `default`, `inverse` |
-| ¿El token cambia por jerarquía? | `high`, `medium`, `low` |
+Size siempre va en su propia rama (spacing, corner, typography) porque no afecta colores.
