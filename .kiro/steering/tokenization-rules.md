@@ -234,6 +234,17 @@ Si una capa tiene un valor visual que NO es token → es un **hardcoded value** 
 | Static token en componente interactivo con estados | Debería ser `interactive` si cambia por estado |
 | Interactive token en componente sin estados | No tiene sentido — usar `static` |
 | Token de opacidad sin overlay layer | Opacity tokens van en capas de overlay, no en el componente directamente |
+| **Gap aplicado como padding** | Token `gap/gap-X` usado en una propiedad de padding |
+| **Padding aplicado como gap** | Token `padding/padding-X` usado en una propiedad de itemSpacing (gap) |
+
+### Diferencia entre gap y padding
+
+| Token | Propiedad en Figma | Qué controla |
+|---|---|---|
+| `gap/gap-X` | `itemSpacing` | Espacio **entre** elementos hijos de un auto layout |
+| `padding/padding-X` | `paddingTop`, `paddingBottom`, `paddingLeft`, `paddingRight` | Espacio **interno** entre el borde del contenedor y su contenido |
+
+**Regla:** un token de `gap/` solo va en `itemSpacing`. Un token de `padding/` solo va en `paddingTop/Bottom/Left/Right`. Si están cruzados, es un error de aplicación.
 
 ---
 

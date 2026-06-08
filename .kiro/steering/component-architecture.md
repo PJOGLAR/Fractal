@@ -165,7 +165,19 @@ El padding fijo (ej. 3px) en el contenedor del slot **no es error de tokens**. E
 
 ---
 
-## Instancias anidadas
+## Component Set root
+
+El **Component Set** (el nodo padre que contiene todas las variantes) **tiene propiedades visuales propias** que las variantes heredan:
+- Corner radius
+- Stroke (color y width)
+- Padding
+- Gap
+
+Esto es intencional: los valores cross (que no cambian entre variantes) se definen una vez en el set root. Las variantes solo overridean lo que es distinto (fills, colores de texto, etc.).
+
+**No flaggear** el set root por tener bounds/strokes/fills. Solo flaggear si una variante tiene un valor que contradice lo heredado sin razón.
+
+---
 
 - Los tokens de instancias anidadas (building blocks) **no se incluyen** en la colección del componente padre.
 - El componente padre solo tokeniza sus propias capas.
