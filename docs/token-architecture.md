@@ -410,36 +410,3 @@ Editás: button/background/solid/hover → ahora apunta a otro semántico
 Resultado: solo Button cambia, el resto queda igual
 ```
 
----
-
-## Herramientas
-
-### Plugin-tokens (extractor)
-- Extrae todos los tokens aplicados en el documento
-- Genera JSON para el dashboard
-
-### Token Component Generator V2
-- Escanea un componente seleccionado
-- Genera la colección de tokens específicos como alias de los semánticos
-- Detecta patrones (Style, Selected, Size, Type, State)
-- Aplica las reglas de subcarpetas automáticamente
-
-### Dashboard (Vercel)
-- Visualiza la salud del DS
-- Muestra cobertura, tokens huérfanos, impacto de cambios
-- Filtros por categoría, colección y tipo
-
-### Snapshot + Diff (local)
-- `npm run snapshot` — toma un snapshot de las variables actuales via API
-- `npm run diff` — compara con el snapshot anterior y genera changelog
-
----
-
-## Criterios de salud
-
-| Métrica | Bueno | Atención | Problema |
-|---|---|---|---|
-| Cobertura de tokens | >90% | 70-90% | <70% |
-| Tokens huérfanos | <5% | 5-15% | >15% |
-| Hardcoded values | 0 | <10 | >10 |
-| Tokens sin uso | <10 | 10-30 | >30 |
