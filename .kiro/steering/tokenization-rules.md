@@ -28,8 +28,10 @@ Primitivo → Semántico → Componente
 
 ### Contextos
 - `static` — no cambia con interacción
-- `interactive` — responde a estados (default, hover, pressed, focus, disabled, selected)
+- `interactive` — responde a estados (default, hover, pressed, focus, disabled, selected, error)
 - `expressive` — decorativo/ilustrativo
+
+> **Nota:** en `interactive/border/feedback/` y `interactive/foreground/feedback/`, el tipo de feedback (`error`, `warning`, `success`, `info`) **funciona como estado**. No necesita un slot de estado adicional. El borde cambia cuando el componente entra en ese estado.
 
 ### Elementos
 - `background`, `foreground`, `border`, `opacity`

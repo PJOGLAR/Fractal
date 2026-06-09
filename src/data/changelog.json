@@ -1,5 +1,27 @@
 [
   {
+    "id": "mq5gipgy",
+    "timestamp": "2026-06-08T17:00:28.402Z",
+    "fileKey": "B0oo6KqNRNmW7R8RmNNeia",
+    "fileName": "TOKEN - Components (no usar)",
+    "fileLabel": "token-test-component",
+    "summary": "1 bindings cambiados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "State=default, Horizontal padding=xs",
+        "details": "Label.fills: undefined → 2d4/5023:270"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 1
+    }
+  },
+  {
     "id": "mq2mte83",
     "timestamp": "2026-06-06T17:33:26.211Z",
     "fileKey": "B0oo6KqNRNmW7R8RmNNeia",
