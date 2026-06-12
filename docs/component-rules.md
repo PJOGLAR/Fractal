@@ -9,7 +9,6 @@
 ### Auto Layout (obligatorio)
 
 - **Todos** los componentes deben usar Auto Layout.
-- No se permiten frames estáticos dentro de component sets.
 - No wrappear un Auto Layout dentro de otro sin propósito estructural.
 - Evitar wrappers innecesarios.
 - Cada Auto Layout debe tener una función estructural clara.
@@ -23,7 +22,7 @@
 | ✅ Correcto | ❌ Incorrecto |
 |------------|--------------|
 | `Hover layer` | `Hover-layer` |
-| `Focus ring` | `focus ring` |
+| `Focus ring` | `Focus Ring` |
 | `Supporting text` | `Frame 23`, `Group 12` |
 
 **Naming semántico (por rol, no por posición):**
@@ -34,7 +33,8 @@
 | Content | Right |
 | Trailing | TopIcon |
 
-**Prefijo `---> `:** solo para capas con propiedad de swap expuesta al consumidor.
+> **Nota:** Renombrar las capas con instancias anidadas con `---> ` + nombre descriptivo que permita identificar mejor la estructura al configurar el componente en el flujo.
+> Ejemplo: `---> Button`, `---> Trailing content`
 
 ---
 
@@ -43,7 +43,7 @@
 **Formato:** `Nombre-componente` — mayúscula inicial, guión `-`, segmentos siguientes en minúscula. Sin espacios.
 
 - ✅ `Button-icon`, `Progress-bar`, `Text-field`
-- ❌ `button-icon`, `Button Icon`
+- ❌ `Button-Icon`, `button-icon`, `Button Icon`
 
 **Building blocks:** `.⛔️ [Padre]_[parte]` con `_` entre padre y parte, `-` entre palabras.
 
@@ -53,7 +53,7 @@
 ⛔️ Button-toggle
 ```
 
-No se publican, no se tokenizan directamente.
+> Los building blocks solo se utilizan dentro de los componentes para los que fueron creados. No se publican, no se tokenizan directamente.
 
 ---
 
@@ -77,28 +77,13 @@ No se publican, no se tokenizan directamente.
 4. State
 5. Appearance
 
----
-
-### Zonas semánticas
-
-| Zona | Rol |
-|------|-----|
-| Leading | Elemento antes del contenido principal |
-| Content | Información primaria |
-| Trailing | Acción secundaria o indicador |
+> Agregar un ejemplo o lista de las propiedades más utilizadas según los componentes y una breve descripción de el para que se usa.
 
 ---
 
 ### Component Set root
 
 El set root (padre de todas las variantes) tiene propiedades visuales que las variantes **heredan**: corner radius, stroke, padding, gap. Se definen una vez ahí, las variantes solo overridean lo que cambia (fills, colores de texto).
-
----
-
-### Texto por default
-
-- **Prohibido:** Lorem ipsum, texto genérico (`Label`, `Text`, `Title`).
-- El texto debe ser realista y contextual.
 
 ---
 
@@ -117,12 +102,14 @@ La capa interior de `.⛔ Placeholder-icon_slot` y similares debe llamarse **Vec
 
 ---
 
-## Parte 2 — Reglas de Tokenización
+## Parte 2 — Reglas de Tokenización (tokens de tercer nivel)
+
+> Los tokens de componente son el **tercer nivel** de la cadena. Referencian a un semántico via alias.
 
 ### Cadena de alias
 
 ```
-Primitivo → Semántico → Componente
+Primitivo → Semántico → Componente (tercer nivel)
 ```
 
 | Nivel | Ejemplo | Función |
@@ -281,12 +268,6 @@ text-field/foreground/typography/placeholder/color/disabled
 | `padding/padding-X` | `paddingTop/Bottom/Left/Right` | Espacio **interno** |
 
 ---
-
-### Qué NO tokenizar
-
-- Instancias anidadas (building blocks)
-- Grid/layout properties internos
-- Padding de alineación en slots de placeholder (3px)
 
 ### Qué SÍ tokenizar
 
