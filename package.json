@@ -9,7 +9,6 @@
     "preview": "vite preview",
     "extract": "tsx personal/scripts/extract-figma-data.ts",
     "changelog": "tsx personal/scripts/changelog.ts",
-    "snapshot": "tsx personal/scripts/snapshot.ts",
     "diff": "tsx personal/scripts/diff-changelog.ts"
   },
   "dependencies": {

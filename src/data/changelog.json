@@ -1,5 +1,129 @@
 [
   {
+    "id": "mq8djj65",
+    "timestamp": "2026-06-10T18:00:26.573Z",
+    "fileKey": "3FmaFNQ3g8UCDlSBEAmChU",
+    "fileName": "TOKEN 2 Foundations (Copy)",
+    "fileLabel": "token-test-foundations",
+    "summary": "2 componentes nuevos, 1 renombrados, 13 bindings eliminados, 1 bindings cambiados",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Feedback-screen-Test",
+        "details": "Feedback-screen-Test (COMPONENT_SET)"
+      },
+      {
+        "type": "component_added",
+        "component": "Property 1=Variant2",
+        "details": "Property 1=Variant2 (COMPONENT)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Property 1=Default",
+        "details": "Feedback-screen-Test → Property 1=Default"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Property 1=Default",
+        "details": "Feedback-screen.fills: ff61/3771:65 → eaf/3771:132"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Feedback-screen-Test",
+        "details": "Status-bar.paddingLeft (era: padding/padding-300)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Feedback-screen-Test",
+        "details": "Status-bar.paddingTop (era: gap/gap-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Feedback-screen-Test",
+        "details": "Status-bar.paddingRight (era: padding/padding-300)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Feedback-screen-Test",
+        "details": "Status-bar.paddingBottom (era: gap/gap-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Feedback-screen-Test",
+        "details": "Content.itemSpacing (era: gap/gap-600)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Feedback-screen-Test",
+        "details": "Content.paddingLeft (era: padding/padding-400)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Feedback-screen-Test",
+        "details": "Content.paddingRight (era: padding/padding-400)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Feedback-screen-Test",
+        "details": "Content.paddingBottom (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Feedback-screen-Test",
+        "details": "Button-group.itemSpacing (era: gap/gap-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Feedback-screen-Test",
+        "details": "Button-group.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Feedback-screen-Test",
+        "details": "Button-group.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Feedback-screen-Test",
+        "details": "Button-group.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Feedback-screen-Test",
+        "details": "Button-group.paddingBottom (era: padding/padding-0)"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 2,
+      "componentsRemoved": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 13,
+      "bindingsChanged": 1
+    }
+  },
+  {
+    "id": "mq8dg5p5",
+    "timestamp": "2026-06-10T17:57:49.145Z",
+    "fileKey": "3FmaFNQ3g8UCDlSBEAmChU",
+    "fileName": "TOKEN 2 Foundations (Copy)",
+    "fileLabel": "token-test-foundations",
+    "summary": "1 componentes nuevos",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Feedback-screen-Test",
+        "details": "Feedback-screen-Test (COMPONENT)"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 1,
+      "componentsRemoved": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0
+    }
+  },
+  {
     "id": "mq5gipgy",
     "timestamp": "2026-06-08T17:00:28.402Z",
     "fileKey": "B0oo6KqNRNmW7R8RmNNeia",
