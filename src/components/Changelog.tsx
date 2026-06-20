@@ -115,22 +115,22 @@ export function Changelog() {
               </div>
               <p className="changelog-summary">{entry.summary}</p>
               <div className="changelog-stats-row">
-                {entry.stats.componentsAdded > 0 && (
+                {(entry.stats?.componentsAdded || 0) > 0 && (
                   <span className="stat-pill added">+{entry.stats.componentsAdded} comp</span>
                 )}
-                {entry.stats.componentsRemoved > 0 && (
+                {(entry.stats?.componentsRemoved || 0) > 0 && (
                   <span className="stat-pill removed">-{entry.stats.componentsRemoved} comp</span>
                 )}
-                {entry.stats.bindingsChanged > 0 && (
+                {(entry.stats?.bindingsChanged || 0) > 0 && (
                   <span className="stat-pill changed">{entry.stats.bindingsChanged} tokens</span>
                 )}
-                {entry.stats.bindingsRemoved > 0 && (
+                {(entry.stats?.bindingsRemoved || 0) > 0 && (
                   <span className="stat-pill removed">-{entry.stats.bindingsRemoved} bindings</span>
                 )}
-                {entry.stats.bindingsAdded > 0 && (
+                {(entry.stats?.bindingsAdded || 0) > 0 && (
                   <span className="stat-pill added">+{entry.stats.bindingsAdded} bindings</span>
                 )}
-                {(entry.stats.propertiesChanged || 0) > 0 && (
+                {(entry.stats?.propertiesChanged || 0) > 0 && (
                   <span className="stat-pill changed">{entry.stats.propertiesChanged} props</span>
                 )}
               </div>
