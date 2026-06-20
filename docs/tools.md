@@ -79,34 +79,84 @@ cd ~/Desktop/Kiro\ -\ Fractal && npm run extract
 ### `npm run diff -- [archivo]`
 **Script:** `personal/scripts/diff-changelog.ts`
 
-Toma un snapshot del archivo via API de Figma, lo compara con el anterior, y genera un changelog con cambios detectados.
+Compara el estado actual de un archivo de Figma con el último snapshot guardado. Detecta todos los cambios y genera un changelog estructurado.
+
+### Comandos
 
 ```bash
-npm run diff -- foundations
+# Primero ir a la carpeta del proyecto
+cd ~/Desktop/Kiro\ -\ Fractal
+
+# Diff del archivo de Componentes
 npm run diff -- components
-npm run diff -- token-test-component
+
+# Diff del archivo de Templates
+npm run diff -- templates
+
+# Diff del archivo de Foundations
+npm run diff -- foundations
+
+# Diff de cualquier archivo por file key
 npm run diff -- <file_key>
 ```
 
-**Qué detecta:**
-- Componentes nuevos / eliminados / renombrados
-- Bindings de tokens agregados / eliminados / cambiados
-- Agrupa por componente y muestra detalle
+### Qué detecta
 
-**Aliases disponibles** (configurados en `.env`):
-- `foundations` → archivo de Foundations
-- `components` → archivo de Componentes
-- `token-test-component` → archivo de pruebas
+| Tipo de cambio | Cómo se muestra |
+|---|---|
+| Componente nuevo | `🆕 Asset-container-test (componente completo, 28 variantes)` |
+| Componente eliminado | `🗑️ Button-old` |
+| Componente renombrado | `🔄 Receipt-screen → Result-screen` |
+| Token swapped (binding cambiado) | `🔀 Label.fills: static/foreground/neutral/medium → brand/primary/medium` |
+| Token agregado a una capa | `➕ Label.fills → static/foreground/neutral/bold` |
+| Token eliminado de una capa | `➖ Label.fills (era: static/foreground/neutral/medium)` |
+| Propiedad numérica cambiada | `📐 Placeholder.size.width: 24 → 20` |
 
----
+### Cómo funciona
 
-### `npm run snapshot -- [archivo]`
-**Script:** `personal/scripts/snapshot.ts`
+1. **Primera vez:** toma un snapshot del estado actual y lo guarda. No hay diff todavía.
+2. **Siguientes veces:** toma un nuevo snapshot, compara con el anterior, muestra los cambios.
+3. Después de mostrar el diff, actualiza el snapshot para la próxima comparación.
 
-Toma un snapshot sin hacer diff. Útil para establecer un punto de referencia.
+### Propiedades que trackea
+
+- `width`, `height` (tamaño de capas)
+- `itemSpacing` (gap entre hijos)
+- `paddingLeft/Right/Top/Bottom`
+- `topLeftRadius`, `topRightRadius`, `bottomLeftRadius`, `bottomRightRadius`
+- `opacity`, `strokeWeight`
+- Tamaño absoluto (`size.width`, `size.height`)
+
+### Incluye instancias anidadas
+
+Lee en modo "deep" (profundidad 8). Detecta cambios dentro de building blocks y placeholders anidados, no solo en las capas directas del componente.
+
+### Output
+
+Cada componente modificado muestra su **node-id** para referencia:
+
+```
+📐 PROPIEDADES CAMBIADAS (4):
+   [Asset-container-test] (node: 19162:213)
+     📐 Placeholder-pictogram_slot.size.width: 24 → 20
+```
+
+Con el node-id podés:
+- Pasar el componente para auditoría detallada (por MCP o API)
+- Armar la URL directa de Figma: `https://www.figma.com/design/FILE_KEY/...?node-id=19162:213`
+
+### Aliases disponibles (configurados en `.env`)
+
+| Alias | Archivo |
+|---|---|
+| `components` | Librería de Componentes |
+| `templates` | Archivo de Templates |
+| `foundations` | Archivo de Foundations |
+
+### Resetear snapshot (empezar de cero)
 
 ```bash
-npm run snapshot -- foundations
+rm -f src/data/snapshots/latest-components.json && npm run diff -- components
 ```
 
 ---
@@ -117,7 +167,7 @@ npm run snapshot -- foundations
 Lee las versiones publicadas del archivo de Figma y genera entries de changelog basados en el historial de versiones.
 
 ```bash
-npm run changelog
+cd ~/Desktop/Kiro\ -\ Fractal && npm run changelog
 ```
 
 ---
