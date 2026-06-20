@@ -33,6 +33,7 @@ const FILE_ALIASES: Record<string, string> = {
   foundations: process.env.FIGMA_FOUNDATIONS_FILE_KEY || '',
   components: process.env.FIGMA_COMPONENTS_FILE_KEY || '',
   templates: process.env.FIGMA_TEMPLATES_FILE_KEY || '',
+  assets: process.env.FIGMA_ASSETS_FILE_KEY || '',
 }
 
 // Parse argument

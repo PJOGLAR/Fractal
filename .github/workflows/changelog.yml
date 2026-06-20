@@ -33,9 +33,11 @@ jobs:
           FIGMA_COMPONENTS_FILE_KEY: ${{ secrets.FIGMA_COMPONENTS_FILE_KEY }}
           FIGMA_TEMPLATES_FILE_KEY: ${{ secrets.FIGMA_TEMPLATES_FILE_KEY }}
           FIGMA_FOUNDATIONS_FILE_KEY: ${{ secrets.FIGMA_FOUNDATIONS_FILE_KEY }}
+          FIGMA_ASSETS_FILE_KEY: ${{ secrets.FIGMA_ASSETS_FILE_KEY }}
         run: |
           npx tsx scripts/diff-changelog.ts components || true
           npx tsx scripts/diff-changelog.ts templates || true
+          npx tsx scripts/diff-changelog.ts assets || true
       
       - name: Check for changes
         id: check
