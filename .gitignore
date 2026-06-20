@@ -5,6 +5,7 @@ dist
 tmp-cache
 .DS_Store
 *.zip
+.kiro/settings/mcp.json
 
 # Personal — never push (plugins, internal tooling, scripts, learning docs)
 personal/
