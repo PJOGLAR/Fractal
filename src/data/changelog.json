@@ -1,17 +1,365 @@
 [
   {
-    "id": "mqmsr3rh",
-    "timestamp": "2026-06-20T20:15:00.557Z",
+    "id": "mqmlg5b2",
+    "timestamp": "2026-06-20T16:50:32.030Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
     "fileName": "Components",
     "fileLabel": "components",
-    "summary": "4 componentes nuevos, 28 tokens nuevos, 1 tokens cambiados, 3 propiedades cambiadas",
+    "summary": "4 eliminados, 26 bindings eliminados, 3 bindings cambiados, 4 propiedades cambiadas",
     "changes": [
+      {
+        "type": "component_removed",
+        "component": "Style=filled, Size=sm, Shape=circle, Asset type=icon",
+        "nodeId": "19162:214",
+        "details": "Style=filled, Size=sm, Shape=circle, Asset type=icon"
+      },
+      {
+        "type": "component_removed",
+        "component": "Style=outlined, Size=sm, Shape=circle, Asset type=icon",
+        "nodeId": "19162:230",
+        "details": "Style=outlined, Size=sm, Shape=circle, Asset type=icon"
+      },
+      {
+        "type": "component_removed",
+        "component": "Style=filled, Size=sm, Shape=square, Asset type=icon",
+        "nodeId": "19162:250",
+        "details": "Style=filled, Size=sm, Shape=square, Asset type=icon"
+      },
+      {
+        "type": "component_removed",
+        "component": "Style=outlined, Size=sm, Shape=square, Asset type=icon",
+        "nodeId": "19162:266",
+        "details": "Style=outlined, Size=sm, Shape=square, Asset type=icon"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=lg, Shape=square, Asset type=pictogram.fills: static/background/brand/primary/subtle → static/background/brand/secondary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=sm, Shape=circle, Asset type=icon.itemSpacing (era: gap/gap-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=sm, Shape=circle, Asset type=icon.paddingLeft (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=sm, Shape=circle, Asset type=icon.paddingTop (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=sm, Shape=circle, Asset type=icon.paddingRight (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=sm, Shape=circle, Asset type=icon.paddingBottom (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=sm, Shape=circle, Asset type=icon.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=sm, Shape=circle, Asset type=icon.itemSpacing (era: gap/gap-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=sm, Shape=circle, Asset type=icon.paddingLeft (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=sm, Shape=circle, Asset type=icon.paddingTop (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=sm, Shape=circle, Asset type=icon.paddingRight (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=sm, Shape=circle, Asset type=icon.paddingBottom (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=sm, Shape=circle, Asset type=icon.fills (era: static/background/neutral/quiet)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=sm, Shape=circle, Asset type=icon.strokes (era: static/border/brand/secondary)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=sm, Shape=square, Asset type=icon.itemSpacing (era: gap/gap-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=sm, Shape=square, Asset type=icon.paddingLeft (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=sm, Shape=square, Asset type=icon.paddingTop (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=sm, Shape=square, Asset type=icon.paddingRight (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=sm, Shape=square, Asset type=icon.paddingBottom (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=sm, Shape=square, Asset type=icon.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=sm, Shape=square, Asset type=icon.itemSpacing (era: gap/gap-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=sm, Shape=square, Asset type=icon.paddingLeft (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=sm, Shape=square, Asset type=icon.paddingTop (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=sm, Shape=square, Asset type=icon.paddingRight (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=sm, Shape=square, Asset type=icon.paddingBottom (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=sm, Shape=square, Asset type=icon.fills (era: static/background/neutral/quiet)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=sm, Shape=square, Asset type=icon.strokes (era: static/border/brand/secondary)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Style=outlined, Size=lg, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:242",
+        "details": "⛔ Placeholder-pictogram_slot.size.width: 20 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Style=outlined, Size=lg, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:242",
+        "details": "⛔ Placeholder-pictogram_slot.size.height: 20 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Style=outlined, Size=lg, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:242",
+        "details": "Shape.size.width: 14 → 18"
+      },
+      {
+        "type": "property_changed",
+        "component": "Style=outlined, Size=lg, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:242",
+        "details": "Shape.size.height: 14 → 18"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=filled, Size=lg, Shape=square, Asset type=pictogram",
+        "nodeId": "19162:262",
+        "details": "Style=filled, Size=lg, Shape=square, Asset type=pictogram.fills: static/background/brand/primary/subtle → static/background/brand/secondary/medium"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=filled, Size=lg, Shape=square, Asset type=pictogram",
+        "nodeId": "19162:262",
+        "details": "Shape.fills: static/foreground/brand/primary/medium → static/foreground/neutral/quiet"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 4,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 26,
+      "bindingsChanged": 3,
+      "propertiesChanged": 4
+    }
+  },
+  {
+    "id": "mqmgwrtc",
+    "timestamp": "2026-06-20T14:43:29.616Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "2 bindings eliminados, 4 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=lg, Shape=circle, Asset type=pictogram.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Style=filled, Size=lg, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:226",
+        "details": "Style=filled, Size=lg, Shape=circle, Asset type=pictogram.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Style=outlined, Size=lg, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:242",
+        "details": "⛔ Placeholder-pictogram_slot.size.width: 24 → 20"
+      },
+      {
+        "type": "property_changed",
+        "component": "Style=outlined, Size=lg, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:242",
+        "details": "⛔ Placeholder-pictogram_slot.size.height: 24 → 20"
+      },
+      {
+        "type": "property_changed",
+        "component": "Style=outlined, Size=lg, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:242",
+        "details": "Shape.size.width: 18 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Style=outlined, Size=lg, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:242",
+        "details": "Shape.size.height: 18 → 14"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 2,
+      "bindingsChanged": 0,
+      "propertiesChanged": 4
+    }
+  },
+  {
+    "id": "mqmgmu4t",
+    "timestamp": "2026-06-20T14:35:46.061Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "29 componentes nuevos",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Asset-container-test (COMPONENT_SET)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=filled, Size=sm, Shape=circle, Asset type=icon",
+        "nodeId": "19162:214",
+        "details": "Style=filled, Size=sm, Shape=circle, Asset type=icon (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=filled, Size=md, Shape=circle, Asset type=icon",
+        "nodeId": "19162:217",
+        "details": "Style=filled, Size=md, Shape=circle, Asset type=icon (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=filled, Size=lg, Shape=circle, Asset type=icon",
+        "nodeId": "19162:220",
+        "details": "Style=filled, Size=lg, Shape=circle, Asset type=icon (COMPONENT)"
+      },
       {
         "type": "component_added",
         "component": "Style=filled, Size=xl, Shape=circle, Asset type=icon",
         "nodeId": "19162:223",
         "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=filled, Size=lg, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:226",
+        "details": "Style=filled, Size=lg, Shape=circle, Asset type=pictogram (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:228",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=outlined, Size=sm, Shape=circle, Asset type=icon",
+        "nodeId": "19162:230",
+        "details": "Style=outlined, Size=sm, Shape=circle, Asset type=icon (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=outlined, Size=md, Shape=circle, Asset type=icon",
+        "nodeId": "19162:233",
+        "details": "Style=outlined, Size=md, Shape=circle, Asset type=icon (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=outlined, Size=lg, Shape=circle, Asset type=icon",
+        "nodeId": "19162:236",
+        "details": "Style=outlined, Size=lg, Shape=circle, Asset type=icon (COMPONENT)"
       },
       {
         "type": "component_added",
@@ -21,9 +369,81 @@
       },
       {
         "type": "component_added",
+        "component": "Style=outlined, Size=lg, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:242",
+        "details": "Style=outlined, Size=lg, Shape=circle, Asset type=pictogram (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:244",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=outlined, Size=lg, Shape=circle, Asset type=brand",
+        "nodeId": "19162:246",
+        "details": "Style=outlined, Size=lg, Shape=circle, Asset type=brand (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=outlined, Size=md, Shape=circle, Asset type=brand",
+        "nodeId": "19162:248",
+        "details": "Style=outlined, Size=md, Shape=circle, Asset type=brand (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=filled, Size=sm, Shape=square, Asset type=icon",
+        "nodeId": "19162:250",
+        "details": "Style=filled, Size=sm, Shape=square, Asset type=icon (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=filled, Size=md, Shape=square, Asset type=icon",
+        "nodeId": "19162:253",
+        "details": "Style=filled, Size=md, Shape=square, Asset type=icon (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=filled, Size=lg, Shape=square, Asset type=icon",
+        "nodeId": "19162:256",
+        "details": "Style=filled, Size=lg, Shape=square, Asset type=icon (COMPONENT)"
+      },
+      {
+        "type": "component_added",
         "component": "Style=filled, Size=xl, Shape=square, Asset type=icon",
         "nodeId": "19162:259",
         "details": "Style=filled, Size=xl, Shape=square, Asset type=icon (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=filled, Size=lg, Shape=square, Asset type=pictogram",
+        "nodeId": "19162:262",
+        "details": "Style=filled, Size=lg, Shape=square, Asset type=pictogram (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=filled, Size=xl, Shape=square, Asset type=pictogram",
+        "nodeId": "19162:264",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=outlined, Size=sm, Shape=square, Asset type=icon",
+        "nodeId": "19162:266",
+        "details": "Style=outlined, Size=sm, Shape=square, Asset type=icon (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=outlined, Size=md, Shape=square, Asset type=icon",
+        "nodeId": "19162:269",
+        "details": "Style=outlined, Size=md, Shape=square, Asset type=icon (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=outlined, Size=lg, Shape=square, Asset type=icon",
+        "nodeId": "19162:272",
+        "details": "Style=outlined, Size=lg, Shape=square, Asset type=icon (COMPONENT)"
       },
       {
         "type": "component_added",
@@ -32,205 +452,37 @@
         "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon (COMPONENT)"
       },
       {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.itemSpacing → gap/gap-0"
+        "type": "component_added",
+        "component": "Style=outlined, Size=lg, Shape=square, Asset type=pictogram",
+        "nodeId": "19162:278",
+        "details": "Style=outlined, Size=lg, Shape=square, Asset type=pictogram (COMPONENT)"
       },
       {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.paddingLeft → padding/padding-100"
+        "type": "component_added",
+        "component": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram",
+        "nodeId": "19162:280",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram (COMPONENT)"
       },
       {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.paddingTop → padding/padding-100"
+        "type": "component_added",
+        "component": "Style=outlined, Size=lg, Shape=square, Asset type=brand",
+        "nodeId": "19162:282",
+        "details": "Style=outlined, Size=lg, Shape=square, Asset type=brand (COMPONENT)"
       },
       {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.paddingRight → padding/padding-100"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.paddingBottom → padding/padding-100"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.fills → static/background/brand/primary/subtle"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.itemSpacing → gap/gap-0"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.paddingLeft → padding/padding-100"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.paddingTop → padding/padding-100"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.paddingRight → padding/padding-100"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.paddingBottom → padding/padding-100"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.fills → static/background/neutral/quiet"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.strokes → static/border/brand/secondary"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.itemSpacing → gap/gap-0"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.paddingLeft → padding/padding-100"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.paddingTop → padding/padding-100"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.paddingRight → padding/padding-100"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.paddingBottom → padding/padding-100"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.fills → static/background/brand/primary/subtle"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram.fills → static/background/brand/primary/subtle"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.itemSpacing → gap/gap-0"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.paddingLeft → padding/padding-100"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.paddingTop → padding/padding-100"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.paddingRight → padding/padding-100"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.paddingBottom → padding/padding-100"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.fills → static/background/neutral/quiet"
-      },
-      {
-        "type": "binding_added",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.strokes → static/border/brand/secondary"
-      },
-      {
-        "type": "property_changed",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "⛔ Placeholder-icon_slot.size.width: 24 → 32"
-      },
-      {
-        "type": "property_changed",
-        "component": "Asset-container-test",
-        "nodeId": "19162:213",
-        "details": "⛔ Placeholder-icon_slot.size.height: 24 → 32"
-      },
-      {
-        "type": "binding_added",
-        "component": "Style=filled, Size=xl, Shape=square, Asset type=pictogram",
-        "nodeId": "19162:264",
-        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram.fills → static/background/brand/primary/subtle"
-      },
-      {
-        "type": "binding_changed",
-        "component": "Style=filled, Size=xl, Shape=square, Asset type=pictogram",
-        "nodeId": "19162:264",
-        "details": "Shape.fills: static/background/feedback/error/bold → static/foreground/brand/primary/medium"
-      },
-      {
-        "type": "property_changed",
-        "component": "Style=filled, Size=xl, Shape=square, Asset type=pictogram",
-        "nodeId": "19162:264",
-        "details": "Shape.fill[0].color: #B91C1C → #5A50F9"
+        "type": "component_added",
+        "component": "Style=outlined, Size=md, Shape=square, Asset type=brand",
+        "nodeId": "19162:284",
+        "details": "Style=outlined, Size=md, Shape=square, Asset type=brand (COMPONENT)"
       }
     ],
     "stats": {
-      "componentsAdded": 4,
+      "componentsAdded": 29,
       "componentsRemoved": 0,
-      "bindingsAdded": 28,
+      "bindingsAdded": 0,
       "bindingsRemoved": 0,
-      "bindingsChanged": 1,
-      "propertiesChanged": 3
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
     }
   },
   {

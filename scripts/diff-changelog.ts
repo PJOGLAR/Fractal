@@ -159,7 +159,7 @@ async function figmaGet<T>(url: string): Promise<T> {
   return res.json() as Promise<T>
 }
 
-function extractBindings(node: any, path: string = ''): Array<{ property: string; variableId: string; layerName: string }> {
+function extractBindings(node: any, _path: string = ''): Array<{ property: string; variableId: string; layerName: string }> {
   const bindings: Array<{ property: string; variableId: string; layerName: string }> = []
 
   if (node.boundVariables) {
