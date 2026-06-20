@@ -1,0 +1,52 @@
+name: Daily Changelog
+
+on:
+  schedule:
+    # Corre todos los días a las 9:00 AM Argentina (12:00 UTC)
+    - cron: '0 12 * * *'
+  # También se puede disparar manualmente desde GitHub
+  workflow_dispatch:
+
+jobs:
+  diff:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Run diff for components
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_COMPONENTS_FILE_KEY: ${{ secrets.FIGMA_COMPONENTS_FILE_KEY }}
+          FIGMA_TEMPLATES_FILE_KEY: ${{ secrets.FIGMA_TEMPLATES_FILE_KEY }}
+          FIGMA_FOUNDATIONS_FILE_KEY: ${{ secrets.FIGMA_FOUNDATIONS_FILE_KEY }}
+        run: |
+          npx tsx scripts/diff-changelog.ts components || true
+          npx tsx scripts/diff-changelog.ts templates || true
+      
+      - name: Check for changes
+        id: check
+        run: |
+          if git diff --quiet src/data/changelog.json src/data/snapshots/; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push changelog
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name "Fractal DS Bot"
+          git config user.email "bot@fractal-ds.com"
+          git add src/data/changelog.json src/data/snapshots/
+          git commit -m "changelog: auto-update $(date +%Y-%m-%d)"
+          git push
