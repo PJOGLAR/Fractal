@@ -36,7 +36,8 @@ jobs:
       - name: Check for changes
         id: check
         run: |
-          if git diff --quiet src/data/changelog.json src/data/snapshots/; then
+          git add src/data/changelog.json src/data/snapshots/ 2>/dev/null || true
+          if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -47,6 +48,5 @@ jobs:
         run: |
           git config user.name "Fractal DS Bot"
           git config user.email "bot@fractal-ds.com"
-          git add src/data/changelog.json src/data/snapshots/
           git commit -m "changelog: auto-update $(date +%Y-%m-%d)"
           git push
