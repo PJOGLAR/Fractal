@@ -1,5 +1,239 @@
 [
   {
+    "id": "mqmtd5ba",
+    "timestamp": "2026-06-20T20:32:08.998Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "4 eliminados, 28 tokens eliminados, 1 tokens cambiados, 3 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "component_removed",
+        "component": "Style=filled, Size=xl, Shape=circle, Asset type=icon",
+        "nodeId": "19162:223",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon"
+      },
+      {
+        "type": "component_removed",
+        "component": "Style=outlined, Size=xl, Shape=circle, Asset type=icon",
+        "nodeId": "19162:239",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon"
+      },
+      {
+        "type": "component_removed",
+        "component": "Style=filled, Size=xl, Shape=square, Asset type=icon",
+        "nodeId": "19162:259",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon"
+      },
+      {
+        "type": "component_removed",
+        "component": "Style=outlined, Size=xl, Shape=square, Asset type=icon",
+        "nodeId": "19162:275",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.itemSpacing (era: gap/gap-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.paddingLeft (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.paddingTop (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.paddingRight (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.paddingBottom (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.itemSpacing (era: gap/gap-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.paddingLeft (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.paddingTop (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.paddingRight (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.paddingBottom (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.fills (era: static/background/neutral/quiet)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.strokes (era: static/border/brand/secondary)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.itemSpacing (era: gap/gap-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.paddingLeft (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.paddingTop (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.paddingRight (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.paddingBottom (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.itemSpacing (era: gap/gap-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.paddingLeft (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.paddingTop (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.paddingRight (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.paddingBottom (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.fills (era: static/background/neutral/quiet)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.strokes (era: static/border/brand/secondary)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "⛔ Placeholder-icon_slot.size.width: 32 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "⛔ Placeholder-icon_slot.size.height: 32 → 24"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=filled, Size=xl, Shape=square, Asset type=pictogram",
+        "nodeId": "19162:264",
+        "details": "Shape.fills: static/foreground/brand/primary/medium → static/background/feedback/error/bold"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Style=filled, Size=xl, Shape=square, Asset type=pictogram",
+        "nodeId": "19162:264",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Style=filled, Size=xl, Shape=square, Asset type=pictogram",
+        "nodeId": "19162:264",
+        "details": "Shape.fill[0].color: #5A50F9 → #B91C1C"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 4,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 28,
+      "bindingsChanged": 1,
+      "propertiesChanged": 3
+    }
+  },
+  {
     "id": "mqmlg5b2",
     "timestamp": "2026-06-20T16:50:32.030Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
