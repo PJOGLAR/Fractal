@@ -107,10 +107,22 @@ npm run diff -- <file_key>
 | Componente nuevo | `🆕 Asset-container-test (componente completo, 28 variantes)` |
 | Componente eliminado | `🗑️ Button-old` |
 | Componente renombrado | `🔄 Receipt-screen → Result-screen` |
+| Variante nueva/eliminada | `🆕` o `🗑️` con el nombre de la variante |
 | Token swapped (binding cambiado) | `🔀 Label.fills: static/foreground/neutral/medium → brand/primary/medium` |
 | Token agregado a una capa | `➕ Label.fills → static/foreground/neutral/bold` |
 | Token eliminado de una capa | `➖ Label.fills (era: static/foreground/neutral/medium)` |
 | Propiedad numérica cambiada | `📐 Placeholder.size.width: 24 → 20` |
+| Alineación cambiada | `📐 Content.primaryAxisAlignItems: MIN → CENTER` |
+| Texto cambiado | `📐 Label.characters: "Label" → "Confirmar"` |
+| Tipografía cambiada | `📐 Title.fontSize: 16 → 18` |
+| Color de fill cambiado | `📐 Background.fill[0].color: #5A50F9 → #4338CA` |
+| Color de stroke cambiado | `📐 Border.stroke[0].color: #DADADA → #A9A9A9` |
+| Capa oculta/mostrada | `📐 Layer.visible: true → false` |
+| Constraint cambiado | `📐 Container.minWidth: 200 → 280` |
+| Effect agregado/cambiado | `📐 Card.effects: DROP_SHADOW → DROP_SHADOW,INNER_SHADOW` |
+| Prop de componente cambiada | `📐 Button.__componentProps__: Style,State → Style,State,Size` |
+| Capa renombrada | `📐 Layer.__layerName__: "Frame 1" → "Content wrapper"` |
+| Clip content cambiado | `📐 Container.clipsContent: false → true` |
 
 ### Cómo funciona
 
@@ -120,12 +132,31 @@ npm run diff -- <file_key>
 
 ### Propiedades que trackea
 
-- `width`, `height` (tamaño de capas)
-- `itemSpacing` (gap entre hijos)
-- `paddingLeft/Right/Top/Bottom`
-- `topLeftRadius`, `topRightRadius`, `bottomLeftRadius`, `bottomRightRadius`
-- `opacity`, `strokeWeight`
-- Tamaño absoluto (`size.width`, `size.height`)
+**Tamaño:** `width`, `height`, `size.width`, `size.height`
+
+**Spacing:** `itemSpacing`, `paddingLeft/Right/Top/Bottom`
+
+**Border:** `topLeftRadius`, `topRightRadius`, `bottomLeftRadius`, `bottomRightRadius`, `strokeWeight`, `opacity`
+
+**Auto Layout:** `layoutMode`, `primaryAxisAlignItems`, `counterAxisAlignItems`, `layoutWrap`, `primaryAxisSizingMode`, `counterAxisSizingMode`
+
+**Texto:** `fontSize`, `fontWeight`, `fontFamily`, `lineHeight`, `letterSpacing`, `characters` (contenido del texto)
+
+**Colores resueltos:** `fill[0].color` (hex), `stroke[0].color` (hex), `fill[0].opacity`
+
+**Visibility:** `visible` (true/false — detecta capas ocultas/mostradas)
+
+**Constraints:** `minWidth`, `maxWidth`, `minHeight`, `maxHeight`
+
+**Effects:** shadows, blurs (tipo + visible/hidden)
+
+**Component properties:** lista de props del componente (detecta si se agrega/quita/renombra una prop)
+
+**Nombres de capas:** detecta renames de capas internas
+
+**Clipping:** `clipsContent` (si se activa/desactiva clip)
+
+**Tokens (bindings):** fill, stroke, spacing, typography — cualquier variable bound
 
 ### Incluye instancias anidadas
 
