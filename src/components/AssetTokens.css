@@ -215,3 +215,46 @@
   color: var(--color-text-secondary);
   flex-shrink: 0;
 }
+
+/* Category filters */
+.asset-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.category-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.category-chip:hover {
+  background: var(--color-surface-hover);
+  color: var(--color-text);
+}
+
+.category-chip.active {
+  background: var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
+}
+
+.category-chip-count {
+  font-size: 0.72rem;
+  opacity: 0.75;
+}
+
+.category-chip.active .category-chip-count {
+  opacity: 0.85;
+}

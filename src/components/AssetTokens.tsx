@@ -58,24 +58,38 @@ export function AssetTokens() {
   const data = assetData as unknown as AssetData
   const [tab, setTab] = useState<TabView>('tokens')
   const [search, setSearch] = useState('')
+  const [activeCategory, setActiveCategory] = useState<string>('all')
   const [selectedComponent, setSelectedComponent] = useState<AssetComponent | null>(null)
 
   const isEmpty = !data.extractedAt
 
-  const filteredTokens = useMemo(() => {
-    if (!search) return data.tokenSummary
-    const q = search.toLowerCase()
-    return data.tokenSummary.filter(t =>
-      t.tokenName.toLowerCase().includes(q) ||
-      t.tokenCollection.toLowerCase().includes(q)
-    )
-  }, [data.tokenSummary, search])
+  // All categories from components
+  const categories = useMemo(() => {
+    const cats = new Set<string>()
+    for (const c of data.components) if (c.category) cats.add(c.category)
+    return [...cats].sort()
+  }, [data.components])
 
+  // Components filtered by category + search
   const filteredComponents = useMemo(() => {
-    if (!search) return data.components
-    const q = search.toLowerCase()
-    return data.components.filter(c => c.name.toLowerCase().includes(q) || c.category.toLowerCase().includes(q))
-  }, [data.components, search])
+    let comps = data.components
+    if (activeCategory !== 'all') comps = comps.filter(c => c.category === activeCategory)
+    if (search) {
+      const q = search.toLowerCase()
+      comps = comps.filter(c => c.name.toLowerCase().includes(q))
+    }
+    return comps
+  }, [data.components, activeCategory, search])
+
+  // Token summary filtered by active category (only tokens used in filtered components)
+  const filteredTokens = useMemo(() => {
+    if (activeCategory === 'all' && !search) return data.tokenSummary
+    const compNames = new Set(filteredComponents.map(c => c.name))
+    return data.tokenSummary.filter(t =>
+      t.usedInComponents.some(n => compNames.has(n)) &&
+      (!search || t.tokenName.toLowerCase().includes(search.toLowerCase()))
+    )
+  }, [data.tokenSummary, filteredComponents, activeCategory, search])
 
   // Group tokens by collection
   const tokensByCollection = useMemo(() => {
@@ -138,6 +152,30 @@ export function AssetTokens() {
           </div>
         )}
       </div>
+
+      {/* Category filters */}
+      {categories.length > 1 && (
+        <div className="asset-categories">
+          <button
+            className={`category-chip ${activeCategory === 'all' ? 'active' : ''}`}
+            onClick={() => { setActiveCategory('all'); setSelectedComponent(null) }}
+          >
+            Todos
+          </button>
+          {categories.map(cat => (
+            <button
+              key={cat}
+              className={`category-chip ${activeCategory === cat ? 'active' : ''}`}
+              onClick={() => { setActiveCategory(cat); setSelectedComponent(null) }}
+            >
+              {cat}
+              <span className="category-chip-count">
+                {data.components.filter(c => c.category === cat).length}
+              </span>
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* Tabs + search */}
       <div className="asset-controls">
