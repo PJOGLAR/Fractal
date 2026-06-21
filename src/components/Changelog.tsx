@@ -7,6 +7,7 @@ interface DiffEntry {
   component: string
   nodeId?: string
   details: string
+  parentName?: string
 }
 
 interface ChangelogEntry {
@@ -221,7 +222,7 @@ function CleanChangelog({ changes }: { changes: DiffEntry[] }) {
             <span className="cl-badge cl-badge--removed">−</span>
             Variantes eliminadas ({removed.length})
           </h4>
-          <VariantList variants={removed.map(d => d.component)} type="removed" />
+          <VariantList variants={removed} type="removed" />
         </section>
       )}
 
@@ -232,7 +233,7 @@ function CleanChangelog({ changes }: { changes: DiffEntry[] }) {
             <span className="cl-badge cl-badge--added">+</span>
             Variantes nuevas ({added.length})
           </h4>
-          <VariantList variants={added.map(d => d.component)} type="added" />
+          <VariantList variants={added} type="added" />
         </section>
       )}
 
@@ -257,45 +258,44 @@ function CleanChangelog({ changes }: { changes: DiffEntry[] }) {
   )
 }
 
-// Render a list of variants, grouped by common properties
-function VariantList({ variants, type }: { variants: string[]; type: 'added' | 'removed' }) {
-  const withProps = variants.filter(v => v.includes('='))
-  const plain = variants.filter(v => !v.includes('='))
-
-  // Find common props across variant names
-  const parsePropMap = (name: string) => {
-    const map: Record<string, string> = {}
-    for (const p of name.split(',')) {
-      const [k, v] = p.split('=').map(s => s.trim())
-      if (k && v) map[k] = v
+// Render a list of variants, grouped by parentName (set) when available
+function VariantList({ variants, type }: { variants: DiffEntry[]; type: 'added' | 'removed' }) {
+  // Group by parentName — variants without parentName are standalone components
+  const grouped = useMemo(() => {
+    const map = new Map<string, DiffEntry[]>()
+    for (const v of variants) {
+      const key = v.parentName || '__standalone__'
+      if (!map.has(key)) map.set(key, [])
+      map.get(key)!.push(v)
     }
     return map
-  }
-
-  const propMaps = withProps.map(parsePropMap)
-  const firstMap = propMaps[0] || {}
-  const commonProps = Object.entries(firstMap).filter(([k, v]) => propMaps.every(m => m[k] === v))
-  const commonKeys = new Set(commonProps.map(([k]) => k))
+  }, [variants])
 
   return (
     <div className="variant-list-block">
-      {commonProps.length > 0 && (
-        <p className="cl-hint">
-          {commonProps.map(([k, v]) => `${k}: ${v}`).join(' · ')}
-        </p>
-      )}
-      <ul className={`cl-list cl-list--${type}`}>
-        {withProps.map((v, i) => {
-          // Show only the non-common props
-          const propMap = parsePropMap(v)
-          const diffProps = Object.entries(propMap).filter(([k]) => !commonKeys.has(k))
-          const label = diffProps.length > 0
-            ? diffProps.map(([, val]) => val).join(' / ')
-            : shortVariant(v)
-          return <li key={i}>{label}</li>
-        })}
-        {plain.map((v, i) => <li key={i}>{v}</li>)}
-      </ul>
+      {[...grouped.entries()].map(([parentName, items]) => {
+        const isGrouped = parentName !== '__standalone__'
+        const allVariants = items.filter(v => v.component.includes('='))
+        const sets = items.filter(v => !v.component.includes('='))
+
+        if (isGrouped) {
+          // Show set name + count summary
+          return (
+            <div key={parentName} className={`variant-group variant-group--${type}`}>
+              <span className="variant-group-name">{parentName}</span>
+              <span className="variant-group-count">{items.length} variantes</span>
+            </div>
+          )
+        }
+
+        // Standalone — show shortened names
+        return (
+          <ul key={parentName} className={`cl-list cl-list--${type}`}>
+            {sets.map((v, i) => <li key={i}>{v.component}</li>)}
+            {allVariants.map((v, i) => <li key={i}>{shortVariant(v.component)}</li>)}
+          </ul>
+        )
+      })}
     </div>
   )
 }

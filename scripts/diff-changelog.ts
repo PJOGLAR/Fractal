@@ -116,6 +116,7 @@ interface SnapshotComponent {
   id: string
   name: string
   type: string
+  parentId?: string   // id del COMPONENT_SET padre si es variante
   bindings: Array<{ property: string; variableId: string; layerName: string }>
   properties: PropertyValue[]
 }
@@ -133,6 +134,7 @@ interface DiffEntry {
   component: string
   nodeId: string
   details: string
+  parentName?: string  // nombre del COMPONENT_SET padre, si aplica
 }
 
 interface ChangelogEntry {
@@ -287,7 +289,10 @@ async function takeSnapshot(): Promise<Snapshot> {
   const components: SnapshotComponent[] = []
   function findComponents(node: any) {
     if (node.type === 'COMPONENT' || node.type === 'COMPONENT_SET') {
-      components.push({ id: node.id, name: node.name, type: node.type, bindings: extractBindings(node), properties: extractProperties(node) })
+      const parentId = node.type === 'COMPONENT' && node.parent?.type === 'COMPONENT_SET'
+        ? node.parent.id
+        : undefined
+      components.push({ id: node.id, name: node.name, type: node.type, parentId, bindings: extractBindings(node), properties: extractProperties(node) })
     }
     if (node.children) {
       for (const child of node.children) findComponents(child)
@@ -311,10 +316,16 @@ function computeDiff(before: Snapshot, after: Snapshot, names: Map<string, strin
 
   // Components added/removed
   for (const [id, comp] of afterMap) {
-    if (!beforeMap.has(id)) diffs.push({ type: 'component_added', component: comp.name, nodeId: id, details: `${comp.name} (${comp.type})` })
+    if (!beforeMap.has(id)) {
+      const parentName = comp.parentId ? beforeMap.get(comp.parentId)?.name || afterMap.get(comp.parentId)?.name : undefined
+      diffs.push({ type: 'component_added', component: comp.name, nodeId: id, details: `${comp.name} (${comp.type})`, ...(parentName ? { parentName } : {}) })
+    }
   }
   for (const [id, comp] of beforeMap) {
-    if (!afterMap.has(id)) diffs.push({ type: 'component_removed', component: comp.name, nodeId: id, details: comp.name })
+    if (!afterMap.has(id)) {
+      const parentName = comp.parentId ? beforeMap.get(comp.parentId)?.name || afterMap.get(comp.parentId)?.name : undefined
+      diffs.push({ type: 'component_removed', component: comp.name, nodeId: id, details: comp.name, ...(parentName ? { parentName } : {}) })
+    }
   }
 
   // Compare existing components

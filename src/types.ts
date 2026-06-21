@@ -24,6 +24,7 @@ export interface ComponentTokenBinding {
   componentId: string
   category: string
   bindings: TokenBinding[]
+  hardcodedCount?: number
 }
 
 export interface HardcodedValue {
@@ -44,4 +45,12 @@ export interface DashboardData {
   components: ComponentTokenBinding[]
   orphanTokens: TokenData[]
   hardcodedValues?: HardcodedValue[]
+}
+
+export type LibraryId = 'components' | 'templates' | 'assets' | 'all'
+
+export interface LibraryMeta {
+  id: LibraryId
+  label: string
+  data: DashboardData | null
 }

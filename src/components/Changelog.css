@@ -277,6 +277,33 @@
   gap: 0.35rem;
 }
 
+.variant-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.variant-group--removed {
+  background: rgba(248, 81, 73, 0.08);
+}
+
+.variant-group--added {
+  background: rgba(46, 160, 67, 0.08);
+}
+
+.variant-group-name {
+  font-weight: 600;
+  color: var(--text-primary, #eee);
+}
+
+.variant-group-count {
+  font-size: 0.78rem;
+  color: var(--text-secondary, #999);
+}
+
 /* Info toggle button */
 .info-toggle {
   margin-left: auto;
