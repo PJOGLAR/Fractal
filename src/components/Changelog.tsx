@@ -17,7 +17,7 @@ interface ChangelogEntry {
   fileLabel: string
   summary: string
   changes: DiffEntry[]
-  stats: {
+  stats?: {
     componentsAdded: number
     componentsRemoved: number
     bindingsAdded: number
@@ -25,6 +25,81 @@ interface ChangelogEntry {
     bindingsChanged: number
     propertiesChanged?: number
   }
+}
+
+// "Style=filled, Size=xl, Shape=circle, Asset type=pictogram" → "filled/xl/circle/pictogram"
+function shortVariant(name: string): string {
+  if (!name.includes('=')) return name
+  return name.split(',').map(p => p.split('=')[1]?.trim() || p.trim()).join('/')
+}
+
+// "static/background/brand/primary/subtle" → "background/brand/primary/subtle"
+function cleanToken(token: string): string {
+  return token.replace(/^static\//, '').replace(/^semantic\//, '')
+}
+
+// "padding/padding-100" → "padding-100", "gap/gap-0" → "gap-0"
+function shortToken(token: string): string {
+  const clean = cleanToken(token)
+  const parts = clean.split('/')
+  // If last segment is repeated info, just use last 2
+  return parts.length > 3 ? parts.slice(-2).join('/') : clean
+}
+
+// Humanize a CSS property name
+function humanProp(prop: string): string {
+  const map: Record<string, string> = {
+    fills: 'fill',
+    strokes: 'stroke',
+    strokeWeight: 'stroke width',
+    itemSpacing: 'gap',
+    paddingLeft: 'padding left',
+    paddingRight: 'padding right',
+    paddingTop: 'padding top',
+    paddingBottom: 'padding bottom',
+    'size.width': 'width',
+    'size.height': 'height',
+    opacity: 'opacity',
+    fontSize: 'font size',
+    fontWeight: 'font weight',
+    topLeftRadius: 'radius ↖',
+    topRightRadius: 'radius ↗',
+    bottomLeftRadius: 'radius ↙',
+    bottomRightRadius: 'radius ↘',
+  }
+  return map[prop] || prop
+}
+
+// Parse "LayerName.property: before → after" or "LayerName.property (era: token)"
+function parseDetail(details: string) {
+  if (details.includes(' → ')) {
+    const arrowIdx = details.indexOf(' → ')
+    const colonIdx = details.lastIndexOf(': ', arrowIdx)
+    if (colonIdx === -1) return null
+    const subject = details.slice(0, colonIdx)
+    const before = details.slice(colonIdx + 2, arrowIdx)
+    const after = details.slice(arrowIdx + 3)
+    const lastDot = subject.lastIndexOf('.')
+    return {
+      layer: lastDot !== -1 ? subject.slice(0, lastDot) : subject,
+      prop: lastDot !== -1 ? subject.slice(lastDot + 1) : '',
+      before,
+      after,
+    }
+  }
+  if (details.includes('(era: ')) {
+    const eraIdx = details.indexOf('(era: ')
+    const subject = details.slice(0, eraIdx).trim().replace(/\.$/, '')
+    const era = details.slice(eraIdx + 6, -1)
+    const lastDot = subject.lastIndexOf('.')
+    return {
+      layer: lastDot !== -1 ? subject.slice(0, lastDot) : subject,
+      prop: lastDot !== -1 ? subject.slice(lastDot + 1) : '',
+      before: era,
+      after: null,
+    }
+  }
+  return null
 }
 
 export function Changelog() {
@@ -52,11 +127,7 @@ export function Changelog() {
       <div className="changelog-controls">
         <div className="changelog-filter">
           <label htmlFor="file-filter">Archivo:</label>
-          <select
-            id="file-filter"
-            value={filterFile}
-            onChange={e => setFilterFile(e.target.value)}
-          >
+          <select id="file-filter" value={filterFile} onChange={e => setFilterFile(e.target.value)}>
             <option value="all">Todos</option>
             {fileLabels.map(label => (
               <option key={label} value={label}>{label}</option>
@@ -84,22 +155,18 @@ export function Changelog() {
               <div className="changelog-entry-meta">
                 <time className="changelog-date">
                   {new Date(entry.timestamp).toLocaleDateString('es-AR', {
-                    day: 'numeric',
-                    month: 'short',
-                    year: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit',
+                    day: 'numeric', month: 'short', year: 'numeric',
+                    hour: '2-digit', minute: '2-digit',
                   })}
                 </time>
                 <span className="changelog-file-badge">{entry.fileLabel}</span>
-                <span className="changelog-file-name">{entry.fileName}</span>
               </div>
               <p className="changelog-summary">{entry.summary}</p>
             </button>
 
             {expandedId === entry.id && (
               <div className="changelog-entry-details">
-                <FormattedChanges changes={entry.changes} />
+                <CleanChangelog changes={entry.changes} />
               </div>
             )}
           </article>
@@ -109,156 +176,275 @@ export function Changelog() {
   )
 }
 
-/** Renders changes grouped by section like the dev script output */
-function FormattedChanges({ changes }: { changes: DiffEntry[] }) {
-  const componentAdded = changes.filter(d => d.type === 'component_added')
-  const componentRemoved = changes.filter(d => d.type === 'component_removed')
-  const componentRenamed = changes.filter(d => d.type === 'component_renamed')
+function CleanChangelog({ changes }: { changes: DiffEntry[] }) {
+  // Filter out internal ⛔ entries
+  const filtered = changes.filter(c => !c.component.includes('⛔') && !c.details.includes('⛔'))
 
-  // Group remaining changes by component
-  const changedComponents = useMemo(() => {
-    const map = new Map<string, { name: string; nodeId: string; tokens: DiffEntry[]; properties: DiffEntry[] }>()
-    for (const d of changes) {
-      if (d.type === 'component_added' || d.type === 'component_removed' || d.type === 'component_renamed') continue
-      const key = `${d.component}|${d.nodeId || ''}`
-      if (!map.has(key)) {
-        map.set(key, { name: d.component, nodeId: d.nodeId || '', tokens: [], properties: [] })
-      }
-      const entry = map.get(key)!
-      if (d.type === 'property_changed') {
-        entry.properties.push(d)
-      } else {
-        entry.tokens.push(d)
-      }
+  const removed = filtered.filter(c => c.type === 'component_removed')
+  const added = filtered.filter(c => c.type === 'component_added')
+  const renamed = filtered.filter(c => c.type === 'component_renamed')
+
+  // Group binding/property changes by parent component
+  const componentChanges = useMemo(() => {
+    const map = new Map<string, {
+      tokensChanged: DiffEntry[]
+      tokensAdded: DiffEntry[]
+      tokensRemoved: DiffEntry[]
+      propsChanged: DiffEntry[]
+    }>()
+    for (const c of filtered) {
+      if (['component_added', 'component_removed', 'component_renamed'].includes(c.type)) continue
+      const key = c.component
+      if (!map.has(key)) map.set(key, { tokensChanged: [], tokensAdded: [], tokensRemoved: [], propsChanged: [] })
+      const g = map.get(key)!
+      if (c.type === 'binding_changed') g.tokensChanged.push(c)
+      else if (c.type === 'binding_added') g.tokensAdded.push(c)
+      else if (c.type === 'binding_removed') g.tokensRemoved.push(c)
+      else if (c.type === 'property_changed') g.propsChanged.push(c)
     }
     return map
-  }, [changes])
+  }, [filtered])
 
   return (
-    <div className="formatted-changes">
-      {/* Componentes nuevos */}
-      {componentAdded.length > 0 && (
-        <section className="change-section">
-          <h4 className="change-section-title">Componentes nuevos</h4>
-          <ul className="change-list-items">
-            {componentAdded.filter(d => !d.component.includes('=')).map((d, i) => {
-              const variants = componentAdded.filter(v => v.component.includes('='))
-              return (
-                <li key={i} className="change-item-added">
-                  + {d.component}{variants.length > 0 && ` (${variants.length} variantes)`}
-                </li>
-              )
-            })}
-            {componentAdded.filter(d => !d.component.includes('=')).length === 0 &&
-              componentAdded.filter(d => d.component.includes('=')).map((d, i) => (
-                <li key={i} className="change-item-added">+ Variante: {d.component}</li>
-              ))
-            }
-          </ul>
+    <div className="clean-changelog">
+
+      {/* Variantes eliminadas */}
+      {removed.length > 0 && (
+        <section className="cl-section">
+          <h4 className="cl-section-title">
+            <span className="cl-badge cl-badge--removed">−</span>
+            Variantes eliminadas ({removed.length})
+          </h4>
+          <VariantList variants={removed.map(d => d.component)} type="removed" />
         </section>
       )}
 
-      {/* Componentes eliminados */}
-      {componentRemoved.length > 0 && (
-        <section className="change-section">
-          <h4 className="change-section-title">Variantes/componentes eliminados</h4>
-          <ul className="change-list-items">
-            {componentRemoved.filter(d => !d.component.includes('=')).map((d, i) => {
-              const variants = componentRemoved.filter(v => v.component.includes('='))
-              return (
-                <li key={i} className="change-item-removed">
-                  - {d.component}{variants.length > 0 && ` (${variants.length} variantes)`}
-                </li>
-              )
-            })}
-            {componentRemoved.filter(d => !d.component.includes('=')).length === 0 &&
-              componentRemoved.filter(d => d.component.includes('=')).map((d, i) => (
-                <li key={i} className="change-item-removed">- {d.component}</li>
-              ))
-            }
-          </ul>
+      {/* Variantes nuevas */}
+      {added.length > 0 && (
+        <section className="cl-section">
+          <h4 className="cl-section-title">
+            <span className="cl-badge cl-badge--added">+</span>
+            Variantes nuevas ({added.length})
+          </h4>
+          <VariantList variants={added.map(d => d.component)} type="added" />
         </section>
       )}
 
       {/* Renombrados */}
-      {componentRenamed.length > 0 && (
-        <section className="change-section">
-          <h4 className="change-section-title">Renombrados</h4>
-          <ul className="change-list-items">
-            {componentRenamed.map((d, i) => (
-              <li key={i} className="change-item-renamed">{d.details}</li>
-            ))}
+      {renamed.length > 0 && (
+        <section className="cl-section">
+          <h4 className="cl-section-title">
+            <span className="cl-badge cl-badge--changed">↪</span>
+            Renombrados
+          </h4>
+          <ul className="cl-list">
+            {renamed.map((d, i) => <li key={i}>{d.details}</li>)}
           </ul>
         </section>
       )}
 
-      {/* Cambios en componentes (agrupados) */}
-      {changedComponents.size > 0 && (
-        <section className="change-section">
-          <h4 className="change-section-title">Cambios en componentes</h4>
-          {[...changedComponents.values()].map((comp, i) => {
-            const tokenChanges = comp.tokens.filter(d => d.type === 'binding_changed')
-            const tokenAdded = comp.tokens.filter(d => d.type === 'binding_added')
-            const tokenRemoved = comp.tokens.filter(d => d.type === 'binding_removed')
-
-            return (
-              <div key={i} className="component-change-block">
-                <h5 className="component-change-name">{comp.name}</h5>
-
-                {tokenChanges.length > 0 && (
-                  <div className="token-change-group">
-                    <span className="token-group-label">Tokens cambiados:</span>
-                    <ul>
-                      {tokenChanges.slice(0, 10).map((d, j) => {
-                        const parts = d.details.split(': ')
-                        return <li key={j}>{parts[0]}: <span className="token-value">{parts.slice(1).join(': ')}</span></li>
-                      })}
-                      {tokenChanges.length > 10 && <li className="more">...+{tokenChanges.length - 10} más</li>}
-                    </ul>
-                  </div>
-                )}
-
-                {tokenAdded.length > 0 && (
-                  <div className="token-change-group">
-                    <span className="token-group-label">Tokens agregados:</span>
-                    <ul>
-                      {tokenAdded.slice(0, 10).map((d, j) => (
-                        <li key={j} className="change-item-added">+ {d.details}</li>
-                      ))}
-                      {tokenAdded.length > 10 && <li className="more">...+{tokenAdded.length - 10} más</li>}
-                    </ul>
-                  </div>
-                )}
-
-                {tokenRemoved.length > 0 && (
-                  <div className="token-change-group">
-                    <span className="token-group-label">Tokens eliminados:</span>
-                    <ul>
-                      {tokenRemoved.slice(0, 10).map((d, j) => (
-                        <li key={j} className="change-item-removed">- {d.details}</li>
-                      ))}
-                      {tokenRemoved.length > 10 && <li className="more">...+{tokenRemoved.length - 10} más</li>}
-                    </ul>
-                  </div>
-                )}
-
-                {comp.properties.length > 0 && (
-                  <div className="token-change-group">
-                    <span className="token-group-label">Propiedades:</span>
-                    <ul>
-                      {comp.properties.slice(0, 10).map((d, j) => {
-                        const parts = d.details.split(': ')
-                        return <li key={j}>{parts[0]}: <span className="token-value">{parts.slice(1).join(': ')}</span></li>
-                      })}
-                      {comp.properties.length > 10 && <li className="more">...+{comp.properties.length - 10} más</li>}
-                    </ul>
-                  </div>
-                )}
-              </div>
-            )
-          })}
-        </section>
-      )}
+      {/* Cambios por componente */}
+      {[...componentChanges.entries()].map(([compName, g]) => (
+        <ComponentChangeBlock key={compName} name={compName} {...g} />
+      ))}
     </div>
+  )
+}
+
+// Render a list of variants, grouped by common properties
+function VariantList({ variants, type }: { variants: string[]; type: 'added' | 'removed' }) {
+  const withProps = variants.filter(v => v.includes('='))
+  const plain = variants.filter(v => !v.includes('='))
+
+  // Find common props across variant names
+  const parsePropMap = (name: string) => {
+    const map: Record<string, string> = {}
+    for (const p of name.split(',')) {
+      const [k, v] = p.split('=').map(s => s.trim())
+      if (k && v) map[k] = v
+    }
+    return map
+  }
+
+  const propMaps = withProps.map(parsePropMap)
+  const firstMap = propMaps[0] || {}
+  const commonProps = Object.entries(firstMap).filter(([k, v]) => propMaps.every(m => m[k] === v))
+  const commonKeys = new Set(commonProps.map(([k]) => k))
+
+  return (
+    <div className="variant-list-block">
+      {commonProps.length > 0 && (
+        <p className="cl-hint">
+          {commonProps.map(([k, v]) => `${k}: ${v}`).join(' · ')}
+        </p>
+      )}
+      <ul className={`cl-list cl-list--${type}`}>
+        {withProps.map((v, i) => {
+          // Show only the non-common props
+          const propMap = parsePropMap(v)
+          const diffProps = Object.entries(propMap).filter(([k]) => !commonKeys.has(k))
+          const label = diffProps.length > 0
+            ? diffProps.map(([, val]) => val).join(' / ')
+            : shortVariant(v)
+          return <li key={i}>{label}</li>
+        })}
+        {plain.map((v, i) => <li key={i}>{v}</li>)}
+      </ul>
+    </div>
+  )
+}
+
+function ComponentChangeBlock({
+  name, tokensChanged, tokensAdded, tokensRemoved, propsChanged
+}: {
+  name: string
+  tokensChanged: DiffEntry[]
+  tokensAdded: DiffEntry[]
+  tokensRemoved: DiffEntry[]
+  propsChanged: DiffEntry[]
+}) {
+  const hasContent = tokensChanged.length + tokensAdded.length + tokensRemoved.length + propsChanged.length > 0
+  if (!hasContent) return null
+
+  // Size/dimension changes
+  const sizeChanges = propsChanged.filter(d => {
+    const p = parseDetail(d.details)
+    return p && ['size.width', 'size.height', 'width', 'height'].includes(p.prop)
+  })
+  const otherPropChanges = propsChanged.filter(d => !sizeChanges.includes(d))
+
+  return (
+    <section className="cl-section">
+      <h4 className="cl-section-title cl-component-title">{shortVariant(name)}</h4>
+
+      {/* Token changes → table */}
+      {tokensChanged.length > 0 && (
+        <div className="cl-subsection">
+          <span className="cl-sublabel">Tokens cambiados</span>
+          <table className="cl-table">
+            <thead>
+              <tr><th>Variante / Capa</th><th>Propiedad</th><th>Antes</th><th>Después</th></tr>
+            </thead>
+            <tbody>
+              {tokensChanged.map((d, i) => {
+                const p = parseDetail(d.details)
+                if (!p || !p.after) return null
+                return (
+                  <tr key={i}>
+                    <td className="td-variant">{shortVariant(p.layer)}</td>
+                    <td>{humanProp(p.prop)}</td>
+                    <td><code>{shortToken(p.before)}</code></td>
+                    <td><code>{shortToken(p.after)}</code></td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      {/* Tokens removed — grouped by token name */}
+      {tokensRemoved.length > 0 && (
+        <div className="cl-subsection">
+          <span className="cl-sublabel">Tokens eliminados</span>
+          <GroupedTokenList entries={tokensRemoved} />
+        </div>
+      )}
+
+      {/* Tokens added */}
+      {tokensAdded.length > 0 && (
+        <div className="cl-subsection">
+          <span className="cl-sublabel">Tokens agregados</span>
+          <ul className="cl-list cl-list--added">
+            {tokensAdded.slice(0, 8).map((d, i) => {
+              const p = parseDetail(d.details)
+              return <li key={i}>{p ? `${shortVariant(p.layer)} · ${humanProp(p.prop)}` : d.details}</li>
+            })}
+            {tokensAdded.length > 8 && <li className="cl-more">+{tokensAdded.length - 8} más</li>}
+          </ul>
+        </div>
+      )}
+
+      {/* Size changes */}
+      {sizeChanges.length > 0 && (
+        <div className="cl-subsection">
+          <span className="cl-sublabel">Tamaños ajustados</span>
+          <table className="cl-table">
+            <thead>
+              <tr><th>Capa</th><th>Propiedad</th><th>Antes</th><th>Después</th></tr>
+            </thead>
+            <tbody>
+              {sizeChanges.map((d, i) => {
+                const p = parseDetail(d.details)
+                if (!p || !p.after) return null
+                return (
+                  <tr key={i}>
+                    <td>{p.layer}</td>
+                    <td>{humanProp(p.prop)}</td>
+                    <td><code>{p.before}</code></td>
+                    <td><code>{p.after}</code></td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      {/* Other prop changes */}
+      {otherPropChanges.length > 0 && (
+        <div className="cl-subsection">
+          <span className="cl-sublabel">Propiedades ajustadas</span>
+          <table className="cl-table">
+            <thead>
+              <tr><th>Capa</th><th>Propiedad</th><th>Antes</th><th>Después</th></tr>
+            </thead>
+            <tbody>
+              {otherPropChanges.map((d, i) => {
+                const p = parseDetail(d.details)
+                if (!p || !p.after) return null
+                return (
+                  <tr key={i}>
+                    <td>{p.layer}</td>
+                    <td>{humanProp(p.prop)}</td>
+                    <td><code>{p.before}</code></td>
+                    <td><code>{p.after}</code></td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </section>
+  )
+}
+
+// Group token removals: show token name + how many variants lost it
+function GroupedTokenList({ entries }: { entries: DiffEntry[] }) {
+  const grouped = useMemo(() => {
+    const map = new Map<string, string[]>() // tokenKey → [variantNames]
+    for (const d of entries) {
+      const p = parseDetail(d.details)
+      const tokenKey = p ? `${humanProp(p.prop)}: ${shortToken(p.before)}` : d.details
+      const variantLabel = p ? shortVariant(p.layer) : d.component
+      if (!map.has(tokenKey)) map.set(tokenKey, [])
+      map.get(tokenKey)!.push(variantLabel)
+    }
+    return map
+  }, [entries])
+
+  return (
+    <ul className="cl-list cl-list--removed">
+      {[...grouped.entries()].slice(0, 12).map(([tokenKey, variants], i) => (
+        <li key={i}>
+          <span className="token-key">{tokenKey}</span>
+          {variants.length > 1 && (
+            <span className="token-variants"> — {variants.length} variantes</span>
+          )}
+        </li>
+      ))}
+      {grouped.size > 12 && <li className="cl-more">+{grouped.size - 12} más</li>}
+    </ul>
   )
 }
