@@ -360,7 +360,7 @@ function ComponentChangeBlock({
       {/* Tokens added */}
       {tokensAdded.length > 0 && (
         <div className="cl-subsection">
-          <span className="cl-sublabel">Tokens agregados</span>
+          <span className="cl-sublabel">Tokens aplicados</span>
           <ul className="cl-list cl-list--added">
             {tokensAdded.slice(0, 8).map((d, i) => {
               const p = parseDetail(d.details)

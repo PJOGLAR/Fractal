@@ -175,8 +175,8 @@
 }
 
 .cl-list li {
-  font-size: 0.82rem;
-  color: var(--text-primary, #ddd);
+  font-size: 0.88rem;
+  color: #ffffff;
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
 }
@@ -209,12 +209,13 @@
 
 /* Token grouped list */
 .token-key {
-  font-size: 0.82rem;
-  color: var(--text-primary, #ddd);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .token-variants {
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   color: var(--text-secondary, #888);
 }
 
@@ -240,7 +241,8 @@
 
 .cl-table td {
   padding: 0.4rem 0.6rem;
-  color: var(--text-primary, #ddd);
+  color: #ffffff;
+  font-size: 0.86rem;
   border-bottom: 1px solid var(--border-color, #1e1e1e);
   vertical-align: middle;
 }
@@ -260,11 +262,12 @@
 
 .cl-table code {
   font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
   background: var(--bg-tertiary, #222);
   padding: 0.1rem 0.4rem;
   border-radius: 3px;
-  color: var(--text-secondary, #bbb);
+  color: #ffffff;
   white-space: nowrap;
 }
 
