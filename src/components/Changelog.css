@@ -1,6 +1,5 @@
 .changelog {
-  padding: 2rem;
-  max-width: 960px;
+  max-width: 100%;
 }
 
 .changelog-controls {
@@ -18,28 +17,29 @@
 
 .changelog-filter label {
   font-size: 0.85rem;
-  color: var(--text-secondary, #888);
+  color: var(--color-text-secondary);
 }
 
 .changelog-filter select {
   padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  border: 1px solid var(--border-color, #333);
-  background: var(--bg-secondary, #1a1a1a);
-  color: var(--text-primary, #eee);
+  border-radius: var(--radius);
+  border: 1.5px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
   font-size: 0.85rem;
+  font-family: inherit;
 }
 
 .changelog-count {
   font-size: 0.8rem;
-  color: var(--text-secondary, #888);
+  color: var(--color-text-muted);
   margin-left: auto;
 }
 
 .changelog-empty {
   text-align: center;
   padding: 3rem 1rem;
-  color: var(--text-secondary, #888);
+  color: var(--color-text-secondary);
 }
 .changelog-empty-hint {
   font-size: 0.8rem;
@@ -55,10 +55,16 @@
 }
 
 .changelog-entry {
-  border: 1px solid var(--border-color, #2a2a2a);
-  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  background: var(--bg-secondary, #141414);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.15s;
+}
+
+.changelog-entry:hover {
+  box-shadow: var(--shadow-md);
 }
 
 .changelog-entry-header {
@@ -72,10 +78,11 @@
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  font-family: inherit;
 }
 
 .changelog-entry-header:hover {
-  background: var(--bg-hover, #1e1e1e);
+  background: var(--color-surface-hover);
 }
 
 .changelog-entry-meta {
@@ -86,29 +93,30 @@
 
 .changelog-date {
   font-size: 0.8rem;
-  color: var(--text-secondary, #888);
+  color: var(--color-text-muted);
 }
 
 .changelog-file-badge {
   font-size: 0.7rem;
   padding: 0.15rem 0.5rem;
-  border-radius: 4px;
-  background: var(--bg-tertiary, #252525);
-  color: var(--text-secondary, #aaa);
+  border-radius: 20px;
+  background: var(--brand-quiet);
+  color: var(--brand-bold);
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .changelog-summary {
   font-size: 0.9rem;
-  color: var(--text-primary, #eee);
+  color: var(--color-text);
   margin: 0;
+  font-weight: 500;
 }
 
 /* Expanded */
 .changelog-entry-details {
   padding: 0 1.25rem 1.5rem;
-  border-top: 1px solid var(--border-color, #2a2a2a);
+  border-top: 1px solid var(--color-border-subtle);
 }
 
 /* Clean changelog */
@@ -128,7 +136,7 @@
 .cl-section-title {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--text-primary, #eee);
+  color: var(--color-text);
   margin: 0;
   display: flex;
   align-items: center;
@@ -137,9 +145,9 @@
 
 .cl-component-title {
   font-size: 0.85rem;
-  color: var(--text-secondary, #aaa);
+  color: var(--color-text-secondary);
   padding-top: 0.75rem;
-  border-top: 1px solid var(--border-color, #2a2a2a);
+  border-top: 1px solid var(--color-border-subtle);
 }
 
 .cl-badge {
@@ -148,20 +156,20 @@
   justify-content: center;
   width: 18px;
   height: 18px;
-  border-radius: 4px;
+  border-radius: 5px;
   font-size: 0.8rem;
   font-weight: 700;
   line-height: 1;
   flex-shrink: 0;
 }
 
-.cl-badge--added { background: rgba(46, 160, 67, 0.2); color: #3fb950; }
-.cl-badge--removed { background: rgba(248, 81, 73, 0.2); color: #f85149; }
-.cl-badge--changed { background: rgba(210, 153, 34, 0.2); color: #d29922; }
+.cl-badge--added { background: var(--color-success-bg); color: var(--color-success); }
+.cl-badge--removed { background: var(--color-error-bg); color: var(--color-error); }
+.cl-badge--changed { background: var(--color-warning-bg); color: var(--color-warning); }
 
 .cl-hint {
   font-size: 0.78rem;
-  color: var(--text-secondary, #888);
+  color: var(--color-text-muted);
   margin: 0;
 }
 
@@ -175,17 +183,17 @@
 }
 
 .cl-list li {
-  font-size: 0.88rem;
-  color: #ffffff;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
+  font-size: 0.86rem;
+  color: var(--color-text-body);
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--radius-sm);
 }
 
-.cl-list--added li { color: #3fb950; background: rgba(46, 160, 67, 0.06); }
-.cl-list--removed li { color: #f85149; background: rgba(248, 81, 73, 0.06); }
+.cl-list--added li { color: var(--color-success); background: var(--color-success-bg); }
+.cl-list--removed li { color: var(--color-error); background: var(--color-error-bg); }
 
 .cl-more {
-  color: var(--text-secondary, #888) !important;
+  color: var(--color-text-muted) !important;
   background: none !important;
   font-style: italic;
   font-size: 0.78rem !important;
@@ -202,21 +210,21 @@
 .cl-sublabel {
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--text-secondary, #999);
+  color: var(--color-text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
 
 /* Token grouped list */
 .token-key {
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: #ffffff;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--color-text);
 }
 
 .token-variants {
   font-size: 0.82rem;
-  color: var(--text-secondary, #888);
+  color: var(--color-text-muted);
 }
 
 /* Tables */
@@ -225,25 +233,28 @@
   border-collapse: collapse;
   font-size: 0.8rem;
   margin-top: 0.15rem;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 
 .cl-table th {
   text-align: left;
-  padding: 0.4rem 0.6rem;
-  font-size: 0.72rem;
+  padding: 0.5rem 0.65rem;
+  font-size: 0.7rem;
   font-weight: 600;
-  color: var(--text-secondary, #aaa);
+  color: var(--color-text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  border-bottom: 1px solid var(--border-color, #2a2a2a);
-  background: var(--bg-tertiary, #1a1a1a);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg);
 }
 
 .cl-table td {
-  padding: 0.4rem 0.6rem;
-  color: #ffffff;
-  font-size: 0.86rem;
-  border-bottom: 1px solid var(--border-color, #1e1e1e);
+  padding: 0.45rem 0.65rem;
+  color: var(--color-text-body);
+  font-size: 0.84rem;
+  border-bottom: 1px solid var(--color-border-subtle);
   vertical-align: middle;
 }
 
@@ -252,22 +263,22 @@
 }
 
 .cl-table tr:hover td {
-  background: rgba(255,255,255,0.02);
+  background: var(--color-surface-hover);
 }
 
 .td-variant {
-  color: var(--text-secondary, #aaa);
+  color: var(--color-text-secondary);
   font-size: 0.78rem;
 }
 
 .cl-table code {
   font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.8rem;
-  font-weight: 700;
-  background: var(--bg-tertiary, #222);
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: var(--brand-quiet);
   padding: 0.1rem 0.4rem;
-  border-radius: 3px;
-  color: #ffffff;
+  border-radius: 4px;
+  color: var(--brand-bold);
   white-space: nowrap;
 }
 
@@ -281,27 +292,27 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.4rem 0.6rem;
-  border-radius: 6px;
+  padding: 0.45rem 0.7rem;
+  border-radius: var(--radius);
   font-size: 0.85rem;
 }
 
 .variant-group--removed {
-  background: rgba(248, 81, 73, 0.08);
+  background: var(--color-error-bg);
 }
 
 .variant-group--added {
-  background: rgba(46, 160, 67, 0.08);
+  background: var(--color-success-bg);
 }
 
 .variant-group-name {
   font-weight: 600;
-  color: var(--text-primary, #eee);
+  color: var(--color-text);
 }
 
 .variant-group-count {
   font-size: 0.78rem;
-  color: var(--text-secondary, #999);
+  color: var(--color-text-secondary);
 }
 
 /* Info toggle button */
@@ -309,31 +320,35 @@
   margin-left: auto;
   padding: 0.35rem 0.75rem;
   font-size: 0.8rem;
-  border-radius: 6px;
-  border: 1px solid var(--border-color, #333);
-  background: none;
-  color: var(--text-secondary, #aaa);
+  border-radius: var(--radius);
+  border: 1.5px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
   cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
 }
 
 .info-toggle:hover {
-  background: var(--bg-hover, #1e1e1e);
-  color: var(--text-primary, #eee);
+  background: var(--color-accent-subtle);
+  border-color: var(--color-accent-light);
+  color: var(--color-accent);
 }
 
 /* Info panel */
 .changelog-info {
-  background: var(--bg-secondary, #141414);
-  border: 1px solid var(--border-color, #2a2a2a);
-  border-radius: 8px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
 }
 
 .info-title {
   font-size: 1rem;
   font-weight: 700;
-  color: var(--text-primary, #fff);
+  color: var(--color-text);
   margin: 0 0 1.25rem;
 }
 
@@ -350,7 +365,7 @@
 .info-section h4 {
   font-size: 0.82rem;
   font-weight: 700;
-  color: var(--text-secondary, #aaa);
+  color: var(--color-accent);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin: 0 0 0.5rem;
@@ -358,7 +373,7 @@
 
 .info-section p {
   font-size: 0.82rem;
-  color: var(--text-primary, #ccc);
+  color: var(--color-text-body);
   line-height: 1.6;
   margin: 0 0 0.5rem;
 }
@@ -374,7 +389,7 @@
 
 .info-list li {
   font-size: 0.82rem;
-  color: var(--text-primary, #ccc);
+  color: var(--color-text-body);
   line-height: 1.5;
 }
 
@@ -390,10 +405,10 @@
 .info-list code {
   font-family: 'SF Mono', 'Fira Code', monospace;
   font-size: 0.75rem;
-  background: var(--bg-tertiary, #222);
+  background: var(--brand-quiet);
   padding: 0.1rem 0.35rem;
-  border-radius: 3px;
-  color: var(--text-secondary, #bbb);
+  border-radius: 4px;
+  color: var(--brand-bold);
 }
 
 .info-badge {
@@ -402,8 +417,8 @@
   font-weight: 600;
   padding: 0.1rem 0.4rem;
   border-radius: 4px;
-  background: var(--bg-tertiary, #252525);
-  color: var(--text-secondary, #aaa);
+  background: var(--brand-quiet);
+  color: var(--brand-bold);
   margin-right: 0.4rem;
   text-transform: capitalize;
 }
@@ -417,9 +432,9 @@
 .info-tag {
   font-size: 0.72rem;
   font-family: 'SF Mono', 'Fira Code', monospace;
-  background: var(--bg-tertiary, #1e1e1e);
-  color: var(--text-secondary, #999);
+  background: var(--color-bg);
+  color: var(--color-text-secondary);
   padding: 0.15rem 0.45rem;
   border-radius: 4px;
-  border: 1px solid var(--border-color, #2a2a2a);
+  border: 1px solid var(--color-border);
 }

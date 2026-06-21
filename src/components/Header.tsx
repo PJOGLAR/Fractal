@@ -39,7 +39,6 @@ export function Header({ currentView, onViewChange, data }: HeaderProps) {
           <div className="header-logo-mark">F</div>
           <div className="header-brand-text">
             <span className="header-title">Fractal DS</span>
-            <span className="header-subtitle">Token Health</span>
           </div>
         </div>
 

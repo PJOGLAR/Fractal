@@ -11,13 +11,13 @@
   --brand-light:          #C7D2FE;
 
   /* Header (dark) */
-  --header-bg:            rgba(14,12,30,0.92);
-  --header-border:        rgba(255,255,255,0.08);
-  --header-text:          #F4F3FF;
-  --header-text-muted:    rgba(244,243,255,0.55);
-  --header-hover:         rgba(255,255,255,0.07);
-  --header-active-bg:     rgba(90,80,249,0.25);
-  --header-active-text:   #C7D2FE;
+  --header-bg:            rgba(14,12,30,0.95);
+  --header-border:        rgba(255,255,255,0.10);
+  --header-text:          #FFFFFF;
+  --header-text-muted:    rgba(255,255,255,0.72);
+  --header-hover:         rgba(255,255,255,0.10);
+  --header-active-bg:     rgba(90,80,249,0.45);
+  --header-active-text:   #FFFFFF;
 
   /* Main content */
   --color-bg:             #F6F6FB;
