@@ -1,1 +1,428 @@
-[]
+[
+  {
+    "id": "mqnujqta",
+    "timestamp": "2026-06-21T13:53:02.590Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "8 componentes nuevos, 54 tokens nuevos, 6 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Style=filled, Size=xl, Shape=circle, Asset type=icon",
+        "nodeId": "19162:223",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:228",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=outlined, Size=xl, Shape=circle, Asset type=icon",
+        "nodeId": "19162:239",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:244",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=filled, Size=xl, Shape=square, Asset type=icon",
+        "nodeId": "19162:259",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=filled, Size=xl, Shape=square, Asset type=pictogram",
+        "nodeId": "19162:264",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=outlined, Size=xl, Shape=square, Asset type=icon",
+        "nodeId": "19162:275",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram",
+        "nodeId": "19162:280",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram (COMPONENT)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=lg, Shape=circle, Asset type=icon.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.itemSpacing → gap/gap-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.paddingLeft → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.paddingTop → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.paddingRight → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.paddingBottom → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=icon.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram.itemSpacing → gap/gap-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram.paddingLeft → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram.paddingTop → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram.paddingRight → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram.paddingBottom → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.itemSpacing → gap/gap-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.paddingLeft → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.paddingTop → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.paddingRight → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.paddingBottom → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.fills → static/background/neutral/quiet"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=icon.strokes → static/border/brand/secondary"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram.itemSpacing → gap/gap-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram.paddingLeft → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram.paddingTop → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram.paddingRight → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram.paddingBottom → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram.fills → static/background/neutral/quiet"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram.strokes → static/border/brand/secondary"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.itemSpacing → gap/gap-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.paddingLeft → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.paddingTop → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.paddingRight → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.paddingBottom → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=icon.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram.itemSpacing → gap/gap-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram.paddingLeft → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram.paddingTop → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram.paddingRight → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram.paddingBottom → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.itemSpacing → gap/gap-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.paddingLeft → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.paddingTop → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.paddingRight → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.paddingBottom → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.fills → static/background/neutral/quiet"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=icon.strokes → static/border/brand/secondary"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram.itemSpacing → gap/gap-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram.paddingLeft → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram.paddingTop → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram.paddingRight → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram.paddingBottom → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram.fills → static/background/neutral/quiet"
+      },
+      {
+        "type": "binding_added",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram.strokes → static/border/brand/secondary"
+      },
+      {
+        "type": "property_changed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "⛔ Placeholder-icon_slot.size.width: 24 → 32"
+      },
+      {
+        "type": "property_changed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "⛔ Placeholder-icon_slot.size.height: 24 → 32"
+      },
+      {
+        "type": "property_changed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "⛔ Placeholder-pictogram_slot.size.width: 24 → 32"
+      },
+      {
+        "type": "property_changed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "⛔ Placeholder-pictogram_slot.size.height: 24 → 32"
+      },
+      {
+        "type": "property_changed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Shape.size.width: 18 → 26"
+      },
+      {
+        "type": "property_changed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Shape.size.height: 18 → 26"
+      },
+      {
+        "type": "binding_added",
+        "component": "Style=filled, Size=lg, Shape=circle, Asset type=icon",
+        "nodeId": "19162:220",
+        "details": "Style=filled, Size=lg, Shape=circle, Asset type=icon.fills → static/background/brand/primary/subtle"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 8,
+      "componentsRemoved": 0,
+      "bindingsAdded": 54,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 6
+    }
+  }
+]
