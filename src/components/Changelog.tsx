@@ -105,6 +105,7 @@ function parseDetail(details: string) {
 export function Changelog() {
   const [expandedId, setExpandedId] = useState<string | null>(null)
   const [filterFile, setFilterFile] = useState<string>('all')
+  const [showInfo, setShowInfo] = useState(false)
 
   const entries = changelogData as unknown as ChangelogEntry[]
 
@@ -135,7 +136,12 @@ export function Changelog() {
           </select>
         </div>
         <span className="changelog-count">{filtered.length} entradas</span>
+        <button className="info-toggle" onClick={() => setShowInfo(!showInfo)} aria-expanded={showInfo}>
+          {showInfo ? 'Ocultar info' : '¿Cómo funciona?'}
+        </button>
       </div>
+
+      {showInfo && <ChangelogInfo />}
 
       {filtered.length === 0 && (
         <div className="changelog-empty">
@@ -446,5 +452,97 @@ function GroupedTokenList({ entries }: { entries: DiffEntry[] }) {
       ))}
       {grouped.size > 12 && <li className="cl-more">+{grouped.size - 12} más</li>}
     </ul>
+  )
+}
+
+function ChangelogInfo() {
+  return (
+    <div className="changelog-info">
+      <h3 className="info-title">¿Cómo funciona este Changelog?</h3>
+
+      <div className="info-grid">
+        <section className="info-section">
+          <h4>Proceso automático</h4>
+          <p>
+            Todos los días a las <strong>9:00 AM (Argentina)</strong> un workflow de GitHub Actions
+            consulta la API de Figma, compara el estado actual de cada archivo contra el snapshot
+            guardado del día anterior, y si detecta diferencias genera una entrada nueva en el
+            changelog. El resultado se commitea automáticamente al repositorio y Vercel redeploya
+            este dashboard.
+          </p>
+          <p>
+            También se puede disparar manualmente desde la pestaña <strong>Actions</strong> del
+            repositorio → "Daily Changelog" → "Run workflow".
+          </p>
+        </section>
+
+        <section className="info-section">
+          <h4>Archivos monitoreados</h4>
+          <ul className="info-list">
+            <li>
+              <span className="info-badge">Components</span>
+              Librería principal de componentes del Design System
+            </li>
+            <li>
+              <span className="info-badge">Templates</span>
+              Librería de templates y layouts
+            </li>
+            <li>
+              <span className="info-badge">Assets</span>
+              Librería de assets, íconos y pictogramas
+            </li>
+          </ul>
+        </section>
+
+        <section className="info-section">
+          <h4>Qué detecta</h4>
+          <ul className="info-list">
+            <li><strong>Componentes/variantes nuevos o eliminados</strong> — cuando se agrega o quita un COMPONENT o COMPONENT_SET</li>
+            <li><strong>Tokens cambiados</strong> — cuando una variable de Figma vinculada a una propiedad cambia (fill, stroke, gap, padding, border radius, etc.)</li>
+            <li><strong>Tokens agregados o eliminados</strong> — cuando se vincula o desvincula un token de una propiedad</li>
+            <li><strong>Tamaños ajustados</strong> — cuando cambia el width/height de layers dentro de un componente</li>
+            <li><strong>Propiedades ajustadas</strong> — cambios en opacidad, font size, font weight, efectos, etc.</li>
+          </ul>
+        </section>
+
+        <section className="info-section">
+          <h4>Propiedades trackeadas</h4>
+          <div className="info-tags">
+            {[
+              'fills', 'strokes', 'strokeWeight',
+              'paddingLeft', 'paddingRight', 'paddingTop', 'paddingBottom',
+              'itemSpacing (gap)',
+              'topLeftRadius', 'topRightRadius', 'bottomLeftRadius', 'bottomRightRadius',
+              'opacity', 'width', 'height',
+              'fontSize', 'fontWeight', 'fontFamily', 'lineHeight', 'letterSpacing',
+              'visible', 'blendMode', 'effects (sombras/blurs)',
+              'minWidth', 'maxWidth', 'minHeight', 'maxHeight',
+            ].map(p => <span key={p} className="info-tag">{p}</span>)}
+          </div>
+        </section>
+
+        <section className="info-section">
+          <h4>Procedimiento técnico</h4>
+          <ol className="info-list info-list--ordered">
+            <li>El script lee el archivo de Figma via API con profundidad 8 niveles</li>
+            <li>Extrae todos los COMPONENT y COMPONENT_SET con sus bindings de variables y propiedades visuales</li>
+            <li>Compara contra el snapshot guardado en <code>src/data/snapshots/latest-[archivo].json</code></li>
+            <li>Genera un diff estructurado y lo agrega a <code>src/data/changelog.json</code></li>
+            <li>Si hay cambios, el bot commitea con el mensaje <code>changelog: auto-update YYYY-MM-DD</code></li>
+            <li>Vercel detecta el push y redeploya el dashboard automáticamente</li>
+          </ol>
+        </section>
+
+        <section className="info-section">
+          <h4>Lo que no detecta</h4>
+          <ul className="info-list">
+            <li>Cambios de posición en el canvas (mover frames)</li>
+            <li>Cambios en descripciones o anotaciones</li>
+            <li>Cambios en componentes externos (instancias de otras librerías)</li>
+            <li>Colores no vinculados a tokens (hard-coded)</li>
+          </ul>
+        </section>
+      </div>
+    </div>
   )
 }
