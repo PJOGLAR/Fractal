@@ -37,11 +37,15 @@ export function Sidebar({ currentView, onViewChange, data }: SidebarProps) {
   return (
     <aside className="sidebar">
       <div className="sidebar-header">
-        <h1 className="sidebar-title">DS Dashboard</h1>
+        <div className="sidebar-logo">
+          <div className="sidebar-logo-mark">F</div>
+          <span className="sidebar-title">Fractal DS</span>
+        </div>
         <p className="sidebar-subtitle">Token Health</p>
       </div>
 
       <nav className="sidebar-nav">
+        <span className="nav-section-label">Vistas</span>
         {navItems.map(item => (
           <button
             key={item.id}

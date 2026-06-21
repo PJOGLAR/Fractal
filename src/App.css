@@ -1,17 +1,37 @@
 .app-layout {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 232px 1fr;
   min-height: 100vh;
 }
 
 .main-content {
-  padding: 36px 44px;
+  padding: 2.25rem 2.5rem;
   overflow-y: auto;
   max-height: 100vh;
+  background: var(--color-bg);
+}
+
+/* Filter bar spacing */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+/* Results count */
+.results-count {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
   .app-layout {
     grid-template-columns: 1fr;
+  }
+  .main-content {
+    padding: 1.25rem;
   }
 }
