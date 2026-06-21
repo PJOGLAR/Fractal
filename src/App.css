@@ -1,17 +1,21 @@
-.app-layout {
-  display: grid;
-  grid-template-columns: 232px 1fr;
+.app-shell {
   min-height: 100vh;
-}
-
-.main-content {
-  padding: 2.25rem 2.5rem;
-  overflow-y: auto;
-  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: var(--color-bg);
 }
 
-/* Filter bar spacing */
+.main-content {
+  flex: 1;
+}
+
+.content-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem 4rem;
+}
+
+/* Filter bar */
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -27,11 +31,8 @@
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
-  .app-layout {
-    grid-template-columns: 1fr;
-  }
-  .main-content {
-    padding: 1.25rem;
+@media (max-width: 820px) {
+  .content-container {
+    padding: 1.5rem 1rem 3rem;
   }
 }

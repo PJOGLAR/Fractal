@@ -10,27 +10,27 @@
   --brand-quiet:          #EEF2FF;
   --brand-light:          #C7D2FE;
 
-  /* Sidebar (dark) */
-  --sidebar-bg:           #0E0C1E;
-  --sidebar-surface:      #161428;
-  --sidebar-border:       rgba(255,255,255,0.07);
-  --sidebar-text:         #E8E6FF;
-  --sidebar-text-muted:   rgba(232,230,255,0.45);
-  --sidebar-hover:        rgba(90,80,249,0.12);
-  --sidebar-active-bg:    rgba(90,80,249,0.18);
-  --sidebar-active-text:  #A5B4FC;
+  /* Header (dark) */
+  --header-bg:            rgba(14,12,30,0.92);
+  --header-border:        rgba(255,255,255,0.08);
+  --header-text:          #F4F3FF;
+  --header-text-muted:    rgba(244,243,255,0.55);
+  --header-hover:         rgba(255,255,255,0.07);
+  --header-active-bg:     rgba(90,80,249,0.25);
+  --header-active-text:   #C7D2FE;
 
-  /* Main content (near-white) */
-  --color-bg:             #F7F7FB;
+  /* Main content */
+  --color-bg:             #F6F6FB;
   --color-surface:        #FFFFFF;
-  --color-surface-hover:  #F0F0F8;
-  --color-border:         #E4E4EF;
-  --color-border-subtle:  #EBEBF5;
+  --color-surface-hover:  #F4F4FB;
+  --color-border:         #E6E6F0;
+  --color-border-subtle:  #EFEFF7;
 
-  /* Text */
-  --color-text:           #171717;
-  --color-text-secondary: #676767;
-  --color-text-muted:     #A9A9A9;
+  /* Text — reading hierarchy */
+  --color-text:           #14121F;   /* headings */
+  --color-text-body:      #3D3A4E;   /* body */
+  --color-text-secondary: #6B6880;   /* secondary */
+  --color-text-muted:     #9C99AD;   /* muted / meta */
 
   /* Accent */
   --color-accent:         #5A50F9;
@@ -53,9 +53,9 @@
   --radius-xl:   20px;
 
   /* Shadow */
-  --shadow-sm:   0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-  --shadow-md:   0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
-  --shadow-lg:   0 12px 32px rgba(0,0,0,0.10), 0 4px 8px rgba(0,0,0,0.06);
+  --shadow-sm:   0 1px 3px rgba(20,18,31,0.05), 0 1px 2px rgba(20,18,31,0.04);
+  --shadow-md:   0 4px 14px rgba(20,18,31,0.07), 0 2px 4px rgba(20,18,31,0.04);
+  --shadow-lg:   0 14px 40px rgba(20,18,31,0.10), 0 4px 10px rgba(20,18,31,0.05);
 }
 
 /* ─── Reset ────────────────────────────────────────────────────────── */
@@ -80,19 +80,50 @@ body {
 
 #root { min-height: 100vh; }
 
-/* ─── Typography ───────────────────────────────────────────────────── */
+/* ─── Typography — reading hierarchy ──────────────────────────────── */
 .page-title {
-  font-size: 1.375rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: var(--color-text);
-  letter-spacing: -0.02em;
-  margin-bottom: 0.25rem;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.375rem;
+  line-height: 1.15;
 }
 
 .page-description {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: var(--color-text-secondary);
-  margin-bottom: 1.75rem;
+  margin-bottom: 2rem;
+  max-width: 620px;
+  line-height: 1.55;
+}
+
+/* Eyebrow label above titles */
+.page-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  margin-bottom: 0.625rem;
+}
+
+/* Section heading (level 2) */
+h3, .section-heading {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+
+/* Sub heading (level 3) */
+h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-body);
 }
 
 /* ─── Shared components ────────────────────────────────────────────── */

@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react'
 import componentData from './data/component-data.json'
 import templateData from './data/template-data.json'
 import { DashboardData } from './types'
-import { Sidebar } from './components/Sidebar'
+import { Header } from './components/Header'
 import { ComponentIndex } from './components/ComponentIndex'
 import { TokenExplorer } from './components/TokenExplorer'
 import { Overview } from './components/Overview'
@@ -61,14 +61,16 @@ export default function App() {
   const mergedData = useMemo(() => mergeLibraries(libraries), [libraries])
 
   return (
-    <div className="app-layout">
-      <Sidebar currentView={view} onViewChange={setView} data={mergedData} />
+    <div className="app-shell">
+      <Header currentView={view} onViewChange={setView} data={mergedData} />
       <main className="main-content">
-        {view === 'overview'   && <Overview data={mergedData} />}
-        {view === 'components' && <ComponentIndex data={mergedData} libraries={libraries} />}
-        {view === 'tokens'     && <TokenExplorer data={mergedData} />}
-        {view === 'assets'     && <AssetTokens />}
-        {view === 'changelog'  && <Changelog />}
+        <div className="content-container">
+          {view === 'overview'   && <Overview data={mergedData} />}
+          {view === 'components' && <ComponentIndex data={mergedData} libraries={libraries} />}
+          {view === 'tokens'     && <TokenExplorer data={mergedData} />}
+          {view === 'assets'     && <AssetTokens />}
+          {view === 'changelog'  && <Changelog />}
+        </div>
       </main>
     </div>
   )
