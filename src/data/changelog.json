@@ -1,5 +1,233 @@
 [
   {
+    "id": "mqntrrpz",
+    "timestamp": "2026-06-21T13:31:17.399Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "4 eliminados, 27 tokens eliminados, 4 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "component_removed",
+        "component": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:228",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram"
+      },
+      {
+        "type": "component_removed",
+        "component": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram",
+        "nodeId": "19162:244",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram"
+      },
+      {
+        "type": "component_removed",
+        "component": "Style=filled, Size=xl, Shape=square, Asset type=pictogram",
+        "nodeId": "19162:264",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram"
+      },
+      {
+        "type": "component_removed",
+        "component": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram",
+        "nodeId": "19162:280",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=lg, Shape=circle, Asset type=icon.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram.itemSpacing (era: gap/gap-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram.paddingLeft (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram.paddingTop (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram.paddingRight (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram.paddingBottom (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=circle, Asset type=pictogram.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram.itemSpacing (era: gap/gap-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram.paddingLeft (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram.paddingTop (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram.paddingRight (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram.paddingBottom (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram.fills (era: static/background/neutral/quiet)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=circle, Asset type=pictogram.strokes (era: static/border/brand/secondary)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram.itemSpacing (era: gap/gap-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram.paddingLeft (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram.paddingTop (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram.paddingRight (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=filled, Size=xl, Shape=square, Asset type=pictogram.paddingBottom (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram.itemSpacing (era: gap/gap-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram.paddingLeft (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram.paddingTop (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram.paddingRight (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram.paddingBottom (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram.fills (era: static/background/neutral/quiet)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Style=outlined, Size=xl, Shape=square, Asset type=pictogram.strokes (era: static/border/brand/secondary)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "⛔ Placeholder-pictogram_slot.size.width: 32 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "⛔ Placeholder-pictogram_slot.size.height: 32 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Shape.size.width: 26 → 18"
+      },
+      {
+        "type": "property_changed",
+        "component": "Asset-container-test",
+        "nodeId": "19162:213",
+        "details": "Shape.size.height: 26 → 18"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Style=filled, Size=lg, Shape=circle, Asset type=icon",
+        "nodeId": "19162:220",
+        "details": "Style=filled, Size=lg, Shape=circle, Asset type=icon.fills (era: static/background/brand/primary/subtle)"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 4,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 27,
+      "bindingsChanged": 0,
+      "propertiesChanged": 4
+    }
+  },
+  {
     "id": "mqmtd5ba",
     "timestamp": "2026-06-20T20:32:08.998Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
