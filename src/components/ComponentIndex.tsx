@@ -4,6 +4,7 @@ import './ComponentIndex.css'
 
 interface ComponentIndexProps {
   data: DashboardData
+  libraries?: { id: string; label: string; data: DashboardData }[]
 }
 
 function getTokenMainCategory(tokenName: string): string {
@@ -48,16 +49,28 @@ function getMainCategoryGroups(bindings: TokenBinding[]): { group: string; count
     .sort((a, b) => b.count - a.count)
 }
 
-export function ComponentIndex({ data }: ComponentIndexProps) {
+export function ComponentIndex({ data, libraries }: ComponentIndexProps) {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
+  const [activeLibrary, setActiveLibrary] = useState<string>('all')
   const [expandedComponent, setExpandedComponent] = useState<string | null>(null)
   const [propertyFilter, setPropertyFilter] = useState<string | null>(null)
   const [subFilter, setSubFilter] = useState<string | null>(null)
   const [thirdFilter, setThirdFilter] = useState<string | null>(null)
 
+  // Filter components by library if needed
+  const libraryFilteredComponents = useMemo(() => {
+    if (activeLibrary === 'all') return data.components
+    return data.components.filter(c => (c as any)._library === activeLibrary)
+  }, [data.components, activeLibrary])
+
+  const filteredData = useMemo(() => ({
+    ...data,
+    components: libraryFilteredComponents,
+  }), [data, libraryFilteredComponents])
+
   const categories = useMemo(
-    () => [...new Set(data.components.map(c => c.category))].sort(),
-    [data]
+    () => [...new Set(filteredData.components.map(c => c.category))].sort(),
+    [filteredData]
   )
 
   // Lookup token hex by name
@@ -82,9 +95,9 @@ export function ComponentIndex({ data }: ComponentIndexProps) {
   const filteredComponents = useMemo(
     () =>
       selectedCategory
-        ? data.components.filter(c => c.category === selectedCategory)
-        : data.components,
-    [data, selectedCategory]
+        ? filteredData.components.filter(c => c.category === selectedCategory)
+        : filteredData.components,
+    [filteredData, selectedCategory]
   )
 
   return (
@@ -92,12 +105,33 @@ export function ComponentIndex({ data }: ComponentIndexProps) {
       <h2 className="page-title">Componentes</h2>
       <p className="page-description">Índice de componentes con sus tokens aplicados</p>
 
+      {/* Library filter */}
+      {libraries && libraries.filter(l => l.data.extractedAt).length > 1 && (
+        <div className="filter-bar" style={{ marginBottom: '0.5rem' }}>
+          <button
+            className={`filter-chip ${activeLibrary === 'all' ? 'active' : ''}`}
+            onClick={() => setActiveLibrary('all')}
+          >
+            Todas las librerías
+          </button>
+          {libraries.filter(l => l.data.extractedAt).map(lib => (
+            <button
+              key={lib.id}
+              className={`filter-chip ${activeLibrary === lib.id ? 'active' : ''}`}
+              onClick={() => setActiveLibrary(lib.id)}
+            >
+              {lib.label}
+            </button>
+          ))}
+        </div>
+      )}
+
       <div className="filter-bar">
         <button
           className={`filter-chip ${selectedCategory === null ? 'active' : ''}`}
           onClick={() => setSelectedCategory(null)}
         >
-          Todos ({data.components.length})
+          Todos ({filteredData.components.length})
         </button>
         {categories.map(cat => (
           <button

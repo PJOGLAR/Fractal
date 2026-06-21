@@ -15,6 +15,7 @@ export function TokenExplorer({ data }: TokenExplorerProps) {
   const [subGroupFilter, setSubGroupFilter] = useState<string | null>(null)
   const [thirdLevelFilter, setThirdLevelFilter] = useState<string | null>(null)
   const [expandedToken, setExpandedToken] = useState<string | null>(null)
+  const [usageFilter, setUsageFilter] = useState<'all' | 'used' | 'unused'>('all')
 
   // Combine all tokens
   const allTokens = useMemo(
@@ -90,22 +91,24 @@ export function TokenExplorer({ data }: TokenExplorerProps) {
     if (collectionFilter) {
       tokens = tokens.filter(t => t.collection === collectionFilter)
     }
-
     if (subGroupFilter && collectionFilter) {
       tokens = tokens.filter(t => t.name.split('/')[0] === subGroupFilter)
     }
-
     if (thirdLevelFilter && subGroupFilter) {
       tokens = tokens.filter(t => t.name.split('/')[1] === thirdLevelFilter)
     }
-
     if (search) {
       const q = search.toLowerCase()
       tokens = tokens.filter(t => t.name.toLowerCase().includes(q))
     }
+    if (usageFilter === 'used') {
+      tokens = tokens.filter(t => (usageMap[t.name] || []).length > 0)
+    } else if (usageFilter === 'unused') {
+      tokens = tokens.filter(t => (usageMap[t.name] || []).length === 0)
+    }
 
     return tokens
-  }, [allTokens, collectionFilter, subGroupFilter, thirdLevelFilter, search])
+  }, [allTokens, collectionFilter, subGroupFilter, thirdLevelFilter, search, usageFilter, usageMap])
 
   return (
     <div className="token-explorer">
@@ -120,6 +123,19 @@ export function TokenExplorer({ data }: TokenExplorerProps) {
           value={search}
           onChange={e => setSearch(e.target.value)}
         />
+      </div>
+
+      {/* Usage filter */}
+      <div className="token-type-filters">
+        <button className={`filter-chip ${usageFilter === 'all' ? 'active' : ''}`} onClick={() => setUsageFilter('all')}>
+          Todos ({allTokens.length})
+        </button>
+        <button className={`filter-chip ${usageFilter === 'used' ? 'active' : ''}`} onClick={() => setUsageFilter('used')}>
+          En uso ({allTokens.filter(t => (usageMap[t.name] || []).length > 0).length})
+        </button>
+        <button className={`filter-chip ${usageFilter === 'unused' ? 'active' : ''}`} onClick={() => setUsageFilter('unused')}>
+          No aplicados ({allTokens.filter(t => (usageMap[t.name] || []).length === 0).length})
+        </button>
       </div>
 
       {/* Collection filter (main categories) */}
