@@ -1,5 +1,293 @@
 [
   {
+    "id": "mqpgyqla",
+    "timestamp": "2026-06-22T17:08:19.870Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "18 componentes nuevos",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "PIX",
+        "nodeId": "3300:334",
+        "details": "PIX (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "QR-quote",
+        "nodeId": "3299:401",
+        "details": "QR-quote (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Card",
+        "nodeId": "3299:398",
+        "details": "Card (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Graphic (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Light-key-off",
+        "nodeId": "3299:391",
+        "details": "Light-key-off (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Protect",
+        "nodeId": "3299:396",
+        "details": "Protect (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Cellphone-charge",
+        "nodeId": "3299:395",
+        "details": "Cellphone-charge (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Bank-money",
+        "nodeId": "3299:397",
+        "details": "Bank-money (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "QR-Phone",
+        "nodeId": "3299:399",
+        "details": "QR-Phone (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Frame 1171276245",
+        "nodeId": "3299:393",
+        "details": "Frame 1171276245 (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Light-key-on",
+        "nodeId": "3299:392",
+        "details": "Light-key-on (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "monet-percentage",
+        "nodeId": "3299:394",
+        "details": "monet-percentage (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "NFC-character (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Moneybag-warning (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Money-pay",
+        "nodeId": "3299:385",
+        "details": "Money-pay (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "NFC-hand (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Cellphone-QR-hand (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Cellphone-link (COMPONENT)"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 18,
+      "componentsRemoved": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
+    "id": "mqpgyo20",
+    "timestamp": "2026-06-22T17:08:16.584Z",
+    "fileKey": "htvGLaEUzJTF7QPd4LkGy0",
+    "fileName": "Templates",
+    "fileLabel": "templates",
+    "summary": "4 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "property_changed",
+        "component": "Stories",
+        "nodeId": "1:1016",
+        "details": "Swap-content.size.width: 328 → 314"
+      },
+      {
+        "type": "property_changed",
+        "component": "Feedback-screen",
+        "nodeId": "1377:611",
+        "details": "Swap-content.size.width: 328 → 314"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=warning",
+        "nodeId": "1377:720",
+        "details": "Swap-content.size.width: 328 → 314"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=pending",
+        "nodeId": "1377:774",
+        "details": "Swap-content.size.width: 328 → 314"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 4
+    }
+  },
+  {
+    "id": "mqpgykt4",
+    "timestamp": "2026-06-22T17:08:12.376Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "17 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "property_changed",
+        "component": "Card",
+        "nodeId": "18291:1920",
+        "details": "Card.__componentProps__: State,👁️ Has banner#18291:3,👁️ Has footer#18291:1,👁️ Has swap content#18291:0,🔄 Swap#18291:2 → State,👁️ Has banner#18291:3,👁️ Has footer#18291:1,👁️ Has header#19204:0,👁️ Has swap content#18291:0,🔄 Swap#18291:2"
+      },
+      {
+        "type": "property_changed",
+        "component": "Size=sm, State=hover, Selected=false",
+        "nodeId": "7509:650",
+        "details": "Vector.size.width: 12 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Size=sm, State=hover, Selected=false",
+        "nodeId": "7509:650",
+        "details": "Vector.size.height: 7 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Size=md, State=hover, Selected=false",
+        "nodeId": "7509:652",
+        "details": "Vector.size.width: 12 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Size=md, State=hover, Selected=false",
+        "nodeId": "7509:652",
+        "details": "Vector.size.height: 7 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Size=sm, State=pressed, Selected=false",
+        "nodeId": "7509:665",
+        "details": "Vector.size.width: 12 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Size=sm, State=pressed, Selected=false",
+        "nodeId": "7509:665",
+        "details": "Vector.size.height: 7 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Size=md, State=pressed, Selected=false",
+        "nodeId": "7509:667",
+        "details": "Vector.size.width: 12 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Size=md, State=pressed, Selected=false",
+        "nodeId": "7509:667",
+        "details": "Vector.size.height: 7 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Size=sm, State=focus, Selected=false",
+        "nodeId": "7509:680",
+        "details": "Vector.size.width: 12 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Size=sm, State=focus, Selected=false",
+        "nodeId": "7509:680",
+        "details": "Vector.size.height: 7 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Size=md, State=focus, Selected=false",
+        "nodeId": "7509:683",
+        "details": "Vector.size.width: 12 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Size=md, State=focus, Selected=false",
+        "nodeId": "7509:683",
+        "details": "Vector.size.height: 7 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Size=sm, State=disabled, Selected=false",
+        "nodeId": "7509:701",
+        "details": "Vector.size.width: 12 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Size=sm, State=disabled, Selected=false",
+        "nodeId": "7509:701",
+        "details": "Vector.size.height: 7 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Size=md, State=disabled, Selected=false",
+        "nodeId": "7509:703",
+        "details": "Vector.size.width: 12 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Size=md, State=disabled, Selected=false",
+        "nodeId": "7509:703",
+        "details": "Vector.size.height: 7 → 6"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 17
+    }
+  },
+  {
     "id": "mqnvq6jb",
     "timestamp": "2026-06-21T14:26:02.519Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",

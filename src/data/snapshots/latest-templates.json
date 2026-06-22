@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-06-20T20:13:12.197Z",
+  "takenAt": "2026-06-22T17:08:16.562Z",
   "fileKey": "htvGLaEUzJTF7QPd4LkGy0",
   "fileName": "Templates",
   "components": [
@@ -63424,7 +63424,7 @@
         {
           "layerName": "Swap-content",
           "property": "size.width",
-          "value": 328
+          "value": 314
         },
         {
           "layerName": "Swap-content",
@@ -82362,7 +82362,7 @@
         {
           "layerName": "Swap-content",
           "property": "size.width",
-          "value": 328
+          "value": 314
         },
         {
           "layerName": "Swap-content",
@@ -85027,7 +85027,7 @@
         {
           "layerName": "Swap-content",
           "property": "size.width",
-          "value": 328
+          "value": 314
         },
         {
           "layerName": "Swap-content",
@@ -94924,7 +94924,7 @@
         {
           "layerName": "Swap-content",
           "property": "size.width",
-          "value": 328
+          "value": 314
         },
         {
           "layerName": "Swap-content",
@@ -98163,7 +98163,7 @@
         {
           "layerName": "Swap-content",
           "property": "size.width",
-          "value": 328
+          "value": 314
         },
         {
           "layerName": "Swap-content",
@@ -100053,7 +100053,7 @@
         },
         {
           "property": "paddingBottom",
-          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "variableId": "VariableID:65ba7f24bbdbd1f370f94028355f7c5c79f72596/1227:9",
           "layerName": "Content"
         },
         {
@@ -102152,6 +102152,11 @@
           "layerName": "Badge",
           "property": "__layerName__",
           "value": "Badge"
+        },
+        {
+          "layerName": "Content",
+          "property": "paddingBottom",
+          "value": 24
         },
         {
           "layerName": "Content",
@@ -106657,7 +106662,7 @@
         },
         {
           "property": "paddingBottom",
-          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "variableId": "VariableID:65ba7f24bbdbd1f370f94028355f7c5c79f72596/1227:9",
           "layerName": "Content"
         },
         {
@@ -108156,6 +108161,11 @@
           "layerName": "Badge",
           "property": "__layerName__",
           "value": "Badge"
+        },
+        {
+          "layerName": "Content",
+          "property": "paddingBottom",
+          "value": 24
         },
         {
           "layerName": "Content",
@@ -116677,6 +116687,6 @@
   "stats": {
     "totalComponents": 84,
     "totalBindings": 5384,
-    "totalProperties": 17800
+    "totalProperties": 17802
   }
 }
