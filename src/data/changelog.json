@@ -1,5 +1,203 @@
 [
   {
+    "id": "mqqsf6w2",
+    "timestamp": "2026-06-23T15:16:49.442Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "2 componentes nuevos, 1 eliminados, 3 renombrados, 1 tokens nuevos, 9 tokens eliminados, 1 tokens cambiados, 1 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Card-quotes",
+        "nodeId": "3337:219",
+        "details": "Card-quotes (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Rocket",
+        "nodeId": "3337:267",
+        "details": "Rocket (COMPONENT)"
+      },
+      {
+        "type": "component_removed",
+        "component": "Rocket",
+        "nodeId": "2966:257",
+        "details": "Rocket"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Store",
+        "nodeId": "2360:1193",
+        "details": "Vector.fills: ac4/3319:322 → static/foreground/neutral/strong"
+      },
+      {
+        "type": "property_changed",
+        "component": "Store",
+        "nodeId": "2360:1193",
+        "details": "Vector.fill[0].color: #404040 → #171717"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Pharmacy",
+        "nodeId": "2524:429",
+        "details": "pharmacy → Pharmacy"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Airplane",
+        "nodeId": "3299:393",
+        "details": "Frame 1171276245 → Airplane"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Monet-percentage",
+        "nodeId": "3299:394",
+        "details": "monet-percentage → Monet-percentage"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-top-left",
+        "nodeId": "3133:403",
+        "details": "Vector34.fills (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-top-left",
+        "nodeId": "3133:403",
+        "details": "Vector27.fills (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-top-left",
+        "nodeId": "3133:403",
+        "details": "Vector25.fills (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-top-right",
+        "nodeId": "3133:404",
+        "details": "Vector36.fills (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-top-right",
+        "nodeId": "3133:404",
+        "details": "Vector35.fills (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-bottom-left",
+        "nodeId": "3133:724",
+        "details": "Vector35.fills (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Bill-bottom-center",
+        "nodeId": "3133:723",
+        "details": "Vector31.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-bottom-right",
+        "nodeId": "3133:722",
+        "details": "Vector37.fills (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-bottom-right",
+        "nodeId": "3133:722",
+        "details": "Vector36.fills (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-bottom-right",
+        "nodeId": "3133:722",
+        "details": "Vector35.fills (era: 521/3954:106)"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 2,
+      "componentsRemoved": 1,
+      "bindingsAdded": 1,
+      "bindingsRemoved": 9,
+      "bindingsChanged": 1,
+      "propertiesChanged": 1
+    }
+  },
+  {
+    "id": "mqqsf1kw",
+    "timestamp": "2026-06-23T15:16:42.560Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "9 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "property_changed",
+        "component": "⛔️ Card-container_content",
+        "nodeId": "16112:2370",
+        "details": "Bottom line (1 line max).size.width: 125 → 195"
+      },
+      {
+        "type": "property_changed",
+        "component": "Card-container",
+        "nodeId": "16112:2392",
+        "details": "Bottom line (1 line max).size.width: 125 → 245"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=image, Alignement=horizontal, State=default",
+        "nodeId": "16112:2393",
+        "details": "Bottom line (1 line max).size.width: 125 → 189"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=image, Alignement=horizontal, State=pressed",
+        "nodeId": "18291:2135",
+        "details": "Bottom line (1 line max).size.width: 125 → 189"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=image, Alignement=horizontal, State=hover",
+        "nodeId": "18291:2057",
+        "details": "Bottom line (1 line max).size.width: 125 → 189"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=pictogram, Alignement=horizontal, State=default",
+        "nodeId": "16112:2398",
+        "details": "Content.size.height: 88 → 76"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=pictogram, Alignement=horizontal, State=default",
+        "nodeId": "16112:2398",
+        "details": "Bottom line (1 line max).size.width: 125 → 245"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=pictogram, Alignement=horizontal, State=pressed",
+        "nodeId": "18291:2145",
+        "details": "Bottom line (1 line max).size.width: 125 → 245"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=pictogram, Alignement=horizontal, State=hover",
+        "nodeId": "18291:2062",
+        "details": "Bottom line (1 line max).size.width: 125 → 245"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 9
+    }
+  },
+  {
     "id": "mqpgyqla",
     "timestamp": "2026-06-22T17:08:19.870Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
