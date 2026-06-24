@@ -1,5 +1,1421 @@
 [
   {
+    "id": "mqs6svua",
+    "timestamp": "2026-06-24T14:47:09.106Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "2 componentes nuevos, 2 eliminados, 12 renombrados, 127 tokens nuevos, 74 tokens eliminados, 2 tokens cambiados, 14 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Card-machine",
+        "nodeId": "3341:350",
+        "details": "Card-machine (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Megaloto",
+        "nodeId": "3364:1589",
+        "details": "Megaloto (COMPONENT)"
+      },
+      {
+        "type": "component_removed",
+        "component": "Shop-tap",
+        "nodeId": "2883:321",
+        "details": "Shop-tap"
+      },
+      {
+        "type": "component_removed",
+        "component": "Mega",
+        "nodeId": "2295:250",
+        "details": "Mega"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Bar-restaurant",
+        "nodeId": "2047:631",
+        "details": "Bar-restoran → Bar-restaurant"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Calculator",
+        "nodeId": "3100:186",
+        "details": "calculator → Calculator"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Email-expired  → Email-expired"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Loans-fail",
+        "nodeId": "1792:409",
+        "details": "Loans-fail  → Loans-fail"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Cellphone-promotion-error",
+        "nodeId": "2340:155",
+        "details": "Cellphone-pomotion-error → Cellphone-promotion-error"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Trophy-warning",
+        "nodeId": "2573:467",
+        "details": "Trophy-Warning → Trophy-warning"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Personal-data-angle",
+        "nodeId": "801:4162",
+        "details": "Personal-data → Personal-data-angle"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Bus-card-time",
+        "nodeId": "2376:306",
+        "details": "Bus_cadrd_time → Bus-card-time"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Badge-level-illus",
+        "nodeId": "1319:395",
+        "details": "Badge-level_illus → Badge-level-illus"
+      },
+      {
+        "type": "binding_added",
+        "component": "Badge-level-illus",
+        "nodeId": "1319:395",
+        "details": "Badge-level-illus.strokes → static/border/brand/primary"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Badge-level_illus",
+        "nodeId": "1319:395",
+        "details": "Badge-level_illus.strokes (era: static/border/brand/primary)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Card-freeze",
+        "nodeId": "2899:216",
+        "details": "Pcard-freeze → Card-freeze"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Hands-shake",
+        "nodeId": "3076:80",
+        "details": "Hands → Hands-shake"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Hand-percentage",
+        "nodeId": "3109:241",
+        "details": "Hand-Percentage → Hand-percentage"
+      },
+      {
+        "type": "binding_added",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector12.fills → interactive/background/neutral/default/quiet"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector12.fill[0].color: #FFFFFF → #FCFCFC"
+      },
+      {
+        "type": "binding_added",
+        "component": "Calendar-time",
+        "nodeId": "3124:174",
+        "details": "Vector13.fills → interactive/background/neutral/default/quiet"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-time",
+        "nodeId": "3124:174",
+        "details": "Vector13.fill[0].color: #FFFFFF → #FCFCFC"
+      },
+      {
+        "type": "binding_added",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector18 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector17 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector16 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector15 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector14 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector13 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector12 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector11 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector10 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector09 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector08 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector07 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector06 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector05 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector 3689 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector 3688 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector18.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector17.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector16.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector15.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector14.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector13.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector12.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector11.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector10.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector09.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector08.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector07.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector06.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector05.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector 3689.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector 3688.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Sale-charge-money",
+        "nodeId": "3139:2705",
+        "details": "Vector04.size.width: 8 → 9"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector51.fills → 42c/3954:100"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector50.fills → d521/3794:22"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector49.fills → d521/3794:22"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector48.fills → 521/3744:113"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector47.fills → 521/3744:113"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector46.fills → 521/3744:113"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector45.fills → 521/3744:113"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector44.fills → 521/3744:113"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector43.fills → 521/3744:113"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector42.fills → 521/3744:113"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector41.fills → 521/3744:113"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector40.fills → 521/3744:113"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector39.fills → 0c00/3794:19"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector38.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector37.fills → 0c00/3794:19"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector36.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector35.fills → 0d92/3794:24"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector34.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector33.fills → b017/3794:23"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector32.fills → b017/3794:23"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector31.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector30.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector29.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector28.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector27.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector26.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector25.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector23.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector22.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector21.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector20.fills → 0c00/3794:19"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector19.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector18.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector17.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector16.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector15.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector14.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector13.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector12.fills → 42c/3954:100"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector11.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector09.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector08.fills → 0d92/3794:24"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector07.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector06.fills → 0d92/3794:24"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector05.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector04.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector03.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector02.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector01.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector.fills (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Clip 2.fills (era: d521/3794:22)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Clip 3.fills (era: d521/3794:22)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Star 98.strokes (era: 521/3744:113)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Star 99.strokes (era: 521/3744:113)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Star 100.strokes (era: 521/3744:113)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Ellipse 1653.strokes (era: 521/3744:113)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Ellipse 1656.fills (era: 521/3744:113)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Ellipse 1744.fills (era: 521/3744:113)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Ellipse 1745.fills (era: 521/3744:113)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Ellipse 1746.fills (era: 521/3744:113)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Ellipse 1747.fills (era: 521/3744:113)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Vector.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Ellipse 1275.fills (era: b017/3794:23)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-character",
+        "nodeId": "3299:387",
+        "details": "Ellipse 1276.fills (era: b017/3794:23)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector13.fills → 73ef/3794:10"
+      },
+      {
+        "type": "binding_added",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector12.fills → 32997/3794:8"
+      },
+      {
+        "type": "binding_added",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector11.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector10.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector09.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector08.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector07.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector06.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector05.fills → a1b/3954:101"
+      },
+      {
+        "type": "binding_added",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector04.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector03.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector 1592 (Stroke).fills → interactive/background/neutral/default/quiet"
+      },
+      {
+        "type": "binding_added",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector 1593 (Stroke).fills → interactive/background/neutral/default/quiet"
+      },
+      {
+        "type": "binding_added",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector01.fills → 720d6/3794:7"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector 3906.fills (era: 73ef/3794:10)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector.fills (era: 720d6/3794:7)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector 3903.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector 3904.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector 3905.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Money-pay",
+        "nodeId": "3299:385",
+        "details": "Vector (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Money-pay",
+        "nodeId": "3299:385",
+        "details": "Vector 3911 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Money-pay",
+        "nodeId": "3299:385",
+        "details": "Vector 3912 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Money-pay",
+        "nodeId": "3299:385",
+        "details": "Vector.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Money-pay",
+        "nodeId": "3299:385",
+        "details": "Vector 3911.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Money-pay",
+        "nodeId": "3299:385",
+        "details": "Vector 3912.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Money-pay",
+        "nodeId": "3299:385",
+        "details": "Vector.strokeWeight: 0.3604357838630676 → 0.28834864497184753"
+      },
+      {
+        "type": "property_changed",
+        "component": "Money-pay",
+        "nodeId": "3299:385",
+        "details": "Vector.size.width: 30 → 31"
+      },
+      {
+        "type": "property_changed",
+        "component": "Money-pay",
+        "nodeId": "3299:385",
+        "details": "Vector.size.height: 29 → 30"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector12.fills → 42c/3954:100"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector11.fills → d521/3563:62"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector10.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector09.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector08.fills → a1b/3954:101"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector07.fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector06.fills → 8322/3927:68"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector05.fills → 8322/3927:68"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector04.fills → 8322/3927:68"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector03.fills → 8322/3927:68"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector02.fills → d521/3563:62"
+      },
+      {
+        "type": "binding_added",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector01.fills → d521/3563:62"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Miscelanea.fills (era: 42c/3954:100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Cellphone.fills (era: d521/3563:62)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector 3617.fills (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector 3617.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector 3616.fills (era: a1b/3954:101)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector 3616.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Vector.fills (era: 8322/3927:68)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Hand.fills (era: d521/3563:62)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "NFC-hand",
+        "nodeId": "3299:384",
+        "details": "Miscelanea-Sparkles.fills (era: d521/3563:62)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 382705.fills → c040/3794:30"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 3817 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 3818 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 3810 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector.fills: 521/3744:113 → 0d92/3794:24"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 3813 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 3814 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 3815 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 3816 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 1362 (Stroke).fills → d521/3563:62"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 1361 (Stroke).fills → d521/3563:62"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 1358 (Stroke).fills → d521/3563:62"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector03.fills → 521/3744:113"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector02.fills → 521/3744:113"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector01.fills → 521/3744:113"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 3827.fills (era: c040/3794:30)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 3817.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 3818.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 3810.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 3813.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 3814.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 3815.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 3816.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 1362.strokes (era: d521/3563:62)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 1361.strokes (era: d521/3563:62)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector 1358.strokes (era: d521/3563:62)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector.strokeWeight: 0.17460575699806213 → 0.5085827708244324"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector.size.width: 7 → 26"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector.size.height: 6 → 33"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-QR-hand",
+        "nodeId": "3299:386",
+        "details": "Vector.fill[0].color: #052C50 → #F9D3CF"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 392905.fills → 263/3954:103"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3817 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3818 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3810 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector.fills: 521/3744:113 → 0d92/3794:24"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3813 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3814 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3815 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3816 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3930 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3931 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3932 (Stroke).fills → 521/3954:106"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector03.fills → 521/3744:113"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector02.fills → 521/3744:113"
+      },
+      {
+        "type": "binding_added",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector01.fills → 521/3744:113"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3929.fills (era: 263/3954:103)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3817.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3818.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3810.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3813.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3814.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3815.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3816.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3930.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3931.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector 3932.strokes (era: 521/3954:106)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector.strokeWeight: 0.1875690072774887 → 0.5463414788246155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector.size.width: 7 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector.size.height: 7 → 35"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-link",
+        "nodeId": "3299:382",
+        "details": "Vector.fill[0].color: #052C50 → #F9D3CF"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 2,
+      "componentsRemoved": 2,
+      "bindingsAdded": 127,
+      "bindingsRemoved": 74,
+      "bindingsChanged": 2,
+      "propertiesChanged": 14
+    }
+  },
+  {
     "id": "mqqsf6w2",
     "timestamp": "2026-06-23T15:16:49.442Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
