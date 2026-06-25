@@ -1,5 +1,4307 @@
 [
   {
+    "id": "mqtm8bn4",
+    "timestamp": "2026-06-25T14:46:49.840Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "11 componentes nuevos",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Bus-check (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Bus (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Bus-percentage (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Cellphone-hand-number",
+        "nodeId": "3396:223",
+        "details": "Cellphone-hand-number (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Cellphone-hand-number-warning",
+        "nodeId": "3396:224",
+        "details": "Cellphone-hand-number-warning (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Frame 1171276255",
+        "nodeId": "3396:225",
+        "details": "Frame 1171276255 (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Wallet-no-money",
+        "nodeId": "3396:234",
+        "details": "Wallet-no-money (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Insurance-empty",
+        "nodeId": "3396:233",
+        "details": "Insurance-empty (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Dolar",
+        "nodeId": "3396:232",
+        "details": "Dolar (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Dolar-glasses",
+        "nodeId": "3396:231",
+        "details": "Dolar-glasses (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Money-returns ",
+        "nodeId": "3396:154",
+        "details": "Money-returns  (COMPONENT)"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 11,
+      "componentsRemoved": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
+    "id": "mqtm85qk",
+    "timestamp": "2026-06-25T14:46:42.188Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "21 renombrados, 280 tokens nuevos, 222 tokens eliminados, 114 tokens cambiados, 63 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=false.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=none, Selected=false.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false.fills → interactive/background/brand/hover/quiet"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false.fills → interactive/background/brand/hover/quiet"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true.strokes → interactive/border/brand/secondary/active/medium"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true.strokes → interactive/border/brand/secondary/active/medium"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false.fills (era: interactive/background/brand/hover/quiet)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false.fills (era: interactive/background/brand/hover/quiet)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true.strokes (era: interactive/border/brand/secondary/active/medium)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true.strokes (era: interactive/border/brand/secondary/active/medium)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=default, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:75",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=false → State=default, Behavior=expanded, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:75",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:75",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:75",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=false.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:75",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:75",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:75",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:75",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:75",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:75",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:75",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=loading, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10772:3423",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=xs, Selected=false → State=loading, Behavior=expanded, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=loading, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10772:3423",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=loading, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10772:3423",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=loading, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10772:3423",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=none, Selected=false.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=loading, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10772:3423",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=loading, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10772:3423",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=loading, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10772:3423",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=loading, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10772:3423",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=loading, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10772:3423",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=loading, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10772:3423",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=loading, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10772:3423",
+        "details": "State=loading, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:115",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=false → State=default, Behavior=collapsed, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:115",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:115",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:115",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:115",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:115",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:115",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:115",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:115",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:115",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:115",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:143",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false → State=hover, Behavior=expanded, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:143",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:143",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:143",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:143",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:143",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:143",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false.fills → interactive/background/brand/hover/quiet"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:143",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:143",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:143",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:143",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:143",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:143",
+        "details": "State=hover, Behavior=expanded, Horizontal padding=xs, Selected=false.fills (era: interactive/background/brand/hover/quiet)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:183",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false → State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:183",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:183",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:183",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:183",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:183",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:183",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=none, Selected=false.fills → interactive/background/brand/hover/quiet"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:183",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:183",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:183",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:183",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:183",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:183",
+        "details": "State=hover, Behavior=collapsed, Horizontal padding=xs, Selected=false.fills (era: interactive/background/brand/hover/quiet)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:211",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=xs, Selected=false → State=focus, Behavior=expanded, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:211",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:211",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:211",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:211",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:211",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=focus, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:211",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=focus, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:211",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=focus, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:211",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=focus, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:211",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=focus, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:211",
+        "details": "State=focus, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:255",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=xs, Selected=false → State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:255",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:255",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:255",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:255",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:255",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=focus, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:255",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=focus, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:255",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=focus, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:255",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=focus, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:255",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=focus, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:255",
+        "details": "State=focus, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:287",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=xs, Selected=false → State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:287",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:287",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:287",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:287",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:287",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=pressed, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:287",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=pressed, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:287",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=pressed, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:287",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=pressed, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:287",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=pressed, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:287",
+        "details": "State=pressed, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:331",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=xs, Selected=false → State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:331",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:331",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:331",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:331",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:331",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=pressed, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:331",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=pressed, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:331",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=pressed, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:331",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=pressed, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:331",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=pressed, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:331",
+        "details": "State=pressed, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:363",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=xs, Selected=false → State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:363",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:363",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:363",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:363",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:363",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:363",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:363",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:363",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:363",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:363",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:363",
+        "details": "State=disabled, Behavior=expanded, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:363",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:363",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=sm, Selected=false",
+        "nodeId": "10102:374",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=sm, Selected=false",
+        "nodeId": "10102:374",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=sm, Selected=false",
+        "nodeId": "10102:374",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=md, Selected=false",
+        "nodeId": "10102:385",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=md, Selected=false",
+        "nodeId": "10102:385",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=md, Selected=false",
+        "nodeId": "10102:385",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=lg, Selected=false",
+        "nodeId": "10102:396",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=lg, Selected=false",
+        "nodeId": "10102:396",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Behavior=expanded, Horizontal padding=lg, Selected=false",
+        "nodeId": "10102:396",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:407",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=xs, Selected=false → State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:407",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:407",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:407",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:407",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:407",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:407",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:407",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:407",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:407",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:407",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:407",
+        "details": "State=disabled, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:407",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:407",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=sm, Selected=false",
+        "nodeId": "10102:415",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=sm, Selected=false",
+        "nodeId": "10102:415",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=sm, Selected=false",
+        "nodeId": "10102:415",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=md, Selected=false",
+        "nodeId": "10102:423",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=md, Selected=false",
+        "nodeId": "10102:423",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=md, Selected=false",
+        "nodeId": "10102:423",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=lg, Selected=false",
+        "nodeId": "10102:431",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=lg, Selected=false",
+        "nodeId": "10102:431",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Behavior=collapsed, Horizontal padding=lg, Selected=false",
+        "nodeId": "10102:431",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true",
+        "nodeId": "10102:439",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true → State=default, Behavior=expanded, Horizontal padding=none, Selected=true"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true",
+        "nodeId": "10102:439",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true",
+        "nodeId": "10102:439",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true",
+        "nodeId": "10102:439",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true",
+        "nodeId": "10102:439",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true",
+        "nodeId": "10102:439",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true",
+        "nodeId": "10102:439",
+        "details": "State=default, Behavior=expanded, Horizontal padding=none, Selected=true.strokes → interactive/border/brand/secondary/active/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true",
+        "nodeId": "10102:439",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true",
+        "nodeId": "10102:439",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true",
+        "nodeId": "10102:439",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true",
+        "nodeId": "10102:439",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true",
+        "nodeId": "10102:439",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true",
+        "nodeId": "10102:439",
+        "details": "State=default, Behavior=expanded, Horizontal padding=xs, Selected=true.strokes (era: interactive/border/brand/secondary/active/medium)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true",
+        "nodeId": "10102:479",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true → State=default, Behavior=collapsed, Horizontal padding=none, Selected=true"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true",
+        "nodeId": "10102:479",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true",
+        "nodeId": "10102:479",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true",
+        "nodeId": "10102:479",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true",
+        "nodeId": "10102:479",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true",
+        "nodeId": "10102:479",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true",
+        "nodeId": "10102:479",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true.strokes → interactive/border/brand/secondary/active/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true",
+        "nodeId": "10102:479",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true",
+        "nodeId": "10102:479",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true",
+        "nodeId": "10102:479",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true",
+        "nodeId": "10102:479",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true",
+        "nodeId": "10102:479",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true",
+        "nodeId": "10102:479",
+        "details": "State=default, Behavior=collapsed, Horizontal padding=xs, Selected=true.strokes (era: interactive/border/brand/secondary/active/medium)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:519",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=xs, Selected=false → State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:519",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:519",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:519",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:519",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:519",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=loading, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:519",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-150)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=loading, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:519",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=loading, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:519",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=loading, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:519",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=loading, Behavior=collapsed, Horizontal padding=xs, Selected=false",
+        "nodeId": "10102:519",
+        "details": "State=loading, Behavior=collapsed, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Avatar",
+        "nodeId": "2485:16055",
+        "details": "Disabled layer.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "Avatar",
+        "nodeId": "2485:16055",
+        "details": "Disabled layer.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Avatar",
+        "nodeId": "2485:16055",
+        "details": "Disabled layer.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=monogram, State=disabled, Size=lg",
+        "nodeId": "10776:492",
+        "details": "Disabled layer.fills → b58/4172:150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=monogram, State=disabled, Size=md",
+        "nodeId": "10776:494",
+        "details": "Disabled layer.fills → b58/4172:150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=monogram, State=disabled, Size=sm",
+        "nodeId": "10776:496",
+        "details": "Disabled layer.fills → b58/4172:150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=monogram, State=disabled, Size=xs",
+        "nodeId": "10776:498",
+        "details": "Disabled layer.fills → b58/4172:150"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=image, State=disabled, Size=lg",
+        "nodeId": "10776:500",
+        "details": "Disabled layer.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=image, State=disabled, Size=lg",
+        "nodeId": "10776:500",
+        "details": "Disabled layer.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=image, State=disabled, Size=lg",
+        "nodeId": "10776:500",
+        "details": "Disabled layer.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=image, State=disabled, Size=md",
+        "nodeId": "10776:502",
+        "details": "Disabled layer.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=image, State=disabled, Size=md",
+        "nodeId": "10776:502",
+        "details": "Disabled layer.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=image, State=disabled, Size=md",
+        "nodeId": "10776:502",
+        "details": "Disabled layer.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=image, State=disabled, Size=sm",
+        "nodeId": "10776:504",
+        "details": "Disabled layer.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=image, State=disabled, Size=sm",
+        "nodeId": "10776:504",
+        "details": "Disabled layer.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=image, State=disabled, Size=sm",
+        "nodeId": "10776:504",
+        "details": "Disabled layer.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=image, State=disabled, Size=xs",
+        "nodeId": "10776:506",
+        "details": "Disabled layer.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=image, State=disabled, Size=xs",
+        "nodeId": "10776:506",
+        "details": "Disabled layer.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=image, State=disabled, Size=xs",
+        "nodeId": "10776:506",
+        "details": "Disabled layer.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "⛔️ Card_content_shortcut-asset",
+        "nodeId": "15254:3209",
+        "details": "Brand-wrapper.strokes: interactive/border/brand/primary/focus/subtle → interactive/border/brand/primary/default/subtle"
+      },
+      {
+        "type": "property_changed",
+        "component": "⛔️ Card_content_shortcut-asset",
+        "nodeId": "15254:3209",
+        "details": "Brand-wrapper.stroke[0].color: #E0E4F5 → #C7D2FE"
+      },
+      {
+        "type": "binding_added",
+        "component": "Card-container",
+        "nodeId": "16112:2392",
+        "details": "Type=image, Alignement=horizontal, State=default.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Card-container",
+        "nodeId": "16112:2392",
+        "details": "Type=image, Alignement=horizontal, State=pressed.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Card-container",
+        "nodeId": "16112:2392",
+        "details": "Type=image, Alignement=horizontal, State=hover.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Card-container",
+        "nodeId": "16112:2392",
+        "details": "Type=pictogram, Alignement=horizontal, State=default.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card-container",
+        "nodeId": "16112:2392",
+        "details": "Asset background.fills: expressive/illustration/violet/subtle → a5b/4033:381"
+      },
+      {
+        "type": "binding_added",
+        "component": "Card-container",
+        "nodeId": "16112:2392",
+        "details": "Type=pictogram, Alignement=horizontal, State=pressed.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Card-container",
+        "nodeId": "16112:2392",
+        "details": "Type=pictogram, Alignement=horizontal, State=hover.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Card-container",
+        "nodeId": "16112:2392",
+        "details": "Type=image, Alignement=vertical, State=default.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Card-container",
+        "nodeId": "16112:2392",
+        "details": "Type=image, Alignement=vertical, State=pressed.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Card-container",
+        "nodeId": "16112:2392",
+        "details": "Type=image, Alignement=vertical, State=hover.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Card-container",
+        "nodeId": "16112:2392",
+        "details": "Type=pictogram, Alignement=vertical, State=default.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Card-container",
+        "nodeId": "16112:2392",
+        "details": "Type=pictogram, Alignement=vertical, State=pressed.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Card-container",
+        "nodeId": "16112:2392",
+        "details": "Type=pictogram, Alignement=vertical, State=hover.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Alignement=horizontal, State=default",
+        "nodeId": "16112:2393",
+        "details": "Type=image, Alignement=horizontal, State=default.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Alignement=horizontal, State=pressed",
+        "nodeId": "18291:2135",
+        "details": "Type=image, Alignement=horizontal, State=pressed.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Alignement=horizontal, State=hover",
+        "nodeId": "18291:2057",
+        "details": "Type=image, Alignement=horizontal, State=hover.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=pictogram, Alignement=horizontal, State=default",
+        "nodeId": "16112:2398",
+        "details": "Type=pictogram, Alignement=horizontal, State=default.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=pictogram, Alignement=horizontal, State=default",
+        "nodeId": "16112:2398",
+        "details": "Asset background.fills: expressive/illustration/violet/subtle → a5b/4033:381"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=pictogram, Alignement=horizontal, State=pressed",
+        "nodeId": "18291:2145",
+        "details": "Type=pictogram, Alignement=horizontal, State=pressed.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=pictogram, Alignement=horizontal, State=pressed",
+        "nodeId": "18291:2145",
+        "details": "Asset background.fills: expressive/illustration/violet/subtle → a5b/4033:381"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=pictogram, Alignement=horizontal, State=hover",
+        "nodeId": "18291:2062",
+        "details": "Type=pictogram, Alignement=horizontal, State=hover.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=pictogram, Alignement=horizontal, State=hover",
+        "nodeId": "18291:2062",
+        "details": "Asset background.fills: expressive/illustration/violet/subtle → a5b/4033:381"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Alignement=vertical, State=default",
+        "nodeId": "16112:2403",
+        "details": "Type=image, Alignement=vertical, State=default.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Alignement=vertical, State=pressed",
+        "nodeId": "18291:2155",
+        "details": "Type=image, Alignement=vertical, State=pressed.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Alignement=vertical, State=hover",
+        "nodeId": "18291:2067",
+        "details": "Type=image, Alignement=vertical, State=hover.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=pictogram, Alignement=vertical, State=default",
+        "nodeId": "16112:2409",
+        "details": "Type=pictogram, Alignement=vertical, State=default.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=pictogram, Alignement=vertical, State=default",
+        "nodeId": "16112:2409",
+        "details": "Asset background.fills: expressive/illustration/violet/subtle → a5b/4033:381"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=pictogram, Alignement=vertical, State=pressed",
+        "nodeId": "18291:2167",
+        "details": "Type=pictogram, Alignement=vertical, State=pressed.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=pictogram, Alignement=vertical, State=pressed",
+        "nodeId": "18291:2167",
+        "details": "Asset background.fills: expressive/illustration/violet/subtle → a5b/4033:381"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=pictogram, Alignement=vertical, State=hover",
+        "nodeId": "18291:2073",
+        "details": "Type=pictogram, Alignement=vertical, State=hover.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=pictogram, Alignement=vertical, State=hover",
+        "nodeId": "18291:2073",
+        "details": "Asset background.fills: expressive/illustration/violet/subtle → a5b/4033:381"
+      },
+      {
+        "type": "binding_changed",
+        "component": ".⛔️Card-amount_content-mini-banner",
+        "nodeId": "17532:6983",
+        "details": "---> Mini-banner 1.fills: expressive/violet/50 → eaf/4033:489"
+      },
+      {
+        "type": "binding_changed",
+        "component": ".⛔️Card-amount_content-mini-banner",
+        "nodeId": "17532:6983",
+        "details": "---> Mini-banner 1.strokes: expressive/violet/200 → 37b/4033:491"
+      },
+      {
+        "type": "binding_changed",
+        "component": ".⛔️Card-amount_content-mini-banner",
+        "nodeId": "17532:6983",
+        "details": "---> Mini-banner 2.fills: expressive/violet/50 → eaf/4033:489"
+      },
+      {
+        "type": "binding_changed",
+        "component": ".⛔️Card-amount_content-mini-banner",
+        "nodeId": "17532:6983",
+        "details": "---> Mini-banner 2.strokes: expressive/violet/200 → 37b/4033:491"
+      },
+      {
+        "type": "binding_changed",
+        "component": ".⛔️Card-amount_content-mini-banner",
+        "nodeId": "17532:6983",
+        "details": "---> Mini-banner 3.fills: expressive/violet/50 → eaf/4033:489"
+      },
+      {
+        "type": "binding_changed",
+        "component": ".⛔️Card-amount_content-mini-banner",
+        "nodeId": "17532:6983",
+        "details": "---> Mini-banner 3.strokes: expressive/violet/200 → 37b/4033:491"
+      },
+      {
+        "type": "binding_changed",
+        "component": ".⛔️Card-amount_content-mini-banner_mini-banner",
+        "nodeId": "17532:7320",
+        "details": ".⛔️Card-amount_content-mini-banner_mini-banner.fills: expressive/violet/50 → eaf/4033:489"
+      },
+      {
+        "type": "binding_changed",
+        "component": ".⛔️Card-amount_content-mini-banner_mini-banner",
+        "nodeId": "17532:7320",
+        "details": ".⛔️Card-amount_content-mini-banner_mini-banner.strokes: expressive/violet/200 → 37b/4033:491"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card-amount",
+        "nodeId": "17532:7028",
+        "details": "---> Mini-banner 1.fills: expressive/violet/50 → eaf/4033:489"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card-amount",
+        "nodeId": "17532:7028",
+        "details": "---> Mini-banner 1.strokes: expressive/violet/200 → 37b/4033:491"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card-amount",
+        "nodeId": "17532:7028",
+        "details": "---> Mini-banner 2.fills: expressive/violet/50 → eaf/4033:489"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card-amount",
+        "nodeId": "17532:7028",
+        "details": "---> Mini-banner 2.strokes: expressive/violet/200 → 37b/4033:491"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card-amount",
+        "nodeId": "17532:7028",
+        "details": "---> Mini-banner 3.fills: expressive/violet/50 → eaf/4033:489"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card-amount",
+        "nodeId": "17532:7028",
+        "details": "---> Mini-banner 3.strokes: expressive/violet/200 → 37b/4033:491"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=default",
+        "nodeId": "17532:7029",
+        "details": "---> Mini-banner 1.fills: expressive/violet/50 → eaf/4033:489"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=default",
+        "nodeId": "17532:7029",
+        "details": "---> Mini-banner 1.strokes: expressive/violet/200 → 37b/4033:491"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=default",
+        "nodeId": "17532:7029",
+        "details": "---> Mini-banner 2.fills: expressive/violet/50 → eaf/4033:489"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=default",
+        "nodeId": "17532:7029",
+        "details": "---> Mini-banner 2.strokes: expressive/violet/200 → 37b/4033:491"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=default",
+        "nodeId": "17532:7029",
+        "details": "---> Mini-banner 3.fills: expressive/violet/50 → eaf/4033:489"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=default",
+        "nodeId": "17532:7029",
+        "details": "---> Mini-banner 3.strokes: expressive/violet/200 → 37b/4033:491"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Label",
+        "nodeId": "10423:6874",
+        "details": "Content.fills: expressive/pink/600 → 499/4033:470"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Label",
+        "nodeId": "10423:6874",
+        "details": "Style=gradient, Color=green, Roundness=bottom right, Shape=default.fills: expressive/teal/900 → b7e/4033:478"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Label",
+        "nodeId": "10423:6874",
+        "details": "Style=gradient, Color=orange, Roundness=bottom right, Shape=default.fills: expressive/amber/600 → e83/4033:393"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Label",
+        "nodeId": "10423:6874",
+        "details": "Style=gradient, Color=magenta, Roundness=bottom right, Shape=default.fills: expressive/pink/600 → 499/4033:470"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Label",
+        "nodeId": "10423:6874",
+        "details": "Style=gradient, Color=green, Roundness=top right, Shape=default.fills: expressive/teal/900 → b7e/4033:478"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Label",
+        "nodeId": "10423:6874",
+        "details": "Style=gradient, Color=orange, Roundness=top right, Shape=default.fills: expressive/amber/600 → e83/4033:393"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Label",
+        "nodeId": "10423:6874",
+        "details": "Style=gradient, Color=magenta, Roundness=top right, Shape=default.fills: expressive/pink/600 → 499/4033:470"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Label",
+        "nodeId": "10423:6874",
+        "details": "Style=gradient, Color=green, Roundness=both left, Shape=default.fills: expressive/teal/900 → b7e/4033:478"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Label",
+        "nodeId": "10423:6874",
+        "details": "Style=gradient, Color=orange, Roundness=both left, Shape=default.fills: expressive/amber/600 → e83/4033:393"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Label",
+        "nodeId": "10423:6874",
+        "details": "Style=gradient, Color=magenta, Roundness=both left, Shape=default.fills: expressive/pink/600 → 499/4033:470"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Label",
+        "nodeId": "10423:6874",
+        "details": "Style=gradient, Color=green, Roundness=both right, Shape=default.fills: expressive/teal/900 → b7e/4033:478"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Label",
+        "nodeId": "10423:6874",
+        "details": "Style=gradient, Color=orange, Roundness=both right, Shape=default.fills: expressive/amber/600 → e83/4033:393"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Label",
+        "nodeId": "10423:6874",
+        "details": "Style=gradient, Color=magenta, Roundness=both right, Shape=default.fills: expressive/pink/600 → 499/4033:470"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=green, Roundness=right, Shape=tag",
+        "nodeId": "10423:6880",
+        "details": "Content.fills: expressive/teal/900 → b7e/4033:478"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=green, Roundness=right, Shape=tag",
+        "nodeId": "10423:6880",
+        "details": "Trailing shape.fills: expressive/emerald/500 → 7b3/4033:421"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=orange, Roundness=right, Shape=tag",
+        "nodeId": "10423:6887",
+        "details": "Content.fills: expressive/amber/600 → e83/4033:393"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=orange, Roundness=right, Shape=tag",
+        "nodeId": "10423:6887",
+        "details": "Trailing shape.fills: expressive/amber/600 → e83/4033:393"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=magenta, Roundness=right, Shape=tag",
+        "nodeId": "10423:6894",
+        "details": "Content.fills: expressive/pink/600 → 499/4033:470"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=green, Roundness=bottom right, Shape=default",
+        "nodeId": "10423:6923",
+        "details": "Style=gradient, Color=green, Roundness=bottom right, Shape=default.fills: expressive/teal/900 → b7e/4033:478"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=orange, Roundness=bottom right, Shape=default",
+        "nodeId": "10423:6925",
+        "details": "Style=gradient, Color=orange, Roundness=bottom right, Shape=default.fills: expressive/amber/600 → e83/4033:393"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=magenta, Roundness=bottom right, Shape=default",
+        "nodeId": "10423:6927",
+        "details": "Style=gradient, Color=magenta, Roundness=bottom right, Shape=default.fills: expressive/pink/600 → 499/4033:470"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=green, Roundness=top right, Shape=default",
+        "nodeId": "10423:6931",
+        "details": "Style=gradient, Color=green, Roundness=top right, Shape=default.fills: expressive/teal/900 → b7e/4033:478"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=orange, Roundness=top right, Shape=default",
+        "nodeId": "10423:6933",
+        "details": "Style=gradient, Color=orange, Roundness=top right, Shape=default.fills: expressive/amber/600 → e83/4033:393"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=magenta, Roundness=top right, Shape=default",
+        "nodeId": "10423:6935",
+        "details": "Style=gradient, Color=magenta, Roundness=top right, Shape=default.fills: expressive/pink/600 → 499/4033:470"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=green, Roundness=both left, Shape=default",
+        "nodeId": "10423:6939",
+        "details": "Style=gradient, Color=green, Roundness=both left, Shape=default.fills: expressive/teal/900 → b7e/4033:478"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=orange, Roundness=both left, Shape=default",
+        "nodeId": "10423:6941",
+        "details": "Style=gradient, Color=orange, Roundness=both left, Shape=default.fills: expressive/amber/600 → e83/4033:393"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=magenta, Roundness=both left, Shape=default",
+        "nodeId": "10423:6943",
+        "details": "Style=gradient, Color=magenta, Roundness=both left, Shape=default.fills: expressive/pink/600 → 499/4033:470"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=green, Roundness=both right, Shape=default",
+        "nodeId": "10423:6947",
+        "details": "Style=gradient, Color=green, Roundness=both right, Shape=default.fills: expressive/teal/900 → b7e/4033:478"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=orange, Roundness=both right, Shape=default",
+        "nodeId": "10423:6949",
+        "details": "Style=gradient, Color=orange, Roundness=both right, Shape=default.fills: expressive/amber/600 → e83/4033:393"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Style=gradient, Color=magenta, Roundness=both right, Shape=default",
+        "nodeId": "10423:6951",
+        "details": "Style=gradient, Color=magenta, Roundness=both right, Shape=default.fills: expressive/pink/600 → 499/4033:470"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-200"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=hover, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-200"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=hover, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=hover, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=hover, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=hover, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=hover, Horizontal padding=none, Selected=false.fills → interactive/background/brand/hover/quiet"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=pressed, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-200"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=pressed, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=pressed, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=pressed, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=pressed, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=none, Selected=true.itemSpacing → gap/gap-200"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=none, Selected=true.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=none, Selected=true.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=none, Selected=true.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=none, Selected=true.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=none, Selected=true.strokes → interactive/border/brand/secondary/active/medium"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=disabled, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-200"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=disabled, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=disabled, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=disabled, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=disabled, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=focus, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-200"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=focus, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=focus, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=focus, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=focus, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=loading, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-200"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=loading, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=loading, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=loading, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=loading, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-200)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=hover, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-200)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=hover, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=hover, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=hover, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=hover, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=hover, Horizontal padding=xs, Selected=false.fills (era: interactive/background/brand/hover/quiet)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=pressed, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-200)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=pressed, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=pressed, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=pressed, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=pressed, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=xs, Selected=true.itemSpacing (era: gap/gap-200)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=xs, Selected=true.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=xs, Selected=true.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=xs, Selected=true.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=xs, Selected=true.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=default, Horizontal padding=xs, Selected=true.strokes (era: interactive/border/brand/secondary/active/medium)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=disabled, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-200)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=disabled, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=disabled, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=disabled, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=disabled, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=focus, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-200)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=focus, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=focus, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=focus, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=focus, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=loading, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-200)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=loading, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=loading, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=loading, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "State=loading, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Row-item",
+        "nodeId": "8291:1568",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=default, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1587",
+        "details": "State=default, Horizontal padding=xs, Selected=false → State=default, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1587",
+        "details": "State=default, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-200"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1587",
+        "details": "State=default, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1587",
+        "details": "State=default, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1587",
+        "details": "State=default, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1587",
+        "details": "State=default, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1587",
+        "details": "State=default, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-200)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1587",
+        "details": "State=default, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1587",
+        "details": "State=default, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1587",
+        "details": "State=default, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1587",
+        "details": "State=default, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=hover, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1611",
+        "details": "State=hover, Horizontal padding=xs, Selected=false → State=hover, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1611",
+        "details": "State=hover, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-200"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1611",
+        "details": "State=hover, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1611",
+        "details": "State=hover, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1611",
+        "details": "State=hover, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1611",
+        "details": "State=hover, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=hover, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1611",
+        "details": "State=hover, Horizontal padding=none, Selected=false.fills → interactive/background/brand/hover/quiet"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1611",
+        "details": "State=hover, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-200)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1611",
+        "details": "State=hover, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1611",
+        "details": "State=hover, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1611",
+        "details": "State=hover, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1611",
+        "details": "State=hover, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=hover, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1611",
+        "details": "State=hover, Horizontal padding=xs, Selected=false.fills (era: interactive/background/brand/hover/quiet)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=pressed, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1638",
+        "details": "State=pressed, Horizontal padding=xs, Selected=false → State=pressed, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=pressed, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1638",
+        "details": "State=pressed, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-200"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=pressed, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1638",
+        "details": "State=pressed, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=pressed, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1638",
+        "details": "State=pressed, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=pressed, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1638",
+        "details": "State=pressed, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=pressed, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1638",
+        "details": "State=pressed, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=pressed, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1638",
+        "details": "State=pressed, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-200)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=pressed, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1638",
+        "details": "State=pressed, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=pressed, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1638",
+        "details": "State=pressed, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=pressed, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1638",
+        "details": "State=pressed, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=pressed, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1638",
+        "details": "State=pressed, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=default, Horizontal padding=none, Selected=true",
+        "nodeId": "8291:1660",
+        "details": "State=default, Horizontal padding=xs, Selected=true → State=default, Horizontal padding=none, Selected=true"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Horizontal padding=none, Selected=true",
+        "nodeId": "8291:1660",
+        "details": "State=default, Horizontal padding=none, Selected=true.itemSpacing → gap/gap-200"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Horizontal padding=none, Selected=true",
+        "nodeId": "8291:1660",
+        "details": "State=default, Horizontal padding=none, Selected=true.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Horizontal padding=none, Selected=true",
+        "nodeId": "8291:1660",
+        "details": "State=default, Horizontal padding=none, Selected=true.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Horizontal padding=none, Selected=true",
+        "nodeId": "8291:1660",
+        "details": "State=default, Horizontal padding=none, Selected=true.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Horizontal padding=none, Selected=true",
+        "nodeId": "8291:1660",
+        "details": "State=default, Horizontal padding=none, Selected=true.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=default, Horizontal padding=none, Selected=true",
+        "nodeId": "8291:1660",
+        "details": "State=default, Horizontal padding=none, Selected=true.strokes → interactive/border/brand/secondary/active/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Horizontal padding=xs, Selected=true",
+        "nodeId": "8291:1660",
+        "details": "State=default, Horizontal padding=xs, Selected=true.itemSpacing (era: gap/gap-200)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Horizontal padding=xs, Selected=true",
+        "nodeId": "8291:1660",
+        "details": "State=default, Horizontal padding=xs, Selected=true.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Horizontal padding=xs, Selected=true",
+        "nodeId": "8291:1660",
+        "details": "State=default, Horizontal padding=xs, Selected=true.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Horizontal padding=xs, Selected=true",
+        "nodeId": "8291:1660",
+        "details": "State=default, Horizontal padding=xs, Selected=true.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Horizontal padding=xs, Selected=true",
+        "nodeId": "8291:1660",
+        "details": "State=default, Horizontal padding=xs, Selected=true.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=default, Horizontal padding=xs, Selected=true",
+        "nodeId": "8291:1660",
+        "details": "State=default, Horizontal padding=xs, Selected=true.strokes (era: interactive/border/brand/secondary/active/medium)"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=disabled, Horizontal padding=lg, Selected=false",
+        "nodeId": "8291:1665",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Horizontal padding=lg, Selected=false",
+        "nodeId": "8291:1665",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Horizontal padding=lg, Selected=false",
+        "nodeId": "8291:1665",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=disabled, Horizontal padding=md, Selected=false",
+        "nodeId": "8291:1672",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Horizontal padding=md, Selected=false",
+        "nodeId": "8291:1672",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Horizontal padding=md, Selected=false",
+        "nodeId": "8291:1672",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=disabled, Horizontal padding=sm, Selected=false",
+        "nodeId": "8291:1679",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Horizontal padding=sm, Selected=false",
+        "nodeId": "8291:1679",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Horizontal padding=sm, Selected=false",
+        "nodeId": "8291:1679",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=disabled, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1686",
+        "details": "State=disabled, Horizontal padding=xs, Selected=false → State=disabled, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=disabled, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1686",
+        "details": "State=disabled, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-200"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=disabled, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1686",
+        "details": "State=disabled, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=disabled, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1686",
+        "details": "State=disabled, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=disabled, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1686",
+        "details": "State=disabled, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=disabled, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1686",
+        "details": "State=disabled, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=disabled, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1686",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=disabled, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1686",
+        "details": "State=disabled, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-200)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=disabled, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1686",
+        "details": "State=disabled, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=disabled, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1686",
+        "details": "State=disabled, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=disabled, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1686",
+        "details": "State=disabled, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=disabled, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1686",
+        "details": "State=disabled, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1686",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1686",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=focus, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1711",
+        "details": "State=focus, Horizontal padding=xs, Selected=false → State=focus, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=focus, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1711",
+        "details": "State=focus, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-200"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=focus, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1711",
+        "details": "State=focus, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=focus, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1711",
+        "details": "State=focus, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=focus, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1711",
+        "details": "State=focus, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=focus, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1711",
+        "details": "State=focus, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=focus, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1711",
+        "details": "State=focus, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-200)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=focus, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1711",
+        "details": "State=focus, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=focus, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1711",
+        "details": "State=focus, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=focus, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1711",
+        "details": "State=focus, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=focus, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1711",
+        "details": "State=focus, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "State=loading, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1729",
+        "details": "State=loading, Horizontal padding=xs, Selected=false → State=loading, Horizontal padding=none, Selected=false"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=loading, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1729",
+        "details": "State=loading, Horizontal padding=none, Selected=false.itemSpacing → gap/gap-200"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=loading, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1729",
+        "details": "State=loading, Horizontal padding=none, Selected=false.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=loading, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1729",
+        "details": "State=loading, Horizontal padding=none, Selected=false.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=loading, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1729",
+        "details": "State=loading, Horizontal padding=none, Selected=false.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "State=loading, Horizontal padding=none, Selected=false",
+        "nodeId": "8291:1729",
+        "details": "State=loading, Horizontal padding=none, Selected=false.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=loading, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1729",
+        "details": "State=loading, Horizontal padding=xs, Selected=false.itemSpacing (era: gap/gap-200)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=loading, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1729",
+        "details": "State=loading, Horizontal padding=xs, Selected=false.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=loading, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1729",
+        "details": "State=loading, Horizontal padding=xs, Selected=false.paddingTop (era: vertical-padding)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=loading, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1729",
+        "details": "State=loading, Horizontal padding=xs, Selected=false.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "State=loading, Horizontal padding=xs, Selected=false",
+        "nodeId": "8291:1729",
+        "details": "State=loading, Horizontal padding=xs, Selected=false.paddingBottom (era: vertical-padding)"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Button-card",
+        "nodeId": "14256:2702",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "Button-card",
+        "nodeId": "14256:2702",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Button-card",
+        "nodeId": "14256:2702",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=flat, State=disabled, Alignment=horizontal",
+        "nodeId": "14256:2729",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=flat, State=disabled, Alignment=horizontal",
+        "nodeId": "14256:2729",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=flat, State=disabled, Alignment=horizontal",
+        "nodeId": "14256:2729",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=flat, State=disabled, Alignment=vertical",
+        "nodeId": "14256:2733",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=flat, State=disabled, Alignment=vertical",
+        "nodeId": "14256:2733",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=flat, State=disabled, Alignment=vertical",
+        "nodeId": "14256:2733",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=elevated, State=disabled, Alignment=horizontal",
+        "nodeId": "17657:7004",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=elevated, State=disabled, Alignment=horizontal",
+        "nodeId": "17657:7004",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=elevated, State=disabled, Alignment=horizontal",
+        "nodeId": "17657:7004",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=elevated, State=disabled, Alignment=vertical",
+        "nodeId": "17657:7009",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=elevated, State=disabled, Alignment=vertical",
+        "nodeId": "17657:7009",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=elevated, State=disabled, Alignment=vertical",
+        "nodeId": "17657:7009",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Currency-converter",
+        "nodeId": "4627:224",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=error",
+        "nodeId": "4627:262",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": ".⛔️ Input-OTP_slot",
+        "nodeId": "2929:307",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=error",
+        "nodeId": "2929:314",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Input-OTP",
+        "nodeId": "2929:318",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=error",
+        "nodeId": "3105:128",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Input-PIN",
+        "nodeId": "2929:295",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=error, Quantity=4",
+        "nodeId": "3115:386",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=error, Quantity=6",
+        "nodeId": "3115:477",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": ".⛔️ Input-PIN_slot",
+        "nodeId": "2929:270",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=error, Show code=false",
+        "nodeId": "2929:277",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Text-area",
+        "nodeId": "3415:7",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=error, Style=resize",
+        "nodeId": "3415:64",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=error, Style=vertical scroll",
+        "nodeId": "3415:83",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Text-field",
+        "nodeId": "2939:8332",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=error",
+        "nodeId": "2939:8380",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Select",
+        "nodeId": "4248:903",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=error",
+        "nodeId": "16964:916",
+        "details": ".⛔️ Focus-ring.strokes: interactive/border/feedback/error/subtle → f79ba/4033:5"
+      },
+      {
+        "type": "binding_added",
+        "component": "Snackbar",
+        "nodeId": "329:1438",
+        "details": "Type=info.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Snackbar",
+        "nodeId": "329:1438",
+        "details": "Type=success.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Snackbar",
+        "nodeId": "329:1438",
+        "details": "Type=warning.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Snackbar",
+        "nodeId": "329:1438",
+        "details": "Type=error.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=info",
+        "nodeId": "329:1439",
+        "details": "Type=info.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=success",
+        "nodeId": "329:1443",
+        "details": "Type=success.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=warning",
+        "nodeId": "329:1447",
+        "details": "Type=warning.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=error",
+        "nodeId": "329:1451",
+        "details": "Type=error.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Nav-bar",
+        "nodeId": "5488:4009",
+        "details": "Main content.effects → 4a9/4036:529"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Nav-bar",
+        "nodeId": "5488:4009",
+        "details": "Background.fills: expressive/violet/900 → 421/4033:498"
+      },
+      {
+        "type": "binding_changed",
+        "component": ".⛔️ Nav-bar_qr",
+        "nodeId": "4573:2062",
+        "details": "Background.fills: expressive/violet/900 → 421/4033:498"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=default",
+        "nodeId": "4573:2063",
+        "details": "Background.fills: expressive/violet/900 → 421/4033:498"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=focus",
+        "nodeId": "5961:2825",
+        "details": "Background.fills: expressive/violet/900 → 421/4033:498"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Shortcut-asset",
+        "nodeId": "14332:3365",
+        "details": "Label.fills: interactive/foreground/neutral/disabled/bold → interactive/foreground/neutral/disabled/subtle"
+      },
+      {
+        "type": "binding_added",
+        "component": "Shortcut-asset",
+        "nodeId": "14332:3365",
+        "details": "Disabled layer.fills → b58/4172:150"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Shortcut-asset",
+        "nodeId": "14332:3365",
+        "details": "Brand-wrapper.strokes: interactive/border/brand/primary/pressed/subtle → interactive/border/neutral/disabled/subtle"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Shortcut-asset",
+        "nodeId": "14332:3365",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "Shortcut-asset",
+        "nodeId": "14332:3365",
+        "details": "Label.fill[0].color: #404040 → #A9A9A9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Shortcut-asset",
+        "nodeId": "14332:3365",
+        "details": "Brand-wrapper.stroke[0].color: #C7D2FE → #A9A9A9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Shortcut-asset",
+        "nodeId": "14332:3365",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Shortcut-asset",
+        "nodeId": "14332:3365",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=avatar, State=disabled",
+        "nodeId": "14332:3382",
+        "details": "Label.fills: interactive/foreground/neutral/disabled/bold → interactive/foreground/neutral/disabled/subtle"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=avatar, State=disabled",
+        "nodeId": "14332:3382",
+        "details": "Disabled layer.fills → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=avatar, State=disabled",
+        "nodeId": "14332:3382",
+        "details": "Label.fill[0].color: #404040 → #A9A9A9"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=brand, State=default",
+        "nodeId": "14332:3385",
+        "details": "Brand-wrapper.strokes: interactive/border/brand/primary/focus/subtle → interactive/border/brand/primary/default/subtle"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=brand, State=default",
+        "nodeId": "14332:3385",
+        "details": "Brand-wrapper.stroke[0].color: #E0E4F5 → #C7D2FE"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=brand, State=disabled",
+        "nodeId": "14332:3406",
+        "details": "Brand-wrapper.strokes: interactive/border/brand/primary/pressed/subtle → interactive/border/neutral/disabled/subtle"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=brand, State=disabled",
+        "nodeId": "14332:3406",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=brand, State=disabled",
+        "nodeId": "14332:3406",
+        "details": "Label.fills: interactive/foreground/neutral/disabled/bold → interactive/foreground/neutral/disabled/subtle"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=brand, State=disabled",
+        "nodeId": "14332:3406",
+        "details": "Brand-wrapper.stroke[0].color: #C7D2FE → #A9A9A9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=brand, State=disabled",
+        "nodeId": "14332:3406",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=brand, State=disabled",
+        "nodeId": "14332:3406",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=brand, State=disabled",
+        "nodeId": "14332:3406",
+        "details": "Label.fill[0].color: #404040 → #A9A9A9"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Shortcut-brand",
+        "nodeId": "14270:3063",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "Shortcut-brand",
+        "nodeId": "14270:3063",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Shortcut-brand",
+        "nodeId": "14270:3063",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=disabled",
+        "nodeId": "14270:3081",
+        "details": "Layer disabled.fills: interactive/opacity/neutral/disabled → b58/4172:150"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled",
+        "nodeId": "14270:3081",
+        "details": "Layer disabled.fill[0].color: #DADADA → #F5F5F5"
+      },
+      {
+        "type": "property_changed",
+        "component": "State=disabled",
+        "nodeId": "14270:3081",
+        "details": "Layer disabled.fill[0].opacity: 0.20000000298023224 → 0.699999988079071"
+      },
+      {
+        "type": "binding_added",
+        "component": "Backdrop",
+        "nodeId": "35:3387",
+        "details": "Layout=default, State=default.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Backdrop",
+        "nodeId": "35:3387",
+        "details": "Layout=default, State=loading.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Backdrop",
+        "nodeId": "35:3387",
+        "details": "Layout=scrollable, State=default.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Backdrop",
+        "nodeId": "35:3387",
+        "details": "Layout=illustration, State=default.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Layout=default, State=default",
+        "nodeId": "35:3388",
+        "details": "Layout=default, State=default.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Layout=default, State=loading",
+        "nodeId": "18291:2694",
+        "details": "Layout=default, State=loading.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Layout=scrollable, State=default",
+        "nodeId": "35:3422",
+        "details": "Layout=scrollable, State=default.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Layout=illustration, State=default",
+        "nodeId": "35:3405",
+        "details": "Layout=illustration, State=default.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Pop-up",
+        "nodeId": "11360:7300",
+        "details": "Type=illustration, Content=offset.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Pop-up",
+        "nodeId": "11360:7300",
+        "details": "Type=illustration, Content=balanced.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Pop-up",
+        "nodeId": "11360:7300",
+        "details": "Type=image, Content=balanced.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Pop-up",
+        "nodeId": "11360:7300",
+        "details": "Type=image, Content=offset.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=illustration, Content=offset",
+        "nodeId": "11360:7301",
+        "details": "Type=illustration, Content=offset.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=illustration, Content=balanced",
+        "nodeId": "11360:7313",
+        "details": "Type=illustration, Content=balanced.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=balanced",
+        "nodeId": "11360:7322",
+        "details": "Type=image, Content=balanced.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Type=image, Content=offset.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Tooltip-contextual",
+        "nodeId": "4262:495",
+        "details": "Tooltip-contextual.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": ".⛔️ Divider",
+        "nodeId": "6105:23398",
+        "details": "Vector.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Style=shadow",
+        "nodeId": "6105:23399",
+        "details": "Vector.effects → 70ba/4146:95"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "bindingsAdded": 280,
+      "bindingsRemoved": 222,
+      "bindingsChanged": 114,
+      "propertiesChanged": 63
+    }
+  },
+  {
     "id": "mqs6svua",
     "timestamp": "2026-06-24T14:47:09.106Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
