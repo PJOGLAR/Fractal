@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-06-22T17:08:16.562Z",
+  "takenAt": "2026-06-26T14:39:17.563Z",
   "fileKey": "htvGLaEUzJTF7QPd4LkGy0",
   "fileName": "Templates",
   "components": [
@@ -10,7 +10,7 @@
       "bindings": [
         {
           "property": "fills",
-          "variableId": "VariableID:0c851364ff25cc7232582c9b2019159908d3dd88/3319:219",
+          "variableId": "VariableID:0c851364ff25cc7232582c9b2019159908d3dd88/3958:122",
           "layerName": ".⛔️ Stories-template_story-carousel_progress-indicator"
         },
         {
@@ -59490,7 +59490,7 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:0c851364ff25cc7232582c9b2019159908d3dd88/3319:219",
+          "variableId": "VariableID:0c851364ff25cc7232582c9b2019159908d3dd88/3958:122",
           "layerName": ".⛔️ Stories-template_logo-onboarding"
         },
         {
@@ -61166,7 +61166,7 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:211c946f80090ddec6e17baa05bf115aa06db017/3319:355",
+          "variableId": "VariableID:211c946f80090ddec6e17baa05bf115aa06db017/3927:50",
           "layerName": "---> Button group"
         },
         {
@@ -61494,7 +61494,7 @@
         {
           "layerName": "Stories",
           "property": "__componentProps__",
-          "value": "👁️ Has actions#278:3,👁️ Has carousel indicator#123:0,👁️ Has close button#123:1,👁️ Has logo#278:0"
+          "value": "👁️ Has actions#278:3,👁️ Has carousel indicator#123:0,👁️ Has close button#123:1,👁️ Has logo#278:0,👁️ Has sound#2660:0"
         },
         {
           "layerName": "Stories",
@@ -61993,6 +61993,11 @@
         },
         {
           "layerName": "Header",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Header",
           "property": "layoutWrap",
           "value": "NO_WRAP"
         },
@@ -62298,6 +62303,11 @@
         },
         {
           "layerName": "Bottom header wrapper",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Bottom header wrapper",
           "property": "clipsContent",
           "value": false
         },
@@ -62369,7 +62379,7 @@
         {
           "layerName": "Logo wrapper",
           "property": "size.height",
-          "value": 28
+          "value": 30
         },
         {
           "layerName": "Logo wrapper",
@@ -62394,12 +62404,12 @@
         {
           "layerName": ".⛔️ Stories-template_logo-onboarding",
           "property": "size.width",
-          "value": 125
+          "value": 136
         },
         {
           "layerName": ".⛔️ Stories-template_logo-onboarding",
           "property": "size.height",
-          "value": 28
+          "value": 30
         },
         {
           "layerName": ".⛔️ Stories-template_logo-onboarding",
@@ -64640,7 +64650,7 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:0c851364ff25cc7232582c9b2019159908d3dd88/3319:219",
+          "variableId": "VariableID:0c851364ff25cc7232582c9b2019159908d3dd88/3958:122",
           "layerName": "Story-item"
         },
         {
@@ -68136,7 +68146,7 @@
       "bindings": [
         {
           "property": "fills",
-          "variableId": "VariableID:0c851364ff25cc7232582c9b2019159908d3dd88/3319:219",
+          "variableId": "VariableID:0c851364ff25cc7232582c9b2019159908d3dd88/3958:122",
           "layerName": "Splash"
         }
       ],
@@ -72934,12 +72944,12 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:926ef8d6772ba75c8a136d8ed35af157c7a93eaf/3893:65",
+          "variableId": "VariableID:926ef8d6772ba75c8a136d8ed35af157c7a93eaf/4033:489",
           "layerName": "Type=success"
         },
         {
           "property": "fills",
-          "variableId": "VariableID:e512556a11a8479049a06c9b51c0e44b52e8ff61/3771:65",
+          "variableId": "VariableID:e512556a11a8479049a06c9b51c0e44b52e8ff61/4033:422",
           "layerName": "Type=success"
         },
         {
@@ -73514,12 +73524,12 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:258745ce3837fa2dec77b53a7d5980ca3ba77835/3771:49",
+          "variableId": "VariableID:258745ce3837fa2dec77b53a7d5980ca3ba77835/4033:406",
           "layerName": "Type=error"
         },
         {
           "property": "fills",
-          "variableId": "VariableID:926ef8d6772ba75c8a136d8ed35af157c7a93eaf/3893:65",
+          "variableId": "VariableID:926ef8d6772ba75c8a136d8ed35af157c7a93eaf/4033:489",
           "layerName": "Type=error"
         },
         {
@@ -74079,12 +74089,12 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:6c193786fff69d4a0cdc2cb2fedfa104ddea9d2f/3771:34",
+          "variableId": "VariableID:6c193786fff69d4a0cdc2cb2fedfa104ddea9d2f/4033:391",
           "layerName": "Type=warning"
         },
         {
           "property": "fills",
-          "variableId": "VariableID:926ef8d6772ba75c8a136d8ed35af157c7a93eaf/3893:65",
+          "variableId": "VariableID:926ef8d6772ba75c8a136d8ed35af157c7a93eaf/4033:489",
           "layerName": "Type=warning"
         },
         {
@@ -74644,12 +74654,12 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:4e1ba798904e1183b36620539c65fb989f56e37b/3893:63",
+          "variableId": "VariableID:4e1ba798904e1183b36620539c65fb989f56e37b/4033:491",
           "layerName": "Type=pending"
         },
         {
           "property": "fills",
-          "variableId": "VariableID:926ef8d6772ba75c8a136d8ed35af157c7a93eaf/3893:65",
+          "variableId": "VariableID:926ef8d6772ba75c8a136d8ed35af157c7a93eaf/4033:489",
           "layerName": "Type=pending"
         },
         {
@@ -86123,12 +86133,12 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:926ef8d6772ba75c8a136d8ed35af157c7a93eaf/3893:65",
+          "variableId": "VariableID:926ef8d6772ba75c8a136d8ed35af157c7a93eaf/4033:489",
           "layerName": "Type=success"
         },
         {
           "property": "fills",
-          "variableId": "VariableID:e512556a11a8479049a06c9b51c0e44b52e8ff61/3771:65",
+          "variableId": "VariableID:e512556a11a8479049a06c9b51c0e44b52e8ff61/4033:422",
           "layerName": "Type=success"
         },
         {
@@ -89542,12 +89552,12 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:258745ce3837fa2dec77b53a7d5980ca3ba77835/3771:49",
+          "variableId": "VariableID:258745ce3837fa2dec77b53a7d5980ca3ba77835/4033:406",
           "layerName": "Type=error"
         },
         {
           "property": "fills",
-          "variableId": "VariableID:926ef8d6772ba75c8a136d8ed35af157c7a93eaf/3893:65",
+          "variableId": "VariableID:926ef8d6772ba75c8a136d8ed35af157c7a93eaf/4033:489",
           "layerName": "Type=error"
         },
         {
@@ -92781,12 +92791,12 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:6c193786fff69d4a0cdc2cb2fedfa104ddea9d2f/3771:34",
+          "variableId": "VariableID:6c193786fff69d4a0cdc2cb2fedfa104ddea9d2f/4033:391",
           "layerName": "Type=warning"
         },
         {
           "property": "fills",
-          "variableId": "VariableID:926ef8d6772ba75c8a136d8ed35af157c7a93eaf/3893:65",
+          "variableId": "VariableID:926ef8d6772ba75c8a136d8ed35af157c7a93eaf/4033:489",
           "layerName": "Type=warning"
         },
         {
@@ -96020,12 +96030,12 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:4e1ba798904e1183b36620539c65fb989f56e37b/3893:63",
+          "variableId": "VariableID:4e1ba798904e1183b36620539c65fb989f56e37b/4033:491",
           "layerName": "Type=pending"
         },
         {
           "property": "fills",
-          "variableId": "VariableID:926ef8d6772ba75c8a136d8ed35af157c7a93eaf/3893:65",
+          "variableId": "VariableID:926ef8d6772ba75c8a136d8ed35af157c7a93eaf/4033:489",
           "layerName": "Type=pending"
         },
         {
@@ -99778,7 +99788,7 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/3954:100",
+          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
           "layerName": "Type=detail"
         },
         {
@@ -100078,12 +100088,12 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:d1069de461dc5de5bf55741f5eb6fa93a3a74a1b/3954:101",
+          "variableId": "VariableID:d1069de461dc5de5bf55741f5eb6fa93a3a74a1b/4033:375",
           "layerName": "Data"
         },
         {
           "property": "fills",
-          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/3954:100",
+          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
           "layerName": "Data"
         },
         {
@@ -106387,7 +106397,7 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/3954:100",
+          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
           "layerName": "Type=detail"
         },
         {
@@ -106687,12 +106697,12 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:d1069de461dc5de5bf55741f5eb6fa93a3a74a1b/3954:101",
+          "variableId": "VariableID:d1069de461dc5de5bf55741f5eb6fa93a3a74a1b/4033:375",
           "layerName": "Data"
         },
         {
           "property": "fills",
-          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/3954:100",
+          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
           "layerName": "Data"
         },
         {
@@ -116687,6 +116697,6 @@
   "stats": {
     "totalComponents": 84,
     "totalBindings": 5384,
-    "totalProperties": 17802
+    "totalProperties": 17804
   }
 }
