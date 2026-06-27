@@ -1,5 +1,137 @@
 [
   {
+    "id": "mqwfdeei",
+    "timestamp": "2026-06-27T13:58:07.914Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "19 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "property_changed",
+        "component": ".⛔️ Card_footer",
+        "nodeId": "15254:3150",
+        "details": "---> Divider.size.width: 360 → 328"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=button group",
+        "nodeId": "15254:3155",
+        "details": "---> Divider.size.width: 360 → 328"
+      },
+      {
+        "type": "property_changed",
+        "component": "Button-group",
+        "nodeId": "5679:3525",
+        "details": "Button-group.size.height: 372 → 368"
+      },
+      {
+        "type": "property_changed",
+        "component": "Button-group",
+        "nodeId": "5679:3525",
+        "details": "Behavior=fixed.size.height: 150 → 148"
+      },
+      {
+        "type": "property_changed",
+        "component": "Button-group",
+        "nodeId": "5679:3525",
+        "details": "Background.size.height: 150 → 148"
+      },
+      {
+        "type": "property_changed",
+        "component": "Button-group",
+        "nodeId": "5679:3525",
+        "details": "Behavior=scrolling.size.height: 150 → 148"
+      },
+      {
+        "type": "property_changed",
+        "component": "Behavior=fixed",
+        "nodeId": "5341:14243",
+        "details": "Behavior=fixed.size.height: 150 → 148"
+      },
+      {
+        "type": "property_changed",
+        "component": "Behavior=fixed",
+        "nodeId": "5341:14243",
+        "details": "Background.size.height: 150 → 148"
+      },
+      {
+        "type": "property_changed",
+        "component": "Behavior=scrolling",
+        "nodeId": "5679:3526",
+        "details": "Behavior=scrolling.size.height: 150 → 148"
+      },
+      {
+        "type": "property_changed",
+        "component": "Behavior=scrolling",
+        "nodeId": "5679:3526",
+        "details": "Background.size.height: 150 → 148"
+      },
+      {
+        "type": "property_changed",
+        "component": "Layout=scrollable, State=default",
+        "nodeId": "35:3422",
+        "details": "Button-group.size.height: 150 → 148"
+      },
+      {
+        "type": "property_changed",
+        "component": "Layout=scrollable, State=default",
+        "nodeId": "35:3422",
+        "details": "Background.size.height: 150 → 148"
+      },
+      {
+        "type": "property_changed",
+        "component": "Pop-up",
+        "nodeId": "11360:7300",
+        "details": "---> Divider.size.width: 360 → 320"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=illustration, Content=offset",
+        "nodeId": "11360:7301",
+        "details": "---> Divider.size.width: 360 → 328"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=illustration, Content=balanced",
+        "nodeId": "11360:7313",
+        "details": "---> Divider.size.width: 360 → 320"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=image, Content=balanced",
+        "nodeId": "11360:7322",
+        "details": "---> Divider.size.width: 360 → 320"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "---> Divider.size.width: 360 → 320"
+      },
+      {
+        "type": "property_changed",
+        "component": "Pop-up_fullscreen",
+        "nodeId": "11360:7337",
+        "details": "---> Divider.size.width: 360 → 320"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=pop up",
+        "nodeId": "11360:7345",
+        "details": "---> Divider.size.width: 360 → 320"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 19
+    }
+  },
+  {
     "id": "mqv1ekkw",
     "timestamp": "2026-06-26T14:39:21.776Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
