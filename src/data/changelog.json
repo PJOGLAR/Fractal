@@ -1,5 +1,125 @@
 [
   {
+    "id": "mqzemi8w",
+    "timestamp": "2026-06-29T16:00:31.712Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "15 renombrados, 1 tokens nuevos, 1 tokens eliminados",
+    "changes": [
+      {
+        "type": "component_renamed",
+        "component": "Infinite",
+        "nodeId": "2966:282",
+        "details": " Infinite → Infinite"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Assistant",
+        "nodeId": "2144:463",
+        "details": " Assistant → Assistant"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Card-reload",
+        "nodeId": "2171:280",
+        "details": "card-reload → Card-reload"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Discount",
+        "nodeId": "2171:272",
+        "details": "Discond → Discount"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Benefits",
+        "nodeId": "2144:464",
+        "details": "Benefist → Benefits"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Benefits-fill",
+        "nodeId": "2370:521",
+        "details": "Benefist-fill → Benefits-fill"
+      },
+      {
+        "type": "component_renamed",
+        "component": "More-actions",
+        "nodeId": "1334:971",
+        "details": "More-acctions → More-actions"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Tickets",
+        "nodeId": "2047:626",
+        "details": "Tikets → Tickets"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Accessories",
+        "nodeId": "2047:635",
+        "details": "Accesories → Accessories"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Coffee",
+        "nodeId": "2047:639",
+        "details": "Coffe → Coffee"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Language",
+        "nodeId": "2524:243",
+        "details": "Languaje → Language"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Badge-level-picto",
+        "nodeId": "1417:62",
+        "details": "Badge-level_picto → Badge-level-picto"
+      },
+      {
+        "type": "binding_added",
+        "component": "Badge-level-picto",
+        "nodeId": "1417:62",
+        "details": "Badge-level-picto.strokes → static/border/brand/primary"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Badge-level_picto",
+        "nodeId": "1417:62",
+        "details": "Badge-level_picto.strokes (era: static/border/brand/primary)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Information-not-available",
+        "nodeId": "1600:115",
+        "details": "Information-not-avaiable → Information-not-available"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Cellphone-pomotion → Cellphone-promotion"
+      },
+      {
+        "type": "component_renamed",
+        "component": "QR-waiting",
+        "nodeId": "2883:326",
+        "details": "Qr-waiting → QR-waiting"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "bindingsAdded": 1,
+      "bindingsRemoved": 1,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
     "id": "mqwfdeei",
     "timestamp": "2026-06-27T13:58:07.914Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
