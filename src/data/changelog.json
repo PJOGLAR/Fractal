@@ -1,5 +1,983 @@
 [
   {
+    "id": "mr2715wl",
+    "timestamp": "2026-07-01T14:51:17.157Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "3 componentes nuevos, 2 renombrados, 61 tokens nuevos, 52 tokens eliminados, 2 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Warning",
+        "nodeId": "3483:512",
+        "details": "Warning (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Installments",
+        "nodeId": "3512:333",
+        "details": "Installments (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Subscriptions-box",
+        "nodeId": "3469:148",
+        "details": "Subscriptions-box (COMPONENT)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector17.fills → 040/4033:380"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector16.fills → 997/4033:358"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector16.strokes → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector15.fills → 997/4033:358"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector15.strokes → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector14.fills → 997/4033:358"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector14.strokes → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector13.fills → 997/4033:358"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector13.strokes → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector12.strokes → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector11.strokes → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector10.strokes → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector09.strokes → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector08.strokes → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector07.strokes → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector06.strokes → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector05.strokes → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector04.strokes → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector03.strokes → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector02.strokes → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector01.fills → 997/4033:358"
+      },
+      {
+        "type": "binding_added",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector01.strokes → 521/4033:372"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector 1338.fills (era: 040/4033:380)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector 1330.fills (era: 997/4033:358)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector 1330.strokes (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Ellipse 1545.fills (era: 997/4033:358)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Ellipse 1545.strokes (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Ellipse 1546.fills (era: 997/4033:358)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Ellipse 1546.strokes (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Ellipse 1548.fills (era: 997/4033:358)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Ellipse 1548.strokes (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector 1331.strokes (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector 1332.strokes (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector 1333.strokes (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector 1334.strokes (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector 1342.strokes (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector 1343.strokes (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector 1344.strokes (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector 1345.strokes (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector 1335.strokes (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector 1336.strokes (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Vector 1337.strokes (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Ellipse 1547.fills (era: 997/4033:358)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Graphic",
+        "nodeId": "3299:400",
+        "details": "Ellipse 1547.strokes (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Light-key-off",
+        "nodeId": "3299:391",
+        "details": "Vector.strokes → 521/4033:372"
+      },
+      {
+        "type": "property_changed",
+        "component": "Light-key-off",
+        "nodeId": "3299:391",
+        "details": "Vector.stroke[0].color: #002850 → #052C50"
+      },
+      {
+        "type": "binding_added",
+        "component": "Light-key-on",
+        "nodeId": "3299:392",
+        "details": "Vector.strokes → 521/4033:372"
+      },
+      {
+        "type": "property_changed",
+        "component": "Light-key-on",
+        "nodeId": "3299:392",
+        "details": "Vector.stroke[0].color: #002850 → #052C50"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Entretaiment → Subscriptions-play"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector19.fills → 040/4033:380"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector18.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector17.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector16.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector15.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector14.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector13.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector12.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector11.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector10.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector09.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector08.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector07.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector06.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector05.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector04.fills → 997/4033:358"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector03.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector02.fills → 040/4033:380"
+      },
+      {
+        "type": "binding_added",
+        "component": "Subscriptions-play",
+        "nodeId": "3461:40",
+        "details": "Vector01.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector.fills (era: 040/4033:380)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector (Stroke).fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4157.fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4158.fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4168.fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4169.fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4161.fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4170.fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4174.fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4175.fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4171.fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4172.fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4172 (Stroke).fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4173.fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4173 (Stroke).fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4166.fills (era: 997/4033:358)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4166 (Stroke).fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4167.fills (era: 040/4033:380)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Entretaiment",
+        "nodeId": "3461:40",
+        "details": "Vector 4167 (Stroke).fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector11.fills → 997/4033:358"
+      },
+      {
+        "type": "binding_added",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector10.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector09.fills → 040/4033:380"
+      },
+      {
+        "type": "binding_added",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector08.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector07.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector06.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector05.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector04.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector03.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector02.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector01.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector.fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector (Stroke).fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector 4114.fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector 4114 (Stroke).fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector 4117 (Stroke).fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector 4118 (Stroke).fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Megaphone",
+        "nodeId": "3461:39",
+        "details": "Vector 4119 (Stroke).fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Timer",
+        "nodeId": "3461:38",
+        "details": "Vector08.fills → 997/4033:358"
+      },
+      {
+        "type": "binding_added",
+        "component": "Timer",
+        "nodeId": "3461:38",
+        "details": "Vector07.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Timer",
+        "nodeId": "3461:38",
+        "details": "Vector06.fills → 040/4033:380"
+      },
+      {
+        "type": "binding_added",
+        "component": "Timer",
+        "nodeId": "3461:38",
+        "details": "Vector05.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Timer",
+        "nodeId": "3461:38",
+        "details": "Vector03.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Timer",
+        "nodeId": "3461:38",
+        "details": "Vector02.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_added",
+        "component": "Timer",
+        "nodeId": "3461:38",
+        "details": "Vector01.fills → 521/4033:372"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Timer",
+        "nodeId": "3461:38",
+        "details": "Vector 4115.fills (era: 997/4033:358)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Timer",
+        "nodeId": "3461:38",
+        "details": "Vector 4115 (Stroke).fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Timer",
+        "nodeId": "3461:38",
+        "details": "Vector.fills (era: 521/4033:372)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Timer",
+        "nodeId": "3461:38",
+        "details": "Vector (Stroke).fills (era: 521/4033:372)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Burger-king",
+        "nodeId": "2319:875",
+        "details": "Buger-king → Burger-king"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 3,
+      "componentsRemoved": 0,
+      "bindingsAdded": 61,
+      "bindingsRemoved": 52,
+      "bindingsChanged": 0,
+      "propertiesChanged": 2
+    }
+  },
+  {
+    "id": "mr2710g6",
+    "timestamp": "2026-07-01T14:51:10.086Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "5 componentes nuevos, 26 tokens nuevos, 2 tokens cambiados, 4 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "State=loading, Horizontal padding=xs",
+        "nodeId": "19599:5888",
+        "details": "State=loading, Horizontal padding=xs (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "State=loading, Horizontal padding=sm",
+        "nodeId": "19599:5891",
+        "details": "State=loading, Horizontal padding=sm (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "State=loading, Horizontal padding=md",
+        "nodeId": "19599:5894",
+        "details": "State=loading, Horizontal padding=md (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "State=loading, Horizontal padding=lg",
+        "nodeId": "19599:5897",
+        "details": "State=loading, Horizontal padding=lg (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "State=loading",
+        "nodeId": "19594:3583",
+        "details": "State=loading (COMPONENT)"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "Label.fills: interactive/foreground/brand/primary/default/medium → interactive/foreground/neutral/disabled/bold"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "Vector.fills: interactive/foreground/brand/primary/default/medium → interactive/foreground/neutral/disabled/bold"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=xs.itemSpacing → gap/gap-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=xs.paddingLeft → padding/padding-50"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=xs.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=xs.paddingRight → padding/padding-50"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=xs.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=sm.itemSpacing → gap/gap-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=sm.paddingLeft → padding/padding-200"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=sm.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=sm.paddingRight → padding/padding-200"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=sm.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=md.itemSpacing → gap/gap-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=md.paddingLeft → padding/padding-300"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=md.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=md.paddingRight → padding/padding-300"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=md.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=lg.itemSpacing → gap/gap-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=lg.paddingLeft → padding/padding-400"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=lg.paddingTop → vertical-padding"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=lg.paddingRight → padding/padding-400"
+      },
+      {
+        "type": "binding_added",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "State=loading, Horizontal padding=lg.paddingBottom → vertical-padding"
+      },
+      {
+        "type": "property_changed",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "Button-row.size.height: 392 → 468"
+      },
+      {
+        "type": "property_changed",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "Label.fill[0].color: #5A50F9 → #404040"
+      },
+      {
+        "type": "property_changed",
+        "component": "Button-row",
+        "nodeId": "9797:8392",
+        "details": "Vector.fill[0].color: #5A50F9 → #404040"
+      },
+      {
+        "type": "binding_added",
+        "component": "Currency-converter",
+        "nodeId": "4627:224",
+        "details": "State=loading.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Currency-converter",
+        "nodeId": "4627:224",
+        "details": "State=loading.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Currency-converter",
+        "nodeId": "4627:224",
+        "details": "State=loading.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Currency-converter",
+        "nodeId": "4627:224",
+        "details": "State=loading.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Currency-converter",
+        "nodeId": "4627:224",
+        "details": "State=loading.paddingBottom → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Currency-converter",
+        "nodeId": "4627:224",
+        "details": "Skeleton-component.fills → static/background/brand/primary/quiet"
+      },
+      {
+        "type": "property_changed",
+        "component": "Currency-converter",
+        "nodeId": "4627:224",
+        "details": "Currency-converter.size.height: 804 → 906"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 5,
+      "componentsRemoved": 0,
+      "bindingsAdded": 26,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 2,
+      "propertiesChanged": 4
+    }
+  },
+  {
     "id": "mr0qzck7",
     "timestamp": "2026-06-30T14:34:12.439Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
