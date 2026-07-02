@@ -1,5 +1,1169 @@
 [
   {
+    "id": "mr3ldhw3",
+    "timestamp": "2026-07-02T14:20:33.363Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "4 componentes nuevos, 2 eliminados",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Installments",
+        "nodeId": "3528:200",
+        "details": "Installments (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Self-account",
+        "nodeId": "3548:182",
+        "details": "Self-account (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Dia",
+        "nodeId": "3520:145",
+        "details": "Dia (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Whatsapp",
+        "nodeId": "3535:154",
+        "details": "Whatsapp (COMPONENT)"
+      },
+      {
+        "type": "component_removed",
+        "component": "Installments",
+        "nodeId": "3512:333",
+        "details": "Installments"
+      },
+      {
+        "type": "component_removed",
+        "component": "Dia",
+        "nodeId": "456:713",
+        "details": "Dia"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 4,
+      "componentsRemoved": 2,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
+    "id": "mr3ldf1n",
+    "timestamp": "2026-07-02T14:20:29.676Z",
+    "fileKey": "htvGLaEUzJTF7QPd4LkGy0",
+    "fileName": "Templates",
+    "fileLabel": "templates",
+    "summary": "5 tokens nuevos, 5 tokens eliminados, 5 tokens cambiados",
+    "changes": [
+      {
+        "type": "binding_added",
+        "component": "Stories",
+        "nodeId": "1:1016",
+        "details": "Button-toggle.itemSpacing → gap/gap-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Stories",
+        "nodeId": "1:1016",
+        "details": "Button-toggle.paddingLeft → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Stories",
+        "nodeId": "1:1016",
+        "details": "Button-toggle.paddingTop → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Stories",
+        "nodeId": "1:1016",
+        "details": "Button-toggle.paddingRight → padding/padding-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Stories",
+        "nodeId": "1:1016",
+        "details": "Button-toggle.paddingBottom → padding/padding-100"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Stories",
+        "nodeId": "1:1016",
+        "details": "⛔️ Button-toggle.itemSpacing (era: gap/gap-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Stories",
+        "nodeId": "1:1016",
+        "details": "⛔️ Button-toggle.paddingLeft (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Stories",
+        "nodeId": "1:1016",
+        "details": "⛔️ Button-toggle.paddingTop (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Stories",
+        "nodeId": "1:1016",
+        "details": "⛔️ Button-toggle.paddingRight (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Stories",
+        "nodeId": "1:1016",
+        "details": "⛔️ Button-toggle.paddingBottom (era: padding/padding-100)"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Feedback-screen",
+        "nodeId": "1377:611",
+        "details": "Vector.fills: d521/3563:62 → 521/4033:372"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=success",
+        "nodeId": "561:2764",
+        "details": "Vector.fills: f9b3/3563:51 → 9b3/4033:361"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=error",
+        "nodeId": "1377:612",
+        "details": "Vector.fills: ad56/3563:50 → d56/4033:356"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=warning",
+        "nodeId": "1377:720",
+        "details": "Vector.fills: 720d6/3563:4 → 0d6/4033:357"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=pending",
+        "nodeId": "1377:774",
+        "details": "Vector.fills: d521/3563:62 → 521/4033:372"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "bindingsAdded": 5,
+      "bindingsRemoved": 5,
+      "bindingsChanged": 5,
+      "propertiesChanged": 0
+    }
+  },
+  {
+    "id": "mr3ldc55",
+    "timestamp": "2026-07-02T14:20:25.913Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 componentes nuevos, 3 renombrados, 90 tokens nuevos, 38 tokens eliminados, 20 tokens cambiados, 12 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Type=alert",
+        "nodeId": "19689:2917",
+        "details": "Type=alert (COMPONENT)"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Accordion",
+        "nodeId": "10102:74",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=false",
+        "nodeId": "10102:115",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=none, Selected=true",
+        "nodeId": "10102:479",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=sm, Selected=true",
+        "nodeId": "10102:486",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=md, Selected=true",
+        "nodeId": "10102:493",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=default, Behavior=collapsed, Horizontal padding=lg, Selected=true",
+        "nodeId": "10102:500",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=pesos.itemSpacing → gap/gap-400"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=pesos.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=pesos.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=pesos.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=pesos.paddingBottom → padding/padding-0"
+      },
+      {
+        "type": "binding_changed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=dollars.itemSpacing → gap/gap-400"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=dollars.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=dollars.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=dollars.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=dollars.paddingBottom → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=alert.itemSpacing → gap/gap-400"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=alert.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=alert.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=alert.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=alert.paddingBottom → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Alert.itemSpacing → gap/gap-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Alert.paddingLeft → padding/padding-400"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Alert.paddingTop → padding/padding-300"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Alert.paddingRight → padding/padding-400"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Alert.paddingBottom → padding/padding-300"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Content wrapper.itemSpacing → gap/gap-50"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Title.fills → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Title.lineHeight → body/sm/semibold/line-height"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Title.letterSpacing → body/sm/semibold/letter-spacing"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Title.fontWeight → body/sm/semibold/font-weight"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Title.fontFamily → body/sm/semibold/font-family"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Title.fontSize → body/sm/semibold/font-size"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Use this message to communicate the result of an action to the user..fills → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Use this message to communicate the result of an action to the user..lineHeight → body/sm/regular/line-height"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Use this message to communicate the result of an action to the user..letterSpacing → body/sm/regular/letter-spacing"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Use this message to communicate the result of an action to the user..fontWeight → body/sm/regular/font-weight"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Use this message to communicate the result of an action to the user..fontFamily → body/sm/regular/font-family"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Use this message to communicate the result of an action to the user..fontSize → body/sm/regular/font-size"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Button.itemSpacing → gap/gap-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Button.paddingLeft → gap/gap-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Button.paddingTop → gap/gap-50"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Button.paddingRight → gap/gap-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Button.paddingBottom → gap/gap-50"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Action.itemSpacing → space/2,5x"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Action.paddingLeft → space/0x"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Action.paddingTop → space/0x"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Action.paddingRight → space/0x"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Action.paddingBottom → space/0x"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Badge.fills → static/background/feedback/error/bold"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Badge.strokes → static/border/neutral/quiet"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=guaranis.itemSpacing → gap/gap-400"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=guaranis.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=guaranis.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=guaranis.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Type=guaranis.paddingBottom → padding/padding-0"
+      },
+      {
+        "type": "binding_removed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Currency=pesos.itemSpacing (era: gap/gap-400)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Currency=pesos.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Currency=pesos.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Currency=pesos.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Currency=pesos.paddingBottom (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Currency=dollars.itemSpacing (era: gap/gap-400)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Currency=dollars.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Currency=dollars.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Currency=dollars.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Currency=dollars.paddingBottom (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Currency=guaranis.itemSpacing (era: gap/gap-400)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Currency=guaranis.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Currency=guaranis.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Currency=guaranis.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "Currency=guaranis.paddingBottom (era: padding/padding-0)"
+      },
+      {
+        "type": "property_changed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "⛔️ Card_content_currency.size.height: 538 → 718"
+      },
+      {
+        "type": "property_changed",
+        "component": "⛔️ Card_content_currency",
+        "nodeId": "15254:3157",
+        "details": "⛔️ Card_content_currency.__componentProps__: Currency,✏️ Amount#14373:0,✏️ Cents#14373:4,👁️ Has description#14373:12,👁️ Has headline#14373:8,👁️ Has shortcuts#14144:0 → Type,✏️ Amount#14373:0,✏️ Cents#14373:4,👁️ Has description#14373:12,👁️ Has headline#14373:8,👁️ Has shortcuts#14144:0"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Type=pesos",
+        "nodeId": "15254:3158",
+        "details": "Currency=pesos → Type=pesos"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=pesos",
+        "nodeId": "15254:3158",
+        "details": "Type=pesos.itemSpacing → gap/gap-400"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=pesos",
+        "nodeId": "15254:3158",
+        "details": "Type=pesos.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=pesos",
+        "nodeId": "15254:3158",
+        "details": "Type=pesos.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=pesos",
+        "nodeId": "15254:3158",
+        "details": "Type=pesos.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=pesos",
+        "nodeId": "15254:3158",
+        "details": "Type=pesos.paddingBottom → padding/padding-0"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=pesos",
+        "nodeId": "15254:3158",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Currency=pesos",
+        "nodeId": "15254:3158",
+        "details": "Currency=pesos.itemSpacing (era: gap/gap-400)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Currency=pesos",
+        "nodeId": "15254:3158",
+        "details": "Currency=pesos.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Currency=pesos",
+        "nodeId": "15254:3158",
+        "details": "Currency=pesos.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Currency=pesos",
+        "nodeId": "15254:3158",
+        "details": "Currency=pesos.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Currency=pesos",
+        "nodeId": "15254:3158",
+        "details": "Currency=pesos.paddingBottom (era: padding/padding-0)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Type=dollars",
+        "nodeId": "15254:3170",
+        "details": "Currency=dollars → Type=dollars"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=dollars",
+        "nodeId": "15254:3170",
+        "details": "Type=dollars.itemSpacing → gap/gap-400"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=dollars",
+        "nodeId": "15254:3170",
+        "details": "Type=dollars.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=dollars",
+        "nodeId": "15254:3170",
+        "details": "Type=dollars.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=dollars",
+        "nodeId": "15254:3170",
+        "details": "Type=dollars.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=dollars",
+        "nodeId": "15254:3170",
+        "details": "Type=dollars.paddingBottom → padding/padding-0"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=dollars",
+        "nodeId": "15254:3170",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Currency=dollars",
+        "nodeId": "15254:3170",
+        "details": "Currency=dollars.itemSpacing (era: gap/gap-400)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Currency=dollars",
+        "nodeId": "15254:3170",
+        "details": "Currency=dollars.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Currency=dollars",
+        "nodeId": "15254:3170",
+        "details": "Currency=dollars.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Currency=dollars",
+        "nodeId": "15254:3170",
+        "details": "Currency=dollars.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Currency=dollars",
+        "nodeId": "15254:3170",
+        "details": "Currency=dollars.paddingBottom (era: padding/padding-0)"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Type=guaranis",
+        "nodeId": "15254:3182",
+        "details": "Currency=guaranis → Type=guaranis"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=guaranis",
+        "nodeId": "15254:3182",
+        "details": "Type=guaranis.itemSpacing → gap/gap-400"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=guaranis",
+        "nodeId": "15254:3182",
+        "details": "Type=guaranis.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=guaranis",
+        "nodeId": "15254:3182",
+        "details": "Type=guaranis.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=guaranis",
+        "nodeId": "15254:3182",
+        "details": "Type=guaranis.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=guaranis",
+        "nodeId": "15254:3182",
+        "details": "Type=guaranis.paddingBottom → padding/padding-0"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=guaranis",
+        "nodeId": "15254:3182",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Currency=guaranis",
+        "nodeId": "15254:3182",
+        "details": "Currency=guaranis.itemSpacing (era: gap/gap-400)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Currency=guaranis",
+        "nodeId": "15254:3182",
+        "details": "Currency=guaranis.paddingLeft (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Currency=guaranis",
+        "nodeId": "15254:3182",
+        "details": "Currency=guaranis.paddingTop (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Currency=guaranis",
+        "nodeId": "15254:3182",
+        "details": "Currency=guaranis.paddingRight (era: padding/padding-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Currency=guaranis",
+        "nodeId": "15254:3182",
+        "details": "Currency=guaranis.paddingBottom (era: padding/padding-0)"
+      },
+      {
+        "type": "property_changed",
+        "component": ".⛔️Card-amount_content",
+        "nodeId": "17532:6963",
+        "details": "Number.size.width: 240 → 201"
+      },
+      {
+        "type": "property_changed",
+        "component": ".⛔️Card-amount_content",
+        "nodeId": "17532:6963",
+        "details": "Currency.characters: USD → $"
+      },
+      {
+        "type": "property_changed",
+        "component": ".⛔️Card-amount_content",
+        "nodeId": "17532:6963",
+        "details": "Currency.size.width: 53 → 14"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=default",
+        "nodeId": "17532:6964",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=default",
+        "nodeId": "17532:6964",
+        "details": "Number.size.width: 240 → 201"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=default",
+        "nodeId": "17532:6964",
+        "details": "Currency.characters: USD → $"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=default",
+        "nodeId": "17532:6964",
+        "details": "Currency.size.width: 53 → 14"
+      },
+      {
+        "type": "binding_changed",
+        "component": ".⛔️Card-amount_content_balance",
+        "nodeId": "17532:6999",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Currency=pesos",
+        "nodeId": "17532:7000",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Currency=guaranis",
+        "nodeId": "17532:7009",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Currency=dollars",
+        "nodeId": "17532:7017",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Item=chevron",
+        "nodeId": "8291:1754",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=default",
+        "nodeId": "4248:904",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=hover",
+        "nodeId": "4248:911",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=focus",
+        "nodeId": "4248:918",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_changed",
+        "component": "State=filled",
+        "nodeId": "4248:925",
+        "details": "Vector.fills: static/foreground/neutral/primary/medium → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_added",
+        "component": "Pop-up",
+        "nodeId": "11360:7300",
+        "details": "Type=image, Content=offset.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Pop-up",
+        "nodeId": "11360:7300",
+        "details": "Button-icon.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Pop-up",
+        "nodeId": "11360:7300",
+        "details": "Content wrapper.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Pop-up",
+        "nodeId": "11360:7300",
+        "details": "Content wrapper.paddingTop → 86b1/3927:37"
+      },
+      {
+        "type": "binding_added",
+        "component": "Pop-up",
+        "nodeId": "11360:7300",
+        "details": "Content wrapper.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Pop-up",
+        "nodeId": "11360:7300",
+        "details": "Content wrapper.paddingBottom → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Pop-up",
+        "nodeId": "11360:7300",
+        "details": "Content wrapper.fills → static/background/neutral/quiet"
+      },
+      {
+        "type": "binding_added",
+        "component": "Pop-up",
+        "nodeId": "11360:7300",
+        "details": "Content wrapper.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Pop-up",
+        "nodeId": "11360:7300",
+        "details": "Type=image, Content=offset.effects (era: 70ba/4146:95)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Pop-up",
+        "nodeId": "11360:7300",
+        "details": "Divider.size.width: 360 → 320"
+      },
+      {
+        "type": "property_changed",
+        "component": "Pop-up",
+        "nodeId": "11360:7300",
+        "details": "Type=image, Content=offset.size.height: 290 → 284"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Type=image, Content=offset.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Button-icon.itemSpacing → gap/gap-100"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Button-icon.paddingLeft → padding/padding-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Button-icon.paddingTop → padding/padding-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Button-icon.paddingRight → padding/padding-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Button-icon.paddingBottom → padding/padding-150"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Button-icon.fills → interactive/background/neutral/default/quiet"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Button-icon.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Vector.fills → interactive/foreground/brand/primary/default/medium"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Badge.fills → static/background/feedback/error/bold"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Badge.strokes → static/border/neutral/quiet"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Content wrapper.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Content wrapper.paddingTop → 86b1/3927:37"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Content wrapper.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Content wrapper.paddingBottom → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Content wrapper.fills → static/background/neutral/quiet"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Content wrapper.effects → 70ba/4146:95"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Type=image, Content=offset.effects (era: 70ba/4146:95)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Label.fills (era: interactive/foreground/neutral/default/strong)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Label.lineHeight (era: body/md/semibold/line-height)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Label.letterSpacing (era: body/md/semibold/letter-spacing)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Label.fontWeight (era: body/md/semibold/font-weight)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Label.fontFamily (era: body/md/semibold/font-family)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Label.fontSize (era: body/md/semibold/font-size)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Type=image, Content=offset.size.height: 290 → 284"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=image, Content=offset",
+        "nodeId": "11360:7330",
+        "details": "Divider.size.width: 360 → 320"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 1,
+      "componentsRemoved": 0,
+      "bindingsAdded": 90,
+      "bindingsRemoved": 38,
+      "bindingsChanged": 20,
+      "propertiesChanged": 12
+    }
+  },
+  {
     "id": "mr2715wl",
     "timestamp": "2026-07-01T14:51:17.157Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
