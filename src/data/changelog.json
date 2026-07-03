@@ -1,5 +1,101 @@
 [
   {
+    "id": "mr50ywm7",
+    "timestamp": "2026-07-03T14:24:52.639Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "1 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "property_changed",
+        "component": "Whatsapp",
+        "nodeId": "3535:154",
+        "details": "Whatsapp.size.width: 31 → 32"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 1
+    }
+  },
+  {
+    "id": "mr50yqfs",
+    "timestamp": "2026-07-03T14:24:44.632Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "9 eliminados",
+    "changes": [
+      {
+        "type": "component_removed",
+        "component": "Notification",
+        "nodeId": "10386:6786",
+        "details": "Notification"
+      },
+      {
+        "type": "component_removed",
+        "component": "State=default, Read=false",
+        "nodeId": "10386:6787",
+        "details": "State=default, Read=false"
+      },
+      {
+        "type": "component_removed",
+        "component": "State=default, Read=true",
+        "nodeId": "10386:6793",
+        "details": "State=default, Read=true"
+      },
+      {
+        "type": "component_removed",
+        "component": "State=hover, Read=false",
+        "nodeId": "10473:83",
+        "details": "State=hover, Read=false"
+      },
+      {
+        "type": "component_removed",
+        "component": "State=hover, Read=true",
+        "nodeId": "10473:128",
+        "details": "State=hover, Read=true"
+      },
+      {
+        "type": "component_removed",
+        "component": "State=pressed, Read=false",
+        "nodeId": "10473:119",
+        "details": "State=pressed, Read=false"
+      },
+      {
+        "type": "component_removed",
+        "component": "State=pressed, Read=true",
+        "nodeId": "10473:137",
+        "details": "State=pressed, Read=true"
+      },
+      {
+        "type": "component_removed",
+        "component": "State=focus, Read=false",
+        "nodeId": "10473:811",
+        "details": "State=focus, Read=false"
+      },
+      {
+        "type": "component_removed",
+        "component": "State=focus, Read=true",
+        "nodeId": "10473:821",
+        "details": "State=focus, Read=true"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 9,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
     "id": "mr3ldhw3",
     "timestamp": "2026-07-02T14:20:33.363Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
