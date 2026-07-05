@@ -64,11 +64,11 @@ const headers = { 'X-Figma-Token': FIGMA_TOKEN }
 
 function loadNameResolver(): Map<string, string> {
   const nameMap = new Map<string, string>()
-  const dataPath = join(process.cwd(), 'src', 'data', 'dashboard-data.json')
+  const dataPath = join(process.cwd(), 'src', 'data', 'component-data.json')
   
   if (!existsSync(dataPath)) {
-    console.log('  ⚠️  No se encontró dashboard-data.json — los nombres de variables no se van a resolver.')
-    console.log('     Corré el plugin extractor para generar el archivo.\n')
+    console.log('  ⚠️  No se encontró component-data.json — los nombres de variables no se van a resolver.')
+    console.log('     Corré el plugin DS Extractor para generar el archivo.\n')
     return nameMap
   }
 
