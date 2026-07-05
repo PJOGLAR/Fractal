@@ -1,5 +1,1085 @@
 [
   {
+    "id": "mr7ut59q",
+    "timestamp": "2026-07-05T13:55:44.750Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "86 tokens nuevos, 86 tokens eliminados, 5 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "binding_added",
+        "component": "⛔️ Card_content_progress-bar",
+        "nodeId": "15254:3201",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "⛔️ Card_content_progress-bar",
+        "nodeId": "15254:3201",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": ".⛔ Challenge-card_stepper",
+        "nodeId": "16108:2146",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": ".⛔ Challenge-card_stepper",
+        "nodeId": "16108:2146",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Progress-bar",
+        "nodeId": "6208:3921",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/feedback/success/bold"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Progress-bar",
+        "nodeId": "6208:3921",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/feedback/success/bold)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=10, Type=indeterminate",
+        "nodeId": "6208:4239",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=10, Type=indeterminate",
+        "nodeId": "6208:4239",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=10, Type=determinate",
+        "nodeId": "6208:4056",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=10, Type=determinate",
+        "nodeId": "6208:4056",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=10, Type=usage",
+        "nodeId": "6208:4179",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=10, Type=usage",
+        "nodeId": "6208:4179",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=10, Type=steps",
+        "nodeId": "6208:3922",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=10, Type=steps",
+        "nodeId": "6208:3922",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=20, Type=indeterminate",
+        "nodeId": "6208:4242",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=20, Type=indeterminate",
+        "nodeId": "6208:4242",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=20, Type=determinate",
+        "nodeId": "6208:4064",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=20, Type=determinate",
+        "nodeId": "6208:4064",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=20, Type=usage",
+        "nodeId": "6208:4185",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=20, Type=usage",
+        "nodeId": "6208:4185",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=20, Type=steps",
+        "nodeId": "6208:3926",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=20, Type=steps",
+        "nodeId": "6208:3926",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=30, Type=indeterminate",
+        "nodeId": "6208:4245",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=30, Type=indeterminate",
+        "nodeId": "6208:4245",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=30, Type=determinate",
+        "nodeId": "6208:4072",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=30, Type=determinate",
+        "nodeId": "6208:4072",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=30, Type=usage",
+        "nodeId": "6208:4191",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=30, Type=usage",
+        "nodeId": "6208:4191",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=30, Type=steps",
+        "nodeId": "6208:3932",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=30, Type=steps",
+        "nodeId": "6208:3932",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=40, Type=indeterminate",
+        "nodeId": "6208:4248",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=40, Type=indeterminate",
+        "nodeId": "6208:4248",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=40, Type=determinate",
+        "nodeId": "6208:4080",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=40, Type=determinate",
+        "nodeId": "6208:4080",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=40, Type=usage",
+        "nodeId": "6208:4197",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=40, Type=usage",
+        "nodeId": "6208:4197",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=40, Type=steps",
+        "nodeId": "6208:3940",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=40, Type=steps",
+        "nodeId": "6208:3940",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=50, Type=indeterminate",
+        "nodeId": "6208:4251",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=50, Type=indeterminate",
+        "nodeId": "6208:4251",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=50, Type=determinate",
+        "nodeId": "6208:4088",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=50, Type=determinate",
+        "nodeId": "6208:4088",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=50, Type=usage",
+        "nodeId": "6208:4203",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=50, Type=usage",
+        "nodeId": "6208:4203",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=50, Type=steps",
+        "nodeId": "6208:3950",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=50, Type=steps",
+        "nodeId": "6208:3950",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=60, Type=indeterminate",
+        "nodeId": "6208:4254",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=60, Type=indeterminate",
+        "nodeId": "6208:4254",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=60, Type=determinate",
+        "nodeId": "6208:4096",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=60, Type=determinate",
+        "nodeId": "6208:4096",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=60, Type=usage",
+        "nodeId": "6208:4209",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=60, Type=usage",
+        "nodeId": "6208:4209",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=60, Type=steps",
+        "nodeId": "6208:3962",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=60, Type=steps",
+        "nodeId": "6208:3962",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=70, Type=indeterminate",
+        "nodeId": "6208:4257",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=70, Type=indeterminate",
+        "nodeId": "6208:4257",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=70, Type=determinate",
+        "nodeId": "6208:4104",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=70, Type=determinate",
+        "nodeId": "6208:4104",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=70, Type=usage",
+        "nodeId": "6208:4215",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=70, Type=usage",
+        "nodeId": "6208:4215",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=70, Type=steps",
+        "nodeId": "6208:3976",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=70, Type=steps",
+        "nodeId": "6208:3976",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=80, Type=indeterminate",
+        "nodeId": "6208:4260",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=80, Type=indeterminate",
+        "nodeId": "6208:4260",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=80, Type=determinate",
+        "nodeId": "6208:4112",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=80, Type=determinate",
+        "nodeId": "6208:4112",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=80, Type=usage",
+        "nodeId": "6208:4221",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=80, Type=usage",
+        "nodeId": "6208:4221",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=80, Type=steps",
+        "nodeId": "6208:3992",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=80, Type=steps",
+        "nodeId": "6208:3992",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=90, Type=indeterminate",
+        "nodeId": "6208:4263",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=90, Type=indeterminate",
+        "nodeId": "6208:4263",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=90, Type=determinate",
+        "nodeId": "6208:4120",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=90, Type=determinate",
+        "nodeId": "6208:4120",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=90, Type=usage",
+        "nodeId": "6208:4227",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=90, Type=usage",
+        "nodeId": "6208:4227",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=90, Type=steps",
+        "nodeId": "6208:4010",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=90, Type=steps",
+        "nodeId": "6208:4010",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=100, Type=indeterminate",
+        "nodeId": "6208:4266",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=100, Type=indeterminate",
+        "nodeId": "6208:4266",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=100, Type=determinate",
+        "nodeId": "6208:4128",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=100, Type=determinate",
+        "nodeId": "6208:4128",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=100, Type=usage",
+        "nodeId": "6208:4233",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=100, Type=usage",
+        "nodeId": "6208:4233",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=4px, Stage=100, Type=steps",
+        "nodeId": "6208:4030",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/feedback/success/bold"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=4px, Stage=100, Type=steps",
+        "nodeId": "6208:4030",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/feedback/success/bold)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=10, Type=indeterminate",
+        "nodeId": "6208:4053",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=10, Type=indeterminate",
+        "nodeId": "6208:4053",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=10, Type=determinate",
+        "nodeId": "6208:4131",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=10, Type=determinate",
+        "nodeId": "6208:4131",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=10, Type=usage",
+        "nodeId": "6208:4182",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=10, Type=usage",
+        "nodeId": "6208:4182",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=10, Type=steps",
+        "nodeId": "6208:3924",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=10, Type=steps",
+        "nodeId": "6208:3924",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=20, Type=indeterminate",
+        "nodeId": "6208:4061",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=20, Type=indeterminate",
+        "nodeId": "6208:4061",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=20, Type=determinate",
+        "nodeId": "6208:4136",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=20, Type=determinate",
+        "nodeId": "6208:4136",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=20, Type=usage",
+        "nodeId": "6208:4188",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=20, Type=usage",
+        "nodeId": "6208:4188",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=20, Type=steps",
+        "nodeId": "6208:3929",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/secondary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=20, Type=steps",
+        "nodeId": "6208:3929",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/secondary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=30, Type=indeterminate",
+        "nodeId": "6208:4069",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=30, Type=indeterminate",
+        "nodeId": "6208:4069",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=30, Type=determinate",
+        "nodeId": "6208:4141",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=30, Type=determinate",
+        "nodeId": "6208:4141",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=30, Type=usage",
+        "nodeId": "6208:4194",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=30, Type=usage",
+        "nodeId": "6208:4194",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=30, Type=steps",
+        "nodeId": "6208:3936",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/secondary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=30, Type=steps",
+        "nodeId": "6208:3936",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/secondary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=40, Type=indeterminate",
+        "nodeId": "6208:4077",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=40, Type=indeterminate",
+        "nodeId": "6208:4077",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=40, Type=determinate",
+        "nodeId": "6208:4146",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=40, Type=determinate",
+        "nodeId": "6208:4146",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=40, Type=usage",
+        "nodeId": "6208:4200",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=40, Type=usage",
+        "nodeId": "6208:4200",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=40, Type=steps",
+        "nodeId": "6208:3945",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/secondary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=40, Type=steps",
+        "nodeId": "6208:3945",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/secondary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=50, Type=indeterminate",
+        "nodeId": "6208:4085",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=50, Type=indeterminate",
+        "nodeId": "6208:4085",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=50, Type=determinate",
+        "nodeId": "6208:4151",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=50, Type=determinate",
+        "nodeId": "6208:4151",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=50, Type=usage",
+        "nodeId": "6208:4206",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=50, Type=usage",
+        "nodeId": "6208:4206",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=50, Type=steps",
+        "nodeId": "6208:3956",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/secondary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=50, Type=steps",
+        "nodeId": "6208:3956",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/secondary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=60, Type=indeterminate",
+        "nodeId": "6208:4093",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=60, Type=indeterminate",
+        "nodeId": "6208:4093",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=60, Type=determinate",
+        "nodeId": "6208:4156",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=60, Type=determinate",
+        "nodeId": "6208:4156",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=60, Type=usage",
+        "nodeId": "6208:4212",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=60, Type=usage",
+        "nodeId": "6208:4212",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=60, Type=steps",
+        "nodeId": "6208:3969",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/secondary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=60, Type=steps",
+        "nodeId": "6208:3969",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/secondary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=70, Type=indeterminate",
+        "nodeId": "6208:4101",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=70, Type=indeterminate",
+        "nodeId": "6208:4101",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=70, Type=determinate",
+        "nodeId": "6208:4161",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=70, Type=determinate",
+        "nodeId": "6208:4161",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=70, Type=usage",
+        "nodeId": "6208:4218",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=70, Type=usage",
+        "nodeId": "6208:4218",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=70, Type=steps",
+        "nodeId": "6208:3984",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/secondary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=70, Type=steps",
+        "nodeId": "6208:3984",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/secondary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=80, Type=indeterminate",
+        "nodeId": "6208:4109",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=80, Type=indeterminate",
+        "nodeId": "6208:4109",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=80, Type=determinate",
+        "nodeId": "6208:4166",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=80, Type=determinate",
+        "nodeId": "6208:4166",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=80, Type=usage",
+        "nodeId": "6208:4224",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=80, Type=usage",
+        "nodeId": "6208:4224",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=80, Type=steps",
+        "nodeId": "6208:4001",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/secondary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=80, Type=steps",
+        "nodeId": "6208:4001",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/secondary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=90, Type=indeterminate",
+        "nodeId": "6208:4117",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=90, Type=indeterminate",
+        "nodeId": "6208:4117",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=90, Type=determinate",
+        "nodeId": "6208:4171",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=90, Type=determinate",
+        "nodeId": "6208:4171",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=90, Type=usage",
+        "nodeId": "6208:4230",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=90, Type=usage",
+        "nodeId": "6208:4230",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=90, Type=steps",
+        "nodeId": "6208:4020",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/secondary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=90, Type=steps",
+        "nodeId": "6208:4020",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/secondary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=100, Type=indeterminate",
+        "nodeId": "6208:4125",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=100, Type=indeterminate",
+        "nodeId": "6208:4125",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=100, Type=determinate",
+        "nodeId": "6208:4176",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=100, Type=determinate",
+        "nodeId": "6208:4176",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=100, Type=usage",
+        "nodeId": "6208:4236",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/subtle"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=100, Type=usage",
+        "nodeId": "6208:4236",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/subtle)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Thickness=8px, Stage=100, Type=steps",
+        "nodeId": "6208:4042",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/feedback/success/bold"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Thickness=8px, Stage=100, Type=steps",
+        "nodeId": "6208:4042",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/feedback/success/bold)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Stepper",
+        "nodeId": "5393:17854",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Stepper",
+        "nodeId": "5393:17854",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Loader",
+        "nodeId": "12879:2989",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Loader",
+        "nodeId": "12879:2989",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "binding_added",
+        "component": "Type=determinate",
+        "nodeId": "12879:2990",
+        "details": ".⛔️ Progress-bar_indicator.fills → static/background/brand/primary/medium"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Type=determinate",
+        "nodeId": "12879:2990",
+        "details": ".⛔️ Progress-indicator_bar.fills (era: static/background/brand/primary/medium)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=illustration, Content=offset",
+        "nodeId": "11360:7301",
+        "details": "Divider.size.width: 360 → 328"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=illustration, Content=balanced",
+        "nodeId": "11360:7313",
+        "details": "Divider.size.width: 360 → 320"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=image, Content=balanced",
+        "nodeId": "11360:7322",
+        "details": "Divider.size.width: 360 → 320"
+      },
+      {
+        "type": "property_changed",
+        "component": "Pop-up_fullscreen",
+        "nodeId": "11360:7337",
+        "details": "Divider.size.width: 360 → 320"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=pop up",
+        "nodeId": "11360:7345",
+        "details": "Divider.size.width: 360 → 320"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "bindingsAdded": 86,
+      "bindingsRemoved": 86,
+      "bindingsChanged": 0,
+      "propertiesChanged": 5
+    }
+  },
+  {
     "id": "mqmlg5b2",
     "timestamp": "2026-06-20T16:50:32.030Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
