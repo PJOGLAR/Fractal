@@ -34,6 +34,7 @@ const FILE_ALIASES: Record<string, string> = {
   components: process.env.FIGMA_COMPONENTS_FILE_KEY || '',
   templates: process.env.FIGMA_TEMPLATES_FILE_KEY || '',
   assets: process.env.FIGMA_ASSETS_FILE_KEY || '',
+  custom: process.env.FIGMA_CUSTOM_COMPONENTS_FILE_KEY || '',
 }
 
 // Parse argument
