@@ -1,5 +1,4037 @@
 [
   {
+    "id": "mr9eb9hp",
+    "timestamp": "2026-07-06T15:49:28.909Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "176 tokens eliminados, 4 tokens cambiados, 476 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "binding_removed",
+        "component": "Wallet-broke-warning",
+        "nodeId": "1596:57",
+        "details": "Miscelanea-sparkles.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Delete",
+        "nodeId": "1248:90",
+        "details": "Vector.fills: d521/4240:12 → static/background/neutral/quiet"
+      },
+      {
+        "type": "property_changed",
+        "component": "Delete",
+        "nodeId": "1248:90",
+        "details": "Vector.strokeWeight: 0.143196702003479 → 0.812536358833313"
+      },
+      {
+        "type": "property_changed",
+        "component": "Delete",
+        "nodeId": "1248:90",
+        "details": "Vector.size.width: 41 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Delete",
+        "nodeId": "1248:90",
+        "details": "Vector.size.height: 54 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Delete",
+        "nodeId": "1248:90",
+        "details": "Vector.fill[0].color: #082749 → #FCFCFC"
+      },
+      {
+        "type": "binding_changed",
+        "component": "PIN-success",
+        "nodeId": "809:3746",
+        "details": "Vector.fills: 9b3/4033:361 → 4cb/4033:378"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN-success",
+        "nodeId": "809:3746",
+        "details": "Vector.fill[0].color: #06763E → #E6FCED"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Delete-confirmation",
+        "nodeId": "1174:217",
+        "details": "Miscellaneous-sparkles.fills (era: 896/3958:111)"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Email-verified",
+        "nodeId": "811:4326",
+        "details": "Vector.fills: c7c/4033:362 → d521/4240:12"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-verified",
+        "nodeId": "811:4326",
+        "details": "Vector.strokeWeight: 0.20000000298023224 → 0.3018864095211029"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-verified",
+        "nodeId": "811:4326",
+        "details": "Vector.size.width: 45 → 38"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-verified",
+        "nodeId": "811:4326",
+        "details": "Vector.size.height: 43 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-verified",
+        "nodeId": "811:4326",
+        "details": "Vector.fill[0].color: #36D178 → #082749"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Miscellaneous-sparkles.fills (era: 6e5/4033:355)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Miscellaneous.strokeWeight: 0.622869610786438 → 0.6566098928451538"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Miscellaneous.size.width: 53 → 56"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Miscellaneous.size.height: 51 → 53"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Under.strokeWeight: 0.311434805393219 → 0.35570305585861206"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Under.size.width: 36 → 41"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Under.size.height: 21 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Top.strokeWeight: 0.311434805393219 → 0.35570305585861206"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Top.size.width: 34 → 39"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Top.size.height: 15 → 17"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Top (Stroke).strokeWeight: 0.311434805393219 → 0.35570305585861206"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Top (Stroke).size.width: 35 → 40"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Top (Stroke).size.height: 15 → 17"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Letter.strokeWeight: 0.311434805393219 → 0.35570305585861206"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Letter.size.width: 25 → 29"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Letter.size.height: 25 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Letter (Stroke).strokeWeight: 0.311434805393219 → 0.35570305585861206"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Letter (Stroke).size.width: 26 → 29"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Letter (Stroke).size.height: 25 → 29"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Sign.size.width: 8 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Sign.size.height: 8 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Side.strokeWeight: 0.311434805393219 → 0.35570305585861206"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Side.size.width: 33 → 38"
+      },
+      {
+        "type": "property_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Side.size.height: 5 → 6"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Account-warning",
+        "nodeId": "1078:864",
+        "details": "Micelanea-sparkles.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Account-warning",
+        "nodeId": "1078:864",
+        "details": "Miscellaneous.size.width: 56 → 55"
+      },
+      {
+        "type": "property_changed",
+        "component": "Account-warning",
+        "nodeId": "1078:864",
+        "details": "Miscellaneous.size.height: 24 → 41"
+      },
+      {
+        "type": "property_changed",
+        "component": "Account-warning",
+        "nodeId": "1078:864",
+        "details": "Bank-card.strokeWeight: 0.25597429275512695 → 0.29837867617607117"
+      },
+      {
+        "type": "property_changed",
+        "component": "Account-warning",
+        "nodeId": "1078:864",
+        "details": "Bank-card.size.width: 46 → 54"
+      },
+      {
+        "type": "property_changed",
+        "component": "Account-warning",
+        "nodeId": "1078:864",
+        "details": "Bank-card.size.height: 13 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Account-warning",
+        "nodeId": "1078:864",
+        "details": "Vector.strokeWeight: 0.25597429275512695 → 0.29837867617607117"
+      },
+      {
+        "type": "property_changed",
+        "component": "Account-warning",
+        "nodeId": "1078:864",
+        "details": "Vector.size.width: 7 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Account-warning",
+        "nodeId": "1078:864",
+        "details": "Vector.size.height: 7 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Account-warning",
+        "nodeId": "1078:864",
+        "details": "Circle.strokeWeight: 0.800000011920929 → 1.2000000476837158"
+      },
+      {
+        "type": "property_changed",
+        "component": "Account-warning",
+        "nodeId": "1078:864",
+        "details": "Circle.size.width: 10 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Account-warning",
+        "nodeId": "1078:864",
+        "details": "Circle.size.height: 10 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Account-warning",
+        "nodeId": "1078:864",
+        "details": "Sign.strokeWeight: 0.800000011920929 → 1.2000000476837158"
+      },
+      {
+        "type": "property_changed",
+        "component": "Account-warning",
+        "nodeId": "1078:864",
+        "details": "Sign.size.height: 6 → 9"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Shop-warning",
+        "nodeId": "1279:100",
+        "details": "Miscelanea-sparkles.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector04.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector03.strokeWeight: 1 → 1.2147291898727417"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector03.size.width: 45 → 55"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector03.size.height: 12 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector 1306.strokeWeight: 1 → 1.2147291898727417"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector 1306.size.width: 45 → 55"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector 1306.size.height: 12 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector 1306 (Stroke).strokeWeight: 1 → 1.2147291898727417"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector 1306 (Stroke).size.width: 45 → 55"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector 1306 (Stroke).size.height: 12 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Ellipse 1549.strokeWeight: 0.5 → 0.6073645949363708"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Ellipse 1549.size.width: 7 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Ellipse 1549.size.height: 7 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Ellipse 1549 (Stroke).strokeWeight: 0.5 → 0.6073645949363708"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Ellipse 1549 (Stroke).size.width: 7 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Ellipse 1549 (Stroke).size.height: 7 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector 1308 (Stroke).strokeWeight: 1 → 1.2147291898727417"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector 1308 (Stroke).size.width: 17 → 20"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector 1308 (Stroke).size.height: 1 → 2"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector 1309 (Stroke).strokeWeight: 1 → 1.2147291898727417"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector 1309 (Stroke).size.width: 11 → 13"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector 1928 (Stroke).strokeWeight: 1 → 1.2147291898727417"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector 1928 (Stroke).size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector02.strokeWeight: 0.800000011920929 → 1.2146986722946167"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector02.size.width: 10 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector02.size.height: 10 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector01.strokeWeight: 0.800000011920929 → 1.2146986722946167"
+      },
+      {
+        "type": "property_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector01.size.height: 6 → 9"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-paused",
+        "nodeId": "980:156",
+        "details": "Vector02.fills (era: interactive/background/neutral/default/quiet)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-paused",
+        "nodeId": "980:156",
+        "details": "Vector01.strokeWeight: 1 → 1.0588767528533936"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-paused",
+        "nodeId": "980:156",
+        "details": "Vector01.size.width: 14 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-paused",
+        "nodeId": "980:156",
+        "details": "Vector01.size.height: 14 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-paused",
+        "nodeId": "980:156",
+        "details": "Vector.strokeWeight: 1.2999999523162842 → 1.376539707183838"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-paused",
+        "nodeId": "980:156",
+        "details": "Vector.size.width: 1 → 2"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-paused",
+        "nodeId": "980:156",
+        "details": "Vector.size.height: 8 → 9"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Miscelanea-sparkls.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Miscelanea.size.height: 33 → 40"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Notification.size.width: 36 → 50"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Notification.size.height: 16 → 23"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Container.size.width: 36 → 50"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Container.size.height: 16 → 23"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Text-3.size.width: 9 → 13"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Text-3.size.height: 2 → 3"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Text-2.size.width: 6 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Text-1.size.width: 9 → 13"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Text-1.size.height: 1 → 2"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Bell-3.size.width: 6 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Bell-3.size.height: 5 → 7"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Bell-2.size.width: 1 → 2"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "!.size.width: 10 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "!.size.height: 10 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Vector 1591.strokeWeight: 0.23856857419013977 → 0.2574024796485901"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Vector 1591.size.width: 10 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Vector 1591.size.height: 10 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Vector 1592.strokeWeight: 0.89463210105896 → 0.9652591943740845"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Vector 1592.size.height: 3 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Vector 1593.strokeWeight: 0.89463210105896 → 0.9652591943740845"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "Miscellaneous-sparkles.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "Miscellaneous.strokeWeight: 0.5283018946647644 → 0.5380408763885498"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "Miscellaneous.size.width: 55 → 56"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "Miscellaneous.size.height: 51 → 55"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "Receip.strokeWeight: 0.4226415157318115 → 0.48400697112083435"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "Receip.size.width: 28 → 32"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "Receip.size.height: 39 → 45"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "circle.strokeWeight: 0.2641509473323822 → 0.30250436067581177"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "circle.size.width: 8 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "circle.size.height: 8 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "circle (Stroke).strokeWeight: 0.2641509473323822 → 0.30250436067581177"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "circle (Stroke).size.width: 8 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "circle (Stroke).size.height: 8 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "S.size.height: 6 → 7"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "Content.strokeWeight: 0.4226415157318115 → 0.48400697112083435"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "Content.size.width: 20 → 23"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-error",
+        "nodeId": "1810:159",
+        "details": "Content.size.height: 9 → 11"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Receipt-warning",
+        "nodeId": "1810:160",
+        "details": "Miscellaneous-sparkles.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Money-warning",
+        "nodeId": "2136:157",
+        "details": "Vector.strokeWeight: 0.800000011920929 → 0.6609740853309631"
+      },
+      {
+        "type": "property_changed",
+        "component": "Money-warning",
+        "nodeId": "2136:157",
+        "details": "Vector.size.width: 18 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Money-warning",
+        "nodeId": "2136:157",
+        "details": "Vector.size.height: 19 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Money-warning",
+        "nodeId": "2136:157",
+        "details": "Union.size.height: 11 → 9"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Papers-error",
+        "nodeId": "2145:488",
+        "details": "Ellipse 1712.fills (era: d56/4033:356)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Papers-error",
+        "nodeId": "2145:488",
+        "details": "Ellipse 1714.fills (era: d56/4033:356)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Papers-error",
+        "nodeId": "2145:488",
+        "details": "Ellipse 1715.fills (era: d56/4033:356)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Papers-error",
+        "nodeId": "2145:488",
+        "details": "Ellipse 1716.fills (era: d56/4033:356)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Papers-error",
+        "nodeId": "2145:488",
+        "details": "Ellipse 1717.fills (era: d56/4033:356)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Papers-error",
+        "nodeId": "2145:488",
+        "details": "Vector 1771.strokeWeight: 1 → 1.2170817852020264"
+      },
+      {
+        "type": "property_changed",
+        "component": "Papers-error",
+        "nodeId": "2145:488",
+        "details": "Vector 1771.size.height: 56 → 51"
+      },
+      {
+        "type": "property_changed",
+        "component": "Papers-error",
+        "nodeId": "2145:488",
+        "details": "Union.size.width: 13 → 18"
+      },
+      {
+        "type": "property_changed",
+        "component": "Papers-error",
+        "nodeId": "2145:488",
+        "details": "Union.size.height: 20 → 28"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Ticket-success",
+        "nodeId": "2139:169",
+        "details": "Union.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Ticket-warning",
+        "nodeId": "2144:224",
+        "details": "Union.size.width: 10 → 13"
+      },
+      {
+        "type": "property_changed",
+        "component": "Ticket-warning",
+        "nodeId": "2144:224",
+        "details": "Union.size.height: 11 → 14"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Ellipse 1351.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Ellipse 1353.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Ellipse 1354.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Ellipse 1360.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Ellipse 1356.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Clip 2.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Star 73 (Stroke).fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Oval Copy 5.strokes (era: 0d6/4033:357)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Group 1171275848.size.width: 18 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Group 1171275848.size.height: 18 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Vector 1591.strokeWeight: 0.3845871388912201 → 0.32292604446411133"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Vector 1591.size.width: 18 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Vector 1591.size.height: 18 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Vector 1592 (Stroke).strokeWeight: 1.4422017335891724 → 1.2873634099960327"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Vector 1592 (Stroke).size.width: 2 → 1"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Vector 1593 (Stroke).strokeWeight: 1.4422017335891724 → 1.2873634099960327"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Vector 1593 (Stroke).size.width: 2 → 1"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-promotion-error",
+        "nodeId": "2340:155",
+        "details": "Ellipse 1351.fills (era: d56/4033:356)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-promotion-error",
+        "nodeId": "2340:155",
+        "details": "Ellipse 1353.fills (era: d56/4033:356)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-promotion-error",
+        "nodeId": "2340:155",
+        "details": "Ellipse 1354.fills (era: d56/4033:356)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-promotion-error",
+        "nodeId": "2340:155",
+        "details": "Ellipse 1352.fills (era: d56/4033:356)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-promotion-error",
+        "nodeId": "2340:155",
+        "details": "Ellipse 1356.fills (era: d56/4033:356)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-promotion-error",
+        "nodeId": "2340:155",
+        "details": "Clip 2.fills (era: d56/4033:356)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-promotion-error",
+        "nodeId": "2340:155",
+        "details": "Star 73 (Stroke).fills (era: d56/4033:356)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-promotion-error",
+        "nodeId": "2340:155",
+        "details": "Oval Copy 5.strokes (era: d56/4033:356)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Star 69 (Stroke).fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Star 70.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Ellipse 1708.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Ellipse 1710.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Ellipse 1711.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Ellipse 1709 (Stroke).fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 3005.strokeWeight: 0.25712838768959045 → 0.2696526050567627"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 3005.size.width: 54 → 56"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 3005.size.height: 28 → 30"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Group 1171276049.strokeWeight: 0.25712838768959045 → 0.30352044105529785"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Group 1171276049.size.width: 43 → 51"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Group 1171276049.size.height: 20 → 23"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector.strokeWeight: 0.25712838768959045 → 0.30352044105529785"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector.size.width: 29 → 34"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector.size.height: 13 → 16"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector (Stroke).strokeWeight: 0.25712838768959045 → 0.30352044105529785"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector (Stroke).size.width: 29 → 34"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector (Stroke).size.height: 14 → 16"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1863.strokeWeight: 0.25712838768959045 → 0.30352044105529785"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1863.size.width: 3 → 4"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1863 (Stroke).strokeWeight: 0.25712838768959045 → 0.30352044105529785"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1863 (Stroke).size.height: 1 → 2"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1864.strokeWeight: 0.25712838768959045 → 0.30352044105529785"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1864 (Stroke).strokeWeight: 0.25712838768959045 → 0.30352044105529785"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1875.strokeWeight: 0.25712838768959045 → 0.30352044105529785"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1875.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1875.size.height: 7 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1875 (Stroke).strokeWeight: 0.25712838768959045 → 0.30352044105529785"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1875 (Stroke).size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1875 (Stroke).size.height: 7 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1873.strokeWeight: 0.25712838768959045 → 0.30352044105529785"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1873.size.height: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1873 (Stroke).strokeWeight: 0.25712838768959045 → 0.30352044105529785"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1873 (Stroke).size.width: 4 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1873 (Stroke).size.height: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1874.strokeWeight: 0.25712838768959045 → 0.30352044105529785"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1874.size.width: 4 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1874 (Stroke).strokeWeight: 0.25712838768959045 → 0.30352044105529785"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1874 (Stroke).size.width: 4 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1874 (Stroke).size.height: 1 → 2"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Group 1171276050.strokeWeight: 0.26910504698753357 → 0.40365755558013916"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Group 1171276050.size.width: 10 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Group 1171276050.size.height: 10 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1591.strokeWeight: 0.21528403460979462 → 0.32292604446411133"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1591.size.width: 10 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1591.size.height: 10 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1592 (Stroke).strokeWeight: 0.8073151111602783 → 1.2109726667404175"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1592 (Stroke).size.height: 4 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1593 (Stroke).strokeWeight: 0.8073151111602783 → 1.2109726667404175"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Medal-warning",
+        "nodeId": "2450:279",
+        "details": "Vector.fills: 0d6/4033:357 → interactive/foreground/neutral/default/quiet"
+      },
+      {
+        "type": "property_changed",
+        "component": "Medal-warning",
+        "nodeId": "2450:279",
+        "details": "Vector.strokeWeight: 1.2971395254135132 → 3.89141845703125"
+      },
+      {
+        "type": "property_changed",
+        "component": "Medal-warning",
+        "nodeId": "2450:279",
+        "details": "Vector.fill[0].color: #F58B0B → #FCFCFC"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Trophy-warning",
+        "nodeId": "2573:467",
+        "details": "Clip 2.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Trophy-warning",
+        "nodeId": "2573:467",
+        "details": "Clip 3.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Trophy-warning",
+        "nodeId": "2573:467",
+        "details": "Star 73 (Stroke).fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Trophy-warning",
+        "nodeId": "2573:467",
+        "details": "Ellipse 1772 (Stroke).fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Trophy-warning",
+        "nodeId": "2573:467",
+        "details": "Ellipse 1773.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Trophy-warning",
+        "nodeId": "2573:467",
+        "details": "Ellipse 1775.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Trophy-warning",
+        "nodeId": "2573:467",
+        "details": "Ellipse 1777.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Trophy-warning",
+        "nodeId": "2573:467",
+        "details": "Ellipse 1778.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Trophy-warning",
+        "nodeId": "2573:467",
+        "details": "Ellipse 1776.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Trophy-warning",
+        "nodeId": "2573:467",
+        "details": "Ellipse 1774.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN-error",
+        "nodeId": "799:25933",
+        "details": "Vector.strokeWeight: 0.2053520232439041 → 0.25963813066482544"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN-error",
+        "nodeId": "799:25933",
+        "details": "Vector.size.width: 9 → 11"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN-error",
+        "nodeId": "799:25933",
+        "details": "Vector.size.height: 10 → 12"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN-error",
+        "nodeId": "799:25933",
+        "details": "Lock.strokeWeight: 1 → 1.2643563747406006"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN-error",
+        "nodeId": "799:25933",
+        "details": "Lock.size.width: 40 → 50"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN-error",
+        "nodeId": "799:25933",
+        "details": "Lock.size.height: 34 → 43"
+      },
+      {
+        "type": "binding_removed",
+        "component": "PIN-warning",
+        "nodeId": "799:25932",
+        "details": "Vector.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector01.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector02.size.width: 14 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Moneybag-warning",
+        "nodeId": "3299:383",
+        "details": "Vector 1591.size.width: 14 → 15"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Money-returns ",
+        "nodeId": "3396:154",
+        "details": "Vector09.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Money-returns ",
+        "nodeId": "3396:154",
+        "details": "Vector08.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Money-returns ",
+        "nodeId": "3396:154",
+        "details": "Vector07.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Money-returns ",
+        "nodeId": "3396:154",
+        "details": "Vector06.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Money-returns ",
+        "nodeId": "3396:154",
+        "details": "Vector05.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Money-returns ",
+        "nodeId": "3396:154",
+        "details": "Vector04.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Money-returns ",
+        "nodeId": "3396:154",
+        "details": "Vector03.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Money-returns ",
+        "nodeId": "3396:154",
+        "details": "Vector02.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Self-account",
+        "nodeId": "3548:182",
+        "details": "Ellipse 1757 (Stroke).fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Self-account",
+        "nodeId": "3548:182",
+        "details": "Ellipse 1758.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Self-account",
+        "nodeId": "3548:182",
+        "details": "Ellipse 1759.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Self-account",
+        "nodeId": "3548:182",
+        "details": "Ellipse 1760.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Self-account",
+        "nodeId": "3548:182",
+        "details": "Ellipse 1761.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Self-account",
+        "nodeId": "3548:182",
+        "details": "Ellipse 1762.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Self-account",
+        "nodeId": "3548:182",
+        "details": "Star 120 (Stroke).fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Self-account",
+        "nodeId": "3548:182",
+        "details": "Star 121.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Self-account",
+        "nodeId": "3548:182",
+        "details": "Vector 1966.size.height: 51 → 54"
+      },
+      {
+        "type": "property_changed",
+        "component": "Self-account",
+        "nodeId": "3548:182",
+        "details": "Vector.size.width: 17 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Self-account",
+        "nodeId": "3548:182",
+        "details": "Vector.size.height: 17 → 15"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-warning",
+        "nodeId": "3069:139",
+        "details": "Vector09.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-warning",
+        "nodeId": "3069:139",
+        "details": "Vector08.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-warning",
+        "nodeId": "3069:139",
+        "details": "Vector07.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-warning",
+        "nodeId": "3069:139",
+        "details": "Vector06.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-warning",
+        "nodeId": "3069:139",
+        "details": "Vector05.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-warning",
+        "nodeId": "3069:139",
+        "details": "Vector04.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-warning",
+        "nodeId": "3069:139",
+        "details": "Vector03.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-warning",
+        "nodeId": "3069:139",
+        "details": "Vector02.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-warning",
+        "nodeId": "3069:139",
+        "details": "Vector01.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Pcard-warning",
+        "nodeId": "2899:218",
+        "details": "Vector01.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Loans-fail",
+        "nodeId": "1792:409",
+        "details": "Vector01.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector10.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector09.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector08.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector07.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector06.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector05.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector04.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector01.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector26.strokeWeight: 0.34863507747650146 → 0.3618107736110687"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector26.size.width: 53 → 55"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector26.size.height: 51 → 53"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector25.strokeWeight: 0.15937501192092896 → 0.1640625149011612"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector25.size.width: 36 → 37"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector25.size.height: 34 → 35"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector24.strokeWeight: 0.53125 → 0.546875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector23.strokeWeight: 0.53125 → 0.546875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector22.strokeWeight: 0.53125 → 0.546875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector21.strokeWeight: 0.53125 → 0.546875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector20.strokeWeight: 0.53125 → 0.546875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector19.strokeWeight: 0.53125 → 0.546875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector19.size.width: 4 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector18.strokeWeight: 0.53125 → 0.546875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector17.strokeWeight: 0.53125 → 0.546875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector16.strokeWeight: 0.53125 → 0.546875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector15.strokeWeight: 0.53125 → 0.546875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector14.strokeWeight: 0.53125 → 0.546875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Calendar-check",
+        "nodeId": "3124:175",
+        "details": "Vector13.strokeWeight: 0.53125 → 0.546875"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector06.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector08.strokeWeight: 0.4226415157318115 → 0.4732513427734375"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector08.size.width: 28 → 31"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector08.size.height: 39 → 43"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector07.strokeWeight: 0.4226415157318115 → 0.4732513427734375"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector07.size.width: 28 → 32"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector07.size.height: 39 → 44"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector05.strokeWeight: 0.2641509473323822 → 0.29578208923339844"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector05.size.width: 8 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector05.size.height: 8 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector04.strokeWeight: 0.2641509473323822 → 0.29578208923339844"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector04.size.width: 8 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector04.size.height: 8 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector03.size.height: 6 → 7"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector02.strokeWeight: 0.4226415157318115 → 0.4732513427734375"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector02.size.width: 20 → 22"
+      },
+      {
+        "type": "property_changed",
+        "component": "Receipt-check",
+        "nodeId": "2915:131",
+        "details": "Vector02.size.height: 9 → 10"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector28.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector27.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector26.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector25.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector24.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector23.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector22.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector21.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector20.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector19.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector18.fills (era: c7c/4033:362)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector17.strokeWeight: 0.6000000238418579 → 0.6238956451416016"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector17.size.width: 32 → 34"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector17.size.height: 38 → 39"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector16.strokeWeight: 0.6000000238418579 → 0.6238956451416016"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector16.size.width: 33 → 34"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector16.size.height: 38 → 40"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector15.strokeWeight: 0.5815430283546448 → 0.6047036051750183"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector15.size.width: 19 → 20"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector14.strokeWeight: 0.5815430283546448 → 0.6047036051750183"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector13.strokeWeight: 0.6000000238418579 → 0.6238956451416016"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector13.size.height: 9 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector12.strokeWeight: 0.6000000238418579 → 0.6238956451416016"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector12.size.width: 10 → 11"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector11.size.height: 6 → 7"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector10.strokeWeight: 0.5 → 0.5199130177497864"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector09.strokeWeight: 0.5 → 0.5199130177497864"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector08.strokeWeight: 0.5 → 0.5199130177497864"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector07.strokeWeight: 0.5 → 0.5199130177497864"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector06.strokeWeight: 0.5 → 0.5199130177497864"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector05.strokeWeight: 0.5 → 0.5199130177497864"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector04.strokeWeight: 0.5 → 0.5199130177497864"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector03.strokeWeight: 0.5 → 0.5199130177497864"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector02.strokeWeight: 0.5 → 0.5199130177497864"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bill-success",
+        "nodeId": "2921:109",
+        "details": "Vector02.size.width: 3 → 4"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe31.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe30.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe29.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe28.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe27.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe26.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe25.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe24.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe23.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe01.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe32.size.width: 50 → 55"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe32.size.height: 37 → 41"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe22.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe22.size.width: 40 → 47"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe22.size.height: 25 → 30"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe21.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe21.size.width: 40 → 48"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe21.size.height: 26 → 31"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe20.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe20.size.width: 36 → 43"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe20.size.height: 14 → 17"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe19.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe19.size.width: 37 → 43"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe19.size.height: 15 → 18"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe18.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe18.size.height: 4 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe17.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe17.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe17.size.height: 2 → 3"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe16.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe16.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe15.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe15.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe15.size.height: 2 → 3"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe14.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe14.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe13.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe13.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe12.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe12.size.width: 6 → 7"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe12.size.height: 3 → 4"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe11.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe11.size.width: 3 → 4"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe10.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe10.size.height: 3 → 4"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe09.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe08.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe07.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe07.size.width: 1 → 2"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe06.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe06.size.width: 4 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe06.size.height: 8 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe05.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe05.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe05.size.height: 8 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe04.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe04.size.height: 7 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe03.strokeWeight: 0.5 → 0.5023921728134155"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe03.size.width: 4 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe03.size.height: 7 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe02.strokeWeight: 0.5 → 0.6300087571144104"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe02.size.width: 11 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-check",
+        "nodeId": "3400:636",
+        "details": "Vectoe02.size.height: 11 → 15"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Pcard-error",
+        "nodeId": "2899:215",
+        "details": "Vector01.fills (era: d56/4033:356)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-hand-number-warning",
+        "nodeId": "3396:224",
+        "details": "Vector49.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-hand-number-warning",
+        "nodeId": "3396:224",
+        "details": "Vector48.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-hand-number-warning",
+        "nodeId": "3396:224",
+        "details": "Vector47.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-hand-number-warning",
+        "nodeId": "3396:224",
+        "details": "Vector45.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-hand-number-warning",
+        "nodeId": "3396:224",
+        "details": "Vector43.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-hand-number-warning",
+        "nodeId": "3396:224",
+        "details": "Vector06.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-hand-number-warning",
+        "nodeId": "3396:224",
+        "details": "Vector05.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-hand-number-warning",
+        "nodeId": "3396:224",
+        "details": "Vector04.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Security-warning",
+        "nodeId": "3396:225",
+        "details": "Vector10.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Security-warning",
+        "nodeId": "3396:225",
+        "details": "Vector09.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Security-warning",
+        "nodeId": "3396:225",
+        "details": "Vector08.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Security-warning",
+        "nodeId": "3396:225",
+        "details": "Vector07.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Security-warning",
+        "nodeId": "3396:225",
+        "details": "Vector06.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Security-warning",
+        "nodeId": "3396:225",
+        "details": "Vector05.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Security-warning",
+        "nodeId": "3396:225",
+        "details": "Vector04.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Security-warning",
+        "nodeId": "3396:225",
+        "details": "Vector03.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Security-warning",
+        "nodeId": "3396:225",
+        "details": "Vector02.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Security-warning",
+        "nodeId": "3396:225",
+        "details": "Vector01.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Phonerecharge-warning",
+        "nodeId": "2806:284",
+        "details": "Vector02.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Tap-warning",
+        "nodeId": "2883:300",
+        "details": "Vector36.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Tap-warning",
+        "nodeId": "2883:300",
+        "details": "Vector35.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Tap-warning",
+        "nodeId": "2883:300",
+        "details": "Vector34.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Tap-warning",
+        "nodeId": "2883:300",
+        "details": "Vector33.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Tap-warning",
+        "nodeId": "2883:300",
+        "details": "Vector32.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Tap-warning",
+        "nodeId": "2883:300",
+        "details": "Vector31.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Tap-warning",
+        "nodeId": "2883:300",
+        "details": "Vector30.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Tap-warning",
+        "nodeId": "2883:300",
+        "details": "Vector29.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Tap-warning",
+        "nodeId": "2883:300",
+        "details": "Vector28.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Tap-warning",
+        "nodeId": "2883:300",
+        "details": "Vector27.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Tap-warning",
+        "nodeId": "2883:300",
+        "details": "Vector26.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Tap-warning",
+        "nodeId": "2883:300",
+        "details": "Vector24.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Tap-warning",
+        "nodeId": "2883:300",
+        "details": "Vector23.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Tap-warning",
+        "nodeId": "2883:300",
+        "details": "Vector22.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-card-warning",
+        "nodeId": "2883:298",
+        "details": "Vector02.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-time",
+        "nodeId": "3124:174",
+        "details": "Vector10.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-time",
+        "nodeId": "3124:174",
+        "details": "Vector09.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-time",
+        "nodeId": "3124:174",
+        "details": "Vector08.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-time",
+        "nodeId": "3124:174",
+        "details": "Vector07.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-time",
+        "nodeId": "3124:174",
+        "details": "Vector06.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-time",
+        "nodeId": "3124:174",
+        "details": "Vector05.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-time",
+        "nodeId": "3124:174",
+        "details": "Vector04.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Calendar-time",
+        "nodeId": "3124:174",
+        "details": "Vector03.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector14.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector13.size.width: 12 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector13.size.height: 9 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector12.size.width: 13 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector11.size.width: 12 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector11.size.height: 9 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector10.size.width: 13 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector09.size.width: 6 → 7"
+      },
+      {
+        "type": "property_changed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector08.size.width: 6 → 7"
+      },
+      {
+        "type": "property_changed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector07.size.width: 12 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector07.size.height: 9 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector06.size.width: 13 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector05.size.width: 12 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector05.size.height: 9 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector04.size.width: 13 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector03.size.width: 6 → 7"
+      },
+      {
+        "type": "property_changed",
+        "component": "Broken-link-chain",
+        "nodeId": "1525:56",
+        "details": "Vector02.size.width: 6 → 7"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bell-notification-off",
+        "nodeId": "1606:159",
+        "details": "Miscalanea-sparkles.fills (era: 205/4033:386)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Miscellaneous-sparkles.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Lock.strokeWeight: 1.1038941144943237 → 1.3571034669876099"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Lock.size.width: 41 → 50"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Lock.size.height: 35 → 43"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Vector 958 (Stroke).strokeWeight: 1.3764418363571167 → 1.6921676397323608"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Vector 958 (Stroke).size.width: 23 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Vector 958 (Stroke).size.height: 19 → 23"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Body-fill.strokeWeight: 0.45881393551826477 → 0.564055860042572"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Body-fill.size.width: 32 → 40"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Body-fill.size.height: 24 → 29"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Body-stroke.strokeWeight: 0.45881393551826477 → 0.564055860042572"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Body-stroke.size.width: 33 → 40"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Body-stroke.size.height: 24 → 30"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Side-fill.strokeWeight: 0.45881393551826477 → 0.564055860042572"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Side-fill.size.width: 34 → 42"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Side-fill.size.height: 19 → 23"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Side-stroke.strokeWeight: 0.45881393551826477 → 0.564055860042572"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Side-stroke.size.width: 35 → 43"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Side-stroke.size.height: 20 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Ellipse 1455.strokeWeight: 0.45881393551826477 → 0.564055860042572"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Ellipse 1455.size.width: 12 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Ellipse 1455.size.height: 12 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Ellipse 1456.strokeWeight: 0.45881393551826477 → 0.564055860042572"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Ellipse 1456.size.width: 10 → 13"
+      },
+      {
+        "type": "property_changed",
+        "component": "PIN",
+        "nodeId": "799:25931",
+        "details": "Ellipse 1456.size.height: 11 → 14"
+      },
+      {
+        "type": "binding_removed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector22.fills (era: 5c1/4033:382)"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector01.size.width: 53 → 56"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector01.size.height: 47 → 50"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector0.size.width: 24 → 30"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector0.size.height: 12 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector1.size.width: 24 → 30"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector1.size.height: 12 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector2.size.width: 17 → 21"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector2.size.height: 11 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector3.size.width: 17 → 22"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector3.size.height: 11 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector4.size.width: 10 → 12"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector4.size.height: 9 → 12"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector5.size.width: 10 → 12"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector5.size.height: 9 → 12"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector8.size.width: 25 → 31"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector8.size.height: 12 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "6.size.width: 25 → 31"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "6.size.height: 13 → 16"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector44.size.width: 15 → 19"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector44.size.height: 12 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector444.size.width: 15 → 19"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector444.size.height: 12 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector77.size.width: 10 → 13"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector77.size.height: 9 → 11"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector11.size.width: 10 → 13"
+      },
+      {
+        "type": "property_changed",
+        "component": "No-connection",
+        "nodeId": "822:180",
+        "details": "Vector11.size.height: 9 → 12"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector30.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector29.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector28.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector27.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector26.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector25.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector24.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector23.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector02.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector01.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector31.strokeWeight: 0.5 → 0.5157268643379211"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector31.size.width: 55 → 54"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector31.size.height: 40 → 49"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector22.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector22.size.width: 40 → 47"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector22.size.height: 25 → 30"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector21.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector21.size.width: 40 → 48"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector21.size.height: 26 → 31"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector20.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector20.size.width: 36 → 43"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector20.size.height: 14 → 17"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector19.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector19.size.width: 37 → 43"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector19.size.height: 15 → 18"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector18.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector18.size.height: 4 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector17.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector17.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector17.size.height: 2 → 3"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector16.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector16.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector15.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector15.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector15.size.height: 2 → 3"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector14.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector14.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector13.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector13.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector12.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector12.size.width: 6 → 7"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector12.size.height: 3 → 4"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector11.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector11.size.width: 3 → 4"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector10.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector10.size.height: 3 → 4"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector09.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector08.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector07.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector07.size.width: 1 → 2"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector06.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector06.size.width: 4 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector06.size.height: 8 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector05.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector05.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector05.size.height: 8 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector04.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector04.size.height: 7 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector03.strokeWeight: 0.5 → 0.5941619873046875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector03.size.width: 4 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus",
+        "nodeId": "3400:635",
+        "details": "Vector03.size.height: 7 → 8"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector33.fills (era: 997/4033:358)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector32.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector10.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector09.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector08.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector07.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector06.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector05.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector04.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector03.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector02.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector01.fills (era: d521/4240:12)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector34.strokeWeight: 0.5 → 0.5287623405456543"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector34.size.width: 53 → 55"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector34.size.height: 39 → 48"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector31.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector31.size.width: 41 → 47"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector31.size.height: 26 → 30"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector30.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector30.size.width: 41 → 48"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector30.size.height: 26 → 31"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector29.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector29.size.width: 37 → 43"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector29.size.height: 15 → 17"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector28.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector28.size.width: 38 → 43"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector28.size.height: 15 → 18"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector27.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector27.size.height: 4 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector26.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector26.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector25.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector24.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector24.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector23.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector22.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector22.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector21.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector21.size.width: 6 → 7"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector21.size.height: 3 → 4"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector20.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector20.size.width: 3 → 4"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector19.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector19.size.height: 3 → 4"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector18.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector17.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector16.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector16.size.width: 1 → 2"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector15.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector15.size.width: 4 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector15.size.height: 8 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector14.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector14.size.width: 5 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector14.size.height: 9 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector13.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector13.size.height: 7 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector12.strokeWeight: 0.5 → 0.5789692401885986"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector12.size.width: 4 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector12.size.height: 7 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector11.strokeWeight: 0.36758023500442505 → 0.35983964800834656"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector11.size.width: 17 → 16"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector 3692.strokeWeight: 0.5 → 0.489470899105072"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector 3692.size.height: 16 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector 3692 (Stroke).strokeWeight: 0.5 → 0.489470899105072"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector 3692 (Stroke).size.width: 17 → 16"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector 3665 (Stroke).strokeWeight: 0.5 → 0.489470899105072"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector 3665 (Stroke).size.height: 7 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector 3693.strokeWeight: 0.5 → 0.489470899105072"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bus-percentage",
+        "nodeId": "3400:634",
+        "details": "Vector 3694.strokeWeight: 0.5 → 0.489470899105072"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 176,
+      "bindingsChanged": 4,
+      "propertiesChanged": 476
+    }
+  },
+  {
+    "id": "mr9eb56p",
+    "timestamp": "2026-07-06T15:49:23.329Z",
+    "fileKey": "htvGLaEUzJTF7QPd4LkGy0",
+    "fileName": "Templates",
+    "fileLabel": "templates",
+    "summary": "1 componentes nuevos, 6 tokens nuevos, 2 tokens cambiados, 1 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Type=other",
+        "nodeId": "2741:2315",
+        "details": "Type=other (COMPONENT)"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Feedback-screen",
+        "nodeId": "1377:611",
+        "details": "Type=pending.fills: expressive/violet/50 → bf5/4033:512"
+      },
+      {
+        "type": "binding_added",
+        "component": "Feedback-screen",
+        "nodeId": "1377:611",
+        "details": "Type=other.itemSpacing → gap/gap-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Feedback-screen",
+        "nodeId": "1377:611",
+        "details": "Type=other.paddingLeft → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Feedback-screen",
+        "nodeId": "1377:611",
+        "details": "Type=other.paddingTop → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Feedback-screen",
+        "nodeId": "1377:611",
+        "details": "Type=other.paddingRight → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Feedback-screen",
+        "nodeId": "1377:611",
+        "details": "Type=other.paddingBottom → padding/padding-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Feedback-screen",
+        "nodeId": "1377:611",
+        "details": "Type=other.fills → expressive/violet/50"
+      },
+      {
+        "type": "property_changed",
+        "component": "Feedback-screen",
+        "nodeId": "1377:611",
+        "details": "Feedback-screen.size.width: 1570 → 1960"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=pending",
+        "nodeId": "1377:774",
+        "details": "Type=pending.fills: expressive/violet/50 → bf5/4033:512"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 1,
+      "componentsRemoved": 0,
+      "bindingsAdded": 6,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 2,
+      "propertiesChanged": 1
+    }
+  },
+  {
     "id": "mr7ut59q",
     "timestamp": "2026-07-05T13:55:44.750Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
