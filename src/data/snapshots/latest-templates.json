@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-07-06T15:49:23.306Z",
+  "takenAt": "2026-07-07T14:53:22.446Z",
   "fileKey": "htvGLaEUzJTF7QPd4LkGy0",
   "fileName": "Templates",
   "components": [
@@ -74659,7 +74659,7 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:ec76169895185cec727dd09fa2fb2468fa1fdbf5/4033:512",
+          "variableId": "VariableID:c3b014a601267b5f3a6557677adaf1555434e39e/4033:503",
           "layerName": "Type=pending"
         },
         {
@@ -74759,7 +74759,7 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4033:372",
+          "variableId": "VariableID:ad1304bbaf258e1a4e34cda11ac218d549de3c74/4033:507",
           "layerName": "Vector"
         },
         {
@@ -75316,16 +75316,6 @@
           "property": "paddingBottom",
           "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
           "layerName": "Content"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:8dab0e571edbcd98511064042c233e815e086afd/3959:0",
-          "layerName": "Background"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4033:372",
-          "layerName": "Vector"
         },
         {
           "property": "itemSpacing",
@@ -84632,7 +84622,7 @@
         {
           "layerName": "Vector",
           "property": "fill[0].color",
-          "value": "#052C50"
+          "value": "#404040"
         },
         {
           "layerName": "Vector",
@@ -87215,69 +87205,44 @@
           "value": "Placeholder-illustration"
         },
         {
-          "layerName": "Pending",
+          "layerName": "Attention",
           "property": "strokeWeight",
           "value": 1.4285714626312256
         },
         {
-          "layerName": "Pending",
+          "layerName": "Attention",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": "Pending",
+          "layerName": "Attention",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Pending",
+          "layerName": "Attention",
           "property": "size.width",
           "value": 80
         },
         {
-          "layerName": "Pending",
+          "layerName": "Attention",
           "property": "size.height",
           "value": 80
         },
         {
-          "layerName": "Pending",
-          "property": "__layerName__",
-          "value": "Pending"
-        },
-        {
-          "layerName": "Background",
-          "property": "strokeWeight",
-          "value": 1.4285714626312256
-        },
-        {
-          "layerName": "Background",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Background",
-          "property": "size.width",
-          "value": 70
-        },
-        {
-          "layerName": "Background",
-          "property": "size.height",
-          "value": 70
-        },
-        {
-          "layerName": "Background",
+          "layerName": "Attention",
           "property": "fill[0].color",
-          "value": "#FCFCFC"
+          "value": "#FFFFFF"
         },
         {
-          "layerName": "Background",
+          "layerName": "Attention",
           "property": "__layerName__",
-          "value": "Background"
+          "value": "Attention"
         },
         {
           "layerName": "Vector",
           "property": "strokeWeight",
-          "value": 0
+          "value": 0.355747789144516
         },
         {
           "layerName": "Vector",
@@ -87297,7 +87262,7 @@
         {
           "layerName": "Vector",
           "property": "fill[0].color",
-          "value": "#052C50"
+          "value": "#FFFFFF"
         },
         {
           "layerName": "Vector",
@@ -99265,7 +99230,7 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:ec76169895185cec727dd09fa2fb2468fa1fdbf5/4033:512",
+          "variableId": "VariableID:c3b014a601267b5f3a6557677adaf1555434e39e/4033:503",
           "layerName": "Type=pending"
         },
         {
@@ -99365,7 +99330,7 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4033:372",
+          "variableId": "VariableID:ad1304bbaf258e1a4e34cda11ac218d549de3c74/4033:507",
           "layerName": "Vector"
         },
         {
@@ -100433,7 +100398,7 @@
         {
           "layerName": "Vector",
           "property": "fill[0].color",
-          "value": "#052C50"
+          "value": "#404040"
         },
         {
           "layerName": "Vector",
@@ -102598,16 +102563,6 @@
           "layerName": "Content"
         },
         {
-          "property": "fills",
-          "variableId": "VariableID:8dab0e571edbcd98511064042c233e815e086afd/3959:0",
-          "layerName": "Background"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4033:372",
-          "layerName": "Vector"
-        },
-        {
           "property": "itemSpacing",
           "variableId": "VariableID:03953486e5268275c40e51f83bff69b21830c6b5/1227:14",
           "layerName": "Container"
@@ -103590,69 +103545,44 @@
           "value": "Placeholder-illustration"
         },
         {
-          "layerName": "Pending",
+          "layerName": "Attention",
           "property": "strokeWeight",
           "value": 1.4285714626312256
         },
         {
-          "layerName": "Pending",
+          "layerName": "Attention",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": "Pending",
+          "layerName": "Attention",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Pending",
+          "layerName": "Attention",
           "property": "size.width",
           "value": 80
         },
         {
-          "layerName": "Pending",
+          "layerName": "Attention",
           "property": "size.height",
           "value": 80
         },
         {
-          "layerName": "Pending",
-          "property": "__layerName__",
-          "value": "Pending"
-        },
-        {
-          "layerName": "Background",
-          "property": "strokeWeight",
-          "value": 1.4285714626312256
-        },
-        {
-          "layerName": "Background",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Background",
-          "property": "size.width",
-          "value": 70
-        },
-        {
-          "layerName": "Background",
-          "property": "size.height",
-          "value": 70
-        },
-        {
-          "layerName": "Background",
+          "layerName": "Attention",
           "property": "fill[0].color",
-          "value": "#FCFCFC"
+          "value": "#FFFFFF"
         },
         {
-          "layerName": "Background",
+          "layerName": "Attention",
           "property": "__layerName__",
-          "value": "Background"
+          "value": "Attention"
         },
         {
           "layerName": "Vector",
           "property": "strokeWeight",
-          "value": 0
+          "value": 0.355747789144516
         },
         {
           "layerName": "Vector",
@@ -103672,7 +103602,7 @@
         {
           "layerName": "Vector",
           "property": "fill[0].color",
-          "value": "#052C50"
+          "value": "#FFFFFF"
         },
         {
           "layerName": "Vector",
@@ -123185,7 +123115,7 @@
   ],
   "stats": {
     "totalComponents": 85,
-    "totalBindings": 5610,
-    "totalProperties": 18874
+    "totalBindings": 5606,
+    "totalProperties": 18864
   }
 }
