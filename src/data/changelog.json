@@ -1,5 +1,95 @@
 [
   {
+    "id": "mrc6ef86",
+    "timestamp": "2026-07-08T14:31:17.910Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "2 renombrados, 1 tokens nuevos, 1 tokens eliminados, 8 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "binding_added",
+        "component": "Bell-notification-off",
+        "nodeId": "1606:159",
+        "details": "Miscellaneous .fills → 772/4033:370"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Bell-notification-off",
+        "nodeId": "1606:159",
+        "details": "Miselanea.fills (era: 42c/4033:377)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bell-notification-off",
+        "nodeId": "1606:159",
+        "details": "Bell.size.width: 29 → 36"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bell-notification-off",
+        "nodeId": "1606:159",
+        "details": "Bell.size.height: 31 → 39"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bell-notification-off",
+        "nodeId": "1606:159",
+        "details": "Bell-fill.size.width: 28 → 35"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bell-notification-off",
+        "nodeId": "1606:159",
+        "details": "Bell-fill.size.height: 24 → 30"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bell-notification-off",
+        "nodeId": "1606:159",
+        "details": "Bell-stroke.size.width: 29 → 36"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bell-notification-off",
+        "nodeId": "1606:159",
+        "details": "Bell-stroke.size.height: 31 → 39"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bell-notification-off",
+        "nodeId": "1606:159",
+        "details": "Sign.size.width: 11 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bell-notification-off",
+        "nodeId": "1606:159",
+        "details": "Sign.size.height: 11 → 14"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Tik-Tok",
+        "nodeId": "2914:574",
+        "details": "Tiktok → Tik-Tok"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Mega-Loto",
+        "nodeId": "3364:1589",
+        "details": "Megaloto → Mega-Loto"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "bindingsAdded": 1,
+      "bindingsRemoved": 1,
+      "bindingsChanged": 0,
+      "propertiesChanged": 8
+    }
+  },
+  {
     "id": "mrarr1ot",
     "timestamp": "2026-07-07T14:53:26.477Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
