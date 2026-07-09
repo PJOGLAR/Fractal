@@ -8,63 +8,121 @@ interface FormData {
   requester: string
   problem: string
   screens: string
-  triedExisting: string
+  triedExisting: boolean
+  triedExistingDetail: string
+  hasBenchmark: boolean
   benchmark: string
+  hasProposal: boolean
   proposal: string
   urgency: string
 }
 
-const STEPS = [
-  { key: 'requestType', question: '¿Qué tipo de consulta es?', type: 'choice', options: ['Nuevo componente/asset', 'Iteración', 'Bug / Inconsistencia', 'Soporte de uso', 'Validación', 'Pattern / Composición', 'Documentación'] },
-  { key: 'assetType', question: '¿Qué tipo de asset involucra?', type: 'choice', options: ['Componente', 'Ícono', 'Ilustración', 'Brand / Logo', 'Token', 'Otro'] },
-  { key: 'team', question: '¿De qué tribu o producto es?', type: 'text', placeholder: 'Ej: Pagos, Onboarding, Mi línea...' },
-  { key: 'requester', question: '¿Quién solicita?', type: 'text', placeholder: 'Tu nombre' },
-  { key: 'problem', question: '¿Qué problema estás intentando resolver?', type: 'textarea', placeholder: 'Describí el contexto y la necesidad...' },
-  { key: 'screens', question: '¿En qué pantallas o flujos se necesita?', type: 'textarea', placeholder: 'Links a Figma o descripción de las pantallas...' },
-  { key: 'triedExisting', question: '¿Probaste con componentes existentes?', type: 'textarea', placeholder: '¿Cuáles probaste y por qué no funcionan?' },
-  { key: 'benchmark', question: '¿Tenés referencias de cómo lo resuelven otros?', type: 'textarea', placeholder: 'Links a productos, DS, o screenshots (2-3 referencias)' },
-  { key: 'proposal', question: '¿Tenés una propuesta diseñada?', type: 'text', placeholder: 'Link al frame de Figma (opcional)' },
-  { key: 'urgency', question: '¿Qué urgencia tiene?', type: 'choice', options: ['Alta', 'Media', 'Baja'] },
+interface Step {
+  key: string
+  title: string
+  fields: Field[]
+}
+
+interface Field {
+  key: string
+  label: string
+  type: 'choice' | 'text' | 'textarea' | 'checkbox' | 'conditional-text'
+  options?: string[]
+  placeholder?: string
+  conditionKey?: string // show only when this key is true
+}
+
+const STEPS: Step[] = [
+  {
+    key: 'type',
+    title: 'Tipo de solicitud',
+    fields: [
+      { key: 'requestType', label: '¿Qué tipo de consulta es?', type: 'choice', options: ['Nuevo componente/asset', 'Iteración', 'Bug / Inconsistencia', 'Soporte de uso', 'Documentación'] },
+    ]
+  },
+  {
+    key: 'asset',
+    title: 'Tipo de asset',
+    fields: [
+      { key: 'assetType', label: '¿Qué tipo de asset involucra?', type: 'choice', options: ['Componente', 'Ícono', 'Ilustración', 'Brand / Logo', 'Token', 'Otro'] },
+    ]
+  },
+  {
+    key: 'who',
+    title: 'Información del solicitante',
+    fields: [
+      { key: 'requester', label: 'Tu nombre', type: 'text', placeholder: 'Nombre y apellido' },
+      { key: 'team', label: 'Tribu / Producto', type: 'text', placeholder: 'Ej: Pagos, Onboarding, Mi línea...' },
+    ]
+  },
+  {
+    key: 'problem',
+    title: 'Contexto del pedido',
+    fields: [
+      { key: 'problem', label: '¿Qué problema estás intentando resolver?', type: 'textarea', placeholder: 'Describí el contexto y la necesidad...' },
+      { key: 'screens', label: 'Pantallas o flujos donde se necesita', type: 'textarea', placeholder: 'Links a Figma o descripción...' },
+    ]
+  },
+  {
+    key: 'research',
+    title: 'Investigación previa',
+    fields: [
+      { key: 'triedExisting', label: '¿Probaste con componentes existentes?', type: 'checkbox' },
+      { key: 'triedExistingDetail', label: '¿Cuáles probaste y por qué no funcionan?', type: 'conditional-text', conditionKey: 'triedExisting', placeholder: 'Ej: probé Button pero no tiene variante con ícono a la derecha...' },
+      { key: 'hasBenchmark', label: '¿Tenés referencias de otros productos?', type: 'checkbox' },
+      { key: 'benchmark', label: 'Links o descripción del benchmark', type: 'conditional-text', conditionKey: 'hasBenchmark', placeholder: 'Links a productos, DS, o screenshots (2-3 referencias)' },
+      { key: 'hasProposal', label: '¿Tenés una propuesta diseñada?', type: 'checkbox' },
+      { key: 'proposal', label: 'Link al frame de Figma', type: 'conditional-text', conditionKey: 'hasProposal', placeholder: 'https://www.figma.com/design/...' },
+    ]
+  },
+  {
+    key: 'urgency',
+    title: 'Urgencia',
+    fields: [
+      { key: 'urgency', label: '¿Qué urgencia tiene?', type: 'choice', options: ['Alta', 'Media', 'Baja'] },
+    ]
+  },
 ]
 
 export function RequestForm() {
   const [step, setStep] = useState(0)
   const [formData, setFormData] = useState<FormData>({
     requestType: '', assetType: '', team: '', requester: '',
-    problem: '', screens: '', triedExisting: '', benchmark: '',
-    proposal: '', urgency: '',
+    problem: '', screens: '', triedExisting: false, triedExistingDetail: '',
+    hasBenchmark: false, benchmark: '', hasProposal: false, proposal: '',
+    urgency: '',
   })
   const [submitted, setSubmitted] = useState(false)
 
-  const currentStep = STEPS[step]
-  const currentValue = formData[currentStep.key as keyof FormData]
-  const isLastStep = step === STEPS.length - 1
-  const canAdvance = currentValue.trim().length > 0
+  // Skip asset type step if not "Nuevo componente/asset"
+  const visibleSteps = STEPS.filter(s => {
+    if (s.key === 'asset' && formData.requestType !== 'Nuevo componente/asset') return false
+    return true
+  })
+  const currentVisibleStep = visibleSteps[step]
+  const isLastVisibleStep = step === visibleSteps.length - 1
 
-  function handleChoice(value: string) {
-    setFormData({ ...formData, [currentStep.key]: value })
-    if (!isLastStep) {
-      setTimeout(() => setStep(step + 1), 200)
+  function canAdvance(): boolean {
+    for (const field of currentVisibleStep.fields) {
+      if (field.type === 'conditional-text') continue
+      if (field.type === 'checkbox') continue
+      const value = formData[field.key as keyof FormData]
+      if (typeof value === 'string' && !value.trim()) return false
     }
+    return true
   }
 
   function handleNext() {
-    if (isLastStep) {
-      handleSubmit()
-    } else {
-      setStep(step + 1)
-    }
+    if (isLastVisibleStep) handleSubmit()
+    else setStep(step + 1)
   }
 
   function handleBack() {
     if (step > 0) setStep(step - 1)
   }
 
-  function handleKeyDown(e: React.KeyboardEvent) {
-    if (e.key === 'Enter' && !e.shiftKey && canAdvance) {
-      e.preventDefault()
-      handleNext()
-    }
+  function updateField(key: string, value: string | boolean) {
+    setFormData({ ...formData, [key]: value })
   }
 
   function handleSubmit() {
@@ -77,7 +135,6 @@ export function RequestForm() {
       assignedTo: '',
       resolvedAt: '',
     }
-    // Save to localStorage (will sync to JSON later)
     const existing = JSON.parse(localStorage.getItem('ds-requests') || '[]')
     existing.unshift(entry)
     localStorage.setItem('ds-requests', JSON.stringify(existing))
@@ -91,7 +148,7 @@ export function RequestForm() {
           <div className="success-icon">✓</div>
           <h2>Solicitud enviada</h2>
           <p>Tu pedido fue registrado. El equipo de DS lo va a revisar en la próxima sesión.</p>
-          <button className="btn-primary" onClick={() => { setSubmitted(false); setStep(0); setFormData({ requestType: '', assetType: '', team: '', requester: '', problem: '', screens: '', triedExisting: '', benchmark: '', proposal: '', urgency: '' }) }}>
+          <button className="btn-primary" onClick={() => { setSubmitted(false); setStep(0); setFormData({ requestType: '', assetType: '', team: '', requester: '', problem: '', screens: '', triedExisting: false, triedExistingDetail: '', hasBenchmark: false, benchmark: '', hasProposal: false, proposal: '', urgency: '' }) }}>
             Enviar otra solicitud
           </button>
         </div>
@@ -105,52 +162,91 @@ export function RequestForm() {
         {/* Progress */}
         <div className="request-progress">
           <div className="progress-bar">
-            <div className="progress-fill" style={{ width: `${((step + 1) / STEPS.length) * 100}%` }} />
+            <div className="progress-fill" style={{ width: `${((step + 1) / visibleSteps.length) * 100}%` }} />
           </div>
-          <span className="progress-text">{step + 1} / {STEPS.length}</span>
+          <span className="progress-text">{step + 1} / {visibleSteps.length}</span>
         </div>
 
-        {/* Question */}
-        <div className="request-question" key={step}>
-          <h2 className="question-text">{currentStep.question}</h2>
+        {/* Step title */}
+        <h2 className="step-title">{currentVisibleStep.title}</h2>
 
-          {currentStep.type === 'choice' && (
-            <div className="choice-grid">
-              {currentStep.options!.map(option => (
-                <button
-                  key={option}
-                  className={`choice-btn ${currentValue === option ? 'selected' : ''}`}
-                  onClick={() => handleChoice(option)}
-                >
-                  {option}
-                </button>
-              ))}
-            </div>
-          )}
+        {/* Fields */}
+        <div className="step-fields" key={step}>
+          {currentVisibleStep.fields.map(field => {
+            // Conditional fields: only show when condition is met
+            if (field.type === 'conditional-text') {
+              const conditionValue = formData[field.conditionKey as keyof FormData]
+              if (!conditionValue) return null
+            }
 
-          {currentStep.type === 'text' && (
-            <input
-              type="text"
-              className="request-input"
-              placeholder={currentStep.placeholder}
-              value={currentValue}
-              onChange={e => setFormData({ ...formData, [currentStep.key]: e.target.value })}
-              onKeyDown={handleKeyDown}
-              autoFocus
-            />
-          )}
+            return (
+              <div key={field.key} className="field-group">
+                {field.type === 'choice' && (
+                  <>
+                    <label className="field-label">{field.label}</label>
+                    <div className="choice-grid">
+                      {field.options!.map(option => (
+                        <button
+                          key={option}
+                          className={`choice-btn ${formData[field.key as keyof FormData] === option ? 'selected' : ''}`}
+                          onClick={() => updateField(field.key, option)}
+                        >
+                          {option}
+                        </button>
+                      ))}
+                    </div>
+                  </>
+                )}
 
-          {currentStep.type === 'textarea' && (
-            <textarea
-              className="request-textarea"
-              placeholder={currentStep.placeholder}
-              value={currentValue}
-              onChange={e => setFormData({ ...formData, [currentStep.key]: e.target.value })}
-              onKeyDown={handleKeyDown}
-              autoFocus
-              rows={4}
-            />
-          )}
+                {field.type === 'text' && (
+                  <>
+                    <label className="field-label">{field.label}</label>
+                    <input
+                      type="text"
+                      className="request-input"
+                      placeholder={field.placeholder}
+                      value={formData[field.key as keyof FormData] as string}
+                      onChange={e => updateField(field.key, e.target.value)}
+                    />
+                  </>
+                )}
+
+                {field.type === 'textarea' && (
+                  <>
+                    <label className="field-label">{field.label}</label>
+                    <textarea
+                      className="request-textarea"
+                      placeholder={field.placeholder}
+                      value={formData[field.key as keyof FormData] as string}
+                      onChange={e => updateField(field.key, e.target.value)}
+                      rows={3}
+                    />
+                  </>
+                )}
+
+                {field.type === 'checkbox' && (
+                  <label className="checkbox-field">
+                    <input
+                      type="checkbox"
+                      checked={formData[field.key as keyof FormData] as boolean}
+                      onChange={e => updateField(field.key, e.target.checked)}
+                    />
+                    <span className="checkbox-label">{field.label}</span>
+                  </label>
+                )}
+
+                {field.type === 'conditional-text' && (
+                  <textarea
+                    className="request-textarea conditional"
+                    placeholder={field.placeholder}
+                    value={formData[field.key as keyof FormData] as string}
+                    onChange={e => updateField(field.key, e.target.value)}
+                    rows={2}
+                  />
+                )}
+              </div>
+            )
+          })}
         </div>
 
         {/* Navigation */}
@@ -159,15 +255,13 @@ export function RequestForm() {
             <button className="btn-back" onClick={handleBack}>← Atrás</button>
           )}
           <div className="nav-spacer" />
-          {(currentStep.type !== 'choice' || currentValue) && (
-            <button
-              className="btn-next"
-              onClick={handleNext}
-              disabled={!canAdvance}
-            >
-              {isLastStep ? 'Enviar solicitud' : 'Siguiente →'}
-            </button>
-          )}
+          <button
+            className="btn-next"
+            onClick={handleNext}
+            disabled={!canAdvance()}
+          >
+            {isLastVisibleStep ? 'Enviar solicitud' : 'Siguiente →'}
+          </button>
         </div>
       </div>
     </div>

@@ -171,7 +171,7 @@ strong > bold > medium > subtle > quiet
 - **Building blocks:** `.⛔️` prefix, no se publican
 - **Auto Layout:** obligatorio en todo
 - **Naming capas:** Sentence case con espacios
-- **Naming componentes:** Mayúscula-guión-minúscula (`Button-icon`)
+- **Naming componentes:** Mayúscula-guión-minúscula (`Button-icon`). Siglas en mayúscula (`NFC`, `PIN`). Brands de terceros respetan la grafía oficial de la marca (`Mercado-Pago`, `La-Caja`).
 - **Gap vs Padding:** gap = itemSpacing, padding = paddingLeft/Right/Top/Bottom. No cruzar.
 - **Focus:** cross, no depende de style/selected/type
 - **Feedback border en interactive:** el tipo (error) funciona como estado
