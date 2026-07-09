@@ -111,8 +111,8 @@ export function Changelog() {
   const entries = changelogData as unknown as ChangelogEntry[]
 
   const fileLabels = useMemo(() => {
-    const labels = new Set<string>()
-    for (const e of entries) labels.add(e.fileLabel)
+    const labels = new Set<string>(['components', 'templates', 'assets', 'custom'])
+    for (const e of entries) if (e.fileLabel) labels.add(e.fileLabel)
     return [...labels].sort()
   }, [entries])
 
