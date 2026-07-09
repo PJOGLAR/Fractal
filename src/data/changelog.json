@@ -1,5 +1,71 @@
 [
   {
+    "id": "mrdnsxek",
+    "timestamp": "2026-07-09T15:26:14.300Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "1 tokens eliminados, 1 tokens cambiados, 6 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Time-error",
+        "nodeId": "2144:242",
+        "details": "Vector.strokes: d56/4033:356 → d521/4240:12"
+      },
+      {
+        "type": "property_changed",
+        "component": "Time-error",
+        "nodeId": "2144:242",
+        "details": "Vector.size.width: 20 → 25"
+      },
+      {
+        "type": "property_changed",
+        "component": "Time-error",
+        "nodeId": "2144:242",
+        "details": "Vector.size.height: 3 → 4"
+      },
+      {
+        "type": "property_changed",
+        "component": "Time-error",
+        "nodeId": "2144:242",
+        "details": "Vector.stroke[0].color: #E2202C → #082749"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Cellphone-hand-number-warning",
+        "nodeId": "3396:224",
+        "details": "Vector44.fills (era: 0d6/4033:357)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Inverfin",
+        "nodeId": "2295:261",
+        "details": "Logo.strokeWeight: 1 → 0.11134672164916992"
+      },
+      {
+        "type": "property_changed",
+        "component": "Inverfin",
+        "nodeId": "2295:261",
+        "details": "Logo.size.width: 33 → 32"
+      },
+      {
+        "type": "property_changed",
+        "component": "Inverfin",
+        "nodeId": "2295:261",
+        "details": "Logo.size.height: 7 → 6"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 1,
+      "bindingsChanged": 1,
+      "propertiesChanged": 6
+    }
+  },
+  {
     "id": "mrc6ef86",
     "timestamp": "2026-07-08T14:31:17.910Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
