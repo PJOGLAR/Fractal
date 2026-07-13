@@ -1,5 +1,107 @@
 [
   {
+    "id": "mrjcap2l",
+    "timestamp": "2026-07-13T14:50:44.973Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "4 tokens eliminados, 10 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "binding_removed",
+        "component": "Infinite",
+        "nodeId": "2966:282",
+        "details": "Vector.fills (era: static/foreground/neutral/strong)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Infinite",
+        "nodeId": "2966:282",
+        "details": "Vector.strokeWeight: 0.02500000037252903 → 1.7000000476837158"
+      },
+      {
+        "type": "property_changed",
+        "component": "Infinite",
+        "nodeId": "2966:282",
+        "details": "Vector.size.width: 20 → 19"
+      },
+      {
+        "type": "property_changed",
+        "component": "Infinite",
+        "nodeId": "2966:282",
+        "details": "Vector.size.height: 9 → 8"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Box",
+        "nodeId": "3092:220",
+        "details": "Vector.fills (era: static/foreground/neutral/strong)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Box",
+        "nodeId": "3092:220",
+        "details": "Vector.strokeWeight: 0.02500000037252903 → 1.7000000476837158"
+      },
+      {
+        "type": "property_changed",
+        "component": "Box",
+        "nodeId": "3092:220",
+        "details": "Vector.size.width: 18 → 16"
+      },
+      {
+        "type": "property_changed",
+        "component": "Box",
+        "nodeId": "3092:220",
+        "details": "Vector.size.height: 20 → 18"
+      },
+      {
+        "type": "property_changed",
+        "component": "Card-quotes",
+        "nodeId": "3337:219",
+        "details": "Vector.size.width: 24 → 19"
+      },
+      {
+        "type": "property_changed",
+        "component": "Card-quotes",
+        "nodeId": "3337:219",
+        "details": "Vector.size.height: 18 → 13"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Installments",
+        "nodeId": "3528:200",
+        "details": "Logo.fills (era: static/foreground/neutral/strong)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Finger-print",
+        "nodeId": "928:250",
+        "details": "Vector.fills (era: static/foreground/neutral/strong)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Finger-print",
+        "nodeId": "928:250",
+        "details": "Vector.strokeWeight: 0.02500000037252903 → 1.5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Finger-print",
+        "nodeId": "928:250",
+        "details": "Vector.size.height: 20 → 19"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 4,
+      "bindingsChanged": 0,
+      "propertiesChanged": 10
+    }
+  },
+  {
     "id": "mrdnsxek",
     "timestamp": "2026-07-09T15:26:14.300Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
