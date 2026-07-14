@@ -1,5 +1,797 @@
 [
   {
+    "id": "mrkpyt82",
+    "timestamp": "2026-07-14T14:01:11.282Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "8 renombrados, 13 tokens nuevos, 1 tokens eliminados, 59 tokens cambiados, 48 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "binding_added",
+        "component": "Infinite",
+        "nodeId": "2966:282",
+        "details": "Vector.strokes → static/foreground/neutral/strong"
+      },
+      {
+        "type": "property_changed",
+        "component": "Infinite",
+        "nodeId": "2966:282",
+        "details": "Vector.stroke[0].color: #000000 → #171717"
+      },
+      {
+        "type": "binding_added",
+        "component": "Box",
+        "nodeId": "3092:220",
+        "details": "Vector.strokes → static/foreground/neutral/strong"
+      },
+      {
+        "type": "property_changed",
+        "component": "Box",
+        "nodeId": "3092:220",
+        "details": "Vector.stroke[0].color: #000000 → #171717"
+      },
+      {
+        "type": "binding_added",
+        "component": "Card-quotes",
+        "nodeId": "3337:219",
+        "details": "Rectangle 1 (Stroke).fills → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_added",
+        "component": "Card-quotes",
+        "nodeId": "3337:219",
+        "details": "Vector 3 (Stroke).fills → static/foreground/neutral/strong"
+      },
+      {
+        "type": "property_changed",
+        "component": "Card-quotes",
+        "nodeId": "3337:219",
+        "details": "Rectangle 1 (Stroke).fill[0].color: #000000 → #171717"
+      },
+      {
+        "type": "binding_added",
+        "component": "Card-machine",
+        "nodeId": "3341:350",
+        "details": "Vector.fills → static/foreground/neutral/strong"
+      },
+      {
+        "type": "property_changed",
+        "component": "Card-machine",
+        "nodeId": "3341:350",
+        "details": "Vector.fill[0].color: #1C1B1F → #171717"
+      },
+      {
+        "type": "binding_added",
+        "component": "Installments",
+        "nodeId": "3528:200",
+        "details": "Vector.fills → static/foreground/neutral/strong"
+      },
+      {
+        "type": "property_changed",
+        "component": "Installments",
+        "nodeId": "3528:200",
+        "details": "Vector.fill[0].color: #000000 → #171717"
+      },
+      {
+        "type": "component_renamed",
+        "component": "PIX-fill",
+        "nodeId": "3300:334",
+        "details": "PIX → PIX-fill"
+      },
+      {
+        "type": "binding_added",
+        "component": "Finger-print",
+        "nodeId": "928:250",
+        "details": "Vector.strokes → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Benefits-fill",
+        "nodeId": "2370:521",
+        "details": "Vector.fills: interactive/foreground/neutral/default/strong → static/foreground/neutral/strong"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Personal-movil",
+        "nodeId": "3077:196",
+        "details": "Personal-mvil → Personal-movil"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Success",
+        "nodeId": "944:259",
+        "details": "Background.fills: static/background/neutral/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Error",
+        "nodeId": "944:258",
+        "details": "Background.fills: static/background/neutral/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Warning",
+        "nodeId": "944:256",
+        "details": "Background.fills: static/background/neutral/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Pending",
+        "nodeId": "944:257",
+        "details": "Background.fills: static/background/neutral/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "property_changed",
+        "component": "Wallet-broke-warning",
+        "nodeId": "1596:57",
+        "details": "Wallet.size.width: 28 → 46"
+      },
+      {
+        "type": "property_changed",
+        "component": "Wallet-broke-warning",
+        "nodeId": "1596:57",
+        "details": "Wallet.size.height: 23 → 38"
+      },
+      {
+        "type": "property_changed",
+        "component": "Wallet-broke-warning",
+        "nodeId": "1596:57",
+        "details": "Clip.size.width: 2 → 3"
+      },
+      {
+        "type": "property_changed",
+        "component": "Wallet-broke-warning",
+        "nodeId": "1596:57",
+        "details": "Clip.size.height: 2 → 3"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Information-not-available",
+        "nodeId": "1600:115",
+        "details": "Vector.fills: interactive/border/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Delete",
+        "nodeId": "1248:90",
+        "details": "Vector.fills: static/background/neutral/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Delete-confirmation",
+        "nodeId": "1174:217",
+        "details": "Sign.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "property_changed",
+        "component": "Delete-confirmation",
+        "nodeId": "1174:217",
+        "details": "Collector.size.width: 23 → 27"
+      },
+      {
+        "type": "property_changed",
+        "component": "Delete-confirmation",
+        "nodeId": "1174:217",
+        "details": "Collector.size.height: 22 → 26"
+      },
+      {
+        "type": "property_changed",
+        "component": "Delete-confirmation",
+        "nodeId": "1174:217",
+        "details": "Circle.size.width: 10 → 12"
+      },
+      {
+        "type": "property_changed",
+        "component": "Delete-confirmation",
+        "nodeId": "1174:217",
+        "details": "Circle.size.height: 10 → 12"
+      },
+      {
+        "type": "property_changed",
+        "component": "Delete-confirmation",
+        "nodeId": "1174:217",
+        "details": "Sign.size.height: 6 → 7"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Email-expired",
+        "nodeId": "809:4165",
+        "details": "Letter.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Account-warning",
+        "nodeId": "1078:864",
+        "details": "Sign.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Shop-warning",
+        "nodeId": "1279:100",
+        "details": "Sign.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Activity-warning",
+        "nodeId": "1678:394",
+        "details": "Vector01.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Calendar-paused",
+        "nodeId": "980:156",
+        "details": "Vector.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Vector 1592.strokes: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Notification-warning",
+        "nodeId": "1461:135",
+        "details": "Vector 1593.strokes: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Receipt-warning",
+        "nodeId": "1810:160",
+        "details": "Sign.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Money-warning",
+        "nodeId": "2136:157",
+        "details": "Union.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Timer-warning",
+        "nodeId": "2136:75",
+        "details": "Union.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Papers-warning",
+        "nodeId": "2145:498",
+        "details": "Union.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Ticket-warning",
+        "nodeId": "2144:224",
+        "details": "Vector.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "TyC-warning",
+        "nodeId": "2210:119",
+        "details": "Union.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Vector 1592 (Stroke).fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Vector 1593 (Stroke).fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Vector.size.width: 29 → 31"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Vector.size.height: 44 → 47"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Group 1171276024.size.width: 13 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Group 1171276024.size.height: 13 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Star 122.size.width: 13 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Star 122.size.height: 13 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Star 122 (Stroke).size.width: 13 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion",
+        "nodeId": "2340:152",
+        "details": "Star 122 (Stroke).size.height: 13 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion-error",
+        "nodeId": "2340:155",
+        "details": "Group 1171276024.size.width: 11 → 12"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion-error",
+        "nodeId": "2340:155",
+        "details": "Group 1171276024.size.height: 11 → 12"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion-error",
+        "nodeId": "2340:155",
+        "details": "Star 122.size.width: 11 → 12"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion-error",
+        "nodeId": "2340:155",
+        "details": "Star 122.size.height: 11 → 12"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion-error",
+        "nodeId": "2340:155",
+        "details": "Star 122 (Stroke).size.width: 11 → 12"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cellphone-promotion-error",
+        "nodeId": "2340:155",
+        "details": "Star 122 (Stroke).size.height: 11 → 12"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1592 (Stroke).fills: interactive/border/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Bus-warning",
+        "nodeId": "2374:90",
+        "details": "Vector 1593 (Stroke).fills: interactive/border/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Contacts-warning",
+        "nodeId": "2376:304",
+        "details": "Vector 1592 (Stroke).fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Contacts-warning",
+        "nodeId": "2376:304",
+        "details": "Vector 1593 (Stroke).fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Medal-warning",
+        "nodeId": "2450:279",
+        "details": "Vector.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Bill-warning",
+        "nodeId": "2450:283",
+        "details": "Vector.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Trophy-warning",
+        "nodeId": "2573:467",
+        "details": "Vector 1592 (Stroke).fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Trophy-warning",
+        "nodeId": "2573:467",
+        "details": "Vector 1593 (Stroke).fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "PIN-warning",
+        "nodeId": "799:25932",
+        "details": "Vector 1419 (Stroke).fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "PIN-warning",
+        "nodeId": "799:25932",
+        "details": "Vector 1420 (Stroke).fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Money-returns ",
+        "nodeId": "3396:154",
+        "details": "Vector01.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Calendar-warning",
+        "nodeId": "3069:139",
+        "details": "Vector10.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Cellphone-hand-number-warning",
+        "nodeId": "3396:224",
+        "details": "Vector02.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Cellphone-hand-number-warning",
+        "nodeId": "3396:224",
+        "details": "Vector01.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Phonerecharge-warning",
+        "nodeId": "2806:284",
+        "details": "Vector.fills: interactive/border/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Tap-warning",
+        "nodeId": "2883:300",
+        "details": "Vector 1592 (Stroke).fills: interactive/border/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Tap-warning",
+        "nodeId": "2883:300",
+        "details": "Vector 1593 (Stroke).fills: interactive/border/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Bus-card-warning",
+        "nodeId": "2883:298",
+        "details": "Vector 1592 (Stroke).fills: interactive/border/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Bus-card-warning",
+        "nodeId": "2883:298",
+        "details": "Vector 1593 (Stroke).fills: interactive/border/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Calendar-time",
+        "nodeId": "3124:174",
+        "details": "Vector11.fills: interactive/border/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Bell-notification-off",
+        "nodeId": "1606:159",
+        "details": "Sign.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_added",
+        "component": "Attention",
+        "nodeId": "3627:284",
+        "details": "Vector.fills → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "property_changed",
+        "component": "Attention",
+        "nodeId": "3627:284",
+        "details": "Vector.fill[0].color: #FFFFFF → #FCFCFC"
+      },
+      {
+        "type": "binding_added",
+        "component": "Account-not-found",
+        "nodeId": "799:25973",
+        "details": "Miscellaneous.fills → interactive/background/brand/default/subtle"
+      },
+      {
+        "type": "property_changed",
+        "component": "Account-not-found",
+        "nodeId": "799:25973",
+        "details": "Miscellaneous.fill[0].color: #5A50F9 → #E0E4F5"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Transfer-card",
+        "nodeId": "2450:304",
+        "details": "Vector.strokes: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_added",
+        "component": "Expiry",
+        "nodeId": "3459:176",
+        "details": "Vector 392906 (Stroke).fills → 896/3958:111"
+      },
+      {
+        "type": "binding_added",
+        "component": "Expiry",
+        "nodeId": "3459:176",
+        "details": "Vector 392907 (Stroke).fills → 896/3958:111"
+      },
+      {
+        "type": "binding_added",
+        "component": "Expiry",
+        "nodeId": "3459:176",
+        "details": "Vector 392908 (Stroke).fills → 896/3958:111"
+      },
+      {
+        "type": "binding_changed",
+        "component": "PIX",
+        "nodeId": "1287:217",
+        "details": "Cristo-fill.fills: static/background/neutral/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "NFC",
+        "nodeId": "2899:217",
+        "details": "Vector17.fills: static/background/neutral/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "NFC",
+        "nodeId": "2899:217",
+        "details": "Vector15.fills: static/background/neutral/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "NFC",
+        "nodeId": "2899:217",
+        "details": "Vector13.fills: static/background/neutral/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "NFC",
+        "nodeId": "2899:217",
+        "details": "Vector11.fills: static/background/neutral/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card-freeze",
+        "nodeId": "2899:216",
+        "details": "Vector09.fills: static/background/neutral/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card-freeze",
+        "nodeId": "2899:216",
+        "details": "Vector08.fills: static/background/neutral/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card-freeze",
+        "nodeId": "2899:216",
+        "details": "Vector07.fills: static/background/neutral/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card-ppay",
+        "nodeId": "1493:545",
+        "details": "Exclude.fills: static/background/neutral/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card-ppay",
+        "nodeId": "1493:545",
+        "details": "Chip .fills: static/background/neutral/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card-ppay",
+        "nodeId": "1493:545",
+        "details": "Brand.fills: static/background/neutral/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Account-pay",
+        "nodeId": "1078:865",
+        "details": "Card.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Empty-agenda",
+        "nodeId": "2804:362",
+        "details": "Vector 16.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Account",
+        "nodeId": "1074:58",
+        "details": "Bak-fill.fills: interactive/foreground/neutral/default/quiet → static/foreground/neutral/quiet"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-Norte",
+        "nodeId": "456:1228",
+        "details": "Logo.strokeWeight: 0.8666176795959473 → 0.020900756120681763"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-Norte",
+        "nodeId": "456:1228",
+        "details": "Logo.size.height: 28 → 27"
+      },
+      {
+        "type": "property_changed",
+        "component": "Edesa",
+        "nodeId": "456:1214",
+        "details": "Logo.strokeWeight: 0.9375609755516052 → 0.01463701669126749"
+      },
+      {
+        "type": "property_changed",
+        "component": "Edesa",
+        "nodeId": "456:1214",
+        "details": "Logo.size.height: 8 → 7"
+      },
+      {
+        "type": "binding_added",
+        "component": "Google-negative",
+        "nodeId": "3177:237",
+        "details": "Logo.fills → static/foreground/neutral/strong"
+      },
+      {
+        "type": "binding_removed",
+        "component": "Google-negative",
+        "nodeId": "3177:237",
+        "details": "Vector.fills (era: static/foreground/neutral/strong)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Medife",
+        "nodeId": "2295:264",
+        "details": "Logo.strokeWeight: 1 → 0.015622951090335846"
+      },
+      {
+        "type": "property_changed",
+        "component": "Medife",
+        "nodeId": "2295:264",
+        "details": "Logo.size.width: 32 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Medife",
+        "nodeId": "2295:264",
+        "details": "Logo.size.height: 12 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Swiss",
+        "nodeId": "2295:258",
+        "details": "Logo.strokeWeight: 1 → 0.015613828785717487"
+      },
+      {
+        "type": "property_changed",
+        "component": "Swiss",
+        "nodeId": "2295:258",
+        "details": "Logo.size.width: 32 → 30"
+      },
+      {
+        "type": "property_changed",
+        "component": "Swiss",
+        "nodeId": "2295:258",
+        "details": "Logo.size.height: 15 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Atlas",
+        "nodeId": "423:729",
+        "details": "Logo.strokeWeight: 1 → 0.015623092651367188"
+      },
+      {
+        "type": "property_changed",
+        "component": "Atlas",
+        "nodeId": "423:729",
+        "details": "Logo.size.height: 10 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Provincia",
+        "nodeId": "423:727",
+        "details": "Logo.strokeWeight: 1 → 0.021484375"
+      },
+      {
+        "type": "property_changed",
+        "component": "Provincia",
+        "nodeId": "423:727",
+        "details": "Logo.size.width: 32 → 26"
+      },
+      {
+        "type": "property_changed",
+        "component": "Provincia",
+        "nodeId": "423:727",
+        "details": "Logo.size.height: 22 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "BSE",
+        "nodeId": "423:723",
+        "details": "Logo.strokeWeight: 1 → 0.01627604104578495"
+      },
+      {
+        "type": "property_changed",
+        "component": "BSE",
+        "nodeId": "423:723",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "BSE",
+        "nodeId": "423:723",
+        "details": "Logo.size.height: 17 → 8"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Tik-tok-negativo",
+        "nodeId": "2914:574",
+        "details": "Tik-Tok → Tik-tok-negativo"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Facebook-negativo",
+        "nodeId": "2914:573",
+        "details": "Facebook → Facebook-negativo"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Instagram-negativo",
+        "nodeId": "2914:572",
+        "details": "Instagram → Instagram-negativo"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Mega-loto",
+        "nodeId": "3364:1589",
+        "details": "Mega-Loto → Mega-loto"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Arca",
+        "nodeId": "3415:394",
+        "details": "ARCA → Arca"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Whatsapp-negativo",
+        "nodeId": "3535:154",
+        "details": "Whatsapp → Whatsapp-negativo"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "bindingsAdded": 13,
+      "bindingsRemoved": 1,
+      "bindingsChanged": 59,
+      "propertiesChanged": 48
+    }
+  },
+  {
     "id": "mrjcap2l",
     "timestamp": "2026-07-13T14:50:44.973Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
