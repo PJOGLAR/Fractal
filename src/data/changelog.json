@@ -1,5 +1,1487 @@
 [
   {
+    "id": "mrnl5mnv",
+    "timestamp": "2026-07-16T14:09:49.819Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "4 componentes nuevos, 1 renombrados, 239 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Chango-Mas2",
+        "nodeId": "4050:167",
+        "details": "Chango-Mas2 (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Mcdonalds",
+        "nodeId": "4052:157",
+        "details": "Mcdonalds (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Pix-mono",
+        "nodeId": "4053:167",
+        "details": "Pix-mono (COMPONENT)"
+      },
+      {
+        "type": "component_added",
+        "component": "Pix",
+        "nodeId": "4024:151",
+        "details": "Pix (COMPONENT)"
+      },
+      {
+        "type": "property_changed",
+        "component": "Mercado-Pago",
+        "nodeId": "413:1036",
+        "details": "Logo.size.height: 20 → 19"
+      },
+      {
+        "type": "property_changed",
+        "component": "Moni",
+        "nodeId": "413:1037",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Moni",
+        "nodeId": "413:1037",
+        "details": "Logo.size.height: 10 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Personal-Pay",
+        "nodeId": "413:1039",
+        "details": "Logo.size.width: 16 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Personal-Pay",
+        "nodeId": "413:1039",
+        "details": "Logo.size.height: 16 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Brubank",
+        "nodeId": "423:687",
+        "details": "Logo.size.width: 29 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Uala",
+        "nodeId": "423:688",
+        "details": "Logo.size.height: 16 → 19"
+      },
+      {
+        "type": "property_changed",
+        "component": "Naranja-X",
+        "nodeId": "423:689",
+        "details": "Logo.size.width: 18 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Naranja-X",
+        "nodeId": "423:689",
+        "details": "Logo.size.height: 10 → 16"
+      },
+      {
+        "type": "property_changed",
+        "component": "Prex",
+        "nodeId": "423:690",
+        "details": "Logo.size.width: 27 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Prex",
+        "nodeId": "423:690",
+        "details": "Logo.size.height: 9 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Reba",
+        "nodeId": "2477:447",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Reba",
+        "nodeId": "2477:447",
+        "details": "Logo.size.height: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Corredores-viales",
+        "nodeId": "456:1413",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Corredores-viales",
+        "nodeId": "456:1413",
+        "details": "Logo.size.height: 9 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Autopista-del-Sol",
+        "nodeId": "456:1412",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Autopista-del-Sol",
+        "nodeId": "456:1412",
+        "details": "Logo.size.height: 13 → 11"
+      },
+      {
+        "type": "property_changed",
+        "component": "AUSA",
+        "nodeId": "2318:414",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "AUSA",
+        "nodeId": "2318:414",
+        "details": "Logo.size.height: 8 → 7"
+      },
+      {
+        "type": "property_changed",
+        "component": "TelePASE",
+        "nodeId": "456:1409",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Sube",
+        "nodeId": "456:1408",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Sube",
+        "nodeId": "456:1408",
+        "details": "Logo.size.height: 13 → 12"
+      },
+      {
+        "type": "property_changed",
+        "component": "Red-Bus-Cordoba",
+        "nodeId": "456:1407",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Red-Bus-Cordoba",
+        "nodeId": "456:1407",
+        "details": "Logo.size.height: 13 → 12"
+      },
+      {
+        "type": "property_changed",
+        "component": "Red-Bus-Tucuman",
+        "nodeId": "456:1406",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Red-Bus-Tucuman",
+        "nodeId": "456:1406",
+        "details": "Logo.size.height: 13 → 12"
+      },
+      {
+        "type": "property_changed",
+        "component": "Saeta",
+        "nodeId": "456:1405",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Saeta",
+        "nodeId": "456:1405",
+        "details": "Logo.size.height: 22 → 20"
+      },
+      {
+        "type": "property_changed",
+        "component": "Jet-Smart",
+        "nodeId": "456:1404",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Autopista-del-Oeste",
+        "nodeId": "2349:237",
+        "details": "Vector.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Autopista-del-Oeste",
+        "nodeId": "2349:237",
+        "details": "Vector.size.height: 11 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Tuenti",
+        "nodeId": "456:1303",
+        "details": "Vector.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Flow",
+        "nodeId": "456:1306",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Flow",
+        "nodeId": "456:1306",
+        "details": "Logo.size.height: 12 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Claro",
+        "nodeId": "456:1302",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Claro",
+        "nodeId": "456:1302",
+        "details": "Logo.size.height: 11 → 10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Personal",
+        "nodeId": "456:1307",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Personal",
+        "nodeId": "456:1307",
+        "details": "Logo.size.height: 7 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Personal Flow horizontal",
+        "nodeId": "456:1309",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Movistar",
+        "nodeId": "456:1301",
+        "details": "Logo.size.width: 27 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Movistar",
+        "nodeId": "456:1301",
+        "details": "Logo.size.height: 20 → 21"
+      },
+      {
+        "type": "property_changed",
+        "component": "AySA",
+        "nodeId": "456:1305",
+        "details": "Logo.size.width: 30 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "AySA",
+        "nodeId": "456:1305",
+        "details": "Logo.size.height: 30 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Personal Flow vertical",
+        "nodeId": "456:1308",
+        "details": "Logo.size.width: 29 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Personal Flow vertical",
+        "nodeId": "456:1308",
+        "details": "Logo.size.height: 17 → 16"
+      },
+      {
+        "type": "property_changed",
+        "component": "Epec",
+        "nodeId": "456:1300",
+        "details": "Logo.strokeWeight: 1 → 0.1697978973388672"
+      },
+      {
+        "type": "property_changed",
+        "component": "Epec",
+        "nodeId": "456:1300",
+        "details": "Logo.size.width: 32 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Epec",
+        "nodeId": "456:1300",
+        "details": "Logo.size.height: 32 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Epec",
+        "nodeId": "456:1300",
+        "details": "Logo.fill[0].color: #0F816A → #1A7765"
+      },
+      {
+        "type": "property_changed",
+        "component": "Ecogas",
+        "nodeId": "456:1304",
+        "details": "Vector.size.width: 22 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Ecogas",
+        "nodeId": "456:1304",
+        "details": "Vector.size.height: 21 → 27"
+      },
+      {
+        "type": "property_changed",
+        "component": "Edesur",
+        "nodeId": "456:1232",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Edesur",
+        "nodeId": "456:1232",
+        "details": "Logo.size.height: 7 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Agua-Jujuy",
+        "nodeId": "456:1235",
+        "details": "Logo.size.height: 15 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-Santafesinas",
+        "nodeId": "456:1236",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-Santafesinas",
+        "nodeId": "456:1236",
+        "details": "Logo.size.height: 12 → 11"
+      },
+      {
+        "type": "property_changed",
+        "component": "Edenor",
+        "nodeId": "456:1230",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Edenor",
+        "nodeId": "456:1230",
+        "details": "Logo.size.height: 9 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-Formosa",
+        "nodeId": "456:1229",
+        "details": "Logo.strokeWeight: 0.021481961011886597 → 0.4900413155555725"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-Formosa",
+        "nodeId": "456:1229",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-Formosa",
+        "nodeId": "456:1229",
+        "details": "Logo.size.height: 19 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-Formosa",
+        "nodeId": "456:1229",
+        "details": "Logo.fill[0].color: #64696D → #076EA6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-Norte",
+        "nodeId": "456:1228",
+        "details": "Logo.strokeWeight: 0.020900756120681763 → 0.26949986815452576"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-Norte",
+        "nodeId": "456:1228",
+        "details": "Logo.size.width: 21 → 18"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-Norte",
+        "nodeId": "456:1228",
+        "details": "Logo.size.height: 27 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-Norte",
+        "nodeId": "456:1228",
+        "details": "Logo.fill[0].color: #FBF9FC → #6AB7D6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Sameep",
+        "nodeId": "456:1227",
+        "details": "Logo.size.width: 27 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Sameep",
+        "nodeId": "456:1227",
+        "details": "Logo.size.height: 15 → 17"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-Cordobesas",
+        "nodeId": "456:1220",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-Cordobesas",
+        "nodeId": "456:1220",
+        "details": "Logo.size.height: 19 → 18"
+      },
+      {
+        "type": "property_changed",
+        "component": "Metrogas",
+        "nodeId": "456:1221",
+        "details": "Logo.size.width: 31 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Metrogas",
+        "nodeId": "456:1221",
+        "details": "Logo.size.height: 11 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Secheep",
+        "nodeId": "456:1223",
+        "details": "Logo.size.width: 27 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Secheep",
+        "nodeId": "456:1223",
+        "details": "Logo.size.height: 26 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Refsa",
+        "nodeId": "456:1224",
+        "details": "Logo.strokeWeight: 0.013662530109286308 → 0.6403816342353821"
+      },
+      {
+        "type": "property_changed",
+        "component": "Refsa",
+        "nodeId": "456:1224",
+        "details": "Logo.fill[0].color: #F79721 → #EC7F10"
+      },
+      {
+        "type": "property_changed",
+        "component": "Direc-TV",
+        "nodeId": "456:1219",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Direc-TV",
+        "nodeId": "456:1219",
+        "details": "Logo.size.height: 6 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "EPE-Santa-Fe",
+        "nodeId": "456:1218",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "EPE-Santa-Fe",
+        "nodeId": "456:1218",
+        "details": "Logo.size.height: 15 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Dpec",
+        "nodeId": "456:1217",
+        "details": "Logo.strokeWeight: 0.025617241859436035 → 0.11139719188213348"
+      },
+      {
+        "type": "property_changed",
+        "component": "Dpec",
+        "nodeId": "456:1217",
+        "details": "Logo.fill[0].color: #FEFEFE → #87BD40"
+      },
+      {
+        "type": "property_changed",
+        "component": "Ejesa",
+        "nodeId": "456:1216",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Ejesa",
+        "nodeId": "456:1216",
+        "details": "Logo.size.height: 8 → 7"
+      },
+      {
+        "type": "property_changed",
+        "component": "Edet",
+        "nodeId": "456:1215",
+        "details": "Logo.size.width: 29 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Edet",
+        "nodeId": "456:1215",
+        "details": "Logo.size.height: 9 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "ABSA",
+        "nodeId": "456:1213",
+        "details": "Logo.strokeWeight: 0.025390625 → 0.0181361623108387"
+      },
+      {
+        "type": "property_changed",
+        "component": "ABSA",
+        "nodeId": "456:1213",
+        "details": "Logo.size.width: 29 → 20"
+      },
+      {
+        "type": "property_changed",
+        "component": "ABSA",
+        "nodeId": "456:1213",
+        "details": "Logo.size.height: 25 → 17"
+      },
+      {
+        "type": "property_changed",
+        "component": "Telecentro",
+        "nodeId": "456:1212",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Edesa",
+        "nodeId": "456:1214",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Camuzzi",
+        "nodeId": "456:1225",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Litoral-gas",
+        "nodeId": "456:1226",
+        "details": "Logo.size.width: 31 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Gasnea",
+        "nodeId": "456:1237",
+        "details": "Logo.size.width: 27 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Gasnea",
+        "nodeId": "456:1237",
+        "details": "Logo.size.height: 27 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "EDELAP",
+        "nodeId": "1916:407",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "EDELAP",
+        "nodeId": "1916:407",
+        "details": "Logo.size.height: 9 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-medocinas",
+        "nodeId": "1916:410",
+        "details": "Logo.strokeWeight: 0.021078135818243027 → 0.018066974356770515"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-medocinas",
+        "nodeId": "1916:410",
+        "details": "Logo.size.width: 32 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Aguas-medocinas",
+        "nodeId": "1916:410",
+        "details": "Logo.size.height: 20 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "EDEN",
+        "nodeId": "2349:327",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "EDEN",
+        "nodeId": "2349:327",
+        "details": "Logo.size.height: 9 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Vector",
+        "nodeId": "2349:361",
+        "details": "Logo.size.width: 32 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Vector",
+        "nodeId": "2349:361",
+        "details": "Logo.size.height: 32 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Google",
+        "nodeId": "3177:236",
+        "details": "Logo.size.width: 26 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Google",
+        "nodeId": "3177:236",
+        "details": "Logo.size.height: 26 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Pedidos-Ya",
+        "nodeId": "456:852",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Dafiti",
+        "nodeId": "456:859",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Yaguar",
+        "nodeId": "456:855",
+        "details": "Logo.size.width: 31 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Yaguar",
+        "nodeId": "456:855",
+        "details": "Logo.size.height: 9 → 8"
+      },
+      {
+        "type": "property_changed",
+        "component": "Avon",
+        "nodeId": "456:857",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Avon",
+        "nodeId": "456:857",
+        "details": "Logo.size.height: 7 → 6"
+      },
+      {
+        "type": "property_changed",
+        "component": "Natura",
+        "nodeId": "456:856",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Natura",
+        "nodeId": "456:856",
+        "details": "Logo.size.height: 23 → 21"
+      },
+      {
+        "type": "property_changed",
+        "component": "Travel-rock",
+        "nodeId": "1916:408",
+        "details": "Logo.size.width: 30 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Travel-rock",
+        "nodeId": "1916:408",
+        "details": "Logo.size.height: 28 → 22"
+      },
+      {
+        "type": "property_changed",
+        "component": "Toyota",
+        "nodeId": "2295:364",
+        "details": "Logo.size.width: 29 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Alex",
+        "nodeId": "2295:253",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Alex",
+        "nodeId": "2295:253",
+        "details": "Logo.size.height: 17 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Jaha",
+        "nodeId": "2295:256",
+        "details": "Logo.size.width: 22 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Jaha",
+        "nodeId": "2295:256",
+        "details": "Logo.size.height: 20 → 25"
+      },
+      {
+        "type": "property_changed",
+        "component": "Musimundo",
+        "nodeId": "2557:168",
+        "details": "Logo.size.width: 32 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Musimundo",
+        "nodeId": "2557:168",
+        "details": "Logo.size.height: 32 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Mega-loto",
+        "nodeId": "3364:1589",
+        "details": "Logo.strokeWeight: 0.25 → 0.2142857164144516"
+      },
+      {
+        "type": "property_changed",
+        "component": "Mega-loto",
+        "nodeId": "3364:1589",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Mega-loto",
+        "nodeId": "3364:1589",
+        "details": "Logo.size.height: 15 → 13"
+      },
+      {
+        "type": "property_changed",
+        "component": "Personal-Pay-Iso",
+        "nodeId": "414:1423",
+        "details": "Logo.strokeWeight: 25.070350646972656 → 21.488872528076172"
+      },
+      {
+        "type": "property_changed",
+        "component": "Personal-Pay-Iso",
+        "nodeId": "414:1423",
+        "details": "Logo.size.width: 26 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Personal-Pay-Iso",
+        "nodeId": "414:1423",
+        "details": "Logo.size.height: 26 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Rapipago",
+        "nodeId": "414:1698",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Pago-Facil",
+        "nodeId": "414:1699",
+        "details": "Logo.strokeWeight: 1 → 0.8575264811515808"
+      },
+      {
+        "type": "property_changed",
+        "component": "Pago-Facil",
+        "nodeId": "414:1699",
+        "details": "Logo.size.width: 26 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Pago-Facil",
+        "nodeId": "414:1699",
+        "details": "Logo.size.height: 26 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Claro-Pay",
+        "nodeId": "423:774",
+        "details": "Logo.size.width: 25 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Claro-Pay",
+        "nodeId": "423:774",
+        "details": "Logo.size.height: 15 → 16"
+      },
+      {
+        "type": "property_changed",
+        "component": "Ande",
+        "nodeId": "456:719",
+        "details": "Logo.strokeWeight: 0.03756009414792061 → 0.03221547603607178"
+      },
+      {
+        "type": "property_changed",
+        "component": "Ande",
+        "nodeId": "456:719",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Ande",
+        "nodeId": "456:719",
+        "details": "Logo.size.height: 20 → 17"
+      },
+      {
+        "type": "property_changed",
+        "component": "Zimple",
+        "nodeId": "2350:798",
+        "details": "Logo.strokeWeight: 0.2197265625 → 0.1883370727300644"
+      },
+      {
+        "type": "property_changed",
+        "component": "Zimple",
+        "nodeId": "2350:798",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Zimple",
+        "nodeId": "2350:798",
+        "details": "Logo.size.height: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "La-Caja",
+        "nodeId": "422:1008",
+        "details": "Logo.strokeWeight: 1 → 0.88653564453125"
+      },
+      {
+        "type": "property_changed",
+        "component": "Smg",
+        "nodeId": "422:947",
+        "details": "Logo.size.width: 29 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Smg",
+        "nodeId": "422:947",
+        "details": "Logo.size.height: 14 → 13"
+      },
+      {
+        "type": "property_changed",
+        "component": "Hdi",
+        "nodeId": "423:820",
+        "details": "Logo.strokeWeight: 0.018298141658306122 → 0.01568412221968174"
+      },
+      {
+        "type": "property_changed",
+        "component": "Hdi",
+        "nodeId": "423:820",
+        "details": "Logo.size.width: 29 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Hdi",
+        "nodeId": "423:820",
+        "details": "Logo.size.height: 18 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bbva",
+        "nodeId": "423:819",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Bbva",
+        "nodeId": "423:819",
+        "details": "Logo.size.height: 13 → 12"
+      },
+      {
+        "type": "property_changed",
+        "component": "La-Nueva",
+        "nodeId": "423:816",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "La-Nueva",
+        "nodeId": "423:816",
+        "details": "Logo.size.height: 17 → 15"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Rivadavia-1",
+        "nodeId": "423:810",
+        "details": "Rivadavia → Rivadavia-1"
+      },
+      {
+        "type": "property_changed",
+        "component": "Rivadavia-1",
+        "nodeId": "423:810",
+        "details": "Logo.strokeWeight: 0.02977193146944046 → 0.02415844239294529"
+      },
+      {
+        "type": "property_changed",
+        "component": "Rivadavia-1",
+        "nodeId": "423:810",
+        "details": "Logo.size.width: 30 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Rivadavia-1",
+        "nodeId": "423:810",
+        "details": "Logo.size.height: 30 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Parana",
+        "nodeId": "423:808",
+        "details": "Logo.strokeWeight: 0.014620973728597164 → 0.6982421875"
+      },
+      {
+        "type": "property_changed",
+        "component": "Parana",
+        "nodeId": "423:808",
+        "details": "Logo.size.width: 29 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Parana",
+        "nodeId": "423:808",
+        "details": "Logo.size.height: 8 → 11"
+      },
+      {
+        "type": "property_changed",
+        "component": "Parana",
+        "nodeId": "423:808",
+        "details": "Logo.fill[0].color: #002360 → #02296D"
+      },
+      {
+        "type": "property_changed",
+        "component": "Nacion",
+        "nodeId": "423:823",
+        "details": "Logo.strokeWeight: 0.08943837881088257 → 0.07666146755218506"
+      },
+      {
+        "type": "property_changed",
+        "component": "Nacion",
+        "nodeId": "423:823",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Nacion",
+        "nodeId": "423:823",
+        "details": "Logo.size.height: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "La-segunda",
+        "nodeId": "2325:178",
+        "details": "Logo.strokeWeight: 0.15625 → 0.1339285671710968"
+      },
+      {
+        "type": "property_changed",
+        "component": "La-segunda",
+        "nodeId": "2325:178",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "La-segunda",
+        "nodeId": "2325:178",
+        "details": "Logo.size.height: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Mercantil-Andina",
+        "nodeId": "2352:974",
+        "details": "Logo.strokeWeight: 0.18444474041461945 → 0.15809549391269684"
+      },
+      {
+        "type": "property_changed",
+        "component": "Mercantil-Andina",
+        "nodeId": "2352:974",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Mercantil-Andina",
+        "nodeId": "2352:974",
+        "details": "Logo.size.height: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Rivadavia",
+        "nodeId": "423:818",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Rivadavia",
+        "nodeId": "423:818",
+        "details": "Logo.size.height: 10 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Municipalidad-Rosario",
+        "nodeId": "433:685",
+        "details": "Logo.size.width: 29 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cooperativa-Universitaria",
+        "nodeId": "433:686",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Cooperativa-Universitaria",
+        "nodeId": "433:686",
+        "details": "Logo.size.height: 10 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Arca",
+        "nodeId": "3415:394",
+        "details": "Logo.strokeWeight: 1 → 0.8571428656578064"
+      },
+      {
+        "type": "property_changed",
+        "component": "Arca",
+        "nodeId": "3415:394",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Arca",
+        "nodeId": "3415:394",
+        "details": "Logo.size.height: 26 → 22"
+      },
+      {
+        "type": "property_changed",
+        "component": "Burger-king",
+        "nodeId": "2319:875",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Burger-king",
+        "nodeId": "2319:875",
+        "details": "Logo.size.height: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Mostaza",
+        "nodeId": "2319:899",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Mostaza",
+        "nodeId": "2319:899",
+        "details": "Logo.size.height: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Fabrica-de-Pizzas",
+        "nodeId": "423:766",
+        "details": "Logo.size.width: 25 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Fabrica-de-Pizzas",
+        "nodeId": "423:766",
+        "details": "Logo.size.height: 14 → 16"
+      },
+      {
+        "type": "property_changed",
+        "component": "Mastercard",
+        "nodeId": "414:1387",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Mastercard",
+        "nodeId": "414:1387",
+        "details": "Logo.size.height: 17 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "La-Anonima",
+        "nodeId": "414:1392",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "La-Anonima",
+        "nodeId": "414:1392",
+        "details": "Logo.size.height: 16 → 15"
+      },
+      {
+        "type": "property_changed",
+        "component": "Diners",
+        "nodeId": "420:1162",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Diners",
+        "nodeId": "420:1162",
+        "details": "Logo.size.height: 24 → 21"
+      },
+      {
+        "type": "property_changed",
+        "component": "Santander",
+        "nodeId": "423:748",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Santander",
+        "nodeId": "423:748",
+        "details": "Logo.size.height: 26 → 22"
+      },
+      {
+        "type": "property_changed",
+        "component": "Amex",
+        "nodeId": "587:469",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Amex",
+        "nodeId": "587:469",
+        "details": "Logo.size.height: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "ICBC",
+        "nodeId": "414:1171",
+        "details": "Logo.strokeWeight: 0.5 → 0.4285714328289032"
+      },
+      {
+        "type": "property_changed",
+        "component": "ICBC",
+        "nodeId": "414:1171",
+        "details": "Logo.size.width: 26 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "ICBC",
+        "nodeId": "414:1171",
+        "details": "Logo.size.height: 26 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Itau-ARG",
+        "nodeId": "414:1173",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Itau-ARG",
+        "nodeId": "414:1173",
+        "details": "Logo.size.height: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Hipotecario",
+        "nodeId": "414:1178",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Hipotecario",
+        "nodeId": "414:1178",
+        "details": "Logo.size.height: 10 → 9"
+      },
+      {
+        "type": "property_changed",
+        "component": "Ciudad",
+        "nodeId": "414:1177",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Ciudad",
+        "nodeId": "414:1177",
+        "details": "Logo.size.height: 6 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Macro",
+        "nodeId": "414:1176",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Macro",
+        "nodeId": "414:1176",
+        "details": "Logo.size.height: 19 → 16"
+      },
+      {
+        "type": "property_changed",
+        "component": "Santa-Cruz",
+        "nodeId": "414:1172",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Santa-Cruz",
+        "nodeId": "414:1172",
+        "details": "Logo.size.height: 5 → 4"
+      },
+      {
+        "type": "property_changed",
+        "component": "La-Pampa",
+        "nodeId": "414:1174",
+        "details": "Logo.size.width: 30 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Banco-familiar",
+        "nodeId": "423:730",
+        "details": "Logo.strokeWeight: 0.03125 → 0.02678571455180645"
+      },
+      {
+        "type": "property_changed",
+        "component": "Banco-familiar",
+        "nodeId": "423:730",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Banco-familiar",
+        "nodeId": "423:730",
+        "details": "Logo.size.height: 27 → 23"
+      },
+      {
+        "type": "property_changed",
+        "component": "Credicoop",
+        "nodeId": "423:728",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Credicoop",
+        "nodeId": "423:728",
+        "details": "Logo.size.height: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Galicia-Mas",
+        "nodeId": "423:724",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Banco-roela",
+        "nodeId": "1916:409",
+        "details": "Logo.strokeWeight: 0.030006494373083115 → 0.025826144963502884"
+      },
+      {
+        "type": "property_changed",
+        "component": "Banco-roela",
+        "nodeId": "1916:409",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Banco-roela",
+        "nodeId": "1916:409",
+        "details": "Logo.size.height: 27 → 23"
+      },
+      {
+        "type": "property_changed",
+        "component": "Mas",
+        "nodeId": "2295:263",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Mas",
+        "nodeId": "2295:263",
+        "details": "Logo.size.height: 15 → 14"
+      },
+      {
+        "type": "property_changed",
+        "component": "Itau-PA",
+        "nodeId": "2295:336",
+        "details": "Logo.strokeWeight: 1 → 0.8571428656578064"
+      },
+      {
+        "type": "property_changed",
+        "component": "Itau-PA",
+        "nodeId": "2295:336",
+        "details": "Logo.size.width: 32 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Itau-PA",
+        "nodeId": "2295:336",
+        "details": "Logo.size.height: 32 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Sucredito",
+        "nodeId": "2295:334",
+        "details": "Logo.strokeWeight: 1 → 0.8571428656578064"
+      },
+      {
+        "type": "property_changed",
+        "component": "Sucredito",
+        "nodeId": "2295:334",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Sucredito",
+        "nodeId": "2295:334",
+        "details": "Logo.size.height: 12 → 11"
+      },
+      {
+        "type": "property_changed",
+        "component": "Universitaria",
+        "nodeId": "2486:756",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Universitaria",
+        "nodeId": "2486:756",
+        "details": "Logo.size.height: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Comafi",
+        "nodeId": "2486:842",
+        "details": "Logo.strokeWeight: 0.25 → 0.21663311123847961"
+      },
+      {
+        "type": "property_changed",
+        "component": "Comafi",
+        "nodeId": "2486:842",
+        "details": "Logo.size.width: 28 → 22"
+      },
+      {
+        "type": "property_changed",
+        "component": "Comafi",
+        "nodeId": "2486:842",
+        "details": "Logo.size.height: 31 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Santa-Fe",
+        "nodeId": "2486:2605",
+        "details": "Logo.size.width: 32 → 28"
+      },
+      {
+        "type": "property_changed",
+        "component": "Santa-Fe",
+        "nodeId": "2486:2605",
+        "details": "Logo.size.height: 6 → 5"
+      },
+      {
+        "type": "property_changed",
+        "component": "Tik-tok-mono",
+        "nodeId": "2914:574",
+        "details": "Logo.strokeWeight: 25 → 22.604019165039062"
+      },
+      {
+        "type": "property_changed",
+        "component": "Tik-tok-mono",
+        "nodeId": "2914:574",
+        "details": "Logo.size.width: 24 → 22"
+      },
+      {
+        "type": "property_changed",
+        "component": "Tik-tok-mono",
+        "nodeId": "2914:574",
+        "details": "Logo.size.height: 28 → 25"
+      },
+      {
+        "type": "property_changed",
+        "component": "Facebook-mono",
+        "nodeId": "2914:573",
+        "details": "Logo.strokeWeight: 0.39062508940696716 → 0.33482152223587036"
+      },
+      {
+        "type": "property_changed",
+        "component": "Facebook-mono",
+        "nodeId": "2914:573",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Facebook-mono",
+        "nodeId": "2914:573",
+        "details": "Logo.size.height: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Instagram-mono",
+        "nodeId": "2914:572",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Instagram-mono",
+        "nodeId": "2914:572",
+        "details": "Logo.size.height: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Whatsapp-mono",
+        "nodeId": "3535:154",
+        "details": "Logo.size.width: 28 → 24"
+      },
+      {
+        "type": "property_changed",
+        "component": "Whatsapp-mono",
+        "nodeId": "3535:154",
+        "details": "Logo.size.height: 28 → 24"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 4,
+      "componentsRemoved": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 239
+    }
+  },
+  {
     "id": "mrm5a9av",
     "timestamp": "2026-07-15T13:57:45.751Z",
     "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
