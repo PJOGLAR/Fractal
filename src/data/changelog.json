@@ -1,5 +1,83 @@
 [
   {
+    "id": "mrp00kq6",
+    "timestamp": "2026-07-17T13:53:34.446Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "1 eliminados, 1 renombrados, 4 tokens nuevos, 4 tokens eliminados",
+    "changes": [
+      {
+        "type": "component_removed",
+        "component": "Chango-Mas2",
+        "nodeId": "4050:167",
+        "details": "Chango-Mas2"
+      },
+      {
+        "type": "component_renamed",
+        "component": "Banco-bbva",
+        "nodeId": "423:726",
+        "details": "BBVA → Banco-bbva"
+      },
+      {
+        "type": "binding_added",
+        "component": "Banco-bbva",
+        "nodeId": "423:726",
+        "details": "Banco-bbva.paddingLeft → gap/gap-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Banco-bbva",
+        "nodeId": "423:726",
+        "details": "Banco-bbva.paddingTop → gap/gap-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Banco-bbva",
+        "nodeId": "423:726",
+        "details": "Banco-bbva.paddingRight → gap/gap-0"
+      },
+      {
+        "type": "binding_added",
+        "component": "Banco-bbva",
+        "nodeId": "423:726",
+        "details": "Banco-bbva.paddingBottom → gap/gap-0"
+      },
+      {
+        "type": "binding_removed",
+        "component": "BBVA",
+        "nodeId": "423:726",
+        "details": "BBVA.paddingLeft (era: gap/gap-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "BBVA",
+        "nodeId": "423:726",
+        "details": "BBVA.paddingTop (era: gap/gap-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "BBVA",
+        "nodeId": "423:726",
+        "details": "BBVA.paddingRight (era: gap/gap-0)"
+      },
+      {
+        "type": "binding_removed",
+        "component": "BBVA",
+        "nodeId": "423:726",
+        "details": "BBVA.paddingBottom (era: gap/gap-0)"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 1,
+      "bindingsAdded": 4,
+      "bindingsRemoved": 4,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
     "id": "mrnl5mnv",
     "timestamp": "2026-07-16T14:09:49.819Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
