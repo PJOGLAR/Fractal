@@ -1,5 +1,120 @@
 [
   {
+    "id": "mrw9ux01",
+    "timestamp": "2026-07-22T16:03:29.809Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "2 renombrados, 1 variante nueva, 4 variantes eliminadas, 1 propiedad agregada, 1 propiedad eliminada, 1 componente des-anidado, 1 token cambiado, 3 propiedades cambiadas",
+    "changes": [
+      {
+        "type": "variant_added",
+        "component": "TEST=Variant3",
+        "nodeId": "20179:406",
+        "details": "TEST=Variant3",
+        "parentName": "Component-test"
+      },
+      {
+        "type": "variant_removed",
+        "component": "Type=monogram, State=focus, Size=lg",
+        "nodeId": "20144:1358",
+        "details": "Type=monogram, State=focus, Size=lg",
+        "parentName": "Avatar-Test 2"
+      },
+      {
+        "type": "variant_removed",
+        "component": "Type=monogram, State=focus, Size=md",
+        "nodeId": "20144:1370",
+        "details": "Type=monogram, State=focus, Size=md",
+        "parentName": "Avatar-Test 2"
+      },
+      {
+        "type": "variant_removed",
+        "component": "Type=monogram, State=focus, Size=sm",
+        "nodeId": "20144:1382",
+        "details": "Type=monogram, State=focus, Size=sm",
+        "parentName": "Avatar-Test 2"
+      },
+      {
+        "type": "variant_removed",
+        "component": "Type=monogram, State=focus, Size=xs",
+        "nodeId": "20144:1394",
+        "details": "Type=monogram, State=focus, Size=xs",
+        "parentName": "Avatar-Test 2"
+      },
+      {
+        "type": "component_unnested",
+        "component": "Avatar-Test 2",
+        "nodeId": "20144:1351",
+        "details": ".⛔️ Focus-ring"
+      },
+      {
+        "type": "property_changed",
+        "component": "Avatar-Test 2",
+        "nodeId": "20144:1351",
+        "details": "Avatar-Test 2.size.width: 424 → 264"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Type=monogram, State=default, Size=lg",
+        "nodeId": "20144:1352",
+        "details": "Type=monogram, State=default, Size=lg.fills: interactive/foreground/brand/primary/default/medium → 241/3958:112"
+      },
+      {
+        "type": "property_changed",
+        "component": "Type=monogram, State=default, Size=lg",
+        "nodeId": "20144:1352",
+        "details": "Type=monogram, State=default, Size=lg.fill[0].color: #5A50F9 → #0076C7"
+      },
+      {
+        "type": "component_prop_added",
+        "component": "Component-test",
+        "nodeId": "20148:395",
+        "details": "TEST|VARIANT"
+      },
+      {
+        "type": "component_prop_removed",
+        "component": "Component-test",
+        "nodeId": "20148:395",
+        "details": "Property 1|VARIANT"
+      },
+      {
+        "type": "property_changed",
+        "component": "Component-test",
+        "nodeId": "20148:395",
+        "details": "Component-test.size.height: 270 → 395"
+      },
+      {
+        "type": "component_renamed",
+        "component": "TEST=Default",
+        "nodeId": "20145:384",
+        "details": "Property 1=Default → TEST=Default"
+      },
+      {
+        "type": "component_renamed",
+        "component": "TEST=NUEVO",
+        "nodeId": "20157:3047",
+        "details": "Property 1=NUEVO → TEST=NUEVO"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 2,
+      "variantsAdded": 1,
+      "variantsRemoved": 4,
+      "propsAdded": 1,
+      "propsRemoved": 1,
+      "nested": 0,
+      "unnested": 1,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 1,
+      "propertiesChanged": 3
+    }
+  },
+  {
     "id": "mrp00kq6",
     "timestamp": "2026-07-17T13:53:34.446Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",

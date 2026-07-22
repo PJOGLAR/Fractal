@@ -120,6 +120,7 @@ interface SnapshotComponent {
   parentId?: string   // id del COMPONENT_SET padre si es variante
   bindings: Array<{ property: string; variableId: string; layerName: string }>
   properties: PropertyValue[]
+  instances?: Array<{ name: string; componentId: string }>  // instancias anidadas (para detectar anidación)
 }
 
 interface Snapshot {
@@ -131,7 +132,12 @@ interface Snapshot {
 }
 
 interface DiffEntry {
-  type: 'component_added' | 'component_removed' | 'component_renamed' | 'binding_added' | 'binding_removed' | 'binding_changed' | 'property_changed'
+  type: 'component_added' | 'component_removed' | 'component_renamed' | 'component_deprecated'
+      | 'binding_added' | 'binding_removed' | 'binding_changed' | 'binding_unbound'
+      | 'property_changed' | 'component_props_initial'
+      | 'component_prop_added' | 'component_prop_removed'
+      | 'component_nested' | 'component_unnested'
+      | 'variant_added' | 'variant_removed'
   component: string
   nodeId: string
   details: string
@@ -146,13 +152,7 @@ interface ChangelogEntry {
   fileLabel: string
   summary: string
   changes: DiffEntry[]
-  stats: {
-    componentsAdded: number
-    componentsRemoved: number
-    bindingsAdded: number
-    bindingsRemoved: number
-    bindingsChanged: number
-  }
+  stats: Record<string, number>
 }
 
 // --- API ---
@@ -181,6 +181,9 @@ function extractBindings(node: any, _path: string = ''): Array<{ property: strin
 
   if (node.children) {
     for (const child of node.children) {
+      // Don't recurse into nested COMPONENT/COMPONENT_SET — they are tracked separately,
+      // so recursing here would double-count a set's bindings with its variants'.
+      if (child.type === 'COMPONENT' || child.type === 'COMPONENT_SET') continue
       bindings.push(...extractBindings(child, node.name))
     }
   }
@@ -267,9 +270,15 @@ function extractProperties(node: any): PropertyValue[] {
   }
 
   // Track component properties (for COMPONENT_SET and COMPONENT)
+  // Capture name + type (BOOLEAN, TEXT, INSTANCE_SWAP, VARIANT)
   if (node.componentPropertyDefinitions) {
-    const propNames = Object.keys(node.componentPropertyDefinitions).sort().join(',')
-    props.push({ layerName: node.name, property: '__componentProps__', value: propNames })
+    const defs = node.componentPropertyDefinitions
+    // Format: "name#id:TYPE" pairs, sorted by name
+    const propEntries = Object.keys(defs).sort().map(key => {
+      const type = defs[key]?.type || 'UNKNOWN'
+      return `${key}:${type}`
+    })
+    props.push({ layerName: node.name, property: '__componentProps__', value: propEntries.join(',') })
   }
 
   // Track layer name itself (for rename detection)
@@ -277,10 +286,26 @@ function extractProperties(node: any): PropertyValue[] {
 
   if (node.children) {
     for (const child of node.children) {
+      // Don't recurse into nested COMPONENT/COMPONENT_SET — tracked separately (avoid double-count)
+      if (child.type === 'COMPONENT' || child.type === 'COMPONENT_SET') continue
       props.push(...extractProperties(child))
     }
   }
   return props
+}
+
+/** Extract nested INSTANCE nodes (references to other components) inside a component */
+function extractInstances(node: any, isRoot = true): Array<{ name: string; componentId: string }> {
+  const instances: Array<{ name: string; componentId: string }> = []
+  if (!isRoot && node.type === 'INSTANCE' && node.componentId) {
+    instances.push({ name: node.name, componentId: node.componentId })
+  }
+  if (node.children) {
+    for (const child of node.children) {
+      instances.push(...extractInstances(child, false))
+    }
+  }
+  return instances
 }
 
 async function takeSnapshot(): Promise<Snapshot> {
@@ -288,15 +313,17 @@ async function takeSnapshot(): Promise<Snapshot> {
   const fileData = await figmaGet<{ name: string; document: any }>(`https://api.figma.com/v1/files/${FILE_KEY}?depth=8`)
 
   const components: SnapshotComponent[] = []
-  function findComponents(node: any) {
+  // The Figma REST API does NOT give nodes a `.parent` back-reference, so we track the
+  // parent COMPONENT_SET id explicitly while traversing the tree.
+  function findComponents(node: any, parentSetId?: string) {
     if (node.type === 'COMPONENT' || node.type === 'COMPONENT_SET') {
-      const parentId = node.type === 'COMPONENT' && node.parent?.type === 'COMPONENT_SET'
-        ? node.parent.id
-        : undefined
-      components.push({ id: node.id, name: node.name, type: node.type, parentId, bindings: extractBindings(node), properties: extractProperties(node) })
+      const parentId = node.type === 'COMPONENT' ? parentSetId : undefined
+      components.push({ id: node.id, name: node.name, type: node.type, parentId, bindings: extractBindings(node), properties: extractProperties(node), instances: extractInstances(node) })
     }
     if (node.children) {
-      for (const child of node.children) findComponents(child)
+      // If this node is a COMPONENT_SET, its children are variants → pass its id down as parent
+      const childParentSetId = node.type === 'COMPONENT_SET' ? node.id : parentSetId
+      for (const child of node.children) findComponents(child, childParentSetId)
     }
   }
   if (fileData.document?.children) {
@@ -319,13 +346,44 @@ function computeDiff(before: Snapshot, after: Snapshot, names: Map<string, strin
   for (const [id, comp] of afterMap) {
     if (!beforeMap.has(id)) {
       const parentName = comp.parentId ? beforeMap.get(comp.parentId)?.name || afterMap.get(comp.parentId)?.name : undefined
-      diffs.push({ type: 'component_added', component: comp.name, nodeId: id, details: `${comp.name} (${comp.type})`, ...(parentName ? { parentName } : {}) })
+      // Distinguish: a variant added to a PRE-EXISTING set vs. a brand-new component/set.
+      // If this is a variant (has parent) and the parent set already existed before → variant_added.
+      const parentExistedBefore = comp.parentId ? beforeMap.has(comp.parentId) : false
+      if (parentExistedBefore && parentName) {
+        diffs.push({ type: 'variant_added', component: comp.name, nodeId: id, details: comp.name, parentName })
+      } else {
+        // Brand-new component or set → only the name (no breakdown)
+        diffs.push({ type: 'component_added', component: comp.name, nodeId: id, details: `${comp.name} (${comp.type})`, ...(parentName ? { parentName } : {}) })
+      }
     }
   }
   for (const [id, comp] of beforeMap) {
     if (!afterMap.has(id)) {
-      const parentName = comp.parentId ? beforeMap.get(comp.parentId)?.name || afterMap.get(comp.parentId)?.name : undefined
-      diffs.push({ type: 'component_removed', component: comp.name, nodeId: id, details: comp.name, ...(parentName ? { parentName } : {}) })
+      // Resolve parent name: for variants (COMPONENT inside a COMPONENT_SET), find the set name
+      let parentName: string | undefined
+      if (comp.parentId) {
+        parentName = beforeMap.get(comp.parentId)?.name || afterMap.get(comp.parentId)?.name
+      }
+      // If no parentId but name has "=" (it's a variant), try to find the set by looking at siblings
+      if (!parentName && comp.name.includes('=') && comp.type === 'COMPONENT') {
+        // Find a COMPONENT_SET that was also removed and could be the parent
+        for (const [, otherComp] of beforeMap) {
+          if (otherComp.type === 'COMPONENT_SET' && !afterMap.has(otherComp.id)) {
+            // Check if this variant's parentId matches
+            if (comp.parentId === otherComp.id) {
+              parentName = otherComp.name
+              break
+            }
+          }
+        }
+      }
+      // Distinguish: variant removed from a set that STILL exists vs. whole set/component removed
+      const parentStillExists = comp.parentId ? afterMap.has(comp.parentId) : false
+      if (parentStillExists && parentName) {
+        diffs.push({ type: 'variant_removed', component: comp.name, nodeId: id, details: comp.name, parentName })
+      } else {
+        diffs.push({ type: 'component_removed', component: comp.name, nodeId: id, details: comp.name, ...(parentName ? { parentName } : {}) })
+      }
     }
   }
 
@@ -334,8 +392,60 @@ function computeDiff(before: Snapshot, after: Snapshot, names: Map<string, strin
     const afterComp = afterMap.get(id)
     if (!afterComp) continue
 
+    // Rename detection — flag as deprecation if the new name gains the ⛔ marker
     if (beforeComp.name !== afterComp.name) {
-      diffs.push({ type: 'component_renamed', component: afterComp.name, nodeId: id, details: `${beforeComp.name} → ${afterComp.name}` })
+      const gainedDeprecation = !beforeComp.name.includes('⛔') && afterComp.name.includes('⛔')
+      if (gainedDeprecation) {
+        diffs.push({ type: 'component_deprecated', component: afterComp.name, nodeId: id, details: `${beforeComp.name} → ${afterComp.name}` })
+      } else {
+        diffs.push({ type: 'component_renamed', component: afterComp.name, nodeId: id, details: `${beforeComp.name} → ${afterComp.name}` })
+      }
+    }
+
+    // --- Component property add/remove (Boolean/Text/Instance swap/Variant) ---
+    // Compare by NAME so it works across snapshot formats (old = names only, new = name:TYPE)
+    const parsePropNames = (comp: SnapshotComponent) => {
+      const entry = comp.properties.find(p => p.property === '__componentProps__')
+      const map = new Map<string, string>() // name → type (type may be '' for old format)
+      if (entry?.value) {
+        for (const seg of String(entry.value).split(',')) {
+          const m = seg.match(/:(BOOLEAN|TEXT|INSTANCE_SWAP|VARIANT)$/)
+          const type = m ? m[1] : ''
+          const rawName = m ? seg.slice(0, seg.length - m[0].length) : seg
+          const name = rawName.split('#')[0].trim()
+          if (name) map.set(name, type)
+        }
+      }
+      return map
+    }
+    const beforeProps = parsePropNames(beforeComp)
+    const afterProps = parsePropNames(afterComp)
+    for (const [name, type] of afterProps) {
+      if (!beforeProps.has(name)) {
+        diffs.push({ type: 'component_prop_added', component: afterComp.name, nodeId: id, details: type ? `${name}|${type}` : name })
+      }
+    }
+    for (const [name, type] of beforeProps) {
+      if (!afterProps.has(name)) {
+        diffs.push({ type: 'component_prop_removed', component: afterComp.name, nodeId: id, details: type ? `${name}|${type}` : name })
+      }
+    }
+
+    // --- Nesting: nested instances added/removed (guarded: only if both snapshots captured instances) ---
+    if (Array.isArray(beforeComp.instances) && Array.isArray(afterComp.instances)) {
+      const key = (i: { name: string; componentId: string }) => `${i.componentId}`
+      const beforeInst = new Map(beforeComp.instances.map(i => [key(i), i]))
+      const afterInst = new Map(afterComp.instances.map(i => [key(i), i]))
+      for (const [k, inst] of afterInst) {
+        if (!beforeInst.has(k)) {
+          diffs.push({ type: 'component_nested', component: afterComp.name, nodeId: id, details: inst.name })
+        }
+      }
+      for (const [k, inst] of beforeInst) {
+        if (!afterInst.has(k)) {
+          diffs.push({ type: 'component_unnested', component: afterComp.name, nodeId: id, details: inst.name })
+        }
+      }
     }
 
     const beforeBindings = new Map(beforeComp.bindings.map(b => [`${b.layerName}|${b.property}`, b]))
@@ -361,11 +471,13 @@ function computeDiff(before: Snapshot, after: Snapshot, names: Map<string, strin
     }
 
     // Compare properties (numeric values)
-    const beforeProps = new Map(beforeComp.properties.map(p => [`${p.layerName}|${p.property}`, p]))
-    const afterProps = new Map(afterComp.properties.map(p => [`${p.layerName}|${p.property}`, p]))
+    const beforePropVals = new Map(beforeComp.properties.map(p => [`${p.layerName}|${p.property}`, p]))
+    const afterPropVals = new Map(afterComp.properties.map(p => [`${p.layerName}|${p.property}`, p]))
 
-    for (const [key, prop] of afterProps) {
-      const prev = beforeProps.get(key)
+    for (const [key, prop] of afterPropVals) {
+      // Skip internal tracking markers — they are used for other detections, not property diffs
+      if (prop.property === '__componentProps__' || prop.property === '__layerName__') continue
+      const prev = beforePropVals.get(key)
       if (prev && prev.value !== prop.value) {
         diffs.push({ type: 'property_changed', component: afterComp.name, nodeId: id, details: `${prop.layerName}.${prop.property}: ${prev.value} → ${prop.value}` })
       }
@@ -407,13 +519,28 @@ async function main() {
 
   const diffs = computeDiff(previous, current, names)
 
+  // Names of newly-added components — their bindings/props are not counted in the summary,
+  // since new components are reported by name only (no breakdown).
+  const addedComponentNames = new Set(
+    diffs.filter(d => d.type === 'component_added').map(d => d.component)
+  )
+  const isFromNewComponent = (d: DiffEntry) => addedComponentNames.has(d.component)
+
   const stats = {
     componentsAdded: diffs.filter(d => d.type === 'component_added').length,
     componentsRemoved: diffs.filter(d => d.type === 'component_removed').length,
-    bindingsAdded: diffs.filter(d => d.type === 'binding_added').length,
-    bindingsRemoved: diffs.filter(d => d.type === 'binding_removed').length,
-    bindingsChanged: diffs.filter(d => d.type === 'binding_changed').length,
-    propertiesChanged: diffs.filter(d => d.type === 'property_changed').length,
+    componentsDeprecated: diffs.filter(d => d.type === 'component_deprecated').length,
+    componentsRenamed: diffs.filter(d => d.type === 'component_renamed').length,
+    variantsAdded: diffs.filter(d => d.type === 'variant_added').length,
+    variantsRemoved: diffs.filter(d => d.type === 'variant_removed').length,
+    propsAdded: diffs.filter(d => d.type === 'component_prop_added').length,
+    propsRemoved: diffs.filter(d => d.type === 'component_prop_removed').length,
+    nested: diffs.filter(d => d.type === 'component_nested').length,
+    unnested: diffs.filter(d => d.type === 'component_unnested').length,
+    bindingsAdded: diffs.filter(d => d.type === 'binding_added' && !isFromNewComponent(d)).length,
+    bindingsRemoved: diffs.filter(d => d.type === 'binding_removed' && !isFromNewComponent(d)).length,
+    bindingsChanged: diffs.filter(d => d.type === 'binding_changed' && !isFromNewComponent(d)).length,
+    propertiesChanged: diffs.filter(d => d.type === 'property_changed' && !isFromNewComponent(d)).length,
   }
 
   if (diffs.length === 0) {
@@ -466,11 +593,32 @@ async function main() {
     console.log('')
   }
 
+  const printSimple = (title: string, type: DiffEntry['type'], fmt: (d: DiffEntry) => string) => {
+    const items = diffs.filter(d => d.type === type)
+    if (items.length === 0) return
+    console.log(`### ${title}`)
+    for (const d of items) console.log(`  ${fmt(d)}`)
+    console.log('')
+  }
+  printSimple('Deprecados', 'component_deprecated', d => d.details)
+  printSimple('Variantes nuevas (set existente)', 'variant_added', d => `+ ${d.parentName} › ${d.component}`)
+  printSimple('Variantes eliminadas (set existente)', 'variant_removed', d => `- ${d.parentName} › ${d.component}`)
+  printSimple('Propiedades agregadas', 'component_prop_added', d => `+ ${d.component}: ${d.details}`)
+  printSimple('Propiedades eliminadas', 'component_prop_removed', d => `- ${d.component}: ${d.details}`)
+  printSimple('Componentes anidados', 'component_nested', d => `${d.component} ← ${d.details}`)
+  printSimple('Componentes des-anidados', 'component_unnested', d => `${d.component} ⤫ ${d.details}`)
+
+  const COMPONENT_LEVEL_TYPES = new Set<DiffEntry['type']>([
+    'component_added', 'component_removed', 'component_renamed', 'component_deprecated',
+    'variant_added', 'variant_removed', 'component_prop_added', 'component_prop_removed',
+    'component_nested', 'component_unnested',
+  ])
+
   // Group remaining changes by component
   const changedComponents = new Map<string, { name: string; nodeId: string; tokens: DiffEntry[]; properties: DiffEntry[] }>()
   
   for (const d of diffs) {
-    if (d.type === 'component_added' || d.type === 'component_removed' || d.type === 'component_renamed') continue
+    if (COMPONENT_LEVEL_TYPES.has(d.type)) continue
     const key = `${d.component}|${d.nodeId}`
     if (!changedComponents.has(key)) {
       changedComponents.set(key, { name: d.component, nodeId: d.nodeId, tokens: [], properties: [] })
@@ -527,15 +675,27 @@ async function main() {
     }
   }
 
-  // Summary
+  // Summary — count sets (public components), not the individual variants of a new set
+  const addedSets = diffs.filter(d => d.type === 'component_added' && !d.component.includes('=') && !d.component.includes('⛔'))
+  const removedSets = diffs.filter(d => d.type === 'component_removed' && !d.component.includes('=') && !d.component.includes('⛔'))
+
+  const plural = (n: number, sing: string, plu: string) => `${n} ${n > 1 ? plu : sing}`
+
   const summaryParts: string[] = []
-  if (stats.componentsAdded > 0) summaryParts.push(`${stats.componentsAdded} componentes nuevos`)
-  if (stats.componentsRemoved > 0) summaryParts.push(`${stats.componentsRemoved} eliminados`)
-  if (componentRenamed.length > 0) summaryParts.push(`${componentRenamed.length} renombrados`)
-  if (stats.bindingsAdded > 0) summaryParts.push(`${stats.bindingsAdded} tokens nuevos`)
-  if (stats.bindingsRemoved > 0) summaryParts.push(`${stats.bindingsRemoved} tokens eliminados`)
-  if (stats.bindingsChanged > 0) summaryParts.push(`${stats.bindingsChanged} tokens cambiados`)
-  if (stats.propertiesChanged > 0) summaryParts.push(`${stats.propertiesChanged} propiedades cambiadas`)
+  if (addedSets.length > 0) summaryParts.push(plural(addedSets.length, 'componente nuevo', 'componentes nuevos'))
+  if (removedSets.length > 0) summaryParts.push(plural(removedSets.length, 'componente eliminado', 'componentes eliminados'))
+  if (stats.componentsDeprecated > 0) summaryParts.push(plural(stats.componentsDeprecated, 'componente deprecado', 'componentes deprecados'))
+  if (stats.componentsRenamed > 0) summaryParts.push(plural(stats.componentsRenamed, 'renombrado', 'renombrados'))
+  if (stats.variantsAdded > 0) summaryParts.push(plural(stats.variantsAdded, 'variante nueva', 'variantes nuevas'))
+  if (stats.variantsRemoved > 0) summaryParts.push(plural(stats.variantsRemoved, 'variante eliminada', 'variantes eliminadas'))
+  if (stats.propsAdded > 0) summaryParts.push(plural(stats.propsAdded, 'propiedad agregada', 'propiedades agregadas'))
+  if (stats.propsRemoved > 0) summaryParts.push(plural(stats.propsRemoved, 'propiedad eliminada', 'propiedades eliminadas'))
+  if (stats.nested > 0) summaryParts.push(plural(stats.nested, 'componente anidado', 'componentes anidados'))
+  if (stats.unnested > 0) summaryParts.push(plural(stats.unnested, 'componente des-anidado', 'componentes des-anidados'))
+  if (stats.bindingsAdded > 0) summaryParts.push(plural(stats.bindingsAdded, 'token nuevo', 'tokens nuevos'))
+  if (stats.bindingsRemoved > 0) summaryParts.push(plural(stats.bindingsRemoved, 'token desvinculado', 'tokens desvinculados'))
+  if (stats.bindingsChanged > 0) summaryParts.push(plural(stats.bindingsChanged, 'token cambiado', 'tokens cambiados'))
+  if (stats.propertiesChanged > 0) summaryParts.push(plural(stats.propertiesChanged, 'propiedad cambiada', 'propiedades cambiadas'))
 
   const entry: ChangelogEntry = {
     id: Date.now().toString(36),
