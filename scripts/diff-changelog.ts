@@ -684,14 +684,44 @@ async function main() {
   if (stats.bindingsChanged > 0) summaryParts.push(plural(stats.bindingsChanged, 'token cambiado', 'tokens cambiados'))
   if (stats.propertiesChanged > 0) summaryParts.push(plural(stats.propertiesChanged, 'propiedad cambiada', 'propiedades cambiadas'))
 
+  // Colapsar los cambios crudos a 3 buckets de nombres de componente y guardar compacto.
+  // El detalle interno (tokens, propiedades, variantes, anidación) se resume como "iteración".
+  const isReal = (n?: string): n is string => !!n && !n.includes('=') && !n.includes('⛔')
+  const nuevos = new Set<string>(), eliminados = new Set<string>(), iterados = new Set<string>()
+  for (const ch of diffs) {
+    const comp = ch.component || '', parent = ch.parentName
+    switch (ch.type) {
+      case 'component_added': if (isReal(comp)) nuevos.add(comp); else if (isReal(parent)) iterados.add(parent); break
+      case 'component_removed': if (isReal(comp)) eliminados.add(comp); else if (isReal(parent)) iterados.add(parent); break
+      case 'component_deprecated': { const o = ch.details.split('→')[0].trim(); if (isReal(o)) eliminados.add(o); else if (isReal(comp)) eliminados.add(comp); break }
+      case 'component_renamed': { const nw = ch.details.split('→')[1]?.trim() || comp; if (isReal(nw)) iterados.add(nw); break }
+      case 'variant_added': case 'variant_removed': if (isReal(parent)) iterados.add(parent); else if (isReal(comp)) iterados.add(comp); break
+      default: if (isReal(comp)) iterados.add(comp); else if (isReal(parent)) iterados.add(parent)
+    }
+  }
+  for (const n of nuevos) iterados.delete(n)
+  for (const n of eliminados) iterados.delete(n)
+
+  const compactChanges: DiffEntry[] = [
+    ...[...nuevos].sort().map(n => ({ type: 'component_added' as const, component: n, nodeId: '', details: n })),
+    ...[...eliminados].sort().map(n => ({ type: 'component_removed' as const, component: n, nodeId: '', details: n })),
+    ...[...iterados].sort().map(n => ({ type: 'binding_changed' as const, component: n, nodeId: '', details: '' })),
+  ]
+
+  const compactSummaryParts: string[] = []
+  if (nuevos.size) compactSummaryParts.push(plural(nuevos.size, 'nuevo', 'nuevos'))
+  if (eliminados.size) compactSummaryParts.push(plural(eliminados.size, 'eliminado', 'eliminados'))
+  if (iterados.size) compactSummaryParts.push(plural(iterados.size, 'iterado', 'iterados'))
+  const compactSummary = compactSummaryParts.join(' · ') || 'Sin cambios de componentes'
+
   const entry: ChangelogEntry = {
     id: Date.now().toString(36),
     timestamp: new Date().toISOString(),
     fileKey: FILE_KEY,
     fileName: current.fileName,
     fileLabel: FILE_LABEL,
-    summary: summaryParts.join(', '),
-    changes: diffs,
+    summary: compactSummary,
+    changes: compactChanges,
     stats,
   }
 
@@ -708,7 +738,7 @@ async function main() {
   console.log('='.repeat(55))
   console.log(`Changelog guardado en: src/data/changelog.json`)
   console.log(`Snapshot actualizado: latest-${FILE_LABEL}.json`)
-  console.log(`Resumen: ${summaryParts.join(', ')}`)
+  console.log(`Resumen: ${compactSummary}`)
 }
 
 main().catch(err => {
