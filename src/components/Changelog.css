@@ -195,6 +195,34 @@
 .cl-list--added li { color: var(--color-success); background: var(--color-success-bg); }
 .cl-list--removed li { color: var(--color-error); background: var(--color-error-bg); }
 
+/* Simplified three-bucket name lists */
+.cl-name-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.cl-name-list li {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+}
+
+.cl-name-list--added li { color: var(--color-success); background: var(--color-success-bg); }
+.cl-name-list--removed li { color: var(--color-error); background: var(--color-error-bg); }
+.cl-name-list--changed li { color: var(--color-warning); background: var(--color-warning-bg); }
+
+.cl-empty-detail {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
 .cl-more {
   color: var(--color-text-muted) !important;
   background: none !important;

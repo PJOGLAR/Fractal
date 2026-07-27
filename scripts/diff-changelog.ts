@@ -431,22 +431,9 @@ function computeDiff(before: Snapshot, after: Snapshot, names: Map<string, strin
       }
     }
 
-    // --- Nesting: nested instances added/removed (guarded: only if both snapshots captured instances) ---
-    if (Array.isArray(beforeComp.instances) && Array.isArray(afterComp.instances)) {
-      const key = (i: { name: string; componentId: string }) => `${i.componentId}`
-      const beforeInst = new Map(beforeComp.instances.map(i => [key(i), i]))
-      const afterInst = new Map(afterComp.instances.map(i => [key(i), i]))
-      for (const [k, inst] of afterInst) {
-        if (!beforeInst.has(k)) {
-          diffs.push({ type: 'component_nested', component: afterComp.name, nodeId: id, details: inst.name })
-        }
-      }
-      for (const [k, inst] of beforeInst) {
-        if (!afterInst.has(k)) {
-          diffs.push({ type: 'component_unnested', component: afterComp.name, nodeId: id, details: inst.name })
-        }
-      }
-    }
+    // --- Nesting detection DESACTIVADA ---
+    // La detección de instancias anidadas generaba mucho ruido (falsos positivos por
+    // reordenamiento/duplicados) y no aporta al changelog simplificado. Se omite.
 
     const beforeBindings = new Map(beforeComp.bindings.map(b => [`${b.layerName}|${b.property}`, b]))
     const afterBindings = new Map(afterComp.bindings.map(b => [`${b.layerName}|${b.property}`, b]))
