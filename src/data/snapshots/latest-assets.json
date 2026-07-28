@@ -1,1768 +1,8 @@
 {
-  "takenAt": "2026-07-27T14:51:35.805Z",
+  "takenAt": "2026-07-28T14:25:43.718Z",
   "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
   "fileName": "Assets",
   "components": [
-    {
-      "id": "4295:139",
-      "name": "Qr-code",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "qr_code_scanner"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Qr-code",
-          "property": "itemSpacing",
-          "value": 10
-        },
-        {
-          "layerName": "Qr-code",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Qr-code",
-          "property": "layoutMode",
-          "value": "HORIZONTAL"
-        },
-        {
-          "layerName": "Qr-code",
-          "property": "primaryAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Qr-code",
-          "property": "counterAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Qr-code",
-          "property": "layoutWrap",
-          "value": "NO_WRAP"
-        },
-        {
-          "layerName": "Qr-code",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Qr-code",
-          "property": "counterAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Qr-code",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Qr-code",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Qr-code",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Qr-code",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Qr-code",
-          "property": "__layerName__",
-          "value": "Qr-code"
-        },
-        {
-          "layerName": "qr_code_scanner",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "qr_code_scanner",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "qr_code_scanner",
-          "property": "size.width",
-          "value": 20
-        },
-        {
-          "layerName": "qr_code_scanner",
-          "property": "size.height",
-          "value": 20
-        },
-        {
-          "layerName": "qr_code_scanner",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "qr_code_scanner",
-          "property": "__layerName__",
-          "value": "qr_code_scanner"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "4295:141",
-      "name": "Loan",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "money_bag"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Loan",
-          "property": "itemSpacing",
-          "value": 10
-        },
-        {
-          "layerName": "Loan",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Loan",
-          "property": "layoutMode",
-          "value": "HORIZONTAL"
-        },
-        {
-          "layerName": "Loan",
-          "property": "primaryAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Loan",
-          "property": "counterAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Loan",
-          "property": "layoutWrap",
-          "value": "NO_WRAP"
-        },
-        {
-          "layerName": "Loan",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Loan",
-          "property": "counterAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Loan",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Loan",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Loan",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Loan",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Loan",
-          "property": "__layerName__",
-          "value": "Loan"
-        },
-        {
-          "layerName": "money_bag",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "money_bag",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "money_bag",
-          "property": "size.width",
-          "value": 20
-        },
-        {
-          "layerName": "money_bag",
-          "property": "size.height",
-          "value": 20
-        },
-        {
-          "layerName": "money_bag",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "money_bag",
-          "property": "__layerName__",
-          "value": "money_bag"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "4295:143",
-      "name": "Bus-money",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Vector"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Bus-money",
-          "property": "itemSpacing",
-          "value": 10
-        },
-        {
-          "layerName": "Bus-money",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Bus-money",
-          "property": "layoutMode",
-          "value": "VERTICAL"
-        },
-        {
-          "layerName": "Bus-money",
-          "property": "primaryAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Bus-money",
-          "property": "counterAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Bus-money",
-          "property": "layoutWrap",
-          "value": "NO_WRAP"
-        },
-        {
-          "layerName": "Bus-money",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Bus-money",
-          "property": "counterAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Bus-money",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Bus-money",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Bus-money",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Bus-money",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Bus-money",
-          "property": "__layerName__",
-          "value": "Bus-money"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 20
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 20
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "4295:145",
-      "name": "Bus-plus",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "bus_alert"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Bus-plus",
-          "property": "itemSpacing",
-          "value": 10
-        },
-        {
-          "layerName": "Bus-plus",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Bus-plus",
-          "property": "layoutMode",
-          "value": "HORIZONTAL"
-        },
-        {
-          "layerName": "Bus-plus",
-          "property": "primaryAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Bus-plus",
-          "property": "counterAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Bus-plus",
-          "property": "layoutWrap",
-          "value": "NO_WRAP"
-        },
-        {
-          "layerName": "Bus-plus",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Bus-plus",
-          "property": "counterAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Bus-plus",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Bus-plus",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Bus-plus",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Bus-plus",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Bus-plus",
-          "property": "__layerName__",
-          "value": "Bus-plus"
-        },
-        {
-          "layerName": "bus_alert",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "bus_alert",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "bus_alert",
-          "property": "size.width",
-          "value": 20
-        },
-        {
-          "layerName": "bus_alert",
-          "property": "size.height",
-          "value": 20
-        },
-        {
-          "layerName": "bus_alert",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "bus_alert",
-          "property": "__layerName__",
-          "value": "bus_alert"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "4295:147",
-      "name": "Qr-money",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Vector"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Qr-money",
-          "property": "itemSpacing",
-          "value": 10
-        },
-        {
-          "layerName": "Qr-money",
-          "property": "paddingLeft",
-          "value": 2
-        },
-        {
-          "layerName": "Qr-money",
-          "property": "paddingRight",
-          "value": 2
-        },
-        {
-          "layerName": "Qr-money",
-          "property": "paddingTop",
-          "value": 2
-        },
-        {
-          "layerName": "Qr-money",
-          "property": "paddingBottom",
-          "value": 2
-        },
-        {
-          "layerName": "Qr-money",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Qr-money",
-          "property": "layoutMode",
-          "value": "VERTICAL"
-        },
-        {
-          "layerName": "Qr-money",
-          "property": "layoutWrap",
-          "value": "NO_WRAP"
-        },
-        {
-          "layerName": "Qr-money",
-          "property": "counterAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Qr-money",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Qr-money",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Qr-money",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Qr-money",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Qr-money",
-          "property": "__layerName__",
-          "value": "Qr-money"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 20
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 20
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "4295:149",
-      "name": "Money-installment",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Vector"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Money-installment",
-          "property": "itemSpacing",
-          "value": 10
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "layoutMode",
-          "value": "HORIZONTAL"
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "primaryAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "counterAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "layoutWrap",
-          "value": "NO_WRAP"
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "counterAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "__layerName__",
-          "value": "Money-installment"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 2
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 20
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 20
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "4295:151",
-      "name": "Send-installment",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Vector"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Send-installment",
-          "property": "itemSpacing",
-          "value": 10
-        },
-        {
-          "layerName": "Send-installment",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Send-installment",
-          "property": "layoutMode",
-          "value": "HORIZONTAL"
-        },
-        {
-          "layerName": "Send-installment",
-          "property": "primaryAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Send-installment",
-          "property": "counterAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Send-installment",
-          "property": "layoutWrap",
-          "value": "NO_WRAP"
-        },
-        {
-          "layerName": "Send-installment",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Send-installment",
-          "property": "counterAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Send-installment",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Send-installment",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Send-installment",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Send-installment",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Send-installment",
-          "property": "__layerName__",
-          "value": "Send-installment"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 2
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 20
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 20
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "4295:153",
-      "name": "Qr-installment",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Vector"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Qr-installment",
-          "property": "itemSpacing",
-          "value": 10
-        },
-        {
-          "layerName": "Qr-installment",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Qr-installment",
-          "property": "layoutMode",
-          "value": "HORIZONTAL"
-        },
-        {
-          "layerName": "Qr-installment",
-          "property": "primaryAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Qr-installment",
-          "property": "counterAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Qr-installment",
-          "property": "layoutWrap",
-          "value": "NO_WRAP"
-        },
-        {
-          "layerName": "Qr-installment",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Qr-installment",
-          "property": "counterAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Qr-installment",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Qr-installment",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Qr-installment",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Qr-installment",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Qr-installment",
-          "property": "__layerName__",
-          "value": "Qr-installment"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 2
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 20
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 20
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "4295:155",
-      "name": "Nfc-circle",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Ellipse 1 (Stroke)"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Nfc-circle",
-          "property": "itemSpacing",
-          "value": 10
-        },
-        {
-          "layerName": "Nfc-circle",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Nfc-circle",
-          "property": "layoutMode",
-          "value": "VERTICAL"
-        },
-        {
-          "layerName": "Nfc-circle",
-          "property": "primaryAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Nfc-circle",
-          "property": "counterAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Nfc-circle",
-          "property": "layoutWrap",
-          "value": "NO_WRAP"
-        },
-        {
-          "layerName": "Nfc-circle",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Nfc-circle",
-          "property": "counterAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Nfc-circle",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Nfc-circle",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Nfc-circle",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Nfc-circle",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Nfc-circle",
-          "property": "__layerName__",
-          "value": "Nfc-circle"
-        },
-        {
-          "layerName": "Ellipse 1 (Stroke)",
-          "property": "strokeWeight",
-          "value": 1.7999999523162842
-        },
-        {
-          "layerName": "Ellipse 1 (Stroke)",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Ellipse 1 (Stroke)",
-          "property": "size.width",
-          "value": 20
-        },
-        {
-          "layerName": "Ellipse 1 (Stroke)",
-          "property": "size.height",
-          "value": 20
-        },
-        {
-          "layerName": "Ellipse 1 (Stroke)",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Ellipse 1 (Stroke)",
-          "property": "__layerName__",
-          "value": "Ellipse 1 (Stroke)"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "4295:157",
-      "name": "Plus",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Ellipse 1 (Stroke)"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Plus",
-          "property": "itemSpacing",
-          "value": 10
-        },
-        {
-          "layerName": "Plus",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Plus",
-          "property": "layoutMode",
-          "value": "VERTICAL"
-        },
-        {
-          "layerName": "Plus",
-          "property": "primaryAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Plus",
-          "property": "counterAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Plus",
-          "property": "layoutWrap",
-          "value": "NO_WRAP"
-        },
-        {
-          "layerName": "Plus",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Plus",
-          "property": "counterAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Plus",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Plus",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Plus",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Plus",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Plus",
-          "property": "__layerName__",
-          "value": "Plus"
-        },
-        {
-          "layerName": "Ellipse 1 (Stroke)",
-          "property": "strokeWeight",
-          "value": 1.7999999523162842
-        },
-        {
-          "layerName": "Ellipse 1 (Stroke)",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Ellipse 1 (Stroke)",
-          "property": "size.width",
-          "value": 20
-        },
-        {
-          "layerName": "Ellipse 1 (Stroke)",
-          "property": "size.height",
-          "value": 20
-        },
-        {
-          "layerName": "Ellipse 1 (Stroke)",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Ellipse 1 (Stroke)",
-          "property": "__layerName__",
-          "value": "Ellipse 1 (Stroke)"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "4295:161",
-      "name": "Currency-exchange",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "currency_exchange"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Currency-exchange",
-          "property": "itemSpacing",
-          "value": 10
-        },
-        {
-          "layerName": "Currency-exchange",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Currency-exchange",
-          "property": "layoutMode",
-          "value": "HORIZONTAL"
-        },
-        {
-          "layerName": "Currency-exchange",
-          "property": "primaryAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Currency-exchange",
-          "property": "counterAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Currency-exchange",
-          "property": "layoutWrap",
-          "value": "NO_WRAP"
-        },
-        {
-          "layerName": "Currency-exchange",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Currency-exchange",
-          "property": "counterAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Currency-exchange",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Currency-exchange",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Currency-exchange",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Currency-exchange",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Currency-exchange",
-          "property": "__layerName__",
-          "value": "Currency-exchange"
-        },
-        {
-          "layerName": "currency_exchange",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "currency_exchange",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "currency_exchange",
-          "property": "size.width",
-          "value": 20
-        },
-        {
-          "layerName": "currency_exchange",
-          "property": "size.height",
-          "value": 20
-        },
-        {
-          "layerName": "currency_exchange",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "currency_exchange",
-          "property": "__layerName__",
-          "value": "currency_exchange"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "4295:163",
-      "name": "Metrics",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "finance_mode"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Metrics",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Metrics",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Metrics",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Metrics",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Metrics",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Metrics",
-          "property": "__layerName__",
-          "value": "Metrics"
-        },
-        {
-          "layerName": "finance_mode",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "finance_mode",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "finance_mode",
-          "property": "size.width",
-          "value": 20
-        },
-        {
-          "layerName": "finance_mode",
-          "property": "size.height",
-          "value": 20
-        },
-        {
-          "layerName": "finance_mode",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "finance_mode",
-          "property": "__layerName__",
-          "value": "finance_mode"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "4295:169",
-      "name": "Insurance",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "policy"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Insurance",
-          "property": "itemSpacing",
-          "value": 10
-        },
-        {
-          "layerName": "Insurance",
-          "property": "paddingLeft",
-          "value": 3
-        },
-        {
-          "layerName": "Insurance",
-          "property": "paddingRight",
-          "value": 3
-        },
-        {
-          "layerName": "Insurance",
-          "property": "paddingTop",
-          "value": 2
-        },
-        {
-          "layerName": "Insurance",
-          "property": "paddingBottom",
-          "value": 2
-        },
-        {
-          "layerName": "Insurance",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Insurance",
-          "property": "layoutMode",
-          "value": "HORIZONTAL"
-        },
-        {
-          "layerName": "Insurance",
-          "property": "primaryAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Insurance",
-          "property": "counterAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Insurance",
-          "property": "layoutWrap",
-          "value": "NO_WRAP"
-        },
-        {
-          "layerName": "Insurance",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Insurance",
-          "property": "counterAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Insurance",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Insurance",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Insurance",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Insurance",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Insurance",
-          "property": "__layerName__",
-          "value": "Insurance"
-        },
-        {
-          "layerName": "policy",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "policy",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "policy",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "policy",
-          "property": "size.width",
-          "value": 17
-        },
-        {
-          "layerName": "policy",
-          "property": "size.height",
-          "value": 21
-        },
-        {
-          "layerName": "policy",
-          "property": "__layerName__",
-          "value": "policy"
-        },
-        {
-          "layerName": "policy",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "policy",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "policy",
-          "property": "size.width",
-          "value": 17
-        },
-        {
-          "layerName": "policy",
-          "property": "size.height",
-          "value": 21
-        },
-        {
-          "layerName": "policy",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "policy",
-          "property": "__layerName__",
-          "value": "policy"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "4295:172",
-      "name": "Pix",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Vector (Stroke)"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Pix",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Pix",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Pix",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Pix",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Pix",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Pix",
-          "property": "__layerName__",
-          "value": "Pix"
-        },
-        {
-          "layerName": "Vector (Stroke)",
-          "property": "strokeWeight",
-          "value": 1.899999976158142
-        },
-        {
-          "layerName": "Vector (Stroke)",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector (Stroke)",
-          "property": "size.width",
-          "value": 20
-        },
-        {
-          "layerName": "Vector (Stroke)",
-          "property": "size.height",
-          "value": 20
-        },
-        {
-          "layerName": "Vector (Stroke)",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Vector (Stroke)",
-          "property": "__layerName__",
-          "value": "Vector (Stroke)"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "3341:350",
-      "name": "Card-machine",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Vector"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Card-machine",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Card-machine",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Card-machine",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Card-machine",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Card-machine",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Card-machine",
-          "property": "fill[0].color",
-          "value": "#FFFFFF"
-        },
-        {
-          "layerName": "Card-machine",
-          "property": "__layerName__",
-          "value": "Card-machine"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 16
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 22
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "4295:159",
-      "name": "Smartphone-tag",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Vector"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Smartphone-tag",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Smartphone-tag",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Smartphone-tag",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Smartphone-tag",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Smartphone-tag",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Smartphone-tag",
-          "property": "__layerName__",
-          "value": "Smartphone-tag"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 18
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 22
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "4295:165",
-      "name": "Smartphone-link",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Vector"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Smartphone-link",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Smartphone-link",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Smartphone-link",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Smartphone-link",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Smartphone-link",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Smartphone-link",
-          "property": "fill[0].color",
-          "value": "#FFFFFF"
-        },
-        {
-          "layerName": "Smartphone-link",
-          "property": "__layerName__",
-          "value": "Smartphone-link"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.6000000238418579
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 19
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 22
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        }
-      ],
-      "instances": []
-    },
     {
       "id": "409:191",
       "name": "Account-box",
@@ -5730,6 +3970,161 @@
       "instances": []
     },
     {
+      "id": "4295:159",
+      "name": "Smartphone-tag",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Smartphone-tag",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Smartphone-tag",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Smartphone-tag",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Smartphone-tag",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Smartphone-tag",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Smartphone-tag",
+          "property": "__layerName__",
+          "value": "Smartphone-tag"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 18
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 22
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4295:165",
+      "name": "Smartphone-link",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Smartphone-link",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Smartphone-link",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Smartphone-link",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Smartphone-link",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Smartphone-link",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Smartphone-link",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Smartphone-link",
+          "property": "__layerName__",
+          "value": "Smartphone-link"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.6000000238418579
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 19
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 22
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
       "id": "1234:472",
       "name": "Bank",
       "type": "COMPONENT",
@@ -7412,16 +5807,6 @@
         {
           "property": "fills",
           "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Rectangle 1 (Stroke)"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Vector 3 (Stroke)"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
           "layerName": "Vector"
         }
       ],
@@ -7462,66 +5847,6 @@
           "value": "Card-quotes"
         },
         {
-          "layerName": "Rectangle 1 (Stroke)",
-          "property": "strokeWeight",
-          "value": 2
-        },
-        {
-          "layerName": "Rectangle 1 (Stroke)",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Rectangle 1 (Stroke)",
-          "property": "size.width",
-          "value": 18
-        },
-        {
-          "layerName": "Rectangle 1 (Stroke)",
-          "property": "size.height",
-          "value": 12
-        },
-        {
-          "layerName": "Rectangle 1 (Stroke)",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Rectangle 1 (Stroke)",
-          "property": "__layerName__",
-          "value": "Rectangle 1 (Stroke)"
-        },
-        {
-          "layerName": "Vector 3 (Stroke)",
-          "property": "strokeWeight",
-          "value": 1.7000000476837158
-        },
-        {
-          "layerName": "Vector 3 (Stroke)",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector 3 (Stroke)",
-          "property": "size.width",
-          "value": 7
-        },
-        {
-          "layerName": "Vector 3 (Stroke)",
-          "property": "size.height",
-          "value": 7
-        },
-        {
-          "layerName": "Vector 3 (Stroke)",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Vector 3 (Stroke)",
-          "property": "__layerName__",
-          "value": "Vector 3 (Stroke)"
-        },
-        {
           "layerName": "Vector",
           "property": "strokeWeight",
           "value": 0.02500000037252903
@@ -7534,12 +5859,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 19
+          "value": 22
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 13
+          "value": 16
         },
         {
           "layerName": "Vector",
@@ -7860,6 +6185,1176 @@
           "layerName": "Vector",
           "property": "size.height",
           "value": 16
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4295:155",
+      "name": "Nfc-circle",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Nfc-circle",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "Nfc-circle",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Nfc-circle",
+          "property": "layoutMode",
+          "value": "VERTICAL"
+        },
+        {
+          "layerName": "Nfc-circle",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Nfc-circle",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Nfc-circle",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Nfc-circle",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Nfc-circle",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Nfc-circle",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Nfc-circle",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Nfc-circle",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Nfc-circle",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Nfc-circle",
+          "property": "__layerName__",
+          "value": "Nfc-circle"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 1.7999999523162842
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "3341:350",
+      "name": "Contactless-payment",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Contactless-payment",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Contactless-payment",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Contactless-payment",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Contactless-payment",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Contactless-payment",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Contactless-payment",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Contactless-payment",
+          "property": "__layerName__",
+          "value": "Contactless-payment"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 16
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 22
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4295:139",
+      "name": "Qr-code",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Qr-code",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "Qr-code",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Qr-code",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Qr-code",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Qr-code",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Qr-code",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Qr-code",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Qr-code",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Qr-code",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Qr-code",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Qr-code",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Qr-code",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Qr-code",
+          "property": "__layerName__",
+          "value": "Qr-code"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4295:147",
+      "name": "Qr-money",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Qr-money",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "Qr-money",
+          "property": "paddingLeft",
+          "value": 2
+        },
+        {
+          "layerName": "Qr-money",
+          "property": "paddingRight",
+          "value": 2
+        },
+        {
+          "layerName": "Qr-money",
+          "property": "paddingTop",
+          "value": 2
+        },
+        {
+          "layerName": "Qr-money",
+          "property": "paddingBottom",
+          "value": 2
+        },
+        {
+          "layerName": "Qr-money",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Qr-money",
+          "property": "layoutMode",
+          "value": "VERTICAL"
+        },
+        {
+          "layerName": "Qr-money",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Qr-money",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Qr-money",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Qr-money",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Qr-money",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Qr-money",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Qr-money",
+          "property": "__layerName__",
+          "value": "Qr-money"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4295:149",
+      "name": "Money-installment",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Money-installment",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "Money-installment",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Money-installment",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Money-installment",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Money-installment",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Money-installment",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Money-installment",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Money-installment",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Money-installment",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Money-installment",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Money-installment",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Money-installment",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Money-installment",
+          "property": "__layerName__",
+          "value": "Money-installment"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 2
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4295:151",
+      "name": "Send-installment",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Send-installment",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "Send-installment",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Send-installment",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Send-installment",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Send-installment",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Send-installment",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Send-installment",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Send-installment",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Send-installment",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Send-installment",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Send-installment",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Send-installment",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Send-installment",
+          "property": "__layerName__",
+          "value": "Send-installment"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 2
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4295:153",
+      "name": "Qr-installment",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Qr-installment",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "Qr-installment",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Qr-installment",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Qr-installment",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Qr-installment",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Qr-installment",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Qr-installment",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Qr-installment",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Qr-installment",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Qr-installment",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Qr-installment",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Qr-installment",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Qr-installment",
+          "property": "__layerName__",
+          "value": "Qr-installment"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 2
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4295:161",
+      "name": "Currency-exchange",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Currency-exchange",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "Currency-exchange",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Currency-exchange",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Currency-exchange",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Currency-exchange",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Currency-exchange",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Currency-exchange",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Currency-exchange",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Currency-exchange",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Currency-exchange",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Currency-exchange",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Currency-exchange",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Currency-exchange",
+          "property": "__layerName__",
+          "value": "Currency-exchange"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4295:141",
+      "name": "Loan",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Loan",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "Loan",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Loan",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Loan",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Loan",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Loan",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Loan",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Loan",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Loan",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Loan",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Loan",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Loan",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Loan",
+          "property": "__layerName__",
+          "value": "Loan"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4295:163",
+      "name": "Metrics",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Metrics",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Metrics",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Metrics",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Metrics",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Metrics",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Metrics",
+          "property": "__layerName__",
+          "value": "Metrics"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4295:169",
+      "name": "Insurance-search",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Insurance-search",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "Insurance-search",
+          "property": "paddingLeft",
+          "value": 3
+        },
+        {
+          "layerName": "Insurance-search",
+          "property": "paddingRight",
+          "value": 3
+        },
+        {
+          "layerName": "Insurance-search",
+          "property": "paddingTop",
+          "value": 2
+        },
+        {
+          "layerName": "Insurance-search",
+          "property": "paddingBottom",
+          "value": 2
+        },
+        {
+          "layerName": "Insurance-search",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Insurance-search",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Insurance-search",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Insurance-search",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Insurance-search",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Insurance-search",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Insurance-search",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Insurance-search",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Insurance-search",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Insurance-search",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Insurance-search",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Insurance-search",
+          "property": "__layerName__",
+          "value": "Insurance-search"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 17
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 21
         },
         {
           "layerName": "Vector",
@@ -8440,6 +7935,226 @@
       "instances": []
     },
     {
+      "id": "4295:143",
+      "name": "Bus-money",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Bus-money",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "Bus-money",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Bus-money",
+          "property": "layoutMode",
+          "value": "VERTICAL"
+        },
+        {
+          "layerName": "Bus-money",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Bus-money",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Bus-money",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Bus-money",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Bus-money",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Bus-money",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Bus-money",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Bus-money",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Bus-money",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Bus-money",
+          "property": "__layerName__",
+          "value": "Bus-money"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4295:145",
+      "name": "Bus-plus",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Bus-plus",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "Bus-plus",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Bus-plus",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Bus-plus",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Bus-plus",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Bus-plus",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Bus-plus",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Bus-plus",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Bus-plus",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Bus-plus",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Bus-plus",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Bus-plus",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Bus-plus",
+          "property": "__layerName__",
+          "value": "Bus-plus"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
       "id": "928:247",
       "name": "Account",
       "type": "COMPONENT",
@@ -8757,7 +8472,7 @@
         {
           "property": "fills",
           "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "bubbles"
+          "layerName": "Vector"
         }
       ],
       "properties": [
@@ -8797,34 +8512,34 @@
           "value": "Box-arrow"
         },
         {
-          "layerName": "bubbles",
+          "layerName": "Vector",
           "property": "strokeWeight",
           "value": 0.02500000037252903
         },
         {
-          "layerName": "bubbles",
+          "layerName": "Vector",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "bubbles",
+          "layerName": "Vector",
           "property": "size.width",
           "value": 20
         },
         {
-          "layerName": "bubbles",
+          "layerName": "Vector",
           "property": "size.height",
           "value": 16
         },
         {
-          "layerName": "bubbles",
+          "layerName": "Vector",
           "property": "fill[0].color",
           "value": "#171717"
         },
         {
-          "layerName": "bubbles",
+          "layerName": "Vector",
           "property": "__layerName__",
-          "value": "bubbles"
+          "value": "Vector"
         }
       ],
       "instances": []
@@ -9815,6 +9530,116 @@
       "instances": []
     },
     {
+      "id": "4295:157",
+      "name": "Plus",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Plus",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "Plus",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Plus",
+          "property": "layoutMode",
+          "value": "VERTICAL"
+        },
+        {
+          "layerName": "Plus",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Plus",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Plus",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Plus",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Plus",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Plus",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Plus",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Plus",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Plus",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Plus",
+          "property": "__layerName__",
+          "value": "Plus"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 1.7999999523162842
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
       "id": "439:820",
       "name": "Location",
       "type": "COMPONENT",
@@ -10315,7 +10140,7 @@
         {
           "layerName": "Logo",
           "property": "fill[0].color",
-          "value": "#1EB2F5"
+          "value": "#052C50"
         },
         {
           "layerName": "Logo",
@@ -10533,6 +10358,81 @@
           "layerName": "Logo",
           "property": "fill[0].color",
           "value": "#1EB2F5"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4295:172",
+      "name": "Pix",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Logo"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Pix",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Pix",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Pix",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Pix",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Pix",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Pix",
+          "property": "__layerName__",
+          "value": "Pix"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 1.899999976158142
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#171717"
         },
         {
           "layerName": "Logo",
@@ -11170,7 +11070,7 @@
         {
           "property": "fills",
           "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "attach_file"
+          "layerName": "Vector"
         }
       ],
       "properties": [
@@ -11210,34 +11110,34 @@
           "value": "Link"
         },
         {
-          "layerName": "attach_file",
+          "layerName": "Vector",
           "property": "strokeWeight",
           "value": 0.02500000037252903
         },
         {
-          "layerName": "attach_file",
+          "layerName": "Vector",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "attach_file",
+          "layerName": "Vector",
           "property": "size.width",
           "value": 13
         },
         {
-          "layerName": "attach_file",
+          "layerName": "Vector",
           "property": "size.height",
           "value": 20
         },
         {
-          "layerName": "attach_file",
+          "layerName": "Vector",
           "property": "fill[0].color",
           "value": "#171717"
         },
         {
-          "layerName": "attach_file",
+          "layerName": "Vector",
           "property": "__layerName__",
-          "value": "attach_file"
+          "value": "Vector"
         }
       ],
       "instances": []
@@ -11325,7 +11225,7 @@
         {
           "property": "fills",
           "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Union"
+          "layerName": "Vector"
         }
       ],
       "properties": [
@@ -11420,34 +11320,34 @@
           "value": "Rocket"
         },
         {
-          "layerName": "Union",
+          "layerName": "Vector",
           "property": "strokeWeight",
           "value": 0
         },
         {
-          "layerName": "Union",
+          "layerName": "Vector",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Union",
+          "layerName": "Vector",
           "property": "size.width",
           "value": 21
         },
         {
-          "layerName": "Union",
+          "layerName": "Vector",
           "property": "size.height",
           "value": 21
         },
         {
-          "layerName": "Union",
+          "layerName": "Vector",
           "property": "fill[0].color",
           "value": "#171717"
         },
         {
-          "layerName": "Union",
+          "layerName": "Vector",
           "property": "__layerName__",
-          "value": "Union"
+          "value": "Vector"
         }
       ],
       "instances": []
@@ -12615,7 +12515,7 @@
         {
           "property": "fills",
           "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "warning"
+          "layerName": "Vector"
         }
       ],
       "properties": [
@@ -12655,34 +12555,34 @@
           "value": "Warning"
         },
         {
-          "layerName": "warning",
+          "layerName": "Vector",
           "property": "strokeWeight",
           "value": 0.02500000037252903
         },
         {
-          "layerName": "warning",
+          "layerName": "Vector",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "warning",
+          "layerName": "Vector",
           "property": "size.width",
           "value": 21
         },
         {
-          "layerName": "warning",
+          "layerName": "Vector",
           "property": "size.height",
           "value": 18
         },
         {
-          "layerName": "warning",
+          "layerName": "Vector",
           "property": "fill[0].color",
           "value": "#171717"
         },
         {
-          "layerName": "warning",
+          "layerName": "Vector",
           "property": "__layerName__",
-          "value": "warning"
+          "value": "Vector"
         }
       ],
       "instances": []
@@ -73935,26 +73835,6 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:7a791f76226ece97daabfe0e71e44f3bd3b720d6/4033:357",
-          "layerName": "Ellipse 1355"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:236065d68e5274abf4652a44ade1243e40c873ef/4033:360",
-          "layerName": "Ellipse 1357"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:236065d68e5274abf4652a44ade1243e40c873ef/4033:360",
-          "layerName": "Ellipse 1358"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:236065d68e5274abf4652a44ade1243e40c873ef/4033:360",
-          "layerName": "Ellipse 1359"
-        },
-        {
-          "property": "fills",
           "variableId": "VariableID:236065d68e5274abf4652a44ade1243e40c873ef/4033:360",
           "layerName": "Star 122"
         },
@@ -73982,11 +73862,6 @@
           "property": "fills",
           "variableId": "VariableID:3d161e56000c4ff4a884deaf3addcc2683378322/3958:132",
           "layerName": "Vector 1593 (Stroke)"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a791f76226ece97daabfe0e71e44f3bd3b720d6/4033:357",
-          "layerName": "Ellipse 1361"
         }
       ],
       "properties": [
@@ -74054,126 +73929,6 @@
           "layerName": "Vector",
           "property": "__layerName__",
           "value": "Vector"
-        },
-        {
-          "layerName": "Ellipse 1355",
-          "property": "strokeWeight",
-          "value": 1.5329301357269287
-        },
-        {
-          "layerName": "Ellipse 1355",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Ellipse 1355",
-          "property": "size.width",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1355",
-          "property": "size.height",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1355",
-          "property": "fill[0].color",
-          "value": "#F58B0B"
-        },
-        {
-          "layerName": "Ellipse 1355",
-          "property": "__layerName__",
-          "value": "Ellipse 1355"
-        },
-        {
-          "layerName": "Ellipse 1357",
-          "property": "strokeWeight",
-          "value": 1.5329301357269287
-        },
-        {
-          "layerName": "Ellipse 1357",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Ellipse 1357",
-          "property": "size.width",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1357",
-          "property": "size.height",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1357",
-          "property": "fill[0].color",
-          "value": "#FFF8E6"
-        },
-        {
-          "layerName": "Ellipse 1357",
-          "property": "__layerName__",
-          "value": "Ellipse 1357"
-        },
-        {
-          "layerName": "Ellipse 1358",
-          "property": "strokeWeight",
-          "value": 1.5329302549362183
-        },
-        {
-          "layerName": "Ellipse 1358",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Ellipse 1358",
-          "property": "size.width",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1358",
-          "property": "size.height",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1358",
-          "property": "fill[0].color",
-          "value": "#FFF8E6"
-        },
-        {
-          "layerName": "Ellipse 1358",
-          "property": "__layerName__",
-          "value": "Ellipse 1358"
-        },
-        {
-          "layerName": "Ellipse 1359",
-          "property": "strokeWeight",
-          "value": 1.5329302549362183
-        },
-        {
-          "layerName": "Ellipse 1359",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Ellipse 1359",
-          "property": "size.width",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1359",
-          "property": "size.height",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1359",
-          "property": "fill[0].color",
-          "value": "#FFF8E6"
-        },
-        {
-          "layerName": "Ellipse 1359",
-          "property": "__layerName__",
-          "value": "Ellipse 1359"
         },
         {
           "layerName": "Vector",
@@ -74444,36 +74199,6 @@
           "layerName": "Vector 1593 (Stroke)",
           "property": "__layerName__",
           "value": "Vector 1593 (Stroke)"
-        },
-        {
-          "layerName": "Ellipse 1361",
-          "property": "strokeWeight",
-          "value": 1.5329301357269287
-        },
-        {
-          "layerName": "Ellipse 1361",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Ellipse 1361",
-          "property": "size.width",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1361",
-          "property": "size.height",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1361",
-          "property": "fill[0].color",
-          "value": "#F58B0B"
-        },
-        {
-          "layerName": "Ellipse 1361",
-          "property": "__layerName__",
-          "value": "Ellipse 1361"
         }
       ],
       "instances": []
@@ -74487,26 +74212,6 @@
           "property": "fills",
           "variableId": "VariableID:de4b4e40bad5ed8b54c044d104321ce22941b4f2/4033:354",
           "layerName": "Vector"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:f485b413c22a4987bc39268b517563de530bad56/4033:356",
-          "layerName": "Ellipse 1355"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:de4b4e40bad5ed8b54c044d104321ce22941b4f2/4033:354",
-          "layerName": "Ellipse 1357"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:de4b4e40bad5ed8b54c044d104321ce22941b4f2/4033:354",
-          "layerName": "Ellipse 1358"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:de4b4e40bad5ed8b54c044d104321ce22941b4f2/4033:354",
-          "layerName": "Ellipse 1359"
         },
         {
           "property": "fills",
@@ -74594,126 +74299,6 @@
           "layerName": "Vector",
           "property": "__layerName__",
           "value": "Vector"
-        },
-        {
-          "layerName": "Ellipse 1355",
-          "property": "strokeWeight",
-          "value": 1.5329301357269287
-        },
-        {
-          "layerName": "Ellipse 1355",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Ellipse 1355",
-          "property": "size.width",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1355",
-          "property": "size.height",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1355",
-          "property": "fill[0].color",
-          "value": "#E2202C"
-        },
-        {
-          "layerName": "Ellipse 1355",
-          "property": "__layerName__",
-          "value": "Ellipse 1355"
-        },
-        {
-          "layerName": "Ellipse 1357",
-          "property": "strokeWeight",
-          "value": 1.5329301357269287
-        },
-        {
-          "layerName": "Ellipse 1357",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Ellipse 1357",
-          "property": "size.width",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1357",
-          "property": "size.height",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1357",
-          "property": "fill[0].color",
-          "value": "#FEF2F3"
-        },
-        {
-          "layerName": "Ellipse 1357",
-          "property": "__layerName__",
-          "value": "Ellipse 1357"
-        },
-        {
-          "layerName": "Ellipse 1358",
-          "property": "strokeWeight",
-          "value": 1.5329302549362183
-        },
-        {
-          "layerName": "Ellipse 1358",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Ellipse 1358",
-          "property": "size.width",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1358",
-          "property": "size.height",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1358",
-          "property": "fill[0].color",
-          "value": "#FEF2F3"
-        },
-        {
-          "layerName": "Ellipse 1358",
-          "property": "__layerName__",
-          "value": "Ellipse 1358"
-        },
-        {
-          "layerName": "Ellipse 1359",
-          "property": "strokeWeight",
-          "value": 1.5329302549362183
-        },
-        {
-          "layerName": "Ellipse 1359",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Ellipse 1359",
-          "property": "size.width",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1359",
-          "property": "size.height",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 1359",
-          "property": "fill[0].color",
-          "value": "#FEF2F3"
-        },
-        {
-          "layerName": "Ellipse 1359",
-          "property": "__layerName__",
-          "value": "Ellipse 1359"
         },
         {
           "layerName": "Vector",
@@ -140720,31 +140305,6 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Vector"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Vector"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Vector"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Vector"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Vector"
-        },
-        {
-          "property": "fills",
           "variableId": "VariableID:d473334e87f069511709ca39012eebbc280cb5c1/4033:382",
           "layerName": "Vector"
         },
@@ -140814,36 +140374,6 @@
           "layerName": "Vector13",
           "property": "__layerName__",
           "value": "Vector13"
-        },
-        {
-          "layerName": "Vector12",
-          "property": "strokeWeight",
-          "value": 0.3252490162849426
-        },
-        {
-          "layerName": "Vector12",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Vector12",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector12",
-          "property": "size.width",
-          "value": 38
-        },
-        {
-          "layerName": "Vector12",
-          "property": "size.height",
-          "value": 40
-        },
-        {
-          "layerName": "Vector12",
-          "property": "__layerName__",
-          "value": "Vector12"
         },
         {
           "layerName": "Vector",
@@ -141463,157 +140993,7 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 2
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 2
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#082749"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.2601992189884186
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 2
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 2
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#082749"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.2601992189884186
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 2
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 2
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#082749"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.2601992189884186
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 2
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 2
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#082749"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.2601992189884186
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 2
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 2
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#082749"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.2601992189884186
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 2
+          "value": 13
         },
         {
           "layerName": "Vector",
@@ -196597,36 +195977,6 @@
           "layerName": "Logo",
           "property": "__layerName__",
           "value": "Logo"
-        },
-        {
-          "layerName": "Ellipse 6",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Ellipse 6",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Ellipse 6",
-          "property": "size.width",
-          "value": 6
-        },
-        {
-          "layerName": "Ellipse 6",
-          "property": "size.height",
-          "value": 6
-        },
-        {
-          "layerName": "Ellipse 6",
-          "property": "fill[0].color",
-          "value": "#FFD000"
-        },
-        {
-          "layerName": "Ellipse 6",
-          "property": "__layerName__",
-          "value": "Ellipse 6"
         }
       ],
       "instances": []
@@ -208117,7 +207467,7 @@
   ],
   "stats": {
     "totalComponents": 633,
-    "totalBindings": 5005,
-    "totalProperties": 35380
+    "totalBindings": 4989,
+    "totalProperties": 35266
   }
 }
