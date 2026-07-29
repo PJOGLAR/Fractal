@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-07-28T14:25:43.718Z",
+  "takenAt": "2026-07-29T14:24:41.806Z",
   "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
   "fileName": "Assets",
   "components": [
@@ -9922,7 +9922,7 @@
         {
           "layerName": "Logo",
           "property": "fill[0].color",
-          "value": "#1EB2F5"
+          "value": "#5A50F9"
         },
         {
           "layerName": "Logo",
@@ -64228,6 +64228,291 @@
           "layerName": "stroke",
           "property": "__layerName__",
           "value": "stroke"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4502:384",
+      "name": "Reload",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:ae0d43f35783d5a92f655076f3a9fb530c6fc040/3794:30",
+          "layerName": "Vector07"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector06"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/3794:22",
+          "layerName": "Vector05"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:40486abe405943e9f3020d849823dc3452e32997/3794:8",
+          "layerName": "Vector04"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector03"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:40486abe405943e9f3020d849823dc3452e32997/3794:8",
+          "layerName": "Vector02"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector01"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Reload",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Reload",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Reload",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Reload",
+          "property": "size.width",
+          "value": 40
+        },
+        {
+          "layerName": "Reload",
+          "property": "size.height",
+          "value": 40
+        },
+        {
+          "layerName": "Reload",
+          "property": "__layerName__",
+          "value": "Reload"
+        },
+        {
+          "layerName": "Vector07",
+          "property": "strokeWeight",
+          "value": 0.8549257516860962
+        },
+        {
+          "layerName": "Vector07",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector07",
+          "property": "size.width",
+          "value": 36
+        },
+        {
+          "layerName": "Vector07",
+          "property": "size.height",
+          "value": 36
+        },
+        {
+          "layerName": "Vector07",
+          "property": "fill[0].color",
+          "value": "#C7B3FF"
+        },
+        {
+          "layerName": "Vector07",
+          "property": "__layerName__",
+          "value": "Vector07"
+        },
+        {
+          "layerName": "Vector06",
+          "property": "strokeWeight",
+          "value": 0.8549257516860962
+        },
+        {
+          "layerName": "Vector06",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector06",
+          "property": "size.width",
+          "value": 37
+        },
+        {
+          "layerName": "Vector06",
+          "property": "size.height",
+          "value": 36
+        },
+        {
+          "layerName": "Vector06",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector06",
+          "property": "__layerName__",
+          "value": "Vector06"
+        },
+        {
+          "layerName": "Vector05",
+          "property": "strokeWeight",
+          "value": 1.0686571598052979
+        },
+        {
+          "layerName": "Vector05",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector05",
+          "property": "size.width",
+          "value": 10
+        },
+        {
+          "layerName": "Vector05",
+          "property": "size.height",
+          "value": 19
+        },
+        {
+          "layerName": "Vector05",
+          "property": "fill[0].color",
+          "value": "#052C50"
+        },
+        {
+          "layerName": "Vector05",
+          "property": "__layerName__",
+          "value": "Vector05"
+        },
+        {
+          "layerName": "Vector04",
+          "property": "strokeWeight",
+          "value": 1.0686571598052979
+        },
+        {
+          "layerName": "Vector04",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector04",
+          "property": "size.width",
+          "value": 14
+        },
+        {
+          "layerName": "Vector04",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Vector04",
+          "property": "fill[0].color",
+          "value": "#FDDD8A"
+        },
+        {
+          "layerName": "Vector04",
+          "property": "__layerName__",
+          "value": "Vector04"
+        },
+        {
+          "layerName": "Vector03",
+          "property": "strokeWeight",
+          "value": 1.0686571598052979
+        },
+        {
+          "layerName": "Vector03",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector03",
+          "property": "size.width",
+          "value": 15
+        },
+        {
+          "layerName": "Vector03",
+          "property": "size.height",
+          "value": 25
+        },
+        {
+          "layerName": "Vector03",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector03",
+          "property": "__layerName__",
+          "value": "Vector03"
+        },
+        {
+          "layerName": "Vector02",
+          "property": "strokeWeight",
+          "value": 1.0686571598052979
+        },
+        {
+          "layerName": "Vector02",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector02",
+          "property": "size.width",
+          "value": 16
+        },
+        {
+          "layerName": "Vector02",
+          "property": "size.height",
+          "value": 23
+        },
+        {
+          "layerName": "Vector02",
+          "property": "fill[0].color",
+          "value": "#FDDD8A"
+        },
+        {
+          "layerName": "Vector02",
+          "property": "__layerName__",
+          "value": "Vector02"
+        },
+        {
+          "layerName": "Vector01",
+          "property": "strokeWeight",
+          "value": 1.0686571598052979
+        },
+        {
+          "layerName": "Vector01",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector01",
+          "property": "size.width",
+          "value": 18
+        },
+        {
+          "layerName": "Vector01",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Vector01",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector01",
+          "property": "__layerName__",
+          "value": "Vector01"
         }
       ],
       "instances": []
@@ -207466,8 +207751,8 @@
     }
   ],
   "stats": {
-    "totalComponents": 633,
-    "totalBindings": 4989,
-    "totalProperties": 35266
+    "totalComponents": 634,
+    "totalBindings": 4996,
+    "totalProperties": 35314
   }
 }
