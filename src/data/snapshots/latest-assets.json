@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-07-29T14:24:41.806Z",
+  "takenAt": "2026-07-30T14:25:15.199Z",
   "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
   "fileName": "Assets",
   "components": [
@@ -13140,7 +13140,7 @@
         {
           "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Vector"
+          "layerName": "Vector01"
         }
       ],
       "properties": [
@@ -13175,34 +13175,34 @@
           "value": "Airplane"
         },
         {
-          "layerName": "Vector",
+          "layerName": "Vector01",
           "property": "strokeWeight",
           "value": 0.4968872368335724
         },
         {
-          "layerName": "Vector",
+          "layerName": "Vector01",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Vector",
+          "layerName": "Vector01",
           "property": "size.width",
           "value": 40
         },
         {
-          "layerName": "Vector",
+          "layerName": "Vector01",
           "property": "size.height",
           "value": 24
         },
         {
-          "layerName": "Vector",
+          "layerName": "Vector01",
           "property": "fill[0].color",
           "value": "#082749"
         },
         {
-          "layerName": "Vector",
+          "layerName": "Vector01",
           "property": "__layerName__",
-          "value": "Vector"
+          "value": "Vector01"
         }
       ],
       "instances": []
@@ -94243,12 +94243,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 25
+          "value": 27
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 33
+          "value": 35
         },
         {
           "layerName": "Vector",
@@ -94273,12 +94273,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 25
+          "value": 28
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 33
+          "value": 36
         },
         {
           "layerName": "Vector",
@@ -94303,12 +94303,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 25
+          "value": 27
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 33
+          "value": 35
         },
         {
           "layerName": "Vector",
@@ -94333,12 +94333,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 25
+          "value": 28
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 33
+          "value": 36
         },
         {
           "layerName": "Vector",
@@ -94393,12 +94393,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 14
+          "value": 16
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 27
+          "value": 30
         },
         {
           "layerName": "Vector",
@@ -94428,12 +94428,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 15
+          "value": 16
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 15
+          "value": 16
         },
         {
           "layerName": "Vector",
@@ -94453,12 +94453,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 15
+          "value": 16
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 15
+          "value": 16
         },
         {
           "layerName": "Vector",
@@ -190233,12 +190233,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 22
+          "value": 29
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 30
+          "value": 40
         },
         {
           "layerName": "Vector",
@@ -190258,12 +190258,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 19
+          "value": 25
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 3
+          "value": 4
         },
         {
           "layerName": "Vector",
@@ -190288,7 +190288,37 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 20
+          "value": 26
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 5
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 26
         },
         {
           "layerName": "Vector",
@@ -190318,42 +190348,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 20
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 3
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#082749"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 21
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
           "value": 28
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 37
         },
         {
           "layerName": "Vector",
@@ -190378,12 +190378,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 22
+          "value": 29
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 29
+          "value": 38
         },
         {
           "layerName": "Vector",
@@ -190408,12 +190408,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 14
+          "value": 18
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 7
+          "value": 9
         },
         {
           "layerName": "Vector",
@@ -190438,12 +190438,42 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 14
+          "value": 19
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 7
+          "value": 10
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 1
         },
         {
           "layerName": "Vector",
@@ -190528,42 +190558,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 1
+          "value": 28
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 1
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#082749"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 21
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 4
+          "value": 5
         },
         {
           "layerName": "Vector",
@@ -190588,12 +190588,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 6
+          "value": 8
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 4
+          "value": 5
         },
         {
           "layerName": "Vector",
@@ -190618,12 +190618,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 7
+          "value": 9
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 4
+          "value": 6
         },
         {
           "layerName": "Vector",
@@ -190648,12 +190648,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 21
+          "value": 28
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 4
+          "value": 5
         },
         {
           "layerName": "Vector",
@@ -190678,12 +190678,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 20
+          "value": 26
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 3
+          "value": 4
         },
         {
           "layerName": "Vector",
@@ -190778,12 +190778,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 52
+          "value": 49
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 56
+          "value": 51
         },
         {
           "layerName": "Vector",
@@ -190808,12 +190808,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 30
+          "value": 27
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 39
+          "value": 36
         },
         {
           "layerName": "Vector",
@@ -190838,12 +190838,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 31
+          "value": 28
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 40
+          "value": 36
         },
         {
           "layerName": "Vector",
@@ -190868,12 +190868,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 30
+          "value": 27
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 39
+          "value": 36
         },
         {
           "layerName": "Vector",
@@ -190898,12 +190898,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 31
+          "value": 28
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 40
+          "value": 36
         },
         {
           "layerName": "Vector",
@@ -190953,12 +190953,12 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 17
+          "value": 14
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 33
+          "value": 30
         },
         {
           "layerName": "Vector",

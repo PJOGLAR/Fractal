@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-07-27T14:51:28.683Z",
+  "takenAt": "2026-07-30T14:25:10.984Z",
   "fileKey": "htvGLaEUzJTF7QPd4LkGy0",
   "fileName": "Templates",
   "components": [
@@ -39073,6 +39073,16 @@
         },
         {
           "property": "itemSpacing",
+          "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "layerName": "Footer"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "layerName": "Footer"
+        },
+        {
+          "property": "itemSpacing",
           "variableId": "VariableID:0acafbe854d5400d7fa97fdf10a4ca6ce7f22f18/1557:34",
           "layerName": "Stepper-dot"
         },
@@ -39422,36 +39432,6 @@
           "layerName": "Swap-content"
         },
         {
-          "property": "fills",
-          "variableId": "VariableID:8b7018025d511464f7f79e7eee16ba2c211b878a/3958:128",
-          "layerName": "Swap content"
-        },
-        {
-          "property": "lineHeight",
-          "variableId": "VariableID:a5104ff7fee688b26b582641e47cec3f7dc2213e/1667:5",
-          "layerName": "Swap content"
-        },
-        {
-          "property": "letterSpacing",
-          "variableId": "VariableID:f170b2153c8a024ba549440ee75df85fdf203077/1545:20",
-          "layerName": "Swap content"
-        },
-        {
-          "property": "fontWeight",
-          "variableId": "VariableID:bd5df1f66a665fb3abbad64ea43984d74f5e467b/1545:21",
-          "layerName": "Swap content"
-        },
-        {
-          "property": "fontFamily",
-          "variableId": "VariableID:4ecc6fe613499173bb0d614a99bb547a27481daa/1545:23",
-          "layerName": "Swap content"
-        },
-        {
-          "property": "fontSize",
-          "variableId": "VariableID:3389a2b5e718b77a3ac37230177fec4838b8c01c/1545:22",
-          "layerName": "Swap content"
-        },
-        {
           "property": "itemSpacing",
           "variableId": "VariableID:0acafbe854d5400d7fa97fdf10a4ca6ce7f22f18/1557:34",
           "layerName": "---> Primary button"
@@ -39484,11 +39464,6 @@
         {
           "property": "fills",
           "variableId": "VariableID:cc10527f81ab3de6deb477d9f460671fda777c41/3319:352",
-          "layerName": "Vector"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:cc10527f81ab3de6deb477d9f460671fda777c41/3319:352",
           "layerName": "Label"
         },
         {
@@ -39515,11 +39490,6 @@
           "property": "fontSize",
           "variableId": "VariableID:3389a2b5e718b77a3ac37230177fec4838b8c01c/1545:22",
           "layerName": "Label"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:cc10527f81ab3de6deb477d9f460671fda777c41/3319:352",
-          "layerName": "Vector"
         },
         {
           "property": "itemSpacing",
@@ -39554,11 +39524,6 @@
         {
           "property": "fills",
           "variableId": "VariableID:aeac0764f3f9cfc6f77a2fa557d9c5ba4575a9f9/3958:108",
-          "layerName": "Vector"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:aeac0764f3f9cfc6f77a2fa557d9c5ba4575a9f9/3958:108",
           "layerName": "Label"
         },
         {
@@ -39585,11 +39550,6 @@
           "property": "fontSize",
           "variableId": "VariableID:3389a2b5e718b77a3ac37230177fec4838b8c01c/1545:22",
           "layerName": "Label"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:aeac0764f3f9cfc6f77a2fa557d9c5ba4575a9f9/3958:108",
-          "layerName": "Vector"
         },
         {
           "property": "itemSpacing",
@@ -39619,11 +39579,6 @@
         {
           "property": "fills",
           "variableId": "VariableID:a721bf94682bac637371ab810485a4f392914778/3927:53",
-          "layerName": "Vector"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:a721bf94682bac637371ab810485a4f392914778/3927:53",
           "layerName": "Label"
         },
         {
@@ -39650,11 +39605,6 @@
           "property": "fontSize",
           "variableId": "VariableID:3389a2b5e718b77a3ac37230177fec4838b8c01c/1545:22",
           "layerName": "Label"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:a721bf94682bac637371ab810485a4f392914778/3927:53",
-          "layerName": "Vector"
         },
         {
           "property": "fills",
@@ -40536,7 +40486,7 @@
         {
           "layerName": "Content wrapper",
           "property": "size.height",
-          "value": 532
+          "value": 500
         },
         {
           "layerName": "Content wrapper",
@@ -40761,7 +40711,7 @@
         {
           "layerName": "Content",
           "property": "size.height",
-          "value": 348
+          "value": 316
         },
         {
           "layerName": "Content",
@@ -40916,7 +40866,7 @@
         {
           "layerName": "Swap-content",
           "property": "size.height",
-          "value": 168
+          "value": 172
         },
         {
           "layerName": "Swap-content",
@@ -41057,6 +41007,56 @@
           "layerName": "Swap content",
           "property": "__layerName__",
           "value": "Swap content"
+        },
+        {
+          "layerName": "Footer",
+          "property": "paddingTop",
+          "value": 8
+        },
+        {
+          "layerName": "Footer",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Footer",
+          "property": "layoutMode",
+          "value": "VERTICAL"
+        },
+        {
+          "layerName": "Footer",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Footer",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Footer",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Footer",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Footer",
+          "property": "size.width",
+          "value": 360
+        },
+        {
+          "layerName": "Footer",
+          "property": "size.height",
+          "value": 180
+        },
+        {
+          "layerName": "Footer",
+          "property": "__layerName__",
+          "value": "Footer"
         },
         {
           "layerName": "Stepper-dot",
@@ -42059,71 +42059,6 @@
           "value": "Wrapper"
         },
         {
-          "layerName": "Refresh",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Refresh",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Refresh",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Refresh",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Refresh",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Refresh",
-          "property": "__layerName__",
-          "value": "Refresh"
-        },
-        {
-          "layerName": "Swap content",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Swap content",
-          "property": "characters",
-          "value": "Swap content"
-        },
-        {
-          "layerName": "Swap content",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Swap content",
-          "property": "size.width",
-          "value": 104
-        },
-        {
-          "layerName": "Swap content",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Swap content",
-          "property": "fill[0].color",
-          "value": "#5A50F9"
-        },
-        {
-          "layerName": "Swap content",
-          "property": "__layerName__",
-          "value": "Swap content"
-        },
-        {
           "layerName": "---> Primary button",
           "property": "itemSpacing",
           "value": 6
@@ -42294,36 +42229,6 @@
           "value": "⛔ Placeholder-icon_slot"
         },
         {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 18
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 18
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#FCFCFC"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        },
-        {
           "layerName": "Label",
           "property": "strokeWeight",
           "value": 1
@@ -42447,36 +42352,6 @@
           "layerName": "⛔ Placeholder-icon_slot",
           "property": "__layerName__",
           "value": "⛔ Placeholder-icon_slot"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 18
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 18
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#FCFCFC"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
         },
         {
           "layerName": "---> Secondary button",
@@ -42649,36 +42524,6 @@
           "value": "⛔ Placeholder-icon_slot"
         },
         {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 18
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 18
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#5A50F9"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        },
-        {
           "layerName": "Label",
           "property": "strokeWeight",
           "value": 1
@@ -42802,36 +42647,6 @@
           "layerName": "⛔ Placeholder-icon_slot",
           "property": "__layerName__",
           "value": "⛔ Placeholder-icon_slot"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 18
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 18
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#5A50F9"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
         },
         {
           "layerName": "---> Tertiary button",
@@ -43004,36 +42819,6 @@
           "value": "⛔ Placeholder-icon_slot"
         },
         {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 18
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 18
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        },
-        {
           "layerName": "Label",
           "property": "strokeWeight",
           "value": 1
@@ -43157,36 +42942,6 @@
           "layerName": "⛔ Placeholder-icon_slot",
           "property": "__layerName__",
           "value": "⛔ Placeholder-icon_slot"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 18
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 18
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
         },
         {
           "layerName": "Magic pixel",
@@ -43477,10 +43232,6 @@
         {
           "name": "Swap-content",
           "componentId": "2734:445"
-        },
-        {
-          "name": "Refresh",
-          "componentId": "2734:443"
         },
         {
           "name": "---> Primary button",
@@ -71305,7 +71056,7 @@
   ],
   "stats": {
     "totalComponents": 85,
-    "totalBindings": 3037,
-    "totalProperties": 10375
+    "totalBindings": 3027,
+    "totalProperties": 10336
   }
 }
