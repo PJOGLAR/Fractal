@@ -1,5 +1,37 @@
 [
   {
+    "id": "msaf8hvv",
+    "timestamp": "2026-08-01T13:42:47.947Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 iterado",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Push-notification",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 4,
+      "propertiesChanged": 27
+    }
+  },
+  {
     "id": "ms7lve1q",
     "timestamp": "2026-07-30T14:25:15.230Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
