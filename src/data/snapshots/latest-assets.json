@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-07-30T14:25:15.199Z",
+  "takenAt": "2026-08-03T14:55:43.415Z",
   "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
   "fileName": "Assets",
   "components": [
@@ -64518,6 +64518,2181 @@
       "instances": []
     },
     {
+      "id": "4619:366",
+      "name": "Map-pin",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:40486abe405943e9f3020d849823dc3452e32997/4033:358",
+          "layerName": "Exclude"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Exclude (Stroke)"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Map-pin",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Map-pin",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Map-pin",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Map-pin",
+          "property": "size.width",
+          "value": 40
+        },
+        {
+          "layerName": "Map-pin",
+          "property": "size.height",
+          "value": 40
+        },
+        {
+          "layerName": "Map-pin",
+          "property": "__layerName__",
+          "value": "Map-pin"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.800000011920929
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 40
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 29
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.800000011920929
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "size.width",
+          "value": 41
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "size.height",
+          "value": 30
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector (Stroke)"
+        },
+        {
+          "layerName": "Exclude",
+          "property": "strokeWeight",
+          "value": 0.699999988079071
+        },
+        {
+          "layerName": "Exclude",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Exclude",
+          "property": "size.width",
+          "value": 11
+        },
+        {
+          "layerName": "Exclude",
+          "property": "size.height",
+          "value": 13
+        },
+        {
+          "layerName": "Exclude",
+          "property": "fill[0].color",
+          "value": "#FDDD8A"
+        },
+        {
+          "layerName": "Exclude",
+          "property": "__layerName__",
+          "value": "Exclude"
+        },
+        {
+          "layerName": "Exclude (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.699999988079071
+        },
+        {
+          "layerName": "Exclude (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Exclude (Stroke)",
+          "property": "size.width",
+          "value": 11
+        },
+        {
+          "layerName": "Exclude (Stroke)",
+          "property": "size.height",
+          "value": 13
+        },
+        {
+          "layerName": "Exclude (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Exclude (Stroke)",
+          "property": "__layerName__",
+          "value": "Exclude (Stroke)"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4619:365",
+      "name": "Guitar-microphone",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:ae0d43f35783d5a92f655076f3a9fb530c6fc040/4033:380",
+          "layerName": "Vector"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4297 (Stroke)"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Guitar-microphone",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Guitar-microphone",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Guitar-microphone",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Guitar-microphone",
+          "property": "size.width",
+          "value": 40
+        },
+        {
+          "layerName": "Guitar-microphone",
+          "property": "size.height",
+          "value": 40
+        },
+        {
+          "layerName": "Guitar-microphone",
+          "property": "__layerName__",
+          "value": "Guitar-microphone"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.4000000059604645
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 38
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 49
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#C7B3FF"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.4000000059604645
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "size.width",
+          "value": 39
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "size.height",
+          "value": 49
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector (Stroke)"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.5
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 13
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 15
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.5
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "size.width",
+          "value": 13
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "size.height",
+          "value": 16
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector (Stroke)"
+        },
+        {
+          "layerName": "Vector 4297 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.5
+        },
+        {
+          "layerName": "Vector 4297 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4297 (Stroke)",
+          "property": "size.width",
+          "value": 14
+        },
+        {
+          "layerName": "Vector 4297 (Stroke)",
+          "property": "size.height",
+          "value": 14
+        },
+        {
+          "layerName": "Vector 4297 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4297 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4297 (Stroke)"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4619:364",
+      "name": "Boarding-pass",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:40486abe405943e9f3020d849823dc3452e32997/4033:358",
+          "layerName": "Vector 4238"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4238 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4239 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4240 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4241 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4242 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4243 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4244"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4244 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4245"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4245 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4246 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4247 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4248 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:ae0d43f35783d5a92f655076f3a9fb530c6fc040/4033:380",
+          "layerName": "Vector 4237"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4237 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:b29201c941fbffb99691baeb7d67d5635a220772/4033:370",
+          "layerName": "Vector 4218"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4218 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4219 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4220 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4221 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4222 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4223 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4224"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4224 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4225"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4225 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4234 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4235 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Vector 4236 (Stroke)"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/3744:113",
+          "layerName": "Vector12"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:ae0d43f35783d5a92f655076f3a9fb530c6fc040/3744:59",
+          "layerName": "Vector11"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:b29201c941fbffb99691baeb7d67d5635a220772/3744:56",
+          "layerName": "Vector10"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:ae0d43f35783d5a92f655076f3a9fb530c6fc040/3744:59",
+          "layerName": "Vector09"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:b29201c941fbffb99691baeb7d67d5635a220772/3744:56",
+          "layerName": "Vector08"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:b29201c941fbffb99691baeb7d67d5635a220772/3744:56",
+          "layerName": "Vector07"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:b29201c941fbffb99691baeb7d67d5635a220772/3744:56",
+          "layerName": "Vector06"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:b29201c941fbffb99691baeb7d67d5635a220772/3744:56",
+          "layerName": "Vector05"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:b29201c941fbffb99691baeb7d67d5635a220772/3744:56",
+          "layerName": "Vector04"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/3744:113",
+          "layerName": "Vector03"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:b29201c941fbffb99691baeb7d67d5635a220772/3744:56",
+          "layerName": "Vector02"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/3744:113",
+          "layerName": "Vector01"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Boarding-pass",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Boarding-pass",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Boarding-pass",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Boarding-pass",
+          "property": "size.width",
+          "value": 40
+        },
+        {
+          "layerName": "Boarding-pass",
+          "property": "size.height",
+          "value": 40
+        },
+        {
+          "layerName": "Boarding-pass",
+          "property": "__layerName__",
+          "value": "Boarding-pass"
+        },
+        {
+          "layerName": "Vector 4238",
+          "property": "strokeWeight",
+          "value": 0.6880943179130554
+        },
+        {
+          "layerName": "Vector 4238",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4238",
+          "property": "size.width",
+          "value": 22
+        },
+        {
+          "layerName": "Vector 4238",
+          "property": "size.height",
+          "value": 36
+        },
+        {
+          "layerName": "Vector 4238",
+          "property": "fill[0].color",
+          "value": "#FDDD8A"
+        },
+        {
+          "layerName": "Vector 4238",
+          "property": "__layerName__",
+          "value": "Vector 4238"
+        },
+        {
+          "layerName": "Vector 4238 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.6880943179130554
+        },
+        {
+          "layerName": "Vector 4238 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4238 (Stroke)",
+          "property": "size.width",
+          "value": 23
+        },
+        {
+          "layerName": "Vector 4238 (Stroke)",
+          "property": "size.height",
+          "value": 37
+        },
+        {
+          "layerName": "Vector 4238 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4238 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4238 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4239 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.6880943179130554
+        },
+        {
+          "layerName": "Vector 4239 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4239 (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector 4239 (Stroke)",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4239 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4239 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4239 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4240 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.6880943179130554
+        },
+        {
+          "layerName": "Vector 4240 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4240 (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector 4240 (Stroke)",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4240 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4240 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4240 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4241 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.6880943179130554
+        },
+        {
+          "layerName": "Vector 4241 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4241 (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector 4241 (Stroke)",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4241 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4241 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4241 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4242 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.6880943179130554
+        },
+        {
+          "layerName": "Vector 4242 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4242 (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector 4242 (Stroke)",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4242 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4242 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4242 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4243 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.8601178526878357
+        },
+        {
+          "layerName": "Vector 4243 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4243 (Stroke)",
+          "property": "size.width",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4243 (Stroke)",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector 4243 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4243 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4243 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4244",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector 4244",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4244",
+          "property": "size.width",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4244",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector 4244",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4244",
+          "property": "__layerName__",
+          "value": "Vector 4244"
+        },
+        {
+          "layerName": "Vector 4244 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector 4244 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4244 (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector 4244 (Stroke)",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector 4244 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4244 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4244 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4245",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector 4245",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4245",
+          "property": "size.width",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4245",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector 4245",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4245",
+          "property": "__layerName__",
+          "value": "Vector 4245"
+        },
+        {
+          "layerName": "Vector 4245 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector 4245 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4245 (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector 4245 (Stroke)",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector 4245 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4245 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4245 (Stroke)"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector (Stroke)"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 1
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector (Stroke)"
+        },
+        {
+          "layerName": "Vector 4246 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.8601178526878357
+        },
+        {
+          "layerName": "Vector 4246 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4246 (Stroke)",
+          "property": "size.width",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4246 (Stroke)",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector 4246 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4246 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4246 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4247 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.6020824909210205
+        },
+        {
+          "layerName": "Vector 4247 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4247 (Stroke)",
+          "property": "size.width",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4247 (Stroke)",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector 4247 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4247 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4247 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4248 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.6020824909210205
+        },
+        {
+          "layerName": "Vector 4248 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4248 (Stroke)",
+          "property": "size.width",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4248 (Stroke)",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector 4248 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4248 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4248 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4237",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector 4237",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4237",
+          "property": "size.width",
+          "value": 9
+        },
+        {
+          "layerName": "Vector 4237",
+          "property": "size.height",
+          "value": 10
+        },
+        {
+          "layerName": "Vector 4237",
+          "property": "fill[0].color",
+          "value": "#C7B3FF"
+        },
+        {
+          "layerName": "Vector 4237",
+          "property": "__layerName__",
+          "value": "Vector 4237"
+        },
+        {
+          "layerName": "Vector 4237 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector 4237 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4237 (Stroke)",
+          "property": "size.width",
+          "value": 9
+        },
+        {
+          "layerName": "Vector 4237 (Stroke)",
+          "property": "size.height",
+          "value": 11
+        },
+        {
+          "layerName": "Vector 4237 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4237 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4237 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4218",
+          "property": "strokeWeight",
+          "value": 0.6880943179130554
+        },
+        {
+          "layerName": "Vector 4218",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4218",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Vector 4218",
+          "property": "size.height",
+          "value": 37
+        },
+        {
+          "layerName": "Vector 4218",
+          "property": "fill[0].color",
+          "value": "#F6F3FF"
+        },
+        {
+          "layerName": "Vector 4218",
+          "property": "__layerName__",
+          "value": "Vector 4218"
+        },
+        {
+          "layerName": "Vector 4218 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.6880943179130554
+        },
+        {
+          "layerName": "Vector 4218 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4218 (Stroke)",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Vector 4218 (Stroke)",
+          "property": "size.height",
+          "value": 37
+        },
+        {
+          "layerName": "Vector 4218 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4218 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4218 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4219 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.6880943179130554
+        },
+        {
+          "layerName": "Vector 4219 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4219 (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector 4219 (Stroke)",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4219 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4219 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4219 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4220 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.6880943179130554
+        },
+        {
+          "layerName": "Vector 4220 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4220 (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector 4220 (Stroke)",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4220 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4220 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4220 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4221 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.6880943179130554
+        },
+        {
+          "layerName": "Vector 4221 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4221 (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector 4221 (Stroke)",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4221 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4221 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4221 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4222 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.6880943179130554
+        },
+        {
+          "layerName": "Vector 4222 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4222 (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector 4222 (Stroke)",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4222 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4222 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4222 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4223 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.8601178526878357
+        },
+        {
+          "layerName": "Vector 4223 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4223 (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector 4223 (Stroke)",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector 4223 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4223 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4223 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4224",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector 4224",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4224",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector 4224",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector 4224",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4224",
+          "property": "__layerName__",
+          "value": "Vector 4224"
+        },
+        {
+          "layerName": "Vector 4224 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector 4224 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4224 (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector 4224 (Stroke)",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector 4224 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4224 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4224 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4225",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector 4225",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4225",
+          "property": "size.width",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4225",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector 4225",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4225",
+          "property": "__layerName__",
+          "value": "Vector 4225"
+        },
+        {
+          "layerName": "Vector 4225 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector 4225 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4225 (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector 4225 (Stroke)",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector 4225 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4225 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4225 (Stroke)"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector (Stroke)"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.43005892634391785
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector (Stroke)"
+        },
+        {
+          "layerName": "Vector 4234 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.8601178526878357
+        },
+        {
+          "layerName": "Vector 4234 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4234 (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector 4234 (Stroke)",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector 4234 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4234 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4234 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4235 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.6020824909210205
+        },
+        {
+          "layerName": "Vector 4235 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4235 (Stroke)",
+          "property": "size.width",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4235 (Stroke)",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector 4235 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4235 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4235 (Stroke)"
+        },
+        {
+          "layerName": "Vector 4236 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.6020824909210205
+        },
+        {
+          "layerName": "Vector 4236 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector 4236 (Stroke)",
+          "property": "size.width",
+          "value": 1
+        },
+        {
+          "layerName": "Vector 4236 (Stroke)",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Vector 4236 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Vector 4236 (Stroke)",
+          "property": "__layerName__",
+          "value": "Vector 4236 (Stroke)"
+        },
+        {
+          "layerName": "Vector12",
+          "property": "strokeWeight",
+          "value": 0.9788641333580017
+        },
+        {
+          "layerName": "Vector12",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector12",
+          "property": "size.width",
+          "value": 14
+        },
+        {
+          "layerName": "Vector12",
+          "property": "size.height",
+          "value": 9
+        },
+        {
+          "layerName": "Vector12",
+          "property": "fill[0].color",
+          "value": "#052C50"
+        },
+        {
+          "layerName": "Vector12",
+          "property": "__layerName__",
+          "value": "Vector12"
+        },
+        {
+          "layerName": "Vector11",
+          "property": "strokeWeight",
+          "value": 0.9788641333580017
+        },
+        {
+          "layerName": "Vector11",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector11",
+          "property": "size.width",
+          "value": 12
+        },
+        {
+          "layerName": "Vector11",
+          "property": "size.height",
+          "value": 8
+        },
+        {
+          "layerName": "Vector11",
+          "property": "fill[0].color",
+          "value": "#C7B3FF"
+        },
+        {
+          "layerName": "Vector11",
+          "property": "__layerName__",
+          "value": "Vector11"
+        },
+        {
+          "layerName": "Vector10",
+          "property": "strokeWeight",
+          "value": 0.9788641333580017
+        },
+        {
+          "layerName": "Vector10",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector10",
+          "property": "size.width",
+          "value": 3
+        },
+        {
+          "layerName": "Vector10",
+          "property": "size.height",
+          "value": 5
+        },
+        {
+          "layerName": "Vector10",
+          "property": "fill[0].color",
+          "value": "#F6F3FF"
+        },
+        {
+          "layerName": "Vector10",
+          "property": "__layerName__",
+          "value": "Vector10"
+        },
+        {
+          "layerName": "Vector09",
+          "property": "strokeWeight",
+          "value": 0.9788641333580017
+        },
+        {
+          "layerName": "Vector09",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector09",
+          "property": "size.width",
+          "value": 5
+        },
+        {
+          "layerName": "Vector09",
+          "property": "size.height",
+          "value": 3
+        },
+        {
+          "layerName": "Vector09",
+          "property": "fill[0].color",
+          "value": "#C7B3FF"
+        },
+        {
+          "layerName": "Vector09",
+          "property": "__layerName__",
+          "value": "Vector09"
+        },
+        {
+          "layerName": "Vector08",
+          "property": "strokeWeight",
+          "value": 0.9788641333580017
+        },
+        {
+          "layerName": "Vector08",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector08",
+          "property": "size.width",
+          "value": 3
+        },
+        {
+          "layerName": "Vector08",
+          "property": "size.height",
+          "value": 3
+        },
+        {
+          "layerName": "Vector08",
+          "property": "fill[0].color",
+          "value": "#F6F3FF"
+        },
+        {
+          "layerName": "Vector08",
+          "property": "__layerName__",
+          "value": "Vector08"
+        },
+        {
+          "layerName": "Vector07",
+          "property": "strokeWeight",
+          "value": 0.9788641333580017
+        },
+        {
+          "layerName": "Vector07",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector07",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector07",
+          "property": "size.height",
+          "value": 2
+        },
+        {
+          "layerName": "Vector07",
+          "property": "fill[0].color",
+          "value": "#F6F3FF"
+        },
+        {
+          "layerName": "Vector07",
+          "property": "__layerName__",
+          "value": "Vector07"
+        },
+        {
+          "layerName": "Vector06",
+          "property": "strokeWeight",
+          "value": 0.9788641333580017
+        },
+        {
+          "layerName": "Vector06",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector06",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector06",
+          "property": "size.height",
+          "value": 2
+        },
+        {
+          "layerName": "Vector06",
+          "property": "fill[0].color",
+          "value": "#F6F3FF"
+        },
+        {
+          "layerName": "Vector06",
+          "property": "__layerName__",
+          "value": "Vector06"
+        },
+        {
+          "layerName": "Vector05",
+          "property": "strokeWeight",
+          "value": 0.9788641333580017
+        },
+        {
+          "layerName": "Vector05",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector05",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector05",
+          "property": "size.height",
+          "value": 2
+        },
+        {
+          "layerName": "Vector05",
+          "property": "fill[0].color",
+          "value": "#F6F3FF"
+        },
+        {
+          "layerName": "Vector05",
+          "property": "__layerName__",
+          "value": "Vector05"
+        },
+        {
+          "layerName": "Vector04",
+          "property": "strokeWeight",
+          "value": 0.9788641333580017
+        },
+        {
+          "layerName": "Vector04",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector04",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector04",
+          "property": "size.height",
+          "value": 2
+        },
+        {
+          "layerName": "Vector04",
+          "property": "fill[0].color",
+          "value": "#F6F3FF"
+        },
+        {
+          "layerName": "Vector04",
+          "property": "__layerName__",
+          "value": "Vector04"
+        },
+        {
+          "layerName": "Vector03",
+          "property": "strokeWeight",
+          "value": 0.9788641333580017
+        },
+        {
+          "layerName": "Vector03",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector03",
+          "property": "size.width",
+          "value": 1
+        },
+        {
+          "layerName": "Vector03",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "Vector03",
+          "property": "fill[0].color",
+          "value": "#052C50"
+        },
+        {
+          "layerName": "Vector03",
+          "property": "__layerName__",
+          "value": "Vector03"
+        },
+        {
+          "layerName": "Vector02",
+          "property": "strokeWeight",
+          "value": 0.9788641333580017
+        },
+        {
+          "layerName": "Vector02",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector02",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Vector02",
+          "property": "size.height",
+          "value": 2
+        },
+        {
+          "layerName": "Vector02",
+          "property": "fill[0].color",
+          "value": "#F6F3FF"
+        },
+        {
+          "layerName": "Vector02",
+          "property": "__layerName__",
+          "value": "Vector02"
+        },
+        {
+          "layerName": "Vector01",
+          "property": "strokeWeight",
+          "value": 0.9788641333580017
+        },
+        {
+          "layerName": "Vector01",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector01",
+          "property": "size.width",
+          "value": 1
+        },
+        {
+          "layerName": "Vector01",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "Vector01",
+          "property": "fill[0].color",
+          "value": "#052C50"
+        },
+        {
+          "layerName": "Vector01",
+          "property": "__layerName__",
+          "value": "Vector01"
+        }
+      ],
+      "instances": []
+    },
+    {
       "id": "1417:62",
       "name": "Badge-level-picto",
       "type": "COMPONENT_SET",
@@ -83749,24 +85924,24 @@
           "layerName": "Container"
         },
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Container"
+          "layerName": "Container (Stroke)"
         },
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Text-3"
+          "layerName": "Text-3 (Stroke)"
         },
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Text-2"
+          "layerName": "Text-2 (Stroke)"
         },
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Text-1"
+          "layerName": "Text-1 (Stroke)"
         },
         {
           "property": "fills",
@@ -83774,9 +85949,9 @@
           "layerName": "Bell-3"
         },
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Bell-3"
+          "layerName": "Bell-3 (Stroke)"
         },
         {
           "property": "fills",
@@ -83784,9 +85959,9 @@
           "layerName": "Bell-2"
         },
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Bell-2"
+          "layerName": "Bell-2 (Stroke)"
         },
         {
           "property": "fills",
@@ -83794,9 +85969,9 @@
           "layerName": "Bell-1"
         },
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Bell-1"
+          "layerName": "Bell-1 (Stroke)"
         },
         {
           "property": "fills",
@@ -83804,14 +85979,14 @@
           "layerName": "Vector 1591"
         },
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:3d161e56000c4ff4a884deaf3addcc2683378322/3958:132",
-          "layerName": "Vector 1592"
+          "layerName": "Vector 1592 (Stroke)"
         },
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:3d161e56000c4ff4a884deaf3addcc2683378322/3958:132",
-          "layerName": "Vector 1593"
+          "layerName": "Vector 1593 (Stroke)"
         }
       ],
       "properties": [
@@ -83848,7 +86023,7 @@
         {
           "layerName": "Miscelanea",
           "property": "strokeWeight",
-          "value": 0.9999998807907104
+          "value": 0.4000000059604645
         },
         {
           "layerName": "Miscelanea",
@@ -83893,7 +86068,7 @@
         {
           "layerName": "Notification",
           "property": "size.width",
-          "value": 50
+          "value": 51
         },
         {
           "layerName": "Notification",
@@ -83908,7 +86083,7 @@
         {
           "layerName": "Container",
           "property": "strokeWeight",
-          "value": 0.20000000298023224
+          "value": 0.4000000059604645
         },
         {
           "layerName": "Container",
@@ -83932,108 +86107,133 @@
         },
         {
           "layerName": "Container",
-          "property": "stroke[0].color",
-          "value": "#082749"
-        },
-        {
-          "layerName": "Container",
           "property": "__layerName__",
           "value": "Container"
         },
         {
-          "layerName": "Text-3",
+          "layerName": "Container (Stroke)",
           "property": "strokeWeight",
-          "value": 0.2497544288635254
+          "value": 0.4000000059604645
         },
         {
-          "layerName": "Text-3",
+          "layerName": "Container (Stroke)",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Text-3",
+          "layerName": "Container (Stroke)",
+          "property": "size.width",
+          "value": 51
+        },
+        {
+          "layerName": "Container (Stroke)",
+          "property": "size.height",
+          "value": 23
+        },
+        {
+          "layerName": "Container (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Container (Stroke)",
+          "property": "__layerName__",
+          "value": "Container (Stroke)"
+        },
+        {
+          "layerName": "Text-3 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.4000000059604645
+        },
+        {
+          "layerName": "Text-3 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Text-3 (Stroke)",
           "property": "size.width",
           "value": 13
         },
         {
-          "layerName": "Text-3",
+          "layerName": "Text-3 (Stroke)",
           "property": "size.height",
           "value": 3
         },
         {
-          "layerName": "Text-3",
-          "property": "stroke[0].color",
+          "layerName": "Text-3 (Stroke)",
+          "property": "fill[0].color",
           "value": "#082749"
         },
         {
-          "layerName": "Text-3",
+          "layerName": "Text-3 (Stroke)",
           "property": "__layerName__",
-          "value": "Text-3"
+          "value": "Text-3 (Stroke)"
         },
         {
-          "layerName": "Text-2",
+          "layerName": "Text-2 (Stroke)",
           "property": "strokeWeight",
-          "value": 0.2497544288635254
+          "value": 0.4000000059604645
         },
         {
-          "layerName": "Text-2",
+          "layerName": "Text-2 (Stroke)",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Text-2",
+          "layerName": "Text-2 (Stroke)",
           "property": "size.width",
           "value": 9
         },
         {
-          "layerName": "Text-2",
+          "layerName": "Text-2 (Stroke)",
           "property": "size.height",
-          "value": 0
+          "value": 1
         },
         {
-          "layerName": "Text-2",
-          "property": "stroke[0].color",
+          "layerName": "Text-2 (Stroke)",
+          "property": "fill[0].color",
           "value": "#082749"
         },
         {
-          "layerName": "Text-2",
+          "layerName": "Text-2 (Stroke)",
           "property": "__layerName__",
-          "value": "Text-2"
+          "value": "Text-2 (Stroke)"
         },
         {
-          "layerName": "Text-1",
+          "layerName": "Text-1 (Stroke)",
           "property": "strokeWeight",
-          "value": 0.2497544288635254
+          "value": 0.4000000059604645
         },
         {
-          "layerName": "Text-1",
+          "layerName": "Text-1 (Stroke)",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Text-1",
+          "layerName": "Text-1 (Stroke)",
           "property": "size.width",
           "value": 13
         },
         {
-          "layerName": "Text-1",
+          "layerName": "Text-1 (Stroke)",
           "property": "size.height",
           "value": 2
         },
         {
-          "layerName": "Text-1",
-          "property": "stroke[0].color",
+          "layerName": "Text-1 (Stroke)",
+          "property": "fill[0].color",
           "value": "#082749"
         },
         {
-          "layerName": "Text-1",
+          "layerName": "Text-1 (Stroke)",
           "property": "__layerName__",
-          "value": "Text-1"
+          "value": "Text-1 (Stroke)"
         },
         {
           "layerName": "Bell-3",
           "property": "strokeWeight",
-          "value": 0.2497544288635254
+          "value": 0.4000000059604645
         },
         {
           "layerName": "Bell-3",
@@ -84057,18 +86257,43 @@
         },
         {
           "layerName": "Bell-3",
-          "property": "stroke[0].color",
-          "value": "#082749"
-        },
-        {
-          "layerName": "Bell-3",
           "property": "__layerName__",
           "value": "Bell-3"
         },
         {
+          "layerName": "Bell-3 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.4000000059604645
+        },
+        {
+          "layerName": "Bell-3 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Bell-3 (Stroke)",
+          "property": "size.width",
+          "value": 8
+        },
+        {
+          "layerName": "Bell-3 (Stroke)",
+          "property": "size.height",
+          "value": 7
+        },
+        {
+          "layerName": "Bell-3 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Bell-3 (Stroke)",
+          "property": "__layerName__",
+          "value": "Bell-3 (Stroke)"
+        },
+        {
           "layerName": "Bell-2",
           "property": "strokeWeight",
-          "value": 0.2497544288635254
+          "value": 0.5
         },
         {
           "layerName": "Bell-2",
@@ -84092,18 +86317,43 @@
         },
         {
           "layerName": "Bell-2",
-          "property": "stroke[0].color",
-          "value": "#082749"
-        },
-        {
-          "layerName": "Bell-2",
           "property": "__layerName__",
           "value": "Bell-2"
         },
         {
+          "layerName": "Bell-2 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.5
+        },
+        {
+          "layerName": "Bell-2 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Bell-2 (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Bell-2 (Stroke)",
+          "property": "size.height",
+          "value": 2
+        },
+        {
+          "layerName": "Bell-2 (Stroke)",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Bell-2 (Stroke)",
+          "property": "__layerName__",
+          "value": "Bell-2 (Stroke)"
+        },
+        {
           "layerName": "Bell-1",
           "property": "strokeWeight",
-          "value": 0.2497544288635254
+          "value": 0.4000000059604645
         },
         {
           "layerName": "Bell-1",
@@ -84127,13 +86377,38 @@
         },
         {
           "layerName": "Bell-1",
-          "property": "stroke[0].color",
+          "property": "__layerName__",
+          "value": "Bell-1"
+        },
+        {
+          "layerName": "Bell-1 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.4000000059604645
+        },
+        {
+          "layerName": "Bell-1 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Bell-1 (Stroke)",
+          "property": "size.width",
+          "value": 2
+        },
+        {
+          "layerName": "Bell-1 (Stroke)",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "Bell-1 (Stroke)",
+          "property": "fill[0].color",
           "value": "#082749"
         },
         {
-          "layerName": "Bell-1",
+          "layerName": "Bell-1 (Stroke)",
           "property": "__layerName__",
-          "value": "Bell-1"
+          "value": "Bell-1 (Stroke)"
         },
         {
           "layerName": "!",
@@ -84196,64 +86471,64 @@
           "value": "Vector 1591"
         },
         {
-          "layerName": "Vector 1592",
+          "layerName": "Vector 1592 (Stroke)",
           "property": "strokeWeight",
           "value": 0.9652591943740845
         },
         {
-          "layerName": "Vector 1592",
+          "layerName": "Vector 1592 (Stroke)",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Vector 1592",
+          "layerName": "Vector 1592 (Stroke)",
           "property": "size.width",
-          "value": 0
+          "value": 1
         },
         {
-          "layerName": "Vector 1592",
+          "layerName": "Vector 1592 (Stroke)",
           "property": "size.height",
-          "value": 5
+          "value": 6
         },
         {
-          "layerName": "Vector 1592",
-          "property": "stroke[0].color",
+          "layerName": "Vector 1592 (Stroke)",
+          "property": "fill[0].color",
           "value": "#FCFCFC"
         },
         {
-          "layerName": "Vector 1592",
+          "layerName": "Vector 1592 (Stroke)",
           "property": "__layerName__",
-          "value": "Vector 1592"
+          "value": "Vector 1592 (Stroke)"
         },
         {
-          "layerName": "Vector 1593",
+          "layerName": "Vector 1593 (Stroke)",
           "property": "strokeWeight",
           "value": 0.9652591943740845
         },
         {
-          "layerName": "Vector 1593",
+          "layerName": "Vector 1593 (Stroke)",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Vector 1593",
+          "layerName": "Vector 1593 (Stroke)",
           "property": "size.width",
-          "value": 0
+          "value": 1
         },
         {
-          "layerName": "Vector 1593",
+          "layerName": "Vector 1593 (Stroke)",
           "property": "size.height",
-          "value": 0
+          "value": 1
         },
         {
-          "layerName": "Vector 1593",
-          "property": "stroke[0].color",
+          "layerName": "Vector 1593 (Stroke)",
+          "property": "fill[0].color",
           "value": "#FCFCFC"
         },
         {
-          "layerName": "Vector 1593",
+          "layerName": "Vector 1593 (Stroke)",
           "property": "__layerName__",
-          "value": "Vector 1593"
+          "value": "Vector 1593 (Stroke)"
         }
       ],
       "instances": []
@@ -95754,9 +98029,9 @@
           "layerName": "Jacket-5"
         },
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Jacket-5"
+          "layerName": "Jacket-5 (Stroke)"
         },
         {
           "property": "fills",
@@ -95814,9 +98089,9 @@
           "layerName": "jacket-2"
         },
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "jacket-2"
+          "layerName": "jacket-2 (Stroke)"
         },
         {
           "property": "fills",
@@ -95849,14 +98124,14 @@
           "layerName": "Vector 2022 (Stroke)"
         },
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:236065d68e5274abf4652a44ade1243e40c873ef/4033:360",
-          "layerName": "Vector 1072"
+          "layerName": "Vector 1072 (Stroke)"
         },
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:236065d68e5274abf4652a44ade1243e40c873ef/4033:360",
-          "layerName": "Vector 1073"
+          "layerName": "Vector 1073 (Stroke)"
         },
         {
           "property": "fills",
@@ -95864,9 +98139,9 @@
           "layerName": "Left-hand"
         },
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Left-hand"
+          "layerName": "Left-hand (Stroke)"
         },
         {
           "property": "fills",
@@ -95874,9 +98149,9 @@
           "layerName": "Right-hand"
         },
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Right-hand"
+          "layerName": "Right-hand (Stroke)"
         }
       ],
       "properties": [
@@ -96147,13 +98422,38 @@
         },
         {
           "layerName": "Jacket-5",
-          "property": "stroke[0].color",
+          "property": "__layerName__",
+          "value": "Jacket-5"
+        },
+        {
+          "layerName": "Jacket-5 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.5
+        },
+        {
+          "layerName": "Jacket-5 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Jacket-5 (Stroke)",
+          "property": "size.width",
+          "value": 15
+        },
+        {
+          "layerName": "Jacket-5 (Stroke)",
+          "property": "size.height",
+          "value": 10
+        },
+        {
+          "layerName": "Jacket-5 (Stroke)",
+          "property": "fill[0].color",
           "value": "#082749"
         },
         {
-          "layerName": "Jacket-5",
+          "layerName": "Jacket-5 (Stroke)",
           "property": "__layerName__",
-          "value": "Jacket-5"
+          "value": "Jacket-5 (Stroke)"
         },
         {
           "layerName": "eyebrow ",
@@ -96482,13 +98782,38 @@
         },
         {
           "layerName": "jacket-2",
-          "property": "stroke[0].color",
+          "property": "__layerName__",
+          "value": "jacket-2"
+        },
+        {
+          "layerName": "jacket-2 (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.5
+        },
+        {
+          "layerName": "jacket-2 (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "jacket-2 (Stroke)",
+          "property": "size.width",
+          "value": 19
+        },
+        {
+          "layerName": "jacket-2 (Stroke)",
+          "property": "size.height",
+          "value": 18
+        },
+        {
+          "layerName": "jacket-2 (Stroke)",
+          "property": "fill[0].color",
           "value": "#082749"
         },
         {
-          "layerName": "jacket-2",
+          "layerName": "jacket-2 (Stroke)",
           "property": "__layerName__",
-          "value": "jacket-2"
+          "value": "jacket-2 (Stroke)"
         },
         {
           "layerName": "Jacket-1",
@@ -96731,64 +99056,64 @@
           "value": "Vector 2022 (Stroke)"
         },
         {
-          "layerName": "Vector 1072",
+          "layerName": "Vector 1072 (Stroke)",
           "property": "strokeWeight",
           "value": 0.48275861144065857
         },
         {
-          "layerName": "Vector 1072",
+          "layerName": "Vector 1072 (Stroke)",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Vector 1072",
+          "layerName": "Vector 1072 (Stroke)",
           "property": "size.width",
-          "value": 3
+          "value": 4
         },
         {
-          "layerName": "Vector 1072",
+          "layerName": "Vector 1072 (Stroke)",
           "property": "size.height",
           "value": 4
         },
         {
-          "layerName": "Vector 1072",
-          "property": "stroke[0].color",
+          "layerName": "Vector 1072 (Stroke)",
+          "property": "fill[0].color",
           "value": "#FFF8E6"
         },
         {
-          "layerName": "Vector 1072",
+          "layerName": "Vector 1072 (Stroke)",
           "property": "__layerName__",
-          "value": "Vector 1072"
+          "value": "Vector 1072 (Stroke)"
         },
         {
-          "layerName": "Vector 1073",
+          "layerName": "Vector 1073 (Stroke)",
           "property": "strokeWeight",
           "value": 0.48275861144065857
         },
         {
-          "layerName": "Vector 1073",
+          "layerName": "Vector 1073 (Stroke)",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Vector 1073",
+          "layerName": "Vector 1073 (Stroke)",
           "property": "size.width",
           "value": 0
         },
         {
-          "layerName": "Vector 1073",
+          "layerName": "Vector 1073 (Stroke)",
           "property": "size.height",
-          "value": 0
+          "value": 1
         },
         {
-          "layerName": "Vector 1073",
-          "property": "stroke[0].color",
+          "layerName": "Vector 1073 (Stroke)",
+          "property": "fill[0].color",
           "value": "#FFF8E6"
         },
         {
-          "layerName": "Vector 1073",
+          "layerName": "Vector 1073 (Stroke)",
           "property": "__layerName__",
-          "value": "Vector 1073"
+          "value": "Vector 1073 (Stroke)"
         },
         {
           "layerName": "Left-hand",
@@ -96817,13 +99142,38 @@
         },
         {
           "layerName": "Left-hand",
-          "property": "stroke[0].color",
+          "property": "__layerName__",
+          "value": "Left-hand"
+        },
+        {
+          "layerName": "Left-hand (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.5
+        },
+        {
+          "layerName": "Left-hand (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Left-hand (Stroke)",
+          "property": "size.width",
+          "value": 5
+        },
+        {
+          "layerName": "Left-hand (Stroke)",
+          "property": "size.height",
+          "value": 7
+        },
+        {
+          "layerName": "Left-hand (Stroke)",
+          "property": "fill[0].color",
           "value": "#082749"
         },
         {
-          "layerName": "Left-hand",
+          "layerName": "Left-hand (Stroke)",
           "property": "__layerName__",
-          "value": "Left-hand"
+          "value": "Left-hand (Stroke)"
         },
         {
           "layerName": "Right-hand",
@@ -96852,13 +99202,38 @@
         },
         {
           "layerName": "Right-hand",
-          "property": "stroke[0].color",
+          "property": "__layerName__",
+          "value": "Right-hand"
+        },
+        {
+          "layerName": "Right-hand (Stroke)",
+          "property": "strokeWeight",
+          "value": 0.5
+        },
+        {
+          "layerName": "Right-hand (Stroke)",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Right-hand (Stroke)",
+          "property": "size.width",
+          "value": 13
+        },
+        {
+          "layerName": "Right-hand (Stroke)",
+          "property": "size.height",
+          "value": 10
+        },
+        {
+          "layerName": "Right-hand (Stroke)",
+          "property": "fill[0].color",
           "value": "#082749"
         },
         {
-          "layerName": "Right-hand",
+          "layerName": "Right-hand (Stroke)",
           "property": "__layerName__",
-          "value": "Right-hand"
+          "value": "Right-hand (Stroke)"
         }
       ],
       "instances": []
@@ -121632,11 +124007,6 @@
         },
         {
           "layerName": "Vector 1427",
-          "property": "stroke[0].color",
-          "value": "#004C8A"
-        },
-        {
-          "layerName": "Vector 1427",
           "property": "__layerName__",
           "value": "Vector 1427"
         },
@@ -126234,11 +128604,6 @@
           "layerName": "Ubication",
           "property": "fill[0].color",
           "value": "#EEF2FF"
-        },
-        {
-          "layerName": "Ubication",
-          "property": "stroke[0].color",
-          "value": "#004C8A"
         },
         {
           "layerName": "Ubication",
@@ -207751,8 +210116,8 @@
     }
   ],
   "stats": {
-    "totalComponents": 634,
-    "totalBindings": 4996,
-    "totalProperties": 35314
+    "totalComponents": 637,
+    "totalBindings": 5054,
+    "totalProperties": 35723
   }
 }

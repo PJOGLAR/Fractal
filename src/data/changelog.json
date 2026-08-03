@@ -1,5 +1,86 @@
 [
   {
+    "id": "msdcpzdo",
+    "timestamp": "2026-08-03T14:55:43.452Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "3 nuevos · 2 iterados",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Boarding-pass",
+        "nodeId": "",
+        "details": "Boarding-pass"
+      },
+      {
+        "type": "component_added",
+        "component": "Guitar-microphone",
+        "nodeId": "",
+        "details": "Guitar-microphone"
+      },
+      {
+        "type": "component_added",
+        "component": "Map-pin",
+        "nodeId": "",
+        "details": "Map-pin"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Account-not-found",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Notification-warning",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "stats": {
+      "componentsAdded": 3,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 15,
+      "bindingsRemoved": 15,
+      "bindingsChanged": 0,
+      "propertiesChanged": 6
+    }
+  },
+  {
+    "id": "msdcprah",
+    "timestamp": "2026-08-03T14:55:32.969Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "Sin cambios de componentes",
+    "changes": [],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 20
+    }
+  },
+  {
     "id": "msaf8hvv",
     "timestamp": "2026-08-01T13:42:47.947Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
