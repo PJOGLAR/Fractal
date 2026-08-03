@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-06-21T14:45:26.382Z",
+  "exportedAt": "2026-08-03T17:37:14.951Z",
   "fileName": "Foundations",
   "collections": [
     {
@@ -70,7 +70,7 @@
       ],
       "defaultModeId": "185:0",
       "hiddenFromPublishing": false,
-      "variableCount": 252
+      "variableCount": 253
     },
     {
       "id": "VariableCollectionId:192:6655",
@@ -11200,7 +11200,7 @@
       "valuesByMode": {
         "58:0": {
           "type": "color",
-          "value": "#F5F5F533"
+          "value": "#F5F5F580"
         }
       },
       "modeNames": {
@@ -12202,10 +12202,10 @@
       "valuesByMode": {
         "185:0": {
           "type": "alias",
-          "value": "VariableID:2365:571",
+          "value": "VariableID:2365:572",
           "alias": {
-            "id": "VariableID:2365:571",
-            "name": "opacity/gray/200"
+            "id": "VariableID:2365:572",
+            "name": "opacity/gray/50"
           }
         }
       },
@@ -13152,10 +13152,10 @@
       "valuesByMode": {
         "185:0": {
           "type": "alias",
-          "value": "VariableID:3859:22",
+          "value": "VariableID:3859:23",
           "alias": {
-            "id": "VariableID:3859:22",
-            "name": "expressive/sapphire/900"
+            "id": "VariableID:3859:23",
+            "name": "expressive/sapphire/950"
           }
         }
       },
@@ -18359,7 +18359,7 @@
       "valuesByMode": {
         "58:0": {
           "type": "color",
-          "value": "#1A1A1A"
+          "value": "#0B0B0B"
         }
       },
       "modeNames": {
@@ -19462,7 +19462,7 @@
       "valuesByMode": {
         "58:0": {
           "type": "color",
-          "value": "#052C50"
+          "value": "#0C3E6E"
         }
       },
       "modeNames": {
@@ -19486,7 +19486,7 @@
       "valuesByMode": {
         "58:0": {
           "type": "color",
-          "value": "#083344"
+          "value": "#082749"
         }
       },
       "modeNames": {
@@ -20434,7 +20434,7 @@
     {
       "id": "VariableID:4036:230",
       "key": "3cd987ea185389b818d8d0646de67ff9385a70ba",
-      "name": "static/opacity/brand/strong",
+      "name": "static/opacity/neutral/subtle",
       "collection": "Color",
       "collectionId": "VariableCollectionId:185:5366",
       "resolvedType": "COLOR",
@@ -20446,10 +20446,36 @@
       "valuesByMode": {
         "185:0": {
           "type": "alias",
-          "value": "VariableID:2365:602",
+          "value": "VariableID:2365:566",
           "alias": {
-            "id": "VariableID:2365:602",
-            "name": "opacity/purple/950"
+            "id": "VariableID:2365:566",
+            "name": "opacity/gray/400"
+          }
+        }
+      },
+      "modeNames": {
+        "185:0": "Value"
+      }
+    },
+    {
+      "id": "VariableID:4154:5343",
+      "key": "22e95a5c2b7a0843fd572ea80bdcaab5a1629d5f",
+      "name": "static/opacity/brand/medium",
+      "collection": "Color",
+      "collectionId": "VariableCollectionId:185:5366",
+      "resolvedType": "COLOR",
+      "scopes": [
+        "EFFECT_COLOR"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "185:0": {
+          "type": "alias",
+          "value": "VariableID:2365:605",
+          "alias": {
+            "id": "VariableID:2365:605",
+            "name": "opacity/purple/600"
           }
         }
       },
@@ -20460,11 +20486,11 @@
   ],
   "stats": {
     "totalCollections": 10,
-    "totalVariables": 817,
+    "totalVariables": 818,
     "byType": {
       "FLOAT": 298,
       "STRING": 34,
-      "COLOR": 485
+      "COLOR": 486
     },
     "byCollection": {
       "Border": 15,
@@ -20472,7 +20498,7 @@
       "Global typography": 38,
       "Global dimension": 53,
       "Typography": 160,
-      "Color": 252,
+      "Color": 253,
       "Screen size": 2,
       "Global color": 233,
       "Spacing": 48,
