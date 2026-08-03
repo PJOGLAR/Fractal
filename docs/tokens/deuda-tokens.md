@@ -12,41 +12,77 @@
 |---|---|---|---|
 | Tokens aplicados que no existen | 0 | 0 | ✅ — |
 | Valores hardcodeados | 0 | 0 | ✅ — |
-| Variables locales (no vienen de Foundations) | 20 | 370 | 🟡 Media |
+| Variables de una librería paralela | 20 | 370 | 🟡 Media |
 | Nombre viejo en cache de librería | 18 | 57 | 🟢 Cosmético |
 | Variables sin descripción | 686 | — | 🟡 Media |
 
-**Los 322 tokens aplicados resuelven a una variable existente.** No hay bindings roto ni colores escritos a mano.
+**Los 322 tokens aplicados resuelven a una variable existente y a un valor correcto.** No hay bindings rotos ni colores escritos a mano. Nada de lo listado acá produce un defecto visual hoy; es deuda de gobernanza.
 
 ---
 
-## 1. Variables locales (deuda real) — 20 variables, 370 usos
+## 1. Librería paralela (deuda real) — 20 variables, 370 usos
 
-Variables que viven en colecciones **locales del archivo de librería** en lugar de venir de `Foundations`. El problema no es visual: es que hay dos fuentes de verdad para el mismo valor, y un cambio en Foundations no las alcanza.
+### El origen: colecciones que no están en Foundations
+
+Foundations publica 10 colecciones: `Global color`, `Global typography`, `Border`, `Asset`, `Color`, `Typography`, `Global dimension`, `Screen size`, `Spacing`, `Density mode`.
+
+Los archivos de librería consumen además estas 6, que **no existen en Foundations**:
+
+`Dimension` · `Semantic dimension` · `Semantic color` · `Primitives` · `Expressive` · `🔢 Units`
+
+Y como capa primitiva, `_Global dimension` (con guión bajo), distinta de la `Global dimension` de Foundations.
+
+Es una librería anterior que sigue publicada y en uso. De ahí salen los 370 usos.
+
+### Por qué importa si el valor es el mismo
+
+El caso de `border/with/thin`:
+
+```
+Foundations   border/width/thin  [Border]              → width/100         [Global dimension]   = 1px
+Paralela      border/with/thin   [Semantic dimension]  → border/width/100  [_Global dimension]  = 1px
+```
+
+Mismo resultado visual, **dos variables independientes**. Hoy coinciden; nada garantiza que sigan coincidiendo. Un cambio de grosor de borde en Foundations no alcanza a los 120 usos de la variable paralela, y ahí aparece inconsistencia entre componentes que hoy se ven iguales.
+
+El segundo punto es que estas variables son **la minoría de un patrón ya resuelto**:
+
+| Concepto | Variable paralela | Usos | Equivalente en Foundations | Usos |
+|---|---|---|---|---|
+| borde 1px | `border/with/thin` | 120 | `border/width/thin` | 792 |
+| radio 0 | `border/radius/none` | 112 | `border/corner/corner-0` | 798 |
+| spacing 4px | `Spacing/SM/space-4` | 28 | `gap/gap-100` | 589 |
+| spacing 0 | `space/0x` | 27 | `padding/padding-0` | 1603 |
+| radio full | `border/radius/full` | 16 | `border/corner/corner-2000` | 2306 |
+| radio 4px | `border/radius/xxs` | 8 | `border/corner/corner-100` | 245 |
+
+No son una decisión de diseño distinta: son lo que quedó sin migrar. El 87% de los bordes de 1px ya usa el token de Foundations.
 
 ### Dimensión y spacing — 344 usos
 
-| Variable | Usos | Colección local | Equivalente en Foundations |
+| Variable | Usos | Colección | Destino |
 |---|---|---|---|
 | `border/with/thin` | 120 | Semantic dimension | `border/width/thin` — nótese el typo **with** |
 | `border/radius/none` | 112 | Semantic dimension | `border/corner/corner-0` |
-| `Spacing/SM/space-4` | 28 | Primitives | `spacing/100` |
-| `space/0x` | 27 | Semantic dimension | `spacing/0` |
+| `Spacing/SM/space-4` | 28 | Primitives | `gap/gap-100` / `padding/padding-100` según propiedad |
+| `space/0x` | 27 | Semantic dimension | `padding/padding-0` / `gap/gap-0` |
 | `border/radius/full` | 16 | Dimension | `border/corner/corner-2000` |
-| `Spacing/SM/space-2` | 12 | Primitives | `spacing/50` |
+| `Spacing/SM/space-2` | 12 | Primitives | revisar — no hay `gap/gap-50` |
 | `border/radius/xxs` | 8 | Dimension | `border/corner/corner-100` |
 | `border/width/100` | 8 | Dimension | `border/width/thin` |
 | `size/200` | 8 | Dimension | revisar destino |
 | `size/50` | 4 | Dimension | revisar destino — `.Checkbox` |
-| `space/3x` | 4 | Semantic dimension | `spacing/300` — `Backdrop` |
-| `space/2,5x` | 3 | Semantic dimension | `spacing/250` |
+| `space/3x` | 4 | Semantic dimension | `padding/padding-300` — `Backdrop` |
+| `space/2,5x` | 3 | Semantic dimension | revisar — la coma en el nombre es otra señal de creación manual |
 | `Radius/0px` | 1 | 🔢 Units | `border/corner/corner-0` — `Story-item` |
 
-Los dos primeros concentran 232 de los 370 usos. `border/with/thin` arrastra un typo en el nombre (`with` en vez de `width`), lo que confirma que se creó a mano en el archivo en lugar de consumirse de Foundations.
+El typo `with` y la coma de `2,5x` confirman que estas variables se crearon a mano, sin pasar por la nomenclatura del sistema.
+
+**Componentes con más usos:** `Snackbar` (16), `.Switch` (12), `Status-bar` (16), `Summary-screen` (16), `Stories` / `Onboarding-screen` / `Feedback-screen` (12 cada uno), `Card-Personal-Pay` (8, custom).
 
 ### Color — 26 usos
 
-| Variable | Usos | Colección local | Nota |
+| Variable | Usos | Colección | Nota |
 |---|---|---|---|
 | `static/background/neutral/primary/medium` | 8 | Color | `neutral` no lleva sub-familia |
 | `static/background/neutral/primary-medium` | 6 | Color | misma idea, con guión |
@@ -140,12 +176,13 @@ Solo sería un problema si dos estados del mismo contexto no se distinguieran vi
 ## Orden de trabajo sugerido
 
 1. **Refrescar la librería** en Components, Templates y Custom → resuelve los 18 nombres viejos (57 usos) sin tocar un solo binding. Es lo más rápido y limpia el ruido de las próximas auditorías.
-2. **Migrar `border/with/thin` y `border/radius/none`** a sus equivalentes de Foundations → 232 usos, el 63% de la deuda real en dos cambios.
+2. **Migrar `border/with/thin` y `border/radius/none`** a sus equivalentes de Foundations → 232 usos, el 63% de la deuda real en dos cambios. Ambos ya tienen el token destino con ~790 usos, así que es alinear la minoría con lo que ya es el estándar.
 3. **Migrar el resto de dimensión y spacing** → 112 usos, cambio mecánico.
-4. **Consolidar las tres variantes de `static/background/neutral/primary*`** → 15 usos.
-5. **Resolver `sky` / `pink` en `.⛔ Asset-container_asset-background`** → 3 usos, decidir familia válida.
-6. **Completar descripciones** en Figma.
-7. **Evaluar los huecos**, sobre todo `interactive/background/feedback/*`.
+4. **Decidir el futuro de la librería paralela.** Mientras las 6 colecciones sigan publicadas, la deuda se puede volver a introducir. Despublicarlas o marcarlas como deprecadas es lo que cierra el problema de raíz.
+5. **Consolidar las tres variantes de `static/background/neutral/primary*`** → 15 usos.
+6. **Resolver `sky` / `pink` en `.⛔ Asset-container_asset-background`** → 3 usos, decidir familia válida.
+7. **Completar descripciones** en Figma.
+8. **Evaluar los huecos**, sobre todo `interactive/background/feedback/*`.
 
 ---
 
