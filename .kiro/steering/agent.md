@@ -138,6 +138,94 @@ Invocar con `#tokenization-rules`. Leer los bindings del componente y cruzar con
 
 ---
 
+## Cómo auditar tokens sin generar falsos positivos
+
+> Estas reglas salen de una auditoría que reportó 26 problemas de los cuales 24 no existían. Leerlas antes de afirmar que hay deuda de tokens.
+
+### 1. Comparar por `key`, nunca por nombre
+
+El `key` es el identificador estable de una variable en Figma y no cambia al renombrar. El **nombre sí cambia**, y los archivos consumidores guardan el nombre que tenía la variable al momento del binding hasta que se refresca la librería.
+
+Consecuencia: un token que "no existe" puede ser el nombre viejo de un token que sí existe.
+
+```
+key b5a951495b65…
+  Foundations dice : interactive/border/brand/primary/focus/medium
+  bindings dicen   : primary/focus/medium · main/focus/medium · focus · focus-medium
+  → los 4 son LA MISMA variable, bien aplicada
+```
+
+**Antes de reportar un token como inexistente:** buscar su `key` entre las variables de Foundations. Si aparece con otro nombre, es un nombre desactualizado en cache, no deuda. Se arregla refrescando la librería, sin tocar bindings.
+
+### 2. Dos semánticos con el mismo primitivo NO es deuda
+
+Es el propósito de la capa semántica: el mismo valor se nombra distinto según contexto y estado, para que cada uno pueda evolucionar por separado.
+
+`core/purple/500` alimenta legítimamente a `interactive/border/brand/primary/default/medium`, `…/focus/medium`, `interactive/background/brand/default/medium` y `static/foreground/brand/primary/medium`.
+
+La dirección es lo que importa:
+
+| Estructura | Veredicto |
+|---|---|
+| **dos** semánticos → **un** primitivo | ✅ correcto por diseño |
+| **un** semántico → **dos** variables | ❌ duplicación real |
+
+Señales de que es duplicación: las dos variables se aplican a las mismas propiedades, hay componentes que usan ambas indistintamente, y los componentes nuevos usan solo una.
+
+### 3. Que dos estados compartan valor no es un bug de accesibilidad por sí solo
+
+El cambio de estado puede resolverse con una capa de overlay, un stroke adicional, un cambio de weight o de posición. Verificarlo requiere abrir el componente, no leer la tabla de tokens.
+
+### 4. Descontar los componentes placeholder antes de contar usos
+
+`Swap-content` es un slot de documentación anidado en 16 componentes con bindings idénticos. Aporta 68 de los 120 usos de un token sin representar 68 decisiones ni llegar a producción.
+
+Antes de dimensionar deuda, desglosar por `layerName` y separar los placeholders. Aplica a cualquier capa que sea un slot de documentación.
+
+### 5. Verificar el origen de la variable
+
+`variable.remote` + `libraryName` (el extractor ya los guarda en `foundations.libraries`). Sirve para distinguir una variable de Foundations de una local del archivo o de otra librería. **No inferir el origen del formato del ID**, no es confiable.
+
+### 6. Orden de verificación recomendado
+
+```
+1. ¿El key existe en Foundations?           → no  → seguir en 2
+                                              sí  → ¿mismo nombre? no = cache stale, NO es deuda
+2. ¿Existe en otra colección/librería?      → sí  → duplicación o librería paralela
+                                              no  → binding roto (deuda real)
+3. ¿Cuántos usos son de placeholders?       → descontarlos del total
+4. ¿Se aplica a las mismas propiedades
+   que su equivalente?                      → sí  → duplicación
+                                              no  → posiblemente semántica distinta
+```
+
+Script disponible: `node scripts/audit-tokens.js` aplica este orden y separa las tres situaciones.
+
+---
+
+## Estructura de Foundations
+
+**Es un solo archivo.** 10 colecciones, 818 variables. Las que empiezan con `Global` son primitivos; el resto, semánticos.
+
+| Colección | Vars | Capa |
+|---|---|---|
+| `Color` | 253 | semántica |
+| `Typography` | 160 | semántica |
+| `Spacing` | 48 | semántica |
+| `Border` | 15 | semántica |
+| `Asset` | 15 | semántica |
+| `Screen size` | 2 | semántica |
+| `Density mode` | 1 | semántica |
+| `Global color` | 233 | primitiva |
+| `Global dimension` | 53 | primitiva |
+| `Global typography` | 38 | primitiva |
+
+Foundations alimenta a Components, Templates y Custom Components. Esas tres librerías **no deben definir variables propias**: consumen de Foundations.
+
+Si aparecen colecciones fuera de esta lista (`Semantic dimension`, `_Global dimension`, `Dimension`, `Primitives`, `Semantic color`, `Expressive`, `🔢 Units`), no son de Foundations. Correr el extractor actualizado para ver el `libraryName` y determinar el origen.
+
+---
+
 ## Escala de tokens semánticos
 
 ```
