@@ -34,6 +34,33 @@ Y como capa primitiva, `_Global dimension` (con guión bajo), distinta de la `Gl
 
 Es una librería anterior que sigue publicada y en uso. De ahí salen los 370 usos.
 
+### Por qué esto no es "mismo valor, distinto semántico"
+
+Conviene distinguirlo del caso legítimo descrito en la sección 3, porque a primera vista se parecen.
+
+| | Estructura | Veredicto |
+|---|---|---|
+| `focus/medium` vs `default/medium` | **dos** semánticos → **un** primitivo | ✅ válido |
+| `border/with/thin` vs `border/width/thin` | **un** semántico → **dos** variables | ❌ duplicación |
+
+Es la dirección inversa. Y hay tres verificaciones que lo confirman:
+
+**1. Se aplican a las mismas propiedades.** Ambos van a `strokeTopWeight`, `strokeBottomWeight`, `strokeLeftWeight`, `strokeRightWeight`. No hay contexto de uso que los separe. Igual para radio: los dos van a las cuatro propiedades `*Radius`.
+
+**2. 32 de 137 componentes mezclan las dos.** `Card`, `Card-amount`, `Carrousel`, `Backdrop`, `Pop-up`, `Snackbar` resuelven "borde delgado" con una variable en unas capas y con la otra en otras, dentro del mismo componente. En `.Radio-button`, el radio circular usa `border/corner/corner-2000` en unas variantes y `border/radius/full` en otras.
+
+**3. Los componentes recientes no la usan.** Cero usos de la librería paralela en `Chip-select` (180 bindings de dimensión, todos de Foundations), `Chip` (170), `Button-toggle` (976), `Segmented-control` (74), `Search`, `Tooltip-contextual`, `Push-notification`, `Currency-converter`, `Input-phone`.
+
+Reparto global sobre 137 componentes:
+
+| | Componentes |
+|---|---|
+| Solo Foundations | 83 |
+| Mezclan las dos | 32 |
+| Solo paralela | 4 |
+
+Eso dibuja una migración al 90%, no una decisión de nomenclatura. Si la paralela fuera la dirección nueva, la veríamos crecer en lo recién construido.
+
 ### Por qué importa si el valor es el mismo
 
 El caso de `border/with/thin`:
@@ -156,6 +183,15 @@ Varios pares de tokens semánticos resuelven al mismo primitivo. Por ejemplo, `c
 **Esto no es deuda.** Es el comportamiento esperado de una capa semántica: el mismo valor se nombra distinto según el contexto de uso (borde vs. fondo vs. texto) y según el estado, para que cada uno pueda evolucionar por separado sin tocar los demás.
 
 Solo sería un problema si dos estados del mismo contexto no se distinguieran visualmente **por ningún medio**. Verificarlo requiere mirar el componente, no la tabla de tokens: el cambio de estado puede resolverse con un overlay de opacidad, un stroke adicional, un cambio de weight o de posición, no necesariamente con el color.
+
+### Cómo distinguirlo de una duplicación
+
+La pregunta no es si dos tokens comparten valor, sino en qué dirección:
+
+- **Dos semánticos → un primitivo.** Válido. Cada nombre describe un contexto o estado distinto y puede evolucionar solo.
+- **Un semántico → dos variables.** Duplicación. El mismo concepto tiene dos entradas y nada las mantiene sincronizadas.
+
+Señales prácticas de que es el segundo caso: las dos variables se aplican a las mismas propiedades, hay componentes que usan ambas indistintamente, y los componentes nuevos usan solo una. Es exactamente lo que ocurre con la librería paralela de la sección 1.
 
 ---
 
