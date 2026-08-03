@@ -12,7 +12,7 @@
 |---|---|---|---|
 | Tokens aplicados que no existen | 0 | 0 | ✅ — |
 | Valores hardcodeados | 0 | 0 | ✅ — |
-| Variables de una librería paralela | 20 | 370 | 🟡 Media |
+| Variables de una librería no habilitada | 20 | 370 | � Alta |
 | Nombre viejo en cache de librería | 18 | 57 | 🟢 Cosmético |
 | Variables sin descripción | 686 | — | 🟡 Media |
 
@@ -22,6 +22,17 @@
 
 ## 1. Librería paralela (deuda real) — 20 variables, 370 usos
 
+### Estas variables no son seleccionables desde el panel
+
+Verificado en Figma: `border/with/thin` **no aparece** al buscar variables. Su colección no está habilitada como librería activa, así que no se puede aplicar a una capa nueva.
+
+Los bindings existentes siguen resolviendo porque Figma mantiene la referencia remota, pero eso implica dos cosas:
+
+- **No es una alternativa que alguien pueda elegir.** Descarta la lectura de "dos opciones semánticas conviviendo": una de las dos no está disponible.
+- **Los 370 usos dependen de una librería fuera del sistema.** Si esa colección se despublica del todo o el archivo origen se borra, los bindings se rompen y los valores quedan congelados en la capa, sin token.
+
+Dónde verificarlo: `Snackbar` tiene el stroke bindeado en sus cuatro variantes (`Type=info`, `success`, `warning`, `error`). `.Switch` en la capa `Switch wrapper` y en las variantes `State=hover` / `State=focus`.
+
 ### El origen: colecciones que no están en Foundations
 
 Foundations publica 10 colecciones: `Global color`, `Global typography`, `Border`, `Asset`, `Color`, `Typography`, `Global dimension`, `Screen size`, `Spacing`, `Density mode`.
@@ -30,9 +41,26 @@ Los archivos de librería consumen además estas 6, que **no existen en Foundati
 
 `Dimension` · `Semantic dimension` · `Semantic color` · `Primitives` · `Expressive` · `🔢 Units`
 
-Y como capa primitiva, `_Global dimension` (con guión bajo), distinta de la `Global dimension` de Foundations.
+Y como capa primitiva, `_Global dimension` (con guión bajo, convención de colección oculta), distinta de la `Global dimension` de Foundations.
 
-Es una librería anterior que sigue publicada y en uso. De ahí salen los 370 usos.
+`Semantic dimension` tiene solo 5 variables, y son exactamente las que aparecen en esta auditoría:
+
+| Variable | Alias | Usos |
+|---|---|---|
+| `border/with/thin` | `border/width/100` [_Global dimension] | 120 |
+| `border/radius/none` | `border/radius/0` [_Global dimension] | 112 |
+| `space/0x` | `size/0` [_Global dimension] | 27 |
+| `space/3x` | `size/500` [_Global dimension] | 4 |
+| `space/2,5x` | `size/400` [_Global dimension] | 3 |
+
+Ninguna de las keys de esta cadena existe en Foundations:
+
+```
+border/with/thin    key 8db08a20…  [Semantic dimension]  → border/width/100  key 7d03694f…  [_Global dimension]
+border/width/thin   key ba093e93…  [Border]              → width/100         key 1de0c64f…  [Global dimension]
+```
+
+Es una librería anterior, todavía referenciada por los bindings pero no habilitada en el panel. De ahí salen los 370 usos.
 
 ### Por qué esto no es "mismo valor, distinto semántico"
 
@@ -212,9 +240,9 @@ Señales prácticas de que es el segundo caso: las dos variables se aplican a la
 ## Orden de trabajo sugerido
 
 1. **Refrescar la librería** en Components, Templates y Custom → resuelve los 18 nombres viejos (57 usos) sin tocar un solo binding. Es lo más rápido y limpia el ruido de las próximas auditorías.
-2. **Migrar `border/with/thin` y `border/radius/none`** a sus equivalentes de Foundations → 232 usos, el 63% de la deuda real en dos cambios. Ambos ya tienen el token destino con ~790 usos, así que es alinear la minoría con lo que ya es el estándar.
-3. **Migrar el resto de dimensión y spacing** → 112 usos, cambio mecánico.
-4. **Decidir el futuro de la librería paralela.** Mientras las 6 colecciones sigan publicadas, la deuda se puede volver a introducir. Despublicarlas o marcarlas como deprecadas es lo que cierra el problema de raíz.
+2. **Migrar las 5 variables de `Semantic dimension`** → 266 usos. Prioridad alta: no son seleccionables desde el panel, así que hoy nadie puede aplicarlas ni corregirlas sin re-bindear a mano. Los destinos ya son el estándar (`border/width/thin` tiene 792 usos, `border/corner/corner-0` tiene 798).
+3. **Migrar el resto de dimensión** (`Dimension`, `Primitives`, `🔢 Units`) → 78 usos, cambio mecánico.
+4. **Verificar el estado del archivo origen** de `Semantic dimension` y `_Global dimension`. Si se borra o despublica antes de migrar, los 266 bindings se rompen y los valores quedan congelados sin token.
 5. **Consolidar las tres variantes de `static/background/neutral/primary*`** → 15 usos.
 6. **Resolver `sky` / `pink` en `.⛔ Asset-container_asset-background`** → 3 usos, decidir familia válida.
 7. **Completar descripciones** en Figma.
