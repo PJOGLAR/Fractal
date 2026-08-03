@@ -156,7 +156,7 @@ La columna **Uso** describe dónde está aplicado hoy, con la cantidad de usos y
 | Token | Usos | Uso inferido |
 |---|---|---|
 | `static/border/neutral/quiet` | 58 | **Borde apenas perceptible y divisores.** Label, Alert, Badge, Banner-md |
-| `static/border/brand/secondary` | 43 | **Bordes de contenedores de asset.** Asset-container, Card-container, Payment-card. Ver nota de deuda: apunta a purple, no cyan |
+| `static/border/brand/secondary` | 43 | **Bordes de contenedores de asset.** Asset-container, Card-container, Payment-card. Apunta a purple mientras el resto de la familia `brand/secondary` es cyan: confirmar la intención antes de usarlo |
 | `static/border/brand/primary` | 27 | Bordes de marca. Segmented-control, Stepper-vertical, Accordion |
 | `static/border/neutral/medium` | 6 | Contraste medio. Card-amount, Pill outline |
 | `static/border/feedback/*/bold` | 3–5 | Bordes de estado en Pill, Alert, Snackbar, Text-area |
@@ -352,16 +352,16 @@ Decidir si se aplican o se deprecan.
 
 ---
 
-# Deuda conocida
+# Estado del sistema
 
-La auditoría completa está en **[deuda-tokens.md](./deuda-tokens.md)**. Estado al 3-ago-2026:
+La auditoría completa está en **[auditoria-tokens.md](./auditoria-tokens.md)**. Al 3-ago-2026 el sistema está sano:
 
-**Lo que está bien:** los 322 tokens aplicados resuelven a una variable existente y a un valor correcto. No hay bindings rotos ni colores hardcodeados.
+- **322 de 322 tokens aplicados** resuelven a una variable existente y a un valor correcto
+- **0 tokens inexistentes**, **0 bindings rotos**, **0 colores hardcodeados**
 
-**Lo que conviene saber antes de aplicar:**
+Dos cosas útiles de saber al aplicar tokens hoy:
 
-- **Nombres desactualizados en cache (57 usos).** Varios componentes muestran nombres viejos (`main/focus/medium`, `tertiary-subtle`) que apuntan a la variable correcta. Se resuelve refrescando la librería, no rebindeando. Los nombres vigentes son `primary/*` y la escala `strong > bold > medium > subtle > quiet`.
-- **`static/border/brand/secondary` apunta a purple** cuando el resto de la familia `brand/secondary` es cyan. Verificar antes de usarlo.
-- **20 variables vienen de colecciones ajenas a Foundations** (`Semantic dimension`, `Dimension`, `Primitives`…), sobre todo en dimensión y spacing. No son seleccionables desde el panel. Pendiente identificar el archivo de origen.
+- **Algunos componentes muestran nombres viejos.** Si ves `main/focus/medium` o `tertiary-subtle` en un binding, es el nombre que quedó en cache: la variable apuntada es la correcta. Los nombres vigentes son `primary/*` y la escala `strong > bold > medium > subtle > quiet`. Se actualiza refrescando la librería.
+- **`static/border/brand/secondary` apunta a purple** mientras el resto de la familia `brand/secondary` es cyan. Vale confirmar cuál es la intención antes de usarlo.
 
-**Lo que no es deuda,** aunque a veces se reporta como tal: que dos tokens semánticos compartan primitivo. `focus` y `default` pueden ser el mismo morado y distinguirse por una capa de overlay o un stroke extra. Ver la sección de `interactive/opacity` arriba: los nombres de capa (`Hover layer`, `Pressed layer`) muestran ese mecanismo funcionando.
+Y una aclaración que evita falsas alarmas: **que dos tokens semánticos compartan primitivo es correcto.** `focus` y `default` pueden ser el mismo morado y distinguirse por una capa de overlay o un stroke extra. La sección de `interactive/opacity` arriba muestra ese mecanismo en funcionamiento, con capas llamadas `Hover layer` y `Pressed layer`.

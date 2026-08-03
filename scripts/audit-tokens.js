@@ -50,11 +50,12 @@ stale.sort((a, b) => b.usos - a.usos).forEach(o => {
   console.log(`  ${String(o.usos).padStart(3)} usos  ${o.name}`);
   console.log(`            → hoy se llama: ${o.nowCalled}`);
 });
-console.log(`\n  Subtotal: ${stale.length} nombres / ${stale.reduce((s, o) => s + o.usos, 0)} usos  →  0 deuda real`);
+console.log(`\n  Subtotal: ${stale.length} nombres / ${stale.reduce((s, o) => s + o.usos, 0)} usos  →  nada que corregir`);
 
 console.log('\n\n╔══════════════════════════════════════════════════════════════╗');
-console.log('║  B) VARIABLE LOCAL — no viene de Foundations                 ║');
-console.log('║     Deuda real: fuente de verdad duplicada.                  ║');
+console.log('║  B) NO ESTA EN FOUNDATIONS — verificar el origen             ║');
+console.log('║     Resuelven bien. Correr el extractor actualizado para     ║');
+console.log('║     saber de que archivo vienen antes de clasificarlas.      ║');
 console.log('╚══════════════════════════════════════════════════════════════╝\n');
 local.sort((a, b) => b.usos - a.usos).forEach(o => {
   console.log(`  ${String(o.usos).padStart(3)} usos  ${o.name}`);
@@ -66,6 +67,6 @@ console.log('\n\n══════════════════ RESUMEN 
 console.log(`  Tokens únicos aplicados        : ${rec.size}`);
 console.log(`  Resuelven a Foundations OK     : ${rec.size - stale.length - local.length}`);
 console.log(`  Nombre viejo, variable OK      : ${stale.length}  (cosmético)`);
-console.log(`  Variables locales              : ${local.length}  (deuda real)`);
+console.log(`  Fuera de Foundations           : ${local.length}  (origen a verificar)`);
 console.log(`  Aplicados que no existen       : 0`);
 console.log('');

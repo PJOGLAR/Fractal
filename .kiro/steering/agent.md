@@ -140,7 +140,9 @@ Invocar con `#tokenization-rules`. Leer los bindings del componente y cruzar con
 
 ## Cómo auditar tokens sin generar falsos positivos
 
-> Estas reglas salen de una auditoría que reportó 26 problemas de los cuales 24 no existían. Leerlas antes de afirmar que hay deuda de tokens.
+> Estas reglas salen de una auditoría que reportó 26 problemas de los cuales 24 no existían.
+>
+> **Regla cero: no clasificar como problema lo que no está verificado.** Si no se puede determinar el origen o la intención de un token, el hallazgo es "pendiente de verificar", no "deuda". Presentar el hecho y dejar la clasificación abierta.
 
 ### 1. Comparar por `key`, nunca por nombre
 
@@ -191,8 +193,8 @@ Antes de dimensionar deuda, desglosar por `layerName` y separar los placeholders
 ```
 1. ¿El key existe en Foundations?           → no  → seguir en 2
                                               sí  → ¿mismo nombre? no = cache stale, NO es deuda
-2. ¿Existe en otra colección/librería?      → sí  → duplicación o librería paralela
-                                              no  → binding roto (deuda real)
+2. ¿Existe en otra colección/librería?      → sí  → verificar el origen antes de clasificar
+                                              no  → binding roto (esto sí es un problema)
 3. ¿Cuántos usos son de placeholders?       → descontarlos del total
 4. ¿Se aplica a las mismas propiedades
    que su equivalente?                      → sí  → duplicación
