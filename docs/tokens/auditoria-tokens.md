@@ -13,19 +13,20 @@
 | Verificación | Resultado |
 |---|---|
 | Tokens aplicados que no existen | **0** |
-| Valores de color hardcodeados | **0** |
 | Bindings rotos | **0** |
 | Tokens que resuelven a una variable y valor correctos | **322 de 322** |
+| Bindings totales analizados | 23.561 |
 
-No hay ningún defecto visual atribuible a la tokenización, ni ningún componente pintado a mano.
+No hay ningún defecto visual atribuible a la tokenización.
 
-Quedan dos observaciones, ninguna con impacto en producto:
+Observaciones abiertas:
 
 | Observación | Alcance | Naturaleza |
 |---|---|---|
+| Colores aplicados sin token | 29 usos | 26 son blanco puro, que **no existe como token**. Ver §3 |
 | Nombres desactualizados en el cache de la librería | 18 nombres, 57 usos | Cosmética. Se resuelve refrescando la librería |
 | Variables de colecciones que no están en Foundations | 20 variables, 302 usos | **Pendiente de identificar el origen** |
-| Variables sin descripción en Figma | 818 | Oportunidad de mejora, no problema |
+| Variables sin descripción en Figma | 818 de 818 | Oportunidad de mejora |
 
 ---
 
@@ -153,7 +154,21 @@ Y el resto, por colección:
 
 ---
 
-## 3. Sobre tokens que comparten primitivo
+## 3. Colores aplicados sin token — 29 usos
+
+| Valor | Usos | Dónde | Lectura |
+|---|---|---|---|
+| `#FFFFFF` | 26 | Capas `Vector` de `Status-bar` (6), `Feedback-screen` (10), `Summary-screen` (4), `Stories` (2), `Onboarding-screen` (2), `Splash` (1), `.⛔️ Stories-template_logo-onboarding` (1) | **No hay token de blanco puro en Foundations.** El más claro es `core/neutral/25` = `#FCFCFC` |
+| `#5A50F7` | 2 | `Stories`, `.⛔️ Stories-template_logo-onboarding` — capas `Vector` | ⚠️ **No coincide con ningún primitivo.** El morado de marca es `#5A50F9` |
+| `#5A50F9` | 1 | `Summary-screen` — capa `Logo` | Es el morado de marca correcto, pero sin token. Existe como `core/purple/500` |
+
+**Los 26 de `#FFFFFF` son un hueco del sistema, no un error de aplicación.** Se verificó: ninguna variable de Foundations resuelve a blanco puro. Si los logos e iconos necesitan blanco exacto, hace falta el token; si `#FCFCFC` alcanza, se pueden migrar a `static/foreground/neutral/quiet`. Es una decisión de diseño, no un fix mecánico.
+
+**El caso de `#5A50F7` sí merece atención.** Difiere del morado de marca en el último byte (`F7` vs `F9`). No existe como variable en ninguna colección. Probablemente sea un valor viejo o un error de tipeo que quedó fijo en dos capas de Stories. Ahí el fix es claro: bindear a `static/foreground/brand/primary/medium`.
+
+---
+
+## 4. Sobre tokens que comparten primitivo
 
 Varios pares de tokens semánticos resuelven al mismo primitivo. `core/purple/500` alimenta a `interactive/border/brand/primary/default/medium`, `…/focus/medium`, `interactive/background/brand/default/medium` y `static/foreground/brand/primary/medium`.
 
@@ -172,7 +187,7 @@ La pregunta no es si dos tokens comparten valor, sino en qué dirección:
 
 ---
 
-## 4. Variables sin descripción
+## 5. Variables sin descripción
 
 **0 de 818** tienen el campo `description` completo en Figma. Es el texto que aparece al elegir una variable desde el panel, o sea, justo en el momento en que alguien duda cuál aplicar.
 
@@ -180,22 +195,28 @@ No es un defecto: es la mejora de mayor impacto disponible sobre la experiencia 
 
 ---
 
-## 5. Huecos del sistema
+## 6. Huecos del sistema
 
 Casos de uso sin token disponible:
 
+- **No hay token de blanco puro (`#FFFFFF`).** El valor más claro del sistema es `core/neutral/25` = `#FCFCFC`. Explica los 26 usos hardcodeados de §3.
 - **No hay `interactive/background/feedback/*`.** Los feedback existen solo como `static`. Un input en error cuyo fondo cambie con la interacción no tiene token.
 - **`interactive/background/neutral` no tiene `pressed`.** Están `default`, `hover` y `disabled`.
 - **`static/opacity` no tiene familia `feedback`.**
+- **`pictogram` no tiene `sm`, `xs` ni `xl`.** La escala salta de `md` (24px) a `2xl` (40px).
 
 ---
 
 ## Próximos pasos sugeridos
 
-1. **Correr el extractor actualizado** para identificar el origen de las 6 colecciones. Es lo que falta para saber si hay algo que hacer con esas 20 variables o si son parte legítima del sistema.
-2. **Refrescar la librería** en Components, Templates y Custom. Resuelve los 18 nombres desactualizados sin tocar bindings, y limpia el ruido de las próximas auditorías.
-3. **Completar descripciones** en Figma. Mejora la elección de token en el momento de aplicarlo.
-4. **Evaluar los huecos**, sobre todo `interactive/background/feedback/*`.
+Ordenados por relación entre esfuerzo e impacto:
+
+1. **Corregir `#5A50F7` en Stories** → 2 usos, fix claro: bindear a `static/foreground/brand/primary/medium`. Es el único valor aplicado que no coincide con ningún primitivo del sistema.
+2. **Refrescar la librería** en Components, Templates y Custom → resuelve los 18 nombres desactualizados sin tocar bindings, y limpia el ruido de las próximas auditorías.
+3. **Correr el extractor actualizado** → identifica el origen de las 6 colecciones. Es lo que falta para saber si hay algo que hacer con esas 20 variables o si son parte legítima del sistema.
+4. **Decidir qué pasa con el blanco puro** → crear el token o migrar los 26 usos a `neutral/quiet`. Requiere decisión de diseño.
+5. **Completar descripciones** en Figma → es la mejora de mayor impacto sobre la experiencia de elegir un token, y no toca ningún componente.
+6. **Evaluar los huecos**, sobre todo `interactive/background/feedback/*`.
 
 ---
 

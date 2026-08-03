@@ -138,6 +138,21 @@ Invocar con `#tokenization-rules`. Leer los bindings del componente y cruzar con
 
 ---
 
+## Documentación de tokens
+
+Vive en `docs/tokens/`, con `README.md` como punto de entrada:
+
+| Archivo | Contenido |
+|---|---|
+| `README.md` | Índice, estado del sistema y la checklist anti-falsos-positivos |
+| `semanticos.md` | Guía: qué es Foundations y uso real de cada token inferido de los bindings |
+| `catalogo.md` | Las 494 variables semánticas con primitivo y valor final (generado) |
+| `auditoria-tokens.md` | Estado verificado y observaciones abiertas |
+
+Regenerar con `node scripts/generate-token-catalog.js`, `audit-tokens.js` y `analyze-token-usage.js`.
+
+---
+
 ## Cómo auditar tokens sin generar falsos positivos
 
 > Estas reglas salen de una auditoría que reportó 26 problemas de los cuales 24 no existían.

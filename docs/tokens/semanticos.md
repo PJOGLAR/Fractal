@@ -356,12 +356,15 @@ Decidir si se aplican o se deprecan.
 
 # Estado del sistema
 
-La auditoría completa está en **[auditoria-tokens.md](./auditoria-tokens.md)**. Al 3-ago-2026 el sistema está sano:
+La auditoría completa está en **[auditoria-tokens.md](./auditoria-tokens.md)**. Al 3-ago-2026:
 
 - **322 de 322 tokens aplicados** resuelven a una variable existente y a un valor correcto
-- **0 tokens inexistentes**, **0 bindings rotos**, **0 colores hardcodeados**
+- **0 tokens inexistentes**, **0 bindings rotos**
+- **29 colores aplicados sin token**, de los cuales 26 son blanco puro, que no existe como variable en el sistema
 
-Dos cosas útiles de saber al aplicar tokens hoy:
+Tres cosas útiles de saber al aplicar tokens hoy:
+
+- **No hay token de blanco puro.** El valor más claro es `static/foreground/neutral/quiet` / `static/background/neutral/quiet` = `#FCFCFC`. Si necesitás `#FFFFFF` exacto, hoy hay que pedirlo.
 
 - **Algunos componentes muestran nombres viejos.** Si ves `main/focus/medium` o `tertiary-subtle` en un binding, es el nombre que quedó en cache: la variable apuntada es la correcta. Los nombres vigentes son `primary/*` y la escala `strong > bold > medium > subtle > quiet`. Se actualiza refrescando la librería.
 - **`static/border/brand/secondary` apunta a purple** mientras el resto de la familia `brand/secondary` es cyan. Vale confirmar cuál es la intención antes de usarlo.
