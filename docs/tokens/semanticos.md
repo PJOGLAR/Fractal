@@ -50,6 +50,8 @@ La capa semántica agrega una segunda ventaja: permite que dos usos del mismo co
 
 **Regla:** a un componente se le aplican tokens de las colecciones semánticas. Nunca un `Global/*`.
 
+> 📋 **El listado completo de las 494 variables semánticas con su primitivo y valor final está en [catalogo.md](./catalogo.md).** Este documento explica cómo elegir; el catálogo es la referencia de consulta.
+
 ---
 
 ## Anatomía del nombre
