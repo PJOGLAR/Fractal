@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react'
-import assetData from '../data/asset-tokens.json'
+import assetData from '../data/asset-data.json'
 import './AssetTokens.css'
 
 interface ColorToken {
@@ -112,7 +112,7 @@ export function AssetTokens() {
           <p className="asset-empty-title">Sin datos todavía</p>
           <p className="asset-empty-desc">
             Corré el plugin <strong>Asset Extractor</strong> en el archivo de Assets de Figma
-            y guardá el JSON resultante en <code>src/data/asset-tokens.json</code>
+            y guardá el JSON resultante en <code>src/data/asset-data.json</code>
           </p>
         </div>
       </div>
