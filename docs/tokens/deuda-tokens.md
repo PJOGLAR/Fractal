@@ -12,7 +12,7 @@
 |---|---|---|---|
 | Tokens aplicados que no existen | 0 | 0 | ✅ — |
 | Valores hardcodeados | 0 | 0 | ✅ — |
-| Variables de una librería no habilitada | 20 | 370 | � Alta |
+| Variables de una librería no habilitada | 20 | 302 | 🔴 Alta |
 | Nombre viejo en cache de librería | 18 | 57 | 🟢 Cosmético |
 | Variables sin descripción | 686 | — | 🟡 Media |
 
@@ -20,47 +20,85 @@
 
 ---
 
-## 1. Librería paralela (deuda real) — 20 variables, 370 usos
+## 1. Librería paralela (deuda real) — 20 variables, 302 usos reales
 
 ### Estas variables no son seleccionables desde el panel
 
 Verificado en Figma: `border/with/thin` **no aparece** al buscar variables. Su colección no está habilitada como librería activa, así que no se puede aplicar a una capa nueva.
 
+Al seleccionar una capa que la usa, el campo `Weight` del Stroke muestra el número (`1`) en lugar del nombre de la variable, y el selector ofrece únicamente `Foundations / Border / border/width / thin`. Eso puede dar la impresión de que el binding es a `border/width/thin`, pero son cosas distintas: el selector lista lo **disponible para aplicar**, no lo aplicado.
+
+El nombre con typo está confirmado en el origen. El extractor lo toma directo de la API, sin transformación:
+
+```ts
+const variable = await figma.variables.getVariableByIdAsync(variableId)
+// ...
+tokenName: varInfo?.name
+```
+
+`getVariableByIdAsync` resuelve variables remotas incluso cuando su librería no está habilitada en el panel, que es exactamente por qué el plugin ve el nombre y la UI no.
+
 Los bindings existentes siguen resolviendo porque Figma mantiene la referencia remota, pero eso implica dos cosas:
 
 - **No es una alternativa que alguien pueda elegir.** Descarta la lectura de "dos opciones semánticas conviviendo": una de las dos no está disponible.
-- **Los 370 usos dependen de una librería fuera del sistema.** Si esa colección se despublica del todo o el archivo origen se borra, los bindings se rompen y los valores quedan congelados en la capa, sin token.
+- **Los 302 usos dependen de una librería fuera del sistema.** Si esa colección se despublica del todo o el archivo origen se borra, los bindings se rompen y los valores quedan congelados en la capa, sin token.
 
 Dónde verificarlo: `Snackbar` tiene el stroke bindeado en sus cuatro variantes (`Type=info`, `success`, `warning`, `error`). `.Switch` en la capa `Switch wrapper` y en las variantes `State=hover` / `State=focus`.
 
 ### El origen: colecciones que no están en Foundations
 
-Foundations publica 10 colecciones: `Global color`, `Global typography`, `Border`, `Asset`, `Color`, `Typography`, `Global dimension`, `Screen size`, `Spacing`, `Density mode`.
+Foundations es **un solo archivo** con 10 colecciones y 818 variables. Las que empiezan con `Global` son los primitivos; el resto, los semánticos:
 
-Los archivos de librería consumen además estas 6, que **no existen en Foundations**:
+| Colección | Variables | Capa |
+|---|---|---|
+| `Color` | 253 | semántica |
+| `Typography` | 160 | semántica |
+| `Spacing` | 48 | semántica |
+| `Border` | 15 | semántica |
+| `Asset` | 15 | semántica |
+| `Screen size` | 2 | semántica |
+| `Density mode` | 1 | semántica |
+| `Global color` | 233 | primitiva |
+| `Global dimension` | 53 | primitiva |
+| `Global typography` | 38 | primitiva |
 
-`Dimension` · `Semantic dimension` · `Semantic color` · `Primitives` · `Expressive` · `🔢 Units`
+Suma 818, que coincide exactamente con la extracción.
 
-Y como capa primitiva, `_Global dimension` (con guión bajo, convención de colección oculta), distinta de la `Global dimension` de Foundations.
+Los bindings de los componentes referencian además estas 6 colecciones, que **no están en ese archivo**:
+
+`Semantic dimension` · `_Global dimension` · `Dimension` · `Primitives` · `Semantic color` · `Expressive`
+
+> ⚠️ **De dónde salen: pendiente de confirmar.** Hay dos explicaciones posibles y los datos de esta extracción no permiten elegir entre ellas:
+>
+> 1. Un segundo archivo de librería publicado, distinto de Foundations.
+> 2. Colecciones **locales del propio archivo de componentes**.
+>
+> La extracción no guardaba el campo `remote` de cada variable ni el archivo de origen, así que ambas hipótesis son compatibles con lo que hay. El extractor ya fue instrumentado para resolverlo: la próxima corrida incluye `foundations.libraries` con el nombre del archivo de cada colección, y la UI del plugin avisa si detecta más de un origen.
+>
+> El dato importa para el plan de migración: si son locales del archivo de componentes, se corrigen ahí mismo. Si son de otra librería publicada, hay que decidir además qué pasa con ese archivo.
+
+Nótese que `_Global dimension` lleva guión bajo, distinta de la `Global dimension` de Foundations, lo que sugiere una capa primitiva paralela.
 
 `Semantic dimension` tiene solo 5 variables, y son exactamente las que aparecen en esta auditoría:
 
-| Variable | Alias | Usos |
-|---|---|---|
-| `border/with/thin` | `border/width/100` [_Global dimension] | 120 |
-| `border/radius/none` | `border/radius/0` [_Global dimension] | 112 |
-| `space/0x` | `size/0` [_Global dimension] | 27 |
-| `space/3x` | `size/500` [_Global dimension] | 4 |
-| `space/2,5x` | `size/400` [_Global dimension] | 3 |
+| Variable | Alias | Usos | Dónde |
+|---|---|---|---|
+| `border/with/thin` | `border/width/100` [_Global dimension] | 120 (52 reales) | `.Checkbox`, `.Switch`, `Snackbar` + placeholder |
+| `border/radius/none` | `border/radius/0` [_Global dimension] | 112 | `Status-bar` y sus internos (56), `Level=full/low` (16), `Action` (12), `Top-bar` (8), `.⛔️ Backdrop_handle` (8) |
+| `space/0x` | `size/0` [_Global dimension] | 27 | `Action` (12), variantes `Layout=*` (15) |
+| `space/3x` | `size/500` [_Global dimension] | 4 | variantes `Layout=*` |
+| `space/2,5x` | `size/400` [_Global dimension] | 3 | `Action` |
 
-Ninguna de las keys de esta cadena existe en Foundations:
+Ninguna de las keys de esta cadena existe entre las 818 variables de Foundations:
 
 ```
 border/with/thin    key 8db08a20…  [Semantic dimension]  → border/width/100  key 7d03694f…  [_Global dimension]
 border/width/thin   key ba093e93…  [Border]              → width/100         key 1de0c64f…  [Global dimension]
 ```
 
-Es una librería anterior, todavía referenciada por los bindings pero no habilitada en el panel. De ahí salen los 370 usos.
+Dos cadenas completamente separadas: distinta variable, distinta colección y distinto primitivo. En Foundations la nomenclatura correcta (`border/width/thin` → `width/100`) está bien escrita; el typo `with` pertenece a la otra cadena.
+
+De ahí salen los 302 usos reales (370 contando el placeholder `Swap-content`, ver nota más abajo).
 
 ### Por qué esto no es "mismo valor, distinto semántico"
 
@@ -113,11 +151,15 @@ El segundo punto es que estas variables son **la minoría de un patrón ya resue
 
 No son una decisión de diseño distinta: son lo que quedó sin migrar. El 87% de los bordes de 1px ya usa el token de Foundations.
 
-### Dimensión y spacing — 344 usos
+### Dimensión y spacing — 276 usos reales
+
+> **Ojo con el conteo de `border/with/thin`.** De sus 120 usos, 68 vienen de la capa `Swap-content`, que es un componente placeholder anidado en 16 componentes con bindings idénticos. Es andamio de documentación, no llega a producción. La deuda efectiva de ese token son **52 usos en 5 componentes**: `.Checkbox` (8), `.Switch` (16, entre `Switch wrapper` y variantes `State=hover` / `State=focus`), `Snackbar` (16, sus cuatro `Type=`), y 12 más en capas `State=empty, Orientation=*` y `Type=new, State=default`.
+>
+> Los otros cuatro tokens de la colección no están afectados por el placeholder: sus usos son todos reales.
 
 | Variable | Usos | Colección | Destino |
 |---|---|---|---|
-| `border/with/thin` | 120 | Semantic dimension | `border/width/thin` — nótese el typo **with** |
+| `border/with/thin` | 120 (52 reales) | Semantic dimension | `border/width/thin` — nótese el typo **with** |
 | `border/radius/none` | 112 | Semantic dimension | `border/corner/corner-0` |
 | `Spacing/SM/space-4` | 28 | Primitives | `gap/gap-100` / `padding/padding-100` según propiedad |
 | `space/0x` | 27 | Semantic dimension | `padding/padding-0` / `gap/gap-0` |
@@ -240,9 +282,9 @@ Señales prácticas de que es el segundo caso: las dos variables se aplican a la
 ## Orden de trabajo sugerido
 
 1. **Refrescar la librería** en Components, Templates y Custom → resuelve los 18 nombres viejos (57 usos) sin tocar un solo binding. Es lo más rápido y limpia el ruido de las próximas auditorías.
-2. **Migrar las 5 variables de `Semantic dimension`** → 266 usos. Prioridad alta: no son seleccionables desde el panel, así que hoy nadie puede aplicarlas ni corregirlas sin re-bindear a mano. Los destinos ya son el estándar (`border/width/thin` tiene 792 usos, `border/corner/corner-0` tiene 798).
+2. **Migrar las 5 variables de `Semantic dimension`** → 198 usos reales (266 contando el placeholder). Prioridad alta: no son seleccionables desde el panel, así que hoy nadie puede aplicarlas ni corregirlas sin re-bindear a mano. Los destinos ya son el estándar (`border/width/thin` tiene 792 usos, `border/corner/corner-0` tiene 798).
 3. **Migrar el resto de dimensión** (`Dimension`, `Primitives`, `🔢 Units`) → 78 usos, cambio mecánico.
-4. **Verificar el estado del archivo origen** de `Semantic dimension` y `_Global dimension`. Si se borra o despublica antes de migrar, los 266 bindings se rompen y los valores quedan congelados sin token.
+4. **Correr el extractor actualizado para identificar el origen.** Determina si las 6 colecciones son locales del archivo de componentes o de otra librería publicada. Sin ese dato el plan de migración queda a medias, porque el fix es distinto en cada caso. La UI del plugin ya muestra el desglose por archivo.
 5. **Consolidar las tres variantes de `static/background/neutral/primary*`** → 15 usos.
 6. **Resolver `sky` / `pink` en `.⛔ Asset-container_asset-background`** → 3 usos, decidir familia válida.
 7. **Completar descripciones** en Figma.
