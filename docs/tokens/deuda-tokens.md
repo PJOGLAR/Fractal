@@ -1,236 +1,159 @@
 # Deuda de tokens — auditoría
 
-> Auditoría de la extracción del **3-ago-2026**. Cruza los 81 tokens semánticos definidos en `Color` contra los bindings reales de Components (137), Templates (15) y Custom (8).
+> Extracción del **3-ago-2026**. Cruza las 686 variables de `Foundations` contra los 322 tokens efectivamente bindeados en Components (137), Templates (15) y Custom (8).
 >
-> Se separó de `semanticos.md` porque es una lista de trabajo, no documentación de uso.
+> **Método:** la comparación se hace por `key` de variable, no por nombre. El `key` es el identificador estable de Figma y no cambia al renombrar, así que permite distinguir un token mal aplicado de un token bien aplicado cuyo nombre quedó viejo en el cache del archivo consumidor.
 
 ---
 
 ## Resumen
 
-| Hallazgo | Cantidad | Severidad |
-|---|---|---|
-| Tokens aplicados que no existen | 24 | 🔴 Alta |
-| Colisiones de estado críticas | 2 | 🔴 Alta |
-| Colisiones de estado a revisar | 6 | 🟡 Media |
-| `brand/secondary` apuntando a purple | 1 | 🟡 Media |
-| Tokens definidos sin uso | 3 | 🟢 Baja |
-| Valores hardcodeados | 29 | 🟡 Media |
-| Variables sin descripción | 818 | 🟡 Media |
+| Hallazgo | Nombres | Usos | Severidad |
+|---|---|---|---|
+| Tokens aplicados que no existen | 0 | 0 | ✅ — |
+| Valores hardcodeados | 0 | 0 | ✅ — |
+| Variables locales (no vienen de Foundations) | 20 | 370 | 🟡 Media |
+| Nombre viejo en cache de librería | 18 | 57 | 🟢 Cosmético |
+| Variables sin descripción | 686 | — | 🟡 Media |
 
-**Sin desvíos de escala:** los 81 tokens respetan los rangos de primitivo esperados (`strong`=950, `bold`=700-950, `medium`=500-600, `subtle`=100-400, `quiet`=25-50).
+**Los 322 tokens aplicados resuelven a una variable existente.** No hay bindings roto ni colores escritos a mano.
 
 ---
 
-## 1. Tokens aplicados que no existen (24)
+## 1. Variables locales (deuda real) — 20 variables, 370 usos
 
-Nombres bindeados en componentes que **no están definidos** en la colección `Color`. Agrupados por causa.
+Variables que viven en colecciones **locales del archivo de librería** en lugar de venir de `Foundations`. El problema no es visual: es que hay dos fuentes de verdad para el mismo valor, y un cambio en Foundations no las alcanza.
 
-### 1.a — Focus ring: tres nombres para lo mismo (18 usos)
+### Dimensión y spacing — 344 usos
 
-El caso de mayor impacto.
+| Variable | Usos | Colección local | Equivalente en Foundations |
+|---|---|---|---|
+| `border/with/thin` | 120 | Semantic dimension | `border/width/thin` — nótese el typo **with** |
+| `border/radius/none` | 112 | Semantic dimension | `border/corner/corner-0` |
+| `Spacing/SM/space-4` | 28 | Primitives | `spacing/100` |
+| `space/0x` | 27 | Semantic dimension | `spacing/0` |
+| `border/radius/full` | 16 | Dimension | `border/corner/corner-2000` |
+| `Spacing/SM/space-2` | 12 | Primitives | `spacing/50` |
+| `border/radius/xxs` | 8 | Dimension | `border/corner/corner-100` |
+| `border/width/100` | 8 | Dimension | `border/width/thin` |
+| `size/200` | 8 | Dimension | revisar destino |
+| `size/50` | 4 | Dimension | revisar destino — `.Checkbox` |
+| `space/3x` | 4 | Semantic dimension | `spacing/300` — `Backdrop` |
+| `space/2,5x` | 3 | Semantic dimension | `spacing/250` |
+| `Radius/0px` | 1 | 🔢 Units | `border/corner/corner-0` — `Story-item` |
 
-| Token aplicado | Usos | Componentes |
+Los dos primeros concentran 232 de los 370 usos. `border/with/thin` arrastra un typo en el nombre (`with` en vez de `width`), lo que confirma que se creó a mano en el archivo en lugar de consumirse de Foundations.
+
+### Color — 26 usos
+
+| Variable | Usos | Colección local | Nota |
+|---|---|---|---|
+| `static/background/neutral/primary/medium` | 8 | Color | `neutral` no lleva sub-familia |
+| `static/background/neutral/primary-medium` | 6 | Color | misma idea, con guión |
+| `static/background/neutral/primary` | 1 | Color | tercera variante — `Onboarding-screen` |
+| `static/foreground/sky` | 1 | Expressive | `sky` no es familia del sistema |
+| `static/background/sky` | 1 | Expressive | ídem |
+| `static/background/pink` | 1 | Expressive | `pink` existe solo en `expressive` |
+| `color/background/neutral/low-disabled` | 1 | Semantic color | nomenclatura de otra generación |
+
+Las tres variantes de `neutral/primary*` son el mismo concepto escrito de tres formas. Los tres de `sky`/`pink` están todos en `.⛔ Asset-container_asset-background`.
+
+---
+
+## 2. Nombre viejo en cache (cosmético) — 18 nombres, 57 usos
+
+El binding apunta a la variable correcta de Foundations. Lo que está desactualizado es el **nombre** que guarda el archivo consumidor, porque no refrescó la librería después de que Foundations renombrara la variable.
+
+**No hay que rebindear nada.** Se resuelve actualizando la librería en Components / Templates / Custom.
+
+### Iteración `main` → `primary` (14 usos)
+
+| Nombre en cache | Usos | Nombre actual |
 |---|---|---|
-| `interactive/border/brand/main/focus/medium` | 10 | Banner-sm/md/lg/xl, Video-card, Button-card, Shortcut-asset, Shortcut-brand… |
-| `interactive/border/brand/focus` | 5 | Button-icon, Button-row, Chip, `.⛔️ Shortcut_button`, `.⛔️ Tabs_option` |
-| `interactive/border/brand/focus-medium` | 3 | Accordion, Row-item, Button-toggle |
+| `interactive/border/brand/main/focus/medium` | 12 | `interactive/border/brand/primary/focus/medium` |
+| `interactive/border/brand/main/hover/subtle` | 1 | `interactive/border/brand/primary/hover/subtle` |
+| `interactive/border/brand/main/pressed/medium` | 1 | `interactive/border/brand/primary/pressed/bold` |
 
-**Nombre correcto:** `interactive/border/brand/primary/focus/medium` (existe y tiene 28 usos).
+### Nombres previos del mismo token de focus (8 usos)
 
-Nótese que `main` no es una sub-familia válida: la correcta es `primary`.
-
-### 1.b — Escalas `secondary` / `tertiary` (naming derogado, 18 usos)
-
-La escala vigente es `strong > bold > medium > subtle > quiet`. Estos nombres son de una nomenclatura anterior.
-
-| Token aplicado | Usos | Debería ser |
+| Nombre en cache | Usos | Nombre actual |
 |---|---|---|
-| `static/foreground/neutral/tertiary-subtle` | 11 | `static/foreground/neutral/subtle` |
+| `interactive/border/brand/focus` | 5 | `interactive/border/brand/primary/focus/medium` |
+| `interactive/border/brand/focus-medium` | 3 | `interactive/border/brand/primary/focus/medium` |
+
+Sumando la fila de `main/focus/medium` de arriba: **20 usos apuntan al token de focus con tres nombres históricos distintos**. Todos son la variable `b5a951495b65…`, es decir, están bien aplicados.
+
+### Iteración `tertiary` / `secondary` → escala vigente (19 usos)
+
+| Nombre en cache | Usos | Nombre actual |
+|---|---|---|
+| `static/foreground/neutral/tertiary-subtle` | 12 | `static/foreground/neutral/subtle` |
 | `static/foreground/neutral/tertiary/subtle` | 5 | `static/foreground/neutral/subtle` |
-| `static/foreground/neutral/secondary` | 1 | `static/foreground/neutral/medium` |
-| `static/foreground/neutral/secondary/medium` | 1 | `static/foreground/neutral/medium` |
+| `static/foreground/neutral/secondary/medium` | 1 | `static/foreground/neutral/bold` |
+| `static/foreground/neutral/secondary` | 1 | `static/foreground/neutral/bold` |
 
-Los dos primeros son el mismo concepto escrito de dos formas (guión vs. slash).
+### Escalas que se agregaron después (12 usos)
 
-### 1.c — `neutral/primary` en background (10 usos)
-
-| Token aplicado | Usos | Componentes |
+| Nombre en cache | Usos | Nombre actual |
 |---|---|---|
-| `static/background/neutral/primary-medium` | 5 | Card-container y sus internos, Notification (custom) |
-| `static/background/neutral/primary/medium` | 4 | Asset-container_asset-background, Stories (templates) |
-| `static/background/neutral/primary` | 1 | Onboarding-screen (templates) |
+| `interactive/background/neutral/default` | 6 | `interactive/background/neutral/default/quiet` |
+| `interactive/foreground/brand/default` | 2 | `interactive/foreground/brand/primary/default/medium` |
+| `interactive/background/brand/default` | 1 | `interactive/background/brand/default/medium` |
+| `interactive/foreground/neutral/default-subtle` | 1 | `interactive/foreground/neutral/default/medium` |
+| `interactive/background/brand/hover/medium` | 1 | `interactive/background/brand/hover/bold` |
+| `interactive/background/brand/hover/subtle` | 1 | `interactive/background/brand/hover/quiet` |
+| `interactive/border/neutral/disabled/medium` | 1 | `interactive/border/neutral/disabled/subtle` |
 
-Tres variantes del mismo nombre. Además, `neutral` no lleva sub-familia por definición: `primary` no corresponde acá.
+### Iteración `purple` → `violet` en ilustración (3 usos)
 
-### 1.d — Familias de color inexistentes (5 usos)
-
-| Token aplicado | Usos | Problema |
+| Nombre en cache | Usos | Nombre actual |
 |---|---|---|
-| `static/background/pink` | 1 | `pink` no es familia semántica (existe solo en `expressive`) |
-| `static/background/sky` | 1 | `sky` no existe en el sistema |
-| `static/foreground/sky` | 1 | ídem |
-| `expressive/illustration/purple/medium` | 1 | `purple` no es familia de ilustración |
-| `expressive/illustration/purple/quiet` | 1 | ídem |
-
-Los tres primeros están todos en `.⛔ Asset-container_asset-background`. Los dos de `purple` en `Card-Personal-Pay` (custom) — las familias de ilustración válidas son amber, bourbon, coral, emerald, lavender, magenta, melon, sapphire, teal y violet.
-
-### 1.e — Estados y escalas inexistentes (9 usos)
-
-| Token aplicado | Usos | Problema |
-|---|---|---|
-| `interactive/background/neutral/default` | 3 | Falta la escala |
-| `interactive/foreground/brand/default` | 2 | Falta sub-familia y escala |
-| `interactive/background/brand/default` | 1 | Falta la escala |
-| `interactive/background/brand/hover/medium` | 1 | No existe `hover/medium` |
-| `interactive/background/brand/hover/subtle` | 1 | No existe `hover/subtle` en brand |
-| `interactive/border/brand/main/hover/subtle` | 1 | `main` inválido |
-| `interactive/border/brand/main/pressed/medium` | 1 | `main` inválido |
-| `interactive/border/neutral/disabled/medium` | 1 | No existe esa escala en disabled |
-| `interactive/foreground/neutral/default-subtle` | 1 | Guión en vez de slash |
-
-**`Toggle-number` (custom) concentra 4 de estos.** Es el componente con más tokens inválidos del sistema; conviene revisarlo completo.
+| `expressive/illustration/purple/quiet` | 2 | `expressive/illustration/violet/quiet` |
+| `expressive/illustration/purple/medium` | 1 | `expressive/illustration/violet/medium` |
 
 ---
 
-## 2. Colisiones de estado
+## 3. Sobre tokens que comparten primitivo
 
-Tokens de **estados distintos** que apuntan al **mismo primitivo**, es decir: el cambio de estado no produce cambio visual.
+Varios pares de tokens semánticos resuelven al mismo primitivo. Por ejemplo, `core/purple/500` alimenta a `interactive/border/brand/primary/default/medium`, `interactive/border/brand/primary/focus/medium`, `interactive/background/brand/default/medium` y `static/foreground/brand/primary/medium`.
 
-### 🔴 Críticas
+**Esto no es deuda.** Es el comportamiento esperado de una capa semántica: el mismo valor se nombra distinto según el contexto de uso (borde vs. fondo vs. texto) y según el estado, para que cada uno pueda evolucionar por separado sin tocar los demás.
 
-**disabled = hover**
-
-```
-core/neutral/100
-├── interactive/background/neutral/disabled/subtle   (14 usos)
-└── interactive/background/neutral/hover/subtle       (9 usos)
-```
-
-Un elemento deshabilitado se ve igual que uno en hover. Conecta directo con la señal de *taps sobre elementos disabled* del plan de métricas: si el token no diferencia, es esperable que la gente intente tocar botones deshabilitados.
-
-**focus = default**
-
-```
-core/purple/500
-├── interactive/border/brand/primary/default/medium   (15 usos)
-└── interactive/border/brand/primary/focus/medium     (28 usos)
-```
-
-El focus ring no se distingue del borde por defecto. Afecta navegación por teclado y cumplimiento de accesibilidad. Y es el token de focus más usado del sistema (28 usos), así que el impacto es amplio.
-
-### 🟡 A revisar
-
-| Primitivo | Tokens | Usos |
-|---|---|---|
-| `core/purple/200` | `border/brand/primary/` default/subtle · hover/subtle · pressed/subtle | 4 · 6 · 6 |
-| `core/purple/900` | `border/brand/primary/` hover/bold · pressed/bold | 6 · 8 |
-| `core/purple/900` | `foreground/brand/primary/` default/bold · pressed/bold | 10 · 5 |
-| `core/purple/700` | `background/brand/` default/bold · hover/bold | 3 · 12 |
-| `core/purple/50` | `background/brand/` default/quiet · hover/quiet | 12 · 12 |
-| `core/neutral/600` | `foreground/neutral/` default/medium · hover/medium | 8 · 1 |
-
-**Matiz importante:** compartir primitivo no es necesariamente un error. Es válido cuando el cambio de estado se resuelve con una capa de `opacity` encima en lugar del color de fondo. Hay que verificar componente por componente si esa capa de overlay existe; donde no exista, es un bug real.
-
-Los dos casos críticos no admiten esa justificación: en `disabled` no hay overlay que lo explique, y el focus ring por definición debe ser distinguible.
+Solo sería un problema si dos estados del mismo contexto no se distinguieran visualmente **por ningún medio**. Verificarlo requiere mirar el componente, no la tabla de tokens: el cambio de estado puede resolverse con un overlay de opacidad, un stroke adicional, un cambio de weight o de posición, no necesariamente con el color.
 
 ---
 
-## 3. `static/border/brand/secondary` apunta a purple
+## 4. Sin descripciones
 
-```
-static/border/brand/secondary  →  core/purple/200
-```
-
-`brand/secondary` es cyan en los otros 5 tokens de la familia:
-
-| Token | Primitivo |
-|---|---|
-| `interactive/foreground/brand/secondary/default/bold` | `core/cyan/900` ✓ |
-| `interactive/foreground/brand/secondary/default/medium` | `core/cyan/600` ✓ |
-| `interactive/border/brand/secondary/active/medium` | `core/cyan/500` ✓ |
-| `static/background/brand/secondary/medium` | `core/cyan/600` ✓ |
-| `static/background/brand/secondary/subtle` | `core/cyan/100` ✓ |
-
-O el valor está mal, o el token debería llamarse `static/border/brand/primary/subtle`.
+**0 de 686 variables** tienen el campo `description` completo en Figma. Es el texto que aparece al elegir una variable desde el panel, o sea, justo en el momento en que alguien duda cuál aplicar.
 
 ---
 
-## 4. Tokens definidos sin uso (3)
+## 5. Huecos del sistema
 
-| Token | Primitivo |
-|---|---|
-| `interactive/foreground/brand/secondary/default/bold` | `core/cyan/900` |
-| `interactive/foreground/brand/secondary/default/medium` | `core/cyan/600` |
-| `static/foreground/brand/primary/bold` | `core/purple/900` |
-
-Los dos de `secondary` sugieren que la familia cyan está definida pero no adoptada. Decidir si se aplican o se deprecan.
-
----
-
-## 5. Valores hardcodeados (29)
-
-Colores aplicados sin token.
-
-### Components (6)
-
-Todos son `#FFFFFF` en vectores de `Status-bar` y sus internos (`_wifi`, `_celular`, `_battery`).
-
-### Templates (23)
-
-| Componente | Valor | Nota |
-|---|---|---|
-| `.⛔️ Stories-template_logo-onboarding` | `#5A50F7` | **Morado de marca hardcodeado** |
-| `Stories` | `#5A50F7` | ídem |
-| `Stories`, `Splash`, `Onboarding-screen` | `#FFFFFF` | Vectores |
-
-El caso de `#5A50F7` es el más relevante: es el color de marca escrito a mano. Si el primitivo de marca cambia, estos no se actualizan.
-
-### Custom (0)
-
-Sin hardcodeados. 👍
-
----
-
-## 6. Sin descripciones
-
-**0 de 818 variables** tienen el campo `description` completo en Figma. Llenarlo haría que el propósito de cada token sea visible al aplicarlo desde el panel de variables, que es justo el momento en que alguien duda cuál elegir.
-
----
-
-## 7. Huecos del sistema
-
-- **No hay `interactive/background/feedback/*`.** Los feedback existen solo como `static`. Un input en error cuyo fondo cambie con la interacción no tiene token. Explica los intentos de usar `interactive/background/brand/hover/subtle` y similares.
+- **No hay `interactive/background/feedback/*`.** Los feedback existen solo como `static`. Un input en error cuyo fondo cambie con la interacción no tiene token.
 - **`interactive/background/neutral` no tiene `pressed`.** Están `default`, `hover` y `disabled`.
 - **`static/opacity` no tiene familia `feedback`.**
 
 ---
 
-## Progreso desde la auditoría anterior (21-jun → 3-ago)
+## Orden de trabajo sugerido
 
-Tres cosas se resolvieron:
-
-| Antes | Ahora |
-|---|---|
-| `static/opacity/brand/medium` — aplicado pero no definido | ✅ Definido → `opacity/purple/600` |
-| `static/opacity/neutral/subtle` — aplicado pero no definido | ✅ Definido → `opacity/gray/400` |
-| `static/opacity/brand/strong` — definido sin uso | ✅ Eliminado |
-
-También cambió un valor: `interactive/opacity/neutral/disabled` pasó de `opacity/gray/200` a `opacity/gray/50`.
-
-Los huérfanos totales subieron de 11 a 24, pero **no por regresión**: esta auditoría incluye Templates y Custom, que antes no se revisaban. De los 24, hay 11 que vienen de esos dos archivos.
+1. **Refrescar la librería** en Components, Templates y Custom → resuelve los 18 nombres viejos (57 usos) sin tocar un solo binding. Es lo más rápido y limpia el ruido de las próximas auditorías.
+2. **Migrar `border/with/thin` y `border/radius/none`** a sus equivalentes de Foundations → 232 usos, el 63% de la deuda real en dos cambios.
+3. **Migrar el resto de dimensión y spacing** → 112 usos, cambio mecánico.
+4. **Consolidar las tres variantes de `static/background/neutral/primary*`** → 15 usos.
+5. **Resolver `sky` / `pink` en `.⛔ Asset-container_asset-background`** → 3 usos, decidir familia válida.
+6. **Completar descripciones** en Figma.
+7. **Evaluar los huecos**, sobre todo `interactive/background/feedback/*`.
 
 ---
 
-## Orden de trabajo sugerido
+## Nota metodológica
 
-1. **Unificar el focus ring** → 18 usos en 14 componentes hacia `interactive/border/brand/primary/focus/medium`. Un solo cambio, el mayor impacto.
-2. **Separar el valor de `focus` del de `default`** → hoy el focus ring es invisible. Es un tema de accesibilidad.
-3. **Separar `disabled` de `hover`** en background neutral → 23 usos afectados.
-4. **Migrar `tertiary` / `secondary`** a la escala vigente → 18 usos, cambio mecánico.
-5. **Consolidar `neutral/primary-medium`** en sus tres variantes → 10 usos.
-6. **Revisar `Toggle-number`** (custom) → concentra 4 tokens inválidos.
-7. **Tokenizar `#5A50F7`** en Templates → riesgo si cambia el color de marca.
-8. **Resolver `static/border/brand/secondary`** → decidir si es valor o nombre.
-9. **Completar descripciones** en Figma → mejora la elección en el momento de aplicar.
-10. **Evaluar los huecos** → sobre todo `interactive/background/feedback/*`.
+La auditoría anterior (documentada antes de esta revisión) reportaba 24 tokens inexistentes y 2 colisiones de estado críticas. Ambos eran falsos positivos:
+
+- Los "inexistentes" resultaron ser 18 nombres viejos en cache (variable correcta) + 20 variables locales (existen, en otra colección). Comparar por nombre en lugar de por `key` no permite distinguirlos.
+- Las "colisiones" eran tokens semánticos distintos compartiendo primitivo, que es el comportamiento esperado.
+
+De ahí que este documento compare por `key` y separe explícitamente las tres situaciones.
