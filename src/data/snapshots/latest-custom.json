@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-07-27T14:51:38.243Z",
+  "takenAt": "2026-08-04T14:31:33.299Z",
   "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
   "fileName": "Custom components",
   "components": [
@@ -11588,7 +11588,7 @@
         {
           "layerName": "Personal-Pay-Iso",
           "property": "size.width",
-          "value": 20
+          "value": 24
         },
         {
           "layerName": "Personal-Pay-Iso",
@@ -12818,7 +12818,7 @@
         {
           "layerName": "Personal-Pay-Iso",
           "property": "size.width",
-          "value": 20
+          "value": 24
         },
         {
           "layerName": "Personal-Pay-Iso",
