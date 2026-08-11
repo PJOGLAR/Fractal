@@ -1,0 +1,3415 @@
+{
+  "totalTokens": 818,
+  "usedTokens": 282,
+  "orphanTokens": 555,
+  "orphansByCollection": [
+    {
+      "collection": "Border",
+      "totalTokens": 15,
+      "usedTokens": 15,
+      "orphanTokens": 0,
+      "orphans": []
+    },
+    {
+      "collection": "Asset",
+      "totalTokens": 15,
+      "usedTokens": 15,
+      "orphanTokens": 0,
+      "orphans": []
+    },
+    {
+      "collection": "Global typography",
+      "totalTokens": 38,
+      "usedTokens": 0,
+      "orphanTokens": 38,
+      "orphans": [
+        {
+          "id": "VariableID:184:965",
+          "name": "font/family/display",
+          "type": "STRING",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:184:6220",
+          "name": "font/family/body",
+          "type": "STRING",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:186:6692",
+          "name": "font/size/250",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:186:6693",
+          "name": "font/size/300",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:186:6694",
+          "name": "font/size/350",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:186:6696",
+          "name": "font/size/450",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:186:6698",
+          "name": "font/size/1000",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:186:6699",
+          "name": "font/size/1200",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:186:6700",
+          "name": "font/size/1300",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:186:6701",
+          "name": "font/size/1400",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:186:6702",
+          "name": "font/size/1600",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:186:6703",
+          "name": "font/size/1800",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:186:6704",
+          "name": "font/size/2000",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:206:968",
+          "name": "font/letter-spacing/100",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:206:970",
+          "name": "font/letter-spacing/200",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:227:5787",
+          "name": "font/size/600",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:231:8041",
+          "name": "font/size/900",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:236:6639",
+          "name": "font/size/500",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:255:6669",
+          "name": "font/weight/regular",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:255:6670",
+          "name": "font/weight/medium",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:255:6671",
+          "name": "font/weight/semibold",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:255:6672",
+          "name": "font/weight/bold",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:346:6819",
+          "name": "font/size/400",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:1552:935",
+          "name": "font/line-height/500",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:1552:936",
+          "name": "font/line-height/600",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:1552:937",
+          "name": "font/line-height/700",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:1552:938",
+          "name": "font/line-height/900",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:1552:939",
+          "name": "font/line-height/1100",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:1552:940",
+          "name": "font/line-height/1300",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:1552:941",
+          "name": "font/line-height/1500",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:1552:942",
+          "name": "font/line-height/1700",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:1552:943",
+          "name": "font/line-height/1900",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:1552:945",
+          "name": "font/line-height/250",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:1552:946",
+          "name": "font/line-height/300",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:1552:948",
+          "name": "font/line-height/400",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:1552:949",
+          "name": "font/line-height/2100",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:1557:935",
+          "name": "font/line-height/800",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        },
+        {
+          "id": "VariableID:1561:1005",
+          "name": "font/line-height/450",
+          "type": "FLOAT",
+          "collection": "Global typography"
+        }
+      ]
+    },
+    {
+      "collection": "Global dimension",
+      "totalTokens": 53,
+      "usedTokens": 1,
+      "orphanTokens": 52,
+      "orphans": [
+        {
+          "id": "VariableID:235:8084",
+          "name": "spacing/500",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8085",
+          "name": "spacing/300",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8086",
+          "name": "spacing/250",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8087",
+          "name": "spacing/200",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8088",
+          "name": "spacing/150",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8089",
+          "name": "spacing/400",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8090",
+          "name": "spacing/100",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8091",
+          "name": "spacing/1800",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8092",
+          "name": "spacing/0",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8093",
+          "name": "spacing/1400",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8094",
+          "name": "spacing/1300",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8095",
+          "name": "spacing/1100",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8096",
+          "name": "spacing/600",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8097",
+          "name": "spacing/50",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8098",
+          "name": "spacing/2000",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8099",
+          "name": "spacing/1000",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8100",
+          "name": "spacing/1600",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8101",
+          "name": "spacing/900",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:235:8102",
+          "name": "spacing/1200",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:254:5826",
+          "name": "corner/300",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:254:5827",
+          "name": "corner/200",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:254:5828",
+          "name": "corner/0",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:254:5829",
+          "name": "corner/150",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:254:5830",
+          "name": "corner/100",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:254:5831",
+          "name": "width/300",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:254:5832",
+          "name": "width/200",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:254:5833",
+          "name": "corner/2000",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:254:5834",
+          "name": "corner/600",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:254:5835",
+          "name": "corner/400",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:254:5836",
+          "name": "corner/1000",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:254:5837",
+          "name": "corner/500",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:254:5838",
+          "name": "width/100",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:814:947",
+          "name": "asset/50",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:814:948",
+          "name": "asset/100",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:814:949",
+          "name": "asset/200",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:814:950",
+          "name": "asset/300",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:814:951",
+          "name": "asset/400",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:814:953",
+          "name": "asset/600",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:814:954",
+          "name": "asset/700",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:814:955",
+          "name": "asset/800",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:814:956",
+          "name": "asset/900",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:814:957",
+          "name": "asset/1000",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:814:958",
+          "name": "asset/1100",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:1561:995",
+          "name": "corner/250",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:1600:826",
+          "name": "asset/75",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:2370:525",
+          "name": "corner/350",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:3927:133",
+          "name": "spacing/2200",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:3927:134",
+          "name": "spacing/2400",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:3927:135",
+          "name": "spacing/2800",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:3927:136",
+          "name": "spacing/3200",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:3927:137",
+          "name": "spacing/3600",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        },
+        {
+          "id": "VariableID:3927:138",
+          "name": "spacing/4000",
+          "type": "FLOAT",
+          "collection": "Global dimension"
+        }
+      ]
+    },
+    {
+      "collection": "Typography",
+      "totalTokens": 160,
+      "usedTokens": 117,
+      "orphanTokens": 43,
+      "orphans": [
+        {
+          "id": "VariableID:255:6696",
+          "name": "body/md/bold/letter-spacing",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:255:6697",
+          "name": "body/md/bold/font-weight",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:255:6698",
+          "name": "body/md/bold/font-size",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:255:6699",
+          "name": "body/md/bold/font-family",
+          "type": "STRING",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:255:6766",
+          "name": "body/lg/regular/letter-spacing",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:255:6767",
+          "name": "body/lg/regular/font-weight",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:255:6768",
+          "name": "body/lg/regular/font-size",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:255:6769",
+          "name": "body/lg/regular/font-family",
+          "type": "STRING",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:255:6798",
+          "name": "body/lg/bold/letter-spacing",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:255:6799",
+          "name": "body/lg/bold/font-weight",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:255:6800",
+          "name": "body/lg/bold/font-size",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:255:6801",
+          "name": "body/lg/bold/font-family",
+          "type": "STRING",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:276:6764",
+          "name": "caption/md/regular/font-weight",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:280:6806",
+          "name": "heading/lg/bold/font-size",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:280:6807",
+          "name": "heading/lg/bold/font-weight",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:280:6808",
+          "name": "heading/lg/bold/font-family",
+          "type": "STRING",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:280:6818",
+          "name": "heading/lg/semibold/letter-spacing",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:453:7510",
+          "name": "display/lg/bold/letter-spacing",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:453:7511",
+          "name": "display/lg/bold/font-weight",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:453:7512",
+          "name": "display/lg/bold/font-size",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:453:7513",
+          "name": "display/lg/bold/font-family",
+          "type": "STRING",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:453:7523",
+          "name": "display/lg/semibold/letter-spacing",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:453:7524",
+          "name": "display/lg/semibold/font-weight",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:453:7525",
+          "name": "display/lg/semibold/font-size",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:453:7526",
+          "name": "display/lg/semibold/font-family",
+          "type": "STRING",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:453:7562",
+          "name": "display/md/semibold/font-family",
+          "type": "STRING",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:453:7563",
+          "name": "display/md/semibold/font-size",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:453:7564",
+          "name": "display/md/semibold/font-weight",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:453:7565",
+          "name": "display/md/semibold/letter-spacing",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:453:7570",
+          "name": "display/sm/semibold/font-family",
+          "type": "STRING",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:754:7212",
+          "name": "body/lg/medium/font-family",
+          "type": "STRING",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:754:7213",
+          "name": "body/lg/medium/font-size",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:754:7214",
+          "name": "body/lg/medium/font-weight",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:754:7215",
+          "name": "body/lg/medium/letter-spacing",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:1561:1008",
+          "name": "body/md/bold/line-height",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:1561:1009",
+          "name": "body/lg/regular/line-height",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:1561:1010",
+          "name": "body/lg/bold/line-height",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:1561:1012",
+          "name": "body/lg/medium/line-height",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:1561:1018",
+          "name": "heading/lg/bold/line-height",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:1561:1020",
+          "name": "heading/xl/bold/line-height",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:1561:1023",
+          "name": "display/md/semibold/line-height",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:1561:1025",
+          "name": "display/lg/semibold/line-height",
+          "type": "FLOAT",
+          "collection": "Typography"
+        },
+        {
+          "id": "VariableID:1561:1026",
+          "name": "display/lg/bold/line-height",
+          "type": "FLOAT",
+          "collection": "Typography"
+        }
+      ]
+    },
+    {
+      "collection": "Color",
+      "totalTokens": 253,
+      "usedTokens": 88,
+      "orphanTokens": 165,
+      "orphans": [
+        {
+          "id": "VariableID:2118:831",
+          "name": "static/foreground/brand/primary/bold",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:2993:7",
+          "name": "interactive/foreground/brand/secondary/default/bold",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:2993:8",
+          "name": "interactive/foreground/brand/secondary/default/medium",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1256",
+          "name": "expressive/illustration/magenta/bold",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1257",
+          "name": "expressive/illustration/magenta/medium",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1258",
+          "name": "expressive/illustration/magenta/subtle",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1260",
+          "name": "expressive/illustration/coral/subtle",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1261",
+          "name": "expressive/illustration/coral/quiet",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1262",
+          "name": "expressive/illustration/coral/bold",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1263",
+          "name": "expressive/illustration/coral/medium",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1266",
+          "name": "expressive/illustration/amber/medium",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1267",
+          "name": "expressive/illustration/amber/subtle",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1268",
+          "name": "expressive/illustration/amber/bold",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1269",
+          "name": "expressive/illustration/amber/quiet",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1271",
+          "name": "expressive/illustration/emerald/bold",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1272",
+          "name": "expressive/illustration/emerald/medium",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1273",
+          "name": "expressive/illustration/emerald/subtle",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1274",
+          "name": "expressive/illustration/teal/bold",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1275",
+          "name": "expressive/illustration/teal/quiet",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1278",
+          "name": "expressive/illustration/sapphire/medium",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1279",
+          "name": "expressive/illustration/sapphire/subtle",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1280",
+          "name": "expressive/illustration/lavender/bold",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1281",
+          "name": "expressive/illustration/lavender/medium",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1282",
+          "name": "expressive/illustration/lavender/quiet",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1284",
+          "name": "expressive/illustration/bourbon/medium",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1289",
+          "name": "expressive/illustration/sapphire/bold",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1290",
+          "name": "expressive/illustration/melon/medium",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3319:1291",
+          "name": "expressive/illustration/melon/subtle",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3324:22",
+          "name": "expressive/illustration/violet/bold",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3440:22",
+          "name": "expressive/illustration/emerald/quiet",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3440:23",
+          "name": "expressive/illustration/magenta/quiet",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3440:24",
+          "name": "expressive/illustration/lavender/subtle",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3440:26",
+          "name": "expressive/illustration/teal/medium",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3440:27",
+          "name": "expressive/illustration/teal/subtle",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3440:29",
+          "name": "expressive/illustration/sapphire/quiet",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3476:31",
+          "name": "expressive/illustration/melon/quiet",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3477:2",
+          "name": "expressive/illustration/melon/bold",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3477:3",
+          "name": "expressive/illustration/bourbon/bold",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3477:4",
+          "name": "expressive/illustration/bourbon/subtle",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3477:5",
+          "name": "expressive/illustration/bourbon/quiet",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:135",
+          "name": "expressive/amber/800",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:136",
+          "name": "expressive/amber/200",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:137",
+          "name": "expressive/amber/700",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:139",
+          "name": "expressive/amber/950",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:140",
+          "name": "expressive/amber/100",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:141",
+          "name": "expressive/amber/300",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:142",
+          "name": "expressive/amber/900",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:143",
+          "name": "expressive/amber/500",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:144",
+          "name": "expressive/amber/400",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:145",
+          "name": "expressive/amber/50",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:208",
+          "name": "expressive/coral/800",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:209",
+          "name": "expressive/coral/600",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:210",
+          "name": "expressive/coral/400",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:211",
+          "name": "expressive/coral/300",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:213",
+          "name": "expressive/coral/200",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:214",
+          "name": "expressive/coral/700",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:215",
+          "name": "expressive/coral/500",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:216",
+          "name": "expressive/coral/50",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:217",
+          "name": "expressive/coral/950",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3564:218",
+          "name": "expressive/coral/100",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:45",
+          "name": "expressive/emerald/800",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:46",
+          "name": "expressive/emerald/700",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:47",
+          "name": "expressive/emerald/900",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:48",
+          "name": "expressive/emerald/400",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:49",
+          "name": "expressive/emerald/300",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:50",
+          "name": "expressive/emerald/200",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:51",
+          "name": "expressive/emerald/50",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:52",
+          "name": "expressive/emerald/950",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:53",
+          "name": "expressive/emerald/600",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:55",
+          "name": "expressive/emerald/100",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:79",
+          "name": "expressive/lavender/900",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:80",
+          "name": "expressive/lavender/800",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:81",
+          "name": "expressive/lavender/600",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:82",
+          "name": "expressive/lavender/400",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:83",
+          "name": "expressive/lavender/950",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:84",
+          "name": "expressive/lavender/100",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:85",
+          "name": "expressive/lavender/700",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:86",
+          "name": "expressive/lavender/300",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:87",
+          "name": "expressive/lavender/200",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:88",
+          "name": "expressive/lavender/500",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:89",
+          "name": "expressive/lavender/50",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:114",
+          "name": "expressive/magenta/900",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:115",
+          "name": "expressive/magenta/800",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:116",
+          "name": "expressive/magenta/600",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:117",
+          "name": "expressive/magenta/700",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:118",
+          "name": "expressive/magenta/500",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:119",
+          "name": "expressive/magenta/400",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:120",
+          "name": "expressive/magenta/50",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:121",
+          "name": "expressive/magenta/200",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:122",
+          "name": "expressive/magenta/950",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:123",
+          "name": "expressive/magenta/300",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:124",
+          "name": "expressive/magenta/100",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:148",
+          "name": "expressive/melon/900",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:149",
+          "name": "expressive/melon/800",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:150",
+          "name": "expressive/melon/600",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:151",
+          "name": "expressive/melon/500",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:152",
+          "name": "expressive/melon/200",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:153",
+          "name": "expressive/melon/100",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:154",
+          "name": "expressive/melon/300",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:155",
+          "name": "expressive/melon/950",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:156",
+          "name": "expressive/melon/700",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:157",
+          "name": "expressive/melon/400",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3565:158",
+          "name": "expressive/melon/50",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:46",
+          "name": "expressive/bourbon/900",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:47",
+          "name": "expressive/bourbon/800",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:48",
+          "name": "expressive/bourbon/700",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:49",
+          "name": "expressive/bourbon/400",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:50",
+          "name": "expressive/bourbon/300",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:51",
+          "name": "expressive/bourbon/600",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:52",
+          "name": "expressive/bourbon/100",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:53",
+          "name": "expressive/bourbon/200",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:54",
+          "name": "expressive/bourbon/950",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:55",
+          "name": "expressive/bourbon/500",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:56",
+          "name": "expressive/bourbon/50",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:95",
+          "name": "expressive/pink/900",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:96",
+          "name": "expressive/pink/800",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:97",
+          "name": "expressive/pink/700",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:99",
+          "name": "expressive/pink/400",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:100",
+          "name": "expressive/pink/300",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:101",
+          "name": "expressive/pink/200",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:102",
+          "name": "expressive/pink/950",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:103",
+          "name": "expressive/pink/100",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:104",
+          "name": "expressive/pink/500",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:105",
+          "name": "expressive/pink/50",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:130",
+          "name": "expressive/teal/800",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:131",
+          "name": "expressive/teal/600",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:132",
+          "name": "expressive/teal/500",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:133",
+          "name": "expressive/teal/400",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:134",
+          "name": "expressive/teal/700",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:135",
+          "name": "expressive/teal/200",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:136",
+          "name": "expressive/teal/100",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:137",
+          "name": "expressive/teal/950",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:138",
+          "name": "expressive/teal/300",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3567:139",
+          "name": "expressive/teal/50",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3614:7",
+          "name": "expressive/violet/100",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3614:9",
+          "name": "expressive/violet/300",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3614:10",
+          "name": "expressive/violet/400",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3614:12",
+          "name": "expressive/violet/600",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3614:13",
+          "name": "expressive/violet/700",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3614:14",
+          "name": "expressive/violet/800",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3614:15",
+          "name": "expressive/violet/900",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3614:16",
+          "name": "expressive/violet/950",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3685:56",
+          "name": "expressive/iron/50",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3685:57",
+          "name": "expressive/iron/100",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3685:58",
+          "name": "expressive/iron/200",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3685:59",
+          "name": "expressive/iron/300",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3685:60",
+          "name": "expressive/iron/400",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3685:61",
+          "name": "expressive/iron/500",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3685:62",
+          "name": "expressive/iron/600",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3685:63",
+          "name": "expressive/iron/700",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3685:64",
+          "name": "expressive/iron/800",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3685:65",
+          "name": "expressive/iron/900",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3685:66",
+          "name": "expressive/iron/950",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3765:2",
+          "name": "expressive/sapphire/50",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3765:3",
+          "name": "expressive/sapphire/100",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3765:4",
+          "name": "expressive/sapphire/200",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3765:5",
+          "name": "expressive/sapphire/300",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3765:6",
+          "name": "expressive/sapphire/400",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3765:7",
+          "name": "expressive/sapphire/500",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3765:8",
+          "name": "expressive/sapphire/600",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3765:9",
+          "name": "expressive/sapphire/700",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3765:10",
+          "name": "expressive/sapphire/800",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3765:11",
+          "name": "expressive/sapphire/900",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:3765:12",
+          "name": "expressive/sapphire/950",
+          "type": "COLOR",
+          "collection": "Color"
+        },
+        {
+          "id": "VariableID:4154:5343",
+          "name": "static/opacity/brand/medium",
+          "type": "COLOR",
+          "collection": "Color"
+        }
+      ]
+    },
+    {
+      "collection": "Screen size",
+      "totalTokens": 2,
+      "usedTokens": 0,
+      "orphanTokens": 2,
+      "orphans": [
+        {
+          "id": "VariableID:417:6638",
+          "name": "min-width",
+          "type": "FLOAT",
+          "collection": "Screen size"
+        },
+        {
+          "id": "VariableID:767:7204",
+          "name": "max-width",
+          "type": "FLOAT",
+          "collection": "Screen size"
+        }
+      ]
+    },
+    {
+      "collection": "Global color",
+      "totalTokens": 233,
+      "usedTokens": 8,
+      "orphanTokens": 225,
+      "orphans": [
+        {
+          "id": "VariableID:522:7937",
+          "name": "core/red/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7938",
+          "name": "core/red/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7939",
+          "name": "core/red/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7940",
+          "name": "core/red/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7941",
+          "name": "core/red/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7942",
+          "name": "core/red/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7943",
+          "name": "core/red/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7944",
+          "name": "core/red/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7945",
+          "name": "core/red/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7946",
+          "name": "core/red/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7947",
+          "name": "core/red/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7948",
+          "name": "core/orange/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7949",
+          "name": "core/orange/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7950",
+          "name": "core/orange/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7951",
+          "name": "core/orange/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7952",
+          "name": "core/orange/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7953",
+          "name": "core/orange/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7954",
+          "name": "core/orange/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7955",
+          "name": "core/orange/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7956",
+          "name": "core/orange/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7957",
+          "name": "core/orange/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7958",
+          "name": "core/orange/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7970",
+          "name": "core/green/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7971",
+          "name": "core/green/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7972",
+          "name": "core/green/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7973",
+          "name": "core/green/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7974",
+          "name": "core/green/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7975",
+          "name": "core/green/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7976",
+          "name": "core/green/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7977",
+          "name": "core/green/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7978",
+          "name": "core/green/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7979",
+          "name": "core/green/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7980",
+          "name": "core/green/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7981",
+          "name": "core/cyan/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7982",
+          "name": "core/cyan/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7983",
+          "name": "core/cyan/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7984",
+          "name": "core/cyan/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7985",
+          "name": "core/cyan/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7986",
+          "name": "core/cyan/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7987",
+          "name": "core/cyan/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7988",
+          "name": "core/cyan/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7989",
+          "name": "core/cyan/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7990",
+          "name": "core/cyan/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7991",
+          "name": "core/cyan/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7992",
+          "name": "core/purple/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7993",
+          "name": "core/purple/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7994",
+          "name": "core/purple/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7995",
+          "name": "core/purple/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7996",
+          "name": "core/purple/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7997",
+          "name": "core/purple/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7998",
+          "name": "core/purple/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:7999",
+          "name": "core/purple/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:8000",
+          "name": "core/purple/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:8001",
+          "name": "core/purple/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:8002",
+          "name": "core/purple/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:8003",
+          "name": "expressive/pink/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:8004",
+          "name": "expressive/pink/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:8005",
+          "name": "expressive/pink/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:8006",
+          "name": "expressive/pink/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:8007",
+          "name": "expressive/pink/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:8008",
+          "name": "expressive/pink/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:8010",
+          "name": "expressive/pink/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:8011",
+          "name": "expressive/pink/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:8012",
+          "name": "expressive/pink/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:522:8013",
+          "name": "expressive/pink/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:524:4886",
+          "name": "core/blue/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:524:4887",
+          "name": "core/blue/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:524:4888",
+          "name": "core/blue/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:524:4889",
+          "name": "core/blue/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:524:4890",
+          "name": "core/blue/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:524:4891",
+          "name": "core/blue/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:524:4892",
+          "name": "core/blue/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:524:4893",
+          "name": "core/blue/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:524:4894",
+          "name": "core/blue/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:524:4895",
+          "name": "core/blue/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:524:4896",
+          "name": "core/blue/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:701:15072",
+          "name": "core/neutral/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:701:15073",
+          "name": "core/neutral/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:701:15074",
+          "name": "core/neutral/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:701:15075",
+          "name": "core/neutral/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:701:15076",
+          "name": "core/neutral/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:701:15077",
+          "name": "core/neutral/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:701:15078",
+          "name": "core/neutral/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:701:15079",
+          "name": "core/neutral/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:701:15080",
+          "name": "core/neutral/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:701:15081",
+          "name": "core/neutral/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:869:59204",
+          "name": "core/neutral/25",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:1078:5848",
+          "name": "core/neutral/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:562",
+          "name": "opacity/gray/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:563",
+          "name": "opacity/gray/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:564",
+          "name": "opacity/gray/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:565",
+          "name": "opacity/gray/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:566",
+          "name": "opacity/gray/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:567",
+          "name": "opacity/gray/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:568",
+          "name": "opacity/gray/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:569",
+          "name": "opacity/gray/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:570",
+          "name": "opacity/gray/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:571",
+          "name": "opacity/gray/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:572",
+          "name": "opacity/gray/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:573",
+          "name": "opacity/gray/25",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:597",
+          "name": "opacity/purple/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:598",
+          "name": "opacity/purple/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:599",
+          "name": "opacity/purple/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:600",
+          "name": "opacity/purple/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:601",
+          "name": "opacity/purple/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:602",
+          "name": "opacity/purple/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:603",
+          "name": "opacity/purple/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:604",
+          "name": "opacity/purple/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:605",
+          "name": "opacity/purple/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:606",
+          "name": "opacity/purple/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:2365:607",
+          "name": "opacity/purple/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3319:1225",
+          "name": "expressive/magenta/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3319:1226",
+          "name": "expressive/magenta/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3319:1227",
+          "name": "expressive/magenta/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3319:1228",
+          "name": "expressive/coral/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3319:1229",
+          "name": "expressive/coral/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3319:1230",
+          "name": "expressive/coral/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3319:1237",
+          "name": "expressive/amber/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3319:1238",
+          "name": "expressive/amber/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3319:1239",
+          "name": "expressive/teal/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3319:1240",
+          "name": "expressive/teal/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3319:1249",
+          "name": "expressive/lavender/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3319:1250",
+          "name": "expressive/lavender/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3319:1251",
+          "name": "expressive/lavender/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3319:1252",
+          "name": "expressive/bourbon/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3319:1253",
+          "name": "expressive/bourbon/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3319:1254",
+          "name": "expressive/melon/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3397:4427",
+          "name": "expressive/magenta/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3397:4429",
+          "name": "expressive/magenta/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3397:4430",
+          "name": "expressive/magenta/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3397:4431",
+          "name": "expressive/magenta/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3397:4432",
+          "name": "expressive/magenta/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3397:4433",
+          "name": "expressive/magenta/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3397:4434",
+          "name": "expressive/magenta/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4435",
+          "name": "expressive/coral/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4436",
+          "name": "expressive/coral/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4437",
+          "name": "expressive/coral/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4438",
+          "name": "expressive/coral/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4439",
+          "name": "expressive/coral/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4440",
+          "name": "expressive/coral/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4441",
+          "name": "expressive/coral/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4443",
+          "name": "expressive/amber/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4444",
+          "name": "expressive/amber/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4445",
+          "name": "expressive/amber/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4446",
+          "name": "expressive/amber/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4447",
+          "name": "expressive/amber/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4449",
+          "name": "expressive/amber/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4450",
+          "name": "expressive/amber/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4451",
+          "name": "expressive/amber/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4452",
+          "name": "expressive/teal/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4453",
+          "name": "expressive/teal/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4454",
+          "name": "expressive/teal/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4455",
+          "name": "expressive/teal/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4457",
+          "name": "expressive/teal/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4458",
+          "name": "expressive/teal/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4459",
+          "name": "expressive/teal/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4460",
+          "name": "expressive/teal/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4471",
+          "name": "expressive/bourbon/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4472",
+          "name": "expressive/bourbon/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4473",
+          "name": "expressive/bourbon/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4474",
+          "name": "expressive/bourbon/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4475",
+          "name": "expressive/bourbon/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4476",
+          "name": "expressive/bourbon/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4477",
+          "name": "expressive/bourbon/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4478",
+          "name": "expressive/bourbon/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3400:4479",
+          "name": "expressive/bourbon/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3401:4487",
+          "name": "expressive/magenta/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4488",
+          "name": "expressive/melon/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4489",
+          "name": "expressive/melon/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4490",
+          "name": "expressive/melon/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4491",
+          "name": "expressive/melon/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4492",
+          "name": "expressive/melon/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4493",
+          "name": "expressive/melon/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4494",
+          "name": "expressive/melon/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4495",
+          "name": "expressive/melon/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4496",
+          "name": "expressive/melon/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4497",
+          "name": "expressive/melon/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4498",
+          "name": "expressive/lavender/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4499",
+          "name": "expressive/lavender/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4500",
+          "name": "expressive/lavender/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4501",
+          "name": "expressive/lavender/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4502",
+          "name": "expressive/lavender/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4503",
+          "name": "expressive/lavender/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4504",
+          "name": "expressive/lavender/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3404:4505",
+          "name": "expressive/lavender/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3414:4506",
+          "name": "expressive/emerald/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3414:4507",
+          "name": "expressive/emerald/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3414:4508",
+          "name": "expressive/emerald/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3414:4509",
+          "name": "expressive/emerald/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3414:4510",
+          "name": "expressive/emerald/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3414:4512",
+          "name": "expressive/emerald/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3414:4513",
+          "name": "expressive/emerald/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3414:4514",
+          "name": "expressive/emerald/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3414:4515",
+          "name": "expressive/emerald/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3414:4516",
+          "name": "expressive/emerald/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3686:42",
+          "name": "expressive/iron/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3686:55",
+          "name": "expressive/iron/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3686:56",
+          "name": "expressive/iron/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3686:57",
+          "name": "expressive/iron/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3686:58",
+          "name": "expressive/iron/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3686:59",
+          "name": "expressive/iron/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3686:60",
+          "name": "expressive/iron/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3686:61",
+          "name": "expressive/iron/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3686:62",
+          "name": "expressive/iron/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3686:63",
+          "name": "expressive/iron/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3686:64",
+          "name": "expressive/iron/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:3",
+          "name": "expressive/violet/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:5",
+          "name": "expressive/violet/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:6",
+          "name": "expressive/violet/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:8",
+          "name": "expressive/violet/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:9",
+          "name": "expressive/violet/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:10",
+          "name": "expressive/violet/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:11",
+          "name": "expressive/violet/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:12",
+          "name": "expressive/violet/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:13",
+          "name": "expressive/sapphire/50",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:14",
+          "name": "expressive/sapphire/100",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:15",
+          "name": "expressive/sapphire/200",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:16",
+          "name": "expressive/sapphire/300",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:17",
+          "name": "expressive/sapphire/400",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:18",
+          "name": "expressive/sapphire/500",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:19",
+          "name": "expressive/sapphire/600",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:20",
+          "name": "expressive/sapphire/700",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:21",
+          "name": "expressive/sapphire/800",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:22",
+          "name": "expressive/sapphire/900",
+          "type": "COLOR",
+          "collection": "Global color"
+        },
+        {
+          "id": "VariableID:3859:23",
+          "name": "expressive/sapphire/950",
+          "type": "COLOR",
+          "collection": "Global color"
+        }
+      ]
+    },
+    {
+      "collection": "Spacing",
+      "totalTokens": 48,
+      "usedTokens": 18,
+      "orphanTokens": 30,
+      "orphans": [
+        {
+          "id": "VariableID:805:7273",
+          "name": "padding/padding-500",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:139",
+          "name": "gap/gap-900",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:140",
+          "name": "gap/gap-1000",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:141",
+          "name": "gap/gap-1100",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:142",
+          "name": "gap/gap-1200",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:143",
+          "name": "gap/gap-1300",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:144",
+          "name": "gap/gap-1400",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:145",
+          "name": "gap/gap-1600",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:146",
+          "name": "gap/gap-1800",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:147",
+          "name": "gap/gap-2000",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:148",
+          "name": "padding/padding-900",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:149",
+          "name": "padding/padding-1000",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:150",
+          "name": "padding/padding-1100",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:152",
+          "name": "padding/padding-1300",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:153",
+          "name": "padding/padding-1400",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:154",
+          "name": "padding/padding-1600",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:155",
+          "name": "padding/padding-1800",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3927:156",
+          "name": "padding/padding-2000",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3950:157",
+          "name": "gap/gap-2200",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3950:158",
+          "name": "gap/gap-2400",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3950:159",
+          "name": "gap/gap-2800",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3950:160",
+          "name": "gap/gap-3200",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3950:161",
+          "name": "gap/gap-3600",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3950:162",
+          "name": "gap/gap-4000",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3950:163",
+          "name": "padding/padding-2200",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3950:164",
+          "name": "padding/padding-2400",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3950:165",
+          "name": "padding/padding-2800",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3950:166",
+          "name": "padding/padding-3200",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3950:167",
+          "name": "padding/padding-3600",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        },
+        {
+          "id": "VariableID:3950:168",
+          "name": "padding/padding-4000",
+          "type": "FLOAT",
+          "collection": "Spacing"
+        }
+      ]
+    },
+    {
+      "collection": "Density mode",
+      "totalTokens": 1,
+      "usedTokens": 1,
+      "orphanTokens": 0,
+      "orphans": []
+    }
+  ],
+  "auditedAt": "2026-08-10T15:12:34.095Z"
+}

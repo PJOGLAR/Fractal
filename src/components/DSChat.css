@@ -1,0 +1,274 @@
+/* Botón flotante */
+.ds-chat-toggle {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #5A50F9 0%, #7B69FF 100%);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 8px 32px rgba(90, 80, 249, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.ds-chat-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 40px rgba(90, 80, 249, 0.4);
+}
+
+/* Modal */
+.ds-chat-modal {
+  position: fixed;
+  bottom: 100px;
+  right: 24px;
+  width: 400px;
+  height: 600px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E5E7EB;
+  z-index: 1001;
+  overflow: hidden;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Container */
+.ds-chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Header */
+.ds-chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #5A50F9 0%, #7B69FF 100%);
+  color: white;
+}
+
+.ds-chat-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ds-chat-title h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ds-chat-icon {
+  font-size: 20px;
+}
+
+.ds-chat-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ds-chat-control-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.ds-chat-control-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.ds-chat-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.ds-chat-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Messages */
+.ds-chat-messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ds-chat-welcome {
+  color: #6B7280;
+  font-size: 14px;
+}
+
+.ds-chat-welcome ul {
+  margin: 12px 0 0 0;
+  padding-left: 16px;
+}
+
+.ds-chat-welcome li {
+  margin-bottom: 6px;
+}
+
+.ds-chat-voice-tip {
+  margin-top: 16px;
+  padding: 12px;
+  background: #F0F7FF;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #1F2937;
+}
+
+/* Message */
+.ds-chat-message {
+  display: flex;
+  align-items: flex-start;
+}
+
+.ds-chat-message.user {
+  justify-content: flex-end;
+}
+
+.ds-chat-message-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  max-width: 85%;
+}
+
+.ds-chat-message.user .ds-chat-message-content {
+  flex-direction: row-reverse;
+}
+
+.ds-chat-avatar {
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.ds-chat-text {
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  position: relative;
+}
+
+
+
+.ds-chat-message.user .ds-chat-text {
+  background: #5A50F9;
+  color: white;
+}
+
+.ds-chat-message.assistant .ds-chat-text {
+  background: #F3F4F6;
+  color: #374151;
+}
+
+.ds-chat-typing {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Call controls */
+.ds-chat-call-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  border-top: 1px solid #E5E7EB;
+  background: #FAFAFA;
+}
+
+.ds-chat-call-btn {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 24px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ds-chat-call-btn.start {
+  background: #5A50F9;
+  color: white;
+}
+
+.ds-chat-call-btn.start:hover {
+  background: #4338CA;
+}
+
+.ds-chat-call-btn.connecting {
+  background: #D1D5DB;
+  color: #6B7280;
+  cursor: not-allowed;
+}
+
+.ds-chat-call-btn.end {
+  background: #FEE2E2;
+  color: #EF4444;
+}
+
+.ds-chat-call-btn.end:hover {
+  background: #FECACA;
+}
+
+.ds-chat-live-indicator {
+  font-size: 12px;
+  color: #EF4444;
+  font-weight: 600;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .ds-chat-modal {
+    right: 16px;
+    left: 16px;
+    width: auto;
+    bottom: 90px;
+  }
+  
+  .ds-chat-toggle {
+    right: 16px;
+    bottom: 16px;
+  }
+}

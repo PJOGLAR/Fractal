@@ -8,6 +8,7 @@ import { TokenExplorer } from './components/TokenExplorer'
 import { Overview } from './components/Overview'
 import { Changelog } from './components/Changelog'
 import { AssetTokens } from './components/AssetTokens'
+import { DSChat } from './components/DSChat'
 import './App.css'
 
 type View = 'overview' | 'components' | 'tokens' | 'assets' | 'changelog'
@@ -72,6 +73,9 @@ export default function App() {
           {view === 'changelog'  && <Changelog />}
         </div>
       </main>
+      
+      {/* Chat Assistant */}
+      <DSChat />
     </div>
   )
 }

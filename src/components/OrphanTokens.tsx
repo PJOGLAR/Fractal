@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
 import { DashboardData } from '../types'
+import foundationsData from '../data/foundations-data.json'
 import './OrphanTokens.css'
 
 interface OrphanTokensProps {
@@ -11,7 +12,7 @@ export function OrphanTokens({ data }: OrphanTokensProps) {
   const [collectionFilter, setCollectionFilter] = useState<string | null>(null)
   const [groupFilter, setGroupFilter] = useState<string | null>(null)
 
-  // Calculate orphan tokens: combine dynamically calculated + pre-calculated from library cross-reference
+  // Calculate orphan tokens: use foundations-data.json (source of truth) vs component bindings
   const orphanTokens = useMemo(() => {
     const usedTokenNames = new Set<string>()
     for (const comp of data.components) {
@@ -19,23 +20,23 @@ export function OrphanTokens({ data }: OrphanTokensProps) {
         if (binding.tokenName) usedTokenNames.add(binding.tokenName)
       }
     }
-    // Tokens in foundations not used
-    const allTokens = [...data.foundations.primitiveTokens, ...data.foundations.semanticTokens]
-    const fromFoundations = allTokens.filter(t => !usedTokenNames.has(t.name))
     
-    // Tokens from orphanTokens array (library cross-reference)
-    const fromLibrary = (data.orphanTokens || []).filter(t => !usedTokenNames.has(t.name))
+    // Use foundations-data.json as source of truth, but only semantic tokens that should be applied to components
+    // Exclude: Global* (primitives), Expressive (illustrations), Screen size (layout)
+    const semanticCollections = ['Color', 'Typography', 'Spacing', 'Border', 'Asset', 'Density mode']
+    const allTokens = foundationsData.variables || []
+    const semanticTokens = allTokens.filter(token => semanticCollections.includes(token.collection))
+    const orphans = semanticTokens.filter(token => !usedTokenNames.has(token.name))
     
-    // Merge, deduplicate by name
-    const seen = new Set<string>()
-    const merged = []
-    for (const t of [...fromFoundations, ...fromLibrary]) {
-      if (!seen.has(t.name)) {
-        seen.add(t.name)
-        merged.push(t)
-      }
-    }
-    return merged
+    // Convert to expected format
+    return orphans.map(token => ({
+      id: token.id,
+      name: token.name,
+      collection: token.collection,
+      type: token.resolvedType || token.type,
+      // Add hex for colors if available
+      hex: token.resolvedType === 'COLOR' && typeof token.value === 'string' ? token.value : undefined
+    }))
   }, [data])
 
   const tokenTypes = useMemo(
@@ -70,7 +71,11 @@ export function OrphanTokens({ data }: OrphanTokensProps) {
     return tokens
   }, [orphanTokens, typeFilter, collectionFilter, groupFilter])
 
-  const allTokensCount = data.foundations.primitiveTokens.length + data.foundations.semanticTokens.length
+  // Only count semantic tokens that should be applied to components
+  const semanticCollections = ['Color', 'Typography', 'Spacing', 'Border', 'Asset', 'Density mode']
+  const allTokensCount = foundationsData.variables?.filter(token => 
+    semanticCollections.includes(token.collection)
+  ).length || 0
 
   return (
     <div className="orphan-tokens">

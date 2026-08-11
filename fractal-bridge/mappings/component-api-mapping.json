@@ -1,0 +1,200 @@
+{
+  "TextInput": {
+    "figmaVariants": {
+      "Size": ["md"],
+      "State": ["default", "focus", "error", "disabled"],
+      "HasLabel": ["true", "false"],
+      "HasButton": ["true", "false"],
+      "HasSupportingText": ["true", "false"]
+    },
+    "codeAPI": {
+      "label": "string | undefined",
+      "placeholder": "string | undefined", 
+      "value": "string",
+      "onChangeText": "(text: string) => void",
+      "error": "boolean | string | undefined",
+      "disabled": "boolean",
+      "rightIcon": "string | undefined",
+      "leftIcon": "string | undefined",
+      "supportingText": "string | undefined",
+      "keyboardType": "default | email-address | numeric | phone-pad"
+    },
+    "businessContext": {
+      "search": "Para búsqueda de destinatarios usar placeholder descriptivo",
+      "amounts": "Para montos usar InputAmount en lugar de TextInput",
+      "optional": "Campos opcionales indicar en el label '(opcional)'"
+    },
+    "mappingNotes": "Usar hasLabel, hasButton, hasSupportingText para controlar elementos opcionales"
+  },
+
+  "InputAmount": {
+    "figmaVariants": {
+      "Currency": ["peso"],
+      "State": ["default"],
+      "HasDecimal": ["true", "false"]
+    },
+    "codeAPI": {
+      "value": "string",
+      "onChangeText": "(text: string) => void",
+      "currency": "peso",
+      "placeholder": "string",
+      "hasDecimal": "boolean"
+    },
+    "businessContext": {
+      "transfers": "Siempre centrado en pantalla para ingreso de montos",
+      "currency": "Por defecto peso argentino ($)",
+      "minimum": "Validar monto mínimo $100 para transferencias"
+    }
+  },
+
+  "Row": {
+    "figmaVariants": {
+      "HasLeadingContent": ["true", "false"],
+      "HasTrailingContent": ["true", "false"], 
+      "Interactive": ["static", "pressable"]
+    },
+    "codeAPI": {
+      "leadingContent": "ReactNode | undefined",
+      "trailingContent": "ReactNode | undefined",
+      "onPress": "(() => void) | undefined",
+      "children": "ReactNode",
+      "style": "ViewStyle | undefined"
+    },
+    "businessContext": {
+      "summaries": "Para resúmenes usar con iconos en leading y edit en trailing",
+      "lists": "Para listas de contactos usar con avatar en leading",
+      "balance": "Para mostrar saldo disponible con logo Personal Pay"
+    }
+  },
+
+  "Alert": {
+    "figmaVariants": {
+      "Variant": ["info", "success", "warning", "error"],
+      "Dismissible": ["true", "false"]
+    },
+    "codeAPI": {
+      "variant": ["info", "success", "warning", "error"],
+      "title": "string | undefined",
+      "message": "string",
+      "dismissible": "boolean",
+      "onDismiss": "(() => void) | undefined"
+    },
+    "businessContext": {
+      "delays": "variant='info' para alertas sobre demoras en servicio",
+      "limits": "Mostrar límites diarios y restricciones temporales",
+      "inline": "Siempre inline en el flujo, nunca modals"
+    }
+  },
+
+  "EmptyState": {
+    "figmaVariants": {
+      "Illustration": ["looking-contact", "no-results", "error"],
+      "HasAction": ["true", "false"]
+    },
+    "codeAPI": {
+      "illustration": "string",
+      "title": "string",
+      "description": "string | undefined",
+      "actionLabel": "string | undefined",
+      "onAction": "(() => void) | undefined"
+    },
+    "businessContext": {
+      "search": "illustration='looking-contact' para búsqueda sin resultados",
+      "centered": "Siempre centrado con padding top considerable",
+      "guidance": "Incluir descripción clara de próximos pasos"
+    }
+  },
+
+  "Chip": {
+    "figmaVariants": {
+      "Variant": ["default", "outline", "filter"],
+      "Size": ["sm", "md"],
+      "Selected": ["true", "false"]
+    },
+    "codeAPI": {
+      "label": "string",
+      "variant": ["default", "outline", "filter"],
+      "size": ["sm", "md"],
+      "selected": "boolean",
+      "onPress": "(() => void) | undefined"
+    },
+    "businessContext": {
+      "amounts": "Para montos rápidos usar variant='outline'",
+      "filters": "Para filtros usar variant='filter' con selected state",
+      "horizontal": "Agrupar horizontalmente con gap consistente"
+    }
+  },
+
+  "Avatar": {
+    "figmaVariants": {
+      "Type": ["initials", "image", "icon"],
+      "Size": ["xs", "sm", "md", "lg", "xl"]
+    },
+    "codeAPI": {
+      "size": ["xs", "sm", "md", "lg", "xl"],
+      "initials": "string | undefined",
+      "source": "ImageSource | undefined"
+    },
+    "businessContext": {
+      "contacts": "size='sm' para listas, usar initials si no hay imagen",
+      "recipients": "Extraer initiales del nombre completo del destinatario"
+    }
+  },
+
+  "Button": {
+    "figmaVariants": {
+      "Variant": ["solid", "outline", "ghost"],
+      "Size": ["sm", "md", "lg"], 
+      "State": ["default", "hover", "pressed", "disabled", "loading"],
+      "HasIcon": ["true", "false"]
+    },
+    "codeAPI": {
+      "variant": ["solid", "outline", "ghost"],
+      "size": ["sm", "md", "lg"],
+      "label": "string",
+      "disabled": "boolean",
+      "loading": "boolean",
+      "leftIcon": "string | undefined",
+      "rightIcon": "string | undefined",
+      "onPress": "(() => void) | undefined"
+    },
+    "businessContext": {
+      "primary": "variant='solid' para acción principal (Continuar, Programar)",
+      "secondary": "variant='ghost' para acción secundaria (Cancelar)",
+      "edit": "variant='ghost' con leftIcon='edit' para editar valores",
+      "fullWidth": "En button groups usar width 100%"
+    }
+  },
+
+  "Card": {
+    "figmaVariants": {
+      "Variant": ["default", "outlined"],
+      "Interactive": ["static", "pressable"]
+    },
+    "codeAPI": {
+      "variant": ["default", "outlined"],
+      "onPress": "(() => void) | undefined",
+      "children": "ReactNode",
+      "style": "ViewStyle | undefined"
+    },
+    "businessContext": {
+      "summary": "variant='outlined' para resúmenes con borde visible",
+      "grouping": "Para agrupar información relacionada visualmente"
+    }
+  },
+
+  "Divider": {
+    "figmaVariants": {
+      "Orientation": ["horizontal", "vertical"],
+      "Variant": ["default", "subtle"]
+    },
+    "codeAPI": {
+      "orientation": ["horizontal", "vertical"],
+      "variant": ["default", "subtle"]
+    },
+    "businessContext": {
+      "rows": "Entre rows para separar visualmente información",
+      "sections": "Entre secciones principales de pantalla"
+    }
+  }
+}

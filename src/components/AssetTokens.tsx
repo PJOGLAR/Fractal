@@ -109,10 +109,10 @@ export function AssetTokens() {
         <p className="page-description">Tokens de color aplicados en ilustraciones y assets</p>
         <div className="asset-empty">
           <p className="asset-empty-icon">🎨</p>
-          <p className="asset-empty-title">Sin datos todavía</p>
+          <p className="asset-empty-title">Sin datos de assets</p>
           <p className="asset-empty-desc">
-            Corré el plugin <strong>Asset Extractor</strong> en el archivo de Assets de Figma
-            y guardá el JSON resultante en <code>src/data/asset-data.json</code>
+            Ejecutar <code>npm run extract</code> con <code>FIGMA_ASSETS_FILE_KEY</code> configurada
+            para generar <code>src/data/asset-data.json</code>
           </p>
         </div>
       </div>
