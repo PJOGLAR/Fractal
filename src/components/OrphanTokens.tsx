@@ -29,14 +29,22 @@ export function OrphanTokens({ data }: OrphanTokensProps) {
     const orphans = semanticTokens.filter(token => !usedTokenNames.has(token.name))
     
     // Convert to expected format
-    return orphans.map(token => ({
-      id: token.id,
-      name: token.name,
-      collection: token.collection,
-      type: token.resolvedType || token.type,
-      // Add hex for colors if available
-      hex: token.resolvedType === 'COLOR' && typeof token.value === 'string' ? token.value : undefined
-    }))
+    return orphans.map(token => {
+      // Handle both old and new data formats
+      const tokenType = (token as any).resolvedType || (token as any).type || 'UNKNOWN'
+      const tokenValue = (token as any).value
+      const tokenAlias = (token as any).aliasName
+      
+      return {
+        id: token.id,
+        name: token.name,
+        collection: token.collection,
+        type: tokenType,
+        aliasName: tokenAlias,
+        // Add hex for colors if available
+        hex: tokenType === 'COLOR' && typeof tokenValue === 'string' ? tokenValue : undefined
+      }
+    })
   }, [data])
 
   const tokenTypes = useMemo(
