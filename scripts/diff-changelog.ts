@@ -887,6 +887,29 @@ async function main() {
   if (iterados.size) compactSummaryParts.push(plural(iterados.size, 'iterado', 'iterados'))
   const compactSummary = compactSummaryParts.join(' · ') || 'Sin cambios de componentes'
 
+  // Solo guardar si hay cambios reales (no solo cambios en propiedades internas)
+  const hasRealChanges = nuevos.size > 0 || 
+                         eliminados.size > 0 || 
+                         iterados.size > 0 ||
+                         stats.variantsAdded > 0 ||
+                         stats.variantsRemoved > 0 ||
+                         stats.bindingsChanged > 0 ||
+                         stats.bindingsAdded > 0 ||
+                         stats.bindingsRemoved > 0
+
+  if (!hasRealChanges) {
+    console.log('')
+    console.log('='.repeat(55))
+    console.log('✅ Sin cambios significativos detectados')
+    console.log('   No se agrega entrada al changelog')
+    console.log('='.repeat(55))
+    
+    // Actualizar snapshot pero no changelog
+    writeFileSync(latestPath, JSON.stringify(current, null, 2))
+    console.log(`Snapshot actualizado: latest-${FILE_LABEL}.json`)
+    return
+  }
+
   const entry: ChangelogEntry = {
     id: Date.now().toString(36),
     timestamp: new Date().toISOString(),
