@@ -85,6 +85,37 @@ npm run build
 | `npm run preview` | Preview del build |
 | `npm run extract` | Extrae datos de Figma API |
 | `npm run diff` | Genera changelog entre versiones |
+| `npm run view-changelog` | Visualiza changelog con formato mejorado |
+
+### Sistema de Changelog Automático
+
+El proyecto incluye un **sistema de changelog detallado** que monitorea cambios en las librerías de Figma:
+
+- **Automatización:** Se ejecuta diariamente a las 9:00 AM (GitHub Actions)
+- **Librerías monitoreadas:** Components, Templates, Assets, Custom
+- **Output:** `src/data/changelog.json` con histórico de cambios
+- **Visor:** `npm run view-changelog` para navegación interactiva
+
+**Información que detecta:**
+- 🎨 Cambios en tokens (qué token cambió en qué propiedad)
+- 📐 Cambios en propiedades visuales (spacing, tamaños, colores)
+- 🔄 Variantes nuevas o modificadas
+- ✨ Componentes nuevos/eliminados/renombrados
+- 📊 Stats detallados de impacto
+
+**Ver guía completa:** [`docs/CHANGELOG-GUIDE.md`](./docs/CHANGELOG-GUIDE.md)
+
+**Uso rápido:**
+```bash
+# Generar diff manual
+npm run diff -- components
+
+# Ver últimos cambios
+npm run view-changelog
+
+# Filtrar por librería
+npm run view-changelog -- assets
+```
 
 ## Variables de Entorno
 
@@ -99,9 +130,22 @@ FIGMA_TEMPLATES_FILE_KEY=figma_templates_file_id
 FIGMA_ASSETS_FILE_KEY=figma_assets_file_id
 FIGMA_CUSTOM_COMPONENTS_FILE_KEY=figma_custom_file_id
 
+# Confluence API (opcional - para sincronizar documentación)
+CONFLUENCE_URL=https://tu-dominio.atlassian.net
+CONFLUENCE_EMAIL=tu-email@empresa.com
+CONFLUENCE_API_TOKEN=tu_confluence_token
+
 # Configuración
 COMPONENT_LIMIT=0  # 0 = todos los componentes
 ```
+
+### Confluence Sync (Opcional)
+
+Para alimentar el **Fractal Bridge** con documentación desde Confluence:
+1. Ver [SETUP-CONFLUENCE.md](./SETUP-CONFLUENCE.md) para configuración completa
+2. Configurar las 3 variables de Confluence en `.env`
+3. El MCP server permite consultar docs on-demand desde Kiro
+4. Docs de uso en `fractal-bridge/docs-sources/`
 
 ### Mapeo de Librerías
 | Variable ENV | Output File | Propósito |

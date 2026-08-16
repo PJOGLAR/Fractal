@@ -142,6 +142,13 @@ interface DiffEntry {
   nodeId: string
   details: string
   parentName?: string  // nombre del COMPONENT_SET padre, si aplica
+  // Campos expandidos para changelog detallado
+  variant?: string     // nombre de la variante afectada (ej: "State=Pressed")
+  property?: string    // nombre de la propiedad (ej: "paddingLeft", "fontSize")
+  layerName?: string   // capa dentro del componente
+  oldValue?: string    // valor anterior
+  newValue?: string    // valor nuevo
+  tokenName?: string   // nombre del token (si aplica)
 }
 
 interface ChangelogEntry {
@@ -152,6 +159,7 @@ interface ChangelogEntry {
   fileLabel: string
   summary: string
   changes: DiffEntry[]
+  detailed: Record<string, any>  // Información detallada por componente
   stats: Record<string, number>
 }
 
@@ -442,18 +450,48 @@ function computeDiff(before: Snapshot, after: Snapshot, names: Map<string, strin
       const prev = beforeBindings.get(key)
       if (!prev) {
         const tokenName = names.get(binding.variableId) || binding.variableId.slice(-12)
-        diffs.push({ type: 'binding_added', component: afterComp.name, nodeId: id, details: `${binding.layerName}.${binding.property} → ${tokenName}` })
+        diffs.push({ 
+          type: 'binding_added', 
+          component: afterComp.name, 
+          nodeId: id, 
+          details: `${binding.layerName}.${binding.property} → ${tokenName}`,
+          variant: afterComp.name.includes('=') ? afterComp.name : undefined,
+          property: binding.property,
+          layerName: binding.layerName,
+          tokenName
+        })
       } else if (prev.variableId !== binding.variableId) {
         const prevName = names.get(prev.variableId) || prev.variableId.slice(-12)
         const newName = names.get(binding.variableId) || binding.variableId.slice(-12)
-        diffs.push({ type: 'binding_changed', component: afterComp.name, nodeId: id, details: `${binding.layerName}.${binding.property}: ${prevName} → ${newName}` })
+        diffs.push({ 
+          type: 'binding_changed', 
+          component: afterComp.name, 
+          nodeId: id, 
+          details: `${binding.layerName}.${binding.property}: ${prevName} → ${newName}`,
+          variant: afterComp.name.includes('=') ? afterComp.name : undefined,
+          property: binding.property,
+          layerName: binding.layerName,
+          oldValue: prevName,
+          newValue: newName,
+          tokenName: newName
+        })
       }
     }
 
     for (const [key, binding] of beforeBindings) {
       if (!afterBindings.has(key)) {
         const tokenName = names.get(binding.variableId) || binding.variableId.slice(-12)
-        diffs.push({ type: 'binding_removed', component: beforeComp.name, nodeId: id, details: `${binding.layerName}.${binding.property} (era: ${tokenName})` })
+        diffs.push({ 
+          type: 'binding_removed', 
+          component: beforeComp.name, 
+          nodeId: id, 
+          details: `${binding.layerName}.${binding.property} (era: ${tokenName})`,
+          variant: beforeComp.name.includes('=') ? beforeComp.name : undefined,
+          property: binding.property,
+          layerName: binding.layerName,
+          oldValue: tokenName,
+          tokenName
+        })
       }
     }
 
@@ -466,7 +504,17 @@ function computeDiff(before: Snapshot, after: Snapshot, names: Map<string, strin
       if (prop.property === '__componentProps__' || prop.property === '__layerName__') continue
       const prev = beforePropVals.get(key)
       if (prev && prev.value !== prop.value) {
-        diffs.push({ type: 'property_changed', component: afterComp.name, nodeId: id, details: `${prop.layerName}.${prop.property}: ${prev.value} → ${prop.value}` })
+        diffs.push({ 
+          type: 'property_changed', 
+          component: afterComp.name, 
+          nodeId: id, 
+          details: `${prop.layerName}.${prop.property}: ${prev.value} → ${prop.value}`,
+          variant: afterComp.name.includes('=') ? afterComp.name : undefined,
+          property: prop.property,
+          layerName: prop.layerName,
+          oldValue: String(prev.value),
+          newValue: String(prop.value)
+        })
       }
     }
   }
@@ -602,13 +650,27 @@ async function main() {
   ])
 
   // Group remaining changes by component
-  const changedComponents = new Map<string, { name: string; nodeId: string; tokens: DiffEntry[]; properties: DiffEntry[] }>()
+  const changedComponents = new Map<string, { 
+    name: string; 
+    nodeId: string; 
+    isVariant: boolean;
+    parentName?: string;
+    tokens: DiffEntry[]; 
+    properties: DiffEntry[] 
+  }>()
   
   for (const d of diffs) {
     if (COMPONENT_LEVEL_TYPES.has(d.type)) continue
     const key = `${d.component}|${d.nodeId}`
     if (!changedComponents.has(key)) {
-      changedComponents.set(key, { name: d.component, nodeId: d.nodeId, tokens: [], properties: [] })
+      changedComponents.set(key, { 
+        name: d.component, 
+        nodeId: d.nodeId,
+        isVariant: d.component.includes('='),
+        parentName: d.parentName,
+        tokens: [], 
+        properties: [] 
+      })
     }
     const entry = changedComponents.get(key)!
     if (d.type === 'property_changed') {
@@ -623,39 +685,95 @@ async function main() {
     console.log('')
     
     for (const [, comp] of changedComponents) {
-      console.log(`**${comp.name}** (node: ${comp.nodeId})`)
+      // Header del componente
+      const componentHeader = comp.isVariant 
+        ? `**${comp.name}**` 
+        : `**${comp.name}**`
       
-      const tokenChanges = comp.tokens.filter(d => d.type === 'binding_changed')
-      const tokenAdded = comp.tokens.filter(d => d.type === 'binding_added')
-      const tokenRemoved = comp.tokens.filter(d => d.type === 'binding_removed')
+      console.log(`${componentHeader}`)
       
-      if (tokenChanges.length > 0) {
-        console.log('  Tokens cambiados:')
-        for (const d of tokenChanges) {
-          const parts = d.details.split(': ')
-          console.log(`    ${parts[0]}: ${parts.slice(1).join(': ')}`)
+      // Agrupar tokens por propiedad para mejor lectura
+      const tokensByProperty = new Map<string, DiffEntry[]>()
+      for (const t of comp.tokens) {
+        const propKey = t.property || 'other'
+        if (!tokensByProperty.has(propKey)) tokensByProperty.set(propKey, [])
+        tokensByProperty.get(propKey)!.push(t)
+      }
+      
+      // Mostrar cambios de tokens agrupados
+      if (tokensByProperty.size > 0) {
+        console.log('  🎨 Tokens:')
+        for (const [propName, changes] of tokensByProperty) {
+          const changed = changes.filter(d => d.type === 'binding_changed')
+          const added = changes.filter(d => d.type === 'binding_added')
+          const removed = changes.filter(d => d.type === 'binding_removed')
+          
+          if (changed.length > 0) {
+            console.log(`    • ${propName} (${changed.length} cambios):`)
+            for (const d of changed.slice(0, 5)) {
+              const layer = d.layerName ? `${d.layerName} → ` : ''
+              console.log(`      ${layer}${d.oldValue} ➜ ${d.newValue}`)
+            }
+            if (changed.length > 5) console.log(`      ... y ${changed.length - 5} más`)
+          }
+          
+          if (added.length > 0) {
+            console.log(`    • ${propName} (+${added.length} nuevos):`)
+            for (const d of added.slice(0, 3)) {
+              const layer = d.layerName ? `${d.layerName} → ` : ''
+              console.log(`      + ${layer}${d.tokenName}`)
+            }
+            if (added.length > 3) console.log(`      ... y ${added.length - 3} más`)
+          }
+          
+          if (removed.length > 0) {
+            console.log(`    • ${propName} (-${removed.length} eliminados):`)
+            for (const d of removed.slice(0, 3)) {
+              const layer = d.layerName ? `${d.layerName} → ` : ''
+              console.log(`      - ${layer}${d.oldValue}`)
+            }
+            if (removed.length > 3) console.log(`      ... y ${removed.length - 3} más`)
+          }
         }
       }
       
-      if (tokenAdded.length > 0) {
-        console.log('  Tokens agregados:')
-        for (const d of tokenAdded.slice(0, 10)) console.log(`    + ${d.details}`)
-        if (tokenAdded.length > 10) console.log(`    ... +${tokenAdded.length - 10} mas`)
+      // Agrupar propiedades visuales por tipo
+      const propsByType = new Map<string, DiffEntry[]>()
+      const PROP_CATEGORIES: Record<string, string[]> = {
+        'Spacing': ['paddingLeft', 'paddingRight', 'paddingTop', 'paddingBottom', 'itemSpacing'],
+        'Tamaño': ['width', 'height', 'minWidth', 'maxWidth', 'minHeight', 'maxHeight', 'size.width', 'size.height'],
+        'Bordes': ['topLeftRadius', 'topRightRadius', 'bottomLeftRadius', 'bottomRightRadius', 'strokeWeight'],
+        'Tipografía': ['fontSize', 'fontWeight', 'fontFamily', 'lineHeight', 'letterSpacing', 'characters'],
+        'Layout': ['layoutMode', 'primaryAxisAlignItems', 'counterAxisAlignItems', 'layoutWrap', 'primaryAxisSizingMode', 'counterAxisSizingMode'],
+        'Visual': ['opacity', 'visible', 'blendMode', 'clipsContent', 'effects'],
+        'Color': ['fill[0].color', 'fill[1].color', 'stroke[0].color', 'fill[0].opacity']
       }
       
-      if (tokenRemoved.length > 0) {
-        console.log('  Tokens eliminados:')
-        for (const d of tokenRemoved.slice(0, 10)) console.log(`    - ${d.details}`)
-        if (tokenRemoved.length > 10) console.log(`    ... +${tokenRemoved.length - 10} mas`)
-      }
-      
-      if (comp.properties.length > 0) {
-        console.log('  Propiedades:')
-        for (const d of comp.properties.slice(0, 10)) {
-          const parts = d.details.split(': ')
-          console.log(`    ${parts[0]}: ${parts.slice(1).join(': ')}`)
+      for (const prop of comp.properties) {
+        let category = 'Otros'
+        for (const [cat, props] of Object.entries(PROP_CATEGORIES)) {
+          if (props.some(p => prop.property?.includes(p))) {
+            category = cat
+            break
+          }
         }
-        if (comp.properties.length > 10) console.log(`    ... +${comp.properties.length - 10} mas`)
+        if (!propsByType.has(category)) propsByType.set(category, [])
+        propsByType.get(category)!.push(prop)
+      }
+      
+      if (propsByType.size > 0) {
+        console.log('  📐 Propiedades visuales:')
+        for (const [category, props] of propsByType) {
+          if (props.length > 0) {
+            console.log(`    • ${category} (${props.length} cambios):`)
+            for (const d of props.slice(0, 5)) {
+              const layer = d.layerName !== d.component ? `${d.layerName} → ` : ''
+              const propName = d.property?.replace('size.', '').replace('[0].', ' ').replace('[1].', ' ')
+              console.log(`      ${layer}${propName}: ${d.oldValue} ➜ ${d.newValue}`)
+            }
+            if (props.length > 5) console.log(`      ... y ${props.length - 5} más`)
+          }
+        }
       }
       
       console.log('')
@@ -702,6 +820,61 @@ async function main() {
   for (const n of nuevos) iterados.delete(n)
   for (const n of eliminados) iterados.delete(n)
 
+  // Generar changelog detallado por componente
+  const detailedChanges: Record<string, any> = {}
+  
+  for (const [, comp] of changedComponents) {
+    const compName = comp.name.includes('=') ? comp.name.split('=')[0] : comp.name
+    
+    if (!detailedChanges[compName]) {
+      detailedChanges[compName] = {
+        name: compName,
+        isVariant: comp.isVariant,
+        variants: {},
+        summary: {
+          tokensChanged: 0,
+          tokensAdded: 0,
+          tokensRemoved: 0,
+          propertiesChanged: 0
+        }
+      }
+    }
+    
+    const variantKey = comp.isVariant ? comp.name : '_base'
+    detailedChanges[compName].variants[variantKey] = {
+      tokens: {
+        changed: comp.tokens.filter(d => d.type === 'binding_changed').map(d => ({
+          property: d.property,
+          layer: d.layerName,
+          from: d.oldValue,
+          to: d.newValue
+        })),
+        added: comp.tokens.filter(d => d.type === 'binding_added').map(d => ({
+          property: d.property,
+          layer: d.layerName,
+          token: d.tokenName
+        })),
+        removed: comp.tokens.filter(d => d.type === 'binding_removed').map(d => ({
+          property: d.property,
+          layer: d.layerName,
+          token: d.oldValue
+        }))
+      },
+      properties: comp.properties.map(d => ({
+        property: d.property,
+        layer: d.layerName,
+        from: d.oldValue,
+        to: d.newValue
+      }))
+    }
+    
+    // Update summary
+    detailedChanges[compName].summary.tokensChanged += comp.tokens.filter(d => d.type === 'binding_changed').length
+    detailedChanges[compName].summary.tokensAdded += comp.tokens.filter(d => d.type === 'binding_added').length
+    detailedChanges[compName].summary.tokensRemoved += comp.tokens.filter(d => d.type === 'binding_removed').length
+    detailedChanges[compName].summary.propertiesChanged += comp.properties.length
+  }
+
   const compactChanges: DiffEntry[] = [
     ...[...nuevos].sort().map(n => ({ type: 'component_added' as const, component: n, nodeId: '', details: n })),
     ...[...eliminados].sort().map(n => ({ type: 'component_removed' as const, component: n, nodeId: '', details: n })),
@@ -722,6 +895,7 @@ async function main() {
     fileLabel: FILE_LABEL,
     summary: compactSummary,
     changes: compactChanges,
+    detailed: detailedChanges,
     stats,
   }
 

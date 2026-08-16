@@ -9,7 +9,9 @@
     "preview": "vite preview",
     "extract": "tsx personal/scripts/extract-figma-data.ts",
     "diff": "tsx scripts/diff-changelog.ts",
-    "extract-flows": "tsx scripts/extract-flows.ts"
+    "extract-flows": "tsx scripts/extract-flows.ts",
+    "sync:confluence": "echo 'Confluence sync via Kiro MCP - Use Kiro chat to sync specific pages'",
+    "view-changelog": "tsx scripts/view-changelog.ts"
   },
   "dependencies": {
     "@google/genai": "^2.16.0",

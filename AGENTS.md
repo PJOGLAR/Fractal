@@ -194,7 +194,7 @@ El dashboard consume datos extraídos mediante **DOS plugins de Figma complement
 - **Output:** Componentes de Figma con bindings correctos
 - **Uso:** Crear nuevos componentes siguiendo el sistema de tokens
 
-### Flujo de Datos del Dashboard
+## Flujo de Datos del Dashboard
 ```
 Figma Foundations File
         ↓
@@ -208,6 +208,32 @@ React Dashboard (src/App.tsx)
 
 Token Component Generator V2 ← para crear nuevos componentes
 ```
+
+## Sincronización con Confluence
+
+El bridge puede consumir documentación desde Confluence vía MCP server:
+
+### Setup
+1. Obtener API token: https://id.atlassian.com/manage-profile/security/api-tokens
+2. Configurar en `.env`:
+```bash
+CONFLUENCE_URL=https://tu-dominio.atlassian.net
+CONFLUENCE_EMAIL=tu-email@empresa.com
+CONFLUENCE_API_TOKEN=tu_token
+```
+3. MCP server está en `.kiro/settings/mcp.json`
+
+### Uso en Kiro
+```
+"Lista los espacios de Confluence disponibles"
+"Busca páginas sobre componentes Button"
+"Sincroniza la página de guidelines al bridge"
+```
+
+### Documentación
+- Ver `SETUP-CONFLUENCE.md` para configuración paso a paso
+- Ver `fractal-bridge/docs-sources/confluence-sync.md` para sincronización
+- Ver `fractal-bridge/docs-sources/confluence-examples.md` para ejemplos
 
 ### Scripts de Extracción
 - **Comando:** `npm run extract` 

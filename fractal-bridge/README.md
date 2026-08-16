@@ -156,12 +156,29 @@ Ver [Agent Guidelines](guides/agent-guidelines.md) para reglas específicas.
 - **Accessibility:** Screen reader, visual, motor accessibility
 - **Final sign-off:** UX, Dev, QA, Product Owner reviews
 
-## Herramientas necesarias
+## Estructura del Bridge
 
-- **Figma** — acceso al DS de Personal Pay
-- **Este repo** — documentación y reglas  
-- **Storybook** — [Link al Storybook](URL_STORYBOOK)
-- **Código** — `@ppay-mobile/fractal-ui`
+```
+fractal-bridge/
+├── guides/              # Guías de implementación
+├── mappings/            # Mapeos Figma → Código
+├── workflows/           # Procesos y checklists
+└── docs-sources/        # Documentación sincronizada desde fuentes externas
+    ├── confluence/      # Docs de Confluence (auto-sync)
+    ├── figma-specs/     # Specs exportadas de Figma
+    └── README.md        # Info sobre sincronización
+```
+
+## Fuentes de Documentación
+
+Este bridge se alimenta de múltiples fuentes:
+
+- **Figma:** Componentes y tokens vía plugins de extracción
+- **Confluence:** Documentación técnica y de procesos (ver `docs-sources/confluence-sync.md`)
+- **Storybook:** [Link al Storybook](URL_STORYBOOK)
+- **Código:** `@ppay-mobile/fractal-ui`
+
+Para configurar la sincronización con Confluence, ver [Confluence Sync Guide](docs-sources/confluence-sync.md).
 
 ---
 
