@@ -1,5 +1,37 @@
 [
   {
+    "id": "msx8mlkt",
+    "timestamp": "2026-08-17T12:56:30.653Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 eliminado",
+    "changes": [
+      {
+        "type": "component_removed",
+        "component": "Pill2",
+        "nodeId": "",
+        "details": "Pill2"
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 11,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
     "id": "msvt0gkz",
     "timestamp": "2026-08-16T12:51:37.331Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
