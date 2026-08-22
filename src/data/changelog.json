@@ -1,5 +1,69 @@
 [
   {
+    "id": "mt4dnfdr",
+    "timestamp": "2026-08-22T12:51:30.591Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "1 iterado",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Trophy-warning",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 1
+    }
+  },
+  {
+    "id": "mt4dn952",
+    "timestamp": "2026-08-22T12:51:22.502Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 iterado",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Empty-state",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 2,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 1,
+      "propsRemoved": 1,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 10,
+      "bindingsRemoved": 10,
+      "bindingsChanged": 0,
+      "propertiesChanged": 1
+    }
+  },
+  {
     "id": "mt2yiuw3",
     "timestamp": "2026-08-21T13:00:16.995Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",

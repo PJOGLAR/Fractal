@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-08-04T14:31:30.665Z",
+  "takenAt": "2026-08-22T12:51:30.557Z",
   "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
   "fileName": "Assets",
   "components": [
@@ -6628,43 +6628,8 @@
       "properties": [
         {
           "layerName": "Money-installment",
-          "property": "itemSpacing",
-          "value": 10
-        },
-        {
-          "layerName": "Money-installment",
           "property": "strokeWeight",
           "value": 1
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "layoutMode",
-          "value": "HORIZONTAL"
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "primaryAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "counterAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "layoutWrap",
-          "value": "NO_WRAP"
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Money-installment",
-          "property": "counterAxisSizingMode",
-          "value": "FIXED"
         },
         {
           "layerName": "Money-installment",
@@ -95693,7 +95658,7 @@
         {
           "layerName": "Trophy-warning",
           "property": "size.height",
-          "value": 55
+          "value": 56
         },
         {
           "layerName": "Trophy-warning",
@@ -210438,6 +210403,6 @@
   "stats": {
     "totalComponents": 638,
     "totalBindings": 5062,
-    "totalProperties": 35777
+    "totalProperties": 35770
   }
 }
