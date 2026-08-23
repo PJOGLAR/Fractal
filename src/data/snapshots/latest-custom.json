@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-08-05T14:24:51.632Z",
+  "takenAt": "2026-08-23T12:52:51.424Z",
   "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
   "fileName": "Custom components",
   "components": [
@@ -327,11 +327,6 @@
         },
         {
           "layerName": "Nav-bar",
-          "property": "maxWidth",
-          "value": 560
-        },
-        {
-          "layerName": "Nav-bar",
           "property": "clipsContent",
           "value": false
         },
@@ -409,6 +404,11 @@
           "layerName": "Main content",
           "property": "minWidth",
           "value": 312
+        },
+        {
+          "layerName": "Main content",
+          "property": "maxWidth",
+          "value": 560
         },
         {
           "layerName": "Main content",
@@ -13687,7 +13687,7 @@
         {
           "layerName": "Personal-Pay-Iso",
           "property": "size.width",
-          "value": 24
+          "value": 20
         },
         {
           "layerName": "Personal-Pay-Iso",
@@ -14917,7 +14917,7 @@
         {
           "layerName": "Personal-Pay-Iso",
           "property": "size.width",
-          "value": 24
+          "value": 20
         },
         {
           "layerName": "Personal-Pay-Iso",
