@@ -395,18 +395,33 @@ function computeDiff(before: Snapshot, after: Snapshot, names: Map<string, strin
     }
   }
 
+  // Helper: resolve the display name of the parent COMPONENT_SET for a variant.
+  const getParentName = (comp: SnapshotComponent): string | undefined => {
+    if (!comp.parentId) return undefined
+    return afterMap.get(comp.parentId)?.name || beforeMap.get(comp.parentId)?.name
+  }
+
+  // Helper: normalize the layer name used as diff key. The root layer of a component
+  // is named identically to the component itself; if the component (or a variant) is
+  // renamed, every root-level binding/property gets a NEW key and every previous one
+  // becomes ORPHAN, producing ghost add/remove pairs. Collapse the root to a sentinel
+  // so those bindings match across the rename.
+  const normalizeRoot = (layerName: string, comp: SnapshotComponent) =>
+    layerName === comp.name ? '__root__' : layerName
+
   // Compare existing components
   for (const [id, beforeComp] of beforeMap) {
     const afterComp = afterMap.get(id)
     if (!afterComp) continue
+    const variantParent = getParentName(afterComp)
 
     // Rename detection — flag as deprecation if the new name gains the ⛔ marker
     if (beforeComp.name !== afterComp.name) {
       const gainedDeprecation = !beforeComp.name.includes('⛔') && afterComp.name.includes('⛔')
       if (gainedDeprecation) {
-        diffs.push({ type: 'component_deprecated', component: afterComp.name, nodeId: id, details: `${beforeComp.name} → ${afterComp.name}` })
+        diffs.push({ type: 'component_deprecated', component: afterComp.name, nodeId: id, details: `${beforeComp.name} → ${afterComp.name}`, parentName: variantParent })
       } else {
-        diffs.push({ type: 'component_renamed', component: afterComp.name, nodeId: id, details: `${beforeComp.name} → ${afterComp.name}` })
+        diffs.push({ type: 'component_renamed', component: afterComp.name, nodeId: id, details: `${beforeComp.name} → ${afterComp.name}`, parentName: variantParent })
       }
     }
 
@@ -443,18 +458,23 @@ function computeDiff(before: Snapshot, after: Snapshot, names: Map<string, strin
     // La detección de instancias anidadas generaba mucho ruido (falsos positivos por
     // reordenamiento/duplicados) y no aporta al changelog simplificado. Se omite.
 
-    const beforeBindings = new Map(beforeComp.bindings.map(b => [`${b.layerName}|${b.property}`, b]))
-    const afterBindings = new Map(afterComp.bindings.map(b => [`${b.layerName}|${b.property}`, b]))
+    const beforeBindings = new Map(
+      beforeComp.bindings.map(b => [`${normalizeRoot(b.layerName, beforeComp)}|${b.property}`, b])
+    )
+    const afterBindings = new Map(
+      afterComp.bindings.map(b => [`${normalizeRoot(b.layerName, afterComp)}|${b.property}`, b])
+    )
 
     for (const [key, binding] of afterBindings) {
       const prev = beforeBindings.get(key)
       if (!prev) {
         const tokenName = names.get(binding.variableId) || binding.variableId.slice(-12)
-        diffs.push({ 
-          type: 'binding_added', 
-          component: afterComp.name, 
-          nodeId: id, 
+        diffs.push({
+          type: 'binding_added',
+          component: afterComp.name,
+          nodeId: id,
           details: `${binding.layerName}.${binding.property} → ${tokenName}`,
+          parentName: variantParent,
           variant: afterComp.name.includes('=') ? afterComp.name : undefined,
           property: binding.property,
           layerName: binding.layerName,
@@ -463,11 +483,12 @@ function computeDiff(before: Snapshot, after: Snapshot, names: Map<string, strin
       } else if (prev.variableId !== binding.variableId) {
         const prevName = names.get(prev.variableId) || prev.variableId.slice(-12)
         const newName = names.get(binding.variableId) || binding.variableId.slice(-12)
-        diffs.push({ 
-          type: 'binding_changed', 
-          component: afterComp.name, 
-          nodeId: id, 
+        diffs.push({
+          type: 'binding_changed',
+          component: afterComp.name,
+          nodeId: id,
           details: `${binding.layerName}.${binding.property}: ${prevName} → ${newName}`,
+          parentName: variantParent,
           variant: afterComp.name.includes('=') ? afterComp.name : undefined,
           property: binding.property,
           layerName: binding.layerName,
@@ -481,12 +502,13 @@ function computeDiff(before: Snapshot, after: Snapshot, names: Map<string, strin
     for (const [key, binding] of beforeBindings) {
       if (!afterBindings.has(key)) {
         const tokenName = names.get(binding.variableId) || binding.variableId.slice(-12)
-        diffs.push({ 
-          type: 'binding_removed', 
-          component: beforeComp.name, 
-          nodeId: id, 
+        diffs.push({
+          type: 'binding_removed',
+          component: afterComp.name,   // usar el nombre nuevo para agrupar bajo un solo header
+          nodeId: id,
           details: `${binding.layerName}.${binding.property} (era: ${tokenName})`,
-          variant: beforeComp.name.includes('=') ? beforeComp.name : undefined,
+          parentName: variantParent,
+          variant: afterComp.name.includes('=') ? afterComp.name : undefined,
           property: binding.property,
           layerName: binding.layerName,
           oldValue: tokenName,
@@ -496,19 +518,24 @@ function computeDiff(before: Snapshot, after: Snapshot, names: Map<string, strin
     }
 
     // Compare properties (numeric values)
-    const beforePropVals = new Map(beforeComp.properties.map(p => [`${p.layerName}|${p.property}`, p]))
-    const afterPropVals = new Map(afterComp.properties.map(p => [`${p.layerName}|${p.property}`, p]))
+    const beforePropVals = new Map(
+      beforeComp.properties.map(p => [`${normalizeRoot(p.layerName, beforeComp)}|${p.property}`, p])
+    )
+    const afterPropVals = new Map(
+      afterComp.properties.map(p => [`${normalizeRoot(p.layerName, afterComp)}|${p.property}`, p])
+    )
 
     for (const [key, prop] of afterPropVals) {
       // Skip internal tracking markers — they are used for other detections, not property diffs
       if (prop.property === '__componentProps__' || prop.property === '__layerName__') continue
       const prev = beforePropVals.get(key)
       if (prev && prev.value !== prop.value) {
-        diffs.push({ 
-          type: 'property_changed', 
-          component: afterComp.name, 
-          nodeId: id, 
+        diffs.push({
+          type: 'property_changed',
+          component: afterComp.name,
+          nodeId: id,
           details: `${prop.layerName}.${prop.property}: ${prev.value} → ${prop.value}`,
+          parentName: variantParent,
           variant: afterComp.name.includes('=') ? afterComp.name : undefined,
           property: prop.property,
           layerName: prop.layerName,
@@ -685,11 +712,11 @@ async function main() {
     console.log('')
     
     for (const [, comp] of changedComponents) {
-      // Header del componente
-      const componentHeader = comp.isVariant 
-        ? `**${comp.name}**` 
+      // Header del componente: para variantes mostrar "Padre › Variante"
+      const componentHeader = comp.isVariant && comp.parentName
+        ? `**${comp.parentName} › ${comp.name}**`
         : `**${comp.name}**`
-      
+
       console.log(`${componentHeader}`)
       
       // Agrupar tokens por propiedad para mejor lectura
@@ -812,7 +839,7 @@ async function main() {
       case 'component_added': if (isReal(comp)) nuevos.add(comp); else if (isReal(parent)) iterados.add(parent); break
       case 'component_removed': if (isReal(comp)) eliminados.add(comp); else if (isReal(parent)) iterados.add(parent); break
       case 'component_deprecated': { const o = ch.details.split('→')[0].trim(); if (isReal(o)) eliminados.add(o); else if (isReal(comp)) eliminados.add(comp); break }
-      case 'component_renamed': { const nw = ch.details.split('→')[1]?.trim() || comp; if (isReal(nw)) iterados.add(nw); break }
+      case 'component_renamed': { const nw = ch.details.split('→')[1]?.trim() || comp; if (isReal(nw)) iterados.add(nw); else if (isReal(parent)) iterados.add(parent); break }
       case 'variant_added': case 'variant_removed': if (isReal(parent)) iterados.add(parent); else if (isReal(comp)) iterados.add(comp); break
       default: if (isReal(comp)) iterados.add(comp); else if (isReal(parent)) iterados.add(parent)
     }

@@ -627,3 +627,70 @@
   border-radius: 4px;
   border: 1px solid var(--color-border);
 }
+
+/* Iterated components with per-layer detail */
+.cl-iterated-detailed {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cl-iterated-item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.75rem 0.85rem;
+  background: var(--color-surface);
+}
+
+.cl-iterated-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cl-iterated-count {
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: var(--color-warning-bg);
+  color: var(--color-warning);
+}
+
+.cl-iterated-table {
+  margin-top: 0;
+}
+
+.cl-iterated-more {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  margin: 0.5rem 0 0;
+  font-style: italic;
+}
+
+/* Change cell */
+.cl-change-added { color: var(--color-success); font-weight: 500; }
+.cl-change-removed { color: var(--color-error); font-weight: 500; }
+.cl-change-diff {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+.cl-diff-from {
+  color: var(--color-error);
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+.cl-diff-arrow {
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+.cl-diff-to {
+  color: var(--color-success);
+  font-weight: 500;
+}

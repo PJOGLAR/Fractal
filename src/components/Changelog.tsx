@@ -10,6 +10,35 @@ interface DiffEntry {
   parentName?: string
 }
 
+interface DetailedChange {
+  property?: string
+  layer?: string
+  from?: string
+  to?: string
+  token?: string
+}
+
+interface DetailedVariant {
+  tokens: {
+    changed: DetailedChange[]
+    added: DetailedChange[]
+    removed: DetailedChange[]
+  }
+  properties: DetailedChange[]
+}
+
+interface DetailedComponent {
+  name: string
+  isVariant: boolean
+  variants: Record<string, DetailedVariant>
+  summary: {
+    tokensChanged: number
+    tokensAdded: number
+    tokensRemoved: number
+    propertiesChanged: number
+  }
+}
+
 interface ChangelogEntry {
   id: string
   timestamp: string
@@ -18,6 +47,7 @@ interface ChangelogEntry {
   fileLabel: string
   summary: string
   changes: DiffEntry[]
+  detailed?: Record<string, DetailedComponent>
 }
 
 interface CollapsedChanges {
@@ -175,7 +205,7 @@ export function Changelog() {
 
               {expandedId === entry.id && (
                 <div className="changelog-entry-details">
-                  <CleanChangelog collapsed={collapsed} />
+                  <CleanChangelog collapsed={collapsed} detailed={entry.detailed} />
                 </div>
               )}
             </article>
@@ -186,8 +216,15 @@ export function Changelog() {
   )
 }
 
-// Vista simplificada: solo tres listas de nombres de componentes.
-function CleanChangelog({ collapsed }: { collapsed: CollapsedChanges }) {
+// Vista simplificada: tres listas de componentes.
+// Para "iterados", si la entrada tiene `detailed` con desglose por capa, se muestran las capas afectadas.
+function CleanChangelog({
+  collapsed,
+  detailed,
+}: {
+  collapsed: CollapsedChanges
+  detailed?: Record<string, DetailedComponent>
+}) {
   const { nuevos, eliminados, iterados } = collapsed
 
   if (!nuevos.length && !eliminados.length && !iterados.length) {
@@ -226,13 +263,166 @@ function CleanChangelog({ collapsed }: { collapsed: CollapsedChanges }) {
             <span className="cl-badge cl-badge--changed">↻</span>
             Componentes iterados ({iterados.length})
           </h4>
-          <ul className="cl-name-list cl-name-list--changed">
-            {iterados.map(n => <li key={n}>{n}</li>)}
-          </ul>
+          <IteratedList names={iterados} detailed={detailed} />
         </section>
       )}
     </div>
   )
+}
+
+// Lista de componentes iterados. Si la entrada tiene `detailed`, muestra un desglose por capa.
+// Si no (entradas viejas), cae al listado plano de nombres.
+function IteratedList({
+  names,
+  detailed,
+}: {
+  names: string[]
+  detailed?: Record<string, DetailedComponent>
+}) {
+  // Componentes que tienen desglose disponible
+  const withDetail = detailed ? names.filter(n => detailed[n]) : []
+  const withoutDetail = detailed ? names.filter(n => !detailed[n]) : names
+
+  return (
+    <>
+      {withDetail.length > 0 && (
+        <div className="cl-iterated-detailed">
+          {withDetail.map(name => (
+            <IteratedComponent key={name} name={name} detail={detailed![name]} />
+          ))}
+        </div>
+      )}
+
+      {withoutDetail.length > 0 && (
+        <ul className="cl-name-list cl-name-list--changed">
+          {withoutDetail.map(n => <li key={n}>{n}</li>)}
+        </ul>
+      )}
+    </>
+  )
+}
+
+// Un componente iterado con su desglose por capa y variante.
+function IteratedComponent({ name, detail }: { name: string; detail: DetailedComponent }) {
+  // Aplanar cambios de todas las variantes, marcando la variante en cada fila
+  type Row = {
+    variant: string
+    layer: string
+    property: string
+    kind: 'token-changed' | 'token-added' | 'token-removed' | 'property-changed'
+    from?: string
+    to?: string
+    token?: string
+  }
+
+  const rows: Row[] = []
+  for (const [variantKey, variant] of Object.entries(detail.variants)) {
+    const variantLabel = variantKey === '_base' ? '' : variantKey
+    for (const c of variant.tokens.changed) {
+      rows.push({
+        variant: variantLabel,
+        layer: c.layer || '',
+        property: c.property || '',
+        kind: 'token-changed',
+        from: c.from,
+        to: c.to,
+      })
+    }
+    for (const c of variant.tokens.added) {
+      rows.push({
+        variant: variantLabel,
+        layer: c.layer || '',
+        property: c.property || '',
+        kind: 'token-added',
+        token: c.token,
+      })
+    }
+    for (const c of variant.tokens.removed) {
+      rows.push({
+        variant: variantLabel,
+        layer: c.layer || '',
+        property: c.property || '',
+        kind: 'token-removed',
+        token: c.token,
+      })
+    }
+    for (const c of variant.properties) {
+      rows.push({
+        variant: variantLabel,
+        layer: c.layer || '',
+        property: c.property || '',
+        kind: 'property-changed',
+        from: c.from,
+        to: c.to,
+      })
+    }
+  }
+
+  if (rows.length === 0) {
+    // Componente en `iterados` pero sin filas de detalle: mostrarlo como tag simple
+    return (
+      <div className="cl-iterated-item">
+        <div className="cl-iterated-name">{name}</div>
+      </div>
+    )
+  }
+
+  const hasVariants = rows.some(r => r.variant !== '')
+  const MAX_ROWS = 20
+  const visibleRows = rows.slice(0, MAX_ROWS)
+  const hiddenCount = rows.length - visibleRows.length
+
+  return (
+    <div className="cl-iterated-item">
+      <div className="cl-iterated-name">
+        {name}
+        <span className="cl-iterated-count">{rows.length} cambio{rows.length > 1 ? 's' : ''}</span>
+      </div>
+      <table className="cl-table cl-iterated-table">
+        <thead>
+          <tr>
+            {hasVariants && <th>Variante</th>}
+            <th>Capa</th>
+            <th>Propiedad</th>
+            <th>Cambio</th>
+          </tr>
+        </thead>
+        <tbody>
+          {visibleRows.map((r, i) => (
+            <tr key={i}>
+              {hasVariants && <td className="td-variant">{r.variant || '—'}</td>}
+              <td>{r.layer || '—'}</td>
+              <td><code>{r.property || '—'}</code></td>
+              <td><ChangeCell row={r} /></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      {hiddenCount > 0 && (
+        <p className="cl-iterated-more">y {hiddenCount} cambio{hiddenCount > 1 ? 's' : ''} más</p>
+      )}
+    </div>
+  )
+}
+
+function ChangeCell({ row }: { row: { kind: string; from?: string; to?: string; token?: string } }) {
+  switch (row.kind) {
+    case 'token-added':
+      return <span className="cl-change-added">+ {row.token || '—'}</span>
+    case 'token-removed':
+      return <span className="cl-change-removed">− {row.token || '—'}</span>
+    case 'token-changed':
+    case 'property-changed':
+      return (
+        <span className="cl-change-diff">
+          <span className="cl-diff-from">{row.from ?? '—'}</span>
+          <span className="cl-diff-arrow">→</span>
+          <span className="cl-diff-to">{row.to ?? '—'}</span>
+        </span>
+      )
+    default:
+      return <span>—</span>
+  }
 }
 
 function ChangelogInfo() {
