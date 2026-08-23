@@ -1,1 +1,1750 @@
-[]
+[
+  {
+    "id": "mt5r724x",
+    "timestamp": "2026-08-23T11:58:27.729Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 nuevo · 2 iterados",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Alert1",
+        "nodeId": "",
+        "details": "Alert1"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Empty-state",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Tabs",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "⛔️ Card_content_banner-mini": {
+        "name": "⛔️ Card_content_banner-mini",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "⛔️ Card_content_banner-mini",
+                  "token": "gap/gap-200"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "⛔️ Card_content_banner-mini",
+                  "token": "padding/padding-200"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "⛔️ Card_content_banner-mini",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "⛔️ Card_content_banner-mini",
+                  "token": "padding/padding-200"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "⛔️ Card_content_banner-mini",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "fills",
+                  "layer": "⛔️ Card_content_banner-mini",
+                  "token": "static/background/feedback/info/quiet"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "⛔️ Card_content_banner-mini",
+                  "token": "static/border/brand/secondary"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 7,
+          "tokensRemoved": 0,
+          "propertiesChanged": 0
+        }
+      },
+      ".⛔️ Card_content_banner-mini": {
+        "name": ".⛔️ Card_content_banner-mini",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": ".⛔️ Card_content_banner-mini",
+                  "token": "gap/gap-200"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": ".⛔️ Card_content_banner-mini",
+                  "token": "padding/padding-200"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": ".⛔️ Card_content_banner-mini",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": ".⛔️ Card_content_banner-mini",
+                  "token": "padding/padding-200"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": ".⛔️ Card_content_banner-mini",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Card_content_banner-mini",
+                  "token": "static/background/feedback/info/quiet"
+                },
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Card_content_banner-mini",
+                  "token": "static/border/brand/secondary"
+                }
+              ]
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 7,
+          "propertiesChanged": 0
+        }
+      },
+      "State": {
+        "name": "State",
+        "isVariant": true,
+        "variants": {
+          "State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "State=default",
+                  "from": "gap/gap-200",
+                  "to": "gap/gap-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "State=default",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Content",
+                  "from": "gap/gap-100",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "Banner wrapper",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Banner wrapper",
+                  "token": "padding/padding-200"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Banner wrapper",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Banner wrapper",
+                  "token": "padding/padding-200"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": ".⛔️ Card_content_banner-mini",
+                  "token": "gap/gap-200"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": ".⛔️ Card_content_banner-mini",
+                  "token": "padding/padding-200"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": ".⛔️ Card_content_banner-mini",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": ".⛔️ Card_content_banner-mini",
+                  "token": "padding/padding-200"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": ".⛔️ Card_content_banner-mini",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Card_content_banner-mini",
+                  "token": "static/background/feedback/info/quiet"
+                },
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Card_content_banner-mini",
+                  "token": "static/border/brand/secondary"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Texto [CharLimit:55]",
+                  "token": "static/foreground/neutral/strong"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Texto [CharLimit:55]",
+                  "token": "caption/md/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Texto [CharLimit:55]",
+                  "token": "caption/md/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Texto [CharLimit:55]",
+                  "token": "body/md/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Texto [CharLimit:55]",
+                  "token": "caption/md/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Texto [CharLimit:55]",
+                  "token": "caption/md/regular/font-size"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Button",
+                  "token": "gap/gap-50"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Button",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Button",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Button",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Button",
+                  "token": "padding/padding-100"
+                }
+              ]
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=default",
+                "from": "237",
+                "to": "169"
+              },
+              {
+                "property": "layoutMode",
+                "layer": "Content",
+                "from": "HORIZONTAL",
+                "to": "VERTICAL"
+              },
+              {
+                "property": "size.width",
+                "layer": "Content",
+                "from": "210",
+                "to": "234"
+              },
+              {
+                "property": "size.height",
+                "layer": "Content",
+                "from": "16",
+                "to": "44"
+              },
+              {
+                "property": "size.height",
+                "layer": "---> Footer",
+                "from": "36",
+                "to": "48"
+              },
+              {
+                "property": "paddingTop",
+                "layer": "---> Button row",
+                "from": "6",
+                "to": "12"
+              },
+              {
+                "property": "paddingBottom",
+                "layer": "---> Button row",
+                "from": "6",
+                "to": "12"
+              },
+              {
+                "property": "size.height",
+                "layer": "---> Button row",
+                "from": "36",
+                "to": "48"
+              }
+            ]
+          },
+          "State=loading": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=loading",
+                "from": "180",
+                "to": "169"
+              },
+              {
+                "property": "size.height",
+                "layer": "Skeleton-component",
+                "from": "180",
+                "to": "169"
+              }
+            ]
+          },
+          "State=loading, Horizontal padding=lg, Selected=false": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "token": "static/foreground/neutral/tertiary-subtle"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "State=loading, Horizontal padding=md, Selected=false": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "token": "static/foreground/neutral/tertiary-subtle"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "State=loading, Horizontal padding=sm, Selected=false": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "token": "static/foreground/neutral/tertiary-subtle"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "State=loading, Horizontal padding=none, Selected=false": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "token": "static/foreground/neutral/tertiary-subtle"
+                }
+              ]
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 3,
+          "tokensAdded": 0,
+          "tokensRemoved": 26,
+          "propertiesChanged": 10
+        }
+      },
+      "Orientation": {
+        "name": "Orientation",
+        "isVariant": true,
+        "variants": {
+          "Orientation=vertical": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Orientation=vertical",
+                  "token": "gap/gap-300"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Orientation=vertical",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Orientation=vertical",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Orientation=vertical",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Orientation=vertical",
+                  "token": "padding/padding-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Orientation=horizontal": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Orientation=horizontal",
+                  "token": "gap/gap-300"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Orientation=horizontal",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Orientation=horizontal",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Orientation=horizontal",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Orientation=horizontal",
+                  "token": "padding/padding-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Content",
+                "from": "132",
+                "to": "140"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 10,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Alignment": {
+        "name": "Alignment",
+        "isVariant": true,
+        "variants": {
+          "Alignment=vertical": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Alignment=vertical",
+                  "token": "gap/gap-300"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Alignment=vertical",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Alignment=vertical",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Alignment=vertical",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Alignment=vertical",
+                  "token": "padding/padding-0"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "Alignment=horizontal": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Alignment=horizontal",
+                  "token": "gap/gap-300"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Alignment=horizontal",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Alignment=horizontal",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Alignment=horizontal",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Alignment=horizontal",
+                  "token": "padding/padding-0"
+                }
+              ]
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 10,
+          "propertiesChanged": 0
+        }
+      },
+      "Tabs": {
+        "name": "Tabs",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "gridRowGap",
+                  "layer": "Tabs",
+                  "token": "gap/gap-600"
+                },
+                {
+                  "property": "gridColumnGap",
+                  "layer": "Tabs",
+                  "token": "gap/gap-600"
+                }
+              ]
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Tabs",
+                "from": "184",
+                "to": "328"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 2,
+          "propertiesChanged": 1
+        }
+      },
+      "Style": {
+        "name": "Style",
+        "isVariant": true,
+        "variants": {
+          "Style=rounded, Appearance=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=rounded, Appearance=default",
+                  "token": "gap/gap-200"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=rounded, Appearance=default",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=rounded, Appearance=default",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=rounded, Appearance=default",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=rounded, Appearance=default",
+                  "token": "padding/padding-300"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Style=rounded": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=rounded",
+                  "token": "gap/gap-200"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=rounded",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=rounded",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=rounded",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=rounded",
+                  "token": "padding/padding-300"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "Style=underline, Appearance=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=underline, Appearance=default",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=underline, Appearance=default",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=underline, Appearance=default",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=underline, Appearance=default",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=underline, Appearance=default",
+                  "token": "padding/padding-300"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Style=underline": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=underline",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=underline",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=underline",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=underline",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=underline",
+                  "token": "padding/padding-300"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "Style=rounded, State=default, Selected=true, Appearance=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=rounded, State=default, Selected=true, Appearance=default",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=rounded, State=default, Selected=true, Appearance=default",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=rounded, State=default, Selected=true, Appearance=default",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=rounded, State=default, Selected=true, Appearance=default",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=rounded, State=default, Selected=true, Appearance=default",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Style=rounded, State=default, Selected=true, Appearance=default",
+                  "token": "interactive/background/neutral/default/quiet"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Style=rounded, State=default, Selected=true, Appearance=default",
+                  "token": "interactive/border/neutral/default/medium"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Style=rounded, State=default, Selected=false": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=rounded, State=default, Selected=false",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=rounded, State=default, Selected=false",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=rounded, State=default, Selected=false",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=rounded, State=default, Selected=false",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=rounded, State=default, Selected=false",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Style=rounded, State=default, Selected=false",
+                  "token": "interactive/background/neutral/default/quiet"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Style=rounded, State=default, Selected=false",
+                  "token": "interactive/border/neutral/default/medium"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "Style=rounded, State=default, Selected=false, Appearance=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=rounded, State=default, Selected=false, Appearance=default",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=rounded, State=default, Selected=false, Appearance=default",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=rounded, State=default, Selected=false, Appearance=default",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=rounded, State=default, Selected=false, Appearance=default",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=rounded, State=default, Selected=false, Appearance=default",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Style=rounded, State=default, Selected=false, Appearance=default",
+                  "token": "interactive/background/brand/default/medium"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Style=rounded, State=default, Selected=true": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=rounded, State=default, Selected=true",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=rounded, State=default, Selected=true",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=rounded, State=default, Selected=true",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=rounded, State=default, Selected=true",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=rounded, State=default, Selected=true",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Style=rounded, State=default, Selected=true",
+                  "token": "interactive/background/brand/default/medium"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "Style=rounded, State=pressed, Selected=false, Appearance=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=rounded, State=pressed, Selected=false, Appearance=default",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=rounded, State=pressed, Selected=false, Appearance=default",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=rounded, State=pressed, Selected=false, Appearance=default",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=rounded, State=pressed, Selected=false, Appearance=default",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=rounded, State=pressed, Selected=false, Appearance=default",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Style=rounded, State=pressed, Selected=false, Appearance=default",
+                  "token": "interactive/background/brand/pressed/bold"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Style=rounded, State=pressed, Selected=false": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=rounded, State=pressed, Selected=false",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=rounded, State=pressed, Selected=false",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=rounded, State=pressed, Selected=false",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=rounded, State=pressed, Selected=false",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=rounded, State=pressed, Selected=false",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Style=rounded, State=pressed, Selected=false",
+                  "token": "interactive/background/brand/pressed/bold"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "Style=rounded, State=hover, Selected=false, Appearance=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=rounded, State=hover, Selected=false, Appearance=default",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=rounded, State=hover, Selected=false, Appearance=default",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=rounded, State=hover, Selected=false, Appearance=default",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=rounded, State=hover, Selected=false, Appearance=default",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=rounded, State=hover, Selected=false, Appearance=default",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Style=rounded, State=hover, Selected=false, Appearance=default",
+                  "token": "interactive/background/brand/hover/bold"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Style=rounded, State=hover, Selected=false": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=rounded, State=hover, Selected=false",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=rounded, State=hover, Selected=false",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=rounded, State=hover, Selected=false",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=rounded, State=hover, Selected=false",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=rounded, State=hover, Selected=false",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Style=rounded, State=hover, Selected=false",
+                  "token": "interactive/background/brand/hover/bold"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "Style=rounded, State=focus, Selected=false, Appearance=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=rounded, State=focus, Selected=false, Appearance=default",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=rounded, State=focus, Selected=false, Appearance=default",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=rounded, State=focus, Selected=false, Appearance=default",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=rounded, State=focus, Selected=false, Appearance=default",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=rounded, State=focus, Selected=false, Appearance=default",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Style=rounded, State=focus, Selected=false, Appearance=default",
+                  "token": "interactive/border/neutral/default/medium"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Style=rounded, State=focus, Selected=false": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=rounded, State=focus, Selected=false",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=rounded, State=focus, Selected=false",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=rounded, State=focus, Selected=false",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=rounded, State=focus, Selected=false",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=rounded, State=focus, Selected=false",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Style=rounded, State=focus, Selected=false",
+                  "token": "interactive/border/neutral/default/medium"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "Style=rounded, State=disabled, Selected=false, Appearance=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=rounded, State=disabled, Selected=false, Appearance=default",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=rounded, State=disabled, Selected=false, Appearance=default",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=rounded, State=disabled, Selected=false, Appearance=default",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=rounded, State=disabled, Selected=false, Appearance=default",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=rounded, State=disabled, Selected=false, Appearance=default",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Style=rounded, State=disabled, Selected=false, Appearance=default",
+                  "token": "interactive/border/neutral/disabled/subtle"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Style=rounded, State=disabled, Selected=false": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=rounded, State=disabled, Selected=false",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=rounded, State=disabled, Selected=false",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=rounded, State=disabled, Selected=false",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=rounded, State=disabled, Selected=false",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=rounded, State=disabled, Selected=false",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Style=rounded, State=disabled, Selected=false",
+                  "token": "interactive/border/neutral/disabled/subtle"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "Style=underline, State=default, Selected=false, Appearance=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=underline, State=default, Selected=false, Appearance=default",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=underline, State=default, Selected=false, Appearance=default",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=underline, State=default, Selected=false, Appearance=default",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=underline, State=default, Selected=false, Appearance=default",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=underline, State=default, Selected=false, Appearance=default",
+                  "token": "padding/padding-200"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Style=underline, State=default, Selected=false": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=underline, State=default, Selected=false",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=underline, State=default, Selected=false",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=underline, State=default, Selected=false",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=underline, State=default, Selected=false",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=underline, State=default, Selected=false",
+                  "token": "padding/padding-200"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "Style=underline, State=default, Selected=true, Appearance=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=underline, State=default, Selected=true, Appearance=default",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=underline, State=default, Selected=true, Appearance=default",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=underline, State=default, Selected=true, Appearance=default",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=underline, State=default, Selected=true, Appearance=default",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=underline, State=default, Selected=true, Appearance=default",
+                  "token": "padding/padding-200"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Style=underline, State=default, Selected=true": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=underline, State=default, Selected=true",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=underline, State=default, Selected=true",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=underline, State=default, Selected=true",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=underline, State=default, Selected=true",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=underline, State=default, Selected=true",
+                  "token": "padding/padding-200"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "Style=underline, State=pressed, Selected=false, Appearance=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=underline, State=pressed, Selected=false, Appearance=default",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=underline, State=pressed, Selected=false, Appearance=default",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=underline, State=pressed, Selected=false, Appearance=default",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=underline, State=pressed, Selected=false, Appearance=default",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=underline, State=pressed, Selected=false, Appearance=default",
+                  "token": "padding/padding-200"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Style=underline, State=pressed, Selected=false": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=underline, State=pressed, Selected=false",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=underline, State=pressed, Selected=false",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=underline, State=pressed, Selected=false",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=underline, State=pressed, Selected=false",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=underline, State=pressed, Selected=false",
+                  "token": "padding/padding-200"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "Style=underline, State=hover, Selected=false, Appearance=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=underline, State=hover, Selected=false, Appearance=default",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=underline, State=hover, Selected=false, Appearance=default",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=underline, State=hover, Selected=false, Appearance=default",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=underline, State=hover, Selected=false, Appearance=default",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=underline, State=hover, Selected=false, Appearance=default",
+                  "token": "padding/padding-200"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Style=underline, State=hover, Selected=false": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=underline, State=hover, Selected=false",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=underline, State=hover, Selected=false",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=underline, State=hover, Selected=false",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=underline, State=hover, Selected=false",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=underline, State=hover, Selected=false",
+                  "token": "padding/padding-200"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "Style=underline, State=focus, Selected=false, Appearance=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=underline, State=focus, Selected=false, Appearance=default",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=underline, State=focus, Selected=false, Appearance=default",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=underline, State=focus, Selected=false, Appearance=default",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=underline, State=focus, Selected=false, Appearance=default",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=underline, State=focus, Selected=false, Appearance=default",
+                  "token": "padding/padding-200"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Style=underline, State=focus, Selected=false": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=underline, State=focus, Selected=false",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=underline, State=focus, Selected=false",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=underline, State=focus, Selected=false",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=underline, State=focus, Selected=false",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=underline, State=focus, Selected=false",
+                  "token": "padding/padding-200"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "Style=underline, State=disabled, Selected=false, Appearance=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=underline, State=disabled, Selected=false, Appearance=default",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=underline, State=disabled, Selected=false, Appearance=default",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=underline, State=disabled, Selected=false, Appearance=default",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=underline, State=disabled, Selected=false, Appearance=default",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=underline, State=disabled, Selected=false, Appearance=default",
+                  "token": "padding/padding-200"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Style=underline, State=disabled, Selected=false": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Style=underline, State=disabled, Selected=false",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Style=underline, State=disabled, Selected=false",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Style=underline, State=disabled, Selected=false",
+                  "token": "padding/padding-100"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Style=underline, State=disabled, Selected=false",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Style=underline, State=disabled, Selected=false",
+                  "token": "padding/padding-200"
+                }
+              ]
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 77,
+          "tokensRemoved": 77,
+          "propertiesChanged": 0
+        }
+      },
+      ".⛔️ Tabs_option": {
+        "name": ".⛔️ Tabs_option",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": ".⛔️ Tabs_option",
+                "from": "527",
+                "to": "552"
+              },
+              {
+                "property": "size.height",
+                "layer": ".⛔️ Tabs_option",
+                "from": "152",
+                "to": "222"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 2
+        }
+      },
+      "Layout": {
+        "name": "Layout",
+        "isVariant": true,
+        "variants": {
+          "Layout=default, State=default": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxHeight",
+                "layer": "Layout=default, State=default",
+                "from": "650",
+                "to": "646"
+              }
+            ]
+          },
+          "Layout=scrollable, State=default": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Layout=scrollable, State=default",
+                "from": "650",
+                "to": "646"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 2
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 11,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 17,
+      "variantsAdded": 14,
+      "variantsRemoved": 0,
+      "propsAdded": 3,
+      "propsRemoved": 1,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 94,
+      "bindingsRemoved": 122,
+      "bindingsChanged": 3,
+      "propertiesChanged": 16
+    }
+  }
+]

@@ -1,5 +1,5 @@
 {
-  "extractedAt": "2026-08-03T18:42:55.624Z",
+  "extractedAt": "2026-08-23T12:44:57.923Z",
   "foundations": {
     "collections": [
       "Asset",
@@ -9,6 +9,21 @@
       "Semantic dimension",
       "Spacing",
       "Typography"
+    ],
+    "libraries": [
+      {
+        "libraryName": "Librería no identificada",
+        "collections": [
+          "Asset",
+          "Border",
+          "Color",
+          "Primitives",
+          "Semantic dimension",
+          "Spacing",
+          "Typography"
+        ],
+        "variableCount": 138
+      }
     ],
     "primitiveTokens": [
       {
@@ -20,7 +35,8 @@
         "scopes": [
           "GAP"
         ],
-        "isPrimitive": true
+        "isPrimitive": true,
+        "remote": true
       }
     ],
     "semanticTokens": [
@@ -39,7 +55,8 @@
         "aliasOf": "VariableID:7f691e94f58613a6dd3b30040b5df9bff77dd32f/1138:18",
         "aliasName": "spacing/300",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
@@ -56,7 +73,8 @@
         "aliasOf": "VariableID:9b09e1172cce0541312789e707dcad0a38453044/1138:25",
         "aliasName": "spacing/0",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:cd5091c5ab79f61ec511eff54365abacc81b97c6/2561:12",
@@ -73,7 +91,8 @@
         "aliasOf": "VariableID:090932b757eda31857d986992c34d248bcc6f38e/1138:47",
         "aliasName": "corner/500",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:8dab0e571edbcd98511064042c233e815e086afd/3959:0",
@@ -89,7 +108,8 @@
         "aliasOf": "VariableID:61d09723d94d0bc7f7101b8e9985be378260a678/3319:321",
         "aliasName": "core/neutral/25",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:22e95a5c2b7a0843fd572ea80bdcaab5a1629d5f/4154:132",
@@ -104,7 +124,8 @@
         "aliasOf": "VariableID:c936f6b40c223347d3f5120d889ec34b8029d2b6/3319:398",
         "aliasName": "opacity/purple/600",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:3639b6ebb01a11451c54e339fdf48e889d9e34a9/4036:529",
@@ -119,7 +140,8 @@
         "aliasOf": "VariableID:57be98311e42ca51327360cf93e45e8c825db44a/4036:522",
         "aliasName": "opacity/purple/800",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:3196e03f3d37d6801a654529c2ca56a8a13aa082/2594:59",
@@ -136,7 +158,8 @@
         "aliasOf": "VariableID:2e9382034ea61ea21946830e44d7675bd2975246/2594:61",
         "aliasName": "asset/100",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:aeac0764f3f9cfc6f77a2fa557d9c5ba4575a9f9/3958:108",
@@ -151,7 +174,8 @@
         "aliasOf": "VariableID:dedc79b3fecb35fb3ed89cad8f9e71ab3ed9738e/3319:280",
         "aliasName": "core/purple/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:33b53723809859da57b8b0b2651b51ccb8896045/1545:151",
@@ -168,7 +192,8 @@
         "aliasOf": "VariableID:07128232650df937b6bcd2d116db7c5ce8b3cba8/827:272",
         "aliasName": "font/letter-spacing/100",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:abeade7ad0245011a37abd717746ff8ceb5414d3/1545:149",
@@ -185,7 +210,8 @@
         "aliasOf": "VariableID:ae566118323e03fb38497b68cb712affbfcc357d/827:261",
         "aliasName": "font/size/250",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:85d48e41d892efd847ee7bb4fb3d58a53ce2d076/1545:148",
@@ -202,7 +228,8 @@
         "aliasOf": "VariableID:051059af336324027b0d0a1402498786472b9307/827:260",
         "aliasName": "font/family/body",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:8c72a426cfcc8ff2d14036a520ef122fe477c26f/1557:16",
@@ -219,7 +246,8 @@
         "aliasOf": "VariableID:b7c3f887e0f3f1ddaa28102c6ef5c985ed8b6ef0/1552:45",
         "aliasName": "font/line-height/250",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:e72380a37a224f479101e075dedd1c24fc5bbd78/1545:150",
@@ -236,7 +264,8 @@
         "aliasOf": "VariableID:2c0a6169d4f64d088b5d9dfdda159922b60b3643/842:254",
         "aliasName": "font/weight/semibold",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:4ff06a51cd2a57a605c86a8cf42fc0581a6d6567/2561:6",
@@ -253,7 +282,8 @@
         "aliasOf": "VariableID:049eba47666b56c353153b42d9e090e1ef44767d/1138:40",
         "aliasName": "corner/100",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:240c5abbdce86d6e7af8b79d4d23907ca3913995/2561:5",
@@ -270,7 +300,8 @@
         "aliasOf": "VariableID:5bf18267269d044e47d6566e7a11ccbbfecf79dd/1138:38",
         "aliasName": "corner/0",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:aed1bfc61771f4ed20f6dfc31772d55de1ff100f/2561:15",
@@ -287,7 +318,8 @@
         "aliasOf": "VariableID:b74e243f4166aa35d6c4f04593e708c88069d473/1138:43",
         "aliasName": "corner/2000",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:ba093e93d53c38e43edbfefe29055cdbf7c6f97f/1138:4",
@@ -304,7 +336,8 @@
         "aliasOf": "VariableID:1de0c64f88f7bf95cec160480ae1ddf3934c91a1/1138:48",
         "aliasName": "width/100",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:2a890223be0c78999f81e201a73f961b4571a026/3319:331",
@@ -320,7 +353,8 @@
         "aliasOf": "VariableID:5dc798e343dab38711bcb99ac744a98ab38c4405/3319:227",
         "aliasName": "core/red/700",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:9f48eb3bfb8183eb5c159eeecd52f4c8ba6841b4/3958:136",
@@ -335,7 +369,8 @@
         "aliasOf": "VariableID:61d09723d94d0bc7f7101b8e9985be378260a678/3319:321",
         "aliasName": "core/neutral/25",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:923a375bff09331a69f308a1d4c07b36a8d9284b/3927:54",
@@ -350,7 +385,8 @@
         "aliasOf": "VariableID:24e935184befca2f1d435dc8958f3b1fa4644f0c/3319:313",
         "aliasName": "core/neutral/600",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:10c819e5455a4bc09f8bd160c65def138dafdb38/3958:123",
@@ -366,7 +402,8 @@
         "aliasOf": "VariableID:4d79da7e1fb349908fbcf90678adecb1a213cf16/3391:182",
         "aliasName": "core/purple/100",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:3aced1e97087dc3edde1eb9e7bacc2e829b5ba8d/3927:58",
@@ -381,7 +418,8 @@
         "aliasOf": "VariableID:61d09723d94d0bc7f7101b8e9985be378260a678/3319:321",
         "aliasName": "core/neutral/25",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:38f70a05c8259913aa3f3f186dd327156f8550ac/4033:494",
@@ -396,7 +434,8 @@
         "aliasOf": "VariableID:a32fa07ae63231a59a30bb04a5b388dd0330f98d/3889:38",
         "aliasName": "expressive/violet/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:63d5d89d290dc020592b8f7d2f8b5ffcbbc40421/4033:498",
@@ -411,7 +450,8 @@
         "aliasOf": "VariableID:e9a7ee1270da8de23e6e5ca4ad376561c94f97a4/3889:42",
         "aliasName": "expressive/violet/900",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:b979744f6368d3db1dfe6a6ad1d542d9d8c99c95/2594:53",
@@ -428,7 +468,8 @@
         "aliasOf": "VariableID:627fde64ab6998b2ae5e394e064b5e73c4e3727e/2594:55",
         "aliasName": "asset/200",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:3d161e56000c4ff4a884deaf3addcc2683378322/3958:132",
@@ -443,7 +484,8 @@
         "aliasOf": "VariableID:61d09723d94d0bc7f7101b8e9985be378260a678/3319:321",
         "aliasName": "core/neutral/25",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
@@ -460,7 +502,8 @@
         "aliasOf": "VariableID:9b09e1172cce0541312789e707dcad0a38453044/1138:25",
         "aliasName": "spacing/0",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:79e38a7be126d7917540e20db1001da48cd84757/1227:7",
@@ -477,7 +520,8 @@
         "aliasOf": "VariableID:4ab56cb87f4d282c09571d2b0da1cb071d7db846/1138:22",
         "aliasName": "spacing/400",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:0a3f790084b83f43e9172a820b45147bd5a5450a/3958:109",
@@ -492,7 +536,8 @@
         "aliasOf": "VariableID:42a5d2b5124e9ec5f192d567fa6337dafce290f5/3319:284",
         "aliasName": "core/purple/900",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:d3d4c40b03575020f5c49b40fa21494d02c4f196/2561:10",
@@ -509,7 +554,8 @@
         "aliasOf": "VariableID:56f93976941fd05c54b5c0ea181f8a6ab1cb7f18/1138:36",
         "aliasName": "corner/300",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:bf6e3295f7a60ac42ea05d8627fd7cf5156faaf3/2561:11",
@@ -526,7 +572,8 @@
         "aliasOf": "VariableID:c1097d4b579a5ed9050b22002708b7385316606d/1138:45",
         "aliasName": "corner/400",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:91dc4a4e00c180daa36f2bc6ae5adf10af0ff3bf/1138:2",
@@ -543,7 +590,8 @@
         "aliasOf": "VariableID:06398ca94952c0e6a03b81a6f7a9248faee515d8/1138:42",
         "aliasName": "width/200",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:b5a951495b65213c7d96ce8a26d0a5bf20560289/3958:115",
@@ -558,7 +606,8 @@
         "aliasOf": "VariableID:dedc79b3fecb35fb3ed89cad8f9e71ab3ed9738e/3319:280",
         "aliasName": "core/purple/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:5d2465b78d59cdad5f48aeb3c683bd4e26b7a7a3/3319:347",
@@ -574,7 +623,8 @@
         "aliasOf": "VariableID:42a5d2b5124e9ec5f192d567fa6337dafce290f5/3319:284",
         "aliasName": "core/purple/900",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:0acafbe854d5400d7fa97fdf10a4ca6ce7f22f18/1557:34",
@@ -591,7 +641,8 @@
         "aliasOf": "VariableID:b7088e3078e925cddc015fb9741c932533bf1cf3/1138:21",
         "aliasName": "spacing/150",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:92a30073031947a22081d730b063363e07671ad0/3319:415",
@@ -607,7 +658,8 @@
         "aliasOf": "VariableID:fe872ff5f1b9c52a1a2bd3506bd44d34c580dc31/3319:275",
         "aliasName": "core/purple/50",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:e3ca1ff63cadf3a726ff7e8fa7171d4e0f2ce738/3958:113",
@@ -622,7 +674,8 @@
         "aliasOf": "VariableID:dedc79b3fecb35fb3ed89cad8f9e71ab3ed9738e/3319:280",
         "aliasName": "core/purple/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:916f736c306ddb6250152176fea8dd5826f5afe4/2764:11",
@@ -638,7 +691,8 @@
         "aliasOf": "VariableID:61d09723d94d0bc7f7101b8e9985be378260a678/1141:106",
         "aliasName": "core/neutral/25",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:5a69023d7617516c8c72da02fcee8591c122b807/2515:1",
@@ -653,7 +707,8 @@
         "aliasOf": "VariableID:3473d6549920890a00bb6c9b69cf16ff03c83d08/1141:59",
         "aliasName": "core/purple/200",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:3b3b429af45944fe6c3590b5db34aeb36b1c5037/3319:334",
@@ -669,7 +724,8 @@
         "aliasOf": "VariableID:6344dde1c4e9d51eb99bfe62a22a9895b874a27b/3319:304",
         "aliasName": "core/blue/700",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:8b7018025d511464f7f79e7eee16ba2c211b878a/3958:128",
@@ -684,7 +740,8 @@
         "aliasOf": "VariableID:dedc79b3fecb35fb3ed89cad8f9e71ab3ed9738e/3319:280",
         "aliasName": "core/purple/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:be46345ce533567571354f332e3aacb128992758/1227:12",
@@ -701,7 +758,8 @@
         "aliasOf": "VariableID:1acd3585522b74267c1b2a5dcf947648005eaae0/1138:23",
         "aliasName": "spacing/100",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
@@ -716,7 +774,8 @@
         "aliasOf": "VariableID:318ac07516506fd14be8242ba316e50d1de703ab/3319:317",
         "aliasName": "core/neutral/950",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:ea9a55834fb892955c272994ddbb4c6a86a6c698/1545:32",
@@ -733,7 +792,8 @@
         "aliasOf": "VariableID:07128232650df937b6bcd2d116db7c5ce8b3cba8/827:272",
         "aliasName": "font/letter-spacing/100",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:3cec66d5cd5b22c5d43581c9fda87d298d718aa0/1545:34",
@@ -750,7 +810,8 @@
         "aliasOf": "VariableID:f0d8a96c603158777a1ded8f1f9977e0f33ce9ec/827:263",
         "aliasName": "font/size/350",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:e24480cfdc18678093f9aacf7d139a960113edf8/1545:35",
@@ -767,7 +828,8 @@
         "aliasOf": "VariableID:051059af336324027b0d0a1402498786472b9307/827:260",
         "aliasName": "font/family/body",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:9367a2167071f85cb39ed3681891ca26c4a1b0b0/1561:49",
@@ -784,7 +846,8 @@
         "aliasOf": "VariableID:c7c372dcbddf27cf8885f21a658fe12e1bb2c981/1552:48",
         "aliasName": "font/line-height/400",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:ddc334870b4c0331642419c0246116164911ac76/1545:33",
@@ -801,7 +864,8 @@
         "aliasOf": "VariableID:2c0a6169d4f64d088b5d9dfdda159922b60b3643/842:254",
         "aliasName": "font/weight/semibold",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:04619bb3de5f15e4a758183cbe21bda93da14ac4/3958:130",
@@ -816,7 +880,8 @@
         "aliasOf": "VariableID:f1eba0054c0af2a3015ee5f9a4548b24e8a87bf3/3319:315",
         "aliasName": "core/neutral/800",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:7839a59493e521b5c1aa66b128dc6f70fd78cdf3/1545:156",
@@ -833,7 +898,8 @@
         "aliasOf": "VariableID:07128232650df937b6bcd2d116db7c5ce8b3cba8/827:272",
         "aliasName": "font/letter-spacing/100",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:800a68ad46ce4e84fe4518f7b04c4d1fb10fea22/1545:154",
@@ -850,7 +916,8 @@
         "aliasOf": "VariableID:f0d8a96c603158777a1ded8f1f9977e0f33ce9ec/827:263",
         "aliasName": "font/size/350",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:db9c6019bcbde6baf043fc50bc0583a266c8b955/1545:153",
@@ -867,7 +934,8 @@
         "aliasOf": "VariableID:051059af336324027b0d0a1402498786472b9307/827:260",
         "aliasName": "font/family/body",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:bcb47a8c368ad38db7e53c3bd3180233b65d9b46/1561:50",
@@ -884,7 +952,8 @@
         "aliasOf": "VariableID:c7c372dcbddf27cf8885f21a658fe12e1bb2c981/1552:48",
         "aliasName": "font/line-height/400",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:b92996b881cf44ee6136bae59ae49463c54c998e/1545:155",
@@ -901,7 +970,8 @@
         "aliasOf": "VariableID:4f48811dcdbe34b9c57b56397c0808bc6829f260/842:241",
         "aliasName": "font/weight/medium",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:dfd204d4d7f9842ece3e6164488b75bd5f9a1685/3958:133",
@@ -916,7 +986,8 @@
         "aliasOf": "VariableID:24e935184befca2f1d435dc8958f3b1fa4644f0c/3319:313",
         "aliasName": "core/neutral/600",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:e3b2b41d4ca6fa84be5ba718101d9b0c2956561d/1545:171",
@@ -933,7 +1004,8 @@
         "aliasOf": "VariableID:07128232650df937b6bcd2d116db7c5ce8b3cba8/827:272",
         "aliasName": "font/letter-spacing/100",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:533a8ceb952836573145ac07528d30a7bc0d3dbe/1545:169",
@@ -950,7 +1022,8 @@
         "aliasOf": "VariableID:40c7a92a6ed1c56974ed3023a2aec562c1b80dcb/827:262",
         "aliasName": "font/size/300",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:afc184689414ccdb0cafe94cc7a8bd90c8388145/1545:168",
@@ -967,7 +1040,8 @@
         "aliasOf": "VariableID:051059af336324027b0d0a1402498786472b9307/827:260",
         "aliasName": "font/family/body",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:d77ec16c71fffabb0c4e7d7d66f753ab423dc3dd/1557:24",
@@ -984,7 +1058,8 @@
         "aliasOf": "VariableID:777fdf43cd4f0f96b853399ae970a3809435a1dd/1552:46",
         "aliasName": "font/line-height/300",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:a0e7b8ed2ebc10d7b5ae10547e670c986429754c/1545:170",
@@ -1001,7 +1076,8 @@
         "aliasOf": "VariableID:4f48811dcdbe34b9c57b56397c0808bc6829f260/842:241",
         "aliasName": "font/weight/medium",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:211c946f80090ddec6e17baa05bf115aa06db017/3927:50",
@@ -1017,7 +1093,8 @@
         "aliasOf": "VariableID:61d09723d94d0bc7f7101b8e9985be378260a678/3319:321",
         "aliasName": "core/neutral/25",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:b64641412b20c7cf8dc668584dc1375782c925b4/3927:49",
@@ -1033,7 +1110,8 @@
         "aliasOf": "VariableID:fe872ff5f1b9c52a1a2bd3506bd44d34c580dc31/3319:275",
         "aliasName": "core/purple/50",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:de015009b5ffccac041adce3baa49ce62f7932ac/3958:114",
@@ -1048,7 +1126,8 @@
         "aliasOf": "VariableID:3473d6549920890a00bb6c9b69cf16ff03c83d08/3319:277",
         "aliasName": "core/purple/200",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:c59ef4ad92477e49734280b9b105e5653b76372b/3958:116",
@@ -1063,7 +1142,41 @@
         "aliasOf": "VariableID:42a5d2b5124e9ec5f192d567fa6337dafce290f5/3319:284",
         "aliasName": "core/purple/900",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
+      },
+      {
+        "id": "VariableID:5663e8da85f2d19ae7f3fa566b95629e9caace9f/3927:66",
+        "name": "static/background/feedback/error/quiet",
+        "collection": "Color",
+        "type": "color",
+        "value": "#FEF2F2",
+        "hex": "#FEF2F2",
+        "scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "aliasOf": "VariableID:a463d773f05ba1d9252536f01225b7cb795515d6/3319:220",
+        "aliasName": "core/red/50",
+        "aliasCollection": "Global color",
+        "isPrimitive": false,
+        "remote": true
+      },
+      {
+        "id": "VariableID:cecdb77381c8731a58c37f49b4121c8ca240e045/3982:1",
+        "name": "static/foreground/feedback/error/bold",
+        "collection": "Color",
+        "type": "color",
+        "value": "#B91C1C",
+        "hex": "#B91C1C",
+        "scopes": [
+          "ALL_FILLS"
+        ],
+        "aliasOf": "VariableID:5dc798e343dab38711bcb99ac744a98ab38c4405/3319:227",
+        "aliasName": "core/red/700",
+        "aliasCollection": "Global color",
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:30203fb72ba16ae316a56000ca49e6dd833f1613/1227:13",
@@ -1080,7 +1193,8 @@
         "aliasOf": "VariableID:44dade51dd7de9f36517efdeb698b1c789d02434/1138:20",
         "aliasName": "spacing/200",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:0dcae37e5c4fe8df43d247a089cf82212b367439/3319:344",
@@ -1096,7 +1210,8 @@
         "aliasOf": "VariableID:dedc79b3fecb35fb3ed89cad8f9e71ab3ed9738e/3319:280",
         "aliasName": "core/purple/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:76f31e1d9c276b31aac689cea8fad80fbf651929/3319:346",
@@ -1112,7 +1227,8 @@
         "aliasOf": "VariableID:ad549939925071e642cb28ba554c060c606c5df9/3319:282",
         "aliasName": "core/purple/700",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:04a49764717dff6b097a3ab521bbaf68781c10d4/1227:3",
@@ -1129,7 +1245,8 @@
         "aliasOf": "VariableID:b7088e3078e925cddc015fb9741c932533bf1cf3/1138:21",
         "aliasName": "spacing/150",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:5a69023d7617516c8c72da02fcee8591c122b807/3319:404",
@@ -1144,7 +1261,8 @@
         "aliasOf": "VariableID:3473d6549920890a00bb6c9b69cf16ff03c83d08/3319:277",
         "aliasName": "core/purple/200",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:872042f4da504a275fe2a3b8a3126424998aadc3/1227:11",
@@ -1161,7 +1279,8 @@
         "aliasOf": "VariableID:20672efbacd6437f912bd6def293115c151b03ea/1138:30",
         "aliasName": "spacing/50",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:d319e54c00561f3df5f8886ad68afe97ae8d35b6/1545:36",
@@ -1178,7 +1297,8 @@
         "aliasOf": "VariableID:07128232650df937b6bcd2d116db7c5ce8b3cba8/827:272",
         "aliasName": "font/letter-spacing/100",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:8b53fd560beab4dd3311cd2097109e24bafc7f1b/1545:38",
@@ -1195,7 +1315,8 @@
         "aliasOf": "VariableID:f0d8a96c603158777a1ded8f1f9977e0f33ce9ec/827:263",
         "aliasName": "font/size/350",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:2ef0685ab82fa76072745c518f8b2a6d6b8b6ab9/1545:39",
@@ -1212,7 +1333,8 @@
         "aliasOf": "VariableID:051059af336324027b0d0a1402498786472b9307/827:260",
         "aliasName": "font/family/body",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:2efd3e95e1f125080b0531afd2a5bf0574f152b8/1561:45",
@@ -1229,7 +1351,8 @@
         "aliasOf": "VariableID:c7c372dcbddf27cf8885f21a658fe12e1bb2c981/1552:48",
         "aliasName": "font/line-height/400",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:2b0e1dde12154d1a2b7daf14de1b1f596cee8c1a/1545:37",
@@ -1246,7 +1369,8 @@
         "aliasOf": "VariableID:885adae0a89ea5f7f4dfab8e2b7f8321fb9684b5/842:231",
         "aliasName": "font/weight/regular",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
@@ -1263,7 +1387,8 @@
         "aliasOf": "VariableID:1acd3585522b74267c1b2a5dcf947648005eaae0/1138:23",
         "aliasName": "spacing/100",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:a1729a09a96b26809bc80f804ea161a7607f9d2f/2561:7",
@@ -1280,7 +1405,8 @@
         "aliasOf": "VariableID:fab8f7078eadef8598c45003b22ea14c431a4607/1138:39",
         "aliasName": "corner/150",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:701fe3d73d614fd5c2753196970db08a0804bf87/2594:12",
@@ -1297,7 +1423,8 @@
         "aliasOf": "VariableID:611ac92032e038b8b951891bc4719237ec73f98c/2594:13",
         "aliasName": "asset/50",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:cc10527f81ab3de6deb477d9f460671fda777c41/3319:352",
@@ -1312,7 +1439,8 @@
         "aliasOf": "VariableID:61d09723d94d0bc7f7101b8e9985be378260a678/3319:321",
         "aliasName": "core/neutral/25",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:7861fbae8ff052d8789029a0fb240b9ef59a8e50/3958:107",
@@ -1328,7 +1456,8 @@
         "aliasOf": "VariableID:46c4bf16e40b0c3c7d1e81291047b65542bbd144/3319:309",
         "aliasName": "core/neutral/100",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:b541269d1bf84a5e43aa60476cfae5edeccf1295/3319:359",
@@ -1343,7 +1472,8 @@
         "aliasOf": "VariableID:24e935184befca2f1d435dc8958f3b1fa4644f0c/3319:313",
         "aliasName": "core/neutral/600",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:71ca65f16b7cebddf3f1716196b468bb9626c2e1/3491:45",
@@ -1358,7 +1488,8 @@
         "aliasOf": "VariableID:f1eba0054c0af2a3015ee5f9a4548b24e8a87bf3/3319:315",
         "aliasName": "core/neutral/800",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:0c851364ff25cc7232582c9b2019159908d3dd88/3958:122",
@@ -1374,7 +1505,8 @@
         "aliasOf": "VariableID:dedc79b3fecb35fb3ed89cad8f9e71ab3ed9738e/3319:280",
         "aliasName": "core/purple/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:78aacbfdb4e852bbf26a6faaae84c49868b1b8dd/2561:4",
@@ -1391,7 +1523,8 @@
         "aliasOf": "VariableID:7f691e94f58613a6dd3b30040b5df9bff77dd32f/1138:18",
         "aliasName": "spacing/300",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:8db08a20eaac10c557718c7fa2e22685aef9f1eb/2376:28",
@@ -1408,7 +1541,8 @@
         "aliasOf": "VariableID:7d03694fb0fe0852dcf26dd10437118ce92f0e94/2133:1440",
         "aliasName": "border/width/100",
         "aliasCollection": "_Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:d8046c7df8096c331b4b63c37c1b38729a0ee465/3319:319",
@@ -1423,7 +1557,8 @@
         "aliasOf": "VariableID:dedc79b3fecb35fb3ed89cad8f9e71ab3ed9738e/3319:280",
         "aliasName": "core/purple/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:08f9408344868140e746d201259997a5139b6c34/4033:515",
@@ -1438,7 +1573,8 @@
         "aliasOf": "VariableID:d888602f6593c814b69421a22d9ace5f528e7e0c/3889:26",
         "aliasName": "expressive/sapphire/400",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:dea78c7217c3b89a98e046e47cd9f8630a85ff79/4033:496",
@@ -1453,7 +1589,8 @@
         "aliasOf": "VariableID:d93717faa696024c1471d2e12f934c429ca76735/3889:40",
         "aliasName": "expressive/violet/700",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:30133e550954d1886e8a071bc23febe7105f32a6/4033:481",
@@ -1468,7 +1605,8 @@
         "aliasOf": "VariableID:be55dcfa588d9d6d4976b31bcfada1ba208a78e1/3400:437",
         "aliasName": "expressive/teal/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:308dc5381b2301337b13fa68d116158467ed3649/4033:518",
@@ -1483,7 +1621,8 @@
         "aliasOf": "VariableID:0749bd31bb42ea2d9f9b9a86f3f08fa51eb1cb62/3889:29",
         "aliasName": "expressive/sapphire/700",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:a2d44fad5e2d36d08168ec04d75a68619de167db/4033:432",
@@ -1498,7 +1637,8 @@
         "aliasOf": "VariableID:9850c6365e7787bbf189d3fed11b17dff8428489/3400:363",
         "aliasName": "expressive/lavender/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:966e4e4e517db60711d94d28a0d383296ad916b1/4033:398",
@@ -1513,7 +1653,8 @@
         "aliasOf": "VariableID:d86cde96f8eca8c8e1928622a238e9886e6b7178/3414:627",
         "aliasName": "expressive/amber/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:f4917e2325348e5bf666675e5fe5d3e2ead1003b/4033:407",
@@ -1528,7 +1669,8 @@
         "aliasOf": "VariableID:ab2105635b8a8a7e309431f476bd60e9d221421d/3400:353",
         "aliasName": "expressive/coral/700",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:03953486e5268275c40e51f83bff69b21830c6b5/1227:14",
@@ -1545,7 +1687,8 @@
         "aliasOf": "VariableID:4ab56cb87f4d282c09571d2b0da1cb071d7db846/1138:22",
         "aliasName": "spacing/400",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:09ea9aeb97f6855ebde9c14b0db5087a8b2fc323/4033:376",
@@ -1560,7 +1703,8 @@
         "aliasOf": "VariableID:e9a7ee1270da8de23e6e5ca4ad376561c94f97a4/3889:42",
         "aliasName": "expressive/violet/900",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:d1069de461dc5de5bf55741f5eb6fa93a3a74a1b/4033:375",
@@ -1575,7 +1719,8 @@
         "aliasOf": "VariableID:a32fa07ae63231a59a30bb04a5b388dd0330f98d/3889:38",
         "aliasName": "expressive/violet/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:f170b2153c8a024ba549440ee75df85fdf203077/1545:20",
@@ -1592,7 +1737,8 @@
         "aliasOf": "VariableID:07128232650df937b6bcd2d116db7c5ce8b3cba8/827:272",
         "aliasName": "font/letter-spacing/100",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:3389a2b5e718b77a3ac37230177fec4838b8c01c/1545:22",
@@ -1609,7 +1755,8 @@
         "aliasOf": "VariableID:6a8c8fa5ea04cc8ca781a6804671a678a231ef47/827:338",
         "aliasName": "font/size/400",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:4ecc6fe613499173bb0d614a99bb547a27481daa/1545:23",
@@ -1626,7 +1773,8 @@
         "aliasOf": "VariableID:051059af336324027b0d0a1402498786472b9307/827:260",
         "aliasName": "font/family/body",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:a5104ff7fee688b26b582641e47cec3f7dc2213e/1667:5",
@@ -1643,7 +1791,8 @@
         "aliasOf": "VariableID:238399d6697fd7542f07fa6923aa46475e96e306/1552:49",
         "aliasName": "font/line-height/500",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:bd5df1f66a665fb3abbad64ea43984d74f5e467b/1545:21",
@@ -1660,7 +1809,8 @@
         "aliasOf": "VariableID:2c0a6169d4f64d088b5d9dfdda159922b60b3643/842:254",
         "aliasName": "font/weight/semibold",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:83850139a9763604395bb5d037449f4b32720a72/1545:160",
@@ -1677,7 +1827,8 @@
         "aliasOf": "VariableID:07128232650df937b6bcd2d116db7c5ce8b3cba8/827:272",
         "aliasName": "font/letter-spacing/100",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:6b0d78ddfb0d331662932b0174c0e5d5d5e46950/1545:158",
@@ -1694,7 +1845,8 @@
         "aliasOf": "VariableID:6a8c8fa5ea04cc8ca781a6804671a678a231ef47/827:338",
         "aliasName": "font/size/400",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:d1f899837a3c8fc82a438e31004e03799f147074/1545:157",
@@ -1711,7 +1863,8 @@
         "aliasOf": "VariableID:051059af336324027b0d0a1402498786472b9307/827:260",
         "aliasName": "font/family/body",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:f0090c959c7727e54425d3a74e0db6c1e22a8e9d/1667:8",
@@ -1728,7 +1881,8 @@
         "aliasOf": "VariableID:238399d6697fd7542f07fa6923aa46475e96e306/1552:49",
         "aliasName": "font/line-height/500",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:22f128b4a70cc1e5bfa6ca2934644a5779bdb956/1545:159",
@@ -1745,7 +1899,8 @@
         "aliasOf": "VariableID:4f48811dcdbe34b9c57b56397c0808bc6829f260/842:241",
         "aliasName": "font/weight/medium",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:301cfff856e183a804efcd741fe7e6e6d7e644d5/4033:505",
@@ -1760,7 +1915,8 @@
         "aliasOf": "VariableID:7c8f087af42b6cd59009f62e251332b77668299e/3686:17",
         "aliasName": "expressive/iron/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:64f0d8cfbe2931dd955152beebe858d9fbee966a/4033:504",
@@ -1775,7 +1931,8 @@
         "aliasOf": "VariableID:fe00d75910a9c62b08c6d30bc6772da7771ce789/3686:16",
         "aliasName": "expressive/iron/400",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
@@ -1792,7 +1949,8 @@
         "aliasOf": "VariableID:44dade51dd7de9f36517efdeb698b1c789d02434/1138:20",
         "aliasName": "spacing/200",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:ebc07bb076012fb521a521a8d9f0dcab3f31db1a/2561:9",
@@ -1809,7 +1967,8 @@
         "aliasOf": "VariableID:d0bd5422610271c97b1a3331c1799702793ede38/1561:92",
         "aliasName": "corner/250",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:59017e34b8e4be912c9a3820308afec68968a499/4033:470",
@@ -1824,7 +1983,8 @@
         "aliasOf": "VariableID:c0ff6cdc03818c47c5100f74a5a1a3791b0f976f/3392:275",
         "aliasName": "expressive/pink/600",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:14e3e83c098e4de858872cc129c82355152df7a3/1545:59",
@@ -1841,7 +2001,8 @@
         "aliasOf": "VariableID:07128232650df937b6bcd2d116db7c5ce8b3cba8/827:272",
         "aliasName": "font/letter-spacing/100",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:4d965410a7fe6f2f7a882b228981e12a91841a65/1545:58",
@@ -1858,7 +2019,8 @@
         "aliasOf": "VariableID:40c7a92a6ed1c56974ed3023a2aec562c1b80dcb/827:262",
         "aliasName": "font/size/300",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:823f2259641cbd9126e0a011592fb3db7e9c0e97/1545:54",
@@ -1875,7 +2037,8 @@
         "aliasOf": "VariableID:051059af336324027b0d0a1402498786472b9307/827:260",
         "aliasName": "font/family/body",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:5fecd18789094333cd531bd085e35f75646d29bd/1557:32",
@@ -1892,7 +2055,8 @@
         "aliasOf": "VariableID:777fdf43cd4f0f96b853399ae970a3809435a1dd/1552:46",
         "aliasName": "font/line-height/300",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:63499924b1d454b442323da96d28aa11b21a9a74/1545:52",
@@ -1909,7 +2073,8 @@
         "aliasOf": "VariableID:2c0a6169d4f64d088b5d9dfdda159922b60b3643/842:254",
         "aliasName": "font/weight/semibold",
         "aliasCollection": "Global typography",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:65ba7f24bbdbd1f370f94028355f7c5c79f72596/1227:9",
@@ -1926,7 +2091,8 @@
         "aliasOf": "VariableID:cb03f85ece9ee0c409f50d9f701977d1704a2b4a/1138:29",
         "aliasName": "spacing/600",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:481f2a6a74999b04f577ab8a36ed1a620725d4d1/4033:490",
@@ -1941,7 +2107,8 @@
         "aliasOf": "VariableID:2b462809380ab674e85a49a1b014375edeec9df1/3889:34",
         "aliasName": "expressive/violet/100",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:05182bdef161290f8e46d8707fbdbfc40979dda5/2594:28",
@@ -1958,7 +2125,8 @@
         "aliasOf": "VariableID:31fa4e5ac877b200bfaab90254ff882235ec0b54/2594:29",
         "aliasName": "asset/800",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/3563:67",
@@ -1973,7 +2141,8 @@
         "aliasOf": "VariableID:fe872ff5f1b9c52a1a2bd3506bd44d34c580dc31/3319:275",
         "aliasName": "core/purple/50",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:d1069de461dc5de5bf55741f5eb6fa93a3a74a1b/3563:65",
@@ -1988,7 +2157,8 @@
         "aliasOf": "VariableID:dedc79b3fecb35fb3ed89cad8f9e71ab3ed9738e/3319:280",
         "aliasName": "core/purple/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/3563:62",
@@ -2003,7 +2173,8 @@
         "aliasOf": "VariableID:8108247c632a767e73755e143f1d4e06be8c292f/3414:605",
         "aliasName": "core/cyan/900",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:8dab0e571edbcd98511064042c233e815e086afd/3319:340",
@@ -2019,7 +2190,8 @@
         "aliasOf": "VariableID:61d09723d94d0bc7f7101b8e9985be378260a678/3319:321",
         "aliasName": "core/neutral/25",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:e49dd188b6740bd4afb71adde43e86f5494255b0/2594:32",
@@ -2036,7 +2208,8 @@
         "aliasOf": "VariableID:c7d2aa62e0193bf3bdb4f714db6c9559f40b82f6/2594:33",
         "aliasName": "asset/700",
         "aliasCollection": "Global dimension",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:b5a951495b65213c7d96ce8a26d0a5bf20560289/3054:40",
@@ -2051,7 +2224,8 @@
         "aliasOf": "VariableID:dedc79b3fecb35fb3ed89cad8f9e71ab3ed9738e/1141:62",
         "aliasName": "core/purple/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:a721bf94682bac637371ab810485a4f392914778/3054:10",
@@ -2066,7 +2240,8 @@
         "aliasOf": "VariableID:318ac07516506fd14be8242ba316e50d1de703ab/1141:99",
         "aliasName": "core/neutral/950",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:0dcae37e5c4fe8df43d247a089cf82212b367439/3054:16",
@@ -2082,7 +2257,8 @@
         "aliasOf": "VariableID:dedc79b3fecb35fb3ed89cad8f9e71ab3ed9738e/1141:62",
         "aliasName": "core/purple/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:cc10527f81ab3de6deb477d9f460671fda777c41/3054:11",
@@ -2097,7 +2273,8 @@
         "aliasOf": "VariableID:61d09723d94d0bc7f7101b8e9985be378260a678/1141:106",
         "aliasName": "core/neutral/25",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:b64641412b20c7cf8dc668584dc1375782c925b4/3054:20",
@@ -2113,7 +2290,8 @@
         "aliasOf": "VariableID:fe872ff5f1b9c52a1a2bd3506bd44d34c580dc31/1141:57",
         "aliasName": "core/purple/50",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:de015009b5ffccac041adce3baa49ce62f7932ac/3054:39",
@@ -2128,7 +2306,8 @@
         "aliasOf": "VariableID:3473d6549920890a00bb6c9b69cf16ff03c83d08/1141:59",
         "aliasName": "core/purple/200",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:c59ef4ad92477e49734280b9b105e5653b76372b/3054:42",
@@ -2143,7 +2322,8 @@
         "aliasOf": "VariableID:42a5d2b5124e9ec5f192d567fa6337dafce290f5/1141:66",
         "aliasName": "core/purple/900",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:92a30073031947a22081d730b063363e07671ad0/3054:18",
@@ -2159,7 +2339,8 @@
         "aliasOf": "VariableID:fe872ff5f1b9c52a1a2bd3506bd44d34c580dc31/1141:57",
         "aliasName": "core/purple/50",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:b5a951495b65213c7d96ce8a26d0a5bf20560289/3319:360",
@@ -2174,7 +2355,8 @@
         "aliasOf": "VariableID:dedc79b3fecb35fb3ed89cad8f9e71ab3ed9738e/3319:280",
         "aliasName": "core/purple/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:5aac72ac5d283d0b7501d2bf882947ff1bcb6e57/3054:48",
@@ -2189,7 +2371,8 @@
         "aliasOf": "VariableID:33daf1d80b61067cd0a13c0fc203764303d85554/1374:7",
         "aliasName": "core/neutral/400",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       },
       {
         "id": "VariableID:71ca65f16b7cebddf3f1716196b468bb9626c2e1/3054:14",
@@ -2204,7 +2387,8 @@
         "aliasOf": "VariableID:410fc7406aa9b6ce9a23abbb7f59bb82f83602f7/1374:4",
         "aliasName": "core/neutral/500",
         "aliasCollection": "Global color",
-        "isPrimitive": false
+        "isPrimitive": false,
+        "remote": true
       }
     ]
   },
@@ -3893,6 +4077,246 @@
           "layerName": "State=focus, Read=true",
           "tokenId": "VariableID:b5a951495b65213c7d96ce8a26d0a5bf20560289/3958:115",
           "tokenName": "interactive/border/brand/primary/focus/medium"
+        },
+        {
+          "property": "strokeTopWeight",
+          "layerName": "State=deleted, Read=false",
+          "tokenId": "VariableID:ba093e93d53c38e43edbfefe29055cdbf7c6f97f/1138:4",
+          "tokenName": "border/width/thin"
+        },
+        {
+          "property": "strokeBottomWeight",
+          "layerName": "State=deleted, Read=false",
+          "tokenId": "VariableID:ba093e93d53c38e43edbfefe29055cdbf7c6f97f/1138:4",
+          "tokenName": "border/width/thin"
+        },
+        {
+          "property": "strokeLeftWeight",
+          "layerName": "State=deleted, Read=false",
+          "tokenId": "VariableID:ba093e93d53c38e43edbfefe29055cdbf7c6f97f/1138:4",
+          "tokenName": "border/width/thin"
+        },
+        {
+          "property": "strokeRightWeight",
+          "layerName": "State=deleted, Read=false",
+          "tokenId": "VariableID:ba093e93d53c38e43edbfefe29055cdbf7c6f97f/1138:4",
+          "tokenName": "border/width/thin"
+        },
+        {
+          "property": "itemSpacing",
+          "layerName": "Content wrapper",
+          "tokenId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "tokenName": "gap/gap-0"
+        },
+        {
+          "property": "topLeftRadius",
+          "layerName": "Content wrapper",
+          "tokenId": "VariableID:d3d4c40b03575020f5c49b40fa21494d02c4f196/2561:10",
+          "tokenName": "border/corner/corner-300"
+        },
+        {
+          "property": "topRightRadius",
+          "layerName": "Content wrapper",
+          "tokenId": "VariableID:d3d4c40b03575020f5c49b40fa21494d02c4f196/2561:10",
+          "tokenName": "border/corner/corner-300"
+        },
+        {
+          "property": "bottomLeftRadius",
+          "layerName": "Content wrapper",
+          "tokenId": "VariableID:d3d4c40b03575020f5c49b40fa21494d02c4f196/2561:10",
+          "tokenName": "border/corner/corner-300"
+        },
+        {
+          "property": "bottomRightRadius",
+          "layerName": "Content wrapper",
+          "tokenId": "VariableID:d3d4c40b03575020f5c49b40fa21494d02c4f196/2561:10",
+          "tokenName": "border/corner/corner-300"
+        },
+        {
+          "property": "fills",
+          "layerName": "Content wrapper",
+          "tokenId": "VariableID:5663e8da85f2d19ae7f3fa566b95629e9caace9f/3927:66",
+          "tokenName": "static/background/feedback/error/quiet"
+        },
+        {
+          "property": "itemSpacing",
+          "layerName": "Notification",
+          "tokenId": "VariableID:0acafbe854d5400d7fa97fdf10a4ca6ce7f22f18/1557:34",
+          "tokenName": "gap/gap-150"
+        },
+        {
+          "property": "paddingLeft",
+          "layerName": "Notification",
+          "tokenId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "tokenName": "padding/padding-300"
+        },
+        {
+          "property": "paddingTop",
+          "layerName": "Notification",
+          "tokenId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "tokenName": "padding/padding-300"
+        },
+        {
+          "property": "paddingRight",
+          "layerName": "Notification",
+          "tokenId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "tokenName": "padding/padding-300"
+        },
+        {
+          "property": "paddingBottom",
+          "layerName": "Notification",
+          "tokenId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "tokenName": "padding/padding-300"
+        },
+        {
+          "property": "topLeftRadius",
+          "layerName": "Notification",
+          "tokenId": "VariableID:d3d4c40b03575020f5c49b40fa21494d02c4f196/2561:10",
+          "tokenName": "border/corner/corner-300"
+        },
+        {
+          "property": "topRightRadius",
+          "layerName": "Notification",
+          "tokenId": "VariableID:d3d4c40b03575020f5c49b40fa21494d02c4f196/2561:10",
+          "tokenName": "border/corner/corner-300"
+        },
+        {
+          "property": "bottomLeftRadius",
+          "layerName": "Notification",
+          "tokenId": "VariableID:d3d4c40b03575020f5c49b40fa21494d02c4f196/2561:10",
+          "tokenName": "border/corner/corner-300"
+        },
+        {
+          "property": "bottomRightRadius",
+          "layerName": "Notification",
+          "tokenId": "VariableID:d3d4c40b03575020f5c49b40fa21494d02c4f196/2561:10",
+          "tokenName": "border/corner/corner-300"
+        },
+        {
+          "property": "strokeTopWeight",
+          "layerName": "Notification",
+          "tokenId": "VariableID:91dc4a4e00c180daa36f2bc6ae5adf10af0ff3bf/1138:2",
+          "tokenName": "border/width/medium"
+        },
+        {
+          "property": "strokeBottomWeight",
+          "layerName": "Notification",
+          "tokenId": "VariableID:91dc4a4e00c180daa36f2bc6ae5adf10af0ff3bf/1138:2",
+          "tokenName": "border/width/medium"
+        },
+        {
+          "property": "strokeLeftWeight",
+          "layerName": "Notification",
+          "tokenId": "VariableID:91dc4a4e00c180daa36f2bc6ae5adf10af0ff3bf/1138:2",
+          "tokenName": "border/width/medium"
+        },
+        {
+          "property": "strokeRightWeight",
+          "layerName": "Notification",
+          "tokenId": "VariableID:91dc4a4e00c180daa36f2bc6ae5adf10af0ff3bf/1138:2",
+          "tokenName": "border/width/medium"
+        },
+        {
+          "property": "fills",
+          "layerName": "Notification",
+          "tokenId": "VariableID:b64641412b20c7cf8dc668584dc1375782c925b4/3927:49",
+          "tokenName": "interactive/background/brand/hover/quiet"
+        },
+        {
+          "property": "strokes",
+          "layerName": "Notification",
+          "tokenId": "VariableID:c59ef4ad92477e49734280b9b105e5653b76372b/3958:116",
+          "tokenName": "interactive/border/brand/primary/pressed/bold"
+        },
+        {
+          "property": "itemSpacing",
+          "layerName": "Action",
+          "tokenId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "tokenName": "gap/gap-0"
+        },
+        {
+          "property": "paddingLeft",
+          "layerName": "Action",
+          "tokenId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "tokenName": "padding/padding-0"
+        },
+        {
+          "property": "paddingRight",
+          "layerName": "Action",
+          "tokenId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "tokenName": "padding/padding-0"
+        },
+        {
+          "property": "fills",
+          "layerName": "Vector",
+          "tokenId": "VariableID:cecdb77381c8731a58c37f49b4121c8ca240e045/3982:1",
+          "tokenName": "static/foreground/feedback/error/bold"
+        },
+        {
+          "property": "fills",
+          "layerName": "Label",
+          "tokenId": "VariableID:cecdb77381c8731a58c37f49b4121c8ca240e045/3982:1",
+          "tokenName": "static/foreground/feedback/error/bold"
+        },
+        {
+          "property": "letterSpacing",
+          "layerName": "Label",
+          "tokenId": "VariableID:7839a59493e521b5c1aa66b128dc6f70fd78cdf3/1545:156",
+          "tokenName": "body/sm/medium/letter-spacing"
+        },
+        {
+          "property": "fontSize",
+          "layerName": "Label",
+          "tokenId": "VariableID:800a68ad46ce4e84fe4518f7b04c4d1fb10fea22/1545:154",
+          "tokenName": "body/sm/medium/font-size"
+        },
+        {
+          "property": "fontFamily",
+          "layerName": "Label",
+          "tokenId": "VariableID:db9c6019bcbde6baf043fc50bc0583a266c8b955/1545:153",
+          "tokenName": "body/sm/medium/font-family"
+        },
+        {
+          "property": "lineHeight",
+          "layerName": "Label",
+          "tokenId": "VariableID:bcb47a8c368ad38db7e53c3bd3180233b65d9b46/1561:50",
+          "tokenName": "body/sm/medium/line-height"
+        },
+        {
+          "property": "fontWeight",
+          "layerName": "Label",
+          "tokenId": "VariableID:b92996b881cf44ee6136bae59ae49463c54c998e/1545:155",
+          "tokenName": "body/sm/medium/font-weight"
+        },
+        {
+          "property": "strokeTopWeight",
+          "layerName": "State=deleted, Read=true",
+          "tokenId": "VariableID:ba093e93d53c38e43edbfefe29055cdbf7c6f97f/1138:4",
+          "tokenName": "border/width/thin"
+        },
+        {
+          "property": "strokeBottomWeight",
+          "layerName": "State=deleted, Read=true",
+          "tokenId": "VariableID:ba093e93d53c38e43edbfefe29055cdbf7c6f97f/1138:4",
+          "tokenName": "border/width/thin"
+        },
+        {
+          "property": "strokeLeftWeight",
+          "layerName": "State=deleted, Read=true",
+          "tokenId": "VariableID:ba093e93d53c38e43edbfefe29055cdbf7c6f97f/1138:4",
+          "tokenName": "border/width/thin"
+        },
+        {
+          "property": "strokeRightWeight",
+          "layerName": "State=deleted, Read=true",
+          "tokenId": "VariableID:ba093e93d53c38e43edbfefe29055cdbf7c6f97f/1138:4",
+          "tokenName": "border/width/thin"
+        },
+        {
+          "property": "fills",
+          "layerName": "Notification",
+          "tokenId": "VariableID:211c946f80090ddec6e17baa05bf115aa06db017/3927:50",
+          "tokenName": "interactive/background/neutral/default/quiet"
         }
       ],
       "hardcodedCount": 0
