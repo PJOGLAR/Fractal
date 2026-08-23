@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react'
 import componentData from './data/component-data.json'
 import templateData from './data/template-data.json'
+import customData from './data/custom-data.json'
 import { DashboardData } from './types'
 import { Header } from './components/Header'
 import { ComponentIndex } from './components/ComponentIndex'
@@ -57,6 +58,7 @@ export default function App() {
   const libraries = useMemo(() => [
     { id: 'components', label: 'Componentes', data: componentData as unknown as DashboardData },
     { id: 'templates', label: 'Templates', data: templateData as unknown as DashboardData },
+    { id: 'custom', label: 'Custom', data: customData as unknown as DashboardData },
   ], [])
 
   const mergedData = useMemo(() => mergeLibraries(libraries), [libraries])

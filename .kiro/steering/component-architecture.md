@@ -123,6 +123,26 @@ El orden vertical en el panel de propiedades debe respetar:
 
 Las propiedades son props del componente. Las variantes son los valores posibles. No mezclar: un estado NO es una variante del componente sino un valor de la propiedad State.
 
+### Naming semántico de props: `Orientation` vs `Alignment`
+
+Son dos conceptos distintos y no deben mezclarse. Elegir el nombre según lo que la prop realmente controla.
+
+| Prop | Qué controla | Valores válidos |
+|------|--------------|-----------------|
+| `Orientation` | Dirección/eje del layout del componente | `horizontal`, `vertical` |
+| `Alignment` | Posición del contenido dentro del contenedor | `left`, `center`, `right` (o `start`, `center`, `end`) |
+
+**Regla:** si un componente tiene una prop que define si sus elementos se disponen en fila o en columna, la prop se llama **`Orientation`** con valores `horizontal` / `vertical`. Nunca `Alignment` para esto.
+
+`Alignment` queda reservado para posicionar contenido (texto, íconos, elementos hijos) respecto de su contenedor.
+
+| ✅ Correcto | ❌ Incorrecto |
+|------------|--------------|
+| `Orientation: horizontal / vertical` | `Alignment: horizontal / vertical` |
+| `Alignment: left / center / right` | `Orientation: left / center / right` |
+
+Aplica retroactivamente: componentes existentes que hoy usan `Alignment` con valores `horizontal` / `vertical` (por ejemplo `Empty state`, `Button card`) deben migrarse a `Orientation`.
+
 ---
 
 ## Zonas semánticas (Leading / Content / Trailing)
