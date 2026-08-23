@@ -1,324 +1,399 @@
-# Fractal Design System — Agent Context
+# Fractal DS — Contexto para agentes
 
-Este archivo contiene las reglas operacionales para agentes que trabajan con el Design System Fractal de Telecom Personal Pay.
+Este archivo se carga automáticamente en cada conversación del workspace y contiene todo el contexto ambiental que necesita un agente para trabajar en el proyecto.
 
-## Stack y Tecnología
+---
 
-**Fractal está implementado** como paquete React Native con soporte web:
-- **Librería:** `@ppay-mobile/fractal-ui`
-- **Tokens:** `@ppay-mobile/fractal-tokens` (incluido automáticamente)
-- **Framework:** Tamagui para sistema de variantes
-- **Plataformas:** React Native + Web (react-native-web)
+## Objetivo del proyecto
 
-## Instalación
+**Fractal DS** es el Design System de Telecom Personal Pay. Este workspace es la **herramienta interna del equipo de diseño del DS** para:
 
-```bash
-npm install @ppay-mobile/fractal-ui react-native-reanimated react-native-svg react-native-safe-area-context
+1. Ver el estado de salud del DS (dashboard).
+2. Auditar componentes de Figma (arquitectura y tokenización).
+3. Detectar cambios diarios en las librerías de Figma (changelog automático).
+4. Explorar tokens, componentes, huérfanos y valores hardcodeados.
+
+**Quién lo usa:** el equipo de diseño de Fractal. No los desarrolladores que consumen la librería.
+
+**Qué NO es:**
+- No es documentación pública del DS.
+- No es un tutorial de cómo consumir `@ppay-mobile/fractal-ui` desde código.
+- No es un lugar para escribir código de aplicaciones.
+
+Cualquier "reglas para agentes" en este archivo se refiere al agente que trabaja acá con el mantenedor del DS, no a un agente que ayuda a un dev a escribir una pantalla con la librería.
+
+---
+
+## Cómo trabajar acá
+
+### Auditorías (uso principal)
+
+Cuando el mantenedor pide revisar un componente, hay dos ejes que se auditan por separado. Los dos tienen su propio steering manual en `.kiro/steering/`:
+
+| Foco | Cuándo invocarlo | Steering |
+|---|---|---|
+| Arquitectura (capas, naming, props, variantes) | Al revisar cómo está construido un componente | `#component-architecture` |
+| Tokenización (tokens aplicados, escalas, errores) | Al revisar qué tokens usa un componente | `#tokenization-rules` |
+
+Los dos steering solo se cargan cuando se invocan (`inclusion: manual`). Este archivo (auto) trae el contexto que aplica siempre.
+
+### Herramientas disponibles
+
+- **MCP de Figma** (`figma-developer-mcp`): lee archivos de Figma directamente cuando el archivo está abierto en Dev Mode. Usar para auditorías on-demand por file key + node-id.
+- **Dashboard local** (`npm run dev`): visualiza el estado extraído.
+- **Plugins de Figma** (en `personal/`): generan los JSONs que consume el dashboard.
+- **Diff manual** (`npm run diff -- <librería>`): compara el estado actual contra el último snapshot.
+
+### Reporting de hallazgos
+
+- Siempre incluir el `node-id` cuando se reporta un componente.
+- Separar hallazgos de arquitectura de hallazgos de tokenización.
+- **Regla cero**: no clasificar como problema lo que no está verificado. Si no se puede determinar el origen o la intención de un token, el hallazgo es "pendiente de verificar", no "deuda".
+
+---
+
+## Estructura del proyecto
+
+```
+/src/                          ← dashboard React
+  App.tsx                      ← mergea Components/Templates/Custom y rutea vistas
+  /components/
+    Header.tsx                 ← navegación + indicador de frescura
+    Overview.tsx               ← resumen de salud, cobertura, top tokens
+    ComponentIndex.tsx         ← índice de componentes con bindings
+    TokenExplorer.tsx          ← explorador de tokens
+    OrphanTokens.tsx           ← tokens de Foundations que no aplica ningún componente
+    AssetTokens.tsx            ← assets con sus tokens de color
+    Changelog.tsx              ← historial de cambios detectados en Figma
+    DSChat.tsx                 ← asistente de voz (Gemini Live)
+  /data/
+    component-data.json        ← generado por DS Extractor sobre la librería Components
+    template-data.json         ← generado por DS Extractor sobre Templates
+    custom-data.json           ← generado por DS Extractor sobre Custom Components
+    asset-data.json            ← generado por DS Extractor sobre Assets
+    foundations-data.json      ← generado por Foundations Export
+    changelog.json             ← historial de diffs automáticos
+    /snapshots/                ← snapshots que usa el diff diario
+      latest-components.json
+      latest-templates.json
+      latest-assets.json
+      latest-custom.json
+
+/api/
+  live-token.ts                ← Edge function que emite el token efímero de Gemini Live
+
+/scripts/                      ← scripts productivos (usados por CI o npm)
+  diff-changelog.ts            ← diff diario (usado por el workflow)
+  view-changelog.ts            ← visor CLI del changelog
+  extract-flows.ts             ← extractor de uso de DS en flujos
+
+/.github/workflows/
+  changelog.yml                ← corre 9 AM Argentina, detecta cambios en Figma
+
+/personal/                     ← GITIGNORADO — herramientas locales del mantenedor
+  /ds-extractor/               ← Plugin DS Extractor
+  /figma-plugin-foundations-export/  ← Plugin Foundations Export
+  /figma-plugin-generator-v2/  ← Autoría de componentes (NO alimenta al dashboard)
+  /scripts/                    ← extract-figma-data.ts y análisis varios
+
+/docs/                         ← documentación humana
+  CHANGELOG-GUIDE.md           ← cómo funciona el changelog
+  CHANGELOG-FORMAT.md          ← schema del JSON
+  accesibilidad-fractal.md
+  gobernanza-pedidos.md
+  /tokens/                     ← auditorías y catálogo de tokens
+  /components/                 ← doc por componente
 ```
 
-Configurar registry privado en `.npmrc`:
+---
+
+## Plugins de Figma
+
+Dos plugins alimentan al dashboard. El tercero es autoría y queda fuera del flujo de datos.
+
+| Plugin | Ubicación | Rol |
+|---|---|---|
+| **Foundations Export** | `personal/figma-plugin-foundations-export/` | Se corre en el archivo de Foundations. Exporta el inventario completo de tokens con valores por modo y alias resueltos → `foundations-data.json`. |
+| **DS Extractor** | `personal/ds-extractor/` | Se corre en cada archivo de componentes. Extrae bindings, hardcoded, huérfanos. Un dropdown en la UI del plugin decide el nombre del archivo destino (`component-data.json` / `template-data.json` / `asset-data.json` / `custom-data.json`). |
+
+> `personal/figma-plugin-generator-v2/` (Token Component Generator) es una herramienta de autoría de componentes en Figma. **No participa del flujo de datos del dashboard.**
+
+### Flujo de datos
+
 ```
-@ppay-mobile:registry=https://gitlab.com/api/v4/projects/70809357/packages/npm/
-//gitlab.com/api/v4/projects/70809357/packages/npm/:_authToken=${GITLAB_PERSONAL_TOKEN}
-```
-
-## Reglas Fundamentales
-
-### 1. NO reimplementes componentes
-**Siempre importar de la librería:**
-```tsx
-import { Button, Card, TextInput } from '@ppay-mobile/fractal-ui';
-```
-
-**Nunca hacer:**
-```tsx
-// ❌ NO hagas esto
-const CustomButton = ({ children }) => (
-  <TouchableOpacity style={{ backgroundColor: '#5A50F9' }}>
-    <Text>{children}</Text>
-  </TouchableOpacity>
-);
-```
-
-### 2. Envolver en FractalUIProvider
-Toda aplicación debe envolver el root en el provider:
-```tsx
-import { FractalUIProvider } from '@ppay-mobile/fractal-ui';
-
-export default function App() {
-  return (
-    <FractalUIProvider>
-      {/* Tu app aquí */}
-    </FractalUIProvider>
-  );
-}
-```
-
-### 3. Usar variantes del sistema
-Los componentes tienen variantes predefinidas:
-```tsx
-<Button variant="solid" size="md" appearance="default" />
-<Button variant="outline" size="lg" />
-<Button variant="ghost" size="sm" />
-```
-
-### 4. No hardcodear valores
-**Usar tokens del sistema:**
-```tsx
-// ✅ Correcto - usar spacing del sistema
-<View style={{ padding: '$spacing-md', gap: '$gap-sm' }} />
-
-// ❌ Incorrecto - valores hardcodeados  
-<View style={{ padding: 16, gap: 8 }} />
-```
-
-## Componentes Principales
-
-### Button
-```tsx
-<Button 
-  label="Confirmar" 
-  variant="solid" 
-  size="md" 
-  onPress={() => {}} 
-/>
-```
-
-### Card
-```tsx
-<Card>
-  <Text>Contenido de la card</Text>
-</Card>
-```
-
-### TextInput  
-```tsx
-<TextInput
-  label="Email"
-  placeholder="tu@email.com"
-  value={email}
-  onChangeText={setEmail}
-/>
-```
-
-## Estados y Variantes
-
-Cada componente maneja sus estados internamente:
-- **default:** Estado inicial
-- **hover:** Solo web, automático
-- **pressed:** Al hacer tap/click
-- **focus:** Al recibir foco
-- **disabled:** Componente inactivo
-- **loading:** Para botones con carga
-
-## Tokens Disponibles
-
-Los tokens están disponibles vía Tamagui como `$token-name`:
-- **Colores:** `$color-primary`, `$color-neutral-medium`
-- **Spacing:** `$spacing-sm`, `$spacing-md`, `$spacing-lg`  
-- **Tipografía:** `$fontSize-body-md`, `$fontWeight-semibold`
-- **Border radius:** `$borderRadius-sm`, `$borderRadius-md`
-
-## Patterns de Composición
-
-### Pantalla de Lista
-```tsx
-<ScrollView style={{ padding: '$spacing-md' }}>
-  <Text variant="heading-lg">Título</Text>
-  <View style={{ gap: '$gap-sm' }}>
-    {items.map(item => (
-      <Card key={item.id}>
-        <Text>{item.title}</Text>
-      </Card>
-    ))}
-  </View>
-</ScrollView>
-```
-
-### Formulario
-```tsx
-<View style={{ padding: '$spacing-lg', gap: '$gap-md' }}>
-  <TextInput label="Campo 1" />
-  <TextInput label="Campo 2" />
-  <Button label="Enviar" variant="solid" />
-</View>
-```
-
-## Do's and Don'ts para Agentes
-
-**Do:**
-- Importar componentes de `@ppay-mobile/fractal-ui`
-- Usar variantes predefinidas (`variant`, `size`, `appearance`)
-- Aplicar tokens del sistema (`$spacing-md`, `$color-primary`)
-- Envolver en `FractalUIProvider`
-- Consultar la documentación de componentes específicos
-
-**Don't:**
-- Crear componentes custom que repliquen funcionalidad existente
-- Hardcodear colores, spacing o tipografía
-- Usar estilos CSS planos sin tokens
-- Olvidar el provider en el root
-- Asumir APIs - verificar props disponibles en cada componente
-
-## Debugging
-
-Si un componente no se ve correctamente:
-1. Verificar que `FractalUIProvider` envuelve la app
-2. Confirmar que las variantes existen (`variant="solid"` vs `variant="primary"`)
-3. Revisar que los tokens estén bien referenciados (`$spacing-md` no `spacing-md`)
-
-Para más detalles, consultar la documentación completa en Storybook del proyecto.
-
-## Plugins de Figma para Dashboard
-
-El dashboard consume datos extraídos mediante **DOS plugins que alimentan al dashboard**:
-
-### 1. Foundations Export
-- **Plugin:** `personal/figma-plugin-foundations-export/`
-- **ID:** `foundations-export-fractal`
-- **Propósito:** Extrae inventario completo de tokens/variables
-- **Output:** JSON con colecciones, variables, valores por modo, alias
-- **Uso:** Ejecutar en archivo de Foundations para obtener snapshot de tokens
-
-### 2. DS Extractor
-- **Plugin:** `personal/ds-extractor/`
-- **ID:** `token-extractor-fractal`
-- **Propósito:** Extrae bindings de tokens en componentes
-- **Output:** JSON con el nombre destino (`component-data.json`, `template-data.json`, `asset-data.json` o `custom-data.json`) según la librería que se elige en el dropdown de la UI del plugin
-- **Uso:** Ejecutar en cada archivo de Components/Templates/Assets/Custom seleccionando la librería correspondiente
-
-### Herramienta de autoría (fuera del flujo de datos)
-
-**Token Component Generator V2** vive en `personal/figma-plugin-generator-v2/` (ID `token-component-generator-v2-fractal`). Genera componentes en Figma con bindings correctos. **No participa del flujo de datos del dashboard.**
-
-## Flujo de Datos del Dashboard
-```
-Figma Foundations File
+Figma Foundations
         ↓
-Foundations Export Plugin → foundations-data.json
+Foundations Export → foundations-data.json
         ↓
 Figma Components / Templates / Assets / Custom
         ↓
-DS Extractor Plugin (una vez por archivo, dropdown de librería)
+DS Extractor (una corrida por archivo, dropdown selecciona destino)
         ↓
 component-data.json · template-data.json · asset-data.json · custom-data.json
         ↓
-React Dashboard (src/App.tsx mergea las 3 de componentes + custom)
+Dashboard React (src/App.tsx mergea Components + Templates + Custom)
 ```
 
-## Sincronización con Confluence
+### Qué JSON consume cada componente del dashboard
 
-El bridge puede consumir documentación desde Confluence vía MCP server:
+| Archivo | Lo consume | Vista |
+|---|---|---|
+| `component-data.json` | `App.tsx` (merge) | Overview, Components, Tokens |
+| `template-data.json` | `App.tsx` (merge) | Overview, Components, Tokens |
+| `custom-data.json` | `App.tsx` (merge) | Overview, Components, Tokens |
+| `foundations-data.json` | `OrphanTokens.tsx` | Huérfanos |
+| `asset-data.json` | `AssetTokens.tsx` | Assets |
+| `changelog.json` | `Changelog.tsx`, `Header.tsx` | Changelog + badge de novedades |
 
-### Setup
-1. Obtener API token: https://id.atlassian.com/manage-profile/security/api-tokens
-2. Configurar en `.env`:
-```bash
-CONFLUENCE_URL=https://tu-dominio.atlassian.net
-CONFLUENCE_EMAIL=tu-email@empresa.com
-CONFLUENCE_API_TOKEN=tu_token
-```
-3. MCP server está en `.kiro/settings/mcp.json`
+### CLI de extracción (alternativa)
 
-### Uso en Kiro
-```
-"Lista los espacios de Confluence disponibles"
-"Busca páginas sobre componentes Button"
-"Sincroniza la página de guidelines al bridge"
-```
+`npm run extract` corre `personal/scripts/extract-figma-data.ts`. Siempre escribe a `src/data/dashboard-data.json` — hay que **renombrarlo** al archivo destino después de cada corrida. La opción recomendada es correr el plugin en Figma, que ya elige el nombre correcto.
 
-### Documentación
-- Ver `SETUP-CONFLUENCE.md` para configuración paso a paso
-- Ver `fractal-bridge/docs-sources/confluence-sync.md` para sincronización
-- Ver `fractal-bridge/docs-sources/confluence-examples.md` para ejemplos
+---
 
-### Scripts de Extracción
-- **Comando:** `npm run extract`
-- **Script:** `personal/scripts/extract-figma-data.ts`
-- **Variables requeridas:** `FIGMA_TOKEN` + la variable `FIGMA_..._FILE_KEY` correspondiente a la librería que se está extrayendo
-- **Output:** `src/data/dashboard-data.json` — se debe **renombrar manualmente** al archivo destino (`component-data.json`, `template-data.json`, `asset-data.json`, `custom-data.json`, `foundations-data.json`) después de cada corrida
+## Changelog automático
 
-Alternativa recomendada: correr el plugin DS Extractor desde Figma (elige la librería en el dropdown y descarga el JSON con el nombre correcto directamente).
+- Workflow en `.github/workflows/changelog.yml`. Corre todos los días a las **9:00 AM Argentina** (12:00 UTC).
+- Llama a `scripts/diff-changelog.ts` para cada librería (`components`, `templates`, `assets`, `custom`).
+- Compara Figma contra el snapshot guardado en `src/data/snapshots/latest-<librería>.json`.
+- Si hay cambios reales, commitea `changelog.json` y snapshots actualizados con mensaje `changelog: auto-update YYYY-MM-DD`.
+- Vercel detecta el push y redeploya el dashboard.
+- Trigger manual: GitHub → Actions → "Daily Changelog" → "Run workflow".
 
-**Importante:** Siempre ejecutar ambos plugins antes de generar el dashboard para tener datos completos y actualizados.
+**Qué detecta:**
+- Componentes/variantes agregados o eliminados.
+- Renombres, deprecaciones (`⛔`), cambios de arquitectura de props.
+- Tokens vinculados que cambian, se agregan o se quitan (binding_changed / added / removed).
+- Cambios en propiedades visuales: fills, strokes, gaps, paddings, radii, opacity, font-size/weight, tamaños.
 
-## Librerías Extraídas por el Plugin
+**Qué NO detecta:**
+- Movimientos de posición en el canvas.
+- Cambios en descripciones o anotaciones.
+- Colores hardcodeados (sin token).
 
-El extractor maneja **5 librerías principales** de Figma, cada una genera su propio archivo JSON:
+### Archivos monitoreados
 
-### Variables de Entorno (.env)
-```bash
-FIGMA_TOKEN=your_figma_token
-FIGMA_FOUNDATIONS_FILE_KEY=foundations_file_id    # → foundations-data.json
-FIGMA_COMPONENTS_FILE_KEY=components_file_id      # → component-data.json  
-FIGMA_TEMPLATES_FILE_KEY=templates_file_id        # → template-data.json
-FIGMA_ASSETS_FILE_KEY=assets_file_id             # → asset-data.json
-FIGMA_CUSTOM_COMPONENTS_FILE_KEY=custom_file_id   # → custom-data.json
-```
+| Alias | Archivo Figma | Secret en GitHub |
+|---|---|---|
+| `components` | Librería de componentes | `FIGMA_COMPONENTS_FILE_KEY` |
+| `templates` | Librería de templates | `FIGMA_TEMPLATES_FILE_KEY` |
+| `assets` | Librería de assets/íconos | `FIGMA_ASSETS_FILE_KEY` |
+| `custom` | Componentes custom | `FIGMA_CUSTOM_COMPONENTS_FILE_KEY` |
+| `foundations` | Foundations (tokens) | `FIGMA_FOUNDATIONS_FILE_KEY` |
 
-### Archivos Generados
-| Librería | Variable ENV | Archivo Output | Propósito |
-|----------|--------------|----------------|-----------|
-| **Foundations** | `FIGMA_FOUNDATIONS_FILE_KEY` | `foundations-data.json` | Tokens primitivos y semánticos |
-| **Components** | `FIGMA_COMPONENTS_FILE_KEY` | `component-data.json` | Componentes principales del DS |
-| **Templates** | `FIGMA_TEMPLATES_FILE_KEY` | `template-data.json` | Plantillas y layouts |
-| **Assets** | `FIGMA_ASSETS_FILE_KEY` | `asset-data.json` | Iconos, ilustraciones, assets |
-| **Custom** | `FIGMA_CUSTOM_COMPONENTS_FILE_KEY` | `custom-data.json` | Componentes custom/específicos |
+Doc completa: [`docs/CHANGELOG-GUIDE.md`](./docs/CHANGELOG-GUIDE.md).
 
-### Convención de Nombres en Figma
+---
 
-Para que el extractor funcione correctamente, las páginas deben seguir esta nomenclatura:
-
-#### Categorías (Separadores)
-- **Formato:** `▶️ Nombre de Categoría`
-- **Ejemplos:** 
-  - `▶️ Form Controls`
-  - `▶️ Navigation`
-  - `▶️ Data Display`
-
-#### Componentes
-- **Formato:** `↪︎ Nombre del Componente`
-- **Ejemplos:**
-  - `↪︎ Button`
-  - `↪︎ Text Input`
-  - `↪︎ Card`
-
-#### Páginas Excluidas
-El extractor **ignora** automáticamente:
-- Páginas que inician con `---` (separadores)
-- Páginas que contienen `Cover` (portadas)
-- Páginas que inician con `-` (borradores)
-
-### Flujo de Extracción por Librería
-
-**Opción A — plugin (recomendada):** abrir el archivo en Figma, correr DS Extractor, elegir la librería en el dropdown, descargar. El JSON ya sale con el nombre correcto.
-
-**Opción B — CLI:**
+## Comandos
 
 ```bash
-# 1. Asegurarse de que la variable FIGMA_..._FILE_KEY correcta esté en .env
-FIGMA_COMPONENTS_FILE_KEY=0GIm2SB5mdvDF7ojlXkjV3
+npm run dev                     # dashboard local
+npm run build                   # build para prod
 
-# 2. Ejecutar extracción (siempre escribe a src/data/dashboard-data.json)
-npm run extract
-
-# 3. Renombrar al archivo destino
-mv src/data/dashboard-data.json src/data/component-data.json
-
-# 4. Repetir para cada librería (templates → template-data.json, etc.)
+npm run extract                 # extrae la librería apuntada por .env → dashboard-data.json
+                                # (renombrar al archivo destino después)
+npm run diff -- components      # diff manual de la librería components
+npm run diff -- templates
+npm run diff -- assets
+npm run diff -- custom
+npm run diff -- foundations
+npm run view-changelog          # visor CLI del changelog
 ```
 
-### Dashboard Merge
-El dashboard (`src/App.tsx`) mergea las tres librerías de componentes deduplicando por `componentId` y taggeando cada componente con `_library`:
-```typescript
-const libraries = [
-  { id: 'components', label: 'Componentes', data: componentData },
-  { id: 'templates',  label: 'Templates',   data: templateData },
-  { id: 'custom',     label: 'Custom',      data: customData },
-]
+### `.env` requerido
+
+```
+FIGMA_TOKEN                     # token personal de Figma
+FIGMA_FOUNDATIONS_FILE_KEY
+FIGMA_COMPONENTS_FILE_KEY
+FIGMA_TEMPLATES_FILE_KEY
+FIGMA_ASSETS_FILE_KEY
+FIGMA_CUSTOM_COMPONENTS_FILE_KEY
+GEMINI_API_KEY                  # solo si se usa el chat de voz
 ```
 
-Los otros JSONs se consumen directo desde su componente:
-- `asset-data.json` → `AssetTokens.tsx`
-- `foundations-data.json` → `OrphanTokens.tsx`
-- `changelog.json` → `Changelog.tsx` y `Header.tsx`
+---
+
+## Fundamentos del DS
+
+Estas nociones aplican a todo el sistema. Los steering `#tokenization-rules` y `#component-architecture` amplían con reglas específicas.
+
+### Cadena de tokens
+
+```
+Primitivo → Semántico → Componente
+```
+
+- **Primitivo**: valor crudo (`core/purple/500`). No se aplica a componentes directamente.
+- **Semántico**: propósito del valor (`static/foreground/neutral/medium`). Es lo que consumen los componentes.
+- **Componente**: alias específico (`button/background/solid/default`). Apunta a un semántico.
+
+### Estructura de un semántico
+
+```
+[contexto]/[elemento]/[familia]/[sub-familia?]/[variante?]/[escala]
+```
+
+### Contextos
+
+- `static` — no cambia con interacción.
+- `interactive` — responde a estados (default, hover, pressed, focus, disabled, selected, error).
+- `expressive` — decorativo/ilustrativo.
+
+En `interactive/border/feedback/` y `interactive/foreground/feedback/`, el tipo de feedback (`error`, `warning`, `success`, `info`) **funciona como estado**: el borde cambia cuando el componente entra en ese estado, sin necesidad de un slot de estado adicional.
+
+### Elementos
+
+- `background`, `foreground`, `border`, `opacity`.
+
+### Familias
+
+- `brand/primary` (purple), `brand/secondary` (cyan).
+- `neutral` (cross, sin sub-familia).
+- `feedback/info`, `feedback/success`, `feedback/warning`, `feedback/error`.
+
+### Escala de intensidades
+
+```
+strong > bold > medium > subtle > quiet
+```
+
+| Intensidad | Rango primitivo | Aplica a |
+|---|---|---|
+| `strong` | 950 | Solo neutral |
+| `bold` | 700-950 | Todos |
+| `medium` | 500-600 | Todos |
+| `subtle` | 100-400 | Todos |
+| `quiet` | 25-50 | Todos |
+
+Las escalas son **contextuales**: `medium` de foreground ≠ `medium` de background en valor absoluto. Cada uno es "el default de su contexto".
+
+### Estructura de Foundations
+
+Foundations es **un solo archivo** con 10 colecciones y 818 variables. Las que empiezan con `Global` son primitivos; el resto, semánticos.
+
+| Colección | Vars | Capa |
+|---|---|---|
+| `Color` | 253 | semántica |
+| `Typography` | 160 | semántica |
+| `Spacing` | 48 | semántica |
+| `Border` | 15 | semántica |
+| `Asset` | 15 | semántica |
+| `Screen size` | 2 | semántica |
+| `Density mode` | 1 | semántica |
+| `Global color` | 233 | primitiva |
+| `Global dimension` | 53 | primitiva |
+| `Global typography` | 38 | primitiva |
+
+Foundations alimenta a Components, Templates y Custom Components. Esas tres librerías **no deben definir variables propias**: consumen de Foundations.
+
+Si aparecen colecciones fuera de esta lista (`Semantic dimension`, `_Global dimension`, `Dimension`, `Primitives`, `Semantic color`, `Expressive`, `🔢 Units`), no son de Foundations. Correr el extractor actualizado para ver el `libraryName` y determinar el origen.
+
+### Naming rápido
+
+- **Componentes:** Mayúscula-guión-minúscula (`Button-icon`, `Progress-bar`). Siglas en mayúscula (`NFC`, `PIN`). Brands de terceros respetan la grafía oficial (`Mercado-Pago`, `La-Caja`).
+- **Capas:** Sentence case con espacios (`Hover layer`, `Supporting text`).
+- **Building blocks:** prefijo `.⛔️` o `⛔️`, no se publican.
+
+Detalle completo en `#component-architecture`.
+
+### Gap vs Padding
+
+| Token | Propiedad Figma | Qué controla |
+|---|---|---|
+| `gap/gap-X` | `itemSpacing` | Espacio entre elementos hijos de un auto layout |
+| `padding/padding-X` | `paddingTop/Bottom/Left/Right` | Espacio interno entre el borde del contenedor y su contenido |
+
+Un token de `gap/` **solo** va en `itemSpacing`. Un token de `padding/` **solo** va en `padding*`. Si están cruzados es un error de aplicación.
+
+---
+
+## Cómo auditar tokens sin generar falsos positivos
+
+> Estas reglas salen de una auditoría que reportó 26 problemas de los cuales 24 no existían.
+>
+> **Regla cero: no clasificar como problema lo que no está verificado.** Presentar el hecho y dejar la clasificación abierta si no hay certeza.
+
+### 1. Comparar por `key`, nunca por nombre
+
+El `key` es el identificador estable de una variable en Figma y no cambia al renombrar. El **nombre sí cambia**, y los archivos consumidores guardan el nombre que tenía la variable al momento del binding hasta que se refresca la librería.
+
+Consecuencia: un token que "no existe" puede ser el nombre viejo de un token que sí existe.
+
+```
+key b5a951495b65…
+  Foundations dice : interactive/border/brand/primary/focus/medium
+  bindings dicen   : primary/focus/medium · main/focus/medium · focus · focus-medium
+  → los 4 son LA MISMA variable, bien aplicada
+```
+
+Antes de reportar un token como inexistente: buscar su `key` entre las variables de Foundations. Si aparece con otro nombre, es cache stale, no deuda. Se arregla refrescando la librería, sin tocar bindings.
+
+### 2. Dos semánticos con el mismo primitivo NO es deuda
+
+Es el propósito de la capa semántica: el mismo valor se nombra distinto según contexto y estado, para que cada uno pueda evolucionar por separado.
+
+`core/purple/500` alimenta legítimamente a `interactive/border/brand/primary/default/medium`, `…/focus/medium`, `interactive/background/brand/default/medium` y `static/foreground/brand/primary/medium`.
+
+| Estructura | Veredicto |
+|---|---|
+| **dos** semánticos → **un** primitivo | ✅ correcto por diseño |
+| **un** semántico → **dos** variables | ❌ duplicación real |
+
+Señales de duplicación real: las dos variables se aplican a las mismas propiedades, hay componentes que usan ambas indistintamente, y los componentes nuevos usan solo una.
+
+### 3. Que dos estados compartan valor no es un bug de accesibilidad por sí solo
+
+El cambio de estado puede resolverse con un overlay, un stroke adicional, un cambio de weight o de posición. Verificarlo requiere abrir el componente, no leer la tabla de tokens.
+
+### 4. Descontar los placeholders antes de contar usos
+
+`Swap-content` es un slot de documentación anidado en 16 componentes con bindings idénticos. Aporta 68 de los 120 usos de un token sin representar 68 decisiones ni llegar a producción.
+
+Antes de dimensionar deuda, desglosar por `layerName` y separar los placeholders. Aplica a cualquier capa que sea un slot de documentación.
+
+### 5. Verificar el origen de la variable
+
+`variable.remote` + `libraryName` (el extractor los guarda en `foundations.libraries`). Sirve para distinguir una variable de Foundations de una local del archivo o de otra librería. **No inferir el origen del formato del ID**, no es confiable.
+
+### 6. Orden de verificación recomendado
+
+```
+1. ¿El key existe en Foundations?           → no  → seguir en 2
+                                              sí  → ¿mismo nombre? no = cache stale, NO es deuda
+2. ¿Existe en otra colección/librería?      → sí  → verificar origen antes de clasificar
+                                              no  → binding roto (esto sí es un problema)
+3. ¿Cuántos usos son de placeholders?       → descontarlos del total
+4. ¿Se aplica a las mismas propiedades
+   que su equivalente?                      → sí  → duplicación
+                                              no  → posiblemente semántica distinta
+```
+
+Script disponible: `node scripts/audit-tokens.js` aplica este orden y separa las tres situaciones.
+
+---
+
+## Documentación de tokens
+
+Vive en `docs/tokens/`. Punto de entrada: `README.md`.
+
+| Archivo | Contenido |
+|---|---|
+| `README.md` | Índice, estado del sistema, checklist antifalsos-positivos |
+| `semanticos.md` | Uso real de cada token inferido de los bindings |
+| `catalogo.md` | Las 494 variables semánticas con primitivo y valor final (generado) |
+| `auditoria-tokens.md` | Estado verificado y observaciones abiertas |
+
+Regenerar con `node scripts/generate-token-catalog.js`, `audit-tokens.js` y `analyze-token-usage.js`.
+
+---
+
+## Convenciones de trabajo
+
+- No commitear nada de `personal/` (está en `.gitignore`).
+- Los JSONs de librerías (`component-data.json`, `template-data.json`, `asset-data.json`, `custom-data.json`, `foundations-data.json`) se regeneran manualmente con los plugins y se commitean.
+- `changelog.json` y snapshots los mantiene el bot automáticamente. No editarlos a mano.
+- En una auditoría, separar arquitectura (capas/naming) de tokenización (tokens aplicados). Los dos ejes tienen su steering.
+- Reportar siempre con `node-id` para que se pueda abrir el componente en Figma.
+- El dashboard se deploya solo con cada push a `main` (Vercel).
