@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-07-27T14:51:38.243Z",
+  "takenAt": "2026-08-23T12:52:51.424Z",
   "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
   "fileName": "Custom components",
   "components": [
@@ -327,11 +327,6 @@
         },
         {
           "layerName": "Nav-bar",
-          "property": "maxWidth",
-          "value": 560
-        },
-        {
-          "layerName": "Nav-bar",
           "property": "clipsContent",
           "value": false
         },
@@ -409,6 +404,11 @@
           "layerName": "Main content",
           "property": "minWidth",
           "value": 312
+        },
+        {
+          "layerName": "Main content",
+          "property": "maxWidth",
+          "value": 560
         },
         {
           "layerName": "Main content",
@@ -4864,17 +4864,17 @@
       "type": "COMPONENT_SET",
       "bindings": [
         {
-          "property": "gridColumnGap",
-          "variableId": "VariableID:cfcd91dd6972e433bcd36557a5b9f78d9ed1d707/1227:15",
-          "layerName": "Notification"
-        },
-        {
           "property": "strokes",
           "variableId": "VariableID:d8046c7df8096c331b4b63c37c1b38729a0ee465/3319:319",
           "layerName": "Notification"
         }
       ],
       "properties": [
+        {
+          "layerName": "Notification",
+          "property": "itemSpacing",
+          "value": 24
+        },
         {
           "layerName": "Notification",
           "property": "paddingLeft",
@@ -4903,7 +4903,17 @@
         {
           "layerName": "Notification",
           "property": "layoutMode",
-          "value": "GRID"
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Notification",
+          "property": "layoutWrap",
+          "value": "WRAP"
+        },
+        {
+          "layerName": "Notification",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
         },
         {
           "layerName": "Notification",
@@ -4923,7 +4933,7 @@
         {
           "layerName": "Notification",
           "property": "size.height",
-          "value": 632
+          "value": 784
         },
         {
           "layerName": "Notification",
@@ -5037,6 +5047,46 @@
         {
           "name": "⛔ Placeholder-icon_slot",
           "componentId": "6:138"
+        },
+        {
+          "name": "Notification",
+          "componentId": "80:240"
+        },
+        {
+          "name": "Asset-container",
+          "componentId": "80:136"
+        },
+        {
+          "name": "Badge",
+          "componentId": "6:174"
+        },
+        {
+          "name": "⛔ Placeholder-icon_slot",
+          "componentId": "6:138"
+        },
+        {
+          "name": "Delete",
+          "componentId": "160:227"
+        },
+        {
+          "name": "Notification",
+          "componentId": "80:246"
+        },
+        {
+          "name": "Asset-container",
+          "componentId": "80:136"
+        },
+        {
+          "name": "Badge",
+          "componentId": "6:174"
+        },
+        {
+          "name": "⛔ Placeholder-icon_slot",
+          "componentId": "6:138"
+        },
+        {
+          "name": "Delete",
+          "componentId": "160:227"
         }
       ]
     },
@@ -10849,6 +10899,2055 @@
         {
           "name": "⛔ Placeholder-icon_slot",
           "componentId": "6:138"
+        }
+      ]
+    },
+    {
+      "id": "177:444",
+      "name": "State=deleted, Read=false",
+      "type": "COMPONENT",
+      "parentId": "80:215",
+      "bindings": [
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "layerName": "Content wrapper"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:5663e8da85f2d19ae7f3fa566b95629e9caace9f/3927:66",
+          "layerName": "Content wrapper"
+        },
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:0acafbe854d5400d7fa97fdf10a4ca6ce7f22f18/1557:34",
+          "layerName": "Notification"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "Notification"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "Notification"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "Notification"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "Notification"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:b64641412b20c7cf8dc668584dc1375782c925b4/3927:49",
+          "layerName": "Notification"
+        },
+        {
+          "property": "strokes",
+          "variableId": "VariableID:c59ef4ad92477e49734280b9b105e5653b76372b/3958:116",
+          "layerName": "Notification"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:033efb04b3326eb116984a04b54b5e7db860bd69/10463:691",
+          "layerName": "Asset-container"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:033efb04b3326eb116984a04b54b5e7db860bd69/10463:691",
+          "layerName": "Asset-container"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:033efb04b3326eb116984a04b54b5e7db860bd69/10463:691",
+          "layerName": "Asset-container"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:033efb04b3326eb116984a04b54b5e7db860bd69/10463:691",
+          "layerName": "Asset-container"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:916f736c306ddb6250152176fea8dd5826f5afe4/2764:11",
+          "layerName": "Asset-container"
+        },
+        {
+          "property": "strokes",
+          "variableId": "VariableID:5a69023d7617516c8c72da02fcee8591c122b807/2515:1",
+          "layerName": "Asset-container"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:3b3b429af45944fe6c3590b5db34aeb36b1c5037/3319:334",
+          "layerName": "Badge"
+        },
+        {
+          "property": "strokes",
+          "variableId": "VariableID:9f48eb3bfb8183eb5c159eeecd52f4c8ba6841b4/3958:136",
+          "layerName": "Badge"
+        },
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:be46345ce533567571354f332e3aacb128992758/1227:12",
+          "layerName": "Title"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Title"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:9367a2167071f85cb39ed3681891ca26c4a1b0b0/1561:49",
+          "layerName": "Title"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:ea9a55834fb892955c272994ddbb4c6a86a6c698/1545:32",
+          "layerName": "Title"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:ddc334870b4c0331642419c0246116164911ac76/1545:33",
+          "layerName": "Title"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:e24480cfdc18678093f9aacf7d139a960113edf8/1545:35",
+          "layerName": "Title"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:3cec66d5cd5b22c5d43581c9fda87d298d718aa0/1545:34",
+          "layerName": "Title"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:04619bb3de5f15e4a758183cbe21bda93da14ac4/3958:130",
+          "layerName": "Body"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:bcb47a8c368ad38db7e53c3bd3180233b65d9b46/1561:50",
+          "layerName": "Body"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:7839a59493e521b5c1aa66b128dc6f70fd78cdf3/1545:156",
+          "layerName": "Body"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:b92996b881cf44ee6136bae59ae49463c54c998e/1545:155",
+          "layerName": "Body"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:db9c6019bcbde6baf043fc50bc0583a266c8b955/1545:153",
+          "layerName": "Body"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:800a68ad46ce4e84fe4518f7b04c4d1fb10fea22/1545:154",
+          "layerName": "Body"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:dfd204d4d7f9842ece3e6164488b75bd5f9a1685/3958:133",
+          "layerName": "Date"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:d77ec16c71fffabb0c4e7d7d66f753ab423dc3dd/1557:24",
+          "layerName": "Date"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:e3b2b41d4ca6fa84be5ba718101d9b0c2956561d/1545:171",
+          "layerName": "Date"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:a0e7b8ed2ebc10d7b5ae10547e670c986429754c/1545:170",
+          "layerName": "Date"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:afc184689414ccdb0cafe94cc7a8bd90c8388145/1545:168",
+          "layerName": "Date"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:533a8ceb952836573145ac07528d30a7bc0d3dbe/1545:169",
+          "layerName": "Date"
+        },
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "layerName": "Action"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "Action"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "Action"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:cecdb77381c8731a58c37f49b4121c8ca240e045/3982:1",
+          "layerName": "Vector"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:cecdb77381c8731a58c37f49b4121c8ca240e045/3982:1",
+          "layerName": "Label"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:bcb47a8c368ad38db7e53c3bd3180233b65d9b46/1561:50",
+          "layerName": "Label"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:7839a59493e521b5c1aa66b128dc6f70fd78cdf3/1545:156",
+          "layerName": "Label"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:b92996b881cf44ee6136bae59ae49463c54c998e/1545:155",
+          "layerName": "Label"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:db9c6019bcbde6baf043fc50bc0583a266c8b955/1545:153",
+          "layerName": "Label"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:800a68ad46ce4e84fe4518f7b04c4d1fb10fea22/1545:154",
+          "layerName": "Label"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "State=deleted, Read=false",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "State=deleted, Read=false",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "State=deleted, Read=false",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "State=deleted, Read=false",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "State=deleted, Read=false",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "State=deleted, Read=false",
+          "property": "clipsContent",
+          "value": true
+        },
+        {
+          "layerName": "State=deleted, Read=false",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "State=deleted, Read=false",
+          "property": "size.width",
+          "value": 320
+        },
+        {
+          "layerName": "State=deleted, Read=false",
+          "property": "size.height",
+          "value": 128
+        },
+        {
+          "layerName": "State=deleted, Read=false",
+          "property": "__layerName__",
+          "value": "State=deleted, Read=false"
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "primaryAxisAlignItems",
+          "value": "MAX"
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "size.width",
+          "value": 320
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "size.height",
+          "value": 128
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "fill[0].color",
+          "value": "#FEF2F2"
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "__layerName__",
+          "value": "Content wrapper"
+        },
+        {
+          "layerName": "Notification",
+          "property": "itemSpacing",
+          "value": 6
+        },
+        {
+          "layerName": "Notification",
+          "property": "paddingLeft",
+          "value": 12
+        },
+        {
+          "layerName": "Notification",
+          "property": "paddingRight",
+          "value": 12
+        },
+        {
+          "layerName": "Notification",
+          "property": "paddingTop",
+          "value": 12
+        },
+        {
+          "layerName": "Notification",
+          "property": "paddingBottom",
+          "value": 12
+        },
+        {
+          "layerName": "Notification",
+          "property": "strokeWeight",
+          "value": 2
+        },
+        {
+          "layerName": "Notification",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Notification",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Notification",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Notification",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Notification",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Notification",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Notification",
+          "property": "size.width",
+          "value": 314
+        },
+        {
+          "layerName": "Notification",
+          "property": "size.height",
+          "value": 128
+        },
+        {
+          "layerName": "Notification",
+          "property": "fill[0].color",
+          "value": "#EEF2FF"
+        },
+        {
+          "layerName": "Notification",
+          "property": "stroke[0].color",
+          "value": "#312E81"
+        },
+        {
+          "layerName": "Notification",
+          "property": "__layerName__",
+          "value": "Notification"
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "paddingLeft",
+          "value": 4
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "paddingRight",
+          "value": 4
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "paddingTop",
+          "value": 4
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "paddingBottom",
+          "value": 4
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "fill[0].color",
+          "value": "#FCFCFC"
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "stroke[0].color",
+          "value": "#C7D2FE"
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "__layerName__",
+          "value": "Asset-container"
+        },
+        {
+          "layerName": "Badge",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "Badge",
+          "property": "paddingLeft",
+          "value": 4
+        },
+        {
+          "layerName": "Badge",
+          "property": "paddingRight",
+          "value": 4
+        },
+        {
+          "layerName": "Badge",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Badge",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Badge",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Badge",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Badge",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Badge",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Badge",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Badge",
+          "property": "visible",
+          "value": false
+        },
+        {
+          "layerName": "Badge",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Badge",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Badge",
+          "property": "size.width",
+          "value": 8
+        },
+        {
+          "layerName": "Badge",
+          "property": "size.height",
+          "value": 8
+        },
+        {
+          "layerName": "Badge",
+          "property": "fill[0].color",
+          "value": "#1D4ED8"
+        },
+        {
+          "layerName": "Badge",
+          "property": "stroke[0].color",
+          "value": "#FCFCFC"
+        },
+        {
+          "layerName": "Badge",
+          "property": "__layerName__",
+          "value": "Badge"
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "paddingLeft",
+          "value": 3
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "paddingRight",
+          "value": 3
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "paddingTop",
+          "value": 3
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "paddingBottom",
+          "value": 3
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "layoutMode",
+          "value": "VERTICAL"
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "__layerName__",
+          "value": "⛔ Placeholder-icon_slot"
+        },
+        {
+          "layerName": "Title",
+          "property": "itemSpacing",
+          "value": 4
+        },
+        {
+          "layerName": "Title",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Title",
+          "property": "layoutMode",
+          "value": "VERTICAL"
+        },
+        {
+          "layerName": "Title",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Title",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Title",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Title",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Title",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Title",
+          "property": "size.width",
+          "value": 252
+        },
+        {
+          "layerName": "Title",
+          "property": "size.height",
+          "value": 104
+        },
+        {
+          "layerName": "Title",
+          "property": "__layerName__",
+          "value": "Title"
+        },
+        {
+          "layerName": "Title",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Title",
+          "property": "characters",
+          "value": "Title notification"
+        },
+        {
+          "layerName": "Title",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Title",
+          "property": "size.width",
+          "value": 252
+        },
+        {
+          "layerName": "Title",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Title",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Title",
+          "property": "__layerName__",
+          "value": "Title"
+        },
+        {
+          "layerName": "Body",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Body",
+          "property": "characters",
+          "value": "Briefly expand on the title with relevant details and keep the message concise and easy to scan."
+        },
+        {
+          "layerName": "Body",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Body",
+          "property": "size.width",
+          "value": 252
+        },
+        {
+          "layerName": "Body",
+          "property": "size.height",
+          "value": 60
+        },
+        {
+          "layerName": "Body",
+          "property": "fill[0].color",
+          "value": "#404040"
+        },
+        {
+          "layerName": "Body",
+          "property": "__layerName__",
+          "value": "Body"
+        },
+        {
+          "layerName": "Date",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Date",
+          "property": "characters",
+          "value": "Hace 1 día"
+        },
+        {
+          "layerName": "Date",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Date",
+          "property": "size.width",
+          "value": 54
+        },
+        {
+          "layerName": "Date",
+          "property": "size.height",
+          "value": 16
+        },
+        {
+          "layerName": "Date",
+          "property": "fill[0].color",
+          "value": "#676767"
+        },
+        {
+          "layerName": "Date",
+          "property": "__layerName__",
+          "value": "Date"
+        },
+        {
+          "layerName": "Action",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Action",
+          "property": "layoutMode",
+          "value": "VERTICAL"
+        },
+        {
+          "layerName": "Action",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Action",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Action",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Action",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Action",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Action",
+          "property": "clipsContent",
+          "value": true
+        },
+        {
+          "layerName": "Action",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Action",
+          "property": "size.width",
+          "value": 92
+        },
+        {
+          "layerName": "Action",
+          "property": "size.height",
+          "value": 128
+        },
+        {
+          "layerName": "Action",
+          "property": "__layerName__",
+          "value": "Action"
+        },
+        {
+          "layerName": "Delete",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Delete",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Delete",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Delete",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Delete",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Delete",
+          "property": "__layerName__",
+          "value": "Delete"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#B91C1C"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
+          "layerName": "Label",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Label",
+          "property": "characters",
+          "value": "Eliminar"
+        },
+        {
+          "layerName": "Label",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Label",
+          "property": "size.width",
+          "value": 52
+        },
+        {
+          "layerName": "Label",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Label",
+          "property": "fill[0].color",
+          "value": "#B91C1C"
+        },
+        {
+          "layerName": "Label",
+          "property": "__layerName__",
+          "value": "Label"
+        }
+      ],
+      "instances": [
+        {
+          "name": "Notification",
+          "componentId": "80:240"
+        },
+        {
+          "name": "Asset-container",
+          "componentId": "80:136"
+        },
+        {
+          "name": "Badge",
+          "componentId": "6:174"
+        },
+        {
+          "name": "⛔ Placeholder-icon_slot",
+          "componentId": "6:138"
+        },
+        {
+          "name": "Delete",
+          "componentId": "160:227"
+        }
+      ]
+    },
+    {
+      "id": "177:484",
+      "name": "State=deleted, Read=true",
+      "type": "COMPONENT",
+      "parentId": "80:215",
+      "bindings": [
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "layerName": "Content wrapper"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:5663e8da85f2d19ae7f3fa566b95629e9caace9f/3927:66",
+          "layerName": "Content wrapper"
+        },
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:0acafbe854d5400d7fa97fdf10a4ca6ce7f22f18/1557:34",
+          "layerName": "Notification"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "Notification"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "Notification"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "Notification"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "Notification"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:211c946f80090ddec6e17baa05bf115aa06db017/3927:50",
+          "layerName": "Notification"
+        },
+        {
+          "property": "strokes",
+          "variableId": "VariableID:c59ef4ad92477e49734280b9b105e5653b76372b/3958:116",
+          "layerName": "Notification"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:033efb04b3326eb116984a04b54b5e7db860bd69/10463:691",
+          "layerName": "Asset-container"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:033efb04b3326eb116984a04b54b5e7db860bd69/10463:691",
+          "layerName": "Asset-container"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:033efb04b3326eb116984a04b54b5e7db860bd69/10463:691",
+          "layerName": "Asset-container"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:033efb04b3326eb116984a04b54b5e7db860bd69/10463:691",
+          "layerName": "Asset-container"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:916f736c306ddb6250152176fea8dd5826f5afe4/2764:11",
+          "layerName": "Asset-container"
+        },
+        {
+          "property": "strokes",
+          "variableId": "VariableID:5a69023d7617516c8c72da02fcee8591c122b807/2515:1",
+          "layerName": "Asset-container"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2a890223be0c78999f81e201a73f961b4571a026/3319:331",
+          "layerName": "Badge"
+        },
+        {
+          "property": "strokes",
+          "variableId": "VariableID:9f48eb3bfb8183eb5c159eeecd52f4c8ba6841b4/3958:136",
+          "layerName": "Badge"
+        },
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:be46345ce533567571354f332e3aacb128992758/1227:12",
+          "layerName": "Title"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Title"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:9367a2167071f85cb39ed3681891ca26c4a1b0b0/1561:49",
+          "layerName": "Title"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:ea9a55834fb892955c272994ddbb4c6a86a6c698/1545:32",
+          "layerName": "Title"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:ddc334870b4c0331642419c0246116164911ac76/1545:33",
+          "layerName": "Title"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:e24480cfdc18678093f9aacf7d139a960113edf8/1545:35",
+          "layerName": "Title"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:3cec66d5cd5b22c5d43581c9fda87d298d718aa0/1545:34",
+          "layerName": "Title"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:04619bb3de5f15e4a758183cbe21bda93da14ac4/3958:130",
+          "layerName": "Body"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:bcb47a8c368ad38db7e53c3bd3180233b65d9b46/1561:50",
+          "layerName": "Body"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:7839a59493e521b5c1aa66b128dc6f70fd78cdf3/1545:156",
+          "layerName": "Body"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:b92996b881cf44ee6136bae59ae49463c54c998e/1545:155",
+          "layerName": "Body"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:db9c6019bcbde6baf043fc50bc0583a266c8b955/1545:153",
+          "layerName": "Body"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:800a68ad46ce4e84fe4518f7b04c4d1fb10fea22/1545:154",
+          "layerName": "Body"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:dfd204d4d7f9842ece3e6164488b75bd5f9a1685/3958:133",
+          "layerName": "Date"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:d77ec16c71fffabb0c4e7d7d66f753ab423dc3dd/1557:24",
+          "layerName": "Date"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:e3b2b41d4ca6fa84be5ba718101d9b0c2956561d/1545:171",
+          "layerName": "Date"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:a0e7b8ed2ebc10d7b5ae10547e670c986429754c/1545:170",
+          "layerName": "Date"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:afc184689414ccdb0cafe94cc7a8bd90c8388145/1545:168",
+          "layerName": "Date"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:533a8ceb952836573145ac07528d30a7bc0d3dbe/1545:169",
+          "layerName": "Date"
+        },
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "layerName": "Action"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "Action"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "Action"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:cecdb77381c8731a58c37f49b4121c8ca240e045/3982:1",
+          "layerName": "Vector"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:cecdb77381c8731a58c37f49b4121c8ca240e045/3982:1",
+          "layerName": "Label"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:bcb47a8c368ad38db7e53c3bd3180233b65d9b46/1561:50",
+          "layerName": "Label"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:7839a59493e521b5c1aa66b128dc6f70fd78cdf3/1545:156",
+          "layerName": "Label"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:b92996b881cf44ee6136bae59ae49463c54c998e/1545:155",
+          "layerName": "Label"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:db9c6019bcbde6baf043fc50bc0583a266c8b955/1545:153",
+          "layerName": "Label"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:800a68ad46ce4e84fe4518f7b04c4d1fb10fea22/1545:154",
+          "layerName": "Label"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "State=deleted, Read=true",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "State=deleted, Read=true",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "State=deleted, Read=true",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "State=deleted, Read=true",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "State=deleted, Read=true",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "State=deleted, Read=true",
+          "property": "clipsContent",
+          "value": true
+        },
+        {
+          "layerName": "State=deleted, Read=true",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "State=deleted, Read=true",
+          "property": "size.width",
+          "value": 320
+        },
+        {
+          "layerName": "State=deleted, Read=true",
+          "property": "size.height",
+          "value": 128
+        },
+        {
+          "layerName": "State=deleted, Read=true",
+          "property": "__layerName__",
+          "value": "State=deleted, Read=true"
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "primaryAxisAlignItems",
+          "value": "MAX"
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "size.width",
+          "value": 320
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "size.height",
+          "value": 128
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "fill[0].color",
+          "value": "#FEF2F2"
+        },
+        {
+          "layerName": "Content wrapper",
+          "property": "__layerName__",
+          "value": "Content wrapper"
+        },
+        {
+          "layerName": "Notification",
+          "property": "itemSpacing",
+          "value": 6
+        },
+        {
+          "layerName": "Notification",
+          "property": "paddingLeft",
+          "value": 12
+        },
+        {
+          "layerName": "Notification",
+          "property": "paddingRight",
+          "value": 12
+        },
+        {
+          "layerName": "Notification",
+          "property": "paddingTop",
+          "value": 12
+        },
+        {
+          "layerName": "Notification",
+          "property": "paddingBottom",
+          "value": 12
+        },
+        {
+          "layerName": "Notification",
+          "property": "strokeWeight",
+          "value": 2
+        },
+        {
+          "layerName": "Notification",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Notification",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Notification",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Notification",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Notification",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Notification",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Notification",
+          "property": "size.width",
+          "value": 314
+        },
+        {
+          "layerName": "Notification",
+          "property": "size.height",
+          "value": 128
+        },
+        {
+          "layerName": "Notification",
+          "property": "fill[0].color",
+          "value": "#FCFCFC"
+        },
+        {
+          "layerName": "Notification",
+          "property": "stroke[0].color",
+          "value": "#312E81"
+        },
+        {
+          "layerName": "Notification",
+          "property": "__layerName__",
+          "value": "Notification"
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "paddingLeft",
+          "value": 4
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "paddingRight",
+          "value": 4
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "paddingTop",
+          "value": 4
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "paddingBottom",
+          "value": 4
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "fill[0].color",
+          "value": "#FCFCFC"
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "stroke[0].color",
+          "value": "#C7D2FE"
+        },
+        {
+          "layerName": "Asset-container",
+          "property": "__layerName__",
+          "value": "Asset-container"
+        },
+        {
+          "layerName": "Badge",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "Badge",
+          "property": "paddingLeft",
+          "value": 4
+        },
+        {
+          "layerName": "Badge",
+          "property": "paddingRight",
+          "value": 4
+        },
+        {
+          "layerName": "Badge",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Badge",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Badge",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Badge",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Badge",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Badge",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Badge",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Badge",
+          "property": "visible",
+          "value": false
+        },
+        {
+          "layerName": "Badge",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Badge",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Badge",
+          "property": "size.width",
+          "value": 8
+        },
+        {
+          "layerName": "Badge",
+          "property": "size.height",
+          "value": 8
+        },
+        {
+          "layerName": "Badge",
+          "property": "fill[0].color",
+          "value": "#B91C1C"
+        },
+        {
+          "layerName": "Badge",
+          "property": "stroke[0].color",
+          "value": "#FCFCFC"
+        },
+        {
+          "layerName": "Badge",
+          "property": "__layerName__",
+          "value": "Badge"
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "paddingLeft",
+          "value": 3
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "paddingRight",
+          "value": 3
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "paddingTop",
+          "value": 3
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "paddingBottom",
+          "value": 3
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "layoutMode",
+          "value": "VERTICAL"
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "⛔ Placeholder-icon_slot",
+          "property": "__layerName__",
+          "value": "⛔ Placeholder-icon_slot"
+        },
+        {
+          "layerName": "Title",
+          "property": "itemSpacing",
+          "value": 4
+        },
+        {
+          "layerName": "Title",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Title",
+          "property": "layoutMode",
+          "value": "VERTICAL"
+        },
+        {
+          "layerName": "Title",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Title",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Title",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Title",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Title",
+          "property": "size.width",
+          "value": 252
+        },
+        {
+          "layerName": "Title",
+          "property": "size.height",
+          "value": 104
+        },
+        {
+          "layerName": "Title",
+          "property": "__layerName__",
+          "value": "Title"
+        },
+        {
+          "layerName": "Title",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Title",
+          "property": "characters",
+          "value": "Title notification"
+        },
+        {
+          "layerName": "Title",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Title",
+          "property": "size.width",
+          "value": 252
+        },
+        {
+          "layerName": "Title",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Title",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Title",
+          "property": "__layerName__",
+          "value": "Title"
+        },
+        {
+          "layerName": "Body",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Body",
+          "property": "characters",
+          "value": "Briefly expand on the title with relevant details and keep the message concise and easy to scan."
+        },
+        {
+          "layerName": "Body",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Body",
+          "property": "size.width",
+          "value": 252
+        },
+        {
+          "layerName": "Body",
+          "property": "size.height",
+          "value": 60
+        },
+        {
+          "layerName": "Body",
+          "property": "fill[0].color",
+          "value": "#404040"
+        },
+        {
+          "layerName": "Body",
+          "property": "__layerName__",
+          "value": "Body"
+        },
+        {
+          "layerName": "Date",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Date",
+          "property": "characters",
+          "value": "Hace 1 día"
+        },
+        {
+          "layerName": "Date",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Date",
+          "property": "size.width",
+          "value": 54
+        },
+        {
+          "layerName": "Date",
+          "property": "size.height",
+          "value": 16
+        },
+        {
+          "layerName": "Date",
+          "property": "fill[0].color",
+          "value": "#676767"
+        },
+        {
+          "layerName": "Date",
+          "property": "__layerName__",
+          "value": "Date"
+        },
+        {
+          "layerName": "Action",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Action",
+          "property": "layoutMode",
+          "value": "VERTICAL"
+        },
+        {
+          "layerName": "Action",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Action",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Action",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Action",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Action",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Action",
+          "property": "clipsContent",
+          "value": true
+        },
+        {
+          "layerName": "Action",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Action",
+          "property": "size.width",
+          "value": 92
+        },
+        {
+          "layerName": "Action",
+          "property": "size.height",
+          "value": 128
+        },
+        {
+          "layerName": "Action",
+          "property": "__layerName__",
+          "value": "Action"
+        },
+        {
+          "layerName": "Delete",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Delete",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Delete",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Delete",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Delete",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Delete",
+          "property": "__layerName__",
+          "value": "Delete"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#B91C1C"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
+          "layerName": "Label",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Label",
+          "property": "characters",
+          "value": "Eliminar"
+        },
+        {
+          "layerName": "Label",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Label",
+          "property": "size.width",
+          "value": 52
+        },
+        {
+          "layerName": "Label",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Label",
+          "property": "fill[0].color",
+          "value": "#B91C1C"
+        },
+        {
+          "layerName": "Label",
+          "property": "__layerName__",
+          "value": "Label"
+        }
+      ],
+      "instances": [
+        {
+          "name": "Notification",
+          "componentId": "80:246"
+        },
+        {
+          "name": "Asset-container",
+          "componentId": "80:136"
+        },
+        {
+          "name": "Badge",
+          "componentId": "6:174"
+        },
+        {
+          "name": "⛔ Placeholder-icon_slot",
+          "componentId": "6:138"
+        },
+        {
+          "name": "Delete",
+          "componentId": "160:227"
         }
       ]
     },
@@ -27716,8 +29815,8 @@
     }
   ],
   "stats": {
-    "totalComponents": 48,
-    "totalBindings": 1142,
-    "totalProperties": 4107
+    "totalComponents": 50,
+    "totalBindings": 1233,
+    "totalProperties": 4415
   }
 }
