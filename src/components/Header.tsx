@@ -3,7 +3,7 @@ import { DashboardData } from '../types'
 import changelogData from '../data/changelog.json'
 import './Header.css'
 
-type View = 'overview' | 'components' | 'tokens' | 'assets' | 'changelog'
+type View = 'overview' | 'components' | 'tokens' | 'orphans' | 'assets' | 'changelog'
 
 interface HeaderProps {
   currentView: View
@@ -24,6 +24,7 @@ export function Header({ currentView, onViewChange, data }: HeaderProps) {
     { id: 'overview',   label: 'Overview' },
     { id: 'components', label: 'Componentes', count: counts.components },
     { id: 'tokens',     label: 'Tokens', count: counts.tokens },
+    { id: 'orphans',    label: 'Huérfanos' },
     { id: 'assets',     label: 'Assets' },
     { id: 'changelog',  label: 'Changelog' },
   ]

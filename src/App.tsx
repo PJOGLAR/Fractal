@@ -9,10 +9,11 @@ import { TokenExplorer } from './components/TokenExplorer'
 import { Overview } from './components/Overview'
 import { Changelog } from './components/Changelog'
 import { AssetTokens } from './components/AssetTokens'
+import { OrphanTokens } from './components/OrphanTokens'
 import { DSChat } from './components/DSChat'
 import './App.css'
 
-type View = 'overview' | 'components' | 'tokens' | 'assets' | 'changelog'
+type View = 'overview' | 'components' | 'tokens' | 'orphans' | 'assets' | 'changelog'
 
 function mergeLibraries(libraries: { id: string; label: string; data: DashboardData }[]): DashboardData {
   const merged: DashboardData = {
@@ -71,6 +72,7 @@ export default function App() {
           {view === 'overview'   && <Overview data={mergedData} />}
           {view === 'components' && <ComponentIndex data={mergedData} libraries={libraries} />}
           {view === 'tokens'     && <TokenExplorer data={mergedData} />}
+          {view === 'orphans'    && <OrphanTokens data={mergedData} />}
           {view === 'assets'     && <AssetTokens />}
           {view === 'changelog'  && <Changelog />}
         </div>

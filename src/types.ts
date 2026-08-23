@@ -47,10 +47,4 @@ export interface DashboardData {
   hardcodedValues?: HardcodedValue[]
 }
 
-export type LibraryId = 'components' | 'templates' | 'assets' | 'all'
-
-export interface LibraryMeta {
-  id: LibraryId
-  label: string
-  data: DashboardData | null
-}
+export type LibraryId = 'components' | 'templates' | 'custom' | 'assets' | 'all'
