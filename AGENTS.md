@@ -171,7 +171,7 @@ Para más detalles, consultar la documentación completa en Storybook del proyec
 
 ## Plugins de Figma para Dashboard
 
-El dashboard consume datos extraídos mediante **DOS plugins de Figma complementarios**:
+El dashboard consume datos extraídos mediante **DOS plugins que alimentan al dashboard**:
 
 ### 1. Foundations Export
 - **Plugin:** `personal/figma-plugin-foundations-export/`
@@ -180,33 +180,30 @@ El dashboard consume datos extraídos mediante **DOS plugins de Figma complement
 - **Output:** JSON con colecciones, variables, valores por modo, alias
 - **Uso:** Ejecutar en archivo de Foundations para obtener snapshot de tokens
 
-### 2. DS Extractor  
+### 2. DS Extractor
 - **Plugin:** `personal/ds-extractor/`
 - **ID:** `token-extractor-fractal`
 - **Propósito:** Extrae bindings de tokens en componentes
-- **Output:** Mapeo de qué tokens usa cada componente
-- **Uso:** Ejecutar en archivo de Components para obtener usage mapping
+- **Output:** JSON con el nombre destino (`component-data.json`, `template-data.json`, `asset-data.json` o `custom-data.json`) según la librería que se elige en el dropdown de la UI del plugin
+- **Uso:** Ejecutar en cada archivo de Components/Templates/Assets/Custom seleccionando la librería correspondiente
 
-### 3. Token Component Generator V2
-- **Plugin:** `personal/figma-plugin-generator-v2/`
-- **ID:** `token-component-generator-v2-fractal`
-- **Propósito:** Genera componentes automáticamente usando tokens
-- **Output:** Componentes de Figma con bindings correctos
-- **Uso:** Crear nuevos componentes siguiendo el sistema de tokens
+### Herramienta de autoría (fuera del flujo de datos)
+
+**Token Component Generator V2** vive en `personal/figma-plugin-generator-v2/` (ID `token-component-generator-v2-fractal`). Genera componentes en Figma con bindings correctos. **No participa del flujo de datos del dashboard.**
 
 ## Flujo de Datos del Dashboard
 ```
 Figma Foundations File
         ↓
-Foundations Export Plugin → tokens inventory JSON
+Foundations Export Plugin → foundations-data.json
         ↓
-extract-figma-data.ts (combina con componente bindings)
+Figma Components / Templates / Assets / Custom
         ↓
-dashboard-data.json (datos estáticos)
+DS Extractor Plugin (una vez por archivo, dropdown de librería)
         ↓
-React Dashboard (src/App.tsx)
-
-Token Component Generator V2 ← para crear nuevos componentes
+component-data.json · template-data.json · asset-data.json · custom-data.json
+        ↓
+React Dashboard (src/App.tsx mergea las 3 de componentes + custom)
 ```
 
 ## Sincronización con Confluence
@@ -236,10 +233,12 @@ CONFLUENCE_API_TOKEN=tu_token
 - Ver `fractal-bridge/docs-sources/confluence-examples.md` para ejemplos
 
 ### Scripts de Extracción
-- **Comando:** `npm run extract` 
+- **Comando:** `npm run extract`
 - **Script:** `personal/scripts/extract-figma-data.ts`
-- **Variables requeridas:** `FIGMA_TOKEN`, `FIGMA_COMPONENTS_FILE_KEY` en `.env`
-- **Output:** `src/data/dashboard-data.json`
+- **Variables requeridas:** `FIGMA_TOKEN` + la variable `FIGMA_..._FILE_KEY` correspondiente a la librería que se está extrayendo
+- **Output:** `src/data/dashboard-data.json` — se debe **renombrar manualmente** al archivo destino (`component-data.json`, `template-data.json`, `asset-data.json`, `custom-data.json`, `foundations-data.json`) después de cada corrida
+
+Alternativa recomendada: correr el plugin DS Extractor desde Figma (elige la librería en el dropdown y descarga el JSON con el nombre correcto directamente).
 
 **Importante:** Siempre ejecutar ambos plugins antes de generar el dashboard para tener datos completos y actualizados.
 
@@ -292,26 +291,34 @@ El extractor **ignora** automáticamente:
 
 ### Flujo de Extracción por Librería
 
+**Opción A — plugin (recomendada):** abrir el archivo en Figma, correr DS Extractor, elegir la librería en el dropdown, descargar. El JSON ya sale con el nombre correcto.
+
+**Opción B — CLI:**
+
 ```bash
-# 1. Modificar .env con el archivo específico
+# 1. Asegurarse de que la variable FIGMA_..._FILE_KEY correcta esté en .env
 FIGMA_COMPONENTS_FILE_KEY=0GIm2SB5mdvDF7ojlXkjV3
 
-# 2. Ejecutar extracción (genera component-data.json)
+# 2. Ejecutar extracción (siempre escribe a src/data/dashboard-data.json)
 npm run extract
 
-# 3. Cambiar para templates
-FIGMA_TEMPLATES_FILE_KEY=htvGLaEUzJTF7QPd4LkGy0
+# 3. Renombrar al archivo destino
+mv src/data/dashboard-data.json src/data/component-data.json
 
-# 4. Ejecutar nuevamente (genera template-data.json) 
-npm run extract
+# 4. Repetir para cada librería (templates → template-data.json, etc.)
 ```
 
 ### Dashboard Merge
-El dashboard (`src/App.tsx`) **combina automáticamente** múltiples librerías:
+El dashboard (`src/App.tsx`) mergea las tres librerías de componentes deduplicando por `componentId` y taggeando cada componente con `_library`:
 ```typescript
 const libraries = [
   { id: 'components', label: 'Componentes', data: componentData },
-  { id: 'templates', label: 'Templates', data: templateData },
-  // Se pueden agregar más librerías aquí
+  { id: 'templates',  label: 'Templates',   data: templateData },
+  { id: 'custom',     label: 'Custom',      data: customData },
 ]
 ```
+
+Los otros JSONs se consumen directo desde su componente:
+- `asset-data.json` → `AssetTokens.tsx`
+- `foundations-data.json` → `OrphanTokens.tsx`
+- `changelog.json` → `Changelog.tsx` y `Header.tsx`

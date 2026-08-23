@@ -22,31 +22,44 @@ inclusion: auto
 
 ```
 /src/                        ← dashboard React
+  App.tsx                    ← mergea componentes de components/templates/custom y rutea las vistas
   /components/
+    Header.tsx               ← navegación superior + indicador de frescura
     Overview.tsx             ← resumen de salud, cobertura, top tokens
     ComponentIndex.tsx       ← índice de componentes con bindings
     TokenExplorer.tsx        ← explorador de tokens semánticos/primitivos
-    OrphanTokens.tsx         ← tokens definidos pero no aplicados
+    OrphanTokens.tsx         ← tokens de Foundations que no aplica ningún componente
+    AssetTokens.tsx          ← assets con sus tokens de color
     Changelog.tsx            ← historial de cambios detectados en Figma
-    Sidebar.tsx              ← navegación
+    DSChat.tsx               ← asistente de voz (Gemini Live)
   /data/
-    dashboard-data.json      ← generado por DS Extractor (no editar a mano)
+    component-data.json      ← Components (generado por DS Extractor, se renombra desde dashboard-data.json)
+    template-data.json       ← Templates
+    custom-data.json         ← Custom components
+    asset-data.json          ← Assets
+    foundations-data.json    ← Foundations (generado por Foundations Export plugin)
     changelog.json           ← historial de diffs automáticos
     snapshots/               ← snapshots para comparación diaria
       latest-components.json
       latest-templates.json
       latest-assets.json
+      latest-custom.json
+
+/api/
+  live-token.ts              ← Edge function que emite token efímero de Gemini Live
 
 /scripts/
   diff-changelog.ts          ← script productivo de diff (usado por el workflow)
+  view-changelog.ts          ← visor CLI del changelog
+  extract-flows.ts           ← extractor de uso de DS en flows-data.json
 
 /.github/workflows/
   changelog.yml              ← corre a las 9 AM Argentina, detecta cambios en Figma
 
 /personal/                   ← gitignoreado, herramientas locales
   /ds-extractor/             ← Plugin de Figma "DS Extractor"
-  /figma-plugin-generator-v2/
   /figma-plugin-foundations-export/
+  /figma-plugin-generator-v2/ ← autoría de componentes (NO alimenta al dashboard)
   /scripts/                  ← scripts de análisis y exploración
 ```
 
@@ -65,7 +78,9 @@ Ubicado en `personal/ds-extractor/`. Se carga localmente en Figma como plugin de
 - Colecciones de variables
 - Categorías inferidas de los nombres de páginas (prefijo `▶️`)
 
-**Output:** `dashboard-data.json` — se guarda manualmente en `src/data/` y se commitea para que Vercel redesploy el dashboard.
+**Output:** el plugin descarga un JSON con el nombre destino según la librería seleccionada en el dropdown (`component-data.json`, `template-data.json`, `asset-data.json`, `custom-data.json`). Se mueve manualmente a `src/data/` y se commitea para que Vercel redesploye.
+
+Alternativa CLI: `npm run extract` corre `personal/scripts/extract-figma-data.ts`, que escribe siempre a `src/data/dashboard-data.json` y hay que **renombrarlo** al archivo final después de cada corrida.
 
 ---
 
@@ -76,6 +91,7 @@ Ubicado en `personal/ds-extractor/`. Se carga localmente en Figma como plugin de
 | `components` | Librería de componentes | `FIGMA_COMPONENTS_FILE_KEY` |
 | `templates` | Librería de templates | `FIGMA_TEMPLATES_FILE_KEY` |
 | `assets` | Librería de assets/íconos | `FIGMA_ASSETS_FILE_KEY` |
+| `custom` | Componentes custom | `FIGMA_CUSTOM_COMPONENTS_FILE_KEY` |
 | `foundations` | Foundations (tokens) | `FIGMA_FOUNDATIONS_FILE_KEY` |
 
 ---
@@ -97,9 +113,11 @@ FIGMA_ASSETS_FILE_KEY        ← archivo de Assets
 ```bash
 npm run diff -- components    # diff manual del archivo de componentes
 npm run diff -- templates     # diff manual del archivo de templates
-npm run diff -- foundations   # diff manual del archivo de foundations
 npm run diff -- assets        # diff manual del archivo de assets
-npm run extract               # regenerar dashboard-data.json (usa personal/scripts/)
+npm run diff -- custom        # diff manual de componentes custom
+npm run diff -- foundations   # diff manual del archivo de foundations
+npm run extract               # escribe src/data/dashboard-data.json (después renombrar al archivo destino)
+npm run view-changelog        # visor CLI del changelog
 npm run dev                   # ver dashboard local
 npm run build                 # compilar dashboard
 ```
@@ -134,7 +152,7 @@ npm run build                 # compilar dashboard
 Invocar con `#component-architecture`. Leer el componente por API de Figma usando el file key y node-id.
 
 ### Tokenización (tokens aplicados, escalas, errores)
-Invocar con `#tokenization-rules`. Leer los bindings del componente y cruzar con `dashboard-data.json` para resolver nombres.
+Invocar con `#tokenization-rules`. Leer los bindings del componente y cruzar con `src/data/component-data.json` (o el archivo de la librería correspondiente) para resolver nombres.
 
 ---
 
@@ -301,7 +319,7 @@ Configurado como MCP server local (`figma-developer-mcp`). Permite leer archivos
 
 - No subir nada del `personal/` a Git (está en .gitignore)
 - El plugin DS Extractor es local, no va online
-- `dashboard-data.json` se actualiza manualmente con el plugin, luego se commitea
+- Los JSONs de librerías (`component-data.json`, `template-data.json`, `asset-data.json`, `custom-data.json`, `foundations-data.json`) se actualizan manualmente con los plugins y se commitean
 - `changelog.json` y snapshots los actualiza el bot automáticamente — no editar a mano
 - Cuando se audita, separar arquitectura (capas/naming) de tokenización (tokens aplicados)
 - Siempre mostrar node-id cuando se reportan componentes para referencia

@@ -666,9 +666,9 @@ src/
 │       └── latest-custom.json
 
 scripts/
-├── diff-changelog.ts           # Generador principal
-├── view-changelog.ts           # Visor mejorado
-└── README-CHANGELOG.md         # Esta guía
+├── diff-changelog.ts           # Generador principal (usado por el workflow diario)
+├── view-changelog.ts           # Visor CLI
+└── README.md                   # Índice de scripts
 
 .github/
 └── workflows/
@@ -760,9 +760,8 @@ COMPONENT_LIMIT=5 npm run diff -- components
 
 Para sugerencias, bugs o consultas sobre el sistema de changelog:
 - **Equipo**: Design Systems — Fractal DS
-- **Documentación adicional**: 
-  - `docs/CHANGELOG-FORMAT.md` — Formato técnico completo
-  - `scripts/README-CHANGELOG.md` — Referencia de comandos
-  - `CHANGELOG-IMPROVEMENTS.md` — Resumen de mejoras
+- **Documentación adicional**:
+  - [`docs/CHANGELOG-FORMAT.md`](./CHANGELOG-FORMAT.md) — Schema del JSON
+  - [`scripts/README.md`](../scripts/README.md) — Índice de scripts productivos
 
 **Última actualización**: Agosto 2026
