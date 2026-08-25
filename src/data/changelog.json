@@ -1,5 +1,38 @@
 [
   {
+    "id": "mt8o94o2",
+    "timestamp": "2026-08-25T12:59:24.002Z",
+    "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
+    "fileName": "Custom components",
+    "fileLabel": "custom",
+    "summary": "1 nuevo",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Toggle-number",
+        "nodeId": "",
+        "details": "Toggle-number"
+      }
+    ],
+    "detailed": {},
+    "stats": {
+      "componentsAdded": 7,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
     "id": "mt78xrpt",
     "timestamp": "2026-08-24T13:02:53.585Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",

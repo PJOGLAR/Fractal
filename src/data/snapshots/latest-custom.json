@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-08-23T12:52:51.424Z",
+  "takenAt": "2026-08-25T12:59:23.991Z",
   "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
   "fileName": "Custom components",
   "components": [
@@ -16780,6 +16780,1372 @@
       "instances": []
     },
     {
+      "id": "230:81",
+      "name": "Toggle-number",
+      "type": "COMPONENT_SET",
+      "bindings": [
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:cfcd91dd6972e433bcd36557a5b9f78d9ed1d707/1227:15",
+          "layerName": "Toggle-number"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:03953486e5268275c40e51f83bff69b21830c6b5/1227:14",
+          "layerName": "Toggle-number"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:03953486e5268275c40e51f83bff69b21830c6b5/1227:14",
+          "layerName": "Toggle-number"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:03953486e5268275c40e51f83bff69b21830c6b5/1227:14",
+          "layerName": "Toggle-number"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:03953486e5268275c40e51f83bff69b21830c6b5/1227:14",
+          "layerName": "Toggle-number"
+        },
+        {
+          "property": "strokes",
+          "variableId": "VariableID:d8046c7df8096c331b4b63c37c1b38729a0ee465/3319:319",
+          "layerName": "Toggle-number"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Toggle-number",
+          "property": "itemSpacing",
+          "value": 24
+        },
+        {
+          "layerName": "Toggle-number",
+          "property": "paddingLeft",
+          "value": 16
+        },
+        {
+          "layerName": "Toggle-number",
+          "property": "paddingRight",
+          "value": 16
+        },
+        {
+          "layerName": "Toggle-number",
+          "property": "paddingTop",
+          "value": 16
+        },
+        {
+          "layerName": "Toggle-number",
+          "property": "paddingBottom",
+          "value": 16
+        },
+        {
+          "layerName": "Toggle-number",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Toggle-number",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "Toggle-number",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Toggle-number",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Toggle-number",
+          "property": "clipsContent",
+          "value": true
+        },
+        {
+          "layerName": "Toggle-number",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Toggle-number",
+          "property": "size.width",
+          "value": 416
+        },
+        {
+          "layerName": "Toggle-number",
+          "property": "size.height",
+          "value": 76
+        },
+        {
+          "layerName": "Toggle-number",
+          "property": "stroke[0].color",
+          "value": "#5A50F9"
+        },
+        {
+          "layerName": "Toggle-number",
+          "property": "__componentProps__",
+          "value": "Label#13865:0:TEXT,Selected:VARIANT,State:VARIANT"
+        },
+        {
+          "layerName": "Toggle-number",
+          "property": "__layerName__",
+          "value": "Toggle-number"
+        }
+      ],
+      "instances": [
+        {
+          "name": ".⛔️ Focus-ring",
+          "componentId": "71:64"
+        }
+      ]
+    },
+    {
+      "id": "230:82",
+      "name": "State=default, Selected=false",
+      "type": "COMPONENT",
+      "parentId": "230:81",
+      "bindings": [
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:be46345ce533567571354f332e3aacb128992758/1227:12",
+          "layerName": "State=default, Selected=false"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=default, Selected=false"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=default, Selected=false"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=default, Selected=false"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=default, Selected=false"
+        },
+        {
+          "property": "strokes",
+          "variableId": "VariableID:b5a951495b65213c7d96ce8a26d0a5bf20560289/3054:40",
+          "layerName": "State=default, Selected=false"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:a721bf94682bac637371ab810485a4f392914778/3054:10",
+          "layerName": "1"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:f0090c959c7727e54425d3a74e0db6c1e22a8e9d/1667:8",
+          "layerName": "1"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:83850139a9763604395bb5d037449f4b32720a72/1545:160",
+          "layerName": "1"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:22f128b4a70cc1e5bfa6ca2934644a5779bdb956/1545:159",
+          "layerName": "1"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:d1f899837a3c8fc82a438e31004e03799f147074/1545:157",
+          "layerName": "1"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:6b0d78ddfb0d331662932b0174c0e5d5d5e46950/1545:158",
+          "layerName": "1"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "itemSpacing",
+          "value": 4
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "paddingLeft",
+          "value": 4
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "paddingRight",
+          "value": 4
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "paddingTop",
+          "value": 4
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "paddingBottom",
+          "value": 4
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "size.width",
+          "value": 44
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "size.height",
+          "value": 44
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "stroke[0].color",
+          "value": "#5A50F9"
+        },
+        {
+          "layerName": "State=default, Selected=false",
+          "property": "__layerName__",
+          "value": "State=default, Selected=false"
+        },
+        {
+          "layerName": "1",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "1",
+          "property": "characters",
+          "value": "1"
+        },
+        {
+          "layerName": "1",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "1",
+          "property": "size.width",
+          "value": 6
+        },
+        {
+          "layerName": "1",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "1",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "1",
+          "property": "__layerName__",
+          "value": "1"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "230:84",
+      "name": "State=default, Selected=true",
+      "type": "COMPONENT",
+      "parentId": "230:81",
+      "bindings": [
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:be46345ce533567571354f332e3aacb128992758/1227:12",
+          "layerName": "State=default, Selected=true"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=default, Selected=true"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=default, Selected=true"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=default, Selected=true"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=default, Selected=true"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:0dcae37e5c4fe8df43d247a089cf82212b367439/3054:16",
+          "layerName": "State=default, Selected=true"
+        },
+        {
+          "property": "strokes",
+          "variableId": "VariableID:b5a951495b65213c7d96ce8a26d0a5bf20560289/3054:40",
+          "layerName": "State=default, Selected=true"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:cc10527f81ab3de6deb477d9f460671fda777c41/3054:11",
+          "layerName": "1"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:f0090c959c7727e54425d3a74e0db6c1e22a8e9d/1667:8",
+          "layerName": "1"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:83850139a9763604395bb5d037449f4b32720a72/1545:160",
+          "layerName": "1"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:22f128b4a70cc1e5bfa6ca2934644a5779bdb956/1545:159",
+          "layerName": "1"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:d1f899837a3c8fc82a438e31004e03799f147074/1545:157",
+          "layerName": "1"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:6b0d78ddfb0d331662932b0174c0e5d5d5e46950/1545:158",
+          "layerName": "1"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "itemSpacing",
+          "value": 4
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "paddingLeft",
+          "value": 4
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "paddingRight",
+          "value": 4
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "paddingTop",
+          "value": 4
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "paddingBottom",
+          "value": 4
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "size.width",
+          "value": 44
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "size.height",
+          "value": 44
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "fill[0].color",
+          "value": "#5A50F9"
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "stroke[0].color",
+          "value": "#5A50F9"
+        },
+        {
+          "layerName": "State=default, Selected=true",
+          "property": "__layerName__",
+          "value": "State=default, Selected=true"
+        },
+        {
+          "layerName": "1",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "1",
+          "property": "characters",
+          "value": "1"
+        },
+        {
+          "layerName": "1",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "1",
+          "property": "size.width",
+          "value": 6
+        },
+        {
+          "layerName": "1",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "1",
+          "property": "fill[0].color",
+          "value": "#FCFCFC"
+        },
+        {
+          "layerName": "1",
+          "property": "__layerName__",
+          "value": "1"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "230:86",
+      "name": "State=hover, Selected=false",
+      "type": "COMPONENT",
+      "parentId": "230:81",
+      "bindings": [
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:be46345ce533567571354f332e3aacb128992758/1227:12",
+          "layerName": "State=hover, Selected=false"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=hover, Selected=false"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=hover, Selected=false"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=hover, Selected=false"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=hover, Selected=false"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:b64641412b20c7cf8dc668584dc1375782c925b4/3054:20",
+          "layerName": "State=hover, Selected=false"
+        },
+        {
+          "property": "strokes",
+          "variableId": "VariableID:de015009b5ffccac041adce3baa49ce62f7932ac/3054:39",
+          "layerName": "State=hover, Selected=false"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:a721bf94682bac637371ab810485a4f392914778/3054:10",
+          "layerName": "1"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:f0090c959c7727e54425d3a74e0db6c1e22a8e9d/1667:8",
+          "layerName": "1"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:83850139a9763604395bb5d037449f4b32720a72/1545:160",
+          "layerName": "1"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:22f128b4a70cc1e5bfa6ca2934644a5779bdb956/1545:159",
+          "layerName": "1"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:d1f899837a3c8fc82a438e31004e03799f147074/1545:157",
+          "layerName": "1"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:6b0d78ddfb0d331662932b0174c0e5d5d5e46950/1545:158",
+          "layerName": "1"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "itemSpacing",
+          "value": 4
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "paddingLeft",
+          "value": 4
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "paddingRight",
+          "value": 4
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "paddingTop",
+          "value": 4
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "paddingBottom",
+          "value": 4
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "size.width",
+          "value": 44
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "size.height",
+          "value": 44
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "fill[0].color",
+          "value": "#EEF2FF"
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "stroke[0].color",
+          "value": "#C7D2FE"
+        },
+        {
+          "layerName": "State=hover, Selected=false",
+          "property": "__layerName__",
+          "value": "State=hover, Selected=false"
+        },
+        {
+          "layerName": "1",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "1",
+          "property": "characters",
+          "value": "1"
+        },
+        {
+          "layerName": "1",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "1",
+          "property": "size.width",
+          "value": 6
+        },
+        {
+          "layerName": "1",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "1",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "1",
+          "property": "__layerName__",
+          "value": "1"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "230:88",
+      "name": "State=pressed, Selected=false",
+      "type": "COMPONENT",
+      "parentId": "230:81",
+      "bindings": [
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:be46345ce533567571354f332e3aacb128992758/1227:12",
+          "layerName": "State=pressed, Selected=false"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=pressed, Selected=false"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=pressed, Selected=false"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=pressed, Selected=false"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=pressed, Selected=false"
+        },
+        {
+          "property": "strokes",
+          "variableId": "VariableID:c59ef4ad92477e49734280b9b105e5653b76372b/3054:42",
+          "layerName": "State=pressed, Selected=false"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:a721bf94682bac637371ab810485a4f392914778/3054:10",
+          "layerName": "1"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:f0090c959c7727e54425d3a74e0db6c1e22a8e9d/1667:8",
+          "layerName": "1"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:83850139a9763604395bb5d037449f4b32720a72/1545:160",
+          "layerName": "1"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:22f128b4a70cc1e5bfa6ca2934644a5779bdb956/1545:159",
+          "layerName": "1"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:d1f899837a3c8fc82a438e31004e03799f147074/1545:157",
+          "layerName": "1"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:6b0d78ddfb0d331662932b0174c0e5d5d5e46950/1545:158",
+          "layerName": "1"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "itemSpacing",
+          "value": 4
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "paddingLeft",
+          "value": 4
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "paddingRight",
+          "value": 4
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "paddingTop",
+          "value": 4
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "paddingBottom",
+          "value": 4
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "size.width",
+          "value": 44
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "size.height",
+          "value": 44
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "stroke[0].color",
+          "value": "#312E81"
+        },
+        {
+          "layerName": "State=pressed, Selected=false",
+          "property": "__layerName__",
+          "value": "State=pressed, Selected=false"
+        },
+        {
+          "layerName": "1",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "1",
+          "property": "characters",
+          "value": "1"
+        },
+        {
+          "layerName": "1",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "1",
+          "property": "size.width",
+          "value": 6
+        },
+        {
+          "layerName": "1",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "1",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "1",
+          "property": "__layerName__",
+          "value": "1"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "230:90",
+      "name": "State=focus, Selected=false",
+      "type": "COMPONENT",
+      "parentId": "230:81",
+      "bindings": [
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:be46345ce533567571354f332e3aacb128992758/1227:12",
+          "layerName": "State=focus, Selected=false"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=focus, Selected=false"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=focus, Selected=false"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=focus, Selected=false"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=focus, Selected=false"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:92a30073031947a22081d730b063363e07671ad0/3054:18",
+          "layerName": "State=focus, Selected=false"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:a721bf94682bac637371ab810485a4f392914778/3054:10",
+          "layerName": "1"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:f0090c959c7727e54425d3a74e0db6c1e22a8e9d/1667:8",
+          "layerName": "1"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:83850139a9763604395bb5d037449f4b32720a72/1545:160",
+          "layerName": "1"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:22f128b4a70cc1e5bfa6ca2934644a5779bdb956/1545:159",
+          "layerName": "1"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:d1f899837a3c8fc82a438e31004e03799f147074/1545:157",
+          "layerName": "1"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:6b0d78ddfb0d331662932b0174c0e5d5d5e46950/1545:158",
+          "layerName": "1"
+        },
+        {
+          "property": "strokes",
+          "variableId": "VariableID:b5a951495b65213c7d96ce8a26d0a5bf20560289/3319:360",
+          "layerName": ".⛔️ Focus-ring"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "itemSpacing",
+          "value": 4
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "paddingLeft",
+          "value": 4
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "paddingRight",
+          "value": 4
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "paddingTop",
+          "value": 4
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "paddingBottom",
+          "value": 4
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "size.width",
+          "value": 44
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "size.height",
+          "value": 44
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "fill[0].color",
+          "value": "#EEF2FF"
+        },
+        {
+          "layerName": "State=focus, Selected=false",
+          "property": "__layerName__",
+          "value": "State=focus, Selected=false"
+        },
+        {
+          "layerName": "1",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "1",
+          "property": "characters",
+          "value": "1"
+        },
+        {
+          "layerName": "1",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "1",
+          "property": "size.width",
+          "value": 6
+        },
+        {
+          "layerName": "1",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "1",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "1",
+          "property": "__layerName__",
+          "value": "1"
+        },
+        {
+          "layerName": ".⛔️ Focus-ring",
+          "property": "strokeWeight",
+          "value": 2
+        },
+        {
+          "layerName": ".⛔️ Focus-ring",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": ".⛔️ Focus-ring",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": ".⛔️ Focus-ring",
+          "property": "size.width",
+          "value": 44
+        },
+        {
+          "layerName": ".⛔️ Focus-ring",
+          "property": "size.height",
+          "value": 44
+        },
+        {
+          "layerName": ".⛔️ Focus-ring",
+          "property": "stroke[0].color",
+          "value": "#5A50F9"
+        },
+        {
+          "layerName": ".⛔️ Focus-ring",
+          "property": "__layerName__",
+          "value": ".⛔️ Focus-ring"
+        }
+      ],
+      "instances": [
+        {
+          "name": ".⛔️ Focus-ring",
+          "componentId": "71:64"
+        }
+      ]
+    },
+    {
+      "id": "230:93",
+      "name": "State=disabled, Selected=false",
+      "type": "COMPONENT",
+      "parentId": "230:81",
+      "bindings": [
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:be46345ce533567571354f332e3aacb128992758/1227:12",
+          "layerName": "State=disabled, Selected=false"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=disabled, Selected=false"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=disabled, Selected=false"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=disabled, Selected=false"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
+          "layerName": "State=disabled, Selected=false"
+        },
+        {
+          "property": "strokes",
+          "variableId": "VariableID:5aac72ac5d283d0b7501d2bf882947ff1bcb6e57/3054:48",
+          "layerName": "State=disabled, Selected=false"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:71ca65f16b7cebddf3f1716196b468bb9626c2e1/3054:14",
+          "layerName": "1"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:f0090c959c7727e54425d3a74e0db6c1e22a8e9d/1667:8",
+          "layerName": "1"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:83850139a9763604395bb5d037449f4b32720a72/1545:160",
+          "layerName": "1"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:22f128b4a70cc1e5bfa6ca2934644a5779bdb956/1545:159",
+          "layerName": "1"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:d1f899837a3c8fc82a438e31004e03799f147074/1545:157",
+          "layerName": "1"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:6b0d78ddfb0d331662932b0174c0e5d5d5e46950/1545:158",
+          "layerName": "1"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "itemSpacing",
+          "value": 4
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "paddingLeft",
+          "value": 4
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "paddingRight",
+          "value": 4
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "paddingTop",
+          "value": 4
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "paddingBottom",
+          "value": 4
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "primaryAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "size.width",
+          "value": 44
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "size.height",
+          "value": 44
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "stroke[0].color",
+          "value": "#A9A9A9"
+        },
+        {
+          "layerName": "State=disabled, Selected=false",
+          "property": "__layerName__",
+          "value": "State=disabled, Selected=false"
+        },
+        {
+          "layerName": "1",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "1",
+          "property": "characters",
+          "value": "1"
+        },
+        {
+          "layerName": "1",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "1",
+          "property": "size.width",
+          "value": 6
+        },
+        {
+          "layerName": "1",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "1",
+          "property": "fill[0].color",
+          "value": "#858585"
+        },
+        {
+          "layerName": "1",
+          "property": "__layerName__",
+          "value": "1"
+        }
+      ],
+      "instances": []
+    },
+    {
       "id": "6:1587",
       "name": "Card-Personal-Pay",
       "type": "COMPONENT_SET",
@@ -29815,8 +31181,8 @@
     }
   ],
   "stats": {
-    "totalComponents": 50,
-    "totalBindings": 1233,
-    "totalProperties": 4415
+    "totalComponents": 57,
+    "totalBindings": 1314,
+    "totalProperties": 4590
   }
 }
