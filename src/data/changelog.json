@@ -1,5 +1,548 @@
 [
   {
+    "id": "mta3w1uw",
+    "timestamp": "2026-08-26T13:04:53.864Z",
+    "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
+    "fileName": "Custom components",
+    "fileLabel": "custom",
+    "summary": "10 nuevos · 1 eliminado",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Apple",
+        "nodeId": "",
+        "details": "Apple"
+      },
+      {
+        "type": "component_added",
+        "component": "Honor",
+        "nodeId": "",
+        "details": "Honor"
+      },
+      {
+        "type": "component_added",
+        "component": "Huawei",
+        "nodeId": "",
+        "details": "Huawei"
+      },
+      {
+        "type": "component_added",
+        "component": "Motorola",
+        "nodeId": "",
+        "details": "Motorola"
+      },
+      {
+        "type": "component_added",
+        "component": "Nubia",
+        "nodeId": "",
+        "details": "Nubia"
+      },
+      {
+        "type": "component_added",
+        "component": "Oppo",
+        "nodeId": "",
+        "details": "Oppo"
+      },
+      {
+        "type": "component_added",
+        "component": "Samsung",
+        "nodeId": "",
+        "details": "Samsung"
+      },
+      {
+        "type": "component_added",
+        "component": "Tcl",
+        "nodeId": "",
+        "details": "Tcl"
+      },
+      {
+        "type": "component_added",
+        "component": "Xiaomi",
+        "nodeId": "",
+        "details": "Xiaomi"
+      },
+      {
+        "type": "component_added",
+        "component": "Zte",
+        "nodeId": "",
+        "details": "Zte"
+      },
+      {
+        "type": "component_removed",
+        "component": "Toggle-number",
+        "nodeId": "",
+        "details": "Toggle-number"
+      }
+    ],
+    "detailed": {},
+    "stats": {
+      "componentsAdded": 10,
+      "componentsRemoved": 7,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
+    "id": "mta3vspb",
+    "timestamp": "2026-08-26T13:04:41.999Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "2 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Card",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card2",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      ".⛔️ Card_header": {
+        "name": ".⛔️ Card_header",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": ".⛔️ Card_header",
+                "from": "486",
+                "to": "506"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Type": {
+        "name": "Type",
+        "isVariant": true,
+        "variants": {
+          "Type=action": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingTop",
+                  "layer": "---> Header action",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-300"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=action",
+                "from": "65",
+                "to": "69"
+              },
+              {
+                "property": "paddingTop",
+                "layer": "---> Header action",
+                "from": "8",
+                "to": "12"
+              },
+              {
+                "property": "size.height",
+                "layer": "---> Header action",
+                "from": "65",
+                "to": "69"
+              }
+            ]
+          },
+          "Type=earnings": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingTop",
+                  "layer": "Type=earnings",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-300"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "paddingTop",
+                "layer": "Type=earnings",
+                "from": "8",
+                "to": "12"
+              },
+              {
+                "property": "size.height",
+                "layer": "Type=earnings",
+                "from": "40",
+                "to": "44"
+              }
+            ]
+          },
+          "Type=accordion": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "Type=accordion",
+                  "from": "padding/padding-400",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Type=accordion",
+                  "from": "padding/padding-400",
+                  "to": "padding/padding-0"
+                }
+              ],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "---> Accordion",
+                  "token": "gap/gap-150"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "---> Accordion",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "---> Accordion",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "---> Accordion",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "---> Accordion",
+                  "token": "vertical-padding"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Accordion",
+                  "token": "gap/gap-150"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Accordion",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Accordion",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Accordion",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Accordion",
+                  "token": "vertical-padding"
+                }
+              ]
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=accordion",
+                "from": "102",
+                "to": "114"
+              },
+              {
+                "property": "paddingTop",
+                "layer": "Main content",
+                "from": "6",
+                "to": "12"
+              },
+              {
+                "property": "size.height",
+                "layer": "Main content",
+                "from": "42",
+                "to": "48"
+              },
+              {
+                "property": "size.width",
+                "layer": ".⛔️ Divider",
+                "from": "296",
+                "to": "328"
+              },
+              {
+                "property": "size.width",
+                "layer": "Vector",
+                "from": "296",
+                "to": "328"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 4,
+          "tokensAdded": 5,
+          "tokensRemoved": 5,
+          "propertiesChanged": 10
+        }
+      },
+      ".⛔️ Card_header_action": {
+        "name": ".⛔️ Card_header_action",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": ".⛔️ Card_header_action",
+                "from": "242",
+                "to": "250"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Alignement": {
+        "name": "Alignement",
+        "isVariant": true,
+        "variants": {
+          "Alignement=horizontal": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingTop",
+                  "layer": "Alignement=horizontal",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-300"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "paddingTop",
+                "layer": "Alignement=horizontal",
+                "from": "8",
+                "to": "12"
+              },
+              {
+                "property": "size.height",
+                "layer": "Alignement=horizontal",
+                "from": "65",
+                "to": "69"
+              }
+            ]
+          },
+          "Alignement=vertical": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingTop",
+                  "layer": "Alignement=vertical",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-300"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "paddingTop",
+                "layer": "Alignement=vertical",
+                "from": "8",
+                "to": "12"
+              },
+              {
+                "property": "size.height",
+                "layer": "Alignement=vertical",
+                "from": "97",
+                "to": "101"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 2,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 4
+        }
+      },
+      "State": {
+        "name": "State",
+        "isVariant": true,
+        "variants": {
+          "State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingTop",
+                  "layer": "State=default",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "---> Header action",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-300"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=default",
+                "from": "169",
+                "to": "165"
+              },
+              {
+                "property": "size.height",
+                "layer": "---> Header",
+                "from": "65",
+                "to": "69"
+              },
+              {
+                "property": "paddingTop",
+                "layer": "---> Header action",
+                "from": "8",
+                "to": "12"
+              },
+              {
+                "property": "size.height",
+                "layer": "---> Header action",
+                "from": "65",
+                "to": "69"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 2,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 4
+        }
+      },
+      "Card2": {
+        "name": "Card2",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingTop",
+                  "layer": "---> Header action",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-300"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Card2",
+                "from": "169",
+                "to": "173"
+              },
+              {
+                "property": "size.height",
+                "layer": "---> Header",
+                "from": "65",
+                "to": "69"
+              },
+              {
+                "property": "paddingTop",
+                "layer": "---> Header action",
+                "from": "8",
+                "to": "12"
+              },
+              {
+                "property": "size.height",
+                "layer": "---> Header action",
+                "from": "65",
+                "to": "69"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 1,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 4
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 5,
+      "bindingsRemoved": 5,
+      "bindingsChanged": 9,
+      "propertiesChanged": 24
+    }
+  },
+  {
     "id": "mt8o94o2",
     "timestamp": "2026-08-25T12:59:24.002Z",
     "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
