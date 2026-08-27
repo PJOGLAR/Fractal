@@ -1,5 +1,356 @@
 [
   {
+    "id": "mtc2r661",
+    "timestamp": "2026-08-27T22:08:38.905Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "7 nuevos · 3 iterados",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Fibra",
+        "nodeId": "",
+        "details": "Fibra"
+      },
+      {
+        "type": "component_added",
+        "component": "Flow",
+        "nodeId": "",
+        "details": "Flow"
+      },
+      {
+        "type": "component_added",
+        "component": "Movil",
+        "nodeId": "",
+        "details": "Movil"
+      },
+      {
+        "type": "component_added",
+        "component": "Pay",
+        "nodeId": "",
+        "details": "Pay"
+      },
+      {
+        "type": "component_added",
+        "component": "Personal",
+        "nodeId": "",
+        "details": "Personal"
+      },
+      {
+        "type": "component_added",
+        "component": "Smarthome",
+        "nodeId": "",
+        "details": "Smarthome"
+      },
+      {
+        "type": "component_added",
+        "component": "Tienda",
+        "nodeId": "",
+        "details": "Tienda"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Lifejacket-hand",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Personal-fibra",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Personal-movil",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Flow": {
+        "name": "Flow",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Logo",
+                  "token": "static/foreground/neutral/strong"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Logo",
+                "from": "#18C39A",
+                "to": "#171717"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 1,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Pay": {
+        "name": "Pay",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Logo",
+                  "token": "static/foreground/neutral/strong"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Logo",
+                "from": "#5A50F9",
+                "to": "#171717"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 1,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Personal": {
+        "name": "Personal",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Logo",
+                  "token": "static/foreground/neutral/strong"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Logo",
+                "from": "#1EB2F5",
+                "to": "#171717"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 1,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Smarthome": {
+        "name": "Smarthome",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Logo",
+                  "token": "static/foreground/neutral/strong"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Logo",
+                "from": "#052C50",
+                "to": "#171717"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 1,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Tienda": {
+        "name": "Tienda",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Logo",
+                  "token": "static/foreground/neutral/strong"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Logo",
+                "from": "#0AC1DF",
+                "to": "#171717"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 1,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Personal-fibra": {
+        "name": "Personal-fibra",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Logo",
+                  "token": "static/foreground/neutral/strong"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Logo",
+                "from": "#174BE8",
+                "to": "#171717"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 1,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Personal-movil": {
+        "name": "Personal-movil",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Logo",
+                  "token": "static/foreground/neutral/strong"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Logo",
+                "from": "#1EB2F5",
+                "to": "#171717"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 1,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Lifejacket-hand": {
+        "name": "Lifejacket-hand",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "token": "d521/4240:12"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector02",
+                  "token": "d521/4240:12"
+                }
+              ]
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 1,
+          "tokensRemoved": 1,
+          "propertiesChanged": 0
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 7,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 3,
+      "bindingsRemoved": 1,
+      "bindingsChanged": 0,
+      "propertiesChanged": 2
+    }
+  },
+  {
     "id": "mta3w1uw",
     "timestamp": "2026-08-26T13:04:53.864Z",
     "fileKey": "Y81MqGSSBogjp7xbMjdEIU",

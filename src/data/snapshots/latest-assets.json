@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-08-22T12:51:30.557Z",
+  "takenAt": "2026-08-27T22:08:38.868Z",
   "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
   "fileName": "Assets",
   "components": [
@@ -9763,7 +9763,13 @@
       "id": "170:182",
       "name": "Flow",
       "type": "COMPONENT",
-      "bindings": [],
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Logo"
+        }
+      ],
       "properties": [
         {
           "layerName": "Flow",
@@ -9818,7 +9824,7 @@
         {
           "layerName": "Logo",
           "property": "fill[0].color",
-          "value": "#18C39A"
+          "value": "#171717"
         },
         {
           "layerName": "Logo",
@@ -9832,7 +9838,13 @@
       "id": "170:193",
       "name": "Pay",
       "type": "COMPONENT",
-      "bindings": [],
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Logo"
+        }
+      ],
       "properties": [
         {
           "layerName": "Pay",
@@ -9887,7 +9899,7 @@
         {
           "layerName": "Logo",
           "property": "fill[0].color",
-          "value": "#5A50F9"
+          "value": "#171717"
         },
         {
           "layerName": "Logo",
@@ -9901,7 +9913,13 @@
       "id": "170:179",
       "name": "Personal",
       "type": "COMPONENT",
-      "bindings": [],
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Logo"
+        }
+      ],
       "properties": [
         {
           "layerName": "Personal",
@@ -9956,7 +9974,7 @@
         {
           "layerName": "Logo",
           "property": "fill[0].color",
-          "value": "#1EB2F5"
+          "value": "#171717"
         },
         {
           "layerName": "Logo",
@@ -10050,7 +10068,13 @@
       "id": "170:191",
       "name": "Smarthome",
       "type": "COMPONENT",
-      "bindings": [],
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Logo"
+        }
+      ],
       "properties": [
         {
           "layerName": "Smarthome",
@@ -10105,7 +10129,7 @@
         {
           "layerName": "Logo",
           "property": "fill[0].color",
-          "value": "#052C50"
+          "value": "#171717"
         },
         {
           "layerName": "Logo",
@@ -10119,7 +10143,13 @@
       "id": "170:192",
       "name": "Tienda",
       "type": "COMPONENT",
-      "bindings": [],
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Logo"
+        }
+      ],
       "properties": [
         {
           "layerName": "Tienda",
@@ -10174,7 +10204,7 @@
         {
           "layerName": "Logo",
           "property": "fill[0].color",
-          "value": "#0AC1DF"
+          "value": "#171717"
         },
         {
           "layerName": "Logo",
@@ -10188,7 +10218,13 @@
       "id": "3077:195",
       "name": "Personal-fibra",
       "type": "COMPONENT",
-      "bindings": [],
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Logo"
+        }
+      ],
       "properties": [
         {
           "layerName": "Personal-fibra",
@@ -10214,11 +10250,6 @@
           "layerName": "Personal-fibra",
           "property": "size.height",
           "value": 24
-        },
-        {
-          "layerName": "Personal-fibra",
-          "property": "fill[0].color",
-          "value": "#FFFFFF"
         },
         {
           "layerName": "Personal-fibra",
@@ -10248,7 +10279,7 @@
         {
           "layerName": "Logo",
           "property": "fill[0].color",
-          "value": "#174BE8"
+          "value": "#171717"
         },
         {
           "layerName": "Logo",
@@ -10262,7 +10293,13 @@
       "id": "3077:196",
       "name": "Personal-movil",
       "type": "COMPONENT",
-      "bindings": [],
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Logo"
+        }
+      ],
       "properties": [
         {
           "layerName": "Personal-movil",
@@ -10288,11 +10325,6 @@
           "layerName": "Personal-movil",
           "property": "size.height",
           "value": 24
-        },
-        {
-          "layerName": "Personal-movil",
-          "property": "fill[0].color",
-          "value": "#FFFFFF"
         },
         {
           "layerName": "Personal-movil",
@@ -10322,7 +10354,7 @@
         {
           "layerName": "Logo",
           "property": "fill[0].color",
-          "value": "#1EB2F5"
+          "value": "#171717"
         },
         {
           "layerName": "Logo",
@@ -128151,7 +128183,7 @@
         {
           "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Vector02"
+          "layerName": "Vector"
         }
       ],
       "properties": [
@@ -128336,59 +128368,34 @@
           "value": "Vector17"
         },
         {
-          "layerName": "Vector03",
+          "layerName": "Vector",
           "property": "strokeWeight",
           "value": 0.5
         },
         {
-          "layerName": "Vector03",
+          "layerName": "Vector",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Vector03",
-          "property": "size.width",
-          "value": 35
-        },
-        {
-          "layerName": "Vector03",
-          "property": "size.height",
-          "value": 34
-        },
-        {
-          "layerName": "Vector03",
-          "property": "__layerName__",
-          "value": "Vector03"
-        },
-        {
-          "layerName": "Vector02",
-          "property": "strokeWeight",
-          "value": 0.5
-        },
-        {
-          "layerName": "Vector02",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector02",
+          "layerName": "Vector",
           "property": "size.width",
           "value": 36
         },
         {
-          "layerName": "Vector02",
+          "layerName": "Vector",
           "property": "size.height",
           "value": 35
         },
         {
-          "layerName": "Vector02",
+          "layerName": "Vector",
           "property": "fill[0].color",
           "value": "#082749"
         },
         {
-          "layerName": "Vector02",
+          "layerName": "Vector",
           "property": "__layerName__",
-          "value": "Vector02"
+          "value": "Vector"
         }
       ],
       "instances": []
@@ -201417,6 +201424,499 @@
       "instances": []
     },
     {
+      "id": "4932:271",
+      "name": "Flow",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Flow",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Flow",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Flow",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Flow",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Flow",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Flow",
+          "property": "__layerName__",
+          "value": "Flow"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 0.9200247526168823
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 27
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 27
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#18C39A"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4932:272",
+      "name": "Pay",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Pay",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Pay",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Pay",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Pay",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Pay",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Pay",
+          "property": "__layerName__",
+          "value": "Pay"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 4.322577953338623
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 27
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 27
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#5A50F9"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4932:273",
+      "name": "Personal",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Personal",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Personal",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Personal",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Personal",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Personal",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Personal",
+          "property": "__layerName__",
+          "value": "Personal"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 27
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 27
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#1EB2F5"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4932:276",
+      "name": "Smarthome",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Smarthome",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Smarthome",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Smarthome",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Smarthome",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Smarthome",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Smarthome",
+          "property": "__layerName__",
+          "value": "Smarthome"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 4.322577953338623
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 27
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 27
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#052C50"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4932:277",
+      "name": "Tienda",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Tienda",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Tienda",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Tienda",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Tienda",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Tienda",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Tienda",
+          "property": "__layerName__",
+          "value": "Tienda"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 4.322577953338623
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 27
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 27
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#0AC1DF"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4932:274",
+      "name": "Fibra",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Fibra",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Fibra",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Fibra",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Fibra",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Fibra",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Fibra",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Fibra",
+          "property": "__layerName__",
+          "value": "Fibra"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 0
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 27
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 27
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#174BE8"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "4932:275",
+      "name": "Movil",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Movil",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Movil",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Movil",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Movil",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Movil",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Movil",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Movil",
+          "property": "__layerName__",
+          "value": "Movil"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 0
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 27
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 27
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#1EB2F5"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
       "id": "423:774",
       "name": "Claro-Pay",
       "type": "COMPONENT",
@@ -210401,8 +210901,8 @@
     }
   ],
   "stats": {
-    "totalComponents": 638,
-    "totalBindings": 5062,
-    "totalProperties": 35770
+    "totalComponents": 645,
+    "totalBindings": 5069,
+    "totalProperties": 35849
   }
 }
