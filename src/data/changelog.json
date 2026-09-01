@@ -1,5 +1,358 @@
 [
   {
+    "id": "mtivquey",
+    "timestamp": "2026-09-01T16:26:49.594Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "7 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Fibra-iso",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Flow-iso",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Movil-iso",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Pay-iso",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Personal-iso",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Smarthome-iso",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Tienda-iso",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {},
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 7,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
+    "id": "mtivqnsn",
+    "timestamp": "2026-09-01T16:26:41.015Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "2 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Backdrop",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Tabs",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Style": {
+        "name": "Style",
+        "isVariant": true,
+        "variants": {
+          "Style=rounded, Appearance=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Tab 1",
+                  "from": "interactive/background/brand/default/medium",
+                  "to": "interactive/background/neutral/default/quiet"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Tab 2",
+                  "from": "interactive/background/neutral/default/quiet",
+                  "to": "interactive/background/brand/default/medium"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Tab 3",
+                  "from": "interactive/background/neutral/default/quiet",
+                  "to": "interactive/background/brand/default/medium"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Tab 4",
+                  "from": "interactive/background/neutral/default/quiet",
+                  "to": "interactive/background/brand/default/medium"
+                }
+              ],
+              "added": [
+                {
+                  "property": "strokes",
+                  "layer": "Tab 1",
+                  "token": "interactive/border/neutral/default/medium"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "strokes",
+                  "layer": "Tab 2",
+                  "token": "interactive/border/neutral/default/medium"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Tab 3",
+                  "token": "interactive/border/neutral/default/medium"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Tab 4",
+                  "token": "interactive/border/neutral/default/medium"
+                }
+              ]
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Tab 1",
+                "from": "#5A50F9",
+                "to": "#FCFCFC"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Tab 2",
+                "from": "#FCFCFC",
+                "to": "#5A50F9"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Tab 3",
+                "from": "#FCFCFC",
+                "to": "#5A50F9"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Tab 4",
+                "from": "#FCFCFC",
+                "to": "#5A50F9"
+              }
+            ]
+          },
+          "Style=rounded, Appearance=inverse": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Tab 1",
+                  "token": "interactive/background/neutral/default/quiet"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Tab 2",
+                  "token": "interactive/border/brand/primary/focus/subtle"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Tab 3",
+                  "token": "interactive/border/brand/primary/focus/subtle"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Tab 4",
+                  "token": "interactive/border/brand/primary/focus/subtle"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "strokes",
+                  "layer": "Tab 1",
+                  "token": "interactive/border/brand/primary/focus/subtle"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Tab 2",
+                  "token": "interactive/background/neutral/default/quiet"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Tab 3",
+                  "token": "interactive/background/neutral/default/quiet"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Tab 4",
+                  "token": "interactive/background/neutral/default/quiet"
+                }
+              ]
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 4,
+          "tokensAdded": 5,
+          "tokensRemoved": 7,
+          "propertiesChanged": 4
+        }
+      },
+      "Backdrop": {
+        "name": "Backdrop",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Backdrop",
+                "from": "1628",
+                "to": "1692"
+              },
+              {
+                "property": "size.height",
+                "layer": "Backdrop",
+                "from": "698",
+                "to": "792"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 2
+        }
+      },
+      "Layout": {
+        "name": "Layout",
+        "isVariant": true,
+        "variants": {
+          "Layout=default, State=default": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxHeight",
+                "layer": "Layout=default, State=default",
+                "from": "646",
+                "to": "684"
+              },
+              {
+                "property": "size.height",
+                "layer": "Layout=default, State=default",
+                "from": "392",
+                "to": "404"
+              }
+            ]
+          },
+          "Layout=scrollable, State=default": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Layout=scrollable, State=default",
+                "from": "646",
+                "to": "684"
+              }
+            ]
+          },
+          "Layout=illustration, State=default": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxHeight",
+                "layer": "Layout=illustration, State=default",
+                "from": "646",
+                "to": "684"
+              },
+              {
+                "property": "size.height",
+                "layer": "Layout=illustration, State=default",
+                "from": "440",
+                "to": "452"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 5
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 5,
+      "bindingsRemoved": 7,
+      "bindingsChanged": 4,
+      "propertiesChanged": 11
+    }
+  },
+  {
     "id": "mtc2r661",
     "timestamp": "2026-08-27T22:08:38.905Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
