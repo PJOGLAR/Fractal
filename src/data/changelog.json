@@ -1,5 +1,132 @@
 [
   {
+    "id": "mtkb42en",
+    "timestamp": "2026-09-02T16:24:46.895Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "Sin cambios de componentes",
+    "changes": [],
+    "detailed": {
+      "Type": {
+        "name": "Type",
+        "isVariant": true,
+        "variants": {
+          "Type=pesos": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingBottom",
+                  "layer": "Type=pesos",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-200"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=pesos",
+                "from": "140",
+                "to": "148"
+              }
+            ]
+          },
+          "Type=dollars": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingBottom",
+                  "layer": "Type=dollars",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-200"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=dollars",
+                "from": "140",
+                "to": "148"
+              }
+            ]
+          },
+          "Type=alert": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingBottom",
+                  "layer": "Type=alert",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-200"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=alert",
+                "from": "140",
+                "to": "148"
+              }
+            ]
+          },
+          "Type=guaranis": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingBottom",
+                  "layer": "Type=guaranis",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-200"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=guaranis",
+                "from": "140",
+                "to": "148"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 4,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 4
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 4,
+      "propertiesChanged": 4
+    }
+  },
+  {
     "id": "mtivquey",
     "timestamp": "2026-09-01T16:26:49.594Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
