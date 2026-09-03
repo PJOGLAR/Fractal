@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-01T16:26:49.556Z",
+  "takenAt": "2026-09-03T16:15:13.672Z",
   "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
   "fileName": "Assets",
   "components": [
@@ -12655,6 +12655,306 @@
           "layerName": "Vector",
           "property": "__layerName__",
           "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "2914:573",
+      "name": "Facebook",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Logo"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Facebook",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Facebook",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Facebook",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Facebook",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Facebook",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Facebook",
+          "property": "__layerName__",
+          "value": "Facebook"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 0.33482152223587036
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 18
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 18
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "2914:572",
+      "name": "Instagram",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Logo"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Instagram",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Instagram",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Instagram",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Instagram",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Instagram",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Instagram",
+          "property": "__layerName__",
+          "value": "Instagram"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 0
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 18
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 18
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "2914:574",
+      "name": "Tik-tok",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Logo"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Tik-tok",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Tik-tok",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Tik-tok",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Tik-tok",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Tik-tok",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Tik-tok",
+          "property": "__layerName__",
+          "value": "Tik-tok"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 22.604019165039062
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 17
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 19
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "3535:154",
+      "name": "Whatsapp",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Logo"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Whatsapp",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Whatsapp",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Whatsapp",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Whatsapp",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Whatsapp",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Whatsapp",
+          "property": "__layerName__",
+          "value": "Whatsapp"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 0
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 18
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 18
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
         }
       ],
       "instances": []
@@ -44481,6 +44781,11 @@
       "bindings": [
         {
           "property": "fills",
+          "variableId": "VariableID:ae0d43f35783d5a92f655076f3a9fb530c6fc040/4033:380",
+          "layerName": "Vector"
+        },
+        {
+          "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
           "layerName": "Vector (Stroke)"
         },
@@ -44545,6 +44850,11 @@
           "layerName": "Vector",
           "property": "size.height",
           "value": 29
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#C7B3FF"
         },
         {
           "layerName": "Vector",
@@ -197307,326 +197617,6 @@
       "instances": []
     },
     {
-      "id": "2914:573",
-      "name": "Facebook-mono",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Logo"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Facebook-mono",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Facebook-mono",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Facebook-mono",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Facebook-mono",
-          "property": "size.width",
-          "value": 32
-        },
-        {
-          "layerName": "Facebook-mono",
-          "property": "size.height",
-          "value": 32
-        },
-        {
-          "layerName": "Facebook-mono",
-          "property": "fill[0].color",
-          "value": "#FFFFFF"
-        },
-        {
-          "layerName": "Facebook-mono",
-          "property": "__layerName__",
-          "value": "Facebook-mono"
-        },
-        {
-          "layerName": "Logo",
-          "property": "strokeWeight",
-          "value": 0.33482152223587036
-        },
-        {
-          "layerName": "Logo",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Logo",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Logo",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Logo",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Logo",
-          "property": "__layerName__",
-          "value": "Logo"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "2914:572",
-      "name": "Instagram-mono",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Logo"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Instagram-mono",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Instagram-mono",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Instagram-mono",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Instagram-mono",
-          "property": "size.width",
-          "value": 32
-        },
-        {
-          "layerName": "Instagram-mono",
-          "property": "size.height",
-          "value": 32
-        },
-        {
-          "layerName": "Instagram-mono",
-          "property": "fill[0].color",
-          "value": "#FFFFFF"
-        },
-        {
-          "layerName": "Instagram-mono",
-          "property": "__layerName__",
-          "value": "Instagram-mono"
-        },
-        {
-          "layerName": "Logo",
-          "property": "strokeWeight",
-          "value": 0
-        },
-        {
-          "layerName": "Logo",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Logo",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Logo",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Logo",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Logo",
-          "property": "__layerName__",
-          "value": "Logo"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "2914:574",
-      "name": "Tik-tok-mono",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Logo"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Tik-tok-mono",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Tik-tok-mono",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Tik-tok-mono",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Tik-tok-mono",
-          "property": "size.width",
-          "value": 32
-        },
-        {
-          "layerName": "Tik-tok-mono",
-          "property": "size.height",
-          "value": 32
-        },
-        {
-          "layerName": "Tik-tok-mono",
-          "property": "fill[0].color",
-          "value": "#FFFFFF"
-        },
-        {
-          "layerName": "Tik-tok-mono",
-          "property": "__layerName__",
-          "value": "Tik-tok-mono"
-        },
-        {
-          "layerName": "Logo",
-          "property": "strokeWeight",
-          "value": 22.604019165039062
-        },
-        {
-          "layerName": "Logo",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Logo",
-          "property": "size.width",
-          "value": 22
-        },
-        {
-          "layerName": "Logo",
-          "property": "size.height",
-          "value": 25
-        },
-        {
-          "layerName": "Logo",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Logo",
-          "property": "__layerName__",
-          "value": "Logo"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "3535:154",
-      "name": "Whatsapp-mono",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Logo"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Whatsapp-mono",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Whatsapp-mono",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Whatsapp-mono",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Whatsapp-mono",
-          "property": "size.width",
-          "value": 32
-        },
-        {
-          "layerName": "Whatsapp-mono",
-          "property": "size.height",
-          "value": 32
-        },
-        {
-          "layerName": "Whatsapp-mono",
-          "property": "fill[0].color",
-          "value": "#FFFFFF"
-        },
-        {
-          "layerName": "Whatsapp-mono",
-          "property": "__layerName__",
-          "value": "Whatsapp-mono"
-        },
-        {
-          "layerName": "Logo",
-          "property": "strokeWeight",
-          "value": 0
-        },
-        {
-          "layerName": "Logo",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Logo",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Logo",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Logo",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Logo",
-          "property": "__layerName__",
-          "value": "Logo"
-        }
-      ],
-      "instances": []
-    },
-    {
       "id": "456:1213",
       "name": "ABSA",
       "type": "COMPONENT",
@@ -210902,7 +210892,7 @@
   ],
   "stats": {
     "totalComponents": 645,
-    "totalBindings": 5069,
-    "totalProperties": 35849
+    "totalBindings": 5070,
+    "totalProperties": 35846
   }
 }

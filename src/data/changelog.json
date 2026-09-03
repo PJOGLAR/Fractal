@@ -1,5 +1,269 @@
 [
   {
+    "id": "mtlq7mst",
+    "timestamp": "2026-09-03T16:15:13.709Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "5 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Facebook",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Instagram",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Map-pin",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Tik-tok",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Whatsapp",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Map-pin": {
+        "name": "Map-pin",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "token": "040/4033:380"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 1,
+          "tokensRemoved": 0,
+          "propertiesChanged": 0
+        }
+      },
+      "Facebook": {
+        "name": "Facebook",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Facebook",
+                "from": "32",
+                "to": "24"
+              },
+              {
+                "property": "size.height",
+                "layer": "Facebook",
+                "from": "32",
+                "to": "24"
+              },
+              {
+                "property": "size.width",
+                "layer": "Logo",
+                "from": "24",
+                "to": "18"
+              },
+              {
+                "property": "size.height",
+                "layer": "Logo",
+                "from": "24",
+                "to": "18"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 4
+        }
+      },
+      "Instagram": {
+        "name": "Instagram",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Instagram",
+                "from": "32",
+                "to": "24"
+              },
+              {
+                "property": "size.height",
+                "layer": "Instagram",
+                "from": "32",
+                "to": "24"
+              },
+              {
+                "property": "size.width",
+                "layer": "Logo",
+                "from": "24",
+                "to": "18"
+              },
+              {
+                "property": "size.height",
+                "layer": "Logo",
+                "from": "24",
+                "to": "18"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 4
+        }
+      },
+      "Tik-tok": {
+        "name": "Tik-tok",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Tik-tok",
+                "from": "32",
+                "to": "24"
+              },
+              {
+                "property": "size.height",
+                "layer": "Tik-tok",
+                "from": "32",
+                "to": "24"
+              },
+              {
+                "property": "size.width",
+                "layer": "Logo",
+                "from": "22",
+                "to": "17"
+              },
+              {
+                "property": "size.height",
+                "layer": "Logo",
+                "from": "25",
+                "to": "19"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 4
+        }
+      },
+      "Whatsapp": {
+        "name": "Whatsapp",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Whatsapp",
+                "from": "32",
+                "to": "24"
+              },
+              {
+                "property": "size.height",
+                "layer": "Whatsapp",
+                "from": "32",
+                "to": "24"
+              },
+              {
+                "property": "size.width",
+                "layer": "Logo",
+                "from": "24",
+                "to": "18"
+              },
+              {
+                "property": "size.height",
+                "layer": "Logo",
+                "from": "24",
+                "to": "18"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 4
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 4,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 1,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 16
+    }
+  },
+  {
     "id": "mtkb42en",
     "timestamp": "2026-09-02T16:24:46.895Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
