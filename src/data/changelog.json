@@ -1,5 +1,84 @@
 [
   {
+    "id": "mtoidf30",
+    "timestamp": "2026-09-05T14:59:05.244Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "1 iterado",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Finger-print",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Finger-print": {
+        "name": "Finger-print",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "token": "static/foreground/neutral/strong"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "strokes",
+                  "layer": "Vector",
+                  "token": "static/foreground/neutral/strong"
+                }
+              ]
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Vector",
+                "from": "18",
+                "to": "19"
+              },
+              {
+                "property": "size.height",
+                "layer": "Vector",
+                "from": "19",
+                "to": "21"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 1,
+          "tokensRemoved": 1,
+          "propertiesChanged": 2
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 1,
+      "bindingsRemoved": 1,
+      "bindingsChanged": 0,
+      "propertiesChanged": 2
+    }
+  },
+  {
     "id": "mtlq7mst",
     "timestamp": "2026-09-03T16:15:13.709Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",

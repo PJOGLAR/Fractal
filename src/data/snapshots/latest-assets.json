@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-03T16:15:13.672Z",
+  "takenAt": "2026-09-05T14:59:05.208Z",
   "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
   "fileName": "Assets",
   "components": [
@@ -2899,7 +2899,7 @@
       "type": "COMPONENT",
       "bindings": [
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
           "layerName": "Vector"
         }
@@ -2948,16 +2948,16 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 18
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
           "value": 19
         },
         {
           "layerName": "Vector",
-          "property": "stroke[0].color",
+          "property": "size.height",
+          "value": 21
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
           "value": "#171717"
         },
         {
