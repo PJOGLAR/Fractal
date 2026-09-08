@@ -1,5 +1,529 @@
 [
   {
+    "id": "mtsvuv53",
+    "timestamp": "2026-09-08T16:27:38.919Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "1 nuevo",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Photo-camera",
+        "nodeId": "",
+        "details": "Photo-camera"
+      }
+    ],
+    "detailed": {},
+    "stats": {
+      "componentsAdded": 1,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
+    "id": "mtsvup8l",
+    "timestamp": "2026-09-08T16:27:31.269Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 nuevo · 2 iterados",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Pill2",
+        "nodeId": "",
+        "details": "Pill2"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Asset-container",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card_challenge",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Style": {
+        "name": "Style",
+        "isVariant": true,
+        "variants": {
+          "Style=filled, Size=sm, Shape=circle, Asset type=icon": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=filled, Size=sm, Shape=circle, Asset type=icon",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "4d1/4033:490"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "static/foreground/brand/primary/medium",
+                  "to": "b0a/4033:495"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#5A50F9",
+                "to": "#4F46E5"
+              }
+            ]
+          },
+          "Style=filled, Size=md, Shape=circle, Asset type=icon": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=filled, Size=md, Shape=circle, Asset type=icon",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "4d1/4033:490"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "static/foreground/brand/primary/medium",
+                  "to": "b0a/4033:495"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#5A50F9",
+                "to": "#4F46E5"
+              }
+            ]
+          },
+          "Style=filled, Size=lg, Shape=circle, Asset type=icon": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=filled, Size=lg, Shape=circle, Asset type=icon",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "4d1/4033:490"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "static/foreground/brand/primary/medium",
+                  "to": "b0a/4033:495"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#5A50F9",
+                "to": "#4F46E5"
+              }
+            ]
+          },
+          "Style=filled, Size=xl, Shape=circle, Asset type=icon": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=filled, Size=xl, Shape=circle, Asset type=icon",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "4d1/4033:490"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "static/foreground/brand/primary/medium",
+                  "to": "b0a/4033:495"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#5A50F9",
+                "to": "#4F46E5"
+              }
+            ]
+          },
+          "Style=filled, Size=lg, Shape=circle, Asset type=☠️ pictogram": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=filled, Size=lg, Shape=circle, Asset type=☠️ pictogram",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "4d1/4033:490"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Shape",
+                  "from": "static/foreground/brand/primary/medium",
+                  "to": "b0a/4033:495"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Shape",
+                "from": "#5A50F9",
+                "to": "#4F46E5"
+              }
+            ]
+          },
+          "Style=filled, Size=xl, Shape=circle, Asset type=☠️ pictogram": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=filled, Size=xl, Shape=circle, Asset type=☠️ pictogram",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "4d1/4033:490"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Shape",
+                  "from": "static/foreground/brand/primary/medium",
+                  "to": "b0a/4033:495"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Shape",
+                "from": "#5A50F9",
+                "to": "#4F46E5"
+              }
+            ]
+          },
+          "Style=filled, Size=sm, Shape=square, Asset type=icon": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=filled, Size=sm, Shape=square, Asset type=icon",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "4d1/4033:490"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "static/foreground/brand/primary/medium",
+                  "to": "b0a/4033:495"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#5A50F9",
+                "to": "#4F46E5"
+              }
+            ]
+          },
+          "Style=filled, Size=md, Shape=square, Asset type=icon": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=filled, Size=md, Shape=square, Asset type=icon",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "4d1/4033:490"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "static/foreground/brand/primary/medium",
+                  "to": "b0a/4033:495"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#5A50F9",
+                "to": "#4F46E5"
+              }
+            ]
+          },
+          "Style=filled, Size=lg, Shape=square, Asset type=icon": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=filled, Size=lg, Shape=square, Asset type=icon",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "4d1/4033:490"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "static/foreground/brand/primary/medium",
+                  "to": "b0a/4033:495"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#5A50F9",
+                "to": "#4F46E5"
+              }
+            ]
+          },
+          "Style=filled, Size=xl, Shape=square, Asset type=icon": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=filled, Size=xl, Shape=square, Asset type=icon",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "4d1/4033:490"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "static/foreground/brand/primary/medium",
+                  "to": "b0a/4033:495"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#5A50F9",
+                "to": "#4F46E5"
+              }
+            ]
+          },
+          "Style=filled, Size=lg, Shape=square, Asset type=☠️ pictogram": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=filled, Size=lg, Shape=square, Asset type=☠️ pictogram",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "4d1/4033:490"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Shape",
+                  "from": "static/foreground/brand/primary/medium",
+                  "to": "b0a/4033:495"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Shape",
+                "from": "#5A50F9",
+                "to": "#4F46E5"
+              }
+            ]
+          },
+          "Style=filled, Size=xl, Shape=square, Asset type=☠️ pictogram": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=filled, Size=xl, Shape=square, Asset type=☠️ pictogram",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "4d1/4033:490"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Shape",
+                  "from": "static/foreground/brand/primary/medium",
+                  "to": "b0a/4033:495"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Shape",
+                "from": "#5A50F9",
+                "to": "#4F46E5"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 24,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 12
+        }
+      },
+      ".⛔ Challenge-card_brand": {
+        "name": ".⛔ Challenge-card_brand",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Asset-container",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "4d1/4033:490"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "static/foreground/brand/primary/medium",
+                  "to": "b0a/4033:495"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#5A50F9",
+                "to": "#4F46E5"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 2,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "State": {
+        "name": "State",
+        "isVariant": true,
+        "variants": {
+          "State=default, Asset=image": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Asset-container",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "4d1/4033:490"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=default, Asset=illustration": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Asset-container",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "4d1/4033:490"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=default, Asset=none": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Asset-container",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "4d1/4033:490"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 3,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 0
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 2,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 29,
+      "propertiesChanged": 13
+    }
+  },
+  {
     "id": "mtoidf30",
     "timestamp": "2026-09-05T14:59:05.244Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",

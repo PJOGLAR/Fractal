@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-05T14:59:05.208Z",
+  "takenAt": "2026-09-08T16:27:38.883Z",
   "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
   "fileName": "Assets",
   "components": [
@@ -4110,6 +4110,81 @@
           "layerName": "Vector",
           "property": "size.height",
           "value": 22
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5114:373",
+      "name": "Photo-camera",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Photo-camera",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Photo-camera",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Photo-camera",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Photo-camera",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Photo-camera",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Photo-camera",
+          "property": "__layerName__",
+          "value": "Photo-camera"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 18
         },
         {
           "layerName": "Vector",
@@ -210891,8 +210966,8 @@
     }
   ],
   "stats": {
-    "totalComponents": 645,
-    "totalBindings": 5070,
-    "totalProperties": 35846
+    "totalComponents": 646,
+    "totalBindings": 5071,
+    "totalProperties": 35858
   }
 }
