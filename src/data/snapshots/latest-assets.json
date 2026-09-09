@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-08T16:27:38.883Z",
+  "takenAt": "2026-09-09T16:24:51.918Z",
   "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
   "fileName": "Assets",
   "components": [
@@ -11660,7 +11660,7 @@
       "type": "COMPONENT",
       "bindings": [
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
           "layerName": "Vector"
         }
@@ -11709,16 +11709,16 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 16
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
           "value": 18
         },
         {
           "layerName": "Vector",
-          "property": "stroke[0].color",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
           "value": "#171717"
         },
         {
@@ -11735,7 +11735,7 @@
       "type": "COMPONENT",
       "bindings": [
         {
-          "property": "strokes",
+          "property": "fills",
           "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
           "layerName": "Vector"
         }
@@ -11789,16 +11789,16 @@
         {
           "layerName": "Vector",
           "property": "size.width",
-          "value": 19
+          "value": 21
         },
         {
           "layerName": "Vector",
           "property": "size.height",
-          "value": 8
+          "value": 10
         },
         {
           "layerName": "Vector",
-          "property": "stroke[0].color",
+          "property": "fill[0].color",
           "value": "#171717"
         },
         {
