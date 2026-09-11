@@ -1,5 +1,72 @@
 [
   {
+    "id": "mtx5tdzw",
+    "timestamp": "2026-09-11T16:17:30.908Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 iterado",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Input-phone",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Input-phone": {
+        "name": "Input-phone",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "itemSpacing",
+                "layer": "Input-phone",
+                "from": "105",
+                "to": "60"
+              },
+              {
+                "property": "size.height",
+                "layer": "Input-phone",
+                "from": "715",
+                "to": "724"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 2
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 1,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 2
+    }
+  },
+  {
     "id": "mtub74z7",
     "timestamp": "2026-09-09T16:24:51.955Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
