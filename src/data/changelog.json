@@ -1,5 +1,72 @@
 [
   {
+    "id": "mtyjc4ca",
+    "timestamp": "2026-09-12T15:23:46.042Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 iterado",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Loader",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Type": {
+        "name": "Type",
+        "isVariant": true,
+        "variants": {
+          "Type=determinate": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "---> Progress bar",
+                  "token": "interactive/background/neutral/hover/subtle"
+                }
+              ]
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "33",
+                "to": "8"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 1,
+          "propertiesChanged": 1
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 1,
+      "bindingsChanged": 0,
+      "propertiesChanged": 1
+    }
+  },
+  {
     "id": "mtx5tdzw",
     "timestamp": "2026-09-11T16:17:30.908Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
