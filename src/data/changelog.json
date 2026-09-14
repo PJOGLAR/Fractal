@@ -1,5 +1,1694 @@
 [
   {
+    "id": "mu1jsfbv",
+    "timestamp": "2026-09-14T17:59:45.307Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "11 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Accordion",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Backdrop",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Button-group",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card-amount",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card2",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Carrousel",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Pop-up",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Pop-up_fullscreen",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Row-item",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Swap-content",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "State": {
+        "name": "State",
+        "isVariant": true,
+        "variants": {
+          "State=default, Behavior=expanded, Horizontal padding=none, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default, Behavior=expanded, Horizontal padding=sm, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default, Behavior=expanded, Horizontal padding=md, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default, Behavior=expanded, Horizontal padding=lg, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=hover, Behavior=expanded, Horizontal padding=none, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=hover, Behavior=expanded, Horizontal padding=sm, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=hover, Behavior=expanded, Horizontal padding=md, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=hover, Behavior=expanded, Horizontal padding=lg, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=focus, Behavior=expanded, Horizontal padding=none, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=focus, Behavior=expanded, Horizontal padding=sm, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=focus, Behavior=expanded, Horizontal padding=md, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=focus, Behavior=expanded, Horizontal padding=lg, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=pressed, Behavior=expanded, Horizontal padding=none, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=pressed, Behavior=expanded, Horizontal padding=sm, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=pressed, Behavior=expanded, Horizontal padding=md, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=pressed, Behavior=expanded, Horizontal padding=lg, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=disabled, Behavior=expanded, Horizontal padding=none, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=disabled, Behavior=expanded, Horizontal padding=sm, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=disabled, Behavior=expanded, Horizontal padding=md, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=disabled, Behavior=expanded, Horizontal padding=lg, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default, Behavior=expanded, Horizontal padding=none, Selected=true": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default, Behavior=expanded, Horizontal padding=sm, Selected=true": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default, Behavior=expanded, Horizontal padding=md, Selected=true": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default, Behavior=expanded, Horizontal padding=lg, Selected=true": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default, Horizontal padding=lg, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default, Horizontal padding=md, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default, Horizontal padding=sm, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default, Horizontal padding=none, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=hover, Horizontal padding=lg, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=hover, Horizontal padding=md, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=hover, Horizontal padding=sm, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=hover, Horizontal padding=none, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=pressed, Horizontal padding=lg, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=pressed, Horizontal padding=md, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=pressed, Horizontal padding=sm, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=pressed, Horizontal padding=none, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default, Horizontal padding=lg, Selected=true": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default, Horizontal padding=md, Selected=true": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default, Horizontal padding=sm, Selected=true": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default, Horizontal padding=none, Selected=true": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=disabled, Horizontal padding=lg, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=disabled, Horizontal padding=md, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=disabled, Horizontal padding=sm, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=disabled, Horizontal padding=none, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=focus, Horizontal padding=lg, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=focus, Horizontal padding=md, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=focus, Horizontal padding=sm, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=focus, Horizontal padding=none, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 50,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 50
+        }
+      },
+      "Type": {
+        "name": "Type",
+        "isVariant": true,
+        "variants": {
+          "Type=custom": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=accordion": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=button group": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=illustration, Content=offset": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=illustration, Content=balanced": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=image, Content=balanced": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=image, Content=offset": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=intrusive": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=pop up": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 9,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 9
+        }
+      },
+      "Card2": {
+        "name": "Card2",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 1,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Carrousel": {
+        "name": "Carrousel",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 1,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Behavior": {
+        "name": "Behavior",
+        "isVariant": true,
+        "variants": {
+          "Behavior=fixed": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=scrolling": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 2,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 2
+        }
+      },
+      "Layout": {
+        "name": "Layout",
+        "isVariant": true,
+        "variants": {
+          "Layout=default, State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Layout=default, State=loading": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Layout=scrollable, State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Layout=illustration, State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Swap content",
+                  "token": "static/foreground/brand/primary/medium"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Swap content",
+                  "token": "body/md/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Swap content",
+                  "token": "body/md/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Swap content",
+                  "token": "body/md/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Swap content",
+                  "token": "body/md/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Swap content",
+                  "token": "body/md/semibold/font-size"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Layout=illustration, State=default",
+                "from": "452",
+                "to": "512"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 4,
+          "tokensAdded": 6,
+          "tokensRemoved": 0,
+          "propertiesChanged": 5
+        }
+      },
+      "Swap-content": {
+        "name": "Swap-content",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 1,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 6,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 68,
+      "propertiesChanged": 69
+    }
+  },
+  {
     "id": "mtyjc4ca",
     "timestamp": "2026-09-12T15:23:46.042Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
