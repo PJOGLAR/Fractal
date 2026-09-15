@@ -1,5 +1,90 @@
 [
   {
+    "id": "mu2wk9hf",
+    "timestamp": "2026-09-15T16:45:05.667Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "5 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Card-challenge",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Carousel",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Dialog",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Pop-up",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Shortcut-asset",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Shortcut-asset": {
+        "name": "Shortcut-asset",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Shortcut-asset",
+                "from": "188",
+                "to": "280"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 10,
+      "variantsAdded": 5,
+      "variantsRemoved": 0,
+      "propsAdded": 1,
+      "propsRemoved": 1,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 1
+    }
+  },
+  {
     "id": "mu1jsfbv",
     "timestamp": "2026-09-14T17:59:45.307Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
