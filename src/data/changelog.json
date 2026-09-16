@@ -1,5 +1,315 @@
 [
   {
+    "id": "mu4braek",
+    "timestamp": "2026-09-16T16:38:13.868Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "3 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Shortcut-asset",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Stepper-vertical",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Text-area",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "⛔️ Card_content_shortcut-asset": {
+        "name": "⛔️ Card_content_shortcut-asset",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "71",
+                "to": "31"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Type": {
+        "name": "Type",
+        "isVariant": true,
+        "variants": {
+          "Type=avatar, State=default": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "56",
+                "to": "31"
+              }
+            ]
+          },
+          "Type=avatar, State=focus": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "56",
+                "to": "31"
+              }
+            ]
+          },
+          "Type=avatar, State=hover": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "56",
+                "to": "31"
+              }
+            ]
+          },
+          "Type=avatar, State=pressed": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "56",
+                "to": "31"
+              }
+            ]
+          },
+          "Type=avatar, State=disabled": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "56",
+                "to": "31"
+              }
+            ]
+          },
+          "Type=brand, State=default": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "56",
+                "to": "31"
+              }
+            ]
+          },
+          "Type=icon, State=default": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "56",
+                "to": "31"
+              }
+            ]
+          },
+          "Type=brand, State=focus": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "56",
+                "to": "31"
+              }
+            ]
+          },
+          "Type=icon, State=focus": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "56",
+                "to": "31"
+              }
+            ]
+          },
+          "Type=brand, State=hover": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "56",
+                "to": "31"
+              }
+            ]
+          },
+          "Type=icon, State=hover": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "56",
+                "to": "31"
+              }
+            ]
+          },
+          "Type=brand, State=pressed": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "56",
+                "to": "31"
+              }
+            ]
+          },
+          "Type=icon, State=pressed": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "56",
+                "to": "31"
+              }
+            ]
+          },
+          "Type=brand, State=disabled": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "56",
+                "to": "31"
+              }
+            ]
+          },
+          "Type=icon, State=disabled": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "56",
+                "to": "31"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 15
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 18,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 2,
+      "propsRemoved": 2,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 16
+    }
+  },
+  {
     "id": "mu2wk9hf",
     "timestamp": "2026-09-15T16:45:05.667Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
