@@ -1,5 +1,44 @@
 [
   {
+    "id": "mu5rfpil",
+    "timestamp": "2026-09-17T16:44:53.613Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "2 eliminados",
+    "changes": [
+      {
+        "type": "component_removed",
+        "component": "Card2",
+        "nodeId": "",
+        "details": "Card2"
+      },
+      {
+        "type": "component_removed",
+        "component": "Frame 2",
+        "nodeId": "",
+        "details": "Frame 2"
+      }
+    ],
+    "detailed": {},
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 2,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
     "id": "mu4braek",
     "timestamp": "2026-09-16T16:38:13.868Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
