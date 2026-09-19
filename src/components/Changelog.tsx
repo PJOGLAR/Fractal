@@ -31,6 +31,14 @@ interface DetailedComponent {
   name: string
   isVariant: boolean
   variants: Record<string, DetailedVariant>
+  variantChanges?: {
+    added: string[]
+    removed: string[]
+  }
+  componentProps?: {
+    added: Array<{ name: string; type: string; default?: string }>
+    removed: Array<{ name: string; type: string; default?: string }>
+  }
   summary: {
     tokensChanged: number
     tokensAdded: number
@@ -315,10 +323,56 @@ function IteratedComponent({ name, detail }: { name: string; detail: DetailedCom
     token?: string
   }
 
+  // La tipografía en Fractal es un token compuesto: el mismo cambio dispara 5
+  // sub-tokens (fontFamily, fontSize, fontWeight, lineHeight, letterSpacing) que
+  // se mueven juntos. Los colapsamos en una sola fila `typography` para no repetir
+  // el mismo cambio 5 veces por variante.
+  const TYPO_SUBPROPS = new Set([
+    'fontFamily', 'fontSize', 'fontWeight', 'lineHeight', 'letterSpacing',
+  ])
+  const stripLast = (v?: string) => {
+    if (!v) return ''
+    const i = v.lastIndexOf('/')
+    return i >= 0 ? v.slice(0, i) : v
+  }
+  const collapseTypography = (changed: DetailedChange[]): DetailedChange[] => {
+    // Agrupar sub-tokens tipográficos por capa; si hay ≥2 y todos comparten el
+    // mismo prefijo `from` y `to`, reemplazarlos por una fila `typography`.
+    const byLayer = new Map<string, DetailedChange[]>()
+    const passthrough: DetailedChange[] = []
+    for (const c of changed) {
+      if (c.property && TYPO_SUBPROPS.has(c.property)) {
+        const list = byLayer.get(c.layer || '') || []
+        list.push(c)
+        byLayer.set(c.layer || '', list)
+      } else {
+        passthrough.push(c)
+      }
+    }
+    const out = [...passthrough]
+    for (const [layer, subs] of byLayer) {
+      if (subs.length < 2) { out.push(...subs); continue }
+      const fromRoots = new Set(subs.map(s => stripLast(s.from)))
+      const toRoots = new Set(subs.map(s => stripLast(s.to)))
+      if (fromRoots.size === 1 && toRoots.size === 1) {
+        out.push({
+          property: 'typography',
+          layer,
+          from: [...fromRoots][0],
+          to: [...toRoots][0],
+        })
+      } else {
+        // No comparten prefijo (edge case) — mostrar sin colapsar
+        out.push(...subs)
+      }
+    }
+    return out
+  }
+
   const rows: Row[] = []
   for (const [variantKey, variant] of Object.entries(detail.variants)) {
     const variantLabel = variantKey === '_base' ? '' : variantKey
-    for (const c of variant.tokens.changed) {
+    for (const c of collapseTypography(variant.tokens.changed)) {
       rows.push({
         variant: variantLabel,
         layer: c.layer || '',
@@ -358,7 +412,14 @@ function IteratedComponent({ name, detail }: { name: string; detail: DetailedCom
     }
   }
 
-  if (rows.length === 0) {
+  const variantsAdded = detail.variantChanges?.added ?? []
+  const variantsRemoved = detail.variantChanges?.removed ?? []
+  const propsAdded = detail.componentProps?.added ?? []
+  const propsRemoved = detail.componentProps?.removed ?? []
+  const hasVariantChanges = variantsAdded.length > 0 || variantsRemoved.length > 0
+  const hasPropChanges = propsAdded.length > 0 || propsRemoved.length > 0
+
+  if (rows.length === 0 && !hasVariantChanges && !hasPropChanges) {
     // Componente en `iterados` pero sin filas de detalle: mostrarlo como tag simple
     return (
       <div className="cl-iterated-item">
@@ -371,13 +432,41 @@ function IteratedComponent({ name, detail }: { name: string; detail: DetailedCom
   const MAX_ROWS = 20
   const visibleRows = rows.slice(0, MAX_ROWS)
   const hiddenCount = rows.length - visibleRows.length
+  const totalChanges = rows.length + variantsAdded.length + variantsRemoved.length + propsAdded.length + propsRemoved.length
+
+  const fmtProp = (p: { name: string; type: string; default?: string }) =>
+    `${p.name} (${p.type})${p.default !== undefined ? ` · default: ${p.default}` : ''}`
 
   return (
     <div className="cl-iterated-item">
       <div className="cl-iterated-name">
         {name}
-        <span className="cl-iterated-count">{rows.length} cambio{rows.length > 1 ? 's' : ''}</span>
+        <span className="cl-iterated-count">{totalChanges} cambio{totalChanges > 1 ? 's' : ''}</span>
       </div>
+
+      {hasVariantChanges && (
+        <ul className="cl-variant-changes">
+          {variantsAdded.map(v => (
+            <li key={`+${v}`}><span className="cl-badge cl-badge--added">+</span> Variante nueva: <code>{v}</code></li>
+          ))}
+          {variantsRemoved.map(v => (
+            <li key={`-${v}`}><span className="cl-badge cl-badge--removed">−</span> Variante eliminada: <code>{v}</code></li>
+          ))}
+        </ul>
+      )}
+
+      {hasPropChanges && (
+        <ul className="cl-variant-changes">
+          {propsAdded.map(p => (
+            <li key={`+p${p.name}`}><span className="cl-badge cl-badge--added">+</span> Prop nueva: <code>{fmtProp(p)}</code></li>
+          ))}
+          {propsRemoved.map(p => (
+            <li key={`-p${p.name}`}><span className="cl-badge cl-badge--removed">−</span> Prop eliminada: <code>{fmtProp(p)}</code></li>
+          ))}
+        </ul>
+      )}
+
+      {rows.length > 0 && (
       <table className="cl-table cl-iterated-table">
         <thead>
           <tr>
@@ -398,6 +487,7 @@ function IteratedComponent({ name, detail }: { name: string; detail: DetailedCom
           ))}
         </tbody>
       </table>
+      )}
       {hiddenCount > 0 && (
         <p className="cl-iterated-more">y {hiddenCount} cambio{hiddenCount > 1 ? 's' : ''} más</p>
       )}

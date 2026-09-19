@@ -278,7 +278,9 @@ function extractProperties(node: any): PropertyValue[] {
   }
 
   // Track component properties (for COMPONENT_SET and COMPONENT)
-  // Capture name + type (BOOLEAN, TEXT, INSTANCE_SWAP, VARIANT)
+  // Capture name + type (BOOLEAN, TEXT, INSTANCE_SWAP, VARIANT).
+  // Además, cada default se guarda como una propiedad independiente para que
+  // el diff detecte cambios en el valor por defecto (ej: BOOLEAN true → false).
   if (node.componentPropertyDefinitions) {
     const defs = node.componentPropertyDefinitions
     // Format: "name#id:TYPE" pairs, sorted by name
@@ -287,6 +289,22 @@ function extractProperties(node: any): PropertyValue[] {
       return `${key}:${type}`
     })
     props.push({ layerName: node.name, property: '__componentProps__', value: propEntries.join(',') })
+
+    for (const key of Object.keys(defs).sort()) {
+      const def = defs[key]
+      if (!def) continue
+      const bareName = key.split('#')[0].trim()
+      // VARIANT props no tienen "default value" fijo — cada variante es su propio valor,
+      // así que no las trackeamos acá (se ven en variant_added/variant_removed).
+      if (def.type === 'VARIANT') continue
+      const raw = def.defaultValue
+      const value = raw === undefined || raw === null ? '' : String(raw)
+      props.push({
+        layerName: node.name,
+        property: `__componentPropDefault__${def.type}::${bareName}`,
+        value,
+      })
+    }
   }
 
   // Track layer name itself (for rename detection)
@@ -443,14 +461,42 @@ function computeDiff(before: Snapshot, after: Snapshot, names: Map<string, strin
     }
     const beforeProps = parsePropNames(beforeComp)
     const afterProps = parsePropNames(afterComp)
+
+    // Buscar el default de una prop en el snapshot correspondiente (si está trackeado).
+    const findDefault = (comp: SnapshotComponent, name: string, type: string): string | undefined => {
+      if (!type || type === 'VARIANT') return undefined
+      const marker = `__componentPropDefault__${type}::${name}`
+      const entry = comp.properties.find(p => p.property === marker)
+      return entry ? String(entry.value) : undefined
+    }
+
     for (const [name, type] of afterProps) {
       if (!beforeProps.has(name)) {
-        diffs.push({ type: 'component_prop_added', component: afterComp.name, nodeId: id, details: type ? `${name}|${type}` : name })
+        const def = findDefault(afterComp, name, type)
+        // details: "name|TYPE|default" (default puede quedar vacío)
+        const parts = [name, type, def ?? ''].filter((_, i) => i < 2 || def !== undefined)
+        diffs.push({
+          type: 'component_prop_added',
+          component: afterComp.name,
+          nodeId: id,
+          details: parts.join('|'),
+          property: name,
+          newValue: def,
+        })
       }
     }
     for (const [name, type] of beforeProps) {
       if (!afterProps.has(name)) {
-        diffs.push({ type: 'component_prop_removed', component: afterComp.name, nodeId: id, details: type ? `${name}|${type}` : name })
+        const def = findDefault(beforeComp, name, type)
+        const parts = [name, type, def ?? ''].filter((_, i) => i < 2 || def !== undefined)
+        diffs.push({
+          type: 'component_prop_removed',
+          component: afterComp.name,
+          nodeId: id,
+          details: parts.join('|'),
+          property: name,
+          oldValue: def,
+        })
       }
     }
 
@@ -529,20 +575,40 @@ function computeDiff(before: Snapshot, after: Snapshot, names: Map<string, strin
       // Skip internal tracking markers — they are used for other detections, not property diffs
       if (prop.property === '__componentProps__' || prop.property === '__layerName__') continue
       const prev = beforePropVals.get(key)
-      if (prev && prev.value !== prop.value) {
+      if (!prev || prev.value === prop.value) continue
+
+      // Cambios en el default de una component prop → renombrar la property para que
+      // el UI muestre algo legible en lugar del marcador interno.
+      const defaultMatch = prop.property.match(/^__componentPropDefault__(BOOLEAN|TEXT|INSTANCE_SWAP)::(.+)$/)
+      if (defaultMatch) {
+        const [, propType, propName] = defaultMatch
         diffs.push({
           type: 'property_changed',
           component: afterComp.name,
           nodeId: id,
-          details: `${prop.layerName}.${prop.property}: ${prev.value} → ${prop.value}`,
+          details: `Component prop ${propName} (${propType}) default: ${prev.value} → ${prop.value}`,
           parentName: variantParent,
           variant: afterComp.name.includes('=') ? afterComp.name : undefined,
-          property: prop.property,
-          layerName: prop.layerName,
+          property: `componentProp.${propName} default`,
+          layerName: `Component property (${propType})`,
           oldValue: String(prev.value),
-          newValue: String(prop.value)
+          newValue: String(prop.value),
         })
+        continue
       }
+
+      diffs.push({
+        type: 'property_changed',
+        component: afterComp.name,
+        nodeId: id,
+        details: `${prop.layerName}.${prop.property}: ${prev.value} → ${prop.value}`,
+        parentName: variantParent,
+        variant: afterComp.name.includes('=') ? afterComp.name : undefined,
+        property: prop.property,
+        layerName: prop.layerName,
+        oldValue: String(prev.value),
+        newValue: String(prop.value)
+      })
     }
   }
 
@@ -851,8 +917,14 @@ async function main() {
   const detailedChanges: Record<string, any> = {}
   
   for (const [, comp] of changedComponents) {
-    const compName = comp.name.includes('=') ? comp.name.split('=')[0] : comp.name
-    
+    // Para una variante, el nombre de Figma es "Prop1=Val1, Prop2=Val2" — split('=')[0]
+    // devuelve el nombre de la primera propiedad, no del set. El nombre público del
+    // componente es el del COMPONENT_SET padre.
+    const compName = comp.isVariant && comp.parentName ? comp.parentName : comp.name
+
+    // Descartar cambios en componentes internos/deprecados: no salen en el UI simplificado.
+    if (compName.includes('⛔')) continue
+
     if (!detailedChanges[compName]) {
       detailedChanges[compName] = {
         name: compName,
@@ -902,6 +974,46 @@ async function main() {
     detailedChanges[compName].summary.propertiesChanged += comp.properties.length
   }
 
+  // Enriquecer el detalle con variantes agregadas/eliminadas por set — si un set fue
+  // "iterado" únicamente por agregar/quitar una variante, sin esto no se mostraría el motivo.
+  const ensureDetail = (setName: string) => {
+    if (!detailedChanges[setName]) {
+      detailedChanges[setName] = {
+        name: setName,
+        isVariant: false,
+        variants: {},
+        variantChanges: { added: [], removed: [] },
+        componentProps: { added: [], removed: [] },
+        summary: { tokensChanged: 0, tokensAdded: 0, tokensRemoved: 0, propertiesChanged: 0 },
+      }
+    }
+    detailedChanges[setName].variantChanges ??= { added: [], removed: [] }
+    detailedChanges[setName].componentProps ??= { added: [], removed: [] }
+    return detailedChanges[setName]
+  }
+
+  for (const d of diffs) {
+    if (d.type !== 'variant_added' && d.type !== 'variant_removed') continue
+    const setName = d.parentName
+    if (!setName || setName.includes('⛔')) continue
+    const entry = ensureDetail(setName)
+    if (d.type === 'variant_added') entry.variantChanges.added.push(d.component)
+    else entry.variantChanges.removed.push(d.component)
+  }
+
+  // Component props agregadas/eliminadas → van al componente (SET o COMPONENT suelto).
+  for (const d of diffs) {
+    if (d.type !== 'component_prop_added' && d.type !== 'component_prop_removed') continue
+    const rawName = d.component
+    if (!rawName || rawName.includes('=') || rawName.includes('⛔')) continue
+    // details: "name|TYPE|default?"
+    const [propName, propType, propDefault] = (d.details || '').split('|')
+    const entry = ensureDetail(rawName)
+    const record = { name: propName, type: propType, default: propDefault || undefined }
+    if (d.type === 'component_prop_added') entry.componentProps.added.push(record)
+    else entry.componentProps.removed.push(record)
+  }
+
   const compactChanges: DiffEntry[] = [
     ...[...nuevos].sort().map(n => ({ type: 'component_added' as const, component: n, nodeId: '', details: n })),
     ...[...eliminados].sort().map(n => ({ type: 'component_removed' as const, component: n, nodeId: '', details: n })),
@@ -914,15 +1026,9 @@ async function main() {
   if (iterados.size) compactSummaryParts.push(plural(iterados.size, 'iterado', 'iterados'))
   const compactSummary = compactSummaryParts.join(' · ') || 'Sin cambios de componentes'
 
-  // Solo guardar si hay cambios reales (no solo cambios en propiedades internas)
-  const hasRealChanges = nuevos.size > 0 || 
-                         eliminados.size > 0 || 
-                         iterados.size > 0 ||
-                         stats.variantsAdded > 0 ||
-                         stats.variantsRemoved > 0 ||
-                         stats.bindingsChanged > 0 ||
-                         stats.bindingsAdded > 0 ||
-                         stats.bindingsRemoved > 0
+  // Solo guardar si hay al menos un componente REAL en alguno de los buckets.
+  // Cambios sobre componentes deprecados (⛔) o internos no generan entrada.
+  const hasRealChanges = nuevos.size > 0 || eliminados.size > 0 || iterados.size > 0
 
   if (!hasRealChanges) {
     console.log('')

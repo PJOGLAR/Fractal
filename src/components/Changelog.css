@@ -665,6 +665,26 @@
   margin-top: 0;
 }
 
+.cl-variant-changes {
+  list-style: none;
+  padding: 0;
+  margin: 0.4rem 0 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.cl-variant-changes li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.cl-variant-changes code {
+  font-size: 0.8rem;
+}
+
 .cl-iterated-more {
   font-size: 0.78rem;
   color: var(--color-text-muted);
