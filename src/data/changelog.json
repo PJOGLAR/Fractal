@@ -1,5 +1,291 @@
 [
   {
+    "id": "mu8k6rsz",
+    "timestamp": "2026-09-19T15:45:17.891Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 iterado",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Alert",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Type": {
+        "name": "Type",
+        "isVariant": true,
+        "variants": {
+          "Type=alert": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Action",
+                  "from": "space/2,5x",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Type=success, Hierarchy=medium": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Action",
+                  "from": "space/2,5x",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Type=info, Hierarchy=medium": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Action",
+                  "from": "space/2,5x",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Type=warning, Hierarchy=medium": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Action",
+                  "from": "space/2,5x",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Type=error, Hierarchy=medium": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Action",
+                  "from": "space/2,5x",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Type=success, Hierarchy=low": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Action",
+                  "from": "space/2,5x",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Type=info, Hierarchy=low": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Action",
+                  "from": "space/2,5x",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Type=warning, Hierarchy=low": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Action",
+                  "from": "space/2,5x",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Type=error, Hierarchy=low": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Action",
+                  "from": "space/2,5x",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Type=info, Hierarchy=high": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Action",
+                  "from": "space/2,5x",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Type=warning, Hierarchy=high": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Action",
+                  "from": "space/2,5x",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Type=error, Hierarchy=high": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Action",
+                  "from": "space/2,5x",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Type=success, Hierarchy=high": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Action",
+                  "from": "space/2,5x",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Type=neutral, Hierarchy=high": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Action",
+                  "from": "space/2,5x",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Type=neutral, Hierarchy=medium": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Action",
+                  "from": "space/2,5x",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Type=neutral, Hierarchy=low": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Action",
+                  "from": "space/2,5x",
+                  "to": "gap/gap-0"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 17,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 0
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 17,
+      "propertiesChanged": 0
+    }
+  },
+  {
     "id": "mu75rxjb",
     "timestamp": "2026-09-18T16:14:04.679Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
