@@ -1,5 +1,1151 @@
 [
   {
+    "id": "mubk5qw0",
+    "timestamp": "2026-09-21T18:07:48.576Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "4 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Alert",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Button-card",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Empty-state",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Shortcut-asset",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Button-card": {
+        "name": "Button-card",
+        "isVariant": true,
+        "variants": {
+          "Type=flat, State=default, Alignment=vertical": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/line-height",
+                  "to": "caption/md/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/letter-spacing",
+                  "to": "caption/md/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-weight",
+                  "to": "caption/md/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-family",
+                  "to": "caption/md/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-size",
+                  "to": "caption/md/semibold/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=flat, State=default, Alignment=vertical",
+                "from": "100",
+                "to": "104"
+              },
+              {
+                "property": "size.height",
+                "layer": "Description",
+                "from": "28",
+                "to": "32"
+              }
+            ]
+          },
+          "Type=flat, State=hover, Alignment=vertical": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/line-height",
+                  "to": "caption/md/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/letter-spacing",
+                  "to": "caption/md/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-weight",
+                  "to": "caption/md/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-family",
+                  "to": "caption/md/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-size",
+                  "to": "caption/md/semibold/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=flat, State=hover, Alignment=vertical",
+                "from": "100",
+                "to": "104"
+              },
+              {
+                "property": "size.height",
+                "layer": "Description",
+                "from": "28",
+                "to": "32"
+              }
+            ]
+          },
+          "Type=flat, State=pressed, Alignment=vertical": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/line-height",
+                  "to": "caption/md/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/letter-spacing",
+                  "to": "caption/md/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-weight",
+                  "to": "caption/md/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-family",
+                  "to": "caption/md/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-size",
+                  "to": "caption/md/semibold/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=flat, State=pressed, Alignment=vertical",
+                "from": "100",
+                "to": "104"
+              },
+              {
+                "property": "size.height",
+                "layer": "Description",
+                "from": "28",
+                "to": "32"
+              }
+            ]
+          },
+          "Type=flat, State=focus, Alignment=vertical": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/line-height",
+                  "to": "caption/md/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/letter-spacing",
+                  "to": "caption/md/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-weight",
+                  "to": "caption/md/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-family",
+                  "to": "caption/md/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-size",
+                  "to": "caption/md/semibold/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=flat, State=focus, Alignment=vertical",
+                "from": "100",
+                "to": "104"
+              },
+              {
+                "property": "size.height",
+                "layer": "Description",
+                "from": "28",
+                "to": "32"
+              },
+              {
+                "property": "size.height",
+                "layer": ".⛔️ Focus-ring",
+                "from": "102",
+                "to": "106"
+              }
+            ]
+          },
+          "Type=flat, State=disabled, Alignment=vertical": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/line-height",
+                  "to": "caption/md/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/letter-spacing",
+                  "to": "caption/md/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-weight",
+                  "to": "caption/md/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-family",
+                  "to": "caption/md/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-size",
+                  "to": "caption/md/semibold/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=flat, State=disabled, Alignment=vertical",
+                "from": "100",
+                "to": "104"
+              },
+              {
+                "property": "size.height",
+                "layer": "Description",
+                "from": "28",
+                "to": "32"
+              },
+              {
+                "property": "size.height",
+                "layer": "Layer disabled",
+                "from": "100",
+                "to": "104"
+              }
+            ]
+          },
+          "Type=elevated, State=default, Alignment=vertical": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/line-height",
+                  "to": "caption/md/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/letter-spacing",
+                  "to": "caption/md/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-weight",
+                  "to": "caption/md/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-family",
+                  "to": "caption/md/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-size",
+                  "to": "caption/md/semibold/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=elevated, State=default, Alignment=vertical",
+                "from": "100",
+                "to": "104"
+              },
+              {
+                "property": "size.height",
+                "layer": "Description",
+                "from": "28",
+                "to": "32"
+              }
+            ]
+          },
+          "Type=elevated, State=hover, Alignment=vertical": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/line-height",
+                  "to": "caption/md/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/letter-spacing",
+                  "to": "caption/md/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-weight",
+                  "to": "caption/md/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-family",
+                  "to": "caption/md/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-size",
+                  "to": "caption/md/semibold/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=elevated, State=hover, Alignment=vertical",
+                "from": "100",
+                "to": "104"
+              },
+              {
+                "property": "size.height",
+                "layer": "Description",
+                "from": "28",
+                "to": "32"
+              }
+            ]
+          },
+          "Type=elevated, State=pressed, Alignment=vertical": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/line-height",
+                  "to": "caption/md/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/letter-spacing",
+                  "to": "caption/md/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-weight",
+                  "to": "caption/md/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-family",
+                  "to": "caption/md/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-size",
+                  "to": "caption/md/semibold/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=elevated, State=pressed, Alignment=vertical",
+                "from": "100",
+                "to": "104"
+              },
+              {
+                "property": "size.height",
+                "layer": "Description",
+                "from": "28",
+                "to": "32"
+              }
+            ]
+          },
+          "Type=elevated, State=focus, Alignment=vertical": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/line-height",
+                  "to": "caption/md/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/letter-spacing",
+                  "to": "caption/md/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-weight",
+                  "to": "caption/md/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-family",
+                  "to": "caption/md/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-size",
+                  "to": "caption/md/semibold/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=elevated, State=focus, Alignment=vertical",
+                "from": "100",
+                "to": "104"
+              },
+              {
+                "property": "size.height",
+                "layer": "Description",
+                "from": "28",
+                "to": "32"
+              },
+              {
+                "property": "size.height",
+                "layer": ".⛔️ Focus-ring",
+                "from": "102",
+                "to": "106"
+              }
+            ]
+          },
+          "Type=elevated, State=disabled, Alignment=vertical": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/line-height",
+                  "to": "caption/md/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/letter-spacing",
+                  "to": "caption/md/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-weight",
+                  "to": "caption/md/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-family",
+                  "to": "caption/md/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "from": "caption/sm/semibold/font-size",
+                  "to": "caption/md/semibold/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=elevated, State=disabled, Alignment=vertical",
+                "from": "100",
+                "to": "104"
+              },
+              {
+                "property": "size.height",
+                "layer": "Description",
+                "from": "28",
+                "to": "32"
+              },
+              {
+                "property": "size.height",
+                "layer": "Layer disabled",
+                "from": "100",
+                "to": "104"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 50,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 24
+        }
+      },
+      "Alert": {
+        "name": "Alert",
+        "isVariant": true,
+        "variants": {
+          "Type=info, Hierarchy=high": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Type=info, Hierarchy=high",
+                "from": "112",
+                "to": "113"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Empty-state": {
+        "name": "Empty-state",
+        "isVariant": true,
+        "variants": {
+          "Orientation=horizontal": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "Orientation=horizontal",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Orientation=horizontal",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Orientation=horizontal",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Orientation=horizontal",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Content",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-100"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Content",
+                  "from": "padding/padding-300",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Title",
+                  "from": "body/lg/semibold/line-height",
+                  "to": "body/sm/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Title",
+                  "from": "body/lg/semibold/letter-spacing",
+                  "to": "body/sm/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Title",
+                  "from": "body/lg/semibold/font-weight",
+                  "to": "body/sm/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Title",
+                  "from": "body/lg/semibold/font-family",
+                  "to": "body/sm/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Title",
+                  "from": "body/lg/semibold/font-size",
+                  "to": "body/sm/semibold/font-size"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "from": "body/md/regular/line-height",
+                  "to": "body/sm/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "from": "body/md/regular/letter-spacing",
+                  "to": "body/sm/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "from": "body/md/regular/font-weight",
+                  "to": "body/sm/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "from": "body/md/regular/font-family",
+                  "to": "body/sm/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "from": "body/md/regular/font-size",
+                  "to": "body/sm/regular/font-size"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Button",
+                  "from": "gap/gap-150",
+                  "to": "gap/gap-100"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Button",
+                  "from": "gap/gap-200",
+                  "to": "gap/gap-50"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Button",
+                  "from": "gap/gap-200",
+                  "to": "gap/gap-50"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Label",
+                  "from": "body/md/semibold/line-height",
+                  "to": "body/sm/semibold/line-height"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Label",
+                  "from": "body/md/semibold/font-weight",
+                  "to": "body/sm/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Label",
+                  "from": "body/md/semibold/font-family",
+                  "to": "body/sm/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Label",
+                  "from": "body/md/semibold/font-size",
+                  "to": "body/sm/semibold/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Orientation=horizontal",
+                "from": "140",
+                "to": "124"
+              },
+              {
+                "property": "size.width",
+                "layer": "Vector",
+                "from": "18",
+                "to": "15"
+              },
+              {
+                "property": "size.height",
+                "layer": "Vector",
+                "from": "18",
+                "to": "15"
+              },
+              {
+                "property": "itemSpacing",
+                "layer": "Content",
+                "from": "8",
+                "to": "4"
+              },
+              {
+                "property": "size.width",
+                "layer": "Content",
+                "from": "260",
+                "to": "228"
+              },
+              {
+                "property": "size.height",
+                "layer": "Content",
+                "from": "140",
+                "to": "92"
+              },
+              {
+                "property": "size.width",
+                "layer": "Title",
+                "from": "260",
+                "to": "228"
+              },
+              {
+                "property": "size.height",
+                "layer": "Title",
+                "from": "24",
+                "to": "20"
+              },
+              {
+                "property": "size.width",
+                "layer": "Description",
+                "from": "260",
+                "to": "228"
+              },
+              {
+                "property": "size.height",
+                "layer": "Description",
+                "from": "48",
+                "to": "40"
+              },
+              {
+                "property": "itemSpacing",
+                "layer": "Button",
+                "from": "6",
+                "to": "4"
+              },
+              {
+                "property": "paddingTop",
+                "layer": "Button",
+                "from": "8",
+                "to": "2"
+              },
+              {
+                "property": "paddingBottom",
+                "layer": "Button",
+                "from": "8",
+                "to": "2"
+              },
+              {
+                "property": "size.width",
+                "layer": "Button",
+                "from": "47",
+                "to": "42"
+              },
+              {
+                "property": "size.height",
+                "layer": "Button",
+                "from": "40",
+                "to": "24"
+              },
+              {
+                "property": "size.width",
+                "layer": "⛔ Placeholder-icon_slot",
+                "from": "24",
+                "to": "20"
+              },
+              {
+                "property": "size.height",
+                "layer": "⛔ Placeholder-icon_slot",
+                "from": "24",
+                "to": "20"
+              },
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "43",
+                "to": "38"
+              },
+              {
+                "property": "size.height",
+                "layer": "Label",
+                "from": "24",
+                "to": "20"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 23,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 19
+        }
+      },
+      "Shortcut-asset": {
+        "name": "Shortcut-asset",
+        "isVariant": true,
+        "variants": {
+          "Type=avatar, State=default": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxWidth",
+                "layer": "Label",
+                "from": "64",
+                "to": "80"
+              }
+            ]
+          },
+          "Type=avatar, State=focus": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxWidth",
+                "layer": "Label",
+                "from": "64",
+                "to": "80"
+              }
+            ]
+          },
+          "Type=avatar, State=hover": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxWidth",
+                "layer": "Label",
+                "from": "64",
+                "to": "80"
+              }
+            ]
+          },
+          "Type=avatar, State=pressed": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxWidth",
+                "layer": "Label",
+                "from": "64",
+                "to": "80"
+              }
+            ]
+          },
+          "Type=avatar, State=disabled": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxWidth",
+                "layer": "Label",
+                "from": "64",
+                "to": "80"
+              }
+            ]
+          },
+          "Type=brand, State=default": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxWidth",
+                "layer": "Label",
+                "from": "64",
+                "to": "80"
+              }
+            ]
+          },
+          "Type=icon, State=default": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxWidth",
+                "layer": "Label",
+                "from": "64",
+                "to": "80"
+              }
+            ]
+          },
+          "Type=brand, State=focus": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxWidth",
+                "layer": "Label",
+                "from": "64",
+                "to": "80"
+              }
+            ]
+          },
+          "Type=icon, State=focus": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxWidth",
+                "layer": "Label",
+                "from": "64",
+                "to": "80"
+              }
+            ]
+          },
+          "Type=brand, State=hover": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxWidth",
+                "layer": "Label",
+                "from": "64",
+                "to": "80"
+              }
+            ]
+          },
+          "Type=icon, State=hover": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxWidth",
+                "layer": "Label",
+                "from": "64",
+                "to": "80"
+              }
+            ]
+          },
+          "Type=brand, State=pressed": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxWidth",
+                "layer": "Label",
+                "from": "64",
+                "to": "80"
+              }
+            ]
+          },
+          "Type=icon, State=pressed": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxWidth",
+                "layer": "Label",
+                "from": "64",
+                "to": "80"
+              }
+            ]
+          },
+          "Type=brand, State=disabled": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxWidth",
+                "layer": "Label",
+                "from": "64",
+                "to": "80"
+              }
+            ]
+          },
+          "Type=icon, State=disabled": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "maxWidth",
+                "layer": "Label",
+                "from": "64",
+                "to": "80"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 15
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 73,
+      "propertiesChanged": 60
+    }
+  },
+  {
     "id": "mu8k6rsz",
     "timestamp": "2026-09-19T15:45:17.891Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
