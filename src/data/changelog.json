@@ -1,5 +1,270 @@
 [
   {
+    "id": "mucwlpie",
+    "timestamp": "2026-09-22T16:43:54.854Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 iterado",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Input-amount",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Input-amount": {
+        "name": "Input-amount",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Input-amount",
+                "from": "456",
+                "to": "368"
+              },
+              {
+                "property": "size.height",
+                "layer": "Input-amount",
+                "from": "440",
+                "to": "628"
+              }
+            ]
+          },
+          "State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "State=default",
+                  "from": "gap/gap-300",
+                  "to": "gap/gap-200"
+                },
+                {
+                  "property": "strokeWeight",
+                  "layer": "Supporting line",
+                  "from": "border/width/medium",
+                  "to": "border/width/thin"
+                }
+              ],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Supporting text",
+                  "token": "static/foreground/neutral/medium"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/font-size"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "itemSpacing",
+                "layer": "State=default",
+                "from": "12",
+                "to": "8"
+              },
+              {
+                "property": "size.height",
+                "layer": "State=default",
+                "from": "60",
+                "to": "92"
+              },
+              {
+                "property": "strokeWeight",
+                "layer": "Supporting line",
+                "from": "2",
+                "to": "1"
+              }
+            ]
+          },
+          "State=focus": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "State=focus",
+                  "from": "gap/gap-300",
+                  "to": "gap/gap-200"
+                }
+              ],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Supporting text",
+                  "token": "static/foreground/neutral/medium"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/font-size"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "itemSpacing",
+                "layer": "State=focus",
+                "from": "12",
+                "to": "8"
+              },
+              {
+                "property": "size.height",
+                "layer": "State=focus",
+                "from": "60",
+                "to": "92"
+              }
+            ]
+          },
+          "State=error": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Supporting text",
+                  "token": "static/foreground/neutral/medium"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/font-size"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=error",
+                "from": "84",
+                "to": "116"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 3,
+          "tokensAdded": 18,
+          "tokensRemoved": 0,
+          "propertiesChanged": 8
+        },
+        "variantChanges": {
+          "added": [
+            "State=hover",
+            "State=filled"
+          ],
+          "removed": []
+        },
+        "componentProps": {
+          "added": [
+            {
+              "name": "✏️ Supporting text",
+              "type": "TEXT",
+              "default": "Supporting text"
+            },
+            {
+              "name": "👁️ Has supporting text",
+              "type": "BOOLEAN",
+              "default": "true"
+            }
+          ],
+          "removed": []
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 2,
+      "variantsRemoved": 0,
+      "propsAdded": 2,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 18,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 3,
+      "propertiesChanged": 8
+    }
+  },
+  {
     "id": "mubk5qw0",
     "timestamp": "2026-09-21T18:07:48.576Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
