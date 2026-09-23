@@ -1,5 +1,1588 @@
 [
   {
+    "id": "muebvh1g",
+    "timestamp": "2026-09-23T16:39:10.852Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "4 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Avatar",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Input-amount",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Input-phone",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Shortcut-asset",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Avatar": {
+        "name": "Avatar",
+        "isVariant": true,
+        "variants": {
+          "Type=monogram, State=default, Size=lg": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=default, Size=lg",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=default, Size=lg",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=hover, Size=lg": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=hover, Size=lg",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=hover, Size=lg",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=pressed, Size=lg": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=pressed, Size=lg",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=pressed, Size=lg",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=focus, Size=lg": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=focus, Size=lg",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=focus, Size=lg",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=disabled, Size=lg": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=disabled, Size=lg",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=disabled, Size=lg",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=default, Size=md": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=default, Size=md",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=default, Size=md",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=hover, Size=md": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=hover, Size=md",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=hover, Size=md",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=pressed, Size=md": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=pressed, Size=md",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=pressed, Size=md",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=focus, Size=md": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=focus, Size=md",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=focus, Size=md",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=disabled, Size=md": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=disabled, Size=md",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=disabled, Size=md",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=default, Size=sm": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=default, Size=sm",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=default, Size=sm",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=hover, Size=sm": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=hover, Size=sm",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=hover, Size=sm",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=pressed, Size=sm": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=pressed, Size=sm",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=pressed, Size=sm",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=focus, Size=sm": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=focus, Size=sm",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=focus, Size=sm",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=disabled, Size=sm": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=disabled, Size=sm",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=disabled, Size=sm",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=default, Size=xs": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=default, Size=xs",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=default, Size=xs",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=hover, Size=xs": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=hover, Size=xs",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=hover, Size=xs",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=pressed, Size=xs": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=pressed, Size=xs",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=pressed, Size=xs",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=focus, Size=xs": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=focus, Size=xs",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=focus, Size=xs",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=monogram, State=disabled, Size=xs": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=monogram, State=disabled, Size=xs",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=monogram, State=disabled, Size=xs",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=default, Size=lg": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=default, Size=lg",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=default, Size=lg",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=hover, Size=lg": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=hover, Size=lg",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=hover, Size=lg",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=pressed, Size=lg": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=pressed, Size=lg",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=pressed, Size=lg",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=focus, Size=lg": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=focus, Size=lg",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=focus, Size=lg",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=disabled, Size=lg": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=disabled, Size=lg",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=disabled, Size=lg",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=default, Size=md": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=default, Size=md",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=default, Size=md",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=hover, Size=md": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=hover, Size=md",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=hover, Size=md",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=pressed, Size=md": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=pressed, Size=md",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=pressed, Size=md",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=focus, Size=md": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=focus, Size=md",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=focus, Size=md",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=disabled, Size=md": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=disabled, Size=md",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=disabled, Size=md",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=default, Size=sm": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=default, Size=sm",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=default, Size=sm",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=hover, Size=sm": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=hover, Size=sm",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=hover, Size=sm",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=pressed, Size=sm": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=pressed, Size=sm",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=pressed, Size=sm",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=focus, Size=sm": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=focus, Size=sm",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=focus, Size=sm",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=disabled, Size=sm": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=disabled, Size=sm",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=disabled, Size=sm",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=default, Size=xs": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=default, Size=xs",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=default, Size=xs",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=hover, Size=xs": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=hover, Size=xs",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=hover, Size=xs",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=pressed, Size=xs": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=pressed, Size=xs",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=pressed, Size=xs",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=focus, Size=xs": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=focus, Size=xs",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=focus, Size=xs",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=image, State=disabled, Size=xs": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Type=image, State=disabled, Size=xs",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Type=image, State=disabled, Size=xs",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 40,
+          "tokensRemoved": 0,
+          "propertiesChanged": 40
+        }
+      },
+      "Input-amount": {
+        "name": "Input-amount",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Input-amount",
+                "from": "628",
+                "to": "596"
+              }
+            ]
+          },
+          "State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/line-height",
+                  "to": "caption/md/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/letter-spacing",
+                  "to": "caption/md/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-weight",
+                  "to": "body/md/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-family",
+                  "to": "caption/md/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-size",
+                  "to": "caption/md/regular/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=default",
+                "from": "92",
+                "to": "84"
+              },
+              {
+                "property": "size.height",
+                "layer": "Supporting text",
+                "from": "24",
+                "to": "16"
+              }
+            ]
+          },
+          "State=hover": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/line-height",
+                  "to": "caption/md/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/letter-spacing",
+                  "to": "caption/md/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-weight",
+                  "to": "body/md/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-family",
+                  "to": "caption/md/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-size",
+                  "to": "caption/md/regular/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=hover",
+                "from": "92",
+                "to": "84"
+              },
+              {
+                "property": "size.height",
+                "layer": "Supporting text",
+                "from": "24",
+                "to": "16"
+              }
+            ]
+          },
+          "State=filled": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/line-height",
+                  "to": "caption/md/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/letter-spacing",
+                  "to": "caption/md/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-weight",
+                  "to": "body/md/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-family",
+                  "to": "caption/md/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-size",
+                  "to": "caption/md/regular/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=filled",
+                "from": "92",
+                "to": "84"
+              },
+              {
+                "property": "size.height",
+                "layer": "Supporting text",
+                "from": "24",
+                "to": "16"
+              }
+            ]
+          },
+          "State=focus": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/line-height",
+                  "to": "caption/md/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/letter-spacing",
+                  "to": "caption/md/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-weight",
+                  "to": "body/md/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-family",
+                  "to": "caption/md/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-size",
+                  "to": "caption/md/regular/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=focus",
+                "from": "92",
+                "to": "84"
+              },
+              {
+                "property": "size.height",
+                "layer": "Supporting text",
+                "from": "24",
+                "to": "16"
+              }
+            ]
+          },
+          "State=error": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Supporting text",
+                  "token": "static/foreground/neutral/medium"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/font-size"
+                }
+              ]
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=error",
+                "from": "116",
+                "to": "84"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 20,
+          "tokensAdded": 0,
+          "tokensRemoved": 6,
+          "propertiesChanged": 10
+        }
+      },
+      "Input-phone": {
+        "name": "Input-phone",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Input-phone",
+                "from": "724",
+                "to": "660"
+              }
+            ]
+          },
+          "State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/line-height",
+                  "to": "caption/md/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/letter-spacing",
+                  "to": "caption/md/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-weight",
+                  "to": "body/md/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-family",
+                  "to": "caption/md/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-size",
+                  "to": "caption/md/regular/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=default",
+                "from": "84",
+                "to": "76"
+              },
+              {
+                "property": "size.height",
+                "layer": "Supporting text",
+                "from": "24",
+                "to": "16"
+              }
+            ]
+          },
+          "State=hover": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/line-height",
+                  "to": "caption/md/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/letter-spacing",
+                  "to": "caption/md/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-weight",
+                  "to": "body/md/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-family",
+                  "to": "caption/md/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-size",
+                  "to": "caption/md/regular/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=hover",
+                "from": "84",
+                "to": "76"
+              },
+              {
+                "property": "size.height",
+                "layer": "Supporting text",
+                "from": "24",
+                "to": "16"
+              }
+            ]
+          },
+          "State=focus": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/line-height",
+                  "to": "caption/md/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/letter-spacing",
+                  "to": "caption/md/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-weight",
+                  "to": "body/md/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-family",
+                  "to": "caption/md/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-size",
+                  "to": "caption/md/regular/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=focus",
+                "from": "84",
+                "to": "76"
+              },
+              {
+                "property": "size.height",
+                "layer": "Supporting text",
+                "from": "24",
+                "to": "16"
+              }
+            ]
+          },
+          "State=filled": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "lineHeight",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/line-height",
+                  "to": "caption/md/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/letter-spacing",
+                  "to": "caption/md/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-weight",
+                  "to": "body/md/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-family",
+                  "to": "caption/md/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Supporting text",
+                  "from": "body/md/medium/font-size",
+                  "to": "caption/md/regular/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=filled",
+                "from": "84",
+                "to": "76"
+              },
+              {
+                "property": "size.height",
+                "layer": "Supporting text",
+                "from": "24",
+                "to": "16"
+              }
+            ]
+          },
+          "State=error": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Supporting text",
+                  "token": "static/foreground/neutral/medium"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Supporting text",
+                  "token": "body/md/medium/font-size"
+                }
+              ]
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=error",
+                "from": "108",
+                "to": "76"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 20,
+          "tokensAdded": 0,
+          "tokensRemoved": 6,
+          "propertiesChanged": 10
+        }
+      },
+      "Shortcut-asset": {
+        "name": "Shortcut-asset",
+        "isVariant": true,
+        "variants": {
+          "Type=avatar, State=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Avatar",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Avatar",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=avatar, State=focus": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Avatar",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Avatar",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=avatar, State=hover": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Avatar",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Avatar",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=avatar, State=pressed": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Avatar",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Avatar",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          },
+          "Type=avatar, State=disabled": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Avatar",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "primaryAxisAlignItems",
+                "layer": "Avatar",
+                "from": "SPACE_BETWEEN",
+                "to": "CENTER"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 5,
+          "tokensRemoved": 0,
+          "propertiesChanged": 5
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 46,
+      "bindingsRemoved": 12,
+      "bindingsChanged": 40,
+      "propertiesChanged": 66
+    }
+  },
+  {
     "id": "mucwlpie",
     "timestamp": "2026-09-22T16:43:54.854Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
