@@ -1,5 +1,3643 @@
 [
   {
+    "id": "muh7hz0r",
+    "timestamp": "2026-09-25T17:00:01.035Z",
+    "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
+    "fileName": "Custom components",
+    "fileLabel": "custom",
+    "summary": "1 nuevo · 4 iterados",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Calendar",
+        "nodeId": "",
+        "details": "Calendar"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card-Personal-Pay",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Nav-bar",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Payment-card",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Toggle-number",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Nav-bar": {
+        "name": "Nav-bar",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Stroke",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Stroke",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 1,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Payment-card": {
+        "name": "Payment-card",
+        "isVariant": true,
+        "variants": {
+          "Type=payment, State=default": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Personal-Pay-Iso",
+                "from": "20",
+                "to": "24"
+              },
+              {
+                "property": "strokeWeight",
+                "layer": "Logo",
+                "from": "25.070350646972656",
+                "to": "21.488872528076172"
+              },
+              {
+                "property": "size.width",
+                "layer": "Logo",
+                "from": "16",
+                "to": "15"
+              },
+              {
+                "property": "size.height",
+                "layer": "Logo",
+                "from": "16",
+                "to": "15"
+              }
+            ]
+          },
+          "Type=payment, State=disabled": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Personal-Pay-Iso",
+                "from": "20",
+                "to": "24"
+              },
+              {
+                "property": "strokeWeight",
+                "layer": "Logo",
+                "from": "25.070350646972656",
+                "to": "21.488872528076172"
+              },
+              {
+                "property": "size.width",
+                "layer": "Logo",
+                "from": "16",
+                "to": "15"
+              },
+              {
+                "property": "size.height",
+                "layer": "Logo",
+                "from": "16",
+                "to": "15"
+              }
+            ]
+          },
+          "Type=new, State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Type=new, State=default",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Type=new, State=default",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              },
+              {
+                "property": "size.width",
+                "layer": "Asset-container",
+                "from": "36",
+                "to": "32"
+              },
+              {
+                "property": "size.height",
+                "layer": "Asset-container",
+                "from": "36",
+                "to": "32"
+              },
+              {
+                "property": "size.width",
+                "layer": "Text content",
+                "from": "198",
+                "to": "202"
+              },
+              {
+                "property": "size.width",
+                "layer": "Description",
+                "from": "198",
+                "to": "202"
+              },
+              {
+                "property": "size.width",
+                "layer": "Pagar con otra cuenta bacaria o digital",
+                "from": "198",
+                "to": "202"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 1,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 14
+        }
+      },
+      "Card-Personal-Pay": {
+        "name": "Card-Personal-Pay",
+        "isVariant": true,
+        "variants": {
+          "State=active, Orientation=horizontal": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "strokeWeight",
+                "layer": "Logo",
+                "from": "25.070350646972656",
+                "to": "21.488872528076172"
+              },
+              {
+                "property": "size.width",
+                "layer": "Logo",
+                "from": "232",
+                "to": "214"
+              },
+              {
+                "property": "size.height",
+                "layer": "Logo",
+                "from": "232",
+                "to": "214"
+              }
+            ]
+          },
+          "State=in progress, Orientation=horizontal": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "strokeWeight",
+                "layer": "Logo",
+                "from": "25.070350646972656",
+                "to": "21.488872528076172"
+              },
+              {
+                "property": "size.width",
+                "layer": "Logo",
+                "from": "232",
+                "to": "214"
+              },
+              {
+                "property": "size.height",
+                "layer": "Logo",
+                "from": "232",
+                "to": "214"
+              }
+            ]
+          },
+          "State=paused, Orientation=horizontal": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "strokeWeight",
+                "layer": "Logo",
+                "from": "25.070350646972656",
+                "to": "21.488872528076172"
+              },
+              {
+                "property": "size.width",
+                "layer": "Logo",
+                "from": "232",
+                "to": "214"
+              },
+              {
+                "property": "size.height",
+                "layer": "Logo",
+                "from": "232",
+                "to": "214"
+              }
+            ]
+          },
+          "State=active, Orientation=vertical": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "strokeWeight",
+                "layer": "Logo",
+                "from": "25.070350646972656",
+                "to": "21.488872528076172"
+              },
+              {
+                "property": "size.width",
+                "layer": "Logo",
+                "from": "232",
+                "to": "214"
+              },
+              {
+                "property": "size.height",
+                "layer": "Logo",
+                "from": "232",
+                "to": "214"
+              }
+            ]
+          },
+          "State=in progress, Orientation=vertical": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "strokeWeight",
+                "layer": "Logo",
+                "from": "25.070350646972656",
+                "to": "21.488872528076172"
+              },
+              {
+                "property": "size.width",
+                "layer": "Logo",
+                "from": "232",
+                "to": "214"
+              },
+              {
+                "property": "size.height",
+                "layer": "Logo",
+                "from": "232",
+                "to": "214"
+              }
+            ]
+          },
+          "State=paused, Orientation=vertical": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "strokeWeight",
+                "layer": "Logo",
+                "from": "25.070350646972656",
+                "to": "21.488872528076172"
+              },
+              {
+                "property": "size.width",
+                "layer": "Logo",
+                "from": "232",
+                "to": "214"
+              },
+              {
+                "property": "size.height",
+                "layer": "Logo",
+                "from": "232",
+                "to": "214"
+              }
+            ]
+          },
+          "State=empty, Orientation=vertical": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Miscelanea",
+                  "from": "442c/3563:67",
+                  "to": "expressive/illustration/violet/quiet"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Card",
+                  "from": "d521/3563:62",
+                  "to": "d521/4240:12"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Exclude",
+                  "from": "afd/3319:340",
+                  "to": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Chip ",
+                  "from": "afd/3319:340",
+                  "to": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Brand",
+                  "from": "afd/3319:340",
+                  "to": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Circle",
+                  "from": "d521/3563:62",
+                  "to": "d521/4240:12"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "d521/3563:62",
+                  "to": "d521/4240:12"
+                }
+              ],
+              "added": [],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Miscelanea-sparkles (Stroke)",
+                  "token": "d521/3563:62"
+                }
+              ]
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Miscelanea",
+                "from": "93",
+                "to": "96"
+              },
+              {
+                "property": "size.height",
+                "layer": "Miscelanea",
+                "from": "94",
+                "to": "95"
+              },
+              {
+                "property": "size.width",
+                "layer": "Card",
+                "from": "64",
+                "to": "75"
+              },
+              {
+                "property": "size.height",
+                "layer": "Card",
+                "from": "79",
+                "to": "93"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Card",
+                "from": "#052C50",
+                "to": "#082749"
+              },
+              {
+                "property": "size.width",
+                "layer": "Exclude",
+                "from": "15",
+                "to": "18"
+              },
+              {
+                "property": "size.height",
+                "layer": "Exclude",
+                "from": "8",
+                "to": "9"
+              },
+              {
+                "property": "size.width",
+                "layer": "Chip ",
+                "from": "8",
+                "to": "10"
+              },
+              {
+                "property": "size.height",
+                "layer": "Chip ",
+                "from": "10",
+                "to": "12"
+              },
+              {
+                "property": "size.width",
+                "layer": "Brand",
+                "from": "32",
+                "to": "37"
+              },
+              {
+                "property": "size.height",
+                "layer": "Brand",
+                "from": "19",
+                "to": "22"
+              },
+              {
+                "property": "size.width",
+                "layer": "Circle",
+                "from": "23",
+                "to": "27"
+              },
+              {
+                "property": "size.height",
+                "layer": "Circle",
+                "from": "23",
+                "to": "27"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Circle",
+                "from": "#052C50",
+                "to": "#082749"
+              },
+              {
+                "property": "size.width",
+                "layer": "Vector",
+                "from": "12",
+                "to": "14"
+              },
+              {
+                "property": "size.height",
+                "layer": "Vector",
+                "from": "12",
+                "to": "14"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#052C50",
+                "to": "#082749"
+              }
+            ]
+          },
+          "State=empty, Orientation=horizontal": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Miscelanea",
+                  "from": "442c/3563:67",
+                  "to": "expressive/illustration/violet/quiet"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Card",
+                  "from": "d521/3563:62",
+                  "to": "d521/4240:12"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Exclude",
+                  "from": "afd/3319:340",
+                  "to": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Chip ",
+                  "from": "afd/3319:340",
+                  "to": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Brand",
+                  "from": "afd/3319:340",
+                  "to": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Circle",
+                  "from": "d521/3563:62",
+                  "to": "d521/4240:12"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "d521/3563:62",
+                  "to": "d521/4240:12"
+                }
+              ],
+              "added": [],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Miscelanea-sparkles (Stroke)",
+                  "token": "d521/3563:62"
+                }
+              ]
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Miscelanea",
+                "from": "77",
+                "to": "80"
+              },
+              {
+                "property": "size.width",
+                "layer": "Card",
+                "from": "53",
+                "to": "62"
+              },
+              {
+                "property": "size.height",
+                "layer": "Card",
+                "from": "66",
+                "to": "78"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Card",
+                "from": "#052C50",
+                "to": "#082749"
+              },
+              {
+                "property": "size.width",
+                "layer": "Exclude",
+                "from": "13",
+                "to": "15"
+              },
+              {
+                "property": "size.height",
+                "layer": "Exclude",
+                "from": "6",
+                "to": "8"
+              },
+              {
+                "property": "size.width",
+                "layer": "Chip ",
+                "from": "7",
+                "to": "8"
+              },
+              {
+                "property": "size.height",
+                "layer": "Chip ",
+                "from": "8",
+                "to": "10"
+              },
+              {
+                "property": "size.width",
+                "layer": "Brand",
+                "from": "27",
+                "to": "31"
+              },
+              {
+                "property": "size.height",
+                "layer": "Brand",
+                "from": "16",
+                "to": "19"
+              },
+              {
+                "property": "size.width",
+                "layer": "Circle",
+                "from": "19",
+                "to": "22"
+              },
+              {
+                "property": "size.height",
+                "layer": "Circle",
+                "from": "19",
+                "to": "22"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Circle",
+                "from": "#052C50",
+                "to": "#082749"
+              },
+              {
+                "property": "size.width",
+                "layer": "Vector",
+                "from": "10",
+                "to": "11"
+              },
+              {
+                "property": "size.height",
+                "layer": "Vector",
+                "from": "10",
+                "to": "12"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#052C50",
+                "to": "#082749"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 14,
+          "tokensAdded": 0,
+          "tokensRemoved": 2,
+          "propertiesChanged": 51
+        }
+      },
+      "Toggle-number": {
+        "name": "Toggle-number",
+        "isVariant": true,
+        "variants": {
+          "State=default, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": "State=default, Selected=false",
+                  "from": "interactive/border/brand/main/focus/medium",
+                  "to": "interactive/border/brand/primary/focus/medium"
+                },
+                {
+                  "property": "fills",
+                  "layer": "1",
+                  "from": "4778/3054:10",
+                  "to": "interactive/foreground/neutral/default/strong"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=default, Selected=true": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "State=default, Selected=true",
+                  "from": "7439/3054:16",
+                  "to": "interactive/background/brand/default/medium"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "State=default, Selected=true",
+                  "from": "interactive/border/brand/main/focus/medium",
+                  "to": "interactive/border/brand/primary/focus/medium"
+                },
+                {
+                  "property": "fills",
+                  "layer": "1",
+                  "from": "7c41/3054:11",
+                  "to": "interactive/foreground/neutral/default/quiet"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=hover, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "State=hover, Selected=false",
+                  "from": "25b4/3054:20",
+                  "to": "interactive/background/brand/hover/quiet"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "State=hover, Selected=false",
+                  "from": "32ac/3054:39",
+                  "to": "interactive/border/brand/primary/hover/subtle"
+                },
+                {
+                  "property": "fills",
+                  "layer": "1",
+                  "from": "4778/3054:10",
+                  "to": "interactive/foreground/neutral/default/strong"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=pressed, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": "State=pressed, Selected=false",
+                  "from": "372b/3054:42",
+                  "to": "interactive/border/brand/primary/pressed/bold"
+                },
+                {
+                  "property": "fills",
+                  "layer": "1",
+                  "from": "4778/3054:10",
+                  "to": "interactive/foreground/neutral/default/strong"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=focus, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "State=focus, Selected=false",
+                  "from": "1ad0/3054:18",
+                  "to": "interactive/background/brand/default/quiet"
+                },
+                {
+                  "property": "fills",
+                  "layer": "1",
+                  "from": "4778/3054:10",
+                  "to": "interactive/foreground/neutral/default/strong"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=disabled, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": "State=disabled, Selected=false",
+                  "from": "6e57/3054:48",
+                  "to": "interactive/border/neutral/disabled/subtle"
+                },
+                {
+                  "property": "fills",
+                  "layer": "1",
+                  "from": "c2e1/3054:14",
+                  "to": "interactive/foreground/neutral/disabled/bold"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "1",
+                "from": "#858585",
+                "to": "#404040"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 14,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 11,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 2,
+      "bindingsChanged": 33,
+      "propertiesChanged": 70
+    }
+  },
+  {
+    "id": "muh7hwr1",
+    "timestamp": "2026-09-25T16:59:58.093Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "2 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Account-not-found",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Star-person",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Account-not-found": {
+        "name": "Account-not-found",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Miscellaneous",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Miscellaneous",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 1,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Star-person": {
+        "name": "Star-person",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Face",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Face",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 1,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 2,
+      "propertiesChanged": 2
+    }
+  },
+  {
+    "id": "muh7htnk",
+    "timestamp": "2026-09-25T16:59:54.080Z",
+    "fileKey": "htvGLaEUzJTF7QPd4LkGy0",
+    "fileName": "Templates",
+    "fileLabel": "templates",
+    "summary": "4 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Feedback-screen",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Onboarding-screen",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Stories",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Summary-screen",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Stories": {
+        "name": "Stories",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 1,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Onboarding-screen": {
+        "name": "Onboarding-screen",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 1,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Feedback-screen": {
+        "name": "Feedback-screen",
+        "isVariant": true,
+        "variants": {
+          "Type=success": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=error": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=warning": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=pending": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=other": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "static/foreground/neutral/strong",
+                  "to": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#FFFFFF",
+                "to": "#FCFCFC"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 6,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 6
+        }
+      },
+      "Summary-screen": {
+        "name": "Summary-screen",
+        "isVariant": true,
+        "variants": {
+          "Type=detail": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=receipt": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Swap-content",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 2,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 2
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 10,
+      "propertiesChanged": 10
+    }
+  },
+  {
+    "id": "muh7hqm1",
+    "timestamp": "2026-09-25T16:59:50.137Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "12 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Avatar",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Button",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Button-icon",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Button-toggle",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Input-OTP",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Input-PIN",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Row-item",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Segmented-control",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Shortcut-asset",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Tabs",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Video-card",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Avatar": {
+        "name": "Avatar",
+        "isVariant": true,
+        "variants": {
+          "Type=monogram, State=default, Size=lg": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Type=monogram, State=default, Size=lg",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Type=monogram, State=default, Size=lg",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=monogram, State=focus, Size=lg": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Type=monogram, State=focus, Size=lg",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Type=monogram, State=focus, Size=lg",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=monogram, State=default, Size=md": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Type=monogram, State=default, Size=md",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Type=monogram, State=default, Size=md",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=monogram, State=focus, Size=md": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Type=monogram, State=focus, Size=md",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Type=monogram, State=focus, Size=md",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=monogram, State=default, Size=sm": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Type=monogram, State=default, Size=sm",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Type=monogram, State=default, Size=sm",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=monogram, State=focus, Size=sm": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Type=monogram, State=focus, Size=sm",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Type=monogram, State=focus, Size=sm",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=monogram, State=default, Size=xs": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Type=monogram, State=default, Size=xs",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Type=monogram, State=default, Size=xs",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=monogram, State=focus, Size=xs": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Type=monogram, State=focus, Size=xs",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Type=monogram, State=focus, Size=xs",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 8,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 8
+        }
+      },
+      "Row-item": {
+        "name": "Row-item",
+        "isVariant": true,
+        "variants": {
+          "State=default, Horizontal padding=lg, Selected=true": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "interactive/foreground/neutral/default/strong",
+                  "to": "static/foreground/neutral/strong"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=default, Horizontal padding=md, Selected=true": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "interactive/foreground/neutral/default/strong",
+                  "to": "static/foreground/neutral/strong"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=default, Horizontal padding=sm, Selected=true": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "interactive/foreground/neutral/default/strong",
+                  "to": "static/foreground/neutral/strong"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=default, Horizontal padding=none, Selected=true": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "interactive/foreground/neutral/default/strong",
+                  "to": "static/foreground/neutral/strong"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=focus, Horizontal padding=lg, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "interactive/foreground/neutral/default/strong",
+                  "to": "static/foreground/neutral/strong"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=focus, Horizontal padding=md, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "interactive/foreground/neutral/default/strong",
+                  "to": "static/foreground/neutral/strong"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=focus, Horizontal padding=sm, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "interactive/foreground/neutral/default/strong",
+                  "to": "static/foreground/neutral/strong"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=focus, Horizontal padding=none, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "interactive/foreground/neutral/default/strong",
+                  "to": "static/foreground/neutral/strong"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 8,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 0
+        }
+      },
+      "Video-card": {
+        "name": "Video-card",
+        "isVariant": true,
+        "variants": {
+          "State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Stroke",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Stroke",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=hover": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Stroke",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Stroke",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=pressed": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Stroke",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Stroke",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=focus": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Stroke",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Stroke",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 4,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 4
+        }
+      },
+      "Button": {
+        "name": "Button",
+        "isVariant": true,
+        "variants": {
+          "Size=lg, State=focus, Style=solid, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=md, State=focus, Style=solid, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=sm, State=focus, Style=solid, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=xs, State=focus, Style=solid, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=lg, State=focus, Style=outline, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=md, State=focus, Style=outline, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=sm, State=focus, Style=outline, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=xs, State=focus, Style=outline, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=lg, State=focus, Style=ghost, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=lg, State=focus, Style=neutral, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=lg, State=focus, Style=link, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=md, State=focus, Style=ghost, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=md, State=focus, Style=neutral, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=md, State=focus, Style=link, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=sm, State=focus, Style=ghost, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=sm, State=focus, Style=neutral, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=sm, State=focus, Style=link, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=xs, State=focus, Style=ghost, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=xs, State=focus, Style=neutral, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=xs, State=focus, Style=link, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=lg, State=focus, Style=tonal, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=md, State=focus, Style=tonal, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=sm, State=focus, Style=tonal, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=xs, State=focus, Style=tonal, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 24,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 24
+        }
+      },
+      "Button-icon": {
+        "name": "Button-icon",
+        "isVariant": true,
+        "variants": {
+          "Size=lg, State=focus, Style=solid, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=md, State=focus, Style=solid, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=sm, State=focus, Style=solid, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=xs, State=focus, Style=solid, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=lg, State=focus, Style=outline, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=md, State=focus, Style=outline, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=sm, State=focus, Style=outline, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=xs, State=focus, Style=outline, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=lg, State=focus, Style=ghost, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=lg, State=focus, Style=neutral, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=md, State=focus, Style=ghost, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=md, State=focus, Style=neutral, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=sm, State=focus, Style=ghost, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=sm, State=focus, Style=neutral, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=xs, State=focus, Style=ghost, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=xs, State=focus, Style=neutral, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=lg, State=focus, Style=tonal, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=md, State=focus, Style=tonal, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=sm, State=focus, Style=tonal, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=xs, State=focus, Style=tonal, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 20,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 20
+        }
+      },
+      "Button-toggle": {
+        "name": "Button-toggle",
+        "isVariant": true,
+        "variants": {
+          "Size=sm, State=focus, Style=ghost, Appearance=inverse, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=md, State=focus, Style=ghost, Appearance=inverse, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=lg, State=focus, Style=ghost, Appearance=inverse, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=sm, State=focus, Style=solid, Appearance=inverse, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=md, State=focus, Style=solid, Appearance=inverse, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=lg, State=focus, Style=solid, Appearance=inverse, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=sm, State=focus, Style=neutral, Appearance=inverse, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=md, State=focus, Style=neutral, Appearance=inverse, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=lg, State=focus, Style=neutral, Appearance=inverse, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=xs, State=focus, Style=ghost, Appearance=inverse, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=xs, State=focus, Style=solid, Appearance=inverse, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Size=xs, State=focus, Style=neutral, Appearance=inverse, Selected=false": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": ".⛔️ Focus-ring",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": ".⛔️ Focus-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 12,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 12
+        }
+      },
+      "Input-OTP": {
+        "name": "Input-OTP",
+        "isVariant": true,
+        "variants": {
+          "State=validation": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "---> Slot 1",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                },
+                {
+                  "property": "fills",
+                  "layer": "---> Slot 2",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                },
+                {
+                  "property": "fills",
+                  "layer": "---> Slot 3",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                },
+                {
+                  "property": "fills",
+                  "layer": "---> Slot 4",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                },
+                {
+                  "property": "fills",
+                  "layer": "---> Slot 5",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                },
+                {
+                  "property": "fills",
+                  "layer": "---> Slot 6",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "---> Slot 1",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "---> Slot 2",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "---> Slot 3",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "---> Slot 4",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "---> Slot 5",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "---> Slot 6",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 6,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 6
+        }
+      },
+      "Input-PIN": {
+        "name": "Input-PIN",
+        "isVariant": true,
+        "variants": {
+          "State=default, Quantity=4": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Indicator",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=hover, Quantity=4": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Indicator",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=focus, Quantity=4": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Indicator",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=default, Quantity=6": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Indicator",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=hover, Quantity=6": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Indicator",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "State=focus, Quantity=6": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Indicator",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 6,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 6
+        }
+      },
+      "Segmented-control": {
+        "name": "Segmented-control",
+        "isVariant": true,
+        "variants": {
+          "Style=filled, Quantity=2": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=filled, Quantity=2",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Style=filled, Quantity=2",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Style=outline, Quantity=2": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=outline, Quantity=2",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Style=outline, Quantity=2",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Style=filled, Quantity=3": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=filled, Quantity=3",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Style=filled, Quantity=3",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Style=outline, Quantity=3": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=outline, Quantity=3",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Style=outline, Quantity=3",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Style=filled, Quantity=4": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=filled, Quantity=4",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Style=filled, Quantity=4",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Style=outline, Quantity=4": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Style=outline, Quantity=4",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Style=outline, Quantity=4",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 6,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 6
+        }
+      },
+      "Shortcut-asset": {
+        "name": "Shortcut-asset",
+        "isVariant": true,
+        "variants": {
+          "Type=avatar, State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Avatar",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Avatar",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Type=avatar, State=focus": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Avatar",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Avatar",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 2,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 2
+        }
+      },
+      "Tabs": {
+        "name": "Tabs",
+        "isVariant": true,
+        "variants": {
+          "Style=rounded, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": "Tab 2",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Tab 3",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Tab 4",
+                  "from": "interactive/border/brand/primary/focus/subtle",
+                  "to": "ab01d/6170:4"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "stroke[0].color",
+                "layer": "Tab 2",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              },
+              {
+                "property": "stroke[0].color",
+                "layer": "Tab 3",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              },
+              {
+                "property": "stroke[0].color",
+                "layer": "Tab 4",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Style=underline, Appearance=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Underline",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Underline",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Style=underline, Appearance=inverse": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Indicator",
+                  "from": "interactive/background/brand/default/subtle",
+                  "to": "40e2a/6170:3"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 5,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 5
+        }
+      },
+      "Card": {
+        "name": "Card",
+        "isVariant": false,
+        "variants": {},
+        "variantChanges": {
+          "added": [],
+          "removed": []
+        },
+        "componentProps": {
+          "added": [],
+          "removed": [
+            {
+              "name": "👁️ Has banner",
+              "type": "BOOLEAN",
+              "default": "true"
+            }
+          ]
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 0
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 1,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 8,
+      "bindingsRemoved": 8,
+      "bindingsChanged": 114,
+      "propertiesChanged": 103
+    }
+  },
+  {
     "id": "muebvh1g",
     "timestamp": "2026-09-23T16:39:10.852Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",

@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-09T16:24:51.918Z",
+  "takenAt": "2026-09-25T16:59:58.053Z",
   "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
   "fileName": "Assets",
   "components": [
@@ -98377,7 +98377,7 @@
       "bindings": [
         {
           "property": "fills",
-          "variableId": "VariableID:a236e8522c978a29a12fd17fa25dca1d0af40e2a/3391:184",
+          "variableId": "VariableID:a236e8522c978a29a12fd17fa25dca1d0af40e2a/6170:3",
           "layerName": "Miscellaneous"
         },
         {
@@ -98590,7 +98590,7 @@
         {
           "layerName": "Miscellaneous",
           "property": "fill[0].color",
-          "value": "#E0E4F5"
+          "value": "#E0E7FF"
         },
         {
           "layerName": "Miscellaneous",
@@ -116242,7 +116242,7 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:a236e8522c978a29a12fd17fa25dca1d0af40e2a/3391:184",
+          "variableId": "VariableID:a236e8522c978a29a12fd17fa25dca1d0af40e2a/6170:3",
           "layerName": "Face"
         },
         {
@@ -116520,7 +116520,7 @@
         {
           "layerName": "Face",
           "property": "fill[0].color",
-          "value": "#E0E4F5"
+          "value": "#E0E7FF"
         },
         {
           "layerName": "Face",
