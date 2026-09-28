@@ -1,5 +1,724 @@
 [
   {
+    "id": "muln9kka",
+    "timestamp": "2026-09-28T19:32:27.610Z",
+    "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
+    "fileName": "Custom components",
+    "fileLabel": "custom",
+    "summary": "2 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Calendar",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Nav-bar",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Nav-bar": {
+        "name": "Nav-bar",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Nav-bar",
+                "from": "80",
+                "to": "68"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Calendar": {
+        "name": "Calendar",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingTop",
+                  "layer": "Calendar",
+                  "from": "gap/gap-300",
+                  "to": "gap/gap-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Calendar",
+                  "from": "gap/gap-300",
+                  "to": "gap/gap-0"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "c34/4033:515",
+                  "to": "static/foreground/brand/primary/medium"
+                },
+                {
+                  "property": "fills",
+                  "layer": "L",
+                  "from": "interactive/foreground/neutral/disabled/subtle",
+                  "to": "static/foreground/neutral/medium"
+                },
+                {
+                  "property": "fills",
+                  "layer": "M",
+                  "from": "interactive/foreground/neutral/disabled/subtle",
+                  "to": "static/foreground/neutral/medium"
+                },
+                {
+                  "property": "fills",
+                  "layer": "J",
+                  "from": "interactive/foreground/neutral/disabled/subtle",
+                  "to": "static/foreground/neutral/medium"
+                },
+                {
+                  "property": "fills",
+                  "layer": "V",
+                  "from": "interactive/foreground/neutral/disabled/subtle",
+                  "to": "static/foreground/neutral/medium"
+                },
+                {
+                  "property": "fills",
+                  "layer": "S",
+                  "from": "interactive/foreground/neutral/disabled/subtle",
+                  "to": "static/foreground/neutral/medium"
+                },
+                {
+                  "property": "fills",
+                  "layer": "D",
+                  "from": "interactive/foreground/neutral/disabled/subtle",
+                  "to": "static/foreground/neutral/medium"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Day",
+                  "from": "interactive/foreground/neutral/default/medium",
+                  "to": "static/foreground/neutral/strong"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Day",
+                  "from": "caption/md/regular/line-height",
+                  "to": "body/md/medium/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Day",
+                  "from": "caption/md/regular/letter-spacing",
+                  "to": "body/md/medium/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Day",
+                  "from": "body/md/regular/font-weight",
+                  "to": "body/md/medium/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Day",
+                  "from": "caption/md/regular/font-family",
+                  "to": "body/md/medium/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Day",
+                  "from": "caption/md/regular/font-size",
+                  "to": "body/md/medium/font-size"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Event",
+                  "from": "interactive/foreground/neutral/disabled/subtle",
+                  "to": "static/foreground/neutral/medium"
+                }
+              ],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Button-icon",
+                  "token": "gap/gap-100"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Button-icon",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Button-icon",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Button-icon",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Button-icon",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Badge",
+                  "token": "static/background/feedback/error/bold"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Badge",
+                  "token": "static/border/neutral/quiet"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Title",
+                  "token": "gap/gap-100"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Marzo",
+                  "token": "static/foreground/neutral/strong"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Marzo",
+                  "token": "body/md/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Marzo",
+                  "token": "body/md/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Marzo",
+                  "token": "body/md/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Marzo",
+                  "token": "body/md/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Marzo",
+                  "token": "body/md/semibold/font-size"
+                },
+                {
+                  "property": "fills",
+                  "layer": "2026",
+                  "token": "static/foreground/neutral/medium"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "2026",
+                  "token": "body/md/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "2026",
+                  "token": "body/md/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "2026",
+                  "token": "body/md/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "2026",
+                  "token": "body/md/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "2026",
+                  "token": "body/md/regular/font-size"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Swap-content",
+                  "token": "padding/padding-600"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Swap-content",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Swap-content",
+                  "token": "padding/padding-600"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Swap-content",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Swap-content",
+                  "token": "fdb38/6170:2"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Swap-content",
+                  "token": "static/border/brand/primary"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Swap content",
+                  "token": "static/foreground/brand/primary/medium"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Swap content",
+                  "token": "body/md/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Swap content",
+                  "token": "body/md/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Swap content",
+                  "token": "body/md/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Swap content",
+                  "token": "body/md/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Swap content",
+                  "token": "body/md/semibold/font-size"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Month preview",
+                  "token": "gap/gap-150"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Day label",
+                  "token": "gap/gap-150"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Week 1",
+                  "token": "gap/gap-150"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": ".⛔️ Calendar_day",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": ".⛔️ Calendar_day",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": ".⛔️ Calendar_day",
+                  "token": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": ".⛔️ Calendar_day",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": ".⛔️ Calendar_day",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Event 1",
+                  "token": "521/4033:420"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Event 2",
+                  "token": "2d7/4033:509"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Event 3",
+                  "token": "964/4033:425"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Event 4",
+                  "token": "c34/4033:515"
+                },
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Calendar_day",
+                  "token": "interactive/background/brand/default/quiet"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Week 2",
+                  "token": "gap/gap-150"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Week 3",
+                  "token": "gap/gap-150"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Week 4",
+                  "token": "gap/gap-150"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Week 5",
+                  "token": "gap/gap-150"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Week 6",
+                  "token": "gap/gap-150"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Footer",
+                  "token": "gap/gap-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Footer",
+                  "token": "gap/gap-150"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Footer",
+                  "token": "gap/gap-300"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Footer",
+                  "token": "static/border/brand/secondary"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": ".⛔️ Calendar_content-event",
+                  "token": "gap/gap-100"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Dot",
+                  "token": "c34/4033:515"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Event",
+                  "token": "caption/md/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Event",
+                  "token": "caption/md/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Event",
+                  "token": "body/md/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Event",
+                  "token": "caption/md/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Event",
+                  "token": "caption/md/regular/font-size"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Calendar",
+                  "token": "static/background/neutral/quiet"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Weakly",
+                  "token": "gap/gap-150"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Days-wreapper",
+                  "token": "gap/gap-150"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Calendar-colunm",
+                  "token": "gap/gap-150"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": ".⛔️Calendar_day-number",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": ".⛔️Calendar_day-number",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": ".⛔️Calendar_day-number",
+                  "token": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": ".⛔️Calendar_day-number",
+                  "token": "padding/padding-150"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": ".⛔️Calendar_day-number",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "fills",
+                  "layer": ".⛔️Calendar_day-number",
+                  "token": "interactive/background/brand/default/quiet"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Buttom",
+                  "token": "gap/gap-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Buttom",
+                  "token": "gap/gap-150"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Buttom",
+                  "token": "gap/gap-300"
+                },
+                {
+                  "property": "strokes",
+                  "layer": "Buttom",
+                  "token": "static/border/brand/secondary"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": ".⛔️Calendar_content-events",
+                  "token": "gap/gap-100"
+                }
+              ]
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Calendar",
+                "from": "277",
+                "to": "363"
+              },
+              {
+                "property": "strokeWeight",
+                "layer": "Vector",
+                "from": "1",
+                "to": "0.02500000037252903"
+              },
+              {
+                "property": "size.width",
+                "layer": "Vector",
+                "from": "8",
+                "to": "24"
+              },
+              {
+                "property": "size.height",
+                "layer": "Vector",
+                "from": "8",
+                "to": "24"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#1EB2F5",
+                "to": "#5A50F9"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "L",
+                "from": "#A9A9A9",
+                "to": "#676767"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "M",
+                "from": "#A9A9A9",
+                "to": "#676767"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "J",
+                "from": "#A9A9A9",
+                "to": "#676767"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "V",
+                "from": "#A9A9A9",
+                "to": "#676767"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "S",
+                "from": "#A9A9A9",
+                "to": "#676767"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "D",
+                "from": "#A9A9A9",
+                "to": "#676767"
+              },
+              {
+                "property": "characters",
+                "layer": "Day",
+                "from": "Pago serv.",
+                "to": "7"
+              },
+              {
+                "property": "size.width",
+                "layer": "Day",
+                "from": "56",
+                "to": "10"
+              },
+              {
+                "property": "size.height",
+                "layer": "Day",
+                "from": "16",
+                "to": "24"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Day",
+                "from": "#676767",
+                "to": "#171717"
+              },
+              {
+                "property": "size.width",
+                "layer": "Event",
+                "from": "32",
+                "to": "56"
+              },
+              {
+                "property": "size.height",
+                "layer": "Event",
+                "from": "2",
+                "to": "16"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Event",
+                "from": "#A9A9A9",
+                "to": "#676767"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 16,
+          "tokensAdded": 61,
+          "tokensRemoved": 15,
+          "propertiesChanged": 18
+        },
+        "variantChanges": {
+          "added": [],
+          "removed": []
+        },
+        "componentProps": {
+          "added": [
+            {
+              "name": "✏️ Month",
+              "type": "TEXT",
+              "default": "Marzo"
+            },
+            {
+              "name": "✏️ Year",
+              "type": "TEXT",
+              "default": "2026"
+            },
+            {
+              "name": "👁️ Has next month",
+              "type": "BOOLEAN",
+              "default": "true"
+            },
+            {
+              "name": "👁️ Has previous month",
+              "type": "BOOLEAN",
+              "default": "true"
+            },
+            {
+              "name": "👁️ Has swap content",
+              "type": "BOOLEAN",
+              "default": "true"
+            },
+            {
+              "name": "👁️ Has week 5",
+              "type": "BOOLEAN",
+              "default": "false"
+            },
+            {
+              "name": "👁️ Has week 6",
+              "type": "BOOLEAN",
+              "default": "false"
+            }
+          ],
+          "removed": []
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 10,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 13,
+      "propsRemoved": 5,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 97,
+      "bindingsRemoved": 28,
+      "bindingsChanged": 24,
+      "propertiesChanged": 23
+    }
+  },
+  {
     "id": "muh7hz0r",
     "timestamp": "2026-09-25T17:00:01.035Z",
     "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
