@@ -1,5 +1,504 @@
 [
   {
+    "id": "mumzdbmz",
+    "timestamp": "2026-09-29T17:59:04.235Z",
+    "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
+    "fileName": "Custom components",
+    "fileLabel": "custom",
+    "summary": "1 iterado",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Calendar",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Calendar": {
+        "name": "Calendar",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "strokes",
+                  "layer": "Tentative",
+                  "from": "c34/4033:515",
+                  "to": "ae7/4033:516"
+                }
+              ],
+              "added": [],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Calendar",
+                  "token": "gap/gap-100"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Calendar",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Calendar",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Calendar",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Calendar",
+                  "token": "gap/gap-0"
+                }
+              ]
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Calendar",
+                "from": "363",
+                "to": "447"
+              },
+              {
+                "property": "componentProp.👁️ Has week 5 default",
+                "layer": "Component property (BOOLEAN)",
+                "from": "false",
+                "to": "true"
+              },
+              {
+                "property": "size.height",
+                "layer": "Month preview",
+                "from": "244",
+                "to": "328"
+              },
+              {
+                "property": "size.height",
+                "layer": "Day label",
+                "from": "44",
+                "to": "28"
+              },
+              {
+                "property": "stroke[0].color",
+                "layer": "Tentative",
+                "from": "#1EB2F5",
+                "to": "#199AE0"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 1,
+          "tokensAdded": 0,
+          "tokensRemoved": 5,
+          "propertiesChanged": 5
+        },
+        "variantChanges": {
+          "added": [],
+          "removed": []
+        },
+        "componentProps": {
+          "added": [
+            {
+              "name": "👁️ Has week 1",
+              "type": "BOOLEAN",
+              "default": "true"
+            },
+            {
+              "name": "🔄 Swap instance",
+              "type": "INSTANCE_SWAP",
+              "default": "335:5537"
+            }
+          ],
+          "removed": [
+            {
+              "name": "👁️ Has week 6",
+              "type": "BOOLEAN",
+              "default": "false"
+            }
+          ]
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 2,
+      "propsRemoved": 1,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 5,
+      "bindingsChanged": 2,
+      "propertiesChanged": 6
+    }
+  },
+  {
+    "id": "mumzd4aj",
+    "timestamp": "2026-09-29T17:58:54.715Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "2 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Card-amount",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Empty-state",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Card-amount": {
+        "name": "Card-amount",
+        "isVariant": true,
+        "variants": {
+          "State=empty": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "---> Empty state",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "---> Empty state",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "---> Empty state",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "---> Empty state",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Content",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-100"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Title",
+                  "from": "body/lg/semibold/line-height",
+                  "to": "body/sm/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Title",
+                  "from": "body/lg/semibold/letter-spacing",
+                  "to": "body/sm/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Title",
+                  "from": "body/lg/semibold/font-weight",
+                  "to": "body/sm/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Title",
+                  "from": "body/lg/semibold/font-family",
+                  "to": "body/sm/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Title",
+                  "from": "body/lg/semibold/font-size",
+                  "to": "body/sm/semibold/font-size"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "from": "body/md/regular/line-height",
+                  "to": "body/sm/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "from": "body/md/regular/letter-spacing",
+                  "to": "body/sm/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "from": "body/md/regular/font-weight",
+                  "to": "body/sm/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "from": "body/md/regular/font-family",
+                  "to": "body/sm/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "from": "body/md/regular/font-size",
+                  "to": "body/sm/regular/font-size"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Button",
+                  "from": "gap/gap-150",
+                  "to": "gap/gap-100"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Button",
+                  "from": "gap/gap-200",
+                  "to": "gap/gap-50"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Button",
+                  "from": "gap/gap-200",
+                  "to": "gap/gap-50"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Label",
+                  "from": "body/md/semibold/line-height",
+                  "to": "body/sm/semibold/line-height"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Label",
+                  "from": "body/md/semibold/font-weight",
+                  "to": "body/sm/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Label",
+                  "from": "body/md/semibold/font-family",
+                  "to": "body/sm/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Label",
+                  "from": "body/md/semibold/font-size",
+                  "to": "body/sm/semibold/font-size"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=empty",
+                "from": "252",
+                "to": "156"
+              },
+              {
+                "property": "layoutMode",
+                "layer": "---> Empty state",
+                "from": "VERTICAL",
+                "to": "HORIZONTAL"
+              },
+              {
+                "property": "size.height",
+                "layer": "---> Empty state",
+                "from": "220",
+                "to": "124"
+              },
+              {
+                "property": "itemSpacing",
+                "layer": "Content",
+                "from": "8",
+                "to": "4"
+              },
+              {
+                "property": "size.width",
+                "layer": "Content",
+                "from": "296",
+                "to": "172"
+              },
+              {
+                "property": "size.height",
+                "layer": "Content",
+                "from": "128",
+                "to": "92"
+              },
+              {
+                "property": "size.width",
+                "layer": "Title",
+                "from": "328",
+                "to": "172"
+              },
+              {
+                "property": "size.height",
+                "layer": "Title",
+                "from": "24",
+                "to": "20"
+              },
+              {
+                "property": "size.width",
+                "layer": "Description",
+                "from": "296",
+                "to": "172"
+              },
+              {
+                "property": "size.height",
+                "layer": "Description",
+                "from": "48",
+                "to": "40"
+              },
+              {
+                "property": "itemSpacing",
+                "layer": "Button",
+                "from": "6",
+                "to": "4"
+              },
+              {
+                "property": "paddingTop",
+                "layer": "Button",
+                "from": "8",
+                "to": "2"
+              },
+              {
+                "property": "paddingBottom",
+                "layer": "Button",
+                "from": "8",
+                "to": "2"
+              },
+              {
+                "property": "size.width",
+                "layer": "Button",
+                "from": "47",
+                "to": "42"
+              },
+              {
+                "property": "size.height",
+                "layer": "Button",
+                "from": "40",
+                "to": "24"
+              },
+              {
+                "property": "size.width",
+                "layer": "⛔ Placeholder-icon_slot",
+                "from": "24",
+                "to": "20"
+              },
+              {
+                "property": "size.height",
+                "layer": "⛔ Placeholder-icon_slot",
+                "from": "24",
+                "to": "20"
+              },
+              {
+                "property": "size.width",
+                "layer": "Label",
+                "from": "43",
+                "to": "38"
+              },
+              {
+                "property": "size.height",
+                "layer": "Label",
+                "from": "24",
+                "to": "20"
+              }
+            ]
+          },
+          "State=loading": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=loading",
+                "from": "180",
+                "to": "156"
+              },
+              {
+                "property": "size.height",
+                "layer": "Skeleton-component",
+                "from": "180",
+                "to": "156"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 22,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 21
+        }
+      },
+      "Empty-state": {
+        "name": "Empty-state",
+        "isVariant": true,
+        "variants": {
+          "Orientation=vertical": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Title",
+                "from": "328",
+                "to": "352"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 22,
+      "propertiesChanged": 22
+    }
+  },
+  {
     "id": "muln9kka",
     "timestamp": "2026-09-28T19:32:27.610Z",
     "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
