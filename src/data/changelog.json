@@ -1,5 +1,85 @@
 [
   {
+    "id": "musl1qcx",
+    "timestamp": "2026-10-03T16:04:45.873Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "2 nuevos · 1 iterado",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Face-id",
+        "nodeId": "",
+        "details": "Face-id"
+      },
+      {
+        "type": "component_added",
+        "component": "Nfc-pending",
+        "nodeId": "",
+        "details": "Nfc-pending"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Calendar-time",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Calendar-time": {
+        "name": "Calendar-time",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector12",
+                  "from": "d521/4240:12",
+                  "to": "c74/4033:507"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Vector12",
+                "from": "#082749",
+                "to": "#404040"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 1,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 2,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 1,
+      "propertiesChanged": 1
+    }
+  },
+  {
     "id": "mumzdbmz",
     "timestamp": "2026-09-29T17:59:04.235Z",
     "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
