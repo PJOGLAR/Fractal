@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-29T17:59:04.219Z",
+  "takenAt": "2026-10-06T18:13:41.317Z",
   "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
   "fileName": "Custom components",
   "components": [
@@ -20,7 +20,7 @@
         },
         {
           "property": "paddingTop",
-          "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
           "layerName": "Nav-bar"
         },
         {
@@ -30,7 +30,7 @@
         },
         {
           "property": "paddingBottom",
-          "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
           "layerName": "Nav-bar"
         },
         {
@@ -72,6 +72,31 @@
           "property": "effects",
           "variableId": "VariableID:3639b6ebb01a11451c54e339fdf48e889d9e34a9/4036:529",
           "layerName": "Main content"
+        },
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "layerName": "---> Tab 1"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "---> Tab 1"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "---> Tab 1"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "---> Tab 1"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "---> Tab 1"
         },
         {
           "property": "fills",
@@ -122,6 +147,31 @@
           "property": "strokes",
           "variableId": "VariableID:9f48eb3bfb8183eb5c159eeecd52f4c8ba6841b4/3958:136",
           "layerName": "Badge"
+        },
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "layerName": "---> Tab 2"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "---> Tab 2"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:04a49764717dff6b097a3ab521bbaf68781c10d4/1227:3",
+          "layerName": "---> Tab 2"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "---> Tab 2"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:04a49764717dff6b097a3ab521bbaf68781c10d4/1227:3",
+          "layerName": "---> Tab 2"
         },
         {
           "property": "fills",
@@ -194,6 +244,31 @@
           "layerName": "Vector"
         },
         {
+          "property": "itemSpacing",
+          "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "layerName": "---> Tab 3"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "---> Tab 3"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:04a49764717dff6b097a3ab521bbaf68781c10d4/1227:3",
+          "layerName": "---> Tab 3"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "---> Tab 3"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:04a49764717dff6b097a3ab521bbaf68781c10d4/1227:3",
+          "layerName": "---> Tab 3"
+        },
+        {
           "property": "fills",
           "variableId": "VariableID:923a375bff09331a69f308a1d4c07b36a8d9284b/3927:54",
           "layerName": "Vector"
@@ -237,6 +312,31 @@
           "property": "strokes",
           "variableId": "VariableID:9f48eb3bfb8183eb5c159eeecd52f4c8ba6841b4/3958:136",
           "layerName": "Badge"
+        },
+        {
+          "property": "itemSpacing",
+          "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "layerName": "---> Tab 4"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "---> Tab 4"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:04a49764717dff6b097a3ab521bbaf68781c10d4/1227:3",
+          "layerName": "---> Tab 4"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "---> Tab 4"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:04a49764717dff6b097a3ab521bbaf68781c10d4/1227:3",
+          "layerName": "---> Tab 4"
         },
         {
           "property": "fills",
@@ -458,12 +558,12 @@
         {
           "layerName": "---> Tab 1",
           "property": "paddingLeft",
-          "value": 14
+          "value": 12
         },
         {
           "layerName": "---> Tab 1",
           "property": "paddingRight",
-          "value": 14
+          "value": 12
         },
         {
           "layerName": "---> Tab 1",
@@ -848,12 +948,12 @@
         {
           "layerName": "---> Tab 2",
           "property": "paddingLeft",
-          "value": 14
+          "value": 12
         },
         {
           "layerName": "---> Tab 2",
           "property": "paddingRight",
-          "value": 14
+          "value": 12
         },
         {
           "layerName": "---> Tab 2",
@@ -1373,12 +1473,12 @@
         {
           "layerName": "---> Tab 3",
           "property": "paddingLeft",
-          "value": 14
+          "value": 12
         },
         {
           "layerName": "---> Tab 3",
           "property": "paddingRight",
-          "value": 14
+          "value": 12
         },
         {
           "layerName": "---> Tab 3",
@@ -1743,12 +1843,12 @@
         {
           "layerName": "---> Tab 4",
           "property": "paddingLeft",
-          "value": 14
+          "value": 12
         },
         {
           "layerName": "---> Tab 4",
           "property": "paddingRight",
-          "value": 14
+          "value": 12
         },
         {
           "layerName": "---> Tab 4",
@@ -2326,6 +2426,31 @@
       "parentId": "111:238",
       "bindings": [
         {
+          "property": "itemSpacing",
+          "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "layerName": "State=default"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "State=default"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:04a49764717dff6b097a3ab521bbaf68781c10d4/1227:3",
+          "layerName": "State=default"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "State=default"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:04a49764717dff6b097a3ab521bbaf68781c10d4/1227:3",
+          "layerName": "State=default"
+        },
+        {
           "property": "fills",
           "variableId": "VariableID:923a375bff09331a69f308a1d4c07b36a8d9284b/3927:54",
           "layerName": "Vector"
@@ -2375,12 +2500,12 @@
         {
           "layerName": "State=default",
           "property": "paddingLeft",
-          "value": 14
+          "value": 12
         },
         {
           "layerName": "State=default",
           "property": "paddingRight",
-          "value": 14
+          "value": 12
         },
         {
           "layerName": "State=default",
@@ -2765,6 +2890,31 @@
       "parentId": "111:238",
       "bindings": [
         {
+          "property": "itemSpacing",
+          "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "layerName": "State=active"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "State=active"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "State=active"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "State=active"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "State=active"
+        },
+        {
           "property": "fills",
           "variableId": "VariableID:aeac0764f3f9cfc6f77a2fa557d9c5ba4575a9f9/3958:108",
           "layerName": "Vector"
@@ -2819,12 +2969,12 @@
         {
           "layerName": "State=active",
           "property": "paddingLeft",
-          "value": 14
+          "value": 12
         },
         {
           "layerName": "State=active",
           "property": "paddingRight",
-          "value": 14
+          "value": 12
         },
         {
           "layerName": "State=active",
@@ -3229,6 +3379,31 @@
       "parentId": "111:238",
       "bindings": [
         {
+          "property": "itemSpacing",
+          "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "layerName": "State=pressed"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "State=pressed"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "State=pressed"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "State=pressed"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "State=pressed"
+        },
+        {
           "property": "fills",
           "variableId": "VariableID:0a3f790084b83f43e9172a820b45147bd5a5450a/3958:109",
           "layerName": "Vector"
@@ -3283,12 +3458,12 @@
         {
           "layerName": "State=pressed",
           "property": "paddingLeft",
-          "value": 14
+          "value": 12
         },
         {
           "layerName": "State=pressed",
           "property": "paddingRight",
-          "value": 14
+          "value": 12
         },
         {
           "layerName": "State=pressed",
@@ -3693,6 +3868,31 @@
       "parentId": "111:238",
       "bindings": [
         {
+          "property": "itemSpacing",
+          "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
+          "layerName": "State=focus"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "State=focus"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "State=focus"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
+          "layerName": "State=focus"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "State=focus"
+        },
+        {
           "property": "fills",
           "variableId": "VariableID:923a375bff09331a69f308a1d4c07b36a8d9284b/3927:54",
           "layerName": "Vector"
@@ -3747,12 +3947,12 @@
         {
           "layerName": "State=focus",
           "property": "paddingLeft",
-          "value": 14
+          "value": 12
         },
         {
           "layerName": "State=focus",
           "property": "paddingRight",
-          "value": 14
+          "value": 12
         },
         {
           "layerName": "State=focus",
@@ -13134,7 +13334,7 @@
         },
         {
           "name": "Button-icon",
-          "componentId": "306:850"
+          "componentId": "338:349"
         },
         {
           "name": "Visibility-on",
@@ -13158,7 +13358,7 @@
         },
         {
           "name": "Button-icon",
-          "componentId": "306:912"
+          "componentId": "338:551"
         },
         {
           "name": "Visibility-on",
@@ -13295,6 +13495,26 @@
         {
           "property": "itemSpacing",
           "variableId": "VariableID:872042f4da504a275fe2a3b8a3126424998aadc3/1227:11",
+          "layerName": "Content"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "Content"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "Content"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "Content"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
           "layerName": "Content"
         },
         {
@@ -13747,7 +13967,7 @@
         {
           "layerName": "Personal-Pay-Iso",
           "property": "size.width",
-          "value": 24
+          "value": 20
         },
         {
           "layerName": "Personal-Pay-Iso",
@@ -14455,7 +14675,7 @@
         },
         {
           "name": "Button-icon",
-          "componentId": "306:850"
+          "componentId": "338:349"
         },
         {
           "name": "Visibility-on",
@@ -14555,6 +14775,26 @@
         {
           "property": "itemSpacing",
           "variableId": "VariableID:872042f4da504a275fe2a3b8a3126424998aadc3/1227:11",
+          "layerName": "Content"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "Content"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "Content"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "Content"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
           "layerName": "Content"
         },
         {
@@ -14987,7 +15227,7 @@
         {
           "layerName": "Personal-Pay-Iso",
           "property": "size.width",
-          "value": 24
+          "value": 20
         },
         {
           "layerName": "Personal-Pay-Iso",
@@ -15691,7 +15931,7 @@
         },
         {
           "name": "Button-icon",
-          "componentId": "306:912"
+          "componentId": "338:551"
         },
         {
           "name": "Visibility-on",
@@ -15725,7 +15965,7 @@
         },
         {
           "property": "paddingTop",
-          "variableId": "VariableID:78aacbfdb4e852bbf26a6faaae84c49868b1b8dd/2561:4",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
           "layerName": "Type=new, State=default"
         },
         {
@@ -15735,7 +15975,7 @@
         },
         {
           "property": "paddingBottom",
-          "variableId": "VariableID:78aacbfdb4e852bbf26a6faaae84c49868b1b8dd/2561:4",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
           "layerName": "Type=new, State=default"
         },
         {
@@ -15797,6 +16037,26 @@
           "property": "fills",
           "variableId": "VariableID:8b7018025d511464f7f79e7eee16ba2c211b878a/3958:128",
           "layerName": "Vector"
+        },
+        {
+          "property": "paddingLeft",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "Text content"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "Text content"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "Text content"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "Text content"
         },
         {
           "property": "fills",
@@ -15873,16 +16133,6 @@
         {
           "layerName": "Type=new, State=default",
           "property": "paddingRight",
-          "value": 12
-        },
-        {
-          "layerName": "Type=new, State=default",
-          "property": "paddingTop",
-          "value": 12
-        },
-        {
-          "layerName": "Type=new, State=default",
-          "property": "paddingBottom",
           "value": 12
         },
         {
@@ -35315,17 +35565,17 @@
         },
         {
           "property": "paddingLeft",
-          "variableId": "VariableID:78aacbfdb4e852bbf26a6faaae84c49868b1b8dd/2561:4",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
           "layerName": "Footer"
         },
         {
           "property": "paddingTop",
-          "variableId": "VariableID:0acafbe854d5400d7fa97fdf10a4ca6ce7f22f18/1557:34",
+          "variableId": "VariableID:04a49764717dff6b097a3ab521bbaf68781c10d4/1227:3",
           "layerName": "Footer"
         },
         {
           "property": "paddingRight",
-          "variableId": "VariableID:78aacbfdb4e852bbf26a6faaae84c49868b1b8dd/2561:4",
+          "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
           "layerName": "Footer"
         },
         {
@@ -54486,7 +54736,7 @@
   ],
   "stats": {
     "totalComponents": 71,
-    "totalBindings": 2335,
-    "totalProperties": 8116
+    "totalBindings": 2387,
+    "totalProperties": 8114
   }
 }

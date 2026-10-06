@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-09-25T16:59:54.057Z",
+  "takenAt": "2026-10-06T18:13:33.500Z",
   "fileKey": "htvGLaEUzJTF7QPd4LkGy0",
   "fileName": "Templates",
   "components": [
@@ -32106,7 +32106,7 @@
         },
         {
           "name": "Asset-container",
-          "componentId": "3199:3192"
+          "componentId": "3254:3490"
         },
         {
           "name": "⛔ Placeholder-brand_slot",
@@ -32738,7 +32738,7 @@
       "instances": [
         {
           "name": "Asset-container",
-          "componentId": "3199:3192"
+          "componentId": "3254:3490"
         },
         {
           "name": "⛔ Placeholder-brand_slot",
@@ -36816,7 +36816,7 @@
         },
         {
           "name": "Button",
-          "componentId": "3201:1496"
+          "componentId": "3254:2354"
         },
         {
           "name": "⛔ Placeholder-icon_slot",
@@ -36828,7 +36828,7 @@
         },
         {
           "name": "Button",
-          "componentId": "3201:1547"
+          "componentId": "3254:2405"
         },
         {
           "name": "⛔ Placeholder-icon_slot",
@@ -38733,6 +38733,11 @@
           "property": "fills",
           "variableId": "VariableID:0c851364ff25cc7232582c9b2019159908d3dd88/3958:122",
           "layerName": "Splash"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:3d161e56000c4ff4a884deaf3addcc2683378322/3958:132",
+          "layerName": "Vector"
         }
       ],
       "properties": [
@@ -38824,7 +38829,7 @@
         {
           "layerName": "Vector",
           "property": "fill[0].color",
-          "value": "#FFFFFF"
+          "value": "#FCFCFC"
         },
         {
           "layerName": "Vector",
@@ -38941,22 +38946,22 @@
         },
         {
           "property": "paddingLeft",
-          "variableId": "VariableID:03953486e5268275c40e51f83bff69b21830c6b5/1227:14",
+          "variableId": "VariableID:79e38a7be126d7917540e20db1001da48cd84757/1227:7",
           "layerName": "Button wrapper"
         },
         {
           "property": "paddingTop",
-          "variableId": "VariableID:be46345ce533567571354f332e3aacb128992758/1227:12",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
           "layerName": "Button wrapper"
         },
         {
           "property": "paddingRight",
-          "variableId": "VariableID:03953486e5268275c40e51f83bff69b21830c6b5/1227:14",
+          "variableId": "VariableID:79e38a7be126d7917540e20db1001da48cd84757/1227:7",
           "layerName": "Button wrapper"
         },
         {
           "property": "paddingBottom",
-          "variableId": "VariableID:be46345ce533567571354f332e3aacb128992758/1227:12",
+          "variableId": "VariableID:07013d9cce629a4ae1cb699bfb82a7fe6659556c/1227:2",
           "layerName": "Button wrapper"
         },
         {
@@ -43836,7 +43841,7 @@
         },
         {
           "name": "Pending",
-          "componentId": "3199:2578"
+          "componentId": "3254:690"
         },
         {
           "name": "---> Code",
@@ -57404,7 +57409,7 @@
         },
         {
           "name": "Pending",
-          "componentId": "3199:2578"
+          "componentId": "3254:690"
         },
         {
           "name": "---> Code",
@@ -61466,7 +61471,7 @@
         },
         {
           "name": "Button",
-          "componentId": "3201:1711"
+          "componentId": "3254:2569"
         },
         {
           "name": "Swap-content",
@@ -61578,7 +61583,7 @@
         },
         {
           "name": "Button",
-          "componentId": "3201:1711"
+          "componentId": "3254:2569"
         },
         {
           "name": "⛔ Placeholder-icon_slot",
@@ -65352,7 +65357,7 @@
         },
         {
           "name": "Button",
-          "componentId": "3201:1711"
+          "componentId": "3254:2569"
         },
         {
           "name": "Swap-content",
@@ -65851,22 +65856,22 @@
         },
         {
           "property": "paddingLeft",
-          "variableId": "VariableID:03953486e5268275c40e51f83bff69b21830c6b5/1227:14",
+          "variableId": "VariableID:79e38a7be126d7917540e20db1001da48cd84757/1227:7",
           "layerName": "Footer"
         },
         {
           "property": "paddingTop",
-          "variableId": "VariableID:03953486e5268275c40e51f83bff69b21830c6b5/1227:14",
+          "variableId": "VariableID:79e38a7be126d7917540e20db1001da48cd84757/1227:7",
           "layerName": "Footer"
         },
         {
           "property": "paddingRight",
-          "variableId": "VariableID:03953486e5268275c40e51f83bff69b21830c6b5/1227:14",
+          "variableId": "VariableID:79e38a7be126d7917540e20db1001da48cd84757/1227:7",
           "layerName": "Footer"
         },
         {
           "property": "paddingBottom",
-          "variableId": "VariableID:cfcd91dd6972e433bcd36557a5b9f78d9ed1d707/1227:15",
+          "variableId": "VariableID:65ba7f24bbdbd1f370f94028355f7c5c79f72596/1227:9",
           "layerName": "Footer"
         },
         {
@@ -68216,7 +68221,7 @@
         },
         {
           "name": "Button",
-          "componentId": "3201:1711"
+          "componentId": "3254:2569"
         },
         {
           "name": "⛔ Placeholder-icon_slot",
@@ -70208,15 +70213,15 @@
         },
         {
           "name": "Asset-container",
-          "componentId": "3199:3186"
+          "componentId": "3254:3484"
         },
         {
           "name": "Asset-container",
-          "componentId": "3199:3186"
+          "componentId": "3254:3484"
         },
         {
           "name": "Button",
-          "componentId": "3201:1711"
+          "componentId": "3254:2569"
         },
         {
           "name": "⛔ Placeholder-icon_slot",
@@ -71234,7 +71239,7 @@
   ],
   "stats": {
     "totalComponents": 85,
-    "totalBindings": 3028,
+    "totalBindings": 3029,
     "totalProperties": 10367
   }
 }

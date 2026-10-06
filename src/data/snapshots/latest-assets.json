@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-03T16:04:45.836Z",
+  "takenAt": "2026-10-06T18:13:37.247Z",
   "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
   "fileName": "Assets",
   "components": [
@@ -194854,11 +194854,6 @@
         },
         {
           "layerName": "Face-id",
-          "property": "fill[0].color",
-          "value": "#FFFFFF"
-        },
-        {
-          "layerName": "Face-id",
           "property": "__layerName__",
           "value": "Face-id"
         },
@@ -195109,12 +195104,22 @@
         {
           "property": "fills",
           "variableId": "VariableID:8e25f9a72a7defa6f803768fc55d4af0d6ff9a5b/4033:381",
-          "layerName": "Accent"
+          "layerName": "Border"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Shadow"
         },
         {
           "property": "fills",
           "variableId": "VariableID:d1069de461dc5de5bf55741f5eb6fa93a3a74a1b/4033:375",
-          "layerName": "Shape"
+          "layerName": "Background"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
+          "layerName": "Level"
         },
         {
           "property": "fills",
@@ -195125,16 +195130,6 @@
           "property": "strokes",
           "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
           "layerName": "1"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
-          "layerName": "Level"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Union"
         }
       ],
       "properties": [
@@ -195174,69 +195169,129 @@
           "value": "Level=1"
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "size.width",
           "value": 49
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "size.height",
           "value": 56
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "fill[0].color",
           "value": "#C7D2FE"
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "__layerName__",
-          "value": "Accent"
+          "value": "Border"
         },
         {
-          "layerName": "Shape",
+          "layerName": "Shadow",
           "property": "strokeWeight",
-          "value": 1
+          "value": 0
         },
         {
-          "layerName": "Shape",
+          "layerName": "Shadow",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Shape",
+          "layerName": "Shadow",
+          "property": "size.width",
+          "value": 49
+        },
+        {
+          "layerName": "Shadow",
+          "property": "size.height",
+          "value": 56
+        },
+        {
+          "layerName": "Shadow",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Shadow",
+          "property": "__layerName__",
+          "value": "Shadow"
+        },
+        {
+          "layerName": "Background",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Background",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Background",
           "property": "size.width",
           "value": 39
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "size.height",
           "value": 43
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "fill[0].color",
           "value": "#5A50F9"
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "effects",
           "value": "INNER_SHADOW"
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "__layerName__",
-          "value": "Shape"
+          "value": "Background"
+        },
+        {
+          "layerName": "Level",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Level",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Level",
+          "property": "size.width",
+          "value": 25
+        },
+        {
+          "layerName": "Level",
+          "property": "size.height",
+          "value": 9
+        },
+        {
+          "layerName": "Level",
+          "property": "fill[0].color",
+          "value": "#EEF2FF"
+        },
+        {
+          "layerName": "Level",
+          "property": "__layerName__",
+          "value": "Level"
         },
         {
           "layerName": "1",
@@ -195272,66 +195327,6 @@
           "layerName": "1",
           "property": "__layerName__",
           "value": "1"
-        },
-        {
-          "layerName": "Level",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Level",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Level",
-          "property": "size.width",
-          "value": 25
-        },
-        {
-          "layerName": "Level",
-          "property": "size.height",
-          "value": 9
-        },
-        {
-          "layerName": "Level",
-          "property": "fill[0].color",
-          "value": "#EEF2FF"
-        },
-        {
-          "layerName": "Level",
-          "property": "__layerName__",
-          "value": "Level"
-        },
-        {
-          "layerName": "Union",
-          "property": "strokeWeight",
-          "value": 0
-        },
-        {
-          "layerName": "Union",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Union",
-          "property": "size.width",
-          "value": 49
-        },
-        {
-          "layerName": "Union",
-          "property": "size.height",
-          "value": 56
-        },
-        {
-          "layerName": "Union",
-          "property": "fill[0].color",
-          "value": "#082749"
-        },
-        {
-          "layerName": "Union",
-          "property": "__layerName__",
-          "value": "Union"
         }
       ],
       "instances": []
@@ -195345,17 +195340,22 @@
         {
           "property": "fills",
           "variableId": "VariableID:a07c8f2d18d21c59b345629185ff1de5aa9e34cb/4033:367",
-          "layerName": "Accent"
+          "layerName": "Border"
         },
         {
           "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Union"
+          "layerName": "Shadow"
         },
         {
           "property": "fills",
           "variableId": "VariableID:930866e71ab72838f3ef447cbeb9d1985a41e219/4033:366",
-          "layerName": "Shape"
+          "layerName": "Background"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
+          "layerName": "Level"
         },
         {
           "property": "fills",
@@ -195366,11 +195366,6 @@
           "property": "strokes",
           "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
           "layerName": "2"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
-          "layerName": "Level"
         }
       ],
       "properties": [
@@ -195410,99 +195405,129 @@
           "value": "Level=2"
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "size.width",
           "value": 49
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "size.height",
           "value": 54
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "fill[0].color",
           "value": "#C8EEFF"
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "__layerName__",
-          "value": "Accent"
+          "value": "Border"
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "strokeWeight",
           "value": 0
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "size.width",
           "value": 49
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "size.height",
           "value": 56
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "fill[0].color",
           "value": "#082749"
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "__layerName__",
-          "value": "Union"
+          "value": "Shadow"
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "size.width",
           "value": 39
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "size.height",
           "value": 43
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "fill[0].color",
           "value": "#1EB2F5"
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "effects",
           "value": "INNER_SHADOW"
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "__layerName__",
-          "value": "Shape"
+          "value": "Background"
+        },
+        {
+          "layerName": "Level",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Level",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Level",
+          "property": "size.width",
+          "value": 25
+        },
+        {
+          "layerName": "Level",
+          "property": "size.height",
+          "value": 9
+        },
+        {
+          "layerName": "Level",
+          "property": "fill[0].color",
+          "value": "#EEF2FF"
+        },
+        {
+          "layerName": "Level",
+          "property": "__layerName__",
+          "value": "Level"
         },
         {
           "layerName": "2",
@@ -195538,36 +195563,6 @@
           "layerName": "2",
           "property": "__layerName__",
           "value": "2"
-        },
-        {
-          "layerName": "Level",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Level",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Level",
-          "property": "size.width",
-          "value": 25
-        },
-        {
-          "layerName": "Level",
-          "property": "size.height",
-          "value": 9
-        },
-        {
-          "layerName": "Level",
-          "property": "fill[0].color",
-          "value": "#EEF2FF"
-        },
-        {
-          "layerName": "Level",
-          "property": "__layerName__",
-          "value": "Level"
         }
       ],
       "instances": []
@@ -195581,17 +195576,22 @@
         {
           "property": "fills",
           "variableId": "VariableID:983522efe0ae3aac5d31ed68c71cb6bb65823e8e/4033:352",
-          "layerName": " accent"
+          "layerName": "Border"
         },
         {
           "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Union"
+          "layerName": "Shadow"
         },
         {
           "property": "fills",
           "variableId": "VariableID:4b368d19637060b24529e857fb38d5599b2bb7f6/4033:351",
-          "layerName": " Shape"
+          "layerName": "Background"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
+          "layerName": "Level"
         },
         {
           "property": "fills",
@@ -195602,11 +195602,6 @@
           "property": "strokes",
           "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
           "layerName": "3"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
-          "layerName": "Level"
         }
       ],
       "properties": [
@@ -195646,99 +195641,129 @@
           "value": "Level=3"
         },
         {
-          "layerName": " accent",
+          "layerName": "Border",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": " accent",
+          "layerName": "Border",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": " accent",
+          "layerName": "Border",
           "property": "size.width",
           "value": 49
         },
         {
-          "layerName": " accent",
+          "layerName": "Border",
           "property": "size.height",
           "value": 54
         },
         {
-          "layerName": " accent",
+          "layerName": "Border",
           "property": "fill[0].color",
           "value": "#FEE9FE"
         },
         {
-          "layerName": " accent",
+          "layerName": "Border",
           "property": "__layerName__",
-          "value": " accent"
+          "value": "Border"
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "strokeWeight",
           "value": 0
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "size.width",
           "value": 49
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "size.height",
           "value": 56
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "fill[0].color",
           "value": "#082749"
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "__layerName__",
-          "value": "Union"
+          "value": "Shadow"
         },
         {
-          "layerName": " Shape",
+          "layerName": "Background",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": " Shape",
+          "layerName": "Background",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": " Shape",
+          "layerName": "Background",
           "property": "size.width",
           "value": 39
         },
         {
-          "layerName": " Shape",
+          "layerName": "Background",
           "property": "size.height",
           "value": 42
         },
         {
-          "layerName": " Shape",
+          "layerName": "Background",
           "property": "fill[0].color",
           "value": "#EA4BDC"
         },
         {
-          "layerName": " Shape",
+          "layerName": "Background",
           "property": "effects",
           "value": "INNER_SHADOW"
         },
         {
-          "layerName": " Shape",
+          "layerName": "Background",
           "property": "__layerName__",
-          "value": " Shape"
+          "value": "Background"
+        },
+        {
+          "layerName": "Level",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Level",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Level",
+          "property": "size.width",
+          "value": 25
+        },
+        {
+          "layerName": "Level",
+          "property": "size.height",
+          "value": 9
+        },
+        {
+          "layerName": "Level",
+          "property": "fill[0].color",
+          "value": "#EEF2FF"
+        },
+        {
+          "layerName": "Level",
+          "property": "__layerName__",
+          "value": "Level"
         },
         {
           "layerName": "3",
@@ -195774,36 +195799,6 @@
           "layerName": "3",
           "property": "__layerName__",
           "value": "3"
-        },
-        {
-          "layerName": "Level",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Level",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Level",
-          "property": "size.width",
-          "value": 25
-        },
-        {
-          "layerName": "Level",
-          "property": "size.height",
-          "value": 9
-        },
-        {
-          "layerName": "Level",
-          "property": "fill[0].color",
-          "value": "#EEF2FF"
-        },
-        {
-          "layerName": "Level",
-          "property": "__layerName__",
-          "value": "Level"
         }
       ],
       "instances": []
@@ -195817,17 +195812,22 @@
         {
           "property": "fills",
           "variableId": "VariableID:ae0d43f35783d5a92f655076f3a9fb530c6fc040/4033:380",
-          "layerName": "Accent"
+          "layerName": "Border"
         },
         {
           "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Union"
+          "layerName": "Shadow"
         },
         {
           "property": "fills",
           "variableId": "VariableID:05b4534c8226e3bf91d12e8ec70518817a080c00/4033:369",
-          "layerName": "Shape"
+          "layerName": "Background"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
+          "layerName": "Level"
         },
         {
           "property": "fills",
@@ -195838,11 +195838,6 @@
           "property": "strokes",
           "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
           "layerName": "4"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
-          "layerName": "Level"
         }
       ],
       "properties": [
@@ -195882,99 +195877,129 @@
           "value": "Level=4"
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "size.width",
           "value": 49
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "size.height",
           "value": 54
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "fill[0].color",
           "value": "#C7B3FF"
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "__layerName__",
-          "value": "Accent"
+          "value": "Border"
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "strokeWeight",
           "value": 0
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "size.width",
           "value": 49
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "size.height",
           "value": 56
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "fill[0].color",
           "value": "#082749"
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "__layerName__",
-          "value": "Union"
+          "value": "Shadow"
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "size.width",
           "value": 39
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "size.height",
           "value": 42
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "fill[0].color",
           "value": "#9358FA"
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "effects",
           "value": "INNER_SHADOW"
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "__layerName__",
-          "value": "Shape"
+          "value": "Background"
+        },
+        {
+          "layerName": "Level",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Level",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Level",
+          "property": "size.width",
+          "value": 25
+        },
+        {
+          "layerName": "Level",
+          "property": "size.height",
+          "value": 9
+        },
+        {
+          "layerName": "Level",
+          "property": "fill[0].color",
+          "value": "#EEF2FF"
+        },
+        {
+          "layerName": "Level",
+          "property": "__layerName__",
+          "value": "Level"
         },
         {
           "layerName": "4",
@@ -196010,377 +196035,6 @@
           "layerName": "4",
           "property": "__layerName__",
           "value": "4"
-        },
-        {
-          "layerName": "Level",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Level",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Level",
-          "property": "size.width",
-          "value": 25
-        },
-        {
-          "layerName": "Level",
-          "property": "size.height",
-          "value": 9
-        },
-        {
-          "layerName": "Level",
-          "property": "fill[0].color",
-          "value": "#EEF2FF"
-        },
-        {
-          "layerName": "Level",
-          "property": "__layerName__",
-          "value": "Level"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "1319:501",
-      "name": "Level=6",
-      "type": "COMPONENT",
-      "parentId": "1319:395",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:d89fd011ec4f4ff94b0a44619145010c0d13c9d8/4033:383",
-          "layerName": "Accent"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Union"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Sadow"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Polygon 56"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:d473334e87f069511709ca39012eebbc280cb5c1/4033:382",
-          "layerName": "Shape"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
-          "layerName": "6"
-        },
-        {
-          "property": "strokes",
-          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
-          "layerName": "6"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
-          "layerName": "Level"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Level=6",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Level=6",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Level=6",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Level=6",
-          "property": "size.width",
-          "value": 56
-        },
-        {
-          "layerName": "Level=6",
-          "property": "size.height",
-          "value": 56
-        },
-        {
-          "layerName": "Level=6",
-          "property": "fill[0].color",
-          "value": "#FFFFFF"
-        },
-        {
-          "layerName": "Level=6",
-          "property": "__layerName__",
-          "value": "Level=6"
-        },
-        {
-          "layerName": "Accent",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Accent",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Accent",
-          "property": "size.width",
-          "value": 48
-        },
-        {
-          "layerName": "Accent",
-          "property": "size.height",
-          "value": 54
-        },
-        {
-          "layerName": "Accent",
-          "property": "fill[0].color",
-          "value": "#9EF1EA"
-        },
-        {
-          "layerName": "Accent",
-          "property": "__layerName__",
-          "value": "Accent"
-        },
-        {
-          "layerName": "Union",
-          "property": "strokeWeight",
-          "value": 0
-        },
-        {
-          "layerName": "Union",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Union",
-          "property": "size.width",
-          "value": 49
-        },
-        {
-          "layerName": "Union",
-          "property": "size.height",
-          "value": 55
-        },
-        {
-          "layerName": "Union",
-          "property": "fill[0].color",
-          "value": "#082749"
-        },
-        {
-          "layerName": "Union",
-          "property": "__layerName__",
-          "value": "Union"
-        },
-        {
-          "layerName": "Sadow",
-          "property": "strokeWeight",
-          "value": 0
-        },
-        {
-          "layerName": "Sadow",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Sadow",
-          "property": "size.width",
-          "value": 49
-        },
-        {
-          "layerName": "Sadow",
-          "property": "size.height",
-          "value": 19
-        },
-        {
-          "layerName": "Sadow",
-          "property": "fill[0].color",
-          "value": "#082749"
-        },
-        {
-          "layerName": "Sadow",
-          "property": "__layerName__",
-          "value": "Sadow"
-        },
-        {
-          "layerName": "Polygon 56",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Polygon 56",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Polygon 56",
-          "property": "size.width",
-          "value": 57
-        },
-        {
-          "layerName": "Polygon 56",
-          "property": "size.height",
-          "value": 56
-        },
-        {
-          "layerName": "Polygon 56",
-          "property": "fill[0].color",
-          "value": "#082749"
-        },
-        {
-          "layerName": "Polygon 56",
-          "property": "__layerName__",
-          "value": "Polygon 56"
-        },
-        {
-          "layerName": "Polygon 58",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Polygon 58",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Polygon 58",
-          "property": "size.width",
-          "value": 57
-        },
-        {
-          "layerName": "Polygon 58",
-          "property": "size.height",
-          "value": 56
-        },
-        {
-          "layerName": "Polygon 58",
-          "property": "fill[0].color",
-          "value": "#D9D9D9"
-        },
-        {
-          "layerName": "Polygon 58",
-          "property": "stroke[0].color",
-          "value": "#000000"
-        },
-        {
-          "layerName": "Polygon 58",
-          "property": "__layerName__",
-          "value": "Polygon 58"
-        },
-        {
-          "layerName": "Shape",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Shape",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Shape",
-          "property": "size.width",
-          "value": 38
-        },
-        {
-          "layerName": "Shape",
-          "property": "size.height",
-          "value": 43
-        },
-        {
-          "layerName": "Shape",
-          "property": "fill[0].color",
-          "value": "#35CCCA"
-        },
-        {
-          "layerName": "Shape",
-          "property": "effects",
-          "value": "INNER_SHADOW"
-        },
-        {
-          "layerName": "Shape",
-          "property": "__layerName__",
-          "value": "Shape"
-        },
-        {
-          "layerName": "6",
-          "property": "strokeWeight",
-          "value": 0.30000001192092896
-        },
-        {
-          "layerName": "6",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "6",
-          "property": "size.width",
-          "value": 9
-        },
-        {
-          "layerName": "6",
-          "property": "size.height",
-          "value": 14
-        },
-        {
-          "layerName": "6",
-          "property": "fill[0].color",
-          "value": "#EEF2FF"
-        },
-        {
-          "layerName": "6",
-          "property": "stroke[0].color",
-          "value": "#EEF2FF"
-        },
-        {
-          "layerName": "6",
-          "property": "__layerName__",
-          "value": "6"
-        },
-        {
-          "layerName": "Level",
-          "property": "strokeWeight",
-          "value": 0
-        },
-        {
-          "layerName": "Level",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Level",
-          "property": "size.width",
-          "value": 25
-        },
-        {
-          "layerName": "Level",
-          "property": "size.height",
-          "value": 9
-        },
-        {
-          "layerName": "Level",
-          "property": "fill[0].color",
-          "value": "#EEF2FF"
-        },
-        {
-          "layerName": "Level",
-          "property": "__layerName__",
-          "value": "Level"
         }
       ],
       "instances": []
@@ -196394,17 +196048,22 @@
         {
           "property": "fills",
           "variableId": "VariableID:942d1b39b6f8d6127a99d7654e086b3ffddd2c13/4033:388",
-          "layerName": "Accent"
+          "layerName": "Border"
         },
         {
           "property": "fills",
           "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
-          "layerName": "Union"
+          "layerName": "Shadow"
         },
         {
           "property": "fills",
           "variableId": "VariableID:7a791f76226ece97daabfe0e71e44f3bd3b720d6/4033:357",
-          "layerName": "Shape"
+          "layerName": "Background"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
+          "layerName": "Level"
         },
         {
           "property": "fills",
@@ -196415,11 +196074,6 @@
           "property": "strokes",
           "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
           "layerName": "5"
-        },
-        {
-          "property": "fills",
-          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
-          "layerName": "Level"
         }
       ],
       "properties": [
@@ -196459,99 +196113,129 @@
           "value": "Level=5"
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "size.width",
           "value": 49
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "size.height",
           "value": 54
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "fill[0].color",
           "value": "#EED59A"
         },
         {
-          "layerName": "Accent",
+          "layerName": "Border",
           "property": "__layerName__",
-          "value": "Accent"
+          "value": "Border"
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "strokeWeight",
           "value": 0
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "size.width",
           "value": 49
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "size.height",
           "value": 56
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "fill[0].color",
           "value": "#082749"
         },
         {
-          "layerName": "Union",
+          "layerName": "Shadow",
           "property": "__layerName__",
-          "value": "Union"
+          "value": "Shadow"
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "size.width",
           "value": 39
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "size.height",
           "value": 42
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "fill[0].color",
           "value": "#F58B0B"
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "effects",
           "value": "INNER_SHADOW"
         },
         {
-          "layerName": "Shape",
+          "layerName": "Background",
           "property": "__layerName__",
-          "value": "Shape"
+          "value": "Background"
+        },
+        {
+          "layerName": "Level",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Level",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Level",
+          "property": "size.width",
+          "value": 25
+        },
+        {
+          "layerName": "Level",
+          "property": "size.height",
+          "value": 9
+        },
+        {
+          "layerName": "Level",
+          "property": "fill[0].color",
+          "value": "#EEF2FF"
+        },
+        {
+          "layerName": "Level",
+          "property": "__layerName__",
+          "value": "Level"
         },
         {
           "layerName": "5",
@@ -196587,11 +196271,182 @@
           "layerName": "5",
           "property": "__layerName__",
           "value": "5"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "1319:501",
+      "name": "Level=6",
+      "type": "COMPONENT",
+      "parentId": "1319:395",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:d89fd011ec4f4ff94b0a44619145010c0d13c9d8/4033:383",
+          "layerName": "Border"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:2c13aa20de7eb709ea94864b4078d9ec00f0d521/4240:12",
+          "layerName": "Shadow"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:d473334e87f069511709ca39012eebbc280cb5c1/4033:382",
+          "layerName": "Background"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
+          "layerName": "Level"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
+          "layerName": "6"
+        },
+        {
+          "property": "strokes",
+          "variableId": "VariableID:e66b8334c2f1032fa60fa079ff520df2832f442c/4033:377",
+          "layerName": "6"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Level=6",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Level=6",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Level=6",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Level=6",
+          "property": "size.width",
+          "value": 56
+        },
+        {
+          "layerName": "Level=6",
+          "property": "size.height",
+          "value": 56
+        },
+        {
+          "layerName": "Level=6",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Level=6",
+          "property": "__layerName__",
+          "value": "Level=6"
+        },
+        {
+          "layerName": "Border",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Border",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Border",
+          "property": "size.width",
+          "value": 48
+        },
+        {
+          "layerName": "Border",
+          "property": "size.height",
+          "value": 54
+        },
+        {
+          "layerName": "Border",
+          "property": "fill[0].color",
+          "value": "#9EF1EA"
+        },
+        {
+          "layerName": "Border",
+          "property": "__layerName__",
+          "value": "Border"
+        },
+        {
+          "layerName": "Shadow",
+          "property": "strokeWeight",
+          "value": 0
+        },
+        {
+          "layerName": "Shadow",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Shadow",
+          "property": "size.width",
+          "value": 49
+        },
+        {
+          "layerName": "Shadow",
+          "property": "size.height",
+          "value": 56
+        },
+        {
+          "layerName": "Shadow",
+          "property": "fill[0].color",
+          "value": "#082749"
+        },
+        {
+          "layerName": "Shadow",
+          "property": "__layerName__",
+          "value": "Shadow"
+        },
+        {
+          "layerName": "Background",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Background",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Background",
+          "property": "size.width",
+          "value": 38
+        },
+        {
+          "layerName": "Background",
+          "property": "size.height",
+          "value": 43
+        },
+        {
+          "layerName": "Background",
+          "property": "fill[0].color",
+          "value": "#35CCCA"
+        },
+        {
+          "layerName": "Background",
+          "property": "effects",
+          "value": "INNER_SHADOW"
+        },
+        {
+          "layerName": "Background",
+          "property": "__layerName__",
+          "value": "Background"
         },
         {
           "layerName": "Level",
           "property": "strokeWeight",
-          "value": 1
+          "value": 0
         },
         {
           "layerName": "Level",
@@ -196617,6 +196472,41 @@
           "layerName": "Level",
           "property": "__layerName__",
           "value": "Level"
+        },
+        {
+          "layerName": "6",
+          "property": "strokeWeight",
+          "value": 0.30000001192092896
+        },
+        {
+          "layerName": "6",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "6",
+          "property": "size.width",
+          "value": 9
+        },
+        {
+          "layerName": "6",
+          "property": "size.height",
+          "value": 14
+        },
+        {
+          "layerName": "6",
+          "property": "fill[0].color",
+          "value": "#EEF2FF"
+        },
+        {
+          "layerName": "6",
+          "property": "stroke[0].color",
+          "value": "#EEF2FF"
+        },
+        {
+          "layerName": "6",
+          "property": "__layerName__",
+          "value": "6"
         }
       ],
       "instances": []
@@ -211647,7 +211537,7 @@
   ],
   "stats": {
     "totalComponents": 648,
-    "totalBindings": 5088,
-    "totalProperties": 35973
+    "totalBindings": 5086,
+    "totalProperties": 35953
   }
 }
