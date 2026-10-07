@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-06T18:13:37.247Z",
+  "takenAt": "2026-10-07T18:46:50.214Z",
   "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
   "fileName": "Assets",
   "components": [
@@ -18266,7 +18266,7 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:ae0d43f35783d5a92f655076f3a9fb530c6fc040/3744:59",
+          "variableId": "VariableID:ae0d43f35783d5a92f655076f3a9fb530c6fc040/4033:380",
           "layerName": "Vector11"
         },
         {
@@ -18276,7 +18276,7 @@
         },
         {
           "property": "fills",
-          "variableId": "VariableID:ae0d43f35783d5a92f655076f3a9fb530c6fc040/3744:59",
+          "variableId": "VariableID:ae0d43f35783d5a92f655076f3a9fb530c6fc040/4033:380",
           "layerName": "Vector09"
         },
         {
@@ -57771,7 +57771,7 @@
       "bindings": [
         {
           "property": "fills",
-          "variableId": "VariableID:ae0d43f35783d5a92f655076f3a9fb530c6fc040/3794:30",
+          "variableId": "VariableID:ae0d43f35783d5a92f655076f3a9fb530c6fc040/4033:380",
           "layerName": "Vector07"
         },
         {

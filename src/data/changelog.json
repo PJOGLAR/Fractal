@@ -1,5 +1,3415 @@
 [
   {
+    "id": "muyglmcv",
+    "timestamp": "2026-10-07T18:46:52.783Z",
+    "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
+    "fileName": "Custom components",
+    "fileLabel": "custom",
+    "summary": "2 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Card-Personal-Pay",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Payment-card",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Payment-card": {
+        "name": "Payment-card",
+        "isVariant": true,
+        "variants": {
+          "Type=payment, State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "Content",
+                  "from": "gap/gap-200",
+                  "to": "padding/padding-200"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Content",
+                  "from": "gap/gap-50",
+                  "to": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Content",
+                  "from": "gap/gap-100",
+                  "to": "padding/padding-100"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Content",
+                  "from": "gap/gap-50",
+                  "to": "padding/padding-50"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Personal-Pay-Iso",
+                "from": "20",
+                "to": "24"
+              }
+            ]
+          },
+          "Type=payment, State=disabled": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "Content",
+                  "from": "gap/gap-200",
+                  "to": "padding/padding-200"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Content",
+                  "from": "gap/gap-50",
+                  "to": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Content",
+                  "from": "gap/gap-100",
+                  "to": "padding/padding-100"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Content",
+                  "from": "gap/gap-50",
+                  "to": "padding/padding-50"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Personal-Pay-Iso",
+                "from": "20",
+                "to": "24"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 8,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 2
+        }
+      },
+      "Card-Personal-Pay": {
+        "name": "Card-Personal-Pay",
+        "isVariant": true,
+        "variants": {
+          "State=active, Orientation=horizontal": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "Content",
+                  "from": "gap/gap-200",
+                  "to": "padding/padding-200"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Content",
+                  "from": "gap/gap-50",
+                  "to": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Content",
+                  "from": "gap/gap-100",
+                  "to": "padding/padding-100"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Content",
+                  "from": "gap/gap-50",
+                  "to": "padding/padding-50"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=in progress, Orientation=horizontal": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "Content",
+                  "from": "gap/gap-200",
+                  "to": "padding/padding-200"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Content",
+                  "from": "gap/gap-50",
+                  "to": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Content",
+                  "from": "gap/gap-100",
+                  "to": "padding/padding-100"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Content",
+                  "from": "gap/gap-50",
+                  "to": "padding/padding-50"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=paused, Orientation=horizontal": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "Content",
+                  "from": "gap/gap-200",
+                  "to": "padding/padding-200"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Content",
+                  "from": "gap/gap-50",
+                  "to": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Content",
+                  "from": "gap/gap-100",
+                  "to": "padding/padding-100"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Content",
+                  "from": "gap/gap-50",
+                  "to": "padding/padding-50"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=active, Orientation=vertical": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "Content",
+                  "from": "gap/gap-200",
+                  "to": "padding/padding-200"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Content",
+                  "from": "gap/gap-50",
+                  "to": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Content",
+                  "from": "gap/gap-100",
+                  "to": "padding/padding-100"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Content",
+                  "from": "gap/gap-50",
+                  "to": "padding/padding-50"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=in progress, Orientation=vertical": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "Content",
+                  "from": "gap/gap-200",
+                  "to": "padding/padding-200"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Content",
+                  "from": "gap/gap-50",
+                  "to": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Content",
+                  "from": "gap/gap-100",
+                  "to": "padding/padding-100"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Content",
+                  "from": "gap/gap-50",
+                  "to": "padding/padding-50"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "State=paused, Orientation=vertical": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "Content",
+                  "from": "gap/gap-200",
+                  "to": "padding/padding-200"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Content",
+                  "from": "gap/gap-50",
+                  "to": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Content",
+                  "from": "gap/gap-100",
+                  "to": "padding/padding-100"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Content",
+                  "from": "gap/gap-50",
+                  "to": "padding/padding-50"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 24,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 0
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 32,
+      "propertiesChanged": 2
+    }
+  },
+  {
+    "id": "muyglkel",
+    "timestamp": "2026-10-07T18:46:50.253Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "2 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Boarding-pass",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Reload",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Boarding-pass": {
+        "name": "Boarding-pass",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector11",
+                  "from": "c040/3744:59",
+                  "to": "040/4033:380"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Vector09",
+                  "from": "c040/3744:59",
+                  "to": "040/4033:380"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 2,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 0
+        }
+      },
+      "Reload": {
+        "name": "Reload",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector07",
+                  "from": "c040/3794:30",
+                  "to": "040/4033:380"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 1,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 0
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 3,
+      "propertiesChanged": 0
+    }
+  },
+  {
+    "id": "muygldbd",
+    "timestamp": "2026-10-07T18:46:41.065Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "8 iterados",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Alert",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Backdrop",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Card",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Carousel",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Loader",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Progress-bar",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Stepper-dot",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Stepper-vertical",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Card": {
+        "name": "Card",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Card",
+                "from": "538",
+                "to": "566"
+              }
+            ]
+          },
+          "State=empty": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "State=empty",
+                  "from": "padding/padding-400",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "State=empty",
+                  "from": "padding/padding-400",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "State=empty",
+                  "from": "padding/padding-400",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "State=empty",
+                  "from": "padding/padding-400",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "---> Empty state",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "---> Empty state",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "---> Empty state",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "---> Empty state",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                }
+              ],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "---> Header",
+                  "token": "gap/gap-300"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "---> Header",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "---> Header",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "---> Header",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "---> Header",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "---> Header action",
+                  "token": "gap/gap-300"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "---> Header action",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "---> Header action",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "---> Header action",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "---> Header action",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Content wrapper",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Content wrapper",
+                  "token": "padding/padding-400"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "State=empty",
+                "from": "124",
+                "to": "160"
+              },
+              {
+                "property": "size.width",
+                "layer": "---> Empty state",
+                "from": "296",
+                "to": "328"
+              },
+              {
+                "property": "size.height",
+                "layer": "---> Empty state",
+                "from": "92",
+                "to": "124"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 8,
+          "tokensAdded": 12,
+          "tokensRemoved": 0,
+          "propertiesChanged": 4
+        }
+      },
+      "Carousel": {
+        "name": "Carousel",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 1,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Progress-bar": {
+        "name": "Progress-bar",
+        "isVariant": true,
+        "variants": {
+          "Thickness=4px, Stage=10, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=10, Type=steps": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=20, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=20, Type=steps": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=30, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=30, Type=steps": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=40, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=40, Type=steps": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=50, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=50, Type=steps": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=60, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=60, Type=steps": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=70, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=70, Type=steps": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=80, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=80, Type=steps": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=90, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=90, Type=steps": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=4px, Stage=100, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=8px, Stage=10, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=8px, Stage=10, Type=steps": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=8px, Stage=20, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=8px, Stage=30, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=8px, Stage=40, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=8px, Stage=50, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=8px, Stage=60, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=8px, Stage=70, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=8px, Stage=80, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=8px, Stage=90, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Thickness=8px, Stage=100, Type=usage": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Progress-bar_indicator",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Progress-bar_indicator",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 30,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 30
+        }
+      },
+      "Stepper-dot": {
+        "name": "Stepper-dot",
+        "isVariant": true,
+        "variants": {
+          "Behavior=auto play, Quantity=2 pages, Active page=1st": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=3 pages, Active page=1st": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=4 pages, Active page=1st": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=5 pages, Active page=1st": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=6 pages, Active page=1st": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=7 pages, Active page=1st": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=8 pages, Active page=1st": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=2 pages, Active page=1st": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=3 pages, Active page=1st": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=4 pages, Active page=1st": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=5 pages, Active page=1st": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=6 pages, Active page=1st": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=7 pages, Active page=1st": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=8 pages, Active page=1st": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=2 pages, Active page=2nd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=3 pages, Active page=2nd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=4 pages, Active page=2nd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=5 pages, Active page=2nd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=6 pages, Active page=2nd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=7 pages, Active page=2nd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=8 pages, Active page=2nd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=2 pages, Active page=2nd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=3 pages, Active page=2nd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=4 pages, Active page=2nd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=5 pages, Active page=2nd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=6 pages, Active page=2nd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=7 pages, Active page=2nd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=8 pages, Active page=2nd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=3 pages, Active page=3rd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=4 pages, Active page=3rd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=5 pages, Active page=3rd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=6 pages, Active page=3rd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=7 pages, Active page=3rd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=8 pages, Active page=3rd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=3 pages, Active page=3rd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=4 pages, Active page=3rd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=5 pages, Active page=3rd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=6 pages, Active page=3rd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=7 pages, Active page=3rd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=8 pages, Active page=3rd": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=4 pages, Active page=4th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=5 pages, Active page=4th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=6 pages, Active page=4th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=7 pages, Active page=4th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=8 pages, Active page=4th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=4 pages, Active page=4th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=5 pages, Active page=4th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=6 pages, Active page=4th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=7 pages, Active page=4th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=8 pages, Active page=4th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=5 pages, Active page=5th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=6 pages, Active page=5th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=7 pages, Active page=5th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=8 pages, Active page=5th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=5 pages, Active page=5th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=6 pages, Active page=5th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=7 pages, Active page=5th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=8 pages, Active page=5th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=6 pages, Active page=6th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=7 pages, Active page=6th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=8 pages, Active page=6th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=6 pages, Active page=6th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=7 pages, Active page=6th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=8 pages, Active page=6th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=7 pages, Active page=7th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=8 pages, Active page=7th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=7 pages, Active page=7th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=8 pages, Active page=7th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=auto play, Quantity=8 pages, Active page=8th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Behavior=manual, Quantity=8 pages, Active page=8th": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": ".⛔️ Stepper-dot_active-state",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": ".⛔️ Stepper-dot_active-state",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 70,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 70
+        }
+      },
+      "Stepper-vertical": {
+        "name": "Stepper-vertical",
+        "isVariant": true,
+        "variants": {
+          "Steps quantity=3, Type=asset": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Icon container",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Step connector",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Icon container",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Step connector",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Steps quantity=3, Type=number": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Number step",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Step connector",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Number step",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Step connector",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Steps quantity=4, Type=asset": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Icon container",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Step connector",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Icon container",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Step connector",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Steps quantity=4, Type=number": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Number step",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Step connector",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Number step",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Step connector",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Steps quantity=5, Type=asset": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Icon container",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Step connector",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Icon container",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Step connector",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          },
+          "Steps quantity=5, Type=number": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Number step",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Step connector",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Number step",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Step connector",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 12,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 12
+        }
+      },
+      "Alert": {
+        "name": "Alert",
+        "isVariant": true,
+        "variants": {
+          "Type=neutral, Hierarchy=high": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Type=neutral, Hierarchy=high",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "Type=neutral, Hierarchy=high",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 1,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      },
+      "Backdrop": {
+        "name": "Backdrop",
+        "isVariant": true,
+        "variants": {
+          "Layout=default, State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Layout=default, State=default",
+                  "from": "space/0x",
+                  "to": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Layout=default, State=default",
+                  "from": "space/0x",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Layout=default, State=default",
+                  "from": "space/3x",
+                  "to": "padding/padding-300"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Layout=default, State=default",
+                  "from": "space/0x",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Layout=default, State=default",
+                  "from": "space/0x",
+                  "to": "padding/padding-0"
+                }
+              ],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Button wrapper",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Layout=default, State=loading": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Layout=default, State=loading",
+                  "from": "space/0x",
+                  "to": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Layout=default, State=loading",
+                  "from": "space/0x",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Layout=default, State=loading",
+                  "from": "space/3x",
+                  "to": "padding/padding-300"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Layout=default, State=loading",
+                  "from": "space/0x",
+                  "to": "padding/padding-0"
+                }
+              ],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Button wrapper",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Layout=scrollable, State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Layout=scrollable, State=default",
+                  "from": "space/0x",
+                  "to": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Layout=scrollable, State=default",
+                  "from": "space/0x",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Layout=scrollable, State=default",
+                  "from": "space/3x",
+                  "to": "padding/padding-300"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Layout=scrollable, State=default",
+                  "from": "space/0x",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Layout=scrollable, State=default",
+                  "from": "space/0x",
+                  "to": "padding/padding-0"
+                }
+              ],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Button wrapper",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Layout=illustration, State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Layout=illustration, State=default",
+                  "from": "space/0x",
+                  "to": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Layout=illustration, State=default",
+                  "from": "space/0x",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Layout=illustration, State=default",
+                  "from": "space/3x",
+                  "to": "padding/padding-300"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Layout=illustration, State=default",
+                  "from": "space/0x",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Layout=illustration, State=default",
+                  "from": "space/0x",
+                  "to": "padding/padding-0"
+                }
+              ],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Button wrapper",
+                  "token": "gap/gap-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 19,
+          "tokensAdded": 4,
+          "tokensRemoved": 0,
+          "propertiesChanged": 0
+        }
+      },
+      "Loader": {
+        "name": "Loader",
+        "isVariant": true,
+        "variants": {
+          "Type=indeterminate": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "loader-ring",
+                  "from": "static/background/brand/primary/subtle",
+                  "to": "fdb38/6170:2"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "fill[0].color",
+                "layer": "loader-ring",
+                "from": "#E0E4F5",
+                "to": "#E0E7FF"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 1,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 1
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 16,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 166,
+      "propertiesChanged": 143
+    }
+  },
+  {
     "id": "muwzz32w",
     "timestamp": "2026-10-06T18:13:41.336Z",
     "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
