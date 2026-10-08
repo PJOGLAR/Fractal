@@ -1,5 +1,357 @@
 [
   {
+    "id": "muzvyquq",
+    "timestamp": "2026-10-08T18:44:45.554Z",
+    "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
+    "fileName": "Custom components",
+    "fileLabel": "custom",
+    "summary": "10 eliminados",
+    "changes": [
+      {
+        "type": "component_removed",
+        "component": "Apple",
+        "nodeId": "",
+        "details": "Apple"
+      },
+      {
+        "type": "component_removed",
+        "component": "Honor",
+        "nodeId": "",
+        "details": "Honor"
+      },
+      {
+        "type": "component_removed",
+        "component": "Huawei",
+        "nodeId": "",
+        "details": "Huawei"
+      },
+      {
+        "type": "component_removed",
+        "component": "Motorola",
+        "nodeId": "",
+        "details": "Motorola"
+      },
+      {
+        "type": "component_removed",
+        "component": "Nubia",
+        "nodeId": "",
+        "details": "Nubia"
+      },
+      {
+        "type": "component_removed",
+        "component": "Oppo",
+        "nodeId": "",
+        "details": "Oppo"
+      },
+      {
+        "type": "component_removed",
+        "component": "Samsung",
+        "nodeId": "",
+        "details": "Samsung"
+      },
+      {
+        "type": "component_removed",
+        "component": "Tcl",
+        "nodeId": "",
+        "details": "Tcl"
+      },
+      {
+        "type": "component_removed",
+        "component": "Xiaomi",
+        "nodeId": "",
+        "details": "Xiaomi"
+      },
+      {
+        "type": "component_removed",
+        "component": "Zte",
+        "nodeId": "",
+        "details": "Zte"
+      }
+    ],
+    "detailed": {},
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 10,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
+    "id": "muzvyo8a",
+    "timestamp": "2026-10-08T18:44:42.154Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "22 nuevos",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Airplane-ticket",
+        "nodeId": "",
+        "details": "Airplane-ticket"
+      },
+      {
+        "type": "component_added",
+        "component": "Apple",
+        "nodeId": "",
+        "details": "Apple"
+      },
+      {
+        "type": "component_added",
+        "component": "Car",
+        "nodeId": "",
+        "details": "Car"
+      },
+      {
+        "type": "component_added",
+        "component": "Desktop-screen",
+        "nodeId": "",
+        "details": "Desktop-screen"
+      },
+      {
+        "type": "component_added",
+        "component": "Donation",
+        "nodeId": "",
+        "details": "Donation"
+      },
+      {
+        "type": "component_added",
+        "component": "Education",
+        "nodeId": "",
+        "details": "Education"
+      },
+      {
+        "type": "component_added",
+        "component": "Electricity",
+        "nodeId": "",
+        "details": "Electricity"
+      },
+      {
+        "type": "component_added",
+        "component": "Gated-community",
+        "nodeId": "",
+        "details": "Gated-community"
+      },
+      {
+        "type": "component_added",
+        "component": "Heat",
+        "nodeId": "",
+        "details": "Heat"
+      },
+      {
+        "type": "component_added",
+        "component": "Honor",
+        "nodeId": "",
+        "details": "Honor"
+      },
+      {
+        "type": "component_added",
+        "component": "Huawei",
+        "nodeId": "",
+        "details": "Huawei"
+      },
+      {
+        "type": "component_added",
+        "component": "Motorola",
+        "nodeId": "",
+        "details": "Motorola"
+      },
+      {
+        "type": "component_added",
+        "component": "Nubia",
+        "nodeId": "",
+        "details": "Nubia"
+      },
+      {
+        "type": "component_added",
+        "component": "Oppo",
+        "nodeId": "",
+        "details": "Oppo"
+      },
+      {
+        "type": "component_added",
+        "component": "Private-health",
+        "nodeId": "",
+        "details": "Private-health"
+      },
+      {
+        "type": "component_added",
+        "component": "Samsung",
+        "nodeId": "",
+        "details": "Samsung"
+      },
+      {
+        "type": "component_added",
+        "component": "Sports",
+        "nodeId": "",
+        "details": "Sports"
+      },
+      {
+        "type": "component_added",
+        "component": "Tcl",
+        "nodeId": "",
+        "details": "Tcl"
+      },
+      {
+        "type": "component_added",
+        "component": "Verified",
+        "nodeId": "",
+        "details": "Verified"
+      },
+      {
+        "type": "component_added",
+        "component": "Water",
+        "nodeId": "",
+        "details": "Water"
+      },
+      {
+        "type": "component_added",
+        "component": "Xiaomi",
+        "nodeId": "",
+        "details": "Xiaomi"
+      },
+      {
+        "type": "component_added",
+        "component": "Zte",
+        "nodeId": "",
+        "details": "Zte"
+      }
+    ],
+    "detailed": {},
+    "stats": {
+      "componentsAdded": 22,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
+    "id": "muzvyhqb",
+    "timestamp": "2026-10-08T18:44:33.731Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 iterado",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Banner-lg",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Banner-lg": {
+        "name": "Banner-lg",
+        "isVariant": true,
+        "variants": {
+          "Content=image, State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Content wrapper",
+                  "from": "static/background/brand/primary/medium",
+                  "to": "interactive/background/brand/default/medium"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Content=image, State=focus": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Content wrapper",
+                  "from": "static/background/brand/primary/medium",
+                  "to": "interactive/background/brand/default/medium"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Content=image, State=hover": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Content wrapper",
+                  "from": "static/background/brand/primary/medium",
+                  "to": "interactive/background/brand/default/medium"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          },
+          "Content=image, State=pressed": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Content wrapper",
+                  "from": "static/background/brand/primary/medium",
+                  "to": "interactive/background/brand/default/medium"
+                }
+              ],
+              "added": [],
+              "removed": []
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 4,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 0
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 4,
+      "propertiesChanged": 1
+    }
+  },
+  {
     "id": "muyglmcv",
     "timestamp": "2026-10-07T18:46:52.783Z",
     "fileKey": "Y81MqGSSBogjp7xbMjdEIU",

@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-07T18:46:50.214Z",
+  "takenAt": "2026-10-08T18:44:42.107Z",
   "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
   "fileName": "Assets",
   "components": [
@@ -4200,6 +4200,81 @@
       "instances": []
     },
     {
+      "id": "5658:856",
+      "name": "Desktop-screen",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Desktop-screen",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Desktop-screen",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Desktop-screen",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Desktop-screen",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Desktop-screen",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Desktop-screen",
+          "property": "__layerName__",
+          "value": "Desktop-screen"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 18
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
       "id": "1234:472",
       "name": "Bank",
       "type": "COMPONENT",
@@ -7410,6 +7485,81 @@
       "instances": []
     },
     {
+      "id": "5658:857",
+      "name": "Verified",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Verified",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Verified",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Verified",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Verified",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Verified",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Verified",
+          "property": "__layerName__",
+          "value": "Verified"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 16
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
       "id": "272:269",
       "name": "Heart",
       "type": "COMPONENT",
@@ -8180,6 +8330,156 @@
           "layerName": "Vector",
           "property": "size.height",
           "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5658:859",
+      "name": "Car",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Car",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Car",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Car",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Car",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Car",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Car",
+          "property": "__layerName__",
+          "value": "Car"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 18
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 16
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5658:858",
+      "name": "Airplane-ticket",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Airplane-ticket",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Airplane-ticket",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Airplane-ticket",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Airplane-ticket",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Airplane-ticket",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Airplane-ticket",
+          "property": "__layerName__",
+          "value": "Airplane-ticket"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 16
         },
         {
           "layerName": "Vector",
@@ -13030,6 +13330,606 @@
           "layerName": "Logo",
           "property": "__layerName__",
           "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5658:867",
+      "name": "Water",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Water",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Water",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Water",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Water",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Water",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Water",
+          "property": "__layerName__",
+          "value": "Water"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 16
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 19
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5658:866",
+      "name": "Electricity",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Electricity",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Electricity",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Electricity",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Electricity",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Electricity",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Electricity",
+          "property": "__layerName__",
+          "value": "Electricity"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 14
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5658:864",
+      "name": "Private-health",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Private-health",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Private-health",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Private-health",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Private-health",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Private-health",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Private-health",
+          "property": "__layerName__",
+          "value": "Private-health"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 18
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 18
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5658:865",
+      "name": "Sports",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Sports",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Sports",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Sports",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Sports",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Sports",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Sports",
+          "property": "__layerName__",
+          "value": "Sports"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5658:861",
+      "name": "Gated-community",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Gated-community",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Gated-community",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Gated-community",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Gated-community",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Gated-community",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Gated-community",
+          "property": "__layerName__",
+          "value": "Gated-community"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 21
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5658:860",
+      "name": "Donation",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Donation",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Donation",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Donation",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Donation",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Donation",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Donation",
+          "property": "__layerName__",
+          "value": "Donation"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 21
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5658:863",
+      "name": "Education",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Education",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Education",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Education",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Education",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Education",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Education",
+          "property": "__layerName__",
+          "value": "Education"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 21
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 17
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5658:862",
+      "name": "Heat",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Heat",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Heat",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Heat",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Heat",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Heat",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Heat",
+          "property": "__layerName__",
+          "value": "Heat"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 16
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 18
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
         }
       ],
       "instances": []
@@ -197483,6 +198383,746 @@
       "instances": []
     },
     {
+      "id": "5654:756",
+      "name": "Huawei",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Huawei",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Huawei",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Huawei",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Huawei",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Huawei",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Huawei",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Huawei",
+          "property": "__layerName__",
+          "value": "Huawei"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 0.033194199204444885
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 28
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 7
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#E22329"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5654:758",
+      "name": "Honor",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Honor",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Honor",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Honor",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Honor",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Honor",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Honor",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Honor",
+          "property": "__layerName__",
+          "value": "Honor"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 0.033182237297296524
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 28
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 5
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#000000"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5654:760",
+      "name": "Oppo",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Oppo",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Oppo",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Oppo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Oppo",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Oppo",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Oppo",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Oppo",
+          "property": "__layerName__",
+          "value": "Oppo"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 0.03074684925377369
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 28
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 7
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#000000"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5654:762",
+      "name": "Nubia",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Nubia",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Nubia",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Nubia",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Nubia",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Nubia",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Nubia",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Nubia",
+          "property": "__layerName__",
+          "value": "Nubia"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 0.027819225564599037
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 28
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 7
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#E4001E"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5654:764",
+      "name": "Zte",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Zte",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Zte",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Zte",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Zte",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Zte",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Zte",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Zte",
+          "property": "__layerName__",
+          "value": "Zte"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 0.019492048770189285
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 28
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 13
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#00BFFE"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5654:766",
+      "name": "Xiaomi",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Xiaomi",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Xiaomi",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Xiaomi",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Xiaomi",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Xiaomi",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Xiaomi",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Xiaomi",
+          "property": "__layerName__",
+          "value": "Xiaomi"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 0.04296875
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 22
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 22
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#FEFEFE"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5654:768",
+      "name": "Tcl",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Tcl",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Tcl",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Tcl",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Tcl",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Tcl",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Tcl",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Tcl",
+          "property": "__layerName__",
+          "value": "Tcl"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 0.02974720671772957
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 28
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 9
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#FE0000"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5654:770",
+      "name": "Motorola",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Motorola",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Motorola",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Motorola",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Motorola",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Motorola",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Motorola",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Motorola",
+          "property": "__layerName__",
+          "value": "Motorola"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 0.03220197558403015
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 28
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 6
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#000000"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5654:772",
+      "name": "Samsung",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Samsung",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Samsung",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Samsung",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Samsung",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Samsung",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Samsung",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Samsung",
+          "property": "__layerName__",
+          "value": "Samsung"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 0
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 28
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 4
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#000000"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "5654:774",
+      "name": "Apple",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Apple",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Apple",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Apple",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Apple",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Apple",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Apple",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Apple",
+          "property": "__layerName__",
+          "value": "Apple"
+        },
+        {
+          "layerName": "Logo",
+          "property": "strokeWeight",
+          "value": 0
+        },
+        {
+          "layerName": "Logo",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.width",
+          "value": 16
+        },
+        {
+          "layerName": "Logo",
+          "property": "size.height",
+          "value": 20
+        },
+        {
+          "layerName": "Logo",
+          "property": "fill[0].color",
+          "value": "#000000"
+        },
+        {
+          "layerName": "Logo",
+          "property": "__layerName__",
+          "value": "Logo"
+        }
+      ],
+      "instances": []
+    },
+    {
       "id": "2318:414",
       "name": "AUSA",
       "type": "COMPONENT",
@@ -211536,8 +213176,8 @@
     }
   ],
   "stats": {
-    "totalComponents": 648,
-    "totalBindings": 5086,
-    "totalProperties": 35953
+    "totalComponents": 670,
+    "totalBindings": 5098,
+    "totalProperties": 36227
   }
 }
