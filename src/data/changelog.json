@@ -1,5 +1,111 @@
 [
   {
+    "id": "mv1aci0p",
+    "timestamp": "2026-10-09T18:15:08.089Z",
+    "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
+    "fileName": "Assets",
+    "fileLabel": "assets",
+    "summary": "1 nuevo",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Market-iso",
+        "nodeId": "",
+        "details": "Market-iso"
+      }
+    ],
+    "detailed": {},
+    "stats": {
+      "componentsAdded": 1,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
+    "id": "mv1acbet",
+    "timestamp": "2026-10-09T18:14:59.525Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 eliminado · 1 iterado",
+    "changes": [
+      {
+        "type": "component_removed",
+        "component": "Status-bar",
+        "nodeId": "",
+        "details": "Status-bar"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Banner-lg",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Banner-lg": {
+        "name": "Banner-lg",
+        "isVariant": true,
+        "variants": {
+          "Content=illustration, State=pressed": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Content=illustration, State=pressed",
+                "from": "158",
+                "to": "186"
+              },
+              {
+                "property": "size.height",
+                "layer": "Pressed layer",
+                "from": "158",
+                "to": "186"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 2
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 12,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 2
+    }
+  },
+  {
     "id": "muzvyquq",
     "timestamp": "2026-10-08T18:44:45.554Z",
     "fileKey": "Y81MqGSSBogjp7xbMjdEIU",

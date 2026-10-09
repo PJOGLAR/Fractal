@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-08T18:44:42.107Z",
+  "takenAt": "2026-10-09T18:15:08.048Z",
   "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
   "fileName": "Assets",
   "components": [
@@ -2259,156 +2259,6 @@
           "layerName": "Vector",
           "property": "size.height",
           "value": 19
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "601:295",
-      "name": "Sound-off",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Vector"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Sound-off",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Sound-off",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Sound-off",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Sound-off",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Sound-off",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Sound-off",
-          "property": "__layerName__",
-          "value": "Sound-off"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 19
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 19
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#171717"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
-        }
-      ],
-      "instances": []
-    },
-    {
-      "id": "601:294",
-      "name": "Sound-on",
-      "type": "COMPONENT",
-      "bindings": [
-        {
-          "property": "fills",
-          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
-          "layerName": "Vector"
-        }
-      ],
-      "properties": [
-        {
-          "layerName": "Sound-on",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Sound-on",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Sound-on",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Sound-on",
-          "property": "size.width",
-          "value": 24
-        },
-        {
-          "layerName": "Sound-on",
-          "property": "size.height",
-          "value": 24
-        },
-        {
-          "layerName": "Sound-on",
-          "property": "__layerName__",
-          "value": "Sound-on"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 18
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 17
         },
         {
           "layerName": "Vector",
@@ -7955,6 +7805,156 @@
           "layerName": "Vector",
           "property": "size.height",
           "value": 24
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "601:295",
+      "name": "Sound-off",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Sound-off",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Sound-off",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Sound-off",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Sound-off",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Sound-off",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Sound-off",
+          "property": "__layerName__",
+          "value": "Sound-off"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 19
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 19
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#171717"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "id": "601:294",
+      "name": "Sound-on",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:7a9a4cfd8a9372d912d44edbf46d6cc7d2005860/3958:131",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Sound-on",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Sound-on",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Sound-on",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Sound-on",
+          "property": "size.width",
+          "value": 24
+        },
+        {
+          "layerName": "Sound-on",
+          "property": "size.height",
+          "value": 24
+        },
+        {
+          "layerName": "Sound-on",
+          "property": "__layerName__",
+          "value": "Sound-on"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 18
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 17
         },
         {
           "layerName": "Vector",
@@ -204512,6 +204512,75 @@
       "instances": []
     },
     {
+      "id": "5675:402",
+      "name": "Market-iso",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Market-iso",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Market-iso",
+          "property": "clipsContent",
+          "value": true
+        },
+        {
+          "layerName": "Market-iso",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Market-iso",
+          "property": "size.width",
+          "value": 32
+        },
+        {
+          "layerName": "Market-iso",
+          "property": "size.height",
+          "value": 32
+        },
+        {
+          "layerName": "Market-iso",
+          "property": "__layerName__",
+          "value": "Market-iso"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 23
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 21
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#303033"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
       "id": "423:774",
       "name": "Claro-Pay",
       "type": "COMPONENT",
@@ -213176,8 +213245,8 @@
     }
   ],
   "stats": {
-    "totalComponents": 670,
+    "totalComponents": 671,
     "totalBindings": 5098,
-    "totalProperties": 36227
+    "totalProperties": 36239
   }
 }
