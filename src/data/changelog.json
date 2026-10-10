@@ -1,5 +1,71 @@
 [
   {
+    "id": "mv2nmab5",
+    "timestamp": "2026-10-10T17:14:25.841Z",
+    "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
+    "fileName": "Custom components",
+    "fileLabel": "custom",
+    "summary": "1 nuevo",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Card-amount",
+        "nodeId": "",
+        "details": "Card-amount"
+      }
+    ],
+    "detailed": {},
+    "stats": {
+      "componentsAdded": 21,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
+    "id": "mv2nm19r",
+    "timestamp": "2026-10-10T17:14:14.127Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 eliminado",
+    "changes": [
+      {
+        "type": "component_removed",
+        "component": "Card-amount",
+        "nodeId": "",
+        "details": "Card-amount"
+      }
+    ],
+    "detailed": {},
+    "stats": {
+      "componentsAdded": 0,
+      "componentsRemoved": 21,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 0
+    }
+  },
+  {
     "id": "mv1aci0p",
     "timestamp": "2026-10-09T18:15:08.089Z",
     "fileKey": "exvAaHCcGyjJUNWRR5yaGK",
