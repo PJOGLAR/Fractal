@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-10T17:14:14.015Z",
+  "takenAt": "2026-10-13T19:09:19.790Z",
   "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
   "fileName": "Components",
   "components": [
@@ -106627,6 +106627,10 @@
           "componentId": "3330:1422"
         },
         {
+          "name": ".Resizer",
+          "componentId": "23538:1637"
+        },
+        {
           "name": "Skeleton-component",
           "componentId": "3524:948"
         },
@@ -106659,32 +106663,8 @@
           "componentId": "3330:1422"
         },
         {
-          "name": "---> Headline",
-          "componentId": "15717:362"
-        },
-        {
-          "name": "---> Content",
-          "componentId": "15717:355"
-        },
-        {
-          "name": "---> Button",
-          "componentId": "4187:2315"
-        },
-        {
-          "name": "⛔ Placeholder-icon_slot",
-          "componentId": "5291:13944"
-        },
-        {
-          "name": "⛔ Placeholder-icon_slot",
-          "componentId": "5291:13944"
-        },
-        {
-          "name": "---> Illustration",
-          "componentId": "5297:1029"
-        },
-        {
-          "name": "⛔ Placeholder-illustration_slot",
-          "componentId": "3330:1422"
+          "name": ".Resizer",
+          "componentId": "23538:1637"
         },
         {
           "name": "---> Headline",
@@ -106713,6 +106693,42 @@
         {
           "name": "⛔ Placeholder-illustration_slot",
           "componentId": "3330:1422"
+        },
+        {
+          "name": ".Resizer",
+          "componentId": "23538:1637"
+        },
+        {
+          "name": "---> Headline",
+          "componentId": "15717:362"
+        },
+        {
+          "name": "---> Content",
+          "componentId": "15717:355"
+        },
+        {
+          "name": "---> Button",
+          "componentId": "4187:2315"
+        },
+        {
+          "name": "⛔ Placeholder-icon_slot",
+          "componentId": "5291:13944"
+        },
+        {
+          "name": "⛔ Placeholder-icon_slot",
+          "componentId": "5291:13944"
+        },
+        {
+          "name": "---> Illustration",
+          "componentId": "5297:1029"
+        },
+        {
+          "name": "⛔ Placeholder-illustration_slot",
+          "componentId": "3330:1422"
+        },
+        {
+          "name": ".Resizer",
+          "componentId": "23538:1637"
         },
         {
           "name": ".⛔️ Focus-ring",
@@ -113771,7 +113787,7 @@
         {
           "layerName": "Illustration wrapper",
           "property": "layoutMode",
-          "value": "HORIZONTAL"
+          "value": "VERTICAL"
         },
         {
           "layerName": "Illustration wrapper",
@@ -113790,7 +113806,7 @@
         },
         {
           "layerName": "Illustration wrapper",
-          "property": "counterAxisSizingMode",
+          "property": "primaryAxisSizingMode",
           "value": "FIXED"
         },
         {
@@ -113992,6 +114008,121 @@
           "layerName": "Vector",
           "property": "__layerName__",
           "value": "Vector"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "counterAxisAlignItems",
+          "value": "MAX"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "size.width",
+          "value": 120
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "size.height",
+          "value": 0
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "__layerName__",
+          "value": ".Resizer"
+        },
+        {
+          "layerName": "left",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "left",
+          "property": "clipsContent",
+          "value": true
+        },
+        {
+          "layerName": "left",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "left",
+          "property": "size.width",
+          "value": 60
+        },
+        {
+          "layerName": "left",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "left",
+          "property": "__layerName__",
+          "value": "left"
+        },
+        {
+          "layerName": "right",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "right",
+          "property": "clipsContent",
+          "value": true
+        },
+        {
+          "layerName": "right",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "right",
+          "property": "size.width",
+          "value": 60
+        },
+        {
+          "layerName": "right",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "right",
+          "property": "__layerName__",
+          "value": "right"
         }
       ],
       "instances": [
@@ -114022,6 +114153,10 @@
         {
           "name": "⛔ Placeholder-illustration_slot",
           "componentId": "3330:1422"
+        },
+        {
+          "name": ".Resizer",
+          "componentId": "23538:1637"
         }
       ]
     },
@@ -114932,7 +115067,7 @@
         {
           "layerName": "Illustration wrapper",
           "property": "layoutMode",
-          "value": "HORIZONTAL"
+          "value": "VERTICAL"
         },
         {
           "layerName": "Illustration wrapper",
@@ -114951,7 +115086,7 @@
         },
         {
           "layerName": "Illustration wrapper",
-          "property": "counterAxisSizingMode",
+          "property": "primaryAxisSizingMode",
           "value": "FIXED"
         },
         {
@@ -115155,6 +115290,121 @@
           "value": "Vector"
         },
         {
+          "layerName": ".Resizer",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "counterAxisAlignItems",
+          "value": "MAX"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "size.width",
+          "value": 120
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "size.height",
+          "value": 0
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "__layerName__",
+          "value": ".Resizer"
+        },
+        {
+          "layerName": "left",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "left",
+          "property": "clipsContent",
+          "value": true
+        },
+        {
+          "layerName": "left",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "left",
+          "property": "size.width",
+          "value": 60
+        },
+        {
+          "layerName": "left",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "left",
+          "property": "__layerName__",
+          "value": "left"
+        },
+        {
+          "layerName": "right",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "right",
+          "property": "clipsContent",
+          "value": true
+        },
+        {
+          "layerName": "right",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "right",
+          "property": "size.width",
+          "value": 60
+        },
+        {
+          "layerName": "right",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "right",
+          "property": "__layerName__",
+          "value": "right"
+        },
+        {
           "layerName": "Hover layer",
           "property": "strokeWeight",
           "value": 1
@@ -115218,6 +115468,10 @@
         {
           "name": "⛔ Placeholder-illustration_slot",
           "componentId": "3330:1422"
+        },
+        {
+          "name": ".Resizer",
+          "componentId": "23538:1637"
         }
       ]
     },
@@ -116022,7 +116276,7 @@
         {
           "layerName": "Illustration wrapper",
           "property": "layoutMode",
-          "value": "HORIZONTAL"
+          "value": "VERTICAL"
         },
         {
           "layerName": "Illustration wrapper",
@@ -116041,7 +116295,7 @@
         },
         {
           "layerName": "Illustration wrapper",
-          "property": "counterAxisSizingMode",
+          "property": "primaryAxisSizingMode",
           "value": "FIXED"
         },
         {
@@ -116245,6 +116499,121 @@
           "value": "Vector"
         },
         {
+          "layerName": ".Resizer",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "counterAxisAlignItems",
+          "value": "MAX"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "size.width",
+          "value": 120
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "size.height",
+          "value": 0
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "__layerName__",
+          "value": ".Resizer"
+        },
+        {
+          "layerName": "left",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "left",
+          "property": "clipsContent",
+          "value": true
+        },
+        {
+          "layerName": "left",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "left",
+          "property": "size.width",
+          "value": 60
+        },
+        {
+          "layerName": "left",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "left",
+          "property": "__layerName__",
+          "value": "left"
+        },
+        {
+          "layerName": "right",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "right",
+          "property": "clipsContent",
+          "value": true
+        },
+        {
+          "layerName": "right",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "right",
+          "property": "size.width",
+          "value": 60
+        },
+        {
+          "layerName": "right",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "right",
+          "property": "__layerName__",
+          "value": "right"
+        },
+        {
           "layerName": "Pressed layer",
           "property": "strokeWeight",
           "value": 1
@@ -116308,6 +116677,10 @@
         {
           "name": "⛔ Placeholder-illustration_slot",
           "componentId": "3330:1422"
+        },
+        {
+          "name": ".Resizer",
+          "componentId": "23538:1637"
         }
       ]
     },
@@ -117112,7 +117485,7 @@
         {
           "layerName": "Illustration wrapper",
           "property": "layoutMode",
-          "value": "HORIZONTAL"
+          "value": "VERTICAL"
         },
         {
           "layerName": "Illustration wrapper",
@@ -117131,7 +117504,7 @@
         },
         {
           "layerName": "Illustration wrapper",
-          "property": "counterAxisSizingMode",
+          "property": "primaryAxisSizingMode",
           "value": "FIXED"
         },
         {
@@ -117335,6 +117708,121 @@
           "value": "Vector"
         },
         {
+          "layerName": ".Resizer",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "counterAxisAlignItems",
+          "value": "MAX"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "size.width",
+          "value": 120
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "size.height",
+          "value": 0
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "__layerName__",
+          "value": ".Resizer"
+        },
+        {
+          "layerName": "left",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "left",
+          "property": "clipsContent",
+          "value": true
+        },
+        {
+          "layerName": "left",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "left",
+          "property": "size.width",
+          "value": 60
+        },
+        {
+          "layerName": "left",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "left",
+          "property": "__layerName__",
+          "value": "left"
+        },
+        {
+          "layerName": "right",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "right",
+          "property": "clipsContent",
+          "value": true
+        },
+        {
+          "layerName": "right",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "right",
+          "property": "size.width",
+          "value": 60
+        },
+        {
+          "layerName": "right",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "right",
+          "property": "__layerName__",
+          "value": "right"
+        },
+        {
           "layerName": ".⛔️ Focus-ring",
           "property": "strokeWeight",
           "value": 2
@@ -117398,6 +117886,10 @@
         {
           "name": "⛔ Placeholder-illustration_slot",
           "componentId": "3330:1422"
+        },
+        {
+          "name": ".Resizer",
+          "componentId": "23538:1637"
         },
         {
           "name": ".⛔️ Focus-ring",
@@ -123246,6 +123738,130 @@
           "componentId": "4561:3672"
         }
       ]
+    },
+    {
+      "id": "23538:1637",
+      "name": ".Resizer",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": ".Resizer",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "layoutMode",
+          "value": "HORIZONTAL"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "counterAxisAlignItems",
+          "value": "MAX"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "size.width",
+          "value": 120
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "size.height",
+          "value": 0
+        },
+        {
+          "layerName": ".Resizer",
+          "property": "__layerName__",
+          "value": ".Resizer"
+        },
+        {
+          "layerName": "left",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "left",
+          "property": "clipsContent",
+          "value": true
+        },
+        {
+          "layerName": "left",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "left",
+          "property": "size.width",
+          "value": 60
+        },
+        {
+          "layerName": "left",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "left",
+          "property": "__layerName__",
+          "value": "left"
+        },
+        {
+          "layerName": "right",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "right",
+          "property": "clipsContent",
+          "value": true
+        },
+        {
+          "layerName": "right",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "right",
+          "property": "size.width",
+          "value": 60
+        },
+        {
+          "layerName": "right",
+          "property": "size.height",
+          "value": 1
+        },
+        {
+          "layerName": "right",
+          "property": "__layerName__",
+          "value": "right"
+        }
+      ],
+      "instances": []
     },
     {
       "id": "15254:3137",
@@ -823870,8 +824486,8 @@
     }
   ],
   "stats": {
-    "totalComponents": 1704,
+    "totalComponents": 1705,
     "totalBindings": 30454,
-    "totalProperties": 123035
+    "totalProperties": 123150
   }
 }

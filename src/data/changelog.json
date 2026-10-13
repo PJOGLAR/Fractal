@@ -1,5 +1,117 @@
 [
   {
+    "id": "mv721lso",
+    "timestamp": "2026-10-13T19:09:19.896Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 nuevo · 1 iterado",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": ".Resizer",
+        "nodeId": "",
+        "details": ".Resizer"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Banner-lg",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Banner-lg": {
+        "name": "Banner-lg",
+        "isVariant": true,
+        "variants": {
+          "Content=illustration, State=default": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "layoutMode",
+                "layer": "Illustration wrapper",
+                "from": "HORIZONTAL",
+                "to": "VERTICAL"
+              }
+            ]
+          },
+          "Content=illustration, State=hover": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "layoutMode",
+                "layer": "Illustration wrapper",
+                "from": "HORIZONTAL",
+                "to": "VERTICAL"
+              }
+            ]
+          },
+          "Content=illustration, State=pressed": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "layoutMode",
+                "layer": "Illustration wrapper",
+                "from": "HORIZONTAL",
+                "to": "VERTICAL"
+              }
+            ]
+          },
+          "Content=illustration, State=focus": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "layoutMode",
+                "layer": "Illustration wrapper",
+                "from": "HORIZONTAL",
+                "to": "VERTICAL"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 0,
+          "tokensRemoved": 0,
+          "propertiesChanged": 4
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 1,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 0,
+      "bindingsRemoved": 0,
+      "bindingsChanged": 0,
+      "propertiesChanged": 4
+    }
+  },
+  {
     "id": "mv2nmab5",
     "timestamp": "2026-10-10T17:14:25.841Z",
     "fileKey": "Y81MqGSSBogjp7xbMjdEIU",
