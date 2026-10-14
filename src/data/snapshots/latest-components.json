@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-13T19:09:19.790Z",
+  "takenAt": "2026-10-14T16:58:09.228Z",
   "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
   "fileName": "Components",
   "components": [
@@ -106627,7 +106627,7 @@
           "componentId": "3330:1422"
         },
         {
-          "name": ".Resizer",
+          "name": ".⛔ Banner-lg_resizer",
           "componentId": "23538:1637"
         },
         {
@@ -106663,7 +106663,7 @@
           "componentId": "3330:1422"
         },
         {
-          "name": ".Resizer",
+          "name": ".⛔ Banner-lg_resizer",
           "componentId": "23538:1637"
         },
         {
@@ -106695,7 +106695,7 @@
           "componentId": "3330:1422"
         },
         {
-          "name": ".Resizer",
+          "name": ".⛔ Banner-lg_resizer",
           "componentId": "23538:1637"
         },
         {
@@ -106727,7 +106727,7 @@
           "componentId": "3330:1422"
         },
         {
-          "name": ".Resizer",
+          "name": ".⛔ Banner-lg_resizer",
           "componentId": "23538:1637"
         },
         {
@@ -112998,53 +112998,28 @@
       "parentId": "15717:260",
       "bindings": [
         {
-          "property": "fills",
-          "variableId": "VariableID:0c851364ff25cc7232582c9b2019159908d3dd88/3958:122",
-          "layerName": "Content=illustration, State=default"
-        },
-        {
-          "property": "itemSpacing",
-          "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
-          "layerName": "Container"
-        },
-        {
-          "property": "paddingLeft",
-          "variableId": "VariableID:79e38a7be126d7917540e20db1001da48cd84757/1227:7",
-          "layerName": "Container"
-        },
-        {
-          "property": "paddingTop",
-          "variableId": "VariableID:79e38a7be126d7917540e20db1001da48cd84757/1227:7",
-          "layerName": "Container"
-        },
-        {
-          "property": "paddingBottom",
-          "variableId": "VariableID:79e38a7be126d7917540e20db1001da48cd84757/1227:7",
-          "layerName": "Container"
-        },
-        {
           "property": "itemSpacing",
           "variableId": "VariableID:30203fb72ba16ae316a56000ca49e6dd833f1613/1227:13",
           "layerName": "Content wrapper"
         },
         {
           "property": "paddingLeft",
-          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "variableId": "VariableID:79e38a7be126d7917540e20db1001da48cd84757/1227:7",
           "layerName": "Content wrapper"
         },
         {
           "property": "paddingTop",
-          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "variableId": "VariableID:79e38a7be126d7917540e20db1001da48cd84757/1227:7",
           "layerName": "Content wrapper"
         },
         {
           "property": "paddingRight",
-          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
           "layerName": "Content wrapper"
         },
         {
           "property": "paddingBottom",
-          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "variableId": "VariableID:79e38a7be126d7917540e20db1001da48cd84757/1227:7",
           "layerName": "Content wrapper"
         },
         {
@@ -113053,9 +113028,99 @@
           "layerName": "Content"
         },
         {
+          "property": "fills",
+          "variableId": "VariableID:3d161e56000c4ff4a884deaf3addcc2683378322/3958:132",
+          "layerName": "HEADLINE"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:8c72a426cfcc8ff2d14036a520ef122fe477c26f/1557:16",
+          "layerName": "HEADLINE"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:33b53723809859da57b8b0b2651b51ccb8896045/1545:151",
+          "layerName": "HEADLINE"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:e72380a37a224f479101e075dedd1c24fc5bbd78/1545:150",
+          "layerName": "HEADLINE"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:85d48e41d892efd847ee7bb4fb3d58a53ce2d076/1545:148",
+          "layerName": "HEADLINE"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:abeade7ad0245011a37abd717746ff8ceb5414d3/1545:149",
+          "layerName": "HEADLINE"
+        },
+        {
           "property": "itemSpacing",
           "variableId": "VariableID:872042f4da504a275fe2a3b8a3126424998aadc3/1227:11",
           "layerName": "---> Content"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:3d161e56000c4ff4a884deaf3addcc2683378322/3958:132",
+          "layerName": "Title"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:c6ffb8f484059504e6d24fbc6a3d5f1e256891ab/1561:86",
+          "layerName": "Title"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:f2713b682197ba91410fadf607ff2d38c2e0a791/1545:81",
+          "layerName": "Title"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:a05b042d77b74b35814924e5c625e2c77491c06e/1545:82",
+          "layerName": "Title"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:96167c2e529e0588753121f9cf947aac1eec1df5/1545:84",
+          "layerName": "Title"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:6ac1aadcfd08e27a2ce536f1fcfdcc3953701c24/1545:83",
+          "layerName": "Title"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:3d161e56000c4ff4a884deaf3addcc2683378322/3958:132",
+          "layerName": "Description"
+        },
+        {
+          "property": "lineHeight",
+          "variableId": "VariableID:0021f66bc179b11d8bfd06704f0bb392ca98ae6a/1667:11",
+          "layerName": "Description"
+        },
+        {
+          "property": "letterSpacing",
+          "variableId": "VariableID:686d3468bc2917d00596af1eca6129101a08bd88/1545:19",
+          "layerName": "Description"
+        },
+        {
+          "property": "fontWeight",
+          "variableId": "VariableID:47f953d9a033ca4e21b241a5b082da93448d943a/1545:18",
+          "layerName": "Description"
+        },
+        {
+          "property": "fontFamily",
+          "variableId": "VariableID:6bd2b39acdf2f5423ab682fc42d708e30082eb49/1545:16",
+          "layerName": "Description"
+        },
+        {
+          "property": "fontSize",
+          "variableId": "VariableID:5b17c76bb30752192aebf28d10807546bbebef11/1545:17",
+          "layerName": "Description"
         },
         {
           "property": "itemSpacing",
@@ -113090,6 +113155,11 @@
         {
           "property": "fills",
           "variableId": "VariableID:aeac0764f3f9cfc6f77a2fa557d9c5ba4575a9f9/3958:108",
+          "layerName": "Vector"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:aeac0764f3f9cfc6f77a2fa557d9c5ba4575a9f9/3958:108",
           "layerName": "Label"
         },
         {
@@ -113118,6 +113188,11 @@
           "layerName": "Label"
         },
         {
+          "property": "fills",
+          "variableId": "VariableID:aeac0764f3f9cfc6f77a2fa557d9c5ba4575a9f9/3958:108",
+          "layerName": "Vector"
+        },
+        {
           "property": "paddingLeft",
           "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
           "layerName": "Illustration wrapper"
@@ -113141,6 +113216,11 @@
           "property": "fills",
           "variableId": "VariableID:04619bb3de5f15e4a758183cbe21bda93da14ac4/3958:130",
           "layerName": "Vector"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:0dcae37e5c4fe8df43d247a089cf82212b367439/3319:344",
+          "layerName": "Background"
         }
       ],
       "properties": [
@@ -113187,12 +113267,7 @@
         {
           "layerName": "Content=illustration, State=default",
           "property": "size.height",
-          "value": 186
-        },
-        {
-          "layerName": "Content=illustration, State=default",
-          "property": "fill[0].color",
-          "value": "#5A50F9"
+          "value": 240
         },
         {
           "layerName": "Content=illustration, State=default",
@@ -113200,79 +113275,29 @@
           "value": "Content=illustration, State=default"
         },
         {
-          "layerName": "Container",
+          "layerName": "Content wrapper",
+          "property": "itemSpacing",
+          "value": 8
+        },
+        {
+          "layerName": "Content wrapper",
           "property": "paddingLeft",
           "value": 16
         },
         {
-          "layerName": "Container",
+          "layerName": "Content wrapper",
           "property": "paddingRight",
-          "value": 140
+          "value": 8
         },
         {
-          "layerName": "Container",
+          "layerName": "Content wrapper",
           "property": "paddingTop",
           "value": 16
         },
         {
-          "layerName": "Container",
+          "layerName": "Content wrapper",
           "property": "paddingBottom",
           "value": 16
-        },
-        {
-          "layerName": "Container",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Container",
-          "property": "layoutMode",
-          "value": "HORIZONTAL"
-        },
-        {
-          "layerName": "Container",
-          "property": "counterAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "Container",
-          "property": "layoutWrap",
-          "value": "NO_WRAP"
-        },
-        {
-          "layerName": "Container",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "Container",
-          "property": "clipsContent",
-          "value": false
-        },
-        {
-          "layerName": "Container",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Container",
-          "property": "size.width",
-          "value": 328
-        },
-        {
-          "layerName": "Container",
-          "property": "size.height",
-          "value": 186
-        },
-        {
-          "layerName": "Container",
-          "property": "__layerName__",
-          "value": "Container"
-        },
-        {
-          "layerName": "Content wrapper",
-          "property": "itemSpacing",
-          "value": 8
         },
         {
           "layerName": "Content wrapper",
@@ -113312,12 +113337,12 @@
         {
           "layerName": "Content wrapper",
           "property": "size.width",
-          "value": 172
+          "value": 192
         },
         {
           "layerName": "Content wrapper",
           "property": "size.height",
-          "value": 154
+          "value": 186
         },
         {
           "layerName": "Content wrapper",
@@ -113362,7 +113387,7 @@
         {
           "layerName": "Content",
           "property": "size.width",
-          "value": 172
+          "value": 168
         },
         {
           "layerName": "Content",
@@ -113412,7 +113437,7 @@
         {
           "layerName": "---> Headline",
           "property": "size.width",
-          "value": 172
+          "value": 168
         },
         {
           "layerName": "---> Headline",
@@ -113423,6 +113448,41 @@
           "layerName": "---> Headline",
           "property": "__layerName__",
           "value": "---> Headline"
+        },
+        {
+          "layerName": "HEADLINE",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "HEADLINE",
+          "property": "characters",
+          "value": "HEADLINE"
+        },
+        {
+          "layerName": "HEADLINE",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "HEADLINE",
+          "property": "size.width",
+          "value": 168
+        },
+        {
+          "layerName": "HEADLINE",
+          "property": "size.height",
+          "value": 14
+        },
+        {
+          "layerName": "HEADLINE",
+          "property": "fill[0].color",
+          "value": "#FCFCFC"
+        },
+        {
+          "layerName": "HEADLINE",
+          "property": "__layerName__",
+          "value": "HEADLINE"
         },
         {
           "layerName": "---> Content",
@@ -113467,7 +113527,7 @@
         {
           "layerName": "---> Content",
           "property": "size.width",
-          "value": 172
+          "value": 168
         },
         {
           "layerName": "---> Content",
@@ -113478,6 +113538,76 @@
           "layerName": "---> Content",
           "property": "__layerName__",
           "value": "---> Content"
+        },
+        {
+          "layerName": "Title",
+          "property": "strokeWeight",
+          "value": 0.8108958601951599
+        },
+        {
+          "layerName": "Title",
+          "property": "characters",
+          "value": "Title (max 2 lines)"
+        },
+        {
+          "layerName": "Title",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Title",
+          "property": "size.width",
+          "value": 168
+        },
+        {
+          "layerName": "Title",
+          "property": "size.height",
+          "value": 56
+        },
+        {
+          "layerName": "Title",
+          "property": "fill[0].color",
+          "value": "#FCFCFC"
+        },
+        {
+          "layerName": "Title",
+          "property": "__layerName__",
+          "value": "Title"
+        },
+        {
+          "layerName": "Description",
+          "property": "strokeWeight",
+          "value": 0.8108958601951599
+        },
+        {
+          "layerName": "Description",
+          "property": "characters",
+          "value": "Description (max 2 lines)"
+        },
+        {
+          "layerName": "Description",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Description",
+          "property": "size.width",
+          "value": 168
+        },
+        {
+          "layerName": "Description",
+          "property": "size.height",
+          "value": 48
+        },
+        {
+          "layerName": "Description",
+          "property": "fill[0].color",
+          "value": "#FCFCFC"
+        },
+        {
+          "layerName": "Description",
+          "property": "__layerName__",
+          "value": "Description"
         },
         {
           "layerName": "---> Button",
@@ -113645,6 +113775,36 @@
           "value": "⛔ Placeholder-icon_slot"
         },
         {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 12
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 12
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#5A50F9"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
           "layerName": "Label",
           "property": "strokeWeight",
           "value": 1
@@ -113770,6 +113930,36 @@
           "value": "⛔ Placeholder-icon_slot"
         },
         {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 12
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 12
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#5A50F9"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
           "layerName": "Illustration wrapper",
           "property": "paddingLeft",
           "value": 8
@@ -113827,7 +114017,7 @@
         {
           "layerName": "Illustration wrapper",
           "property": "size.height",
-          "value": 224
+          "value": 240
         },
         {
           "layerName": "Illustration wrapper",
@@ -114010,59 +114200,64 @@
           "value": "Vector"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "layoutMode",
           "value": "HORIZONTAL"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "primaryAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "counterAxisAlignItems",
           "value": "MAX"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "layoutWrap",
           "value": "NO_WRAP"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "counterAxisSizingMode",
           "value": "FIXED"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
+          "property": "maxWidth",
+          "value": 288
+        },
+        {
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "size.width",
           "value": 120
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "size.height",
           "value": 0
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "__layerName__",
-          "value": ".Resizer"
+          "value": ".⛔ Banner-lg_resizer"
         },
         {
           "layerName": "left",
@@ -114123,6 +114318,36 @@
           "layerName": "right",
           "property": "__layerName__",
           "value": "right"
+        },
+        {
+          "layerName": "Background",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Background",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Background",
+          "property": "size.width",
+          "value": 328
+        },
+        {
+          "layerName": "Background",
+          "property": "size.height",
+          "value": 186
+        },
+        {
+          "layerName": "Background",
+          "property": "fill[0].color",
+          "value": "#5A50F9"
+        },
+        {
+          "layerName": "Background",
+          "property": "__layerName__",
+          "value": "Background"
         }
       ],
       "instances": [
@@ -114155,7 +114380,7 @@
           "componentId": "3330:1422"
         },
         {
-          "name": ".Resizer",
+          "name": ".⛔ Banner-lg_resizer",
           "componentId": "23538:1637"
         }
       ]
@@ -115107,7 +115332,7 @@
         {
           "layerName": "Illustration wrapper",
           "property": "size.height",
-          "value": 196
+          "value": 240
         },
         {
           "layerName": "Illustration wrapper",
@@ -115290,59 +115515,64 @@
           "value": "Vector"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "layoutMode",
           "value": "HORIZONTAL"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "primaryAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "counterAxisAlignItems",
           "value": "MAX"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "layoutWrap",
           "value": "NO_WRAP"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "counterAxisSizingMode",
           "value": "FIXED"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
+          "property": "maxWidth",
+          "value": 288
+        },
+        {
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "size.width",
           "value": 120
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "size.height",
           "value": 0
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "__layerName__",
-          "value": ".Resizer"
+          "value": ".⛔ Banner-lg_resizer"
         },
         {
           "layerName": "left",
@@ -115470,7 +115700,7 @@
           "componentId": "3330:1422"
         },
         {
-          "name": ".Resizer",
+          "name": ".⛔ Banner-lg_resizer",
           "componentId": "23538:1637"
         }
       ]
@@ -116316,7 +116546,7 @@
         {
           "layerName": "Illustration wrapper",
           "property": "size.height",
-          "value": 196
+          "value": 240
         },
         {
           "layerName": "Illustration wrapper",
@@ -116499,59 +116729,64 @@
           "value": "Vector"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "layoutMode",
           "value": "HORIZONTAL"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "primaryAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "counterAxisAlignItems",
           "value": "MAX"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "layoutWrap",
           "value": "NO_WRAP"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "counterAxisSizingMode",
           "value": "FIXED"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
+          "property": "maxWidth",
+          "value": 288
+        },
+        {
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "size.width",
           "value": 120
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "size.height",
           "value": 0
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "__layerName__",
-          "value": ".Resizer"
+          "value": ".⛔ Banner-lg_resizer"
         },
         {
           "layerName": "left",
@@ -116679,7 +116914,7 @@
           "componentId": "3330:1422"
         },
         {
-          "name": ".Resizer",
+          "name": ".⛔ Banner-lg_resizer",
           "componentId": "23538:1637"
         }
       ]
@@ -117525,7 +117760,7 @@
         {
           "layerName": "Illustration wrapper",
           "property": "size.height",
-          "value": 196
+          "value": 240
         },
         {
           "layerName": "Illustration wrapper",
@@ -117708,59 +117943,64 @@
           "value": "Vector"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "layoutMode",
           "value": "HORIZONTAL"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "primaryAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "counterAxisAlignItems",
           "value": "MAX"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "layoutWrap",
           "value": "NO_WRAP"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "counterAxisSizingMode",
           "value": "FIXED"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
+          "property": "maxWidth",
+          "value": 288
+        },
+        {
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "size.width",
           "value": 120
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "size.height",
           "value": 0
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "__layerName__",
-          "value": ".Resizer"
+          "value": ".⛔ Banner-lg_resizer"
         },
         {
           "layerName": "left",
@@ -117888,7 +118128,7 @@
           "componentId": "3330:1422"
         },
         {
-          "name": ".Resizer",
+          "name": ".⛔ Banner-lg_resizer",
           "componentId": "23538:1637"
         },
         {
@@ -123741,64 +123981,69 @@
     },
     {
       "id": "23538:1637",
-      "name": ".Resizer",
+      "name": ".⛔ Banner-lg_resizer",
       "type": "COMPONENT",
       "bindings": [],
       "properties": [
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "layoutMode",
           "value": "HORIZONTAL"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "primaryAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "counterAxisAlignItems",
           "value": "MAX"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "layoutWrap",
           "value": "NO_WRAP"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "counterAxisSizingMode",
           "value": "FIXED"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
+          "property": "maxWidth",
+          "value": 288
+        },
+        {
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "size.width",
           "value": 120
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "size.height",
           "value": 0
         },
         {
-          "layerName": ".Resizer",
+          "layerName": ".⛔ Banner-lg_resizer",
           "property": "__layerName__",
-          "value": ".Resizer"
+          "value": ".⛔ Banner-lg_resizer"
         },
         {
           "layerName": "left",
@@ -824487,7 +824732,7 @@
   ],
   "stats": {
     "totalComponents": 1705,
-    "totalBindings": 30454,
-    "totalProperties": 123150
+    "totalBindings": 30470,
+    "totalProperties": 123183
   }
 }
