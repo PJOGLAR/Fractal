@@ -1,5 +1,648 @@
 [
   {
+    "id": "mv9rs190",
+    "timestamp": "2026-10-15T16:45:15.732Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 iterado",
+    "changes": [
+      {
+        "type": "binding_changed",
+        "component": "Banner-lg",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Banner-lg": {
+        "name": "Banner-lg",
+        "isVariant": true,
+        "variants": {
+          "Content=illustration, State=loading": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Content=illustration, State=loading",
+                "from": "158",
+                "to": "240"
+              },
+              {
+                "property": "size.height",
+                "layer": "Skeleton-component",
+                "from": "158",
+                "to": "240"
+              }
+            ]
+          },
+          "Content=illustration, State=hover": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "Content wrapper",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Content wrapper",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Content wrapper",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-200"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Content wrapper",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                }
+              ],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "HEADLINE",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "HEADLINE",
+                  "token": "caption/sm/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "HEADLINE",
+                  "token": "caption/sm/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "HEADLINE",
+                  "token": "caption/sm/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "HEADLINE",
+                  "token": "caption/sm/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "HEADLINE",
+                  "token": "caption/sm/semibold/font-size"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Title",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Title",
+                  "token": "heading/sm/bold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Title",
+                  "token": "heading/sm/bold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Title",
+                  "token": "heading/sm/bold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Title",
+                  "token": "heading/sm/bold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Title",
+                  "token": "heading/sm/bold/font-size"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Description",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "token": "body/md/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "token": "body/md/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "token": "body/md/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "token": "body/md/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "token": "body/md/regular/font-size"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Background",
+                  "token": "interactive/background/brand/default/medium"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Content=illustration, State=hover",
+                  "token": "static/background/brand/primary/medium"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Container",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Container",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Container",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Container",
+                  "token": "padding/padding-400"
+                }
+              ]
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Content=illustration, State=hover",
+                "from": "186",
+                "to": "240"
+              },
+              {
+                "property": "size.width",
+                "layer": "Content wrapper",
+                "from": "172",
+                "to": "192"
+              },
+              {
+                "property": "size.height",
+                "layer": "Content wrapper",
+                "from": "154",
+                "to": "186"
+              },
+              {
+                "property": "size.width",
+                "layer": "Content",
+                "from": "172",
+                "to": "168"
+              },
+              {
+                "property": "size.width",
+                "layer": "---> Headline",
+                "from": "172",
+                "to": "168"
+              },
+              {
+                "property": "size.width",
+                "layer": "---> Content",
+                "from": "172",
+                "to": "168"
+              }
+            ]
+          },
+          "Content=illustration, State=pressed": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "Content wrapper",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Content wrapper",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Content wrapper",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-200"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Content wrapper",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                }
+              ],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "HEADLINE",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "HEADLINE",
+                  "token": "caption/sm/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "HEADLINE",
+                  "token": "caption/sm/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "HEADLINE",
+                  "token": "caption/sm/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "HEADLINE",
+                  "token": "caption/sm/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "HEADLINE",
+                  "token": "caption/sm/semibold/font-size"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Title",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Title",
+                  "token": "heading/sm/bold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Title",
+                  "token": "heading/sm/bold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Title",
+                  "token": "heading/sm/bold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Title",
+                  "token": "heading/sm/bold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Title",
+                  "token": "heading/sm/bold/font-size"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Description",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "token": "body/md/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "token": "body/md/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "token": "body/md/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "token": "body/md/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "token": "body/md/regular/font-size"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Background",
+                  "token": "interactive/background/brand/default/medium"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Content=illustration, State=pressed",
+                  "token": "static/background/brand/primary/medium"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Container",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Container",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Container",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Container",
+                  "token": "padding/padding-400"
+                }
+              ]
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Content=illustration, State=pressed",
+                "from": "186",
+                "to": "240"
+              },
+              {
+                "property": "size.width",
+                "layer": "Content wrapper",
+                "from": "172",
+                "to": "192"
+              },
+              {
+                "property": "size.height",
+                "layer": "Content wrapper",
+                "from": "154",
+                "to": "186"
+              },
+              {
+                "property": "size.width",
+                "layer": "Content",
+                "from": "172",
+                "to": "168"
+              },
+              {
+                "property": "size.width",
+                "layer": "---> Headline",
+                "from": "172",
+                "to": "168"
+              },
+              {
+                "property": "size.width",
+                "layer": "---> Content",
+                "from": "172",
+                "to": "168"
+              }
+            ]
+          },
+          "Content=illustration, State=focus": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "Content wrapper",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Content wrapper",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Content wrapper",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-200"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Content wrapper",
+                  "from": "padding/padding-0",
+                  "to": "padding/padding-400"
+                }
+              ],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "HEADLINE",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "HEADLINE",
+                  "token": "caption/sm/semibold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "HEADLINE",
+                  "token": "caption/sm/semibold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "HEADLINE",
+                  "token": "caption/sm/semibold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "HEADLINE",
+                  "token": "caption/sm/semibold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "HEADLINE",
+                  "token": "caption/sm/semibold/font-size"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Title",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Title",
+                  "token": "heading/sm/bold/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Title",
+                  "token": "heading/sm/bold/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Title",
+                  "token": "heading/sm/bold/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Title",
+                  "token": "heading/sm/bold/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Title",
+                  "token": "heading/sm/bold/font-size"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Description",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "token": "body/md/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "token": "body/md/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "token": "body/md/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "token": "body/md/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "token": "body/md/regular/font-size"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Background",
+                  "token": "interactive/background/brand/default/medium"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Content=illustration, State=focus",
+                  "token": "static/background/brand/primary/medium"
+                },
+                {
+                  "property": "itemSpacing",
+                  "layer": "Container",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Container",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Container",
+                  "token": "padding/padding-400"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Container",
+                  "token": "padding/padding-400"
+                }
+              ]
+            },
+            "properties": [
+              {
+                "property": "size.height",
+                "layer": "Content=illustration, State=focus",
+                "from": "186",
+                "to": "240"
+              },
+              {
+                "property": "size.width",
+                "layer": "Content wrapper",
+                "from": "172",
+                "to": "192"
+              },
+              {
+                "property": "size.height",
+                "layer": "Content wrapper",
+                "from": "154",
+                "to": "186"
+              },
+              {
+                "property": "size.width",
+                "layer": "Content",
+                "from": "172",
+                "to": "168"
+              },
+              {
+                "property": "size.width",
+                "layer": "---> Headline",
+                "from": "172",
+                "to": "168"
+              },
+              {
+                "property": "size.width",
+                "layer": "---> Content",
+                "from": "172",
+                "to": "168"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 12,
+          "tokensAdded": 57,
+          "tokensRemoved": 15,
+          "propertiesChanged": 20
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 3,
+      "componentsRemoved": 1,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 57,
+      "bindingsRemoved": 15,
+      "bindingsChanged": 12,
+      "propertiesChanged": 20
+    }
+  },
+  {
     "id": "mv8csvdb",
     "timestamp": "2026-10-14T16:58:14.351Z",
     "fileKey": "htvGLaEUzJTF7QPd4LkGy0",
