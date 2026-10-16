@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-15T16:45:15.636Z",
+  "takenAt": "2026-10-16T16:27:59.831Z",
   "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
   "fileName": "Components",
   "components": [
@@ -94497,7 +94497,7 @@
           "componentId": "15715:2521"
         },
         {
-          "name": "Label",
+          "name": "---> Label",
           "componentId": "10423:6943"
         },
         {
@@ -94525,7 +94525,7 @@
           "componentId": "15715:2521"
         },
         {
-          "name": "Label",
+          "name": "---> Label",
           "componentId": "10423:6943"
         },
         {
@@ -94549,7 +94549,7 @@
           "componentId": "15715:2521"
         },
         {
-          "name": "Label",
+          "name": "---> Label",
           "componentId": "10423:6943"
         },
         {
@@ -94573,7 +94573,7 @@
           "componentId": "15715:2521"
         },
         {
-          "name": "Label",
+          "name": "---> Label",
           "componentId": "10423:6943"
         },
         {
@@ -94632,37 +94632,37 @@
         {
           "property": "itemSpacing",
           "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingLeft",
           "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingTop",
           "variableId": "VariableID:7836ccc791abfaae0d486eae5c85b7d5ab489ea4/1227:1",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingRight",
           "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingBottom",
           "variableId": "VariableID:7836ccc791abfaae0d486eae5c85b7d5ab489ea4/1227:1",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
           "variableId": "VariableID:38f70a05c8259913aa3f3f186dd327156f8550ac/4033:494",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
           "variableId": "VariableID:59017e34b8e4be912c9a3820308afec68968a499/4033:470",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
@@ -95032,74 +95032,74 @@
           "value": "---> Top"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingLeft",
           "value": 12
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingRight",
           "value": 12
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingTop",
           "value": 2
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingBottom",
           "value": 2
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "layoutMode",
           "value": "HORIZONTAL"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "primaryAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "counterAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "layoutWrap",
           "value": "NO_WRAP"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "size.width",
           "value": 51
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "size.height",
           "value": 18
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "__layerName__",
-          "value": "Label"
+          "value": "---> Label"
         },
         {
           "layerName": "Label",
@@ -95708,7 +95708,7 @@
           "componentId": "15715:2521"
         },
         {
-          "name": "Label",
+          "name": "---> Label",
           "componentId": "10423:6943"
         },
         {
@@ -95879,37 +95879,37 @@
         {
           "property": "itemSpacing",
           "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingLeft",
           "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingTop",
           "variableId": "VariableID:7836ccc791abfaae0d486eae5c85b7d5ab489ea4/1227:1",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingRight",
           "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingBottom",
           "variableId": "VariableID:7836ccc791abfaae0d486eae5c85b7d5ab489ea4/1227:1",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
           "variableId": "VariableID:38f70a05c8259913aa3f3f186dd327156f8550ac/4033:494",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
           "variableId": "VariableID:59017e34b8e4be912c9a3820308afec68968a499/4033:470",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
@@ -96284,74 +96284,74 @@
           "value": "---> Top"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingLeft",
           "value": 12
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingRight",
           "value": 12
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingTop",
           "value": 2
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingBottom",
           "value": 2
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "layoutMode",
           "value": "HORIZONTAL"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "primaryAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "counterAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "layoutWrap",
           "value": "NO_WRAP"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "size.width",
           "value": 51
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "size.height",
           "value": 18
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "__layerName__",
-          "value": "Label"
+          "value": "---> Label"
         },
         {
           "layerName": "Label",
@@ -96995,7 +96995,7 @@
           "componentId": "15715:2521"
         },
         {
-          "name": "Label",
+          "name": "---> Label",
           "componentId": "10423:6943"
         },
         {
@@ -97050,37 +97050,37 @@
         {
           "property": "itemSpacing",
           "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingLeft",
           "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingTop",
           "variableId": "VariableID:7836ccc791abfaae0d486eae5c85b7d5ab489ea4/1227:1",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingRight",
           "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingBottom",
           "variableId": "VariableID:7836ccc791abfaae0d486eae5c85b7d5ab489ea4/1227:1",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
           "variableId": "VariableID:38f70a05c8259913aa3f3f186dd327156f8550ac/4033:494",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
           "variableId": "VariableID:59017e34b8e4be912c9a3820308afec68968a499/4033:470",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
@@ -97455,74 +97455,74 @@
           "value": "---> Top"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingLeft",
           "value": 12
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingRight",
           "value": 12
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingTop",
           "value": 2
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingBottom",
           "value": 2
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "layoutMode",
           "value": "HORIZONTAL"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "primaryAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "counterAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "layoutWrap",
           "value": "NO_WRAP"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "size.width",
           "value": 51
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "size.height",
           "value": 18
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "__layerName__",
-          "value": "Label"
+          "value": "---> Label"
         },
         {
           "layerName": "Label",
@@ -98166,7 +98166,7 @@
           "componentId": "15715:2521"
         },
         {
-          "name": "Label",
+          "name": "---> Label",
           "componentId": "10423:6943"
         },
         {
@@ -98221,37 +98221,37 @@
         {
           "property": "itemSpacing",
           "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingLeft",
           "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingTop",
           "variableId": "VariableID:7836ccc791abfaae0d486eae5c85b7d5ab489ea4/1227:1",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingRight",
           "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingBottom",
           "variableId": "VariableID:7836ccc791abfaae0d486eae5c85b7d5ab489ea4/1227:1",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
           "variableId": "VariableID:38f70a05c8259913aa3f3f186dd327156f8550ac/4033:494",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
           "variableId": "VariableID:59017e34b8e4be912c9a3820308afec68968a499/4033:470",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
@@ -98626,74 +98626,74 @@
           "value": "---> Top"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingLeft",
           "value": 12
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingRight",
           "value": 12
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingTop",
           "value": 2
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingBottom",
           "value": 2
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "layoutMode",
           "value": "HORIZONTAL"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "primaryAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "counterAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "layoutWrap",
           "value": "NO_WRAP"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "size.width",
           "value": 51
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "size.height",
           "value": 18
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "__layerName__",
-          "value": "Label"
+          "value": "---> Label"
         },
         {
           "layerName": "Label",
@@ -99337,7 +99337,7 @@
           "componentId": "15715:2521"
         },
         {
-          "name": "Label",
+          "name": "---> Label",
           "componentId": "10423:6943"
         },
         {
@@ -100214,7 +100214,7 @@
       ],
       "instances": [
         {
-          "name": "Label",
+          "name": "---> Label",
           "componentId": "10423:6943"
         },
         {
@@ -100226,7 +100226,7 @@
           "componentId": "4561:3672"
         },
         {
-          "name": "Label",
+          "name": "---> Label",
           "componentId": "10423:6951"
         }
       ]
@@ -100265,37 +100265,37 @@
         {
           "property": "itemSpacing",
           "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingLeft",
           "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingTop",
           "variableId": "VariableID:7836ccc791abfaae0d486eae5c85b7d5ab489ea4/1227:1",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingRight",
           "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingBottom",
           "variableId": "VariableID:7836ccc791abfaae0d486eae5c85b7d5ab489ea4/1227:1",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
           "variableId": "VariableID:38f70a05c8259913aa3f3f186dd327156f8550ac/4033:494",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
           "variableId": "VariableID:59017e34b8e4be912c9a3820308afec68968a499/4033:470",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
@@ -100400,74 +100400,74 @@
           "value": "Label position=left"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingLeft",
           "value": 12
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingRight",
           "value": 12
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingTop",
           "value": 2
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingBottom",
           "value": 2
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "layoutMode",
           "value": "HORIZONTAL"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "primaryAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "counterAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "layoutWrap",
           "value": "NO_WRAP"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "size.width",
           "value": 51
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "size.height",
           "value": 18
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "__layerName__",
-          "value": "Label"
+          "value": "---> Label"
         },
         {
           "layerName": "Label",
@@ -100507,7 +100507,7 @@
       ],
       "instances": [
         {
-          "name": "Label",
+          "name": "---> Label",
           "componentId": "10423:6943"
         }
       ]
@@ -100586,37 +100586,37 @@
         {
           "property": "itemSpacing",
           "variableId": "VariableID:75dd1d21536e3c9b53e9f0b29270c4cf3d60a45d/1227:10",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingLeft",
           "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingTop",
           "variableId": "VariableID:7836ccc791abfaae0d486eae5c85b7d5ab489ea4/1227:1",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingRight",
           "variableId": "VariableID:dd647b882f62d71f17dcb08203abe465c61b1903/1227:6",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "paddingBottom",
           "variableId": "VariableID:7836ccc791abfaae0d486eae5c85b7d5ab489ea4/1227:1",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
           "variableId": "VariableID:38f70a05c8259913aa3f3f186dd327156f8550ac/4033:494",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
           "variableId": "VariableID:59017e34b8e4be912c9a3820308afec68968a499/4033:470",
-          "layerName": "Label"
+          "layerName": "---> Label"
         },
         {
           "property": "fills",
@@ -100971,74 +100971,74 @@
           "value": "Vector"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingLeft",
           "value": 12
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingRight",
           "value": 12
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingTop",
           "value": 2
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "paddingBottom",
           "value": 2
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "layoutMode",
           "value": "HORIZONTAL"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "primaryAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "counterAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "layoutWrap",
           "value": "NO_WRAP"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "size.width",
           "value": 51
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "size.height",
           "value": 18
         },
         {
-          "layerName": "Label",
+          "layerName": "---> Label",
           "property": "__layerName__",
-          "value": "Label"
+          "value": "---> Label"
         },
         {
           "layerName": "Label",
@@ -101086,7 +101086,7 @@
           "componentId": "4561:3672"
         },
         {
-          "name": "Label",
+          "name": "---> Label",
           "componentId": "10423:6951"
         }
       ]
@@ -106649,7 +106649,11 @@
           "componentId": "5291:13944"
         },
         {
-          "name": "---> Illustration",
+          "name": "---> Asset",
+          "componentId": "23655:3912"
+        },
+        {
+          "name": "Placeholder-illustration",
           "componentId": "5297:1029"
         },
         {
@@ -106681,7 +106685,11 @@
           "componentId": "5291:13944"
         },
         {
-          "name": "---> Illustration",
+          "name": "---> Asset",
+          "componentId": "23655:3912"
+        },
+        {
+          "name": "Placeholder-illustration",
           "componentId": "5297:1029"
         },
         {
@@ -106709,7 +106717,11 @@
           "componentId": "5291:13944"
         },
         {
-          "name": "---> Illustration",
+          "name": "---> Asset",
+          "componentId": "23655:3912"
+        },
+        {
+          "name": "Placeholder-illustration",
           "componentId": "5297:1029"
         },
         {
@@ -106741,7 +106753,11 @@
           "componentId": "5291:13944"
         },
         {
-          "name": "---> Illustration",
+          "name": "---> Asset",
+          "componentId": "23655:3912"
+        },
+        {
+          "name": "Placeholder-illustration",
           "componentId": "5297:1029"
         },
         {
@@ -113233,7 +113249,7 @@
         },
         {
           "property": "paddingLeft",
-          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
           "layerName": "Illustration wrapper"
         },
         {
@@ -113243,7 +113259,7 @@
         },
         {
           "property": "paddingRight",
-          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
           "layerName": "Illustration wrapper"
         },
         {
@@ -113252,9 +113268,24 @@
           "layerName": "Illustration wrapper"
         },
         {
-          "property": "fills",
-          "variableId": "VariableID:04619bb3de5f15e4a758183cbe21bda93da14ac4/3958:130",
-          "layerName": "Vector"
+          "property": "paddingLeft",
+          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "layerName": "---> Asset"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "---> Asset"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "layerName": "---> Asset"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "---> Asset"
         }
       ],
       "properties": [
@@ -114030,16 +114061,6 @@
         },
         {
           "layerName": "Illustration wrapper",
-          "property": "paddingLeft",
-          "value": 8
-        },
-        {
-          "layerName": "Illustration wrapper",
-          "property": "paddingRight",
-          "value": 8
-        },
-        {
-          "layerName": "Illustration wrapper",
           "property": "strokeWeight",
           "value": 1
         },
@@ -114094,64 +114115,119 @@
           "value": "Illustration wrapper"
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "---> Asset",
+          "property": "paddingLeft",
+          "value": 8
+        },
+        {
+          "layerName": "---> Asset",
+          "property": "paddingRight",
+          "value": 8
+        },
+        {
+          "layerName": "---> Asset",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "layoutMode",
-          "value": "VERTICAL"
+          "value": "HORIZONTAL"
         },
         {
-          "layerName": "---> Illustration",
-          "property": "primaryAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "counterAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "layoutWrap",
           "value": "NO_WRAP"
         },
         {
-          "layerName": "---> Illustration",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "counterAxisSizingMode",
           "value": "FIXED"
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
+          "property": "size.width",
+          "value": 136
+        },
+        {
+          "layerName": "---> Asset",
+          "property": "size.height",
+          "value": 240
+        },
+        {
+          "layerName": "---> Asset",
+          "property": "__layerName__",
+          "value": "---> Asset"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "layoutMode",
+          "value": "VERTICAL"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Placeholder-illustration",
           "property": "size.width",
           "value": 120
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "Placeholder-illustration",
           "property": "size.height",
           "value": 120
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "Placeholder-illustration",
           "property": "__layerName__",
-          "value": "---> Illustration"
+          "value": "Placeholder-illustration"
         },
         {
           "layerName": "⛔ Placeholder-illustration_slot",
@@ -114237,36 +114313,6 @@
           "layerName": "⛔ Placeholder-illustration_slot",
           "property": "__layerName__",
           "value": "⛔ Placeholder-illustration_slot"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 114
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 114
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#404040"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
         }
       ],
       "instances": [
@@ -114291,7 +114337,11 @@
           "componentId": "5291:13944"
         },
         {
-          "name": "---> Illustration",
+          "name": "---> Asset",
+          "componentId": "23655:3912"
+        },
+        {
+          "name": "Placeholder-illustration",
           "componentId": "5297:1029"
         },
         {
@@ -114624,7 +114674,7 @@
         },
         {
           "property": "paddingLeft",
-          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
           "layerName": "Illustration wrapper"
         },
         {
@@ -114634,7 +114684,7 @@
         },
         {
           "property": "paddingRight",
-          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
           "layerName": "Illustration wrapper"
         },
         {
@@ -114643,9 +114693,24 @@
           "layerName": "Illustration wrapper"
         },
         {
-          "property": "fills",
-          "variableId": "VariableID:04619bb3de5f15e4a758183cbe21bda93da14ac4/3958:130",
-          "layerName": "Vector"
+          "property": "paddingLeft",
+          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "layerName": "---> Asset"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "---> Asset"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "layerName": "---> Asset"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "---> Asset"
         }
       ],
       "properties": [
@@ -115456,16 +115521,6 @@
         },
         {
           "layerName": "Illustration wrapper",
-          "property": "paddingLeft",
-          "value": 8
-        },
-        {
-          "layerName": "Illustration wrapper",
-          "property": "paddingRight",
-          "value": 8
-        },
-        {
-          "layerName": "Illustration wrapper",
           "property": "strokeWeight",
           "value": 1
         },
@@ -115520,64 +115575,119 @@
           "value": "Illustration wrapper"
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "---> Asset",
+          "property": "paddingLeft",
+          "value": 8
+        },
+        {
+          "layerName": "---> Asset",
+          "property": "paddingRight",
+          "value": 8
+        },
+        {
+          "layerName": "---> Asset",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "layoutMode",
-          "value": "VERTICAL"
+          "value": "HORIZONTAL"
         },
         {
-          "layerName": "---> Illustration",
-          "property": "primaryAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "counterAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "layoutWrap",
           "value": "NO_WRAP"
         },
         {
-          "layerName": "---> Illustration",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "counterAxisSizingMode",
           "value": "FIXED"
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
+          "property": "size.width",
+          "value": 136
+        },
+        {
+          "layerName": "---> Asset",
+          "property": "size.height",
+          "value": 240
+        },
+        {
+          "layerName": "---> Asset",
+          "property": "__layerName__",
+          "value": "---> Asset"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "layoutMode",
+          "value": "VERTICAL"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Placeholder-illustration",
           "property": "size.width",
           "value": 120
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "Placeholder-illustration",
           "property": "size.height",
           "value": 120
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "Placeholder-illustration",
           "property": "__layerName__",
-          "value": "---> Illustration"
+          "value": "Placeholder-illustration"
         },
         {
           "layerName": "⛔ Placeholder-illustration_slot",
@@ -115663,36 +115773,6 @@
           "layerName": "⛔ Placeholder-illustration_slot",
           "property": "__layerName__",
           "value": "⛔ Placeholder-illustration_slot"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 114
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 114
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#404040"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
         }
       ],
       "instances": [
@@ -115717,7 +115797,11 @@
           "componentId": "5291:13944"
         },
         {
-          "name": "---> Illustration",
+          "name": "---> Asset",
+          "componentId": "23655:3912"
+        },
+        {
+          "name": "Placeholder-illustration",
           "componentId": "5297:1029"
         },
         {
@@ -115939,7 +116023,7 @@
         },
         {
           "property": "paddingLeft",
-          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
           "layerName": "Illustration wrapper"
         },
         {
@@ -115949,7 +116033,7 @@
         },
         {
           "property": "paddingRight",
-          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
           "layerName": "Illustration wrapper"
         },
         {
@@ -115958,9 +116042,24 @@
           "layerName": "Illustration wrapper"
         },
         {
-          "property": "fills",
-          "variableId": "VariableID:04619bb3de5f15e4a758183cbe21bda93da14ac4/3958:130",
-          "layerName": "Vector"
+          "property": "paddingLeft",
+          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "layerName": "---> Asset"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "---> Asset"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "layerName": "---> Asset"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "---> Asset"
         }
       ],
       "properties": [
@@ -116771,16 +116870,6 @@
         },
         {
           "layerName": "Illustration wrapper",
-          "property": "paddingLeft",
-          "value": 8
-        },
-        {
-          "layerName": "Illustration wrapper",
-          "property": "paddingRight",
-          "value": 8
-        },
-        {
-          "layerName": "Illustration wrapper",
           "property": "strokeWeight",
           "value": 1
         },
@@ -116835,64 +116924,119 @@
           "value": "Illustration wrapper"
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "---> Asset",
+          "property": "paddingLeft",
+          "value": 8
+        },
+        {
+          "layerName": "---> Asset",
+          "property": "paddingRight",
+          "value": 8
+        },
+        {
+          "layerName": "---> Asset",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "layoutMode",
-          "value": "VERTICAL"
+          "value": "HORIZONTAL"
         },
         {
-          "layerName": "---> Illustration",
-          "property": "primaryAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "counterAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "layoutWrap",
           "value": "NO_WRAP"
         },
         {
-          "layerName": "---> Illustration",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "counterAxisSizingMode",
           "value": "FIXED"
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
+          "property": "size.width",
+          "value": 136
+        },
+        {
+          "layerName": "---> Asset",
+          "property": "size.height",
+          "value": 240
+        },
+        {
+          "layerName": "---> Asset",
+          "property": "__layerName__",
+          "value": "---> Asset"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "layoutMode",
+          "value": "VERTICAL"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Placeholder-illustration",
           "property": "size.width",
           "value": 120
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "Placeholder-illustration",
           "property": "size.height",
           "value": 120
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "Placeholder-illustration",
           "property": "__layerName__",
-          "value": "---> Illustration"
+          "value": "Placeholder-illustration"
         },
         {
           "layerName": "⛔ Placeholder-illustration_slot",
@@ -116978,36 +117122,6 @@
           "layerName": "⛔ Placeholder-illustration_slot",
           "property": "__layerName__",
           "value": "⛔ Placeholder-illustration_slot"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 114
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 114
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#404040"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
         }
       ],
       "instances": [
@@ -117032,7 +117146,11 @@
           "componentId": "5291:13944"
         },
         {
-          "name": "---> Illustration",
+          "name": "---> Asset",
+          "componentId": "23655:3912"
+        },
+        {
+          "name": "Placeholder-illustration",
           "componentId": "5297:1029"
         },
         {
@@ -117254,7 +117372,7 @@
         },
         {
           "property": "paddingLeft",
-          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
           "layerName": "Illustration wrapper"
         },
         {
@@ -117264,7 +117382,7 @@
         },
         {
           "property": "paddingRight",
-          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
           "layerName": "Illustration wrapper"
         },
         {
@@ -117273,9 +117391,24 @@
           "layerName": "Illustration wrapper"
         },
         {
-          "property": "fills",
-          "variableId": "VariableID:04619bb3de5f15e4a758183cbe21bda93da14ac4/3958:130",
-          "layerName": "Vector"
+          "property": "paddingLeft",
+          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "layerName": "---> Asset"
+        },
+        {
+          "property": "paddingTop",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "---> Asset"
+        },
+        {
+          "property": "paddingRight",
+          "variableId": "VariableID:3f03553e98b9e748def30a99c478a4a552e53616/1227:4",
+          "layerName": "---> Asset"
+        },
+        {
+          "property": "paddingBottom",
+          "variableId": "VariableID:ec8780ec9530043141ff01649a247b513a442170/1227:0",
+          "layerName": "---> Asset"
         }
       ],
       "properties": [
@@ -118086,16 +118219,6 @@
         },
         {
           "layerName": "Illustration wrapper",
-          "property": "paddingLeft",
-          "value": 8
-        },
-        {
-          "layerName": "Illustration wrapper",
-          "property": "paddingRight",
-          "value": 8
-        },
-        {
-          "layerName": "Illustration wrapper",
           "property": "strokeWeight",
           "value": 1
         },
@@ -118150,64 +118273,119 @@
           "value": "Illustration wrapper"
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
+          "property": "itemSpacing",
+          "value": 10
+        },
+        {
+          "layerName": "---> Asset",
+          "property": "paddingLeft",
+          "value": 8
+        },
+        {
+          "layerName": "---> Asset",
+          "property": "paddingRight",
+          "value": 8
+        },
+        {
+          "layerName": "---> Asset",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "layoutMode",
-          "value": "VERTICAL"
+          "value": "HORIZONTAL"
         },
         {
-          "layerName": "---> Illustration",
-          "property": "primaryAxisAlignItems",
-          "value": "CENTER"
-        },
-        {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "counterAxisAlignItems",
           "value": "CENTER"
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "layoutWrap",
           "value": "NO_WRAP"
         },
         {
-          "layerName": "---> Illustration",
-          "property": "primaryAxisSizingMode",
-          "value": "FIXED"
-        },
-        {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "counterAxisSizingMode",
           "value": "FIXED"
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "clipsContent",
           "value": false
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "---> Asset",
+          "property": "size.width",
+          "value": 136
+        },
+        {
+          "layerName": "---> Asset",
+          "property": "size.height",
+          "value": 240
+        },
+        {
+          "layerName": "---> Asset",
+          "property": "__layerName__",
+          "value": "---> Asset"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "layoutMode",
+          "value": "VERTICAL"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "primaryAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "counterAxisAlignItems",
+          "value": "CENTER"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "layoutWrap",
+          "value": "NO_WRAP"
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Placeholder-illustration",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Placeholder-illustration",
           "property": "size.width",
           "value": 120
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "Placeholder-illustration",
           "property": "size.height",
           "value": 120
         },
         {
-          "layerName": "---> Illustration",
+          "layerName": "Placeholder-illustration",
           "property": "__layerName__",
-          "value": "---> Illustration"
+          "value": "Placeholder-illustration"
         },
         {
           "layerName": "⛔ Placeholder-illustration_slot",
@@ -118293,36 +118471,6 @@
           "layerName": "⛔ Placeholder-illustration_slot",
           "property": "__layerName__",
           "value": "⛔ Placeholder-illustration_slot"
-        },
-        {
-          "layerName": "Vector",
-          "property": "strokeWeight",
-          "value": 0.02500000037252903
-        },
-        {
-          "layerName": "Vector",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.width",
-          "value": 114
-        },
-        {
-          "layerName": "Vector",
-          "property": "size.height",
-          "value": 114
-        },
-        {
-          "layerName": "Vector",
-          "property": "fill[0].color",
-          "value": "#404040"
-        },
-        {
-          "layerName": "Vector",
-          "property": "__layerName__",
-          "value": "Vector"
         }
       ],
       "instances": [
@@ -118351,7 +118499,11 @@
           "componentId": "5291:13944"
         },
         {
-          "name": "---> Illustration",
+          "name": "---> Asset",
+          "componentId": "23655:3912"
+        },
+        {
+          "name": "Placeholder-illustration",
           "componentId": "5297:1029"
         },
         {
@@ -118390,7 +118542,7 @@
         {
           "layerName": ".⛔ Banner-lg_content",
           "property": "size.width",
-          "value": 317
+          "value": 284
         },
         {
           "layerName": ".⛔ Banner-lg_content",
@@ -118938,7 +119090,7 @@
         {
           "layerName": "Size=lg",
           "property": "size.width",
-          "value": 277
+          "value": 230
         },
         {
           "layerName": "Size=lg",
@@ -118968,7 +119120,7 @@
         {
           "layerName": "Title",
           "property": "size.width",
-          "value": 277
+          "value": 230
         },
         {
           "layerName": "Title",
@@ -119003,7 +119155,7 @@
         {
           "layerName": "Description",
           "property": "size.width",
-          "value": 277
+          "value": 230
         },
         {
           "layerName": "Description",
@@ -124232,12 +124384,12 @@
         {
           "layerName": ".⛔ Banner-lg_asset-container",
           "property": "size.width",
-          "value": 371
+          "value": 176
         },
         {
           "layerName": ".⛔ Banner-lg_asset-container",
           "property": "size.height",
-          "value": 200
+          "value": 540
         },
         {
           "layerName": ".⛔ Banner-lg_asset-container",
@@ -124247,12 +124399,7 @@
         {
           "layerName": ".⛔ Banner-lg_asset-container",
           "property": "__componentProps__",
-          "value": "Style:VARIANT,👁️ Has brand#1673:29:BOOLEAN"
-        },
-        {
-          "layerName": ".⛔ Banner-lg_asset-container",
-          "property": "__componentPropDefault__BOOLEAN::👁️ Has brand",
-          "value": "true"
+          "value": "Style:VARIANT"
         },
         {
           "layerName": ".⛔ Banner-lg_asset-container",
@@ -124307,31 +124454,6 @@
           "layerName": "Style=image",
           "property": "__layerName__",
           "value": "Style=image"
-        },
-        {
-          "layerName": "Image",
-          "property": "strokeWeight",
-          "value": 1
-        },
-        {
-          "layerName": "Image",
-          "property": "blendMode",
-          "value": "PASS_THROUGH"
-        },
-        {
-          "layerName": "Image",
-          "property": "size.width",
-          "value": 210
-        },
-        {
-          "layerName": "Image",
-          "property": "size.height",
-          "value": 240
-        },
-        {
-          "layerName": "Image",
-          "property": "__layerName__",
-          "value": "Image"
         }
       ],
       "instances": []
@@ -124406,6 +124528,11 @@
         },
         {
           "layerName": "Style=illustration",
+          "property": "counterAxisSizingMode",
+          "value": "FIXED"
+        },
+        {
+          "layerName": "Style=illustration",
           "property": "clipsContent",
           "value": false
         },
@@ -124422,7 +124549,7 @@
         {
           "layerName": "Style=illustration",
           "property": "size.height",
-          "value": 120
+          "value": 240
         },
         {
           "layerName": "Style=illustration",
@@ -124605,6 +124732,80 @@
           "componentId": "3330:1422"
         }
       ]
+    },
+    {
+      "id": "23679:7715",
+      "name": "Test-Illus",
+      "type": "COMPONENT",
+      "bindings": [],
+      "properties": [
+        {
+          "layerName": "Test-Illus",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Test-Illus",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Test-Illus",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Test-Illus",
+          "property": "size.width",
+          "value": 136
+        },
+        {
+          "layerName": "Test-Illus",
+          "property": "size.height",
+          "value": 240
+        },
+        {
+          "layerName": "Test-Illus",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Test-Illus",
+          "property": "__layerName__",
+          "value": "Test-Illus"
+        },
+        {
+          "layerName": "Rectangle 1",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Rectangle 1",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Rectangle 1",
+          "property": "size.width",
+          "value": 136
+        },
+        {
+          "layerName": "Rectangle 1",
+          "property": "size.height",
+          "value": 240
+        },
+        {
+          "layerName": "Rectangle 1",
+          "property": "fill[0].color",
+          "value": "#D41EC2"
+        },
+        {
+          "layerName": "Rectangle 1",
+          "property": "__layerName__",
+          "value": "Rectangle 1"
+        }
+      ],
+      "instances": []
     },
     {
       "id": "15254:3137",
@@ -827149,8 +827350,8 @@
     }
   ],
   "stats": {
-    "totalComponents": 1707,
-    "totalBindings": 30524,
-    "totalProperties": 123611
+    "totalComponents": 1708,
+    "totalBindings": 30536,
+    "totalProperties": 123631
   }
 }

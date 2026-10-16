@@ -1,5 +1,603 @@
 [
   {
+    "id": "mvb6loom",
+    "timestamp": "2026-10-16T16:27:59.926Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 nuevo · 2 iterados",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Test-Illus",
+        "nodeId": "",
+        "details": "Test-Illus"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Banner-lg",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Banner-xl",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Banner-xl": {
+        "name": "Banner-xl",
+        "isVariant": true,
+        "variants": {
+          "State=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "---> Label",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "---> Label",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "---> Label",
+                  "token": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "---> Label",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "---> Label",
+                  "token": "padding/padding-50"
+                },
+                {
+                  "property": "fills",
+                  "layer": "---> Label",
+                  "token": "expressive/pink/600"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Label",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Label",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Label",
+                  "token": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Label",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Label",
+                  "token": "padding/padding-50"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "State=pressed": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "---> Label",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "---> Label",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "---> Label",
+                  "token": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "---> Label",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "---> Label",
+                  "token": "padding/padding-50"
+                },
+                {
+                  "property": "fills",
+                  "layer": "---> Label",
+                  "token": "expressive/pink/600"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Label",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Label",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Label",
+                  "token": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Label",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Label",
+                  "token": "padding/padding-50"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "State=hover": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "---> Label",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "---> Label",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "---> Label",
+                  "token": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "---> Label",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "---> Label",
+                  "token": "padding/padding-50"
+                },
+                {
+                  "property": "fills",
+                  "layer": "---> Label",
+                  "token": "expressive/pink/600"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Label",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Label",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Label",
+                  "token": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Label",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Label",
+                  "token": "padding/padding-50"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "State=focus": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "---> Label",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "---> Label",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "---> Label",
+                  "token": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "---> Label",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "---> Label",
+                  "token": "padding/padding-50"
+                },
+                {
+                  "property": "fills",
+                  "layer": "---> Label",
+                  "token": "expressive/pink/600"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "itemSpacing",
+                  "layer": "Label",
+                  "token": "gap/gap-0"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Label",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "Label",
+                  "token": "padding/padding-50"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Label",
+                  "token": "padding/padding-300"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "Label",
+                  "token": "padding/padding-50"
+                }
+              ]
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 24,
+          "tokensRemoved": 20,
+          "propertiesChanged": 0
+        }
+      },
+      "Banner-lg": {
+        "name": "Banner-lg",
+        "isVariant": true,
+        "variants": {
+          "Content=illustration, State=default": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "static/foreground/neutral/bold",
+                  "to": "interactive/foreground/brand/primary/default/medium"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Illustration wrapper",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Illustration wrapper",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-0"
+                }
+              ],
+              "added": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "---> Asset",
+                  "token": "padding/padding-200"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "---> Asset",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "---> Asset",
+                  "token": "padding/padding-200"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "---> Asset",
+                  "token": "padding/padding-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Vector",
+                "from": "114",
+                "to": "12"
+              },
+              {
+                "property": "size.height",
+                "layer": "Vector",
+                "from": "114",
+                "to": "12"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#404040",
+                "to": "#5A50F9"
+              }
+            ]
+          },
+          "Content=illustration, State=hover": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "static/foreground/neutral/bold",
+                  "to": "interactive/foreground/brand/primary/default/medium"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Illustration wrapper",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Illustration wrapper",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-0"
+                }
+              ],
+              "added": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "---> Asset",
+                  "token": "padding/padding-200"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "---> Asset",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "---> Asset",
+                  "token": "padding/padding-200"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "---> Asset",
+                  "token": "padding/padding-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Vector",
+                "from": "114",
+                "to": "12"
+              },
+              {
+                "property": "size.height",
+                "layer": "Vector",
+                "from": "114",
+                "to": "12"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#404040",
+                "to": "#5A50F9"
+              }
+            ]
+          },
+          "Content=illustration, State=pressed": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "static/foreground/neutral/bold",
+                  "to": "interactive/foreground/brand/primary/default/medium"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Illustration wrapper",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Illustration wrapper",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-0"
+                }
+              ],
+              "added": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "---> Asset",
+                  "token": "padding/padding-200"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "---> Asset",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "---> Asset",
+                  "token": "padding/padding-200"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "---> Asset",
+                  "token": "padding/padding-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Vector",
+                "from": "114",
+                "to": "12"
+              },
+              {
+                "property": "size.height",
+                "layer": "Vector",
+                "from": "114",
+                "to": "12"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#404040",
+                "to": "#5A50F9"
+              }
+            ]
+          },
+          "Content=illustration, State=focus": {
+            "tokens": {
+              "changed": [
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "from": "static/foreground/neutral/bold",
+                  "to": "interactive/foreground/brand/primary/default/medium"
+                },
+                {
+                  "property": "paddingLeft",
+                  "layer": "Illustration wrapper",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "Illustration wrapper",
+                  "from": "padding/padding-200",
+                  "to": "padding/padding-0"
+                }
+              ],
+              "added": [
+                {
+                  "property": "paddingLeft",
+                  "layer": "---> Asset",
+                  "token": "padding/padding-200"
+                },
+                {
+                  "property": "paddingTop",
+                  "layer": "---> Asset",
+                  "token": "padding/padding-0"
+                },
+                {
+                  "property": "paddingRight",
+                  "layer": "---> Asset",
+                  "token": "padding/padding-200"
+                },
+                {
+                  "property": "paddingBottom",
+                  "layer": "---> Asset",
+                  "token": "padding/padding-0"
+                }
+              ],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "size.width",
+                "layer": "Vector",
+                "from": "114",
+                "to": "12"
+              },
+              {
+                "property": "size.height",
+                "layer": "Vector",
+                "from": "114",
+                "to": "12"
+              },
+              {
+                "property": "fill[0].color",
+                "layer": "Vector",
+                "from": "#404040",
+                "to": "#5A50F9"
+              }
+            ]
+          }
+        },
+        "summary": {
+          "tokensChanged": 12,
+          "tokensAdded": 16,
+          "tokensRemoved": 0,
+          "propertiesChanged": 12
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 1,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 0,
+      "propsRemoved": 1,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 52,
+      "bindingsRemoved": 30,
+      "bindingsChanged": 12,
+      "propertiesChanged": 19
+    }
+  },
+  {
     "id": "mv9rs190",
     "timestamp": "2026-10-15T16:45:15.732Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
