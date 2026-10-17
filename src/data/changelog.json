@@ -1,5 +1,403 @@
 [
   {
+    "id": "mvcjowyk",
+    "timestamp": "2026-10-17T15:22:11.804Z",
+    "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
+    "fileName": "Components",
+    "fileLabel": "components",
+    "summary": "1 nuevo · 2 iterados",
+    "changes": [
+      {
+        "type": "component_added",
+        "component": "Union",
+        "nodeId": "",
+        "details": "Union"
+      },
+      {
+        "type": "binding_changed",
+        "component": "Banner-sm",
+        "nodeId": "",
+        "details": ""
+      },
+      {
+        "type": "binding_changed",
+        "component": "Test-Illus",
+        "nodeId": "",
+        "details": ""
+      }
+    ],
+    "detailed": {
+      "Banner-sm": {
+        "name": "Banner-sm",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [],
+              "removed": []
+            },
+            "properties": [
+              {
+                "property": "componentProp.✏️ Description default",
+                "layer": "Component property (TEXT)",
+                "from": "Description",
+                "to": "Description (2 line max)"
+              }
+            ]
+          },
+          "State=default": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Description (2 line max)",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/font-size"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Description",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "token": "body/sm/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "token": "body/sm/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "token": "body/sm/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "token": "body/sm/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "token": "body/sm/regular/font-size"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "State=hover": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Description (2 line max)",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/font-size"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Description",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "token": "body/sm/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "token": "body/sm/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "token": "body/sm/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "token": "body/sm/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "token": "body/sm/regular/font-size"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "State=pressed": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Description (2 line max)",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/font-size"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Description",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "token": "body/sm/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "token": "body/sm/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "token": "body/sm/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "token": "body/sm/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "token": "body/sm/regular/font-size"
+                }
+              ]
+            },
+            "properties": []
+          },
+          "State=focus": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Description (2 line max)",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description (2 line max)",
+                  "token": "body/sm/regular/font-size"
+                }
+              ],
+              "removed": [
+                {
+                  "property": "fills",
+                  "layer": "Description",
+                  "token": "static/foreground/neutral/quiet"
+                },
+                {
+                  "property": "lineHeight",
+                  "layer": "Description",
+                  "token": "body/sm/regular/line-height"
+                },
+                {
+                  "property": "letterSpacing",
+                  "layer": "Description",
+                  "token": "body/sm/regular/letter-spacing"
+                },
+                {
+                  "property": "fontWeight",
+                  "layer": "Description",
+                  "token": "body/sm/regular/font-weight"
+                },
+                {
+                  "property": "fontFamily",
+                  "layer": "Description",
+                  "token": "body/sm/regular/font-family"
+                },
+                {
+                  "property": "fontSize",
+                  "layer": "Description",
+                  "token": "body/sm/regular/font-size"
+                }
+              ]
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 24,
+          "tokensRemoved": 24,
+          "propertiesChanged": 1
+        }
+      },
+      "Test-Illus": {
+        "name": "Test-Illus",
+        "isVariant": false,
+        "variants": {
+          "_base": {
+            "tokens": {
+              "changed": [],
+              "added": [
+                {
+                  "property": "fills",
+                  "layer": "Union",
+                  "token": "static/foreground/neutral/bold"
+                },
+                {
+                  "property": "fills",
+                  "layer": "Vector",
+                  "token": "static/foreground/neutral/bold"
+                }
+              ],
+              "removed": []
+            },
+            "properties": []
+          }
+        },
+        "summary": {
+          "tokensChanged": 0,
+          "tokensAdded": 2,
+          "tokensRemoved": 0,
+          "propertiesChanged": 0
+        },
+        "variantChanges": {
+          "added": [],
+          "removed": []
+        },
+        "componentProps": {
+          "added": [
+            {
+              "name": "Instance",
+              "type": "INSTANCE_SWAP",
+              "default": "23710:4816"
+            }
+          ],
+          "removed": []
+        }
+      }
+    },
+    "stats": {
+      "componentsAdded": 1,
+      "componentsRemoved": 0,
+      "componentsDeprecated": 0,
+      "componentsRenamed": 0,
+      "variantsAdded": 0,
+      "variantsRemoved": 0,
+      "propsAdded": 1,
+      "propsRemoved": 0,
+      "nested": 0,
+      "unnested": 0,
+      "bindingsAdded": 26,
+      "bindingsRemoved": 24,
+      "bindingsChanged": 0,
+      "propertiesChanged": 1
+    }
+  },
+  {
     "id": "mvb6loom",
     "timestamp": "2026-10-16T16:27:59.926Z",
     "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",

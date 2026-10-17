@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-16T16:27:59.831Z",
+  "takenAt": "2026-10-17T15:22:11.697Z",
   "fileKey": "0GIm2SB5mdvDF7ojlXkjV3",
   "fileName": "Components",
   "components": [
@@ -82448,7 +82448,7 @@
         {
           "layerName": "Banner-sm",
           "property": "__componentPropDefault__TEXT::✏️ Description",
-          "value": "Description"
+          "value": "Description (2 line max)"
         },
         {
           "layerName": "Banner-sm",
@@ -82669,32 +82669,32 @@
         {
           "property": "fills",
           "variableId": "VariableID:3d161e56000c4ff4a884deaf3addcc2683378322/3958:132",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "lineHeight",
           "variableId": "VariableID:2efd3e95e1f125080b0531afd2a5bf0574f152b8/1561:45",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "letterSpacing",
           "variableId": "VariableID:d319e54c00561f3df5f8886ad68afe97ae8d35b6/1545:36",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "fontWeight",
           "variableId": "VariableID:2b0e1dde12154d1a2b7daf14de1b1f596cee8c1a/1545:37",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "fontFamily",
           "variableId": "VariableID:2ef0685ab82fa76072745c518f8b2a6d6b8b6ab9/1545:39",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "fontSize",
           "variableId": "VariableID:8b53fd560beab4dd3311cd2097109e24bafc7f1b/1545:38",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "itemSpacing",
@@ -83264,39 +83264,39 @@
           "value": "Title"
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "strokeWeight",
           "value": 0.8108958601951599
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "characters",
-          "value": "Description"
+          "value": "Description (2 line max)"
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "size.width",
           "value": 220
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "size.height",
           "value": 20
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "fill[0].color",
           "value": "#FCFCFC"
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "__layerName__",
-          "value": "Description"
+          "value": "Description (2 line max)"
         },
         {
           "layerName": "Label",
@@ -83664,32 +83664,32 @@
         {
           "property": "fills",
           "variableId": "VariableID:3d161e56000c4ff4a884deaf3addcc2683378322/3958:132",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "lineHeight",
           "variableId": "VariableID:2efd3e95e1f125080b0531afd2a5bf0574f152b8/1561:45",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "letterSpacing",
           "variableId": "VariableID:d319e54c00561f3df5f8886ad68afe97ae8d35b6/1545:36",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "fontWeight",
           "variableId": "VariableID:2b0e1dde12154d1a2b7daf14de1b1f596cee8c1a/1545:37",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "fontFamily",
           "variableId": "VariableID:2ef0685ab82fa76072745c518f8b2a6d6b8b6ab9/1545:39",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "fontSize",
           "variableId": "VariableID:8b53fd560beab4dd3311cd2097109e24bafc7f1b/1545:38",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "itemSpacing",
@@ -84264,39 +84264,39 @@
           "value": "Title"
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "strokeWeight",
           "value": 0.8108958601951599
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "characters",
-          "value": "Description"
+          "value": "Description (2 line max)"
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "size.width",
           "value": 220
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "size.height",
           "value": 20
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "fill[0].color",
           "value": "#FCFCFC"
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "__layerName__",
-          "value": "Description"
+          "value": "Description (2 line max)"
         },
         {
           "layerName": "Label",
@@ -84578,32 +84578,32 @@
         {
           "property": "fills",
           "variableId": "VariableID:3d161e56000c4ff4a884deaf3addcc2683378322/3958:132",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "lineHeight",
           "variableId": "VariableID:2efd3e95e1f125080b0531afd2a5bf0574f152b8/1561:45",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "letterSpacing",
           "variableId": "VariableID:d319e54c00561f3df5f8886ad68afe97ae8d35b6/1545:36",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "fontWeight",
           "variableId": "VariableID:2b0e1dde12154d1a2b7daf14de1b1f596cee8c1a/1545:37",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "fontFamily",
           "variableId": "VariableID:2ef0685ab82fa76072745c518f8b2a6d6b8b6ab9/1545:39",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "fontSize",
           "variableId": "VariableID:8b53fd560beab4dd3311cd2097109e24bafc7f1b/1545:38",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "itemSpacing",
@@ -85178,39 +85178,39 @@
           "value": "Title"
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "strokeWeight",
           "value": 0.8108958601951599
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "characters",
-          "value": "Description"
+          "value": "Description (2 line max)"
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "size.width",
           "value": 220
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "size.height",
           "value": 20
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "fill[0].color",
           "value": "#FCFCFC"
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "__layerName__",
-          "value": "Description"
+          "value": "Description (2 line max)"
         },
         {
           "layerName": "Label",
@@ -85497,32 +85497,32 @@
         {
           "property": "fills",
           "variableId": "VariableID:3d161e56000c4ff4a884deaf3addcc2683378322/3958:132",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "lineHeight",
           "variableId": "VariableID:2efd3e95e1f125080b0531afd2a5bf0574f152b8/1561:45",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "letterSpacing",
           "variableId": "VariableID:d319e54c00561f3df5f8886ad68afe97ae8d35b6/1545:36",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "fontWeight",
           "variableId": "VariableID:2b0e1dde12154d1a2b7daf14de1b1f596cee8c1a/1545:37",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "fontFamily",
           "variableId": "VariableID:2ef0685ab82fa76072745c518f8b2a6d6b8b6ab9/1545:39",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "fontSize",
           "variableId": "VariableID:8b53fd560beab4dd3311cd2097109e24bafc7f1b/1545:38",
-          "layerName": "Description"
+          "layerName": "Description (2 line max)"
         },
         {
           "property": "itemSpacing",
@@ -86127,39 +86127,39 @@
           "value": "Title"
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "strokeWeight",
           "value": 0.8108958601951599
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "characters",
-          "value": "Description"
+          "value": "Description (2 line max)"
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "size.width",
           "value": 220
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "size.height",
           "value": 20
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "fill[0].color",
           "value": "#FCFCFC"
         },
         {
-          "layerName": "Description",
+          "layerName": "Description (2 line max)",
           "property": "__layerName__",
-          "value": "Description"
+          "value": "Description (2 line max)"
         },
         {
           "layerName": "Label",
@@ -124734,10 +124734,216 @@
       ]
     },
     {
+      "id": "23710:4816",
+      "name": "Union",
+      "type": "COMPONENT",
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:04619bb3de5f15e4a758183cbe21bda93da14ac4/3958:130",
+          "layerName": "Union"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:04619bb3de5f15e4a758183cbe21bda93da14ac4/3958:130",
+          "layerName": "Vector"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:04619bb3de5f15e4a758183cbe21bda93da14ac4/3958:130",
+          "layerName": "Vector"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:04619bb3de5f15e4a758183cbe21bda93da14ac4/3958:130",
+          "layerName": "Vector"
+        }
+      ],
+      "properties": [
+        {
+          "layerName": "Union",
+          "property": "strokeWeight",
+          "value": 1
+        },
+        {
+          "layerName": "Union",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Union",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Union",
+          "property": "size.width",
+          "value": 99
+        },
+        {
+          "layerName": "Union",
+          "property": "size.height",
+          "value": 227
+        },
+        {
+          "layerName": "Union",
+          "property": "fill[0].color",
+          "value": "#FFFFFF"
+        },
+        {
+          "layerName": "Union",
+          "property": "__layerName__",
+          "value": "Union"
+        },
+        {
+          "layerName": "Union",
+          "property": "strokeWeight",
+          "value": 0
+        },
+        {
+          "layerName": "Union",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Union",
+          "property": "size.width",
+          "value": 99
+        },
+        {
+          "layerName": "Union",
+          "property": "size.height",
+          "value": 227
+        },
+        {
+          "layerName": "Union",
+          "property": "fill[0].color",
+          "value": "#404040"
+        },
+        {
+          "layerName": "Union",
+          "property": "__layerName__",
+          "value": "Union"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 114
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 114
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#404040"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 114
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 114
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#404040"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 114
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 71
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#404040"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        }
+      ],
+      "instances": []
+    },
+    {
       "id": "23679:7715",
       "name": "Test-Illus",
       "type": "COMPONENT",
-      "bindings": [],
+      "bindings": [
+        {
+          "property": "fills",
+          "variableId": "VariableID:04619bb3de5f15e4a758183cbe21bda93da14ac4/3958:130",
+          "layerName": "Union"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:04619bb3de5f15e4a758183cbe21bda93da14ac4/3958:130",
+          "layerName": "Vector"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:04619bb3de5f15e4a758183cbe21bda93da14ac4/3958:130",
+          "layerName": "Vector"
+        },
+        {
+          "property": "fills",
+          "variableId": "VariableID:04619bb3de5f15e4a758183cbe21bda93da14ac4/3958:130",
+          "layerName": "Vector"
+        }
+      ],
       "properties": [
         {
           "layerName": "Test-Illus",
@@ -124771,41 +124977,181 @@
         },
         {
           "layerName": "Test-Illus",
+          "property": "__componentProps__",
+          "value": "Instance#23710:0:INSTANCE_SWAP"
+        },
+        {
+          "layerName": "Test-Illus",
+          "property": "__componentPropDefault__INSTANCE_SWAP::Instance",
+          "value": "23710:4816"
+        },
+        {
+          "layerName": "Test-Illus",
           "property": "__layerName__",
           "value": "Test-Illus"
         },
         {
-          "layerName": "Rectangle 1",
+          "layerName": "Union",
           "property": "strokeWeight",
           "value": 1
         },
         {
-          "layerName": "Rectangle 1",
+          "layerName": "Union",
+          "property": "clipsContent",
+          "value": false
+        },
+        {
+          "layerName": "Union",
           "property": "blendMode",
           "value": "PASS_THROUGH"
         },
         {
-          "layerName": "Rectangle 1",
+          "layerName": "Union",
           "property": "size.width",
-          "value": 136
+          "value": 99
         },
         {
-          "layerName": "Rectangle 1",
+          "layerName": "Union",
           "property": "size.height",
-          "value": 240
+          "value": 227
         },
         {
-          "layerName": "Rectangle 1",
+          "layerName": "Union",
           "property": "fill[0].color",
-          "value": "#D41EC2"
+          "value": "#FFFFFF"
         },
         {
-          "layerName": "Rectangle 1",
+          "layerName": "Union",
           "property": "__layerName__",
-          "value": "Rectangle 1"
+          "value": "Union"
+        },
+        {
+          "layerName": "Union",
+          "property": "strokeWeight",
+          "value": 0
+        },
+        {
+          "layerName": "Union",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Union",
+          "property": "size.width",
+          "value": 99
+        },
+        {
+          "layerName": "Union",
+          "property": "size.height",
+          "value": 227
+        },
+        {
+          "layerName": "Union",
+          "property": "fill[0].color",
+          "value": "#404040"
+        },
+        {
+          "layerName": "Union",
+          "property": "__layerName__",
+          "value": "Union"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 114
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 114
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#404040"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 114
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 114
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#404040"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
+        },
+        {
+          "layerName": "Vector",
+          "property": "strokeWeight",
+          "value": 0.02500000037252903
+        },
+        {
+          "layerName": "Vector",
+          "property": "blendMode",
+          "value": "PASS_THROUGH"
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.width",
+          "value": 114
+        },
+        {
+          "layerName": "Vector",
+          "property": "size.height",
+          "value": 71
+        },
+        {
+          "layerName": "Vector",
+          "property": "fill[0].color",
+          "value": "#404040"
+        },
+        {
+          "layerName": "Vector",
+          "property": "__layerName__",
+          "value": "Vector"
         }
       ],
-      "instances": []
+      "instances": [
+        {
+          "name": "Union",
+          "componentId": "23710:4816"
+        }
+      ]
     },
     {
       "id": "15254:3137",
@@ -827350,8 +827696,8 @@
     }
   ],
   "stats": {
-    "totalComponents": 1708,
-    "totalBindings": 30536,
-    "totalProperties": 123631
+    "totalComponents": 1709,
+    "totalBindings": 30544,
+    "totalProperties": 123689
   }
 }
